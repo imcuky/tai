@@ -77,11 +77,10 @@ def filter_calendar_chunks(db_path, course_code, output_csv=None):
     try:
         # SQL query to filter Calendar chunks for specific course
         query = """
-        SELECT *
+        SELECT text,title,url,file_path,reference_path,course_name,course_code,chunk_index
         FROM chunks
         WHERE course_code = ? 
         AND reference_path LIKE '%> Calendar%'
-        ORDER BY file_uuid, chunk_index
         """
         
         print(f"\nFiltering chunks for course: {course_code}")

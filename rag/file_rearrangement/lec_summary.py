@@ -2,47 +2,82 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 import json
-import pandas as pd
-import re
 
 import pandas as pd
 import re
-import os
 import sqlite3
 
-import pandas as pd
-import re
-import os
 from urllib.parse import urlparse
 
 def extract_calendar_info(text):
-    """Extract structured information from calendar text"""
-    
+    """Extract structured information from a raw calendar chunk.
+
+    Improvements:
+      - Distinguish actual lecture date from preceding due-date annotations.
+      - Derive a concise lecture title (e.g., 'Tail Calls', 'Interpreters') rather than the full cleaned text.
+      - Lecture title is taken from the token immediately following the chosen lecture date token,
+        truncated at the first '*' or '[' which usually begins resource listings.
+    """
     if pd.isna(text) or not isinstance(text, str):
         return {"date": "", "topic": "", "cleaned_text": ""}
-    
-    # Clean the text first
-    cleaned = clean_calendar_text(text)
-    
-    # Try to extract date pattern (like "Tue 6/24")
-    date_match = re.search(r'([A-Za-z]{3}\s+\d{1,2}/\d{1,2})', text)
-    date = date_match.group(1) if date_match else ""
-    
-    # Extract topic (text after date, before URLs/links)
-    topic = ""
-    if date:
-        # Split by date and take the part after
-        parts = text.split(date, 1)
-        if len(parts) > 1:
-            topic_part = parts[1]
-            # Remove URLs and clean up
-            topic = clean_calendar_text(topic_part).strip()
-    else:
-        topic = cleaned
-    
+
+    # Keep original for parsing; build a cleaned version for fallback
+    original = text
+    cleaned = clean_calendar_text(original)
+
+    # Split on pipe delimiters commonly used in calendar lines
+    tokens = [t.strip() for t in original.split('|') if t.strip()]
+
+    date_pattern = re.compile(r'^[A-Za-z]{3}\s+\d{1,2}/\d{1,2}$')
+    lecture_date = ""
+    lecture_title = ""
+
+    # Identify candidate date tokens ignoring those that appear in a token with 'Due'
+    # Some chunks may start with a due date line before the actual lecture line.
+    candidate_indices = []
+    for i, tok in enumerate(tokens):
+        if 'due' in tok.lower():
+            continue
+        if date_pattern.match(tok):
+            candidate_indices.append(i)
+
+    # Heuristic: choose the last candidate date (handles due date appearing first)
+    if candidate_indices:
+        date_index = candidate_indices[-1]
+        lecture_date = tokens[date_index]
+        # Lecture title expected in the next token
+        if date_index + 1 < len(tokens):
+            title_token = tokens[date_index + 1]
+            # Truncate at first resource delimiter
+            cut_match = re.search(r'(\*|\[)', title_token)
+            if cut_match:
+                title_core = title_token[:cut_match.start()].strip()
+            else:
+                title_core = title_token.strip()
+            # Normalize spacing and remove trailing punctuation
+            lecture_title = re.sub(r'\s+', ' ', title_core).strip().strip(':').strip()
+
+    # Fallbacks if parsing failed
+    if not lecture_title:
+        # Try extracting a capitalized phrase before first '*'
+        star_split = original.split('*', 1)[0]
+        # Remove leading pipes/spaces
+        star_split = star_split.strip(' |')
+        # Remove any leading date portion
+        if lecture_date and star_split.startswith(lecture_date):
+            star_split = star_split[len(lecture_date):].strip()
+        # Trim at '[' if present
+        bracket_pos = star_split.find('[')
+        if bracket_pos != -1:
+            star_split = star_split[:bracket_pos].strip()
+        lecture_title = star_split.strip().strip(':')
+        # If still empty, fallback to cleaned text (may be verbose)
+        if not lecture_title:
+            lecture_title = cleaned[:80]
+
     return {
-        "date": date,
-        "topic": topic,
+        "date": lecture_date,
+        "topic": lecture_title,
         "cleaned_text": cleaned
     }
 def extract_url_paths(text):
@@ -289,6 +324,8 @@ def generate_lecture_summaries(calendar_csv: str = "cs_61a_calendar_with_paths.c
         matched_file_ids = []
         matched_file_names = []
         slide_file_names = []
+        per_file_concepts = {}
+        per_file_aspects = {}
 
         if not matched.empty:
             # Prefer PDFs (slides) if present; else include all matched
@@ -310,6 +347,20 @@ def generate_lecture_summaries(calendar_csv: str = "cs_61a_calendar_with_paths.c
                 kcs, asps = aggregate_concepts_and_aspects(sections_list)
                 lecture_key_concepts.extend(kcs)
                 lecture_aspects.extend(asps)
+                fname = frow.get('file_name', '') or frow.get('relative_path', '') or frow.get('url', '')
+                if fname:
+                    # Store per-file concepts (unique) and aspects (content strings unique)
+                    existing_c = per_file_concepts.get(fname, [])
+                    for c in kcs:
+                        if c not in existing_c:
+                            existing_c.append(c)
+                    per_file_concepts[fname] = existing_c
+                    existing_a = per_file_aspects.get(fname, [])
+                    for a in asps:
+                        content = a.get('content', '')
+                        if content and content not in existing_a:
+                            existing_a.append(content)
+                    per_file_aspects[fname] = existing_a
 
             # de-duplicate lecture-level lists
             seen_kc = set()
@@ -340,7 +391,9 @@ def generate_lecture_summaries(calendar_csv: str = "cs_61a_calendar_with_paths.c
             'matched_file_names': json.dumps([m for m in matched_file_names if m], ensure_ascii=False),
             'slide_files': json.dumps([m for m in slide_file_names if m], ensure_ascii=False),
             'key_concepts': json.dumps(lecture_key_concepts, ensure_ascii=False),
-            'aspects': json.dumps(lecture_aspects, ensure_ascii=False)
+            'aspects': json.dumps(lecture_aspects, ensure_ascii=False),
+            'file_concepts_map': json.dumps(per_file_concepts, ensure_ascii=False),
+            'file_aspects_map': json.dumps(per_file_aspects, ensure_ascii=False)
         }
 
         # Optional concise textual summary
@@ -394,6 +447,12 @@ def generate_openai_lecture_topics_json(summary_csv: str = "cs_61a_lecture_summa
     df['key_concepts_list'] = df.get('key_concepts', '').apply(parse_list)
     df['aspects_list'] = df.get('aspects', '').apply(parse_list)
     df['slide_files_list'] = df.get('slide_files', '').apply(parse_list)
+    # Parse per-file maps
+    def parse_map(s):
+        v = _safe_json_or_literal_load(s)
+        return v if isinstance(v, dict) else {}
+    df['file_concepts_map_dict'] = df.get('file_concepts_map', '').apply(parse_map)
+    df['file_aspects_map_dict'] = df.get('file_aspects_map', '').apply(parse_map)
 
     # Load API key
     load_dotenv()
@@ -411,33 +470,64 @@ def generate_openai_lecture_topics_json(summary_csv: str = "cs_61a_lecture_summa
     results = {}
     for idx, row in df.iterrows():
         lecture_key = f"Lecture {idx + 1}"
+        # Remove date from prompt per TODO; still retain for output
         date = str(row.get('date', '') or '')
         topic = str(row.get('topic', '') or '')
         cleaned_text = str(row.get('cleaned_text', '') or '')
         key_concepts = row.get('key_concepts_list') or []
         aspects = row.get('aspects_list') or []
         slide_files = row.get('slide_files_list') or []
+        file_concepts_map = row.get('file_concepts_map_dict') or {}
+        file_aspects_map = row.get('file_aspects_map_dict') or {}
+
+        # Prioritize slide files ordering in maps (place their entries first) for prompt clarity
+        ordered_file_concepts = {}
+        ordered_file_aspects = {}
+        slide_set = set(slide_files)
+        # Slides first
+        for sf in slide_files:
+            if sf in file_concepts_map:
+                ordered_file_concepts[sf] = file_concepts_map.get(sf, [])
+            if sf in file_aspects_map:
+                ordered_file_aspects[sf] = file_aspects_map.get(sf, [])
+        # Then others
+        for fname, concepts_list in file_concepts_map.items():
+            if fname not in ordered_file_concepts:
+                ordered_file_concepts[fname] = concepts_list
+        for fname, aspects_list in file_aspects_map.items():
+            if fname not in ordered_file_aspects:
+                ordered_file_aspects[fname] = aspects_list
 
         out_topic = ''
         out_summary = ''
 
         if client is not None:
+            # New structured prompt using per-file maps; date removed per TODO.
             prompt = (
-                "You will summarize a university lecture into a short topic and a concise 2-4 sentence summary.\n"
-                "Return ONLY valid JSON with keys \"topic\" and \"summary\" (double-quoted JSON, no markdown, no comments).\n\n"
-                f"Date: {date}\n"
-                f"Existing topic (may be empty): {topic}\n"
-                f"Key concepts: {json.dumps(key_concepts, ensure_ascii=False)}\n"
-                f"Aspects: {json.dumps(aspects, ensure_ascii=False)}\n"
-                f"Slide files (prioritize these): {json.dumps(slide_files, ensure_ascii=False)}\n"
-                f"Context snippet: {cleaned_text[:500]}\n\n"
-                "Rules:\n- Focus the summary on the slide materials when available; otherwise use other materials.\n- 'topic' should be a short title (3-8 words).\n- 'summary' should be 2-4 sentences describing what the lecture covers.\n"
+                "Summarize a CS 61A lecture using grouped key concepts and aspects.\n"
+                "Input provides per-file extracted concepts; prioritize PDF slide files first.\n"
+                "Return ONLY strict JSON: {\"topic\": <short title>, \"summary\": <2-4 sentences>}. No Markdown, no prose outside JSON.\n\n"
+                f"Existing topic hint (may be empty): {topic}\n"
+                "Per-file key concepts (slide files first):\n"
+                f"{json.dumps(ordered_file_concepts, ensure_ascii=False)}\n"
+                "Per-file aspects (content strings, slide files first):\n"
+                f"{json.dumps(ordered_file_aspects, ensure_ascii=False)}\n"
+                "Aggregated concepts (fallback):\n"
+                f"{json.dumps(key_concepts[:30], ensure_ascii=False)}\n"
+                "Optional context snippet (truncated):\n"
+                f"{cleaned_text[:300]}\n\n"
+                "Rules:\n"
+                "- Ignore date; derive topic from conceptual focus.\n"
+                "- Prefer slide file concepts if present.\n"
+                "- topic: 3-8 words, no quotes, no punctuation at end.\n"
+                "- summary: 2-4 sentences; emphasize central ideas and progression.\n"
+                "- Avoid mentioning file names directly.\n"
             )
             try:
                 resp = client.chat.completions.create(
                     model=model,
                     messages=[
-                        {"role": "system", "content": "Always output only compact, valid JSON object with double quotes: {\"topic\":\"...\",\"summary\":\"...\"}. No markdown."},
+                        {"role": "system", "content": "Output ONLY JSON: {\"topic\":\"...\",\"summary\":\"...\"}. Ensure double quotes. No extra text."},
                         {"role": "user", "content": prompt},
                     ],
                     temperature=0.3,
@@ -482,7 +572,7 @@ def generate_openai_lecture_topics_json(summary_csv: str = "cs_61a_lecture_summa
             out_topic, out_summary = _heuristic_summary(topic, key_concepts, aspects)
 
         results[lecture_key] = {
-            "date": date,
+            "date": date,  # retained for downstream uses
             "topic": out_topic,
             "summary": out_summary,
         }
@@ -724,18 +814,16 @@ def clean_calendar_text(text):
     
     return text
 
-# def main():
+def test_api():
     
-#     print(os.getcwd())
+    # Test the API
+    success = test_openai_api()
     
-#     # Test the API
-#     # success = test_openai_api()
-    
-#     # if success:
-#     #     print("\nYour OpenAI API is working correctly!")
-#     #     print("You can now use it in your file categorization script.")
-#     # else:
-#     #     print("\nAPI test failed. Please check your API key and try again.")
+    if success:
+        print("\nYour OpenAI API is working correctly!")
+        print("You can now use it in your file categorization script.")
+    else:
+        print("\nAPI test failed. Please check your API key and try again.")
 
 def main():
     """Main function to process calendar chunks CSV with URL extraction"""
@@ -785,4 +873,5 @@ def main():
                         model="gpt-4o-mini")
 
 if __name__ == "__main__":
+    #test_api()
     main()
