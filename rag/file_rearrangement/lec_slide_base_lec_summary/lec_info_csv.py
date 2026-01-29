@@ -1,3 +1,9 @@
+# Calendar Lecture Info CSV Processing
+# This script processes a CSV file containing calendar chunks for CS 61A,
+# extracts structured lecture information, URL paths, and generates a lecture summary CSV
+# by linking calendar entries to course files based on URL path segments.
+
+
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -158,42 +164,106 @@ def parse_sections_field(sections_raw):
 
 def aggregate_concepts_and_aspects(sections_list):
     """Aggregate key_concepts (strings) and aspects (dicts with content/type) from sections list.
-    Returns (key_concepts:list[str], aspects:list[dict])."""
+    Returns (key_concepts:list[str], aspects:list[dict], descriptions:list[str])."""
     key_concepts = []
     aspects = []
+    descriptions = []
     seen_concepts = set()
     seen_aspect_tuples = set()
+    seen_desc = set()
 
     for sec in sections_list or []:
         # key_concept may be str or list[str]
+        kc_names = []
         if 'key_concept' in sec:
             kc = sec.get('key_concept')
             if isinstance(kc, str):
                 val = kc.strip()
-                if val and val.lower() not in seen_concepts:
-                    seen_concepts.add(val.lower())
-                    key_concepts.append(val)
+                if val:
+                    kc_names.append(val)
             elif isinstance(kc, list):
                 for item in kc:
                     if isinstance(item, str):
                         val = item.strip()
-                        if val and val.lower() not in seen_concepts:
-                            seen_concepts.add(val.lower())
-                            key_concepts.append(val)
+                        if val:
+                            kc_names.append(val)
 
         # aspects is typically a list of dicts with keys 'content' and 'type'
         asp_list = sec.get('aspects') if isinstance(sec, dict) else None
+        definition_content = None
+
         if isinstance(asp_list, list):
             for a in asp_list:
                 if isinstance(a, dict):
                     content = str(a.get('content', '')).strip()
                     atype = str(a.get('type', '')).strip()
+                    
+                    # Check for definition to merge with key_concept
+                    if not definition_content and atype.lower() == 'definition' and content:
+                        definition_content = content
+
                     key = (content.lower(), atype.lower())
                     if content and key not in seen_aspect_tuples:
                         seen_aspect_tuples.add(key)
                         aspects.append({'content': content, 'type': atype})
 
-    return key_concepts, aspects
+        # Add key concepts (merged with definition if available)
+        for name in kc_names:
+            if definition_content:
+                final_val = f"{name}: {definition_content}"
+            else:
+                final_val = name
+            
+            if final_val.lower() not in seen_concepts:
+                seen_concepts.add(final_val.lower())
+                key_concepts.append(final_val)
+
+        # optional free-form description fields
+        for desc_key in ('description', 'desc', 'summary'):
+            dval = sec.get(desc_key) if isinstance(sec, dict) else None
+            if isinstance(dval, str):
+                dclean = dval.strip()
+                if dclean and dclean.lower() not in seen_desc:
+                    seen_desc.add(dclean.lower())
+                    descriptions.append(dclean)
+
+    return key_concepts, aspects, descriptions
+
+
+def categorize_file(relative_path: str, file_name: str, url: str) -> str:
+    """Infer a coarse category from relative path/file name.
+    Examples: 'slides', 'lecture', 'video', 'reading', 'lab', 'homework', 'discussion',
+    'project', 'exam', 'study-guide', 'support', 'other'.
+    """
+    rp = (relative_path or '').lower()
+    fn = (file_name or '').lower()
+    ur = (url or '').lower()
+    path = ' '.join([rp, fn, ur])
+
+    # High-confidence patterns
+    if rp.startswith('cs 61a/support/study-guide') or 'study-guide' in path:
+        return 'study-guide'
+    if fn.endswith('.pdf') and ('slide' in path or 'lectur' in path or 'slides' in path):
+        return 'slides'
+    if 'youtube' in path or fn.endswith(('.mp4', '.mkv', '.webm')):
+        return 'video'
+    if any(x in path for x in ['lab', 'labs']):
+        return 'lab'
+    if any(x in path for x in ['homework', 'hw']):
+        return 'homework'
+    if any(x in path for x in ['discussion', 'disc']):
+        return 'discussion'
+    if any(x in path for x in ['project', 'proj']):
+        return 'project'
+    if any(x in path for x in ['exam', 'final', 'midterm']):
+        return 'exam'
+    if any(x in path for x in ['note', 'reading', 'handout']):
+        return 'reading'
+    if any(x in path for x in ['lecture']):
+        return 'lecture'
+    if any(x in path for x in ['support', 'admin', 'syllabus']):
+        return 'support'
+    return 'other'
 
 def _prepare_file_match_keys(files_df: pd.DataFrame) -> pd.DataFrame:
     """Add helper columns to files_df for robust matching against calendar URL last parts."""
@@ -238,7 +308,7 @@ def match_files_for_calendar_row(files_df_idxed: pd.DataFrame, url_parts: list) 
     return files_df_idxed[mask]
 
 def _load_files_from_db_or_csv(files_db: str, files_csv: str) -> pd.DataFrame | None:
-    """Prefer loading files data (uuid, file_name, relative_path, url, sections) from SQLite DB,
+    """Prefer loading files data (uuid, file_name, relative_path, url, sections, description) from SQLite DB,
     otherwise from CSV. Returns DataFrame or None."""
     # Try DB first
     if files_db and os.path.exists(files_db):
@@ -251,7 +321,8 @@ def _load_files_from_db_or_csv(files_db: str, files_csv: str) -> pd.DataFrame | 
                     file_name,
                     relative_path,
                     url,
-                    sections
+                    sections,
+                    description
                 FROM file
             """
             df = pd.read_sql_query(query, conn)
@@ -264,7 +335,7 @@ def _load_files_from_db_or_csv(files_db: str, files_csv: str) -> pd.DataFrame | 
         try:
             df = pd.read_csv(files_csv)
             # Ensure required columns exist (create if missing)
-            for col in ['uuid', 'file_name', 'relative_path', 'url', 'sections']:
+            for col in ['uuid', 'file_name', 'relative_path', 'url', 'sections', 'description']:
                 if col not in df.columns:
                     df[col] = ''
             return df
@@ -326,6 +397,8 @@ def generate_lecture_summaries(calendar_csv: str = "cs_61a_calendar_with_paths.c
         slide_file_names = []
         per_file_concepts = {}
         per_file_aspects = {}
+        per_file_descriptions = {}
+        per_file_categories = {}
 
         if not matched.empty:
             # Prefer PDFs (slides) if present; else include all matched
@@ -344,7 +417,7 @@ def generate_lecture_summaries(calendar_csv: str = "cs_61a_calendar_with_paths.c
                 if is_pdf(frow):
                     slide_file_names.append(frow.get('file_name', ''))
                 sections_list = parse_sections_field(frow.get('sections'))
-                kcs, asps = aggregate_concepts_and_aspects(sections_list)
+                kcs, asps, descs = aggregate_concepts_and_aspects(sections_list)
                 lecture_key_concepts.extend(kcs)
                 lecture_aspects.extend(asps)
                 fname = frow.get('file_name', '') or frow.get('relative_path', '') or frow.get('url', '')
@@ -361,6 +434,20 @@ def generate_lecture_summaries(calendar_csv: str = "cs_61a_calendar_with_paths.c
                         if content and content not in existing_a:
                             existing_a.append(content)
                     per_file_aspects[fname] = existing_a
+                    # Store descriptions (from sections)
+                    existing_d = per_file_descriptions.get(fname, [])
+                    for d in descs:
+                        if d not in existing_d:
+                            existing_d.append(d)
+                    # Also include file-level description if available
+                    file_desc = str(frow.get('description', '') or '').strip()
+                    if file_desc and file_desc not in existing_d:
+                        existing_d.insert(0, file_desc)  # Prioritize file-level description
+                    per_file_descriptions[fname] = existing_d
+                    # Categorize file from relative path/name/url
+                    per_file_categories[fname] = categorize_file(
+                        frow.get('relative_path', ''), frow.get('file_name', ''), frow.get('url', '')
+                    )
 
             # de-duplicate lecture-level lists
             seen_kc = set()
@@ -387,13 +474,15 @@ def generate_lecture_summaries(calendar_csv: str = "cs_61a_calendar_with_paths.c
             'cleaned_text': row.get('cleaned_text', ''),
             'original_text': row.get('original_text', row.get('text', '')),
             'url_parts': json.dumps(url_parts, ensure_ascii=False),
-            'matched_file_uuids': json.dumps([m for m in matched_file_ids if m], ensure_ascii=False),
+            # 'matched_file_uuids': json.dumps([m for m in matched_file_ids if m], ensure_ascii=False),
             'matched_file_names': json.dumps([m for m in matched_file_names if m], ensure_ascii=False),
             'slide_files': json.dumps([m for m in slide_file_names if m], ensure_ascii=False),
             'key_concepts': json.dumps(lecture_key_concepts, ensure_ascii=False),
-            'aspects': json.dumps(lecture_aspects, ensure_ascii=False),
+            # 'aspects': json.dumps(lecture_aspects, ensure_ascii=False),
             'file_concepts_map': json.dumps(per_file_concepts, ensure_ascii=False),
-            'file_aspects_map': json.dumps(per_file_aspects, ensure_ascii=False)
+            # 'file_aspects_map': json.dumps(per_file_aspects, ensure_ascii=False),
+            'file_descriptions_map': json.dumps(per_file_descriptions, ensure_ascii=False),
+            # 'file_categories_map': json.dumps(per_file_categories, ensure_ascii=False)
         }
 
         # Optional concise textual summary
@@ -407,180 +496,19 @@ def generate_lecture_summaries(calendar_csv: str = "cs_61a_calendar_with_paths.c
         results.append(summary_row)
 
     out_df = pd.DataFrame(results)
-    out_df.to_csv(output_csv, index=False)
-    print(f"Lecture summaries saved to: {output_csv}")
+    
+    # Create output directory
+    current_script_dir = os.path.dirname(os.path.abspath(__file__))
+    output_dir = os.path.join(current_script_dir, "output")
+    os.makedirs(output_dir, exist_ok=True)
+    
+    final_output_path = os.path.join(output_dir, os.path.basename(output_csv))
+    out_df.to_csv(final_output_path, index=False)
+    print(f"Lecture summaries saved to: {final_output_path}")
     print(f"Total lectures processed: {len(out_df)}")
-    print(f"Lectures with matched files: {(out_df['matched_file_uuids'].apply(lambda s: len(_safe_json_or_literal_load(s) or [])).astype(int) > 0).sum()}")
+    # print(f"Lectures with matched files: {(out_df['matched_file_uuids'].apply(lambda s: len(_safe_json_or_literal_load(s) or [])).astype(int) > 0).sum()}")
     return out_df
 
-def _heuristic_summary(topic: str, key_concepts: list, aspects: list) -> tuple[str, str]:
-    """Generate a simple topic and summary if no API key is available or API fails."""
-    topic_out = topic.strip() if isinstance(topic, str) else ''
-    if not topic_out and key_concepts:
-        topic_out = ', '.join(key_concepts[:3])
-    # Build summary from key_concepts and aspects contents
-    parts = []
-    if key_concepts:
-        parts.append("Key concepts: " + '; '.join(key_concepts[:6]))
-    if aspects:
-        contents = [a.get('content', '') for a in aspects if isinstance(a, dict) and a.get('content')]
-        if contents:
-            parts.append("Aspects: " + ' '.join(contents[:2]))
-    summary_out = ' '.join(parts) if parts else (topic_out or 'Overview unavailable.')
-    return topic_out or 'Topic', summary_out
-
-def generate_openai_lecture_topics_json(summary_csv: str = "cs_61a_lecture_summary.csv",
-                                        out_json: str = "cs_61a_lecture_topic_summaries.json",
-                                        model: str = "gpt-4o-mini"):
-    """Create a JSON mapping of "Lecture X" -> {topic, summary, date} using OpenAI; fallback heuristics if key missing."""
-    if not os.path.exists(summary_csv):
-        print(f"Lecture summary CSV not found: {summary_csv}")
-        return None
-
-    df = pd.read_csv(summary_csv)
-
-    # Parse lists from JSON strings
-    def parse_list(s):
-        v = _safe_json_or_literal_load(s)
-        return v if isinstance(v, list) else []
-
-    df['key_concepts_list'] = df.get('key_concepts', '').apply(parse_list)
-    df['aspects_list'] = df.get('aspects', '').apply(parse_list)
-    df['slide_files_list'] = df.get('slide_files', '').apply(parse_list)
-    # Parse per-file maps
-    def parse_map(s):
-        v = _safe_json_or_literal_load(s)
-        return v if isinstance(v, dict) else {}
-    df['file_concepts_map_dict'] = df.get('file_concepts_map', '').apply(parse_map)
-    df['file_aspects_map_dict'] = df.get('file_aspects_map', '').apply(parse_map)
-
-    # Load API key
-    load_dotenv()
-    api_key = os.getenv("OPENAI_API_KEY")
-    client = None
-    if api_key:
-        try:
-            client = OpenAI(api_key=api_key)
-        except Exception as e:
-            print(f"Warning: failed to init OpenAI client: {e}")
-            client = None
-    else:
-        print("No OPENAI_API_KEY found; using heuristic summaries.")
-
-    results = {}
-    for idx, row in df.iterrows():
-        lecture_key = f"Lecture {idx + 1}"
-        # Remove date from prompt per TODO; still retain for output
-        date = str(row.get('date', '') or '')
-        topic = str(row.get('topic', '') or '')
-        cleaned_text = str(row.get('cleaned_text', '') or '')
-        key_concepts = row.get('key_concepts_list') or []
-        aspects = row.get('aspects_list') or []
-        slide_files = row.get('slide_files_list') or []
-        file_concepts_map = row.get('file_concepts_map_dict') or {}
-        file_aspects_map = row.get('file_aspects_map_dict') or {}
-
-        # Prioritize slide files ordering in maps (place their entries first) for prompt clarity
-        ordered_file_concepts = {}
-        ordered_file_aspects = {}
-        slide_set = set(slide_files)
-        # Slides first
-        for sf in slide_files:
-            if sf in file_concepts_map:
-                ordered_file_concepts[sf] = file_concepts_map.get(sf, [])
-            if sf in file_aspects_map:
-                ordered_file_aspects[sf] = file_aspects_map.get(sf, [])
-        # Then others
-        for fname, concepts_list in file_concepts_map.items():
-            if fname not in ordered_file_concepts:
-                ordered_file_concepts[fname] = concepts_list
-        for fname, aspects_list in file_aspects_map.items():
-            if fname not in ordered_file_aspects:
-                ordered_file_aspects[fname] = aspects_list
-
-        out_topic = ''
-        out_summary = ''
-
-        if client is not None:
-            # New structured prompt using per-file maps; date removed per TODO.
-            prompt = (
-                "Summarize a CS 61A lecture using grouped key concepts and aspects.\n"
-                "Input provides per-file extracted concepts; prioritize PDF slide files first.\n"
-                "Return ONLY strict JSON: {\"topic\": <short title>, \"summary\": <2-4 sentences>}. No Markdown, no prose outside JSON.\n\n"
-                f"Existing topic hint (may be empty): {topic}\n"
-                "Per-file key concepts (slide files first):\n"
-                f"{json.dumps(ordered_file_concepts, ensure_ascii=False)}\n"
-                "Per-file aspects (content strings, slide files first):\n"
-                f"{json.dumps(ordered_file_aspects, ensure_ascii=False)}\n"
-                "Aggregated concepts (fallback):\n"
-                f"{json.dumps(key_concepts[:30], ensure_ascii=False)}\n"
-                "Optional context snippet (truncated):\n"
-                f"{cleaned_text[:300]}\n\n"
-                "Rules:\n"
-                "- Ignore date; derive topic from conceptual focus.\n"
-                "- Prefer slide file concepts if present.\n"
-                "- topic: 3-8 words, no quotes, no punctuation at end.\n"
-                "- summary: 2-4 sentences; emphasize central ideas and progression.\n"
-                "- Avoid mentioning file names directly.\n"
-            )
-            try:
-                resp = client.chat.completions.create(
-                    model=model,
-                    messages=[
-                        {"role": "system", "content": "Output ONLY JSON: {\"topic\":\"...\",\"summary\":\"...\"}. Ensure double quotes. No extra text."},
-                        {"role": "user", "content": prompt},
-                    ],
-                    temperature=0.3,
-                    max_tokens=220,
-                )
-                content = (resp.choices[0].message.content or '').strip()
-                # Try direct JSON parse; if fails, attempt to strip code fences
-                try:
-                    parsed = json.loads(content)
-                except Exception:
-                    import re as _re
-                    # Strip code fences if present
-                    if content.startswith("```"):
-                        content = _re.sub(r"^```[a-zA-Z]*\n|```$", "", content).strip()
-                    # Extract a JSON-looking object
-                    m = _re.search(r"\{[\s\S]*\}", content)
-                    raw_obj = m.group(0) if m else content
-                    # Try json first
-                    try:
-                        parsed = json.loads(raw_obj)
-                    except Exception:
-                        # Try Python literal (handles single quotes)
-                        try:
-                            import ast as _ast
-                            parsed = _ast.literal_eval(raw_obj)
-                            if not isinstance(parsed, dict):
-                                parsed = {}
-                        except Exception:
-                            # Last resort: naive single->double quote replacement
-                            raw_fixed = raw_obj.replace("'", '"')
-                            try:
-                                parsed = json.loads(raw_fixed)
-                            except Exception:
-                                parsed = {}
-
-                out_topic = str(parsed.get('topic', '')).strip()
-                out_summary = str(parsed.get('summary', '')).strip()
-            except Exception as e:
-                print(f"OpenAI call failed for {lecture_key}: {e}")
-
-        if not out_topic or not out_summary:
-            out_topic, out_summary = _heuristic_summary(topic, key_concepts, aspects)
-
-        results[lecture_key] = {
-            "date": date,  # retained for downstream uses
-            "topic": out_topic,
-            "summary": out_summary,
-        }
-
-    with open(out_json, 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f"Lecture topic summaries saved to: {out_json}")
-    return results
 
 def process_calendar_with_urls(input_csv, output_csv):
     """Process the calendar CSV and extract URL paths"""
@@ -636,9 +564,15 @@ def process_calendar_with_urls(input_csv, output_csv):
         print(f"Topic: '{result_df.iloc[0]['topic']}'")
         print(f"URL Paths: '{result_df.iloc[0]['url_paths']}'")
     
+    # Create output directory
+    current_script_dir = os.path.dirname(os.path.abspath(__file__))
+    output_dir = os.path.join(current_script_dir, "output")
+    os.makedirs(output_dir, exist_ok=True)
+    
     # Save to CSV
-    result_df.to_csv(output_csv, index=False)
-    print(f"\nProcessed data saved to: {output_csv}")
+    final_output_path = os.path.join(output_dir, os.path.basename(output_csv))
+    result_df.to_csv(final_output_path, index=False)
+    print(f"\nProcessed data saved to: {final_output_path}")
     
     # Show summary statistics
     print(f"\nSummary:")
@@ -681,115 +615,6 @@ def show_url_extraction_examples(input_csv, num_examples=3):
 
 
 
-def test_openai_api():
-    """Test OpenAI API connection and functionality"""
-    
-    # Load environment variables from .env file
-    load_dotenv()
-    
-    # Get API key from environment
-    api_key = os.getenv("OPENAI_API_KEY")
-    
-    if not api_key:
-        print("ERROR: OPENAI_API_KEY not found in environment variables")
-        print("Please create a .env file with: OPENAI_API_KEY=your_key_here")
-        return False
-    
-    print(f"API Key found: {api_key[:10]}...{api_key[-4:]}")  # Show partial key for verification
-    
-    # Initialize OpenAI client
-    try:
-        client = OpenAI(api_key=api_key)
-        print("OpenAI client initialized successfully")
-    except Exception as e:
-        print(f"ERROR initializing OpenAI client: {e}")
-        return False
-    
-    # Test 1: Simple completion
-    print("\n" + "="*50)
-    print("TEST 1: Simple Chat Completion")
-    print("="*50)
-    
-    try:
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {"role": "system", "content": "You are a helpful assistant."},
-                {"role": "user", "content": "Say hello and tell me what 2+2 equals."}
-            ],
-            temperature=0.7,
-            max_tokens=100
-        )
-        
-        print("SUCCESS: API call completed")
-        print(f"Model used: {response.model}")
-        print(f"Response: {response.choices[0].message.content}")
-        print(f"Tokens used: {response.usage.total_tokens}")
-        
-    except Exception as e:
-        print(f"ERROR in API call: {e}")
-        return False
-    
-    # Test 2: File categorization (similar to your use case)
-    print("\n" + "="*50)
-    print("TEST 2: File Categorization Test")
-    print("="*50)
-    
-    test_files = [
-        {"name": "lec01.pdf", "path": "lectures/lec01.pdf", "url": "course.com/lec01"},
-        {"name": "hw01.py", "path": "homework/hw01.py", "url": "course.com/hw01"},
-        {"name": "syllabus.html", "path": "admin/syllabus.html", "url": "course.com/syllabus"}
-    ]
-    
-    for file_info in test_files:
-        try:
-            prompt = f"""
-Categorize this CS 61A file into exactly one category: Lecture, Practice, or Support
-
-File name: {file_info['name']}
-Path: {file_info['path']}
-URL: {file_info['url']}
-
-Return only one word: Lecture, Practice, or Support
-"""
-            
-            response = client.chat.completions.create(
-                model="gpt-4o-mini",
-                messages=[
-                    {"role": "system", "content": "You are a file categorizer. Return only one word."},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.1,
-                max_tokens=10
-            )
-            
-            category = response.choices[0].message.content.strip()
-            print(f"File: {file_info['name']} -> Category: {category}")
-            
-        except Exception as e:
-            print(f"ERROR categorizing {file_info['name']}: {e}")
-    
-    # Test 3: List available models
-    print("\n" + "="*50)
-    print("TEST 3: Available Models")
-    print("="*50)
-    
-    try:
-        models = client.models.list()
-        gpt_models = [model.id for model in models.data if 'gpt' in model.id.lower()]
-        print("Available GPT models:")
-        for model in sorted(gpt_models)[:10]:  # Show first 10
-            print(f"  - {model}")
-        if len(gpt_models) > 10:
-            print(f"  ... and {len(gpt_models) - 10} more")
-            
-    except Exception as e:
-        print(f"ERROR listing models: {e}")
-    
-    print("\n" + "="*50)
-    print("API TEST COMPLETED SUCCESSFULLY!")
-    print("="*50)
-    return True
 
 def clean_calendar_text(text):
     """Clean calendar text by removing URLs and formatting"""
@@ -814,16 +639,6 @@ def clean_calendar_text(text):
     
     return text
 
-def test_api():
-    
-    # Test the API
-    success = test_openai_api()
-    
-    if success:
-        print("\nYour OpenAI API is working correctly!")
-        print("You can now use it in your file categorization script.")
-    else:
-        print("\nAPI test failed. Please check your API key and try again.")
 
 def main():
     """Main function to process calendar chunks CSV with URL extraction"""
@@ -863,14 +678,8 @@ def main():
         # After producing calendar with URL paths, generate lecture summaries by linking to cs61a_files.csv
         cal_with_paths = output_csv if os.path.exists(output_csv) else input_csv
         files_csv_path = "../../cs61a_files.csv"
-        print("\nGenerating lecture summaries by aggregating key concepts and aspects from associated files...")
+        print("\nGenerating lecture summaries info by aggregating key concepts and aspects from associated files...")
         generate_lecture_summaries(calendar_csv=cal_with_paths, files_csv=files_csv_path, output_csv=lecture_output)
-
-    # Generate OpenAI summaries JSON from the lecture summary CSV
-    print("\nGenerating OpenAI-based lecture topic summaries (with heuristic fallback if no API key)...")
-    generate_openai_lecture_topics_json(summary_csv=lecture_output,
-                        out_json="cs_61a_lecture_topic_summaries.json",
-                        model="gpt-4o-mini")
 
 if __name__ == "__main__":
     #test_api()

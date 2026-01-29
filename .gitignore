@@ -141,3 +141,7 @@ cython_debug/
 cs61a_metadata.db
 metadata.db
 .gitignore
+metadata_old.db
+.gitignore
+cs61a_metadata_old.db
+.gitignore

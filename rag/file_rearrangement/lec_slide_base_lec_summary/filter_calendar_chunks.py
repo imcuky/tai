@@ -1,3 +1,7 @@
+# Calendar Chunks Filter Script
+# This script connects to a metadata.db SQLite database, analyzes the calendar table get lecture materials,
+# filters chunks related to calendar files for a specific course, and extracts their text content.
+
 import sqlite3
 import pandas as pd
 import os
@@ -11,7 +15,8 @@ def find_metadata_db():
         "../../ai_chatbot_backend/metadata.db",           # tai/ai_chatbot_backend/metadata.db
         "../../ai_chatbot_backend/data/metadata.db",      # tai/ai_chatbot_backend/data/metadata.db
         "../../../metadata.db",                           # in case of different structure
-        "metadata.db"                                      # current directory
+        # "metadata.db",                                    # current directory
+        "cs61a_metadata.db"                               # specific file name
     ]
     
     print("Searching for metadata.db...")
@@ -77,7 +82,7 @@ def filter_calendar_chunks(db_path, course_code, output_csv=None):
     try:
         # SQL query to filter Calendar chunks for specific course
         query = """
-        SELECT text,title,url,file_path,reference_path,course_name,course_code,chunk_index
+        SELECT chunk_uuid, text,title,url,file_path,reference_path,course_name,course_code,chunk_index
         FROM chunks
         WHERE course_code = ? 
         AND reference_path LIKE '%> Calendar%'
@@ -111,8 +116,14 @@ def filter_calendar_chunks(db_path, course_code, output_csv=None):
         df.drop('vector', axis=1, inplace=True, errors='ignore')  # Drop vector column if exists
         # Save to CSV if specified
         if output_csv:
-            df.to_csv(output_csv, index=False)
-            print(f"\nSaved to: {output_csv}")
+            # Create output directory
+            current_script_dir = os.path.dirname(os.path.abspath(__file__))
+            output_dir = os.path.join(current_script_dir, "output")
+            os.makedirs(output_dir, exist_ok=True)
+            
+            final_output_path = os.path.join(output_dir, os.path.basename(output_csv))
+            df.to_csv(final_output_path, index=False)
+            print(f"\nSaved to: {final_output_path}")
         
         return df
         

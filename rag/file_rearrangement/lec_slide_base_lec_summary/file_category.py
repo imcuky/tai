@@ -259,9 +259,15 @@ def main():
     # Analyze results
     analyze_categorization_results(result_df)
     
+    # Create output directory
+    current_script_dir = os.path.dirname(os.path.abspath(__file__))
+    output_dir = os.path.join(current_script_dir, "output")
+    os.makedirs(output_dir, exist_ok=True)
+    
     # Save results
-    result_df.to_csv(args.output, index=False)
-    print(f"\nSUCCESS: Results saved to: {args.output}")
+    final_output_path = os.path.join(output_dir, os.path.basename(args.output))
+    result_df.to_csv(final_output_path, index=False)
+    print(f"\nSUCCESS: Results saved to: {final_output_path}")
     
     print(f"\nOutput format:")
     print("uuid,file_name,category")
