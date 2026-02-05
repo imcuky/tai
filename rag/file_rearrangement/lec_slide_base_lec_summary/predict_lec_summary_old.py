@@ -12,7 +12,6 @@ from pydantic import BaseModel
 class LecturePrediction(BaseModel):
     """Structured output model for lecture predictions."""
     lecture_number: int
-    # confidence: str = "medium"  
     reason: str = ""  # Optional: explanation for the prediction
 
 
@@ -117,8 +116,13 @@ def load_eval_files(db_path: str = "cs61a_metadata.db") -> pd.DataFrame:
 	return df
 
 
-def load_lecture_topics_json(json_path: str = "cs_61a_lecture_topic_summaries.json") -> pd.DataFrame | None:
+def load_lecture_topics_json(json_path: str = "output/cs_61a_lecture_topic_summaries.json") -> pd.DataFrame | None:
 	"""Load generated lecture topics JSON. Returns DataFrame with lecture_number, topic_generated, summary_generated, date."""
+	# Resolve path relative to script dir if needed
+	if not os.path.exists(json_path):
+		script_dir = os.path.dirname(os.path.abspath(__file__))
+		json_path = os.path.join(script_dir, "output", "cs_61a_lecture_topic_summaries.json")
+	
 	if not os.path.exists(json_path):
 		return None
 	try:
@@ -145,19 +149,28 @@ def load_lecture_topics_json(json_path: str = "cs_61a_lecture_topic_summaries.js
 		return None
 
 
-def load_lecture_summaries(csv_path_main: str = "cs_61a_lecture_summary.csv",
-						   json_topics_path: str = "cs_61a_lecture_topic_summaries.json") -> pd.DataFrame:
+def load_lecture_summaries(csv_path_main: str = "output/cs_61a_lecture_summary.csv",
+						   json_topics_path: str = "output/cs_61a_lecture_topic_summaries.json") -> pd.DataFrame:
+	# Resolve paths relative to script dir if needed
+	if not os.path.exists(csv_path_main):
+		script_dir = os.path.dirname(os.path.abspath(__file__))
+		csv_path_main = os.path.join(script_dir, "output", os.path.basename(csv_path_main))
+
 	# Prefer main; fall back to _alt if needed
 	path = csv_path_main
 	alt = os.path.splitext(csv_path_main)[0] + "_alt.csv"
 	if not os.path.exists(path) and os.path.exists(alt):
 		path = alt
+	
 	topics_df = load_lecture_topics_json(json_topics_path)
 
 	if not os.path.exists(path):
 		# If CSV missing, try to build from JSON topics only
 		if topics_df is None:
-			raise FileNotFoundError(f"Lecture summary CSV not found: {csv_path_main} (or {alt}) and topics JSON missing: {json_topics_path}")
+			print(f"Warning: Summary CSV not found at {path} and JSON topics missing.")
+			# Return empty structure as last resort mechanism
+			return pd.DataFrame(columns=['lecture_number', 'key_concepts_list', 'aspects_list', 'slide_files_list'])
+		
 		df = topics_df.copy()
 		# Create empty placeholders for lists used downstream
 		df['key_concepts_list'] = [[] for _ in range(len(df))]
@@ -259,8 +272,6 @@ def load_groundtruth_json(gt_path: str = "groundtruth_youtube_only.json") -> dic
 		return {}
 
 	file_to_lecture: dict[str, int] = {}
-	# Also build file basename -> category label (e.g., "Mutability (Su25)")
-	file_to_category: dict[str, str] = {}
 	lec_key_pattern = re.compile(r'lec(\d+)', re.IGNORECASE)
 	for lec_key, nested in data.items():
 		m = lec_key_pattern.search(lec_key)
@@ -282,32 +293,16 @@ def load_groundtruth_json(gt_path: str = "groundtruth_youtube_only.json") -> dic
 				simple = re.sub(r'(\.json\.txt|_metadata\.yaml\.txt|\.txt|\.json)$', '', base)
 				if simple and simple not in file_to_lecture:
 					file_to_lecture[simple] = lec_num
-				# Derive category label from the path: segment after 'youtubeXX'
-				try:
-					parts = re.split(r"[\\/]+", path)
-					# find index of a segment like 'youtube10'
-					yt_idx = next((i for i, p in enumerate(parts) if re.match(r"youtube\d+", p, re.IGNORECASE)), None)
-					if yt_idx is not None and yt_idx + 1 < len(parts):
-						cat_label = parts[yt_idx + 1]
-						if base and base not in file_to_category:
-							file_to_category[base] = cat_label
-						if simple and simple not in file_to_category:
-							file_to_category[simple] = cat_label
-				except Exception:
-					pass
-	# Return both maps via a combined dict for backward compatibility: attach under special key '__categories__'
-	file_to_lecture['__categories__'] = file_to_category
 	return file_to_lecture
 
 
-def derive_gt_from_file_path(file_path: str) -> tuple[int | None, str | None]:
-	"""Derive numeric lecture and category label from a canonical file_path like
+def derive_gt_from_file_path(file_path: str) -> int | None:
+	"""Derive numeric lecture from a canonical file_path like
 	'CS 61A/study/lecture/lec03/youtube03/Control/1-Multiple Environments.webm'.
-	Returns (lecture_number, category_label) where lecture_number is int or None
-	and category_label is a string (e.g., 'Control') or None.
+	Returns lecture_number or None.
 	"""
 	if not file_path or not isinstance(file_path, str):
-		return None, None
+		return None
 	parts = re.split(r"[\\/]+", file_path)
 	parts_clean = [p for p in parts if p]
 	# lecture number
@@ -320,44 +315,7 @@ def derive_gt_from_file_path(file_path: str) -> tuple[int | None, str | None]:
 				break
 			except Exception:
 				pass
-	# category label: segment after youtubeXX
-	cat_label = None
-	for i, p in enumerate(parts_clean):
-		if re.match(r"youtube\d+", p, flags=re.IGNORECASE):
-			if i + 1 < len(parts_clean):
-				cat_label = parts_clean[i + 1]
-			break
-	return lec_num, cat_label
-
-
-def _normalize_label(s: str) -> set[str]:
-    if not s:
-        return set()
-    t = s.lower()
-    # Remove term/session annotations like (Su25), (Fa24), years
-    t = re.sub(r"\([^\)]*\)", " ", t)
-    t = re.sub(r"\b(su|fa|sp|wi)\d{2}\b", " ", t)
-    t = re.sub(r"\d{4}", " ", t)
-    t = re.sub(r"[^a-z0-9]+", " ", t)
-    tokens = [w for w in t.split() if w and w not in {"cs", "61a", "lecture", "and", "the", "of", "in", "for"}]
-    return set(tokens)
-
-
-def _category_match(gt_label: str, topic: str) -> bool:
-    gt_tokens = _normalize_label(gt_label)
-    topic_tokens = _normalize_label(topic)
-    if not gt_tokens or not topic_tokens:
-        return False
-    # Consider match if there is at least one meaningful token overlap
-    return len(gt_tokens & topic_tokens) > 0
-
-
-def _topic_for_lecture(lectures_df: pd.DataFrame, number: int) -> str:
-    try:
-        row = lectures_df.loc[lectures_df['lecture_number'] == number].iloc[0]
-    except Exception:
-        return ""
-    return (row.get('topic_generated') or row.get('topic') or "")
+	return lec_num
 
 
 def jaccard_similarity(a: set, b: set) -> float:
@@ -528,13 +486,12 @@ def main(max_files=None):
 		videos_df = videos_df.head(max_files)
 		print(f"\nLimited to first {len(videos_df)} files out of {original_count} for testing.")
 	
-	lectures_df = load_lecture_summaries("cs_61a_lecture_summary.csv")
+
+	# Load from output directory (defaults handled in function)
+	lectures_df = load_lecture_summaries()
+	
 	gt_calendar_map = extract_calendar_video_map("cs_61a_calendar_with_paths.csv")  # legacy
 	gt_file_map = load_groundtruth_json("groundtruth_youtube_only.json")
-	# Extract category mapping embedded under special key
-	gt_category_map = {}
-	if '__categories__' in gt_file_map:
-		gt_category_map = gt_file_map.pop('__categories__') or {}
 
 	# Prepare LLM client
 	load_dotenv()
@@ -579,7 +536,7 @@ def main(max_files=None):
 
 		# Ground truth from file_path (primary)
 		file_path = v.get('relative_path', '')
-		gt_path_num, gt_path_category = derive_gt_from_file_path(file_path)
+		gt_path_num = derive_gt_from_file_path(file_path)
 
 		# Legacy JSON/name-based ground truth (fallback for numeric)
 		gt_json_num = None
@@ -596,14 +553,6 @@ def main(max_files=None):
 				if m:
 					gt_json_num = int(m.group(1))
 
-		# Ground truth category label from file_path (primary), fallback to JSON map
-		gt_category = gt_path_category
-		if not gt_category:
-			if file_name_lower in gt_category_map:
-				gt_category = gt_category_map[file_name_lower]
-			elif simplified in gt_category_map:
-				gt_category = gt_category_map[simplified]
-
 		# Legacy calendar ground truth for reference (video id)
 		video_id = extract_video_id(vid_meta['url'])
 		gt_calendar_num = gt_calendar_map.get(video_id)
@@ -615,12 +564,6 @@ def main(max_files=None):
 			)
 		)
 
-		# Compute category-aware correctness using predicted lecture topic
-		pred_topic = _topic_for_lecture(lectures_df, pred_num) if pred_num else ""
-		base_topic = _topic_for_lecture(lectures_df, base_num) if base_num else ""
-		pred_cat_match = _category_match(gt_category or "", pred_topic)
-		base_cat_match = _category_match(gt_category or "", base_topic)
-		
 		# Progress indicator
 		safe_name = file_name.encode('ascii', errors='replace').decode('ascii')
 		status = "[+]" if pred_num else "[X]"
@@ -635,9 +578,7 @@ def main(max_files=None):
 			"ground_truth_lecture_json": gt_json_num if gt_json_num is not None else '',
 			"ground_truth_lecture_calendar": gt_calendar_num if gt_calendar_num is not None else '',
 			"ground_truth_lecture": authoritative_gt if authoritative_gt is not None else '',
-			"ground_truth_category": gt_category or '',
-			"pred_topic": pred_topic,
-			"pred_correct": (authoritative_gt is not None and pred_num == authoritative_gt) or pred_cat_match
+			"pred_correct": (authoritative_gt is not None and pred_num == authoritative_gt)
 		})
 
 	out_df = pd.DataFrame(results)
@@ -677,11 +618,4 @@ def print_summary_stats_df(out_df: pd.DataFrame):
 	print(f"Total videos: {total}")
 	print(f"With numeric GT (filtered): {with_gt}")
 	if with_gt:
-		print(f"OpenAI acc (category-aware): {pred_correct_any}/{with_gt} ({(pred_correct_any/with_gt)*100:.1f}%)")
-		
-	
-if __name__ == "__main__":
-	# For testing: limit to 50 files. Remove max_files parameter or set to None for all files.
-	main(max_files=100)
-
-
+		print(f"Accuracy (exact match to GT): {pred_correct_any}/{with_gt} = {pred_correct_any / with_gt:.2%}")

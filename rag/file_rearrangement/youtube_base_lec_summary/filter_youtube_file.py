@@ -48,9 +48,9 @@ def filter_youtube_files(db_path="cs61a_metadata.db", output_csv="cs61a_youtube_
     
     try:
         # Filter records where "relative_path" contains "youtube"
-        # Also check url field to catch any youtube content
+        # Only keep requested columns: "sections", "relative_path", "file_name", "description", "url"
         query = """
-            SELECT * FROM file 
+            SELECT file_name, relative_path, description, sections, url FROM file 
             WHERE lower(relative_path) LIKE '%youtube%' 
                OR lower(url) LIKE '%youtube%'
                OR lower(url) LIKE '%youtu.be%'

@@ -13,8 +13,8 @@ from urllib.parse import urlparse
 
 class LectureSummary(BaseModel):
     """Structured output model for lecture summaries."""
-    topic: str
-    summary: str
+    lecture_topic: str
+    lecture_summary: str
 
 def extract_url_paths(text):
     """Extract the last part of all URLs found in the text"""
@@ -96,13 +96,6 @@ def generate_openai_lecture_topics_json(summary_csv: str = "cs_61a_lecture_summa
 
     df = pd.read_csv(summary_csv)
 
-
-    # Parse per-file maps
-    def parse_map(s):
-        v = _safe_json_or_literal_load(s)
-        return v if isinstance(v, dict) else {}
-
-
     # Load API key
     load_dotenv()
     api_key = os.getenv("OPENAI_API_KEY")
@@ -118,33 +111,32 @@ def generate_openai_lecture_topics_json(summary_csv: str = "cs_61a_lecture_summa
 
     results = {}
     for idx, row in df.iterrows():
-        lecture_key = f"Lecture {idx + 1}"
+        
         # Remove date from prompt per TODO; still retain for output
-        date = str(row.get('date', '') or '')
+        # date = str(row.get('date', '') or '')
+        lecnum_key = str(row.get('lecture_number', '') or '')
+        lecture_key = f"Lecture {lecnum_key}" if lecnum_key else f"Lecture_{idx+1}"
         topic = str(row.get('topic', '') or '')
         file_concepts_map = row.get('file_concepts_map') or {}
         file_descriptions_map = row.get('file_descriptions_map') or {}
-
-
-    
         out_topic = ''
         out_summary = ''
 
         if client is not None:
             # Use structured output with Pydantic model
             prompt = (
-                "Summarize a CS 61A lecture using grouped key concepts and aspects.\n\n"
-                f"Lecture topic hint: {topic}\n\n"
-                "Per-file Aggregated Concepts (key concepts and aspects):\n"
+                "Summarize a CS course lecture using grouped key concepts and aspects.\n\n"
+                f"Lecture topic hint from slides: {topic}\n\n"
+                "Per-file Aggregated Concepts (key concepts and aspects, key concepts contains knowledge aspects topic thats cover inside this lecture):\n"
                 f"{json.dumps(file_concepts_map, ensure_ascii=False, indent=2)}\n\n"
                 "Per-file Descriptions (what is each file about):\n"
                 f"{json.dumps(file_descriptions_map, ensure_ascii=False, indent=2)}\n\n"
-                "Rules:\n"
-                "- topic: 3-8 words describing the lecture's main focus.\n"
-                "- summary: 2-4 sentences; emphasize central ideas and conceptual progression.\n"
-                "- Avoid mentioning file names directly.\n"
-                "- Consider whether the file content matches the lecture topic.\n"
-                "- Focus on the educational concepts being taught.\n"
+                # "Rules:\n"
+                # "- lecture_topic: 3-8 words describing the lecture's main focus.\n"
+                # "- lecture_summary: 2-4 sentences; emphasize central ideas and conceptual progression.\n"
+                # "- Avoid mentioning file names directly.\n"
+                # "- Consider whether the file content matches the lecture topic.\n"
+                # "- Focus on the educational concepts being taught.\n"
             )
             
             try:
@@ -154,7 +146,7 @@ def generate_openai_lecture_topics_json(summary_csv: str = "cs_61a_lecture_summa
                     messages=[
                         {
                             "role": "system", 
-                            "content": "You are a helpful assistant that summarizes CS course lectures."
+                            "content": "You are a helpful assistant that summarizes CS course lectures. Emphasize central ideas and conceptual progression. Focus on the educational concepts being taught. Keep the lecture summary extremely concise (max 2-3 sentences)."
                         },
                         {
                             "role": "user", 
@@ -162,15 +154,18 @@ def generate_openai_lecture_topics_json(summary_csv: str = "cs_61a_lecture_summa
                         },
                     ],
                     response_format=LectureSummary,
-                    temperature=0.3,
-                    max_tokens=300,
+                    # temperature=0.2, 
+                    max_completion_tokens=2000, # Increased to allow for reasoning tokens + output
                 )
                 
                 parsed_response = completion.choices[0].message.parsed
                 if parsed_response:
-                    out_topic = parsed_response.topic.strip()
-                    out_summary = parsed_response.summary.strip()
-                    print(f"[+] {lecture_key}: {out_topic}")
+                    out_topic = parsed_response.lecture_topic.strip()
+                    out_summary = parsed_response.lecture_summary.strip()
+                    try:
+                        print(f"[+] {lecture_key}: {out_topic}")
+                    except UnicodeEncodeError:
+                        print(f"[+] {lecture_key}: {out_topic.encode('ascii', 'replace').decode('ascii')}")
                 else:
                     print(f"[!] {lecture_key}: Structured output parsing failed/refused")
                     # Fallback to original topic
@@ -179,12 +174,13 @@ def generate_openai_lecture_topics_json(summary_csv: str = "cs_61a_lecture_summa
             except Exception as e:
                 print(f"[X] {lecture_key}: OpenAI call failed - {e}")
                 # Fallback to original topic
-                out_topic = topic
+                break
+                
 
         results[lecture_key] = {
-            "date": date,  # retained for downstream uses
-            "topic": out_topic,
-            "summary": out_summary,
+            # "date": date,  # retained for downstream uses
+            "lecture_topic": out_topic,
+            "lecture_summary": out_summary,
         }
 
     # Create output directory
@@ -236,7 +232,7 @@ def test_openai_api():
     
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5-mini-2025-08-07",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": "Say hello and tell me what 2+2 equals."}
@@ -278,7 +274,7 @@ Return only one word: Lecture, Practice, or Support
 """
             
             response = client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-5-mini-2025-08-07",
                 messages=[
                     {"role": "system", "content": "You are a file categorizer. Return only one word."},
                     {"role": "user", "content": prompt}
@@ -349,15 +345,15 @@ def test_api():
     else:
         print("\nAPI test failed. Please check your API key and try again.")
 
-def main():
-    """Main function to process calendar chunks CSV with URL extraction"""
+
     
-    
-    lecture_output = "cs_61a_lecture_summary.csv"
-    generate_openai_lecture_topics_json(summary_csv=lecture_output,
-                        out_json="cs_61a_lecture_topic_summaries.json",
-                        model="gpt-4o-mini")
 
 if __name__ == "__main__":
     #test_api()
-    main()
+    # Use the CSV from the output folder
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    lecture_output = os.path.join(current_dir, "output", "cs_61a_lecture_summary.csv")
+    
+    generate_openai_lecture_topics_json(summary_csv=lecture_output,
+                        out_json="cs_61a_lecture_topic_summaries.json",
+                        model="gpt-5-mini")

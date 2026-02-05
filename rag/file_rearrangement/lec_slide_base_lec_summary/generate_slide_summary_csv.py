@@ -36,14 +36,37 @@ def _safe_json_or_literal_load(s):
 
 
 def extract_lecture_number(path):
-    """Extract lecture number from path like 'slides01' or 'lec01'"""
+    """Extract lecture number from path like 'slides01', 'lec01', 'lecture/lec01/textbook' or 'disc01'"""
     if pd.isna(path):
         return None
-    # Match patterns like slides01, slides1, lec01, lec1
-    match = re.search(r'(?:slides|lec)0*(\d+)', str(path), re.IGNORECASE)
+    # Match patterns like slides01, slides1, lec01, lec1, lecture/lec01/textbook, disc01
+    match = re.search(r'(?:slides|lec|disc)0*(\d+)', str(path), re.IGNORECASE)
     if match:
         return int(match.group(1))
     return None
+
+
+def is_slide_file(path):
+    """Check if path is a slide PDF file"""
+    if pd.isna(path):
+        return False
+    path_lower = str(path).lower()
+    return 'slides' in path_lower and '.pdf' in path_lower
+
+def get_file_type(path):
+    """Classify file type based on path for prioritization (slides > textbook > youtube)"""
+    if pd.isna(path): 
+        return 'other'
+    path_lower = str(path).lower()
+    
+    if 'slides' in path_lower and '.pdf' in path_lower:
+        return 'slide'
+    elif 'textbook' in path_lower:
+        return 'textbook'
+    elif 'youtube' in path_lower:
+        return 'youtube'
+    return 'other'
+
 
 
 def parse_sections_key_concepts(sections_raw):
@@ -106,34 +129,40 @@ def generate_slide_lecture_summary(
     conn = sqlite3.connect(db_path)
     
     try:
-        # Filter slide files
-        
-        # Filter slide files - Check relative_path for 'slides' and '.pdf'
+        # Filter files: Slides, Textbook, YouTube, and fallback to any lecture file
+        # Prioritization: Slides > Textbook > YouTube > Other (Discussion/Misc)
         query = """
             SELECT file_name, relative_path, sections, description
             FROM file 
-            WHERE lower(relative_path) LIKE '%slides%pdf'
+            WHERE lower(relative_path) LIKE '%slides%'
+               OR lower(relative_path) LIKE '%lec%'
+               OR lower(relative_path) LIKE '%youtube%'
+               OR lower(relative_path) LIKE '%disc%'
         """
         
         try:
             df = pd.read_sql_query(query, conn)
         except Exception:
-            # Fallback if file_path exists but wasn't in first attempt or other schema difference
-            # Trying to include file_path if possible
+            # Fallback if specific columns fail
             query = """
                 SELECT * FROM file 
-                WHERE lower(relative_path) LIKE '%slides%pdf'
+                WHERE lower(relative_path) LIKE '%slides%'
+                   OR lower(relative_path) LIKE '%lec%'
+                   OR lower(relative_path) LIKE '%youtube%'
+                   OR lower(relative_path) LIKE '%disc%'
             """
             df = pd.read_sql_query(query, conn)
 
-        print(f"Found {len(df)} slide file records.")
+        print(f"Found {len(df)} candidate records (broad search).")
+
         
         if df.empty:
-            print("No slide files found in database.")
+            print("No matching files found in database.")
             return None
         
         # Extract lecture numbers
         df['lecture_number'] = df['relative_path'].apply(extract_lecture_number)
+        df['file_type'] = df['relative_path'].apply(get_file_type)
         
         # Filter out files without lecture number
         df = df[df['lecture_number'].notna()].copy()
@@ -146,15 +175,43 @@ def generate_slide_lecture_summary(
         # Parse key concepts from sections
         df['key_concepts'] = df['sections'].apply(parse_sections_key_concepts)
         
-        # Group by lecture number and aggregate
+        # Group by lecture number and apply prioritization
         lecture_groups = df.groupby('lecture_number')
         
         lecture_summaries = []
         
         for lec_num, group in lecture_groups:
-            # Aggregate key concepts
+            # Check for availability in priority order
+            slide_files = group[group['file_type'] == 'slide']
+            textbook_files = group[group['file_type'] == 'textbook']
+            youtube_files = group[group['file_type'] == 'youtube']
+            other_files = group[group['file_type'] == 'other']
+            
+            source_group = pd.DataFrame()
+            source_type = "unknown"
+            
+            if not slide_files.empty:
+                source_group = slide_files
+                source_type = "slides"
+            elif not textbook_files.empty:
+                source_group = textbook_files
+                source_type = "textbook"
+            elif not youtube_files.empty:
+                source_group = youtube_files
+                source_type = "youtube"
+            elif not other_files.empty:
+                source_group = other_files
+                source_type = "other/discussion"
+            else:
+                print(f"Lecture {int(lec_num)}: No valid source files found (skipped).")
+                continue
+            
+            print(f"Lecture {int(lec_num)}: Using {source_type} ({len(source_group)} files)")
+            
+            # Aggregate key concepts from the selected source
             all_concepts = []
-            for concepts_list in group['key_concepts']:
+
+            for concepts_list in source_group['key_concepts']:
                 if isinstance(concepts_list, list):
                     all_concepts.extend(concepts_list)
             
@@ -170,7 +227,7 @@ def generate_slide_lecture_summary(
             file_concepts_map = {}
             file_descriptions_map = {}
             
-            for _, row in group.iterrows():
+            for _, row in source_group.iterrows():
                 fname = row['file_name']
                 concepts = row['key_concepts'] if isinstance(row['key_concepts'], list) else []
                 desc = row['description'] if pd.notna(row['description']) else ""
@@ -183,12 +240,10 @@ def generate_slide_lecture_summary(
             # Create lecture summary record
             lecture_summaries.append({
                 'lecture_number': int(lec_num),
-                'date': '',  # Not available from slide files
-                'topic': f'Lecture {int(lec_num)}',  # Placeholder topic
+                'topic': fname,  # Placeholder; actual topic to be filled by LLM
                 'key_concepts': unique_concepts,
                 'file_concepts_map': file_concepts_map,
                 'file_descriptions_map': file_descriptions_map,
-                'slide_files_count': len(group),
             })
         
         # Convert to DataFrame and sort by lecture number
@@ -214,9 +269,8 @@ def generate_slide_lecture_summary(
         for _, row in summary_df.head(3).iterrows():
             lec_num = int(row['lecture_number'])
             concept_count = len(row['key_concepts']) if isinstance(row['key_concepts'], list) else 0
-            file_count = row['slide_files_count']
-            print(f"  Lecture {lec_num}: {file_count} files, {concept_count} key concepts")
-        
+     
+
         return summary_df
         
     except Exception as e:
