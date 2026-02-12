@@ -1,0 +1,1769 @@
+- **study/**
+  - **lecture/**
+    - CS 61A Summer 2025.html
+    - CS 61A Summer 2025.html_metadata.yaml
+    - **assets/**
+      - **pdfs/**
+        - 61a-su24-final-study-guide.pdf
+        - 61a-su24-final-study-guide.pdf_content_list.json
+        - 61a-su24-final-study-guide.pdf_metadata.yaml
+        - 61a-su25-mt-study-guide.pdf
+        - 61a-su25-mt-study-guide.pdf_content_list.json
+        - 61a-su25-mt-study-guide.pdf_metadata.yaml
+      - **slides/**
+        - 01-Welcome_1pp.pdf
+        - 01-Welcome_1pp.pdf_content_list.json
+        - 01-Welcome_1pp.pdf_metadata.yaml
+        - 01.py
+        - 01.py_metadata.yaml
+        - 02-Functions_1pp.pdf
+        - 02-Functions_1pp.pdf_content_list.json
+        - 02-Functions_1pp.pdf_metadata.yaml
+        - 02.py
+        - 02.py_metadata.yaml
+        - 03-Control_1pp.pdf
+        - 03-Control_1pp.pdf_content_list.json
+        - 03-Control_1pp.pdf_metadata.yaml
+        - 03.py
+        - 03.py_metadata.yaml
+        - 04-Higher-Order_Functions_1pp.pdf
+        - 04-Higher-Order_Functions_1pp.pdf_content_list.json
+        - 04-Higher-Order_Functions_1pp.pdf_metadata.yaml
+        - 04.py
+        - 04.py_metadata.yaml
+        - 05-Environments_1pp.pdf
+        - 05-Environments_1pp.pdf_content_list.json
+        - 05-Environments_1pp.pdf_metadata.yaml
+        - 05.py
+        - 05.py_metadata.yaml
+        - 06-Recursion_1pp.pdf
+        - 06-Recursion_1pp.pdf_content_list.json
+        - 06-Recursion_1pp.pdf_metadata.yaml
+        - 06.py
+        - 06.py_metadata.yaml
+        - 07-Tree_Recursion_1pp.pdf
+        - 07-Tree_Recursion_1pp.pdf_content_list.json
+        - 07-Tree_Recursion_1pp.pdf_metadata.yaml
+        - 07.py
+        - 07.py_metadata.yaml
+        - 08-Sequences_and_Containers_1pp.pdf
+        - 08-Sequences_and_Containers_1pp.pdf_content_list.json
+        - 08-Sequences_and_Containers_1pp.pdf_metadata.yaml
+        - 08.py
+        - 08.py_metadata.yaml
+        - 09-Data_Abstraction_and_ADT_Trees_1pp.pdf
+        - 09-Data_Abstraction_and_ADT_Trees_1pp.pdf_content_list.json
+        - 09-Data_Abstraction_and_ADT_Trees_1pp.pdf_metadata.yaml
+        - 09.py
+        - 09.py_metadata.yaml
+        - 10-Mutability_1pp.pdf
+        - 10-Mutability_1pp.pdf_content_list.json
+        - 10-Mutability_1pp.pdf_metadata.yaml
+        - 10.py
+        - 10.py_metadata.yaml
+        - 11-Iterators_and_Generators_1pp.pdf
+        - 11-Iterators_and_Generators_1pp.pdf_content_list.json
+        - 11-Iterators_and_Generators_1pp.pdf_metadata.yaml
+        - 11.py
+        - 11.py_metadata.yaml
+        - 12-Midterm_Review_1pp.pdf
+        - 12-Midterm_Review_1pp.pdf_content_list.json
+        - 12-Midterm_Review_1pp.pdf_metadata.yaml
+        - 12.py
+        - 12.py_metadata.yaml
+        - 13-Objects_and_Attributes_1pp.pdf
+        - 13-Objects_and_Attributes_1pp.pdf_content_list.json
+        - 13-Objects_and_Attributes_1pp.pdf_metadata.yaml
+        - 13.py
+        - 13.py_metadata.yaml
+        - 14-Inheritance_and_String_Representation_1pp.pdf
+        - 14-Inheritance_and_String_Representation_1pp.pdf_content_list.json
+        - 14-Inheritance_and_String_Representation_1pp.pdf_metadata.yaml
+        - 14.py
+        - 14.py_metadata.yaml
+        - 15-Mutable_Trees_1pp.pdf
+        - 15-Mutable_Trees_1pp.pdf_content_list.json
+        - 15-Mutable_Trees_1pp.pdf_metadata.yaml
+        - 15.py
+        - 15.py_metadata.yaml
+        - 16-Linked_Lists_1pp.pdf
+        - 16-Linked_Lists_1pp.pdf_content_list.json
+        - 16-Linked_Lists_1pp.pdf_metadata.yaml
+        - 16.py
+        - 16.py_metadata.yaml
+        - 17-Efficiency_1pp.pdf
+        - 17-Efficiency_1pp.pdf_content_list.json
+        - 17-Efficiency_1pp.pdf_metadata.yaml
+        - 17.ipynb
+        - 17.ipynb_metadata.yaml
+        - 17.py
+        - 17.py_metadata.yaml
+        - 18-Scheme_1pp.pdf
+        - 18-Scheme_1pp.pdf_content_list.json
+        - 18-Scheme_1pp.pdf_metadata.yaml
+        - 18.py
+        - 18.py_metadata.yaml
+        - 18.scm
+        - 18.scm_metadata.yaml
+        - 19-Scheme_Lists_1pp.pdf
+        - 19-Scheme_Lists_1pp.pdf_content_list.json
+        - 19-Scheme_Lists_1pp.pdf_metadata.yaml
+        - 19.scm
+        - 19.scm_metadata.yaml
+        - 20-Interpreters_1pp.pdf
+        - 20-Interpreters_1pp.pdf_content_list.json
+        - 20-Interpreters_1pp.pdf_metadata.yaml
+        - 20.py
+        - 20.py_metadata.yaml
+        - 21-Tail_Calls_1pp.pdf
+        - 21-Tail_Calls_1pp.pdf_content_list.json
+        - 21-Tail_Calls_1pp.pdf_metadata.yaml
+        - 21.py
+        - 21.py_metadata.yaml
+        - 21.scm
+        - 21.scm_metadata.yaml
+        - 22-SQL_and_Tables_1pp.pdf
+        - 22-SQL_and_Tables_1pp.pdf_content_list.json
+        - 22-SQL_and_Tables_1pp.pdf_metadata.yaml
+        - 22.py
+        - 22.py_metadata.yaml
+        - 22.scm
+        - 22.scm_metadata.yaml
+        - 22.sql
+        - 22.sql_metadata.yaml
+        - 23-Aggregation_and_Databases_1pp.pdf
+        - 23-Aggregation_and_Databases_1pp.pdf_content_list.json
+        - 23-Aggregation_and_Databases_1pp.pdf_metadata.yaml
+        - 23.py
+        - 23.py_metadata.yaml
+        - 23.sql
+        - 23.sql_metadata.yaml
+        - 24-CS_Theory_1pp-updated.pdf
+        - 24-CS_Theory_1pp-updated.pdf_content_list.json
+        - 24-CS_Theory_1pp-updated.pdf_metadata.yaml
+    - **disc/**
+      - Discussion 0 CS 61A Summer 2025.html
+      - Discussion 0 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 1 CS 61A Summer 2025.html
+      - Discussion 1 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 10 CS 61A Summer 2025.html
+      - Discussion 10 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 11 CS 61A Summer 2025.html
+      - Discussion 11 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 12 CS 61A Summer 2025.html
+      - Discussion 12 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 2 CS 61A Summer 2025.html
+      - Discussion 2 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 3 CS 61A Summer 2025.html
+      - Discussion 3 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 4 CS 61A Summer 2025.html
+      - Discussion 4 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 5 CS 61A Summer 2025.html
+      - Discussion 5 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 6 CS 61A Summer 2025.html
+      - Discussion 6 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 7 CS 61A Summer 2025.html
+      - Discussion 7 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 8 CS 61A Summer 2025.html
+      - Discussion 8 CS 61A Summer 2025.html_metadata.yaml
+      - Discussion 9 CS 61A Summer 2025.html
+      - Discussion 9 CS 61A Summer 2025.html_metadata.yaml
+      - **disc00/**
+        - disc00.pdf
+        - disc00.pdf_content_list.json
+        - disc00.pdf_metadata.yaml
+      - **disc01/**
+        - disc01.pdf
+        - disc01.pdf_content_list.json
+        - disc01.pdf_metadata.yaml
+      - **disc02/**
+        - disc02.pdf
+        - disc02.pdf_content_list.json
+        - disc02.pdf_metadata.yaml
+      - **disc03/**
+        - disc03.pdf
+        - disc03.pdf_content_list.json
+        - disc03.pdf_metadata.yaml
+      - **disc04/**
+        - disc04.pdf
+        - disc04.pdf_content_list.json
+        - disc04.pdf_metadata.yaml
+      - **disc05/**
+        - disc05.pdf
+        - disc05.pdf_content_list.json
+        - disc05.pdf_metadata.yaml
+      - **disc06/**
+        - disc06.pdf
+        - disc06.pdf_content_list.json
+        - disc06.pdf_metadata.yaml
+      - **disc07/**
+        - disc07.pdf
+        - disc07.pdf_content_list.json
+        - disc07.pdf_metadata.yaml
+      - **disc08/**
+        - disc08.pdf
+        - disc08.pdf_content_list.json
+        - disc08.pdf_metadata.yaml
+      - **disc09/**
+        - disc09.pdf
+        - disc09.pdf_content_list.json
+        - disc09.pdf_metadata.yaml
+      - **disc10/**
+        - disc10.pdf
+        - disc10.pdf_content_list.json
+        - disc10.pdf_metadata.yaml
+      - **disc11/**
+        - disc11.pdf
+        - disc11.pdf_content_list.json
+        - disc11.pdf_metadata.yaml
+      - **disc12/**
+        - disc12.pdf
+        - disc12.pdf_content_list.json
+        - disc12.pdf_metadata.yaml
+      - **sol-disc00/**
+        - disc00.pdf
+        - disc00.pdf_content_list.json
+        - disc00.pdf_metadata.yaml
+      - **sol-disc01/**
+        - disc01.pdf
+        - disc01.pdf_content_list.json
+        - disc01.pdf_metadata.yaml
+      - **sol-disc02/**
+        - disc02.pdf
+        - disc02.pdf_content_list.json
+        - disc02.pdf_metadata.yaml
+      - **sol-disc03/**
+        - disc03.pdf
+        - disc03.pdf_content_list.json
+        - disc03.pdf_metadata.yaml
+      - **sol-disc04/**
+        - disc04.pdf
+        - disc04.pdf_content_list.json
+        - disc04.pdf_metadata.yaml
+      - **sol-disc05/**
+        - disc05.pdf
+        - disc05.pdf_content_list.json
+        - disc05.pdf_metadata.yaml
+      - **sol-disc06/**
+        - disc06.pdf
+        - disc06.pdf_content_list.json
+        - disc06.pdf_metadata.yaml
+      - **sol-disc07/**
+        - disc07.pdf
+        - disc07.pdf_content_list.json
+        - disc07.pdf_metadata.yaml
+      - **sol-disc08/**
+        - disc08.pdf
+        - disc08.pdf_content_list.json
+        - disc08.pdf_metadata.yaml
+      - **sol-disc09/**
+        - disc09.pdf
+        - disc09.pdf_content_list.json
+        - disc09.pdf_metadata.yaml
+      - **sol-disc10/**
+        - disc10.pdf
+        - disc10.pdf_content_list.json
+        - disc10.pdf_metadata.yaml
+    - **study-guide/**
+      - Study Guide Orders of Growth CS 61A Summer 2025.html
+      - Study Guide Orders of Growth CS 61A Summer 2025.html_metadata.yaml
+    - **youtube/**
+      - CS 61A Fall 2015 Final Walkthrough.mkv
+      - CS 61A Fall 2015 Final Walkthrough.mkv_metadata.yaml
+      - CS 61A Spring 2016 Midterm 1 Walkthrough.mkv
+      - CS 61A Spring 2016 Midterm 1 Walkthrough.mkv_metadata.yaml
+      - CS 61A Spring 2016 Midterm 2 Walkthrough.mkv
+      - CS 61A Spring 2016 Midterm 2 Walkthrough.mkv_metadata.yaml
+      - Interleave Digits.mkv
+      - Interleave Digits.mkv.json
+      - Interleave Digits.mkv_metadata.yaml
+      - **61A Fall 2023 Lecture 32/**
+        - 1-Tail Recursion.webm
+        - 1-Tail Recursion.webm.json
+        - 1-Tail Recursion.webm_metadata.yaml
+        - 2-Tail Calls.mkv
+        - 2-Tail Calls.mkv.json
+        - 2-Tail Calls.mkv_metadata.yaml
+        - 3-Tail Recursion Examples.mkv
+        - 3-Tail Recursion Examples.mkv.json
+        - 3-Tail Recursion Examples.mkv_metadata.yaml
+        - 4-Map and Reduce.mkv
+        - 4-Map and Reduce.mkv.json
+        - 4-Map and Reduce.mkv_metadata.yaml
+        - 5-General Computing Machines.mkv
+        - 5-General Computing Machines.mkv.json
+        - 5-General Computing Machines.mkv_metadata.yaml
+      - **Aggregation and Databases (Su25)/**
+        - 1-Aggregation.webm
+        - 1-Aggregation.webm.json
+        - 1-Aggregation.webm_metadata.yaml
+        - 2-Grouping.mkv
+        - 2-Grouping.mkv.json
+        - 2-Grouping.mkv_metadata.yaml
+        - 3-Create Table and Drop Table.mkv
+        - 3-Create Table and Drop Table.mkv.json
+        - 3-Create Table and Drop Table.mkv_metadata.yaml
+        - 4-Modifying Tables.mkv
+        - 4-Modifying Tables.mkv.json
+        - 4-Modifying Tables.mkv_metadata.yaml
+        - 5-Python and SQL.mkv
+        - 5-Python and SQL.mkv.json
+        - 5-Python and SQL.mkv_metadata.yaml
+      - **CS 61A Fall 2016 Midterm 1/**
+        - 1-CS 61A Fall 2016 Midterm 1： Exeggcute - Question 1.mkv
+        - 1-CS 61A Fall 2016 Midterm 1： Exeggcute - Question 1.mkv_metadata.yaml
+        - 2-CS 61A Fall 2016 Midterm 1： Goldeen State - Question 2.mkv
+        - 2-CS 61A Fall 2016 Midterm 1： Goldeen State - Question 2.mkv_metadata.yaml
+        - 3-CS 61A Fall 2016 Midterm 1： Countizard - Question 3a.mkv
+        - 3-CS 61A Fall 2016 Midterm 1： Countizard - Question 3a.mkv_metadata.yaml
+        - 4-CS 61A Fall 2016 Midterm 1： Countizard - Question 3b.mkv
+        - 4-CS 61A Fall 2016 Midterm 1： Countizard - Question 3b.mkv_metadata.yaml
+        - 5-CS 61A Fall 2016 Midterm 1： Caterepeat - Question 4a.mkv
+        - 5-CS 61A Fall 2016 Midterm 1： Caterepeat - Question 4a.mkv_metadata.yaml
+        - 6-CS 61A Fall 2016 Midterm 1： Caterepeat - Question 4b.mkv
+        - 6-CS 61A Fall 2016 Midterm 1： Caterepeat - Question 4b.mkv_metadata.yaml
+        - 7-CS 61A Fall 2016 Midterm 1： Multikarp - Question 5a (Approach 1).mkv
+        - 7-CS 61A Fall 2016 Midterm 1： Multikarp - Question 5a (Approach 1).mkv_metadata.yaml
+        - 8-CS 61A Fall 2016 Midterm 1： Multikarp - Question 5a (Approach 2).mkv
+        - 8-CS 61A Fall 2016 Midterm 1： Multikarp - Question 5a (Approach 2).mkv_metadata.yaml
+        - 9-CS 61A Fall 2016 Midterm 1： Multikarp - Question 5b.mkv
+        - 9-CS 61A Fall 2016 Midterm 1： Multikarp - Question 5b.mkv_metadata.yaml
+      - **CS 61A Fall 2016 Midterm 2/**
+        - 1-CS 61A Fall 2016 Midterm 2： Halloween - Question 1.mkv
+        - 1-CS 61A Fall 2016 Midterm 2： Halloween - Question 1.mkv_metadata.yaml
+      - **CS 61A Fall 2017 Final/**
+        - 1-CS 61A Fall 2017 Final – Question 1 (WWPD).mkv
+        - 1-CS 61A Fall 2017 Final – Question 1 (WWPD).mkv_metadata.yaml
+        - 2-CS 61A Fall 2017 Final – Question 2 (Environment Diagram).mkv
+        - 2-CS 61A Fall 2017 Final – Question 2 (Environment Diagram).mkv_metadata.yaml
+        - 3-CS 61A Fall 2017 Final – Question 3 (Box and Pointer).mkv
+        - 3-CS 61A Fall 2017 Final – Question 3 (Box and Pointer).mkv_metadata.yaml
+        - 4-CS 61A Fall 2017 Final – Question 4 (Pascal's Triangle).mp4
+        - 4-CS 61A Fall 2017 Final – Question 4 (Pascal's Triangle).mp4_metadata.yaml
+        - 5-CS 61A Fall 2017 Final – Question 5a (Level Order Trees).mkv
+        - 5-CS 61A Fall 2017 Final – Question 5a (Level Order Trees).mkv_metadata.yaml
+        - 6-CS 61A Fall 2017 Final – Question 5b (Same Level Order Trees).mkv
+        - 6-CS 61A Fall 2017 Final – Question 5b (Same Level Order Trees).mkv_metadata.yaml
+        - 7-CS 61A Fall 2017 Final – Question 6 (Scheme Simplify).mp4
+        - 7-CS 61A Fall 2017 Final – Question 6 (Scheme Simplify).mp4_metadata.yaml
+        - 8-CS 61A Fall 2017 Final – Question 7 (SQL).mkv
+        - 8-CS 61A Fall 2017 Final – Question 7 (SQL).mkv_metadata.yaml
+      - **CS 61A Fall 2017 Midterm 1/**
+        - 1-CS 61A Fall 2017 Midterm 1： Question 1 - WWPD.mkv
+        - 1-CS 61A Fall 2017 Midterm 1： Question 1 - WWPD.mkv_metadata.yaml
+        - 2-CS 61A Fall 2017 Midterm 1： Question 2 - Environmental Influences.mkv
+        - 2-CS 61A Fall 2017 Midterm 1： Question 2 - Environmental Influences.mkv_metadata.yaml
+        - 3-CS 61A Fall 2017 Midterm 1： Question 3 - Triangulate.mkv
+        - 3-CS 61A Fall 2017 Midterm 1： Question 3 - Triangulate.mkv_metadata.yaml
+        - 4-CS 61A Fall 2017 Midterm 1： Question 4a - collapse.mkv
+        - 4-CS 61A Fall 2017 Midterm 1： Question 4a - collapse.mkv_metadata.yaml
+        - 5-CS 61A Fall 2017 Midterm 1： Question 4b - find_pair.mkv
+        - 5-CS 61A Fall 2017 Midterm 1： Question 4b - find_pair.mkv_metadata.yaml
+        - 6-CS 61A Fall 2017 Midterm 1： Question 5a - confimer.mkv
+        - 6-CS 61A Fall 2017 Midterm 1： Question 5a - confimer.mkv_metadata.yaml
+        - 7-CS 61A Fall 2017 Midterm 1： Question 5b - decode.mkv
+        - 7-CS 61A Fall 2017 Midterm 1： Question 5b - decode.mkv_metadata.yaml
+      - **CS 61A Fall 2017 Midterm 2/**
+        - 1-CS 61A Fall 2017 Midterm 2： Question 1 - WWPD.mkv
+        - 1-CS 61A Fall 2017 Midterm 2： Question 1 - WWPD.mkv_metadata.yaml
+        - 2-CS 61A Fall 2017 Midterm 2： Question 2 - Buy Local.mkv
+        - 2-CS 61A Fall 2017 Midterm 2： Question 2 - Buy Local.mkv_metadata.yaml
+        - 3-CS 61A Fall 2017 Midterm 2： Question 3a & 3b - splice & all_splice.mkv
+        - 3-CS 61A Fall 2017 Midterm 2： Question 3a & 3b - splice & all_splice.mkv_metadata.yaml
+        - 4-CS 61A Fall 2017 Midterm 2： Question 3c - splink.mkv
+        - 4-CS 61A Fall 2017 Midterm 2： Question 3c - splink.mkv_metadata.yaml
+        - 5-CS 61A Fall 2017 Midterm 2： Question 4a - Both Ways.mkv
+        - 5-CS 61A Fall 2017 Midterm 2： Question 4a - Both Ways.mkv_metadata.yaml
+        - 6-CS 61A Fall 2017 Midterm 2： Question 4b - runtime.mkv
+        - 6-CS 61A Fall 2017 Midterm 2： Question 4b - runtime.mkv_metadata.yaml
+        - 7-CS 61A Fall 2017 Midterm 2： Question 4c - ways.mkv
+        - 7-CS 61A Fall 2017 Midterm 2： Question 4c - ways.mkv_metadata.yaml
+        - 8-CS 61A Fall 2017 Midterm 2： Question 5a - pile.mkv
+        - 8-CS 61A Fall 2017 Midterm 2： Question 5a - pile.mkv_metadata.yaml
+        - 9-CS 61A Fall 2017 Midterm 2： Question 5b - path.mkv
+        - 9-CS 61A Fall 2017 Midterm 2： Question 5b - path.mkv_metadata.yaml
+      - **CS 61A Fall 2018 Final/**
+        - 1-CS61A Fall 2018 Final Q1.mkv
+        - 1-CS61A Fall 2018 Final Q1.mkv_metadata.yaml
+        - 10-CS61A Fall 2018 Final Q6.mkv
+        - 10-CS61A Fall 2018 Final Q6.mkv_metadata.yaml
+        - 11-CS61A Fall 2018 Final Q7a.mkv
+        - 11-CS61A Fall 2018 Final Q7a.mkv_metadata.yaml
+        - 12-CS61A Fall 2018 Final Q7b.mkv
+        - 12-CS61A Fall 2018 Final Q7b.mkv_metadata.yaml
+        - 13-CS61A Fall 2018 Final Q7c.mkv
+        - 13-CS61A Fall 2018 Final Q7c.mkv_metadata.yaml
+        - 2-CS61A Fall 2018 Final Q2.mkv
+        - 2-CS61A Fall 2018 Final Q2.mkv_metadata.yaml
+        - 3-CS61A Fall 2018 Final Q3a.mkv
+        - 3-CS61A Fall 2018 Final Q3a.mkv_metadata.yaml
+        - 4-CS61A Fall 2018 Final Q3b.mkv
+        - 4-CS61A Fall 2018 Final Q3b.mkv_metadata.yaml
+        - 5-CS61A Fall 2018 Final Q3c.mkv
+        - 5-CS61A Fall 2018 Final Q3c.mkv_metadata.yaml
+        - 6-CS61A Fall 2018 Final Q3d.mkv
+        - 6-CS61A Fall 2018 Final Q3d.mkv_metadata.yaml
+        - 7-CS61A Fall 2018 Final Q4a.mkv
+        - 7-CS61A Fall 2018 Final Q4a.mkv_metadata.yaml
+        - 8-CS61A Fall 2018 Final Q4b.mkv
+        - 8-CS61A Fall 2018 Final Q4b.mkv_metadata.yaml
+        - 9-CS61A Fall 2018 Final Q5.mp4
+        - 9-CS61A Fall 2018 Final Q5.mp4_metadata.yaml
+      - **CS 61A Fall 2018 Midterm 1/**
+        - 1-CS61A Fa18 MT1 Q1.mkv
+        - 1-CS61A Fa18 MT1 Q1.mkv_metadata.yaml
+        - 2-CS61A Fa18 MT1 Q2.mkv
+        - 2-CS61A Fa18 MT1 Q2.mkv_metadata.yaml
+        - 3-CS61A Fa18 MT1 Q3.mkv
+        - 3-CS61A Fa18 MT1 Q3.mkv_metadata.yaml
+        - 4-CS61A Fa18 MT1 Q4.mkv
+        - 4-CS61A Fa18 MT1 Q4.mkv_metadata.yaml
+        - 5-CS61A Fa18 MT1 Q5.mkv
+        - 5-CS61A Fa18 MT1 Q5.mkv_metadata.yaml
+        - 6-CS61A Fa18 MT1 Q6a.mkv
+        - 6-CS61A Fa18 MT1 Q6a.mkv_metadata.yaml
+        - 7-CS61A Fa18 MT1 Q6b.mkv
+        - 7-CS61A Fa18 MT1 Q6b.mkv_metadata.yaml
+      - **CS 61A Fall 2018 Midterm 2/**
+        - 1-CS61A Fall 2018 MT2 Q1.mkv
+        - 1-CS61A Fall 2018 MT2 Q1.mkv_metadata.yaml
+        - 3-CS61A Fall 2018 MT2 Q3.mkv
+        - 4-CS61A Fall 2018 MT2 Q4a.mkv
+        - 5-CS61A Fall 2018 MT2 Q4.mkv
+      - **CS 61A Fall 2020： Midterm 1 Walkthrough/**
+        - 1-[Fa20] 61A MT1 Q1 Walkthrough.mkv
+        - 1-[Fa20] 61A MT1 Q1 Walkthrough.mkv_metadata.yaml
+        - 2-[Fa20] 61A MT1 Q2 Walkthrough.mkv
+        - 2-[Fa20] 61A MT1 Q2 Walkthrough.mkv_metadata.yaml
+        - 3-[Fa20] 61A MT1 Q3 Walkthrough.mkv
+        - 3-[Fa20] 61A MT1 Q3 Walkthrough.mkv_metadata.yaml
+        - 4-[Fa20] 61A MT1 Q4 Walkthrough.mkv
+        - 4-[Fa20] 61A MT1 Q4 Walkthrough.mkv_metadata.yaml
+      - **CS 61A Fall 2020： Midterm 2 Walkthrough/**
+        - 1-[Fa20] 61A MT2 Q1 Walkthrough.mkv
+        - 1-[Fa20] 61A MT2 Q1 Walkthrough.mkv_metadata.yaml
+        - 2-[Fa20] 61A MT2 Q2 Walkthrough.mkv
+        - 2-[Fa20] 61A MT2 Q2 Walkthrough.mkv_metadata.yaml
+        - 3-[Fa20] 61A MT2 Q3 Walkthrough.webm
+        - 3-[Fa20] 61A MT2 Q3 Walkthrough.webm_metadata.yaml
+        - 4-[Fa20] 61A MT2 Q4 Walkthrough.mkv
+        - 4-[Fa20] 61A MT2 Q4 Walkthrough.mkv_metadata.yaml
+      - **CS 61A Fall 2021 Final Walkthrough/**
+        - 1-CS 61A Fall 2021 Final Q1A.mkv
+        - 1-CS 61A Fall 2021 Final Q1A.mkv_metadata.yaml
+        - 10-CS 61A Fall 2021 Final Q4A.mkv
+        - 10-CS 61A Fall 2021 Final Q4A.mkv_metadata.yaml
+        - 11-CS 61A Fall 2021 Final Q4B.mkv
+        - 11-CS 61A Fall 2021 Final Q4B.mkv_metadata.yaml
+        - 12-CS 61A Fall 2021 Final Q4C.mkv
+        - 12-CS 61A Fall 2021 Final Q4C.mkv_metadata.yaml
+        - 13-CS 61A Fall 2021 Final Q5A.mkv
+        - 13-CS 61A Fall 2021 Final Q5A.mkv_metadata.yaml
+        - 14-CS 61A Fall 2021 Final Q5B.mkv
+        - 14-CS 61A Fall 2021 Final Q5B.mkv_metadata.yaml
+        - 15-CS 61A Fall 2021 Final Q5C.mkv
+        - 15-CS 61A Fall 2021 Final Q5C.mkv_metadata.yaml
+        - 2-CS 61A Fall 2021 Final Q1B.mkv
+        - 2-CS 61A Fall 2021 Final Q1B.mkv_metadata.yaml
+        - 3-CS 61A Fall 2021 Final Q2A.mkv
+        - 3-CS 61A Fall 2021 Final Q2A.mkv_metadata.yaml
+        - 4-CS 61A Fall 2021 Final Q2B.mkv
+        - 4-CS 61A Fall 2021 Final Q2B.mkv_metadata.yaml
+        - 5-CS 61A Fall 2021 Final Q2C.mkv
+        - 5-CS 61A Fall 2021 Final Q2C.mkv_metadata.yaml
+        - 6-CS 61A Fall 2021 Final Q2D.mkv
+        - 6-CS 61A Fall 2021 Final Q2D.mkv_metadata.yaml
+        - 7-CS 61A Fall 2021 Final Q2E.mkv
+        - 7-CS 61A Fall 2021 Final Q2E.mkv_metadata.yaml
+        - 8-CS 61A Fall 2021 Final Q3A.mkv
+        - 8-CS 61A Fall 2021 Final Q3A.mkv_metadata.yaml
+        - 9-CS 61A Fall 2021 Final Q3B.mkv
+        - 9-CS 61A Fall 2021 Final Q3B.mkv_metadata.yaml
+      - **CS 61A Spring 2016 Final/**
+        - 1-CS 61A Spring 2016 Final： Silence of the Lambdas - Question 1.mkv
+        - 1-CS 61A Spring 2016 Final： Silence of the Lambdas - Question 1.mkv_metadata.yaml
+        - 10-CS 61A Spring 2016 Final： Treebeard's Revenge - Question 10.mkv
+        - 10-CS 61A Spring 2016 Final： Treebeard's Revenge - Question 10.mkv_metadata.yaml
+        - 11-CS 61A Spring 2016 Final： Exstream! - Question 11.mkv
+        - 11-CS 61A Spring 2016 Final： Exstream! - Question 11.mkv_metadata.yaml
+        - 2-CS 61A Spring 2016 Final： Point(er) of Order - Question 2.webm
+        - 2-CS 61A Spring 2016 Final： Point(er) of Order - Question 2.webm_metadata.yaml
+        - 3-CS 61A Spring 2016 Final： Environmentally Sound - Question 3.mkv
+        - 3-CS 61A Spring 2016 Final： Environmentally Sound - Question 3.mkv_metadata.yaml
+        - 4-CS 61A Spring 2016 Final： Tiptoe through the Links - Question 4.mkv
+        - 4-CS 61A Spring 2016 Final： Tiptoe through the Links - Question 4.mkv_metadata.yaml
+        - 5-CS 61A Spring 2016 Final： Triangular! - Question 5.mkv
+        - 5-CS 61A Spring 2016 Final： Triangular! - Question 5.mkv_metadata.yaml
+        - 6-CS 61A Spring 2016 Final： Six Degrees of Separation - Question 6.mkv
+        - 6-CS 61A Spring 2016 Final： Six Degrees of Separation - Question 6.mkv_metadata.yaml
+        - 7-CS 61A Spring 2016 Final： Tail Recursing the Dog - Question 7.mkv
+        - 7-CS 61A Spring 2016 Final： Tail Recursing the Dog - Question 7.mkv_metadata.yaml
+        - 8-CS 61A Spring 2016 Final： Sum of Human Knowledge - Question 8.mkv
+        - 8-CS 61A Spring 2016 Final： Sum of Human Knowledge - Question 8.mkv_metadata.yaml
+        - 9-CS 61A Spring 2016 Final： In the Trees - Question 9.mkv
+        - 9-CS 61A Spring 2016 Final： In the Trees - Question 9.mkv_metadata.yaml
+      - **CS 61A Spring 2017 Final/**
+        - 1-CS 61A Spring 2017 Final： Q1 - WWPD.mkv
+        - 1-CS 61A Spring 2017 Final： Q1 - WWPD.mkv_metadata.yaml
+        - 10-CS 61A Spring 2017 Final： Q8 - Pair Up.mkv
+        - 10-CS 61A Spring 2017 Final： Q8 - Pair Up.mkv_metadata.yaml
+        - 11-CS 61A Spring 2017 Final： Q9a - Don't Go Down Part a.mkv
+        - 11-CS 61A Spring 2017 Final： Q9a - Don't Go Down Part a.mkv_metadata.yaml
+        - 12-CS 61A Spring 2017 Final： Q9b - Don't Go Down Part b.mkv
+        - 12-CS 61A Spring 2017 Final： Q9b - Don't Go Down Part b.mkv_metadata.yaml
+        - 13-CS 61A Spring 2017 Final： Q10 - Sum Range.mkv
+        - 13-CS 61A Spring 2017 Final： Q10 - Sum Range.mkv_metadata.yaml
+        - 14-CS 61A Spring 2017 Final： Q11 - Big Theta.mkv
+        - 14-CS 61A Spring 2017 Final： Q11 - Big Theta.mkv_metadata.yaml
+        - 2-CS 61A Spring 2017 Final： Q2a - What’s the Point(er)？ Part a.mkv
+        - 2-CS 61A Spring 2017 Final： Q2a - What’s the Point(er)？ Part a.mkv_metadata.yaml
+        - 3-CS 61A Spring 2017 Final： Q2b - What’s the Point(er)？ Part b.mp4
+        - 3-CS 61A Spring 2017 Final： Q2b - What’s the Point(er)？ Part b.mp4_metadata.yaml
+        - 4-CS 61A Spring 2017 Final： Q3a - Environmental Issues Part a.mkv
+        - 4-CS 61A Spring 2017 Final： Q3a - Environmental Issues Part a.mkv_metadata.yaml
+        - 5-CS 61A Spring 2017 Final： Q3b - Environmental Issues Part b.mkv
+        - 5-CS 61A Spring 2017 Final： Q3b - Environmental Issues Part b.mkv_metadata.yaml
+        - 6-CS 61A Spring 2017 Final： Q4 - Spring Pruning.mkv
+        - 6-CS 61A Spring 2017 Final： Q4 - Spring Pruning.mkv_metadata.yaml
+        - 7-CS 61A Spring 2017 Final： Q6 - Stream.mkv
+        - 7-CS 61A Spring 2017 Final： Q6 - Stream.mkv_metadata.yaml
+        - 8-CS 61A Spring 2017 Final： Q7 - Raises Part 1 `next` table.mkv
+        - 8-CS 61A Spring 2017 Final： Q7 - Raises Part 1 `next` table.mkv_metadata.yaml
+        - 9-CS 61A Spring 2017 Final： Q7 - Raises Part 2 `future` table.mkv
+        - 9-CS 61A Spring 2017 Final： Q7 - Raises Part 2 `future` table.mkv_metadata.yaml
+      - **CS 61A Spring 2017 Midterm 2 Walkthrough/**
+        - 1-CS 61A Spring 2017 Midterm 2： Pointers - 1a.mkv
+        - 1-CS 61A Spring 2017 Midterm 2： Pointers - 1a.mkv_metadata.yaml
+        - 10-CS 61A Spring 2017 Midterm 2： Inflections - 5 (Generator Version).mkv
+        - 11-CS 61A Spring 2017 Midterm 2： Inflections - 5 (Iterator Version).mkv
+        - 12-CS 61A Spring 2017 Midterm 2： Tree Paths - 6.mkv
+        - 13-CS 61A Spring 2017 Midterm 2： Tree Intro.mkv
+        - 14-CS 61A Spring 2017 Midterm 2： Grafting - 7.mkv
+        - 2-CS 61A Spring 2017 Midterm 2： Pointers - 1b.mkv
+        - 2-CS 61A Spring 2017 Midterm 2： Pointers - 1b.mkv_metadata.yaml
+        - 3-CS 61A Spring 2017 Midterm 2： Pointers - 1c.mkv
+        - 3-CS 61A Spring 2017 Midterm 2： Pointers - 1c.mkv_metadata.yaml
+        - 4-CS 61A Spring 2017 Midterm 2： Pointers - 1d.mkv
+        - 4-CS 61A Spring 2017 Midterm 2： Pointers - 1d.mkv_metadata.yaml
+        - 5-CS 61A Spring 2017 Midterm 2： Complexity - 2a.mkv
+        - 5-CS 61A Spring 2017 Midterm 2： Complexity - 2a.mkv_metadata.yaml
+        - 6-CS 61A Spring 2017 Midterm 2： Complexity - 2b.mkv
+        - 6-CS 61A Spring 2017 Midterm 2： Complexity - 2b.mkv_metadata.yaml
+        - 7-CS 61A Spring 2017 Midterm 2： Complexity - 2c.mkv
+        - 7-CS 61A Spring 2017 Midterm 2： Complexity - 2c.mkv_metadata.yaml
+        - 9-CS 61A Spring 2017 Midterm 2： OOPs - 4.mkv
+      - **CS 61A Spring 2018 Final Walkthrough/**
+        - 1-CS 61A Spring 2018 Final Walkthrough： Q1.mp4
+        - 1-CS 61A Spring 2018 Final Walkthrough： Q1.mp4_metadata.yaml
+        - 10-CS 61A Spring 2018 Final Walkthrough： Q6c.mp4
+        - 10-CS 61A Spring 2018 Final Walkthrough： Q6c.mp4_metadata.yaml
+        - 11-CS 61A Spring 2018 Final Walkthrough： Q6d.mp4
+        - 11-CS 61A Spring 2018 Final Walkthrough： Q6d.mp4_metadata.yaml
+        - 12-CS 61A Spring 2018 Final Walkthrough： Q7a.mp4
+        - 12-CS 61A Spring 2018 Final Walkthrough： Q7a.mp4_metadata.yaml
+        - 13-CS 61A Spring 2018 Final Walkthrough： Q7b.mp4
+        - 13-CS 61A Spring 2018 Final Walkthrough： Q7b.mp4_metadata.yaml
+        - 2-CS 61A Spring 2018 Final Walkthrough： Q2.mp4
+        - 2-CS 61A Spring 2018 Final Walkthrough： Q2.mp4_metadata.yaml
+        - 3-CS 61A Spring 2018 Final Walkthrough： Q3.mp4
+        - 3-CS 61A Spring 2018 Final Walkthrough： Q3.mp4_metadata.yaml
+        - 4-CS 61A Spring 2018 Final Walkthrough： Q4a.mkv
+        - 4-CS 61A Spring 2018 Final Walkthrough： Q4a.mkv_metadata.yaml
+        - 5-CS 61A Spring 2018 Final Walkthrough： Q4b, c.mkv
+        - 5-CS 61A Spring 2018 Final Walkthrough： Q4b, c.mkv_metadata.yaml
+        - 6-CS 61A Spring 2018 Final Walkthrough： Q5a.mkv
+        - 6-CS 61A Spring 2018 Final Walkthrough： Q5a.mkv_metadata.yaml
+        - 7-CS 61A Spring 2018 Final Walkthrough： Q5b.mp4
+        - 7-CS 61A Spring 2018 Final Walkthrough： Q5b.mp4_metadata.yaml
+        - 8-CS 61A Spring 2018 Final Walkthrough： Q6a.mkv
+        - 8-CS 61A Spring 2018 Final Walkthrough： Q6a.mkv_metadata.yaml
+        - 9-CS 61A Spring 2018 Final Walkthrough： Q6b.mkv
+        - 9-CS 61A Spring 2018 Final Walkthrough： Q6b.mkv_metadata.yaml
+      - **CS 61A Spring 2018 Midterm 1/**
+        - 1-CS 61A Spring 2018 Midterm 1 – Problem 1.mkv
+        - 1-CS 61A Spring 2018 Midterm 1 – Problem 1.mkv_metadata.yaml
+        - 2-CS 61A Spring 2018 Midterm 1 – Problem 2.mkv
+        - 2-CS 61A Spring 2018 Midterm 1 – Problem 2.mkv_metadata.yaml
+        - 3-CS 61A Spring 2018 Midterm 1 – Problem 3.mkv
+        - 3-CS 61A Spring 2018 Midterm 1 – Problem 3.mkv_metadata.yaml
+        - 4-CS 61A Spring 2018 Midterm 1 – Problem 4.mkv
+        - 4-CS 61A Spring 2018 Midterm 1 – Problem 4.mkv_metadata.yaml
+      - **CS 61A Spring 2018 Midterm 2/**
+        - 1-CS 61A Spring 2018 Midterm 2 – Problem 1 (WWPD).mkv
+        - 1-CS 61A Spring 2018 Midterm 2 – Problem 1 (WWPD).mkv_metadata.yaml
+        - 2-CS 61A Spring 2018 Midterm 2 – Problem 2 (Environment Diagrams).mkv
+        - 2-CS 61A Spring 2018 Midterm 2 – Problem 2 (Environment Diagrams).mkv_metadata.yaml
+        - 3-CS 61A Spring 2018 Midterm 2 – Problem 3 (Lists).mkv
+        - 3-CS 61A Spring 2018 Midterm 2 – Problem 3 (Lists).mkv_metadata.yaml
+        - 4-CS 61A Spring 2018 Midterm 2 – Problem 4 (Sequences).mkv
+        - 4-CS 61A Spring 2018 Midterm 2 – Problem 4 (Sequences).mkv_metadata.yaml
+        - 5-CS 61A Spring 2018 Midterm 2 – Problem 5 (Trees).mkv
+        - 5-CS 61A Spring 2018 Midterm 2 – Problem 5 (Trees).mkv_metadata.yaml
+      - **CS 61A Spring 2019 Midterm 1/**
+        - 1-Spring 2019 Midterm 1 Q1.mkv
+        - 1-Spring 2019 Midterm 1 Q1.mkv_metadata.yaml
+        - 2-Spring 2019 Midterm 1 Q2.mkv
+        - 2-Spring 2019 Midterm 1 Q2.mkv_metadata.yaml
+        - 3-Spring 2019 Midterm 1 Q3.mkv
+        - 3-Spring 2019 Midterm 1 Q3.mkv_metadata.yaml
+      - **CS 61A Spring 2019 Midterm 2/**
+        - 1-CS61A Sp19 MT2 Q1.mkv
+        - 1-CS61A Sp19 MT2 Q1.mkv_metadata.yaml
+        - 2-CS61A Sp19 MT2 Q2.mkv
+        - 2-CS61A Sp19 MT2 Q2.mkv_metadata.yaml
+        - 3-CS61A Sp19 MT2 Q3.mkv
+        - 3-CS61A Sp19 MT2 Q3.mkv_metadata.yaml
+        - 4-CS61A Sp19 MT2 Q4.mkv
+        - 4-CS61A Sp19 MT2 Q4.mkv_metadata.yaml
+        - 5-CS61A Sp19 MT2 Q5.mkv
+        - 5-CS61A Sp19 MT2 Q5.mkv_metadata.yaml
+        - 6-CS61A Sp19 MT2 Q6.mkv
+        - 6-CS61A Sp19 MT2 Q6.mkv_metadata.yaml
+      - **CS 61A Spring 2022 Final Walkthrough/**
+        - 1-CS 61A Spring 2022 Final Q1.webm
+        - 1-CS 61A Spring 2022 Final Q1.webm_metadata.yaml
+        - 10-CS 61A Spring 2022 Final Q10.webm
+        - 10-CS 61A Spring 2022 Final Q10.webm_metadata.yaml
+        - 11-CS 61A Spring 2022 Final Q11.webm
+        - 11-CS 61A Spring 2022 Final Q11.webm_metadata.yaml
+        - 12-CS 61A Spring 2022 Final Q12.webm
+        - 12-CS 61A Spring 2022 Final Q12.webm_metadata.yaml
+        - 13-CS 61A Spring 2022 Final Q14.webm
+        - 13-CS 61A Spring 2022 Final Q14.webm_metadata.yaml
+        - 14-CS 61A Spring 2022 Final Q15.webm
+        - 14-CS 61A Spring 2022 Final Q15.webm_metadata.yaml
+        - 15-CS 61A Spring 2022 Final Q16.webm
+        - 15-CS 61A Spring 2022 Final Q16.webm_metadata.yaml
+        - 2-CS 61A Spring 2022 Final Q2.webm
+        - 2-CS 61A Spring 2022 Final Q2.webm_metadata.yaml
+        - 3-CS 61A Spring 2022 Final Q3.webm
+        - 3-CS 61A Spring 2022 Final Q3.webm_metadata.yaml
+        - 4-CS 61A Spring 2022 Final Q4.webm
+        - 4-CS 61A Spring 2022 Final Q4.webm_metadata.yaml
+        - 5-CS 61A Spring 2022 Final Q5.webm
+        - 5-CS 61A Spring 2022 Final Q5.webm_metadata.yaml
+        - 6-CS 61A Spring 2022 Final Q6.webm
+        - 6-CS 61A Spring 2022 Final Q6.webm_metadata.yaml
+        - 7-CS 61A Spring 2022 Final Q7.webm
+        - 7-CS 61A Spring 2022 Final Q7.webm_metadata.yaml
+        - 8-CS 61A Spring 2022 Final Q8.webm
+        - 8-CS 61A Spring 2022 Final Q8.webm_metadata.yaml
+        - 9-CS 61A Spring 2022 Final Q9.webm
+        - 9-CS 61A Spring 2022 Final Q9.webm_metadata.yaml
+      - **CS 61A Summer 2017 Final Walkthrough/**
+        - 1-CS 61A Summer 2017 Final： Q1 WWPD.webm
+        - 1-CS 61A Summer 2017 Final： Q1 WWPD.webm_metadata.yaml
+        - 2-CS 61A Summer 2017 Final： Q3 Environment Diagram.mkv
+        - 2-CS 61A Summer 2017 Final： Q3 Environment Diagram.mkv_metadata.yaml
+        - 3-CS 61A Summer 2017 Final： Q5 Trees.mkv
+        - 3-CS 61A Summer 2017 Final： Q5 Trees.mkv_metadata.yaml
+        - 4-CS 61A Summer 2017 Final： Q7 Paths.mkv
+        - 4-CS 61A Summer 2017 Final： Q7 Paths.mkv_metadata.yaml
+        - 5-CS 61A Summer 2017 Final： Q8b Tail Recursion.mkv
+        - 5-CS 61A Summer 2017 Final： Q8b Tail Recursion.mkv_metadata.yaml
+        - 6-CS 61A Summer 2017 Final： Q9 Counting Calls.mkv
+        - 6-CS 61A Summer 2017 Final： Q9 Counting Calls.mkv_metadata.yaml
+        - 7-CS 61A Summer 2017 Final： Q10a SQL.mkv
+        - 7-CS 61A Summer 2017 Final： Q10a SQL.mkv_metadata.yaml
+      - **CS 61A Summer 2018 Final/**
+        - 1-CS 61A Summer 2018 Final： Q5b.mkv
+        - 1-CS 61A Summer 2018 Final： Q5b.mkv_metadata.yaml
+        - 2-CS 61A Summer 2018 Final： Q6.mkv
+        - 2-CS 61A Summer 2018 Final： Q6.mkv_metadata.yaml
+        - 3-CS 61A Summer 2018 Final： Q8.mkv
+        - 3-CS 61A Summer 2018 Final： Q8.mkv_metadata.yaml
+      - **CS 61A Summer 2018 Mock Final Walkthrough/**
+        - 1-CS 61A Summer 2018 Mock Final： Q1.mkv
+        - 1-CS 61A Summer 2018 Mock Final： Q1.mkv_metadata.yaml
+        - 10-CS 61A Summer 2018 Mock Final： Q6c.mkv
+        - 10-CS 61A Summer 2018 Mock Final： Q6c.mkv_metadata.yaml
+        - 2-CS 61A Summer 2018 Mock Final： Q2.mkv
+        - 2-CS 61A Summer 2018 Mock Final： Q2.mkv_metadata.yaml
+        - 3-CS 61A Summer 2018 Mock Final： Q3.mkv
+        - 3-CS 61A Summer 2018 Mock Final： Q3.mkv_metadata.yaml
+        - 4-CS 61A Summer 2018 Mock Final： Q4a.mkv
+        - 4-CS 61A Summer 2018 Mock Final： Q4a.mkv_metadata.yaml
+        - 5-CS 61A Summer 2018 Mock Final： Q4b.mkv
+        - 5-CS 61A Summer 2018 Mock Final： Q4b.mkv_metadata.yaml
+        - 6-CS 61A Summer 2018 Mock Final： Q5a.mkv
+        - 6-CS 61A Summer 2018 Mock Final： Q5a.mkv_metadata.yaml
+        - 7-CS 61A Summer 2018 Mock Final： Q5b.mkv
+        - 7-CS 61A Summer 2018 Mock Final： Q5b.mkv_metadata.yaml
+        - 8-CS 61A Summer 2018 Mock Final： Q6a.mkv
+        - 8-CS 61A Summer 2018 Mock Final： Q6a.mkv_metadata.yaml
+        - 9-CS 61A Summer 2018 Mock Final： Q6b.mkv
+        - 9-CS 61A Summer 2018 Mock Final： Q6b.mkv_metadata.yaml
+      - **CS 61A Summer 2022 Final Walkthrough/**
+        - 1-CS 61A Summer 2022 Final Q1.mkv
+        - 1-CS 61A Summer 2022 Final Q1.mkv_metadata.yaml
+        - 10-CS 61A Summer 2022 Final Q9.mkv
+        - 10-CS 61A Summer 2022 Final Q9.mkv_metadata.yaml
+        - 2-CS 61A Summer 2022 Final Q2.mkv
+        - 2-CS 61A Summer 2022 Final Q2.mkv_metadata.yaml
+        - 3-CS 61A Summer 2022 Final Q3A.webm
+        - 3-CS 61A Summer 2022 Final Q3A.webm_metadata.yaml
+        - 4-CS 61A Summer 2022 Final Q3B.webm
+        - 4-CS 61A Summer 2022 Final Q3B.webm_metadata.yaml
+        - 5-CS 61A Summer 2022 Final Q4.mkv
+        - 5-CS 61A Summer 2022 Final Q4.mkv_metadata.yaml
+        - 6-CS 61A Summer 2022 Final Q5.mkv
+        - 6-CS 61A Summer 2022 Final Q5.mkv_metadata.yaml
+        - 7-CS 61A Summer 2022 Final Q6.mkv
+        - 7-CS 61A Summer 2022 Final Q6.mkv_metadata.yaml
+        - 8-CS 61A Summer 2022 Final Q7.mkv
+        - 8-CS 61A Summer 2022 Final Q7.mkv_metadata.yaml
+        - 9-CS 61A Summer 2022 Final Q8.mkv
+        - 9-CS 61A Summer 2022 Final Q8.mkv_metadata.yaml
+      - **CS walkthrough vids/**
+        - 1-CS61a Fall 2016 Final WWPD.mkv
+        - 1-CS61a Fall 2016 Final WWPD.mkv_metadata.yaml
+        - 10-CS61a Fall 2016 Final reset B.mkv
+        - 10-CS61a Fall 2016 Final reset B.mkv_metadata.yaml
+        - 11-CS61a Fall 2016 Final I Scheme for Ice Cream A.mkv
+        - 11-CS61a Fall 2016 Final I Scheme for Ice Cream A.mkv_metadata.yaml
+        - 12-CS61a Fall 2016 Final I Scheme for Ice Cream B.mkv
+        - 12-CS61a Fall 2016 Final I Scheme for Ice Cream B.mkv_metadata.yaml
+        - 13-CS61a Fall 2016 Final I Scheme for Ice Cream C.mp4
+        - 13-CS61a Fall 2016 Final I Scheme for Ice Cream C.mp4_metadata.yaml
+        - 14-CS61a Fall 2016 Final Hailstoned A.mp4
+        - 14-CS61a Fall 2016 Final Hailstoned A.mp4_metadata.yaml
+        - 15-CS61a Fall 2016 Final Hailstoned B.mp4
+        - 15-CS61a Fall 2016 Final Hailstoned B.mp4_metadata.yaml
+        - 16-CS61a Fall 2016 Final Hailstoned 3.mp4
+        - 16-CS61a Fall 2016 Final Hailstoned 3.mp4_metadata.yaml
+        - 2-CS61a Fall 2016 Final Environment diagram.mkv
+        - 2-CS61a Fall 2016 Final Environment diagram.mkv_metadata.yaml
+        - 3-CS61a Fall 2016 Final Box & Pointer.mkv
+        - 3-CS61a Fall 2016 Final Box & Pointer.mkv_metadata.yaml
+        - 4-CS61a Fall 2016 Final Tree or List intro.mkv
+        - 4-CS61a Fall 2016 Final Tree or List intro.mkv_metadata.yaml
+        - 5-CS61a Fall 2016 Final Tree or List A.mkv
+        - 5-CS61a Fall 2016 Final Tree or List A.mkv_metadata.yaml
+        - 6-CS61a Fall 2016 Final Tree or List B.mkv
+        - 6-CS61a Fall 2016 Final Tree or List B.mkv_metadata.yaml
+        - 7-CS61a Fall 2016 Final Tree or List C.mkv
+        - 7-CS61a Fall 2016 Final Tree or List C.mkv_metadata.yaml
+        - 8-CS61a Fall 2016 Final Tree or List D.mkv
+        - 8-CS61a Fall 2016 Final Tree or List D.mkv_metadata.yaml
+        - 9-CS61a Fall 2016 Final Reset A.mp4
+        - 9-CS61a Fall 2016 Final Reset A.mp4_metadata.yaml
+      - **CS61A Fall 2019 Final/**
+        - 1-CS61A Fall 2019 Final Q1.mkv
+        - 1-CS61A Fall 2019 Final Q1.mkv_metadata.yaml
+        - 10-CS61A Fall 2019 Final Q6e.webm
+        - 10-CS61A Fall 2019 Final Q6e.webm_metadata.yaml
+        - 11-CS61A Fall 2019 Q7a.webm
+        - 11-CS61A Fall 2019 Q7a.webm_metadata.yaml
+        - 12-CS61A Fall 2019 Final Q7b.mkv
+        - 12-CS61A Fall 2019 Final Q7b.mkv_metadata.yaml
+        - 13-CS61A Fall 2019 Q7c.mkv
+        - 13-CS61A Fall 2019 Q7c.mkv_metadata.yaml
+        - 14-CS61A Fall 2019 Final Q8.webm
+        - 14-CS61A Fall 2019 Final Q8.webm_metadata.yaml
+        - 15-CS61A Fall 2019 Final Q9.webm
+        - 15-CS61A Fall 2019 Final Q9.webm_metadata.yaml
+        - 16-CS61A Fall 2019 Final Q10.webm
+        - 16-CS61A Fall 2019 Final Q10.webm_metadata.yaml
+        - 2-CS61A Fall 2019 Final Q2.webm
+        - 2-CS61A Fall 2019 Final Q2.webm_metadata.yaml
+        - 3-CS61A Fall 2019 Final Q3.webm
+        - 3-CS61A Fall 2019 Final Q3.webm_metadata.yaml
+        - 4-CS61A Fall 2019 Final Q4.webm
+        - 4-CS61A Fall 2019 Final Q4.webm_metadata.yaml
+        - 5-CS61A Fall 2019 Final Q5.webm
+        - 5-CS61A Fall 2019 Final Q5.webm_metadata.yaml
+        - 6-CS61A Fall 2019 Final Q6a.webm
+        - 6-CS61A Fall 2019 Final Q6a.webm_metadata.yaml
+        - 7-CS61A Fall 2019 Final Q6b.webm
+        - 7-CS61A Fall 2019 Final Q6b.webm_metadata.yaml
+        - 8-CS61A Fall 2019 Final Q6c.webm
+        - 8-CS61A Fall 2019 Final Q6c.webm_metadata.yaml
+        - 9-CS61A Fall 2019 Final Q6d.webm
+        - 9-CS61A Fall 2019 Final Q6d.webm_metadata.yaml
+      - **CS61A Fall 2019 Midterm 1/**
+        - 1-CS61A Fall 2019 Midterm 1 Q1.mkv
+        - 1-CS61A Fall 2019 Midterm 1 Q1.mkv_metadata.yaml
+        - 2-CS61A Fall 2019 Midterm 1 Q2.mkv
+        - 2-CS61A Fall 2019 Midterm 1 Q2.mkv_metadata.yaml
+        - 3-CS61A Fall 2019 Midterm 1 Q3.mkv
+        - 3-CS61A Fall 2019 Midterm 1 Q3.mkv_metadata.yaml
+        - 4-CS61A Fall 2019 Midterm 1 Q4a.mkv
+        - 4-CS61A Fall 2019 Midterm 1 Q4a.mkv_metadata.yaml
+        - 5-CS61A Fall 2019 Midterm 1 Q4b.mkv
+        - 5-CS61A Fall 2019 Midterm 1 Q4b.mkv_metadata.yaml
+        - 6-CS61A Fall 2019 Midterm 1 Q4c.mkv
+        - 6-CS61A Fall 2019 Midterm 1 Q4c.mkv_metadata.yaml
+        - 7-CS61A Fall 2019 Midterm 1 Q4d.mkv
+        - 7-CS61A Fall 2019 Midterm 1 Q4d.mkv_metadata.yaml
+      - **CS61A Fall 2019 Midterm 2/**
+        - 1-CS61A Fall 2019 Midterm 2 Q1.mkv
+        - 1-CS61A Fall 2019 Midterm 2 Q1.mkv_metadata.yaml
+        - 2-CS61A Fall 2019 Midterm 2 Q2.mkv
+        - 2-CS61A Fall 2019 Midterm 2 Q2.mkv_metadata.yaml
+        - 3-CS61A Fall 2019 Midterm 2 Q3.mkv
+        - 3-CS61A Fall 2019 Midterm 2 Q3.mkv_metadata.yaml
+        - 4-CS61A Fall 2019 Midterm 2 Q4.mkv
+        - 4-CS61A Fall 2019 Midterm 2 Q4.mkv_metadata.yaml
+        - 5-CS61A Fall 2019 Midterm 2 Q5.mkv
+        - 5-CS61A Fall 2019 Midterm 2 Q5.mkv_metadata.yaml
+        - 6-CS61A Fall 2019 Midterm 2 Q6.mkv
+        - 6-CS61A Fall 2019 Midterm 2 Q6.mkv_metadata.yaml
+        - 7-CS61A Fall 2019 Midterm 2 Q7.mkv
+        - 7-CS61A Fall 2019 Midterm 2 Q7.mkv_metadata.yaml
+        - 8-CS61A Fall 2019 Midterm 2 Q8.mkv
+        - 8-CS61A Fall 2019 Midterm 2 Q8.mkv_metadata.yaml
+      - **CS61A Fall 2021 Midterm 1 Walkthrough/**
+        - 1-61A FA21 MT1： Q1a.webm
+        - 1-61A FA21 MT1： Q1a.webm_metadata.yaml
+        - 2-61A FA21 MT1： Q1b.webm
+        - 2-61A FA21 MT1： Q1b.webm_metadata.yaml
+        - 3-61A FA21 MT1： Q2.webm
+        - 3-61A FA21 MT1： Q2.webm_metadata.yaml
+        - 4-61A FA21 MT1： Q3a.webm
+        - 4-61A FA21 MT1： Q3a.webm_metadata.yaml
+        - 5-61A FA21 MT1： Q3b.webm
+        - 5-61A FA21 MT1： Q3b.webm_metadata.yaml
+        - 6-61A FA21 MT1： Q3c.webm
+        - 6-61A FA21 MT1： Q3c.webm_metadata.yaml
+        - 7-61A FA21 MT1： Q3d.webm
+        - 7-61A FA21 MT1： Q3d.webm_metadata.yaml
+      - **CS61A Fall 2021 Midterm 2/**
+        - 1-61A FA21 MT2 Q1： Hawkeye.mkv
+        - 1-61A FA21 MT2 Q1： Hawkeye.mkv_metadata.yaml
+        - 10-61A FA21 MT2 Q5a： Groot (Twig).webm
+        - 10-61A FA21 MT2 Q5a： Groot (Twig).webm_metadata.yaml
+        - 11-61A FA21 MT2 Q5b： Groot (Twigs).webm
+        - 11-61A FA21 MT2 Q5b： Groot (Twigs).webm_metadata.yaml
+        - 2-61A FA21 MT2 Q2a： Doctor Change (Change).mkv
+        - 2-61A FA21 MT2 Q2a： Doctor Change (Change).mkv_metadata.yaml
+        - 3-61A FA21 MT2 Q2b： Doctor Change (Amounts).mkv
+        - 3-61A FA21 MT2 Q2b： Doctor Change (Amounts).mkv_metadata.yaml
+        - 4-61A FA21 MT2 Q3a： Shang-Chi (Valet⧸Garage).mkv
+        - 4-61A FA21 MT2 Q3a： Shang-Chi (Valet⧸Garage).mkv_metadata.yaml
+        - 5-61A FA21 MT2 Q3b： Shang-Chi (Ring).mkv
+        - 5-61A FA21 MT2 Q3b： Shang-Chi (Ring).mkv_metadata.yaml
+        - 6-61A FA21 MT2 Q3c： Shang-Chi (Fork).mkv
+        - 6-61A FA21 MT2 Q3c： Shang-Chi (Fork).mkv_metadata.yaml
+        - 7-61A FA21 MT2 Q4a： Thanos (Snap).webm
+        - 7-61A FA21 MT2 Q4a： Thanos (Snap).webm_metadata.yaml
+        - 8-61A FA21 MT2 Q4b： Thanos (Max Diff).webm
+        - 8-61A FA21 MT2 Q4b： Thanos (Max Diff).webm_metadata.yaml
+        - 9-61A FA21 MT2 Q4c： Thanos (Max Diff Fast).webm
+        - 9-61A FA21 MT2 Q4c： Thanos (Max Diff Fast).webm_metadata.yaml
+      - **CS61A Spring 2019 Final/**
+        - 1-CS61A Spring 2019 Final Q1.mkv
+        - 1-CS61A Spring 2019 Final Q1.mkv_metadata.yaml
+        - 10-CS61A Spring 2019 Final Q10.mkv
+        - 10-CS61A Spring 2019 Final Q10.mkv_metadata.yaml
+        - 2-CS61A Spring 2019 Final Q2.mkv
+        - 2-CS61A Spring 2019 Final Q2.mkv_metadata.yaml
+        - 3-CS61A Spring 2019 Final Q3.mkv
+        - 3-CS61A Spring 2019 Final Q3.mkv_metadata.yaml
+        - 4-CS61A Spring 2019 Final Q4.mkv
+        - 4-CS61A Spring 2019 Final Q4.mkv_metadata.yaml
+        - 5-CS61A Spring 2019 Final Q5.mkv
+        - 5-CS61A Spring 2019 Final Q5.mkv_metadata.yaml
+        - 6-CS61A Spring 2019 Final Q7.mkv
+        - 6-CS61A Spring 2019 Final Q7.mkv_metadata.yaml
+        - 7-CS61A Spring 2019 Final Q8.mkv
+        - 7-CS61A Spring 2019 Final Q8.mkv_metadata.yaml
+        - 8-CS61A Spring 2019 Final Q9a.mkv
+        - 8-CS61A Spring 2019 Final Q9a.mkv_metadata.yaml
+        - 9-CS61A Spring 2019 Final Q9b.mkv
+        - 9-CS61A Spring 2019 Final Q9b.mkv_metadata.yaml
+      - **CS61A Spring 2020 Midterm 1/**
+        - 1-CS61A Spring 2020 Midterm 1 Q1.mkv
+        - 1-CS61A Spring 2020 Midterm 1 Q1.mkv_metadata.yaml
+        - 2-CS61A Spring 2020 Midterm 1 Q2.mkv
+        - 2-CS61A Spring 2020 Midterm 1 Q2.mkv_metadata.yaml
+        - 3-CS61A Spring 2020 Midterm 1 Q3ab.mkv
+        - 3-CS61A Spring 2020 Midterm 1 Q3ab.mkv_metadata.yaml
+        - 4-CS61A Spring 2020 Midterm 1 Q3cd.mkv
+        - 4-CS61A Spring 2020 Midterm 1 Q3cd.mkv_metadata.yaml
+        - 5-CS61A Spring 2020 Midterm 1 Q4a.mkv
+        - 5-CS61A Spring 2020 Midterm 1 Q4a.mkv_metadata.yaml
+        - 6-CS61A Spring 2020 Midterm 1 Q4b.mkv
+        - 6-CS61A Spring 2020 Midterm 1 Q4b.mkv_metadata.yaml
+      - **CS61A Spring 2022 Midterm 2 Walkthrough/**
+        - 1-61A SP22 MT2： Q1a.mkv
+        - 1-61A SP22 MT2： Q1a.mkv_metadata.yaml
+        - 10-61A SP22 MT2： Q8a.mkv
+        - 10-61A SP22 MT2： Q8a.mkv_metadata.yaml
+        - 11-61A SP22 MT2： Q8b (Readthrough).mkv
+        - 11-61A SP22 MT2： Q8b (Readthrough).mkv_metadata.yaml
+        - 12-61A SP22 MT2： Q8b (Explanation).mkv
+        - 12-61A SP22 MT2： Q8b (Explanation).mkv_metadata.yaml
+        - 13-61A SP22 MT2： Q8c.mkv
+        - 13-61A SP22 MT2： Q8c.mkv_metadata.yaml
+        - 14-61A SP22 MT2： Q8d.mkv
+        - 14-61A SP22 MT2： Q8d.mkv_metadata.yaml
+        - 15-61A SP22 MT2： Q8e.mkv
+        - 15-61A SP22 MT2： Q8e.mkv_metadata.yaml
+        - 16-61A SP22 MT2： Q8f.mkv
+        - 16-61A SP22 MT2： Q8f.mkv_metadata.yaml
+        - 2-61A SP22 MT2： Q1b.mkv
+        - 2-61A SP22 MT2： Q1b.mkv_metadata.yaml
+        - 3-61A SP22 MT2： Q1c.mkv
+        - 3-61A SP22 MT2： Q1c.mkv_metadata.yaml
+        - 4-61A SP22 MT2： Q2.mkv
+        - 4-61A SP22 MT2： Q2.mkv_metadata.yaml
+        - 5-61A SP22 MT2： Q3.mkv
+        - 5-61A SP22 MT2： Q3.mkv_metadata.yaml
+        - 6-61A SP22 MT2： Q4.mkv
+        - 6-61A SP22 MT2： Q4.mkv_metadata.yaml
+        - 7-61A SP22 MT2： Q5.mkv
+        - 7-61A SP22 MT2： Q5.mkv_metadata.yaml
+        - 8-61A SP22 MT2： Q6.mkv
+        - 8-61A SP22 MT2： Q6.mkv_metadata.yaml
+        - 9-61A SP22 MT2： Q7.mkv
+        - 9-61A SP22 MT2： Q7.mkv_metadata.yaml
+      - **Control/**
+        - 1-Multiple Environments.webm
+        - 1-Multiple Environments.webm.json
+        - 1-Multiple Environments.webm_metadata.yaml
+        - 2-Miscellaneous Python Features.webm
+        - 2-Miscellaneous Python Features.webm.json
+        - 2-Miscellaneous Python Features.webm_metadata.yaml
+        - 3-Conditional statements.mkv
+        - 3-Conditional statements.mkv.json
+        - 3-Conditional statements.mkv_metadata.yaml
+        - 4-Iteration.mkv
+        - 4-Iteration.mkv.json
+        - 4-Iteration.mkv_metadata.yaml
+      - **Data Abstraction and ADT Trees (Su25)/**
+        - 1-Data Abstraction.webm
+        - 1-Data Abstraction.webm.json
+        - 1-Data Abstraction.webm_metadata.yaml
+        - 2-Representing Rational Numbers.mkv
+        - 2-Representing Rational Numbers.mkv.json
+        - 2-Representing Rational Numbers.mkv_metadata.yaml
+        - 3-Abstraction Barriers.mkv
+        - 3-Abstraction Barriers.mkv.json
+        - 3-Abstraction Barriers.mkv_metadata.yaml
+        - 4-Data Representations.mkv
+        - 4-Data Representations.mkv.json
+        - 4-Data Representations.mkv_metadata.yaml
+        - 5-Trees.mkv
+        - 5-Trees.mkv.json
+        - 5-Trees.mkv_metadata.yaml
+        - 6-Tree Processing.mkv
+        - 6-Tree Processing.mkv.json
+        - 6-Tree Processing.mkv_metadata.yaml
+        - 7-Example： Printing Trees.mkv
+        - 7-Example： Printing Trees.mkv.json
+        - 7-Example： Printing Trees.mkv_metadata.yaml
+        - 8-Example： Summing Paths.mkv
+        - 8-Example： Summing Paths.mkv.json
+        - 8-Example： Summing Paths.mkv_metadata.yaml
+        - 9-Example： Counting Paths.mkv
+        - 9-Example： Counting Paths.mkv.json
+        - 9-Example： Counting Paths.mkv_metadata.yaml
+      - **Disc 07/**
+        - 1-Prune Small Getting Started.webm
+        - 1-Prune Small Getting Started.webm.json
+        - 1-Prune Small Getting Started.webm_metadata.yaml
+        - 3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv
+        - 3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv.json
+        - 3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv_metadata.yaml
+        - 4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm
+        - 4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm.json
+        - 4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm_metadata.yaml
+        - 5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm
+        - 5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm.json
+        - 5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm_metadata.yaml
+        - 6-Duplicate Link Getting Started.mkv
+        - 6-Duplicate Link Getting Started.mkv.json
+        - 6-Duplicate Link Getting Started.mkv_metadata.yaml
+      - **Discussion 10： Tail Calls, Scheme Data Abstractions, SQL/**
+        - 1-[CS 61A SU24] Discussion 10 Problem #1 Fast-Exp.mkv
+        - 1-[CS 61A SU24] Discussion 10 Problem #1 Fast-Exp.mkv.json
+        - 1-[CS 61A SU24] Discussion 10 Problem #1 Fast-Exp.mkv_metadata.yaml
+        - 2-Reverse.webm
+        - 2-Reverse.webm.json
+        - 2-Reverse.webm_metadata.yaml
+        - 3-Closer City.webm
+        - 3-Closer City.webm.json
+        - 3-Closer City.webm_metadata.yaml
+      - **Discussion 4： Tree Recursion, Trees, Lists/**
+        - 1-Disc04 Q4： Even Weighted.mkv
+        - 1-Disc04 Q4： Even Weighted.mkv.json
+        - 1-Disc04 Q4： Even Weighted.mkv_metadata.yaml
+        - 2-Question #3： Max Path Sum.webm
+        - 2-Question #3： Max Path Sum.webm.json
+        - 2-Question #3： Max Path Sum.webm_metadata.yaml
+        - 3-61A FA21 HW05 Q3： Preorder.mkv
+        - 3-61A FA21 HW05 Q3： Preorder.mkv.json
+        - 3-61A FA21 HW05 Q3： Preorder.mkv_metadata.yaml
+        - 4-Find Path.webm
+        - 4-Find Path.webm.json
+        - 4-Find Path.webm_metadata.yaml
+      - **Discussion 5： Iterators, Generators, Efficiency/**
+        - 1-[CS 61A FA23] Final Problem #1： Copying Copies.webm
+        - 1-[CS 61A FA23] Final Problem #1： Copying Copies.webm.json
+        - 1-[CS 61A FA23] Final Problem #1： Copying Copies.webm_metadata.yaml
+        - 2-WWPD Iterators.mkv
+        - 2-WWPD Iterators.mkv.json
+        - 2-WWPD Iterators.mkv_metadata.yaml
+        - 3-[CS 61A SU24] Discussion 5 Problem #2 Repeated.mkv
+        - 3-[CS 61A SU24] Discussion 5 Problem #2 Repeated.mkv.json
+        - 3-[CS 61A SU24] Discussion 5 Problem #2 Repeated.mkv_metadata.yaml
+        - 4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv
+        - 4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv.json
+        - 4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv_metadata.yaml
+        - 5-Primes Generator.mkv
+        - 5-Primes Generator.mkv.json
+        - 5-Primes Generator.mkv_metadata.yaml
+        - 6-[CS 61A SP24] Discussion 6 Question #3： Partitions.mkv
+        - 6-[CS 61A SP24] Discussion 6 Question #3： Partitions.mkv.json
+        - 6-[CS 61A SP24] Discussion 6 Question #3： Partitions.mkv_metadata.yaml
+      - **Discussion 9： Interpreters/**
+        - 1-[CS 61A SP24] Discussion 10 Problem #3 Print Evaluated Expressions Walkthrough.mkv
+        - 1-[CS 61A SP24] Discussion 10 Problem #3 Print Evaluated Expressions Walkthrough.mkv.json
+        - 1-[CS 61A SP24] Discussion 10 Problem #3 Print Evaluated Expressions Walkthrough.mkv_metadata.yaml
+        - 2-[CS 61A SP24] Discussion 10 Problem #2 Evaluation Walkthrough.mkv
+        - 2-[CS 61A SP24] Discussion 10 Problem #2 Evaluation Walkthrough.mkv.json
+        - 2-[CS 61A SP24] Discussion 10 Problem #2 Evaluation Walkthrough.mkv_metadata.yaml
+        - 3-[CS 61A SP24] Discussion 10 Question #1 Representing Expressions.mkv
+        - 3-[CS 61A SP24] Discussion 10 Question #1 Representing Expressions.mkv.json
+        - 3-[CS 61A SP24] Discussion 10 Question #1 Representing Expressions.mkv_metadata.yaml
+      - **Efficiency/**
+        - 1-Measuring Efficiency.webm
+        - 1-Measuring Efficiency.webm.json
+        - 1-Measuring Efficiency.webm_metadata.yaml
+        - 2-Memoization.mkv
+        - 2-Memoization.mkv.json
+        - 2-Memoization.mkv_metadata.yaml
+        - 3-Exponentiation.mkv
+        - 3-Exponentiation.mkv.json
+        - 3-Exponentiation.mkv_metadata.yaml
+        - 4-Orders of Growth.mkv
+        - 4-Orders of Growth.mkv.json
+        - 4-Orders of Growth.mkv_metadata.yaml
+        - 5-Order of Growth Notation.mkv
+        - 5-Order of Growth Notation.mkv.json
+        - 5-Order of Growth Notation.mkv_metadata.yaml
+        - 6-Space.mkv
+        - 6-Space.mkv.json
+        - 6-Space.mkv_metadata.yaml
+      - **Environments/**
+        - 1-Environments for Higher-Order Functions.webm
+        - 1-Environments for Higher-Order Functions.webm.json
+        - 1-Environments for Higher-Order Functions.webm_metadata.yaml
+        - 2-Environments for Nested Definitions.mkv
+        - 2-Environments for Nested Definitions.mkv.json
+        - 2-Environments for Nested Definitions.mkv_metadata.yaml
+        - 3-Local Names.mkv
+        - 3-Local Names.mkv.json
+        - 3-Local Names.mkv_metadata.yaml
+        - 4-Function Composition.mkv
+        - 4-Function Composition.mkv.json
+        - 4-Function Composition.mkv_metadata.yaml
+        - 5-Lambda Expressions.mkv
+        - 5-Lambda Expressions.mkv.json
+        - 5-Lambda Expressions.mkv_metadata.yaml
+        - 6-Function Currying.mkv
+        - 6-Function Currying.mkv.json
+        - 6-Function Currying.mkv_metadata.yaml
+      - **Environments (Su25)/**
+        - 1-Environments for Higher-Order Functions.webm
+        - 1-Environments for Higher-Order Functions.webm.json
+        - 1-Environments for Higher-Order Functions.webm_metadata.yaml
+        - 2-Environments for Nested Definitions.mkv
+        - 2-Environments for Nested Definitions.mkv.json
+        - 2-Environments for Nested Definitions.mkv_metadata.yaml
+        - 3-Local Names.mkv
+        - 3-Local Names.mkv.json
+        - 3-Local Names.mkv_metadata.yaml
+        - 4-Function Composition.mkv
+        - 4-Function Composition.mkv.json
+        - 4-Function Composition.mkv_metadata.yaml
+        - 5-Lambda Expressions.mkv
+        - 5-Lambda Expressions.mkv.json
+        - 5-Lambda Expressions.mkv_metadata.yaml
+        - 6-Lambda Function Environments.webm
+        - 6-Lambda Function Environments.webm.json
+        - 6-Lambda Function Environments.webm_metadata.yaml
+        - 7-Function Currying.mkv
+        - 7-Function Currying.mkv.json
+        - 7-Function Currying.mkv_metadata.yaml
+        - 8-Errors & Tracebacks.mkv
+        - 8-Errors & Tracebacks.mkv.json
+        - 8-Errors & Tracebacks.mkv_metadata.yaml
+      - **Final Review (Su25)/**
+        - 1-Trees.mkv
+        - 1-Trees.mkv.json
+        - 1-Trees.mkv_metadata.yaml
+        - 2-Tree Processing.mkv
+        - 2-Tree Processing.mkv.json
+        - 2-Tree Processing.mkv_metadata.yaml
+        - 3-Recursive Accumulation.mkv
+        - 3-Recursive Accumulation.mkv.json
+        - 3-Recursive Accumulation.mkv_metadata.yaml
+      - **Functions/**
+        - 1-Welcome.webm
+        - 1-Welcome.webm.json
+        - 1-Welcome.webm_metadata.yaml
+        - 2-Call Expressions.webm
+        - 2-Call Expressions.webm.json
+        - 2-Call Expressions.webm_metadata.yaml
+        - 3-Names, Assignment, and User-Defined Functions.webm
+        - 3-Names, Assignment, and User-Defined Functions.webm.json
+        - 3-Names, Assignment, and User-Defined Functions.webm_metadata.yaml
+        - 4-Environment Diagrams.webm
+        - 4-Environment Diagrams.webm.json
+        - 4-Environment Diagrams.webm_metadata.yaml
+        - 5-Defining Functions.webm
+        - 5-Defining Functions.webm.json
+        - 5-Defining Functions.webm_metadata.yaml
+        - 6-Print and None.webm
+        - 6-Print and None.webm.json
+        - 6-Print and None.webm_metadata.yaml
+      - **Higher-Order Functions/**
+        - 1-Iteration Example.webm
+        - 1-Iteration Example.webm.json
+        - 1-Iteration Example.webm_metadata.yaml
+        - 2-Control.mkv
+        - 2-Control.mkv.json
+        - 2-Control.mkv_metadata.yaml
+        - 3-Control Expressions.webm
+        - 3-Control Expressions.webm.json
+        - 3-Control Expressions.webm_metadata.yaml
+        - 4-Higher-Order Functions.webm
+        - 4-Higher-Order Functions.webm.json
+        - 4-Higher-Order Functions.webm_metadata.yaml
+        - 5-Functions as Return Values.mkv
+        - 5-Functions as Return Values.mkv.json
+        - 5-Functions as Return Values.mkv_metadata.yaml
+      - **Inheritance and Representation (Su25)/**
+        - 1-Inheritance.webm
+        - 1-Inheritance.webm.json
+        - 1-Inheritance.webm_metadata.yaml
+        - 2-Object-Oriented Design.mkv
+        - 2-Object-Oriented Design.mkv.json
+        - 2-Object-Oriented Design.mkv_metadata.yaml
+        - 3-Attribute Lookup Practice.mkv
+        - 3-Attribute Lookup Practice.mkv.json
+        - 3-Attribute Lookup Practice.mkv_metadata.yaml
+        - 4-Multiple Inheritance.mkv
+        - 4-Multiple Inheritance.mkv.json
+        - 4-Multiple Inheritance.mkv_metadata.yaml
+        - 5-String Representations.mkv
+        - 5-String Representations.mkv.json
+        - 5-String Representations.mkv_metadata.yaml
+        - 6-String Interpolation.mkv
+        - 6-String Interpolation.mkv.json
+        - 6-String Interpolation.mkv_metadata.yaml
+        - 7-Polymorphic Functions.webm
+        - 7-Polymorphic Functions.webm.json
+        - 7-Polymorphic Functions.webm_metadata.yaml
+        - 8-Special Method Names.mkv
+        - 8-Special Method Names.mkv.json
+        - 8-Special Method Names.mkv_metadata.yaml
+        - 9-Examples： Objects.mkv
+        - 9-Examples： Objects.mkv.json
+        - 9-Examples： Objects.mkv_metadata.yaml
+      - **Interpreters (Su25)/**
+        - 1-Programming Languages.mkv
+        - 1-Programming Languages.mkv.json
+        - 1-Programming Languages.mkv_metadata.yaml
+        - 10-Lambda Expressions.mkv
+        - 10-Lambda Expressions.mkv.json
+        - 10-Lambda Expressions.mkv_metadata.yaml
+        - 11-Define Expressions.mkv
+        - 11-Define Expressions.mkv.json
+        - 11-Define Expressions.mkv_metadata.yaml
+        - 12-Dynamic Scope.mkv
+        - 12-Dynamic Scope.mkv.json
+        - 12-Dynamic Scope.mkv_metadata.yaml
+        - 2-Parsing.mkv
+        - 2-Parsing.mkv.json
+        - 2-Parsing.mkv_metadata.yaml
+        - 3-Scheme-Syntax Calculator.mkv
+        - 3-Scheme-Syntax Calculator.mkv.json
+        - 3-Scheme-Syntax Calculator.mkv_metadata.yaml
+        - 4-Evaluation.mkv
+        - 4-Evaluation.mkv.json
+        - 4-Evaluation.mkv_metadata.yaml
+        - 5-Interactive Interpreters.mkv
+        - 5-Interactive Interpreters.mkv.json
+        - 5-Interactive Interpreters.mkv_metadata.yaml
+        - 6-Interpreting Scheme.mkv
+        - 6-Interpreting Scheme.mkv.json
+        - 6-Interpreting Scheme.mkv_metadata.yaml
+        - 7-Special Forms.mkv
+        - 7-Special Forms.mkv.json
+        - 7-Special Forms.mkv_metadata.yaml
+        - 8-Logical Forms.mkv
+        - 8-Logical Forms.mkv.json
+        - 8-Logical Forms.mkv_metadata.yaml
+        - 9-Quotation.mkv
+        - 9-Quotation.mkv.json
+        - 9-Quotation.mkv_metadata.yaml
+      - **Iterators and Generators (Su25)/**
+        - 1-Iterators.webm
+        - 1-Iterators.webm.json
+        - 1-Iterators.webm_metadata.yaml
+        - 10-Examples： Iterables & Iterators.mkv
+        - 10-Examples： Iterables & Iterators.mkv.json
+        - 10-Examples： Iterables & Iterators.mkv_metadata.yaml
+        - 2-Dictionary Iteration.mkv
+        - 2-Dictionary Iteration.mkv.json
+        - 2-Dictionary Iteration.mkv_metadata.yaml
+        - 3-For Statements.mkv
+        - 3-For Statements.mkv.json
+        - 3-For Statements.mkv_metadata.yaml
+        - 4-Built-in Iterator Functions.webm
+        - 4-Built-in Iterator Functions.webm.json
+        - 4-Built-in Iterator Functions.webm_metadata.yaml
+        - 5-Zip.mkv
+        - 5-Zip.mkv.json
+        - 5-Zip.mkv_metadata.yaml
+        - 6-Using Iterators.mkv
+        - 6-Using Iterators.mkv.json
+        - 6-Using Iterators.mkv_metadata.yaml
+        - 7-Generators.webm
+        - 7-Generators.webm.json
+        - 7-Generators.webm_metadata.yaml
+        - 8-Generators & Iterators.mkv
+        - 8-Generators & Iterators.mkv.json
+        - 8-Generators & Iterators.mkv_metadata.yaml
+        - 9-Example： Partitions.mkv
+        - 9-Example： Partitions.mkv.json
+        - 9-Example： Partitions.mkv_metadata.yaml
+      - **Linked Lists (Su25)/**
+        - 1-Linked Lists.webm
+        - 1-Linked Lists.webm.json
+        - 1-Linked Lists.webm_metadata.yaml
+        - 2-Linked List Processing.mkv
+        - 2-Linked List Processing.mkv.json
+        - 2-Linked List Processing.mkv_metadata.yaml
+        - 3-Linked List Mutation.mkv
+        - 3-Linked List Mutation.mkv.json
+        - 3-Linked List Mutation.mkv_metadata.yaml
+        - 4-Linked List Mutation Example.mkv
+        - 4-Linked List Mutation Example.mkv.json
+        - 4-Linked List Mutation Example.mkv_metadata.yaml
+        - 5-Examples： Linked Lists.mkv
+        - 5-Examples： Linked Lists.mkv.json
+        - 5-Examples： Linked Lists.mkv_metadata.yaml
+      - **Midterm Review (Su25)/**
+        - 1-Midterm 1 Review.mkv
+        - 1-Midterm 1 Review.mkv.json
+        - 1-Midterm 1 Review.mkv_metadata.yaml
+        - 2-Implementing Functions.mkv
+        - 2-Implementing Functions.mkv.json
+        - 2-Implementing Functions.mkv_metadata.yaml
+      - **Mutability (Su25)/**
+        - 1-Objects.webm
+        - 1-Objects.webm.json
+        - 1-Objects.webm_metadata.yaml
+        - 2-Example： Strings.mkv
+        - 2-Example： Strings.mkv.json
+        - 2-Example： Strings.mkv_metadata.yaml
+        - 3-Mutation Operations.webm
+        - 3-Mutation Operations.webm.json
+        - 3-Mutation Operations.webm_metadata.yaml
+        - 4-Tuples.webm
+        - 4-Tuples.webm.json
+        - 4-Tuples.webm_metadata.yaml
+        - 5-Mutation.mkv
+        - 5-Mutation.mkv.json
+        - 5-Mutation.mkv_metadata.yaml
+        - 6-Mutable Functions.mkv
+        - 6-Mutable Functions.mkv.json
+        - 6-Mutable Functions.mkv_metadata.yaml
+        - 7-Examples： Lists.webm
+        - 7-Examples： Lists.webm.json
+        - 7-Examples： Lists.webm_metadata.yaml
+      - **Mutable Trees (Su25)/**
+        - 1-Tree Class.mkv
+        - 1-Tree Class.mkv.json
+        - 1-Tree Class.mkv_metadata.yaml
+        - 2-Tree Mutation.mkv
+        - 2-Tree Mutation.mkv.json
+        - 2-Tree Mutation.mkv_metadata.yaml
+      - **Objects and Attributes (Su25)/**
+        - 1-Object-Oriented Programming.mkv
+        - 1-Object-Oriented Programming.mkv.json
+        - 1-Object-Oriented Programming.mkv_metadata.yaml
+        - 2-Class Statements.mkv
+        - 2-Class Statements.mkv.json
+        - 2-Class Statements.mkv_metadata.yaml
+        - 3-Creating Instances.mkv
+        - 3-Creating Instances.mkv.json
+        - 3-Creating Instances.mkv_metadata.yaml
+        - 4-Methods.mkv
+        - 4-Methods.mkv.json
+        - 4-Methods.mkv_metadata.yaml
+        - 5-Method Calls.mkv
+        - 5-Method Calls.mkv.json
+        - 5-Method Calls.mkv_metadata.yaml
+        - 6-Attribute Lookup.mkv
+        - 6-Attribute Lookup.mkv.json
+        - 6-Attribute Lookup.mkv_metadata.yaml
+        - 7-Class Attributes.mkv
+        - 7-Class Attributes.mkv.json
+        - 7-Class Attributes.mkv_metadata.yaml
+        - 8-Bound Methods.mkv
+        - 8-Bound Methods.mkv.json
+        - 8-Bound Methods.mkv_metadata.yaml
+        - 9-Attribute Assignment.mkv
+        - 9-Attribute Assignment.mkv.json
+        - 9-Attribute Assignment.mkv_metadata.yaml
+      - **Recursion/**
+        - 1-Self-Reference.webm
+        - 1-Self-Reference.webm.json
+        - 1-Self-Reference.webm_metadata.yaml
+        - 2-Recursive Functions.mkv
+        - 2-Recursive Functions.mkv.json
+        - 2-Recursive Functions.mkv_metadata.yaml
+        - 3-Recursion in Environment Diagrams.mkv
+        - 3-Recursion in Environment Diagrams.mkv.json
+        - 3-Recursion in Environment Diagrams.mkv_metadata.yaml
+        - 4-Verifying Recursive Functions.mkv
+        - 4-Verifying Recursive Functions.mkv.json
+        - 4-Verifying Recursive Functions.mkv_metadata.yaml
+        - 5-Mutual Recursion.mkv
+        - 5-Mutual Recursion.mkv.json
+        - 5-Mutual Recursion.mkv_metadata.yaml
+        - 6-Recursion and Iteration.mkv
+        - 6-Recursion and Iteration.mkv.json
+        - 6-Recursion and Iteration.mkv_metadata.yaml
+      - **SQL and Tables (Su25)/**
+        - 1-Databases.webm
+        - 1-Databases.webm.json
+        - 1-Databases.webm_metadata.yaml
+        - 2-Structured Query Language.webm
+        - 2-Structured Query Language.webm.json
+        - 2-Structured Query Language.webm_metadata.yaml
+        - 3-Projecting Tables.webm
+        - 3-Projecting Tables.webm.json
+        - 3-Projecting Tables.webm_metadata.yaml
+        - 4-Arithmetic.mkv
+        - 4-Arithmetic.mkv.json
+        - 4-Arithmetic.mkv_metadata.yaml
+        - 5-Joining Tables.webm
+        - 5-Joining Tables.webm.json
+        - 5-Joining Tables.webm_metadata.yaml
+        - 6-Aliases & Dot Expressions.webm
+        - 6-Aliases & Dot Expressions.webm.json
+        - 6-Aliases & Dot Expressions.webm_metadata.yaml
+        - 7-Numerical Expressions.mkv
+        - 7-Numerical Expressions.mkv.json
+        - 7-Numerical Expressions.mkv_metadata.yaml
+        - 8-String Expressions.webm
+        - 8-String Expressions.webm.json
+        - 8-String Expressions.webm_metadata.yaml
+      - **Scheme/**
+        - 1-Scheme.webm
+        - 1-Scheme.webm.json
+        - 1-Scheme.webm_metadata.yaml
+        - 2-Scheme Interpreters.mkv
+        - 2-Scheme Interpreters.mkv.json
+        - 2-Scheme Interpreters.mkv_metadata.yaml
+        - 3-Special Forms.webm
+        - 3-Special Forms.webm.json
+        - 3-Special Forms.webm_metadata.yaml
+        - 4-Lambda Expressions.mkv
+        - 4-Lambda Expressions.mkv.json
+        - 4-Lambda Expressions.mkv_metadata.yaml
+        - 5-More Special Forms.mkv
+        - 5-More Special Forms.mkv.json
+        - 5-More Special Forms.mkv_metadata.yaml
+        - 6-Example： Sierpinski's Triangle.mkv
+        - 6-Example： Sierpinski's Triangle.mkv.json
+        - 6-Example： Sierpinski's Triangle.mkv_metadata.yaml
+      - **Scheme Lists/**
+        - 1-Lists.mkv
+        - 1-Lists.mkv.json
+        - 1-Lists.mkv_metadata.yaml
+        - 2-Symbolic Programming.mkv
+        - 2-Symbolic Programming.mkv.json
+        - 2-Symbolic Programming.mkv_metadata.yaml
+        - 3-List Processing.webm
+        - 3-List Processing.webm.json
+        - 3-List Processing.webm_metadata.yaml
+        - 4-Example： Even Subsets.mkv
+        - 4-Example： Even Subsets.mkv.json
+        - 4-Example： Even Subsets.mkv_metadata.yaml
+        - 5-Discussion Question： Even Subsets Using Filter.mkv
+        - 5-Discussion Question： Even Subsets Using Filter.mkv.json
+        - 5-Discussion Question： Even Subsets Using Filter.mkv_metadata.yaml
+      - **Sequences and Containers (Su25)/**
+        - 1-Lists.webm
+        - 1-Lists.webm.json
+        - 1-Lists.webm_metadata.yaml
+        - 10-Strings.mkv
+        - 10-Strings.mkv.json
+        - 10-Strings.mkv_metadata.yaml
+        - 11-Dictionaries.mkv
+        - 11-Dictionaries.mkv.json
+        - 11-Dictionaries.mkv_metadata.yaml
+        - 2-Containers.mkv
+        - 2-Containers.mkv.json
+        - 2-Containers.mkv_metadata.yaml
+        - 3-For Statements.mkv
+        - 3-For Statements.mkv.json
+        - 3-For Statements.mkv_metadata.yaml
+        - 4-Ranges.mkv
+        - 4-Ranges.mkv.json
+        - 4-Ranges.mkv_metadata.yaml
+        - 5-List Comprehensions.mkv
+        - 5-List Comprehensions.mkv.json
+        - 5-List Comprehensions.mkv_metadata.yaml
+        - 6-Lists, Slices, & Recursion.mkv
+        - 6-Lists, Slices, & Recursion.mkv.json
+        - 6-Lists, Slices, & Recursion.mkv_metadata.yaml
+        - 7-Box-and-Pointer Notation.webm
+        - 7-Box-and-Pointer Notation.webm.json
+        - 7-Box-and-Pointer Notation.webm_metadata.yaml
+        - 8-Slicing.mkv
+        - 8-Slicing.mkv.json
+        - 8-Slicing.mkv_metadata.yaml
+        - 9-Processing Container Values.mkv
+        - 9-Processing Container Values.mkv.json
+        - 9-Processing Container Values.mkv_metadata.yaml
+      - **Tail Calls (Su25)/**
+        - 1-Tail Recursion.webm
+        - 1-Tail Recursion.webm.json
+        - 1-Tail Recursion.webm_metadata.yaml
+        - 2-Tail Calls.mkv
+        - 2-Tail Calls.mkv.json
+        - 2-Tail Calls.mkv_metadata.yaml
+        - 3-Tail Recursion Examples.mkv
+        - 3-Tail Recursion Examples.mkv.json
+        - 3-Tail Recursion Examples.mkv_metadata.yaml
+        - 4-Map and Reduce.mkv
+        - 4-Map and Reduce.mkv.json
+        - 4-Map and Reduce.mkv_metadata.yaml
+      - **Tree Recursion/**
+        - 1-Order of Recursive Calls.webm
+        - 1-Order of Recursive Calls.webm.json
+        - 1-Order of Recursive Calls.webm_metadata.yaml
+        - 2-Example： Inverse Cascade.mkv
+        - 2-Example： Inverse Cascade.mkv.json
+        - 2-Example： Inverse Cascade.mkv_metadata.yaml
+        - 3-Tree Recursion.mkv
+        - 3-Tree Recursion.mkv.json
+        - 3-Tree Recursion.mkv_metadata.yaml
+        - 4-Example： Counting Partitions.webm
+        - 4-Example： Counting Partitions.webm.json
+        - 4-Example： Counting Partitions.webm_metadata.yaml
+      - **[CS 61A FA22] Midterm 1 Walkthrough/**
+        - 1-Midterm 1 Question 1 Walkthrough.webm
+        - 1-Midterm 1 Question 1 Walkthrough.webm_metadata.yaml
+        - 2-Midterm 1 Question 2 Walkthrough.webm
+        - 2-Midterm 1 Question 2 Walkthrough.webm_metadata.yaml
+        - 3-Midterm 1 Question 3 Walkthrough.mkv
+        - 3-Midterm 1 Question 3 Walkthrough.mkv_metadata.yaml
+        - 4-Midterm 1 Question 4 Walkthrough.mkv
+        - 4-Midterm 1 Question 4 Walkthrough.mkv_metadata.yaml
+        - 5-Midterm 1 Question 5 Walkthrough.mkv
+        - 5-Midterm 1 Question 5 Walkthrough.mkv_metadata.yaml
+      - **[CS 61A FA22] Midterm 2 Walkthrough Videos/**
+        - 1-Question 1： What would Python Python？.mkv
+        - 1-Question 1： What would Python Python？.mkv_metadata.yaml
+        - 2-Question 2： Environmental Disaster.mkv
+        - 2-Question 2： Environmental Disaster.mkv_metadata.yaml
+        - 3-Question 3： Hog Revisited.mkv
+        - 3-Question 3： Hog Revisited.mkv_metadata.yaml
+        - 4-Question 4： The Lambdanean Hydra.webm
+        - 4-Question 4： The Lambdanean Hydra.webm_metadata.yaml
+        - 5-Question 5： Aim for 100.webm
+        - 5-Question 5： Aim for 100.webm_metadata.yaml
+        - 6-Question 6： Point A to Point B.webm
+        - 6-Question 6： Point A to Point B.webm_metadata.yaml
+        - 7-Question 7： Deforestation.webm
+        - 7-Question 7： Deforestation.webm_metadata.yaml
+      - **[CS 61A FA23] Final Walkthrough/**
+        - 1-[CS 61A FA23] Final Problem #1： Copying Copies.webm
+        - 1-[CS 61A FA23] Final Problem #1： Copying Copies.webm_metadata.yaml
+        - 2-[CS 61A FA23] Final Problem #2： Path Math.webm
+        - 2-[CS 61A FA23] Final Problem #2： Path Math.webm_metadata.yaml
+        - 3-[CS 61A FA23] Final Problem #3： Talk Like a Pirate Day.webm
+        - 3-[CS 61A FA23] Final Problem #3： Talk Like a Pirate Day.webm_metadata.yaml
+        - 4-[CS 61A FA23] Final Problem #4： Six Pages of Pairings.webm
+        - 4-[CS 61A FA23] Final Problem #4： Six Pages of Pairings.webm_metadata.yaml
+        - 5-[CS 61A FA23] Final Problem #5： What Would Scheme Do？.webm
+        - 5-[CS 61A FA23] Final Problem #5： What Would Scheme Do？.webm_metadata.yaml
+        - 6-[CS 61A FA23] Final Problem #6： How to Get Promoted.webm
+        - 6-[CS 61A FA23] Final Problem #6： How to Get Promoted.webm_metadata.yaml
+        - 7-[CS 61A FA23] Final Problem #7： Don't Skip This.webm
+        - 7-[CS 61A FA23] Final Problem #7： Don't Skip This.webm_metadata.yaml
+        - 8-[CS 61A FA23] Final Problem #8： Cheap Donuts.webm
+        - 8-[CS 61A FA23] Final Problem #8： Cheap Donuts.webm_metadata.yaml
+      - **[CS 61A FA23] Midterm 1 Walkthrough/**
+        - 1-Problem #1： What Would Python Display？.mkv
+        - 1-Problem #1： What Would Python Display？.mkv_metadata.yaml
+        - 2-Problem #2： An Odd Implementation of Even.mkv
+        - 2-Problem #2： An Odd Implementation of Even.mkv_metadata.yaml
+        - 3-Problem #3： In Your Prime.mkv
+        - 3-Problem #3： In Your Prime.mkv_metadata.yaml
+        - 4-Problem #4： Choose Wisely.mkv
+        - 4-Problem #4： Choose Wisely.mkv_metadata.yaml
+      - **[CS 61A FA23] Midterm 2 Walkthrough Videos/**
+        - 1-Question #1： What Would Python Display？.mkv
+        - 1-Question #1： What Would Python Display？.mkv_metadata.yaml
+        - 2-Question #2： Making a List, Checking it Twice.mkv
+        - 2-Question #2： Making a List, Checking it Twice.mkv_metadata.yaml
+        - 3-Question #3： 24-Hour Library.mkv
+        - 3-Question #3： 24-Hour Library.mkv_metadata.yaml
+        - 4-Question #4： A Perfect Question.mkv
+        - 4-Question #4： A Perfect Question.mkv_metadata.yaml
+        - 5-Question #5： Only Paths.mkv
+        - 5-Question #5： Only Paths.mkv_metadata.yaml
+        - 6-Question #6： After Party.mkv
+        - 6-Question #6： After Party.mkv_metadata.yaml
+      - **[CS 61A FA24] Midterm 1 Walkthrough/**
+        - 1-[CS 61A FA24] Midterm 1 Problem #1： WWPD？.webm
+        - 1-[CS 61A FA24] Midterm 1 Problem #1： WWPD？.webm_metadata.yaml
+        - 2-[CS 61A FA24] Midterm 1 Problem #2： Which One.webm
+        - 2-[CS 61A FA24] Midterm 1 Problem #2： Which One.webm_metadata.yaml
+        - 3-[CS 61A FA24] Midterm 1 Problem #3： Final Digit.webm
+        - 3-[CS 61A FA24] Midterm 1 Problem #3： Final Digit.webm_metadata.yaml
+        - 4-[CS 61A FA24] Midterm 1 Problem #4： Close Enough.webm
+        - 4-[CS 61A FA24] Midterm 1 Problem #4： Close Enough.webm_metadata.yaml
+        - 5-[CS 61A FA24] Midterm 1 Problem #5： Shifty.webm
+        - 5-[CS 61A FA24] Midterm 1 Problem #5： Shifty.webm_metadata.yaml
+      - **[CS 61A FA24] Midterm 2 Walkthrough/**
+        - 1-[CS 61A FA24] Midterm 2 Problem #1： What Would Python Display？.webm
+        - 1-[CS 61A FA24] Midterm 2 Problem #1： What Would Python Display？.webm_metadata.yaml
+        - 2-[CS 61A FA24] Midterm 2 Problem #2： Pizza by the Slice.mkv
+        - 2-[CS 61A FA24] Midterm 2 Problem #2： Pizza by the Slice.mkv_metadata.yaml
+        - 3-[CS 61A FA24] Midterm 2 Problem #3： CS 61A Software Store.mkv
+        - 3-[CS 61A FA24] Midterm 2 Problem #3： CS 61A Software Store.mkv_metadata.yaml
+        - 4-[CS 61A FA24] Midterm 2 Problem #4： Almost a Perfect Question.mkv
+        - 4-[CS 61A FA24] Midterm 2 Problem #4： Almost a Perfect Question.mkv_metadata.yaml
+        - 5-[CS 61A FA24] Midterm 2 Problem #5a： How Long is this Exam？.mkv
+        - 5-[CS 61A FA24] Midterm 2 Problem #5a： How Long is this Exam？.mkv_metadata.yaml
+        - 6-[CS 61A FA24] Midterm 2 Problem #5b： How Long is this Exam？.mkv
+        - 6-[CS 61A FA24] Midterm 2 Problem #5b： How Long is this Exam？.mkv_metadata.yaml
+        - 7-[CS 61A FA24] Midterm 2 Problem #6： Nice Path!.webm
+        - 7-[CS 61A FA24] Midterm 2 Problem #6： Nice Path!.webm_metadata.yaml
+      - **[CS 61A SP23] Final Walkthrough/**
+        - 1-[CS 61A SP23] Final Problem #1： What Would Python Display？.webm
+        - 1-[CS 61A SP23] Final Problem #1： What Would Python Display？.webm_metadata.yaml
+        - 2-[CS 61A SP23] Final Problem #2： Framed.webm
+        - 2-[CS 61A SP23] Final Problem #2： Framed.webm_metadata.yaml
+        - 3-[CS 61A SP23] Final Problem #3： Trees Get Degrees.webm
+        - 3-[CS 61A SP23] Final Problem #3： Trees Get Degrees.webm_metadata.yaml
+        - 4-[CS 61A SP23] Final Problem #4： Repark the Car.webm
+        - 4-[CS 61A SP23] Final Problem #4： Repark the Car.webm_metadata.yaml
+        - 5-[CS 61A SP23] Final Problem #5： Pairings.webm
+        - 5-[CS 61A SP23] Final Problem #5： Pairings.webm_metadata.yaml
+        - 6-[CS 61A SP23] Final Problem #6： Log and Count.webm
+        - 6-[CS 61A SP23] Final Problem #6： Log and Count.webm_metadata.yaml
+        - 7-[CS 61A SP23] Final Problem #7： Room Service.webm
+        - 7-[CS 61A SP23] Final Problem #7： Room Service.webm_metadata.yaml
+      - **[CS 61A SP23] Midterm 1 Walkthrough/**
+        - 1-Problem #1： What would Python Display？.mkv
+        - 1-Problem #1： What would Python Display？.mkv_metadata.yaml
+        - 2-Problem #2： Square the Square.mkv
+        - 2-Problem #2： Square the Square.mkv_metadata.yaml
+        - 3-Problem #3a： On Repeat.mkv
+        - 3-Problem #3a： On Repeat.mkv_metadata.yaml
+        - 4-Problem #3b： On Repeat.mkv
+        - 4-Problem #3b： On Repeat.mkv_metadata.yaml
+        - 5-Problem #4： Perfect Ten.mkv
+        - 5-Problem #4： Perfect Ten.mkv_metadata.yaml
+      - **[CS 61A SP23] Midterm 2 Walkthrough/**
+        - 1-Problem #1： What Would Python Display？.mkv
+        - 1-Problem #1： What Would Python Display？.mkv_metadata.yaml
+        - 10-Problem #5c： Parking.mkv
+        - 10-Problem #5c： Parking.mkv_metadata.yaml
+        - 2-Problem #2a： Letter Grade.mkv
+        - 2-Problem #2a： Letter Grade.mkv_metadata.yaml
+        - 3-Problem #2b： Letter Grade.mkv
+        - 3-Problem #2b： Letter Grade.mkv_metadata.yaml
+        - 4-Problem #3a： Prefixes.mkv
+        - 4-Problem #3a： Prefixes.mkv_metadata.yaml
+        - 5-Problem #3b： Prefixes.mkv
+        - 5-Problem #3b： Prefixes.mkv_metadata.yaml
+        - 6-Problem #4a： Tree Trimming.mkv
+        - 6-Problem #4a： Tree Trimming.mkv_metadata.yaml
+        - 7-Problem #4b： Tree Trimming.mkv
+        - 7-Problem #4b： Tree Trimming.mkv_metadata.yaml
+        - 8-Problem #5a： Parking.mkv
+        - 8-Problem #5a： Parking.mkv_metadata.yaml
+        - 9-Problem #5b： Parking.mkv
+        - 9-Problem #5b： Parking.mkv_metadata.yaml
+      - **[CS 61A SP24] Mega Discussion 08/**
+        - 1-[CS 61A SP24] Discussion 8 Problem #1 Strange Loop.mkv
+        - 1-[CS 61A SP24] Discussion 8 Problem #1 Strange Loop.mkv_metadata.yaml
+        - 2-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv
+        - 2-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv_metadata.yaml
+        - 3-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm
+        - 3-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm_metadata.yaml
+        - 4-[CS61A SP24] Discussion 8 Question #4 Overlap Growth.webm
+        - 4-[CS61A SP24] Discussion 8 Question #4 Overlap Growth.webm_metadata.yaml
+        - 5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm
+        - 5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm_metadata.yaml
+      - **[CS 61A SP24] Midterm 1 Walkthrough/**
+        - 1-[CS 61A SP24] Midterm 1 WWPD.mkv
+        - 1-[CS 61A SP24] Midterm 1 WWPD.mkv_metadata.yaml
+        - 2-[CS 61A SP24] Midterm 1 Silence of the Lambda.mkv
+        - 2-[CS 61A SP24] Midterm 1 Silence of the Lambda.mkv_metadata.yaml
+        - 3-[CS 61A SP24] Midterm 1 Nearly Square.mkv
+        - 3-[CS 61A SP24] Midterm 1 Nearly Square.mkv_metadata.yaml
+        - 4-[CS 61A SP24] Midterm 1 Nice Dice.mkv
+        - 4-[CS 61A SP24] Midterm 1 Nice Dice.mkv_metadata.yaml
+      - **[CS 61A SP24] Midterm 2 Walkthrough/**
+        - 1-[CS 61A SP24] Midterm 2 Problem #1 What Would Python Display Walkthrough.mkv
+        - 1-[CS 61A SP24] Midterm 2 Problem #1 What Would Python Display Walkthrough.mkv_metadata.yaml
+        - 2-[CS 61A SP24] Midterm 2 Problem #2 Spin Cycle.webm
+        - 2-[CS 61A SP24] Midterm 2 Problem #2 Spin Cycle.webm_metadata.yaml
+        - 3-[CS 61A SP24] Midterm 2 Problem #3 Fearless Walkthrough.mkv
+        - 3-[CS 61A SP24] Midterm 2 Problem #3 Fearless Walkthrough.mkv_metadata.yaml
+        - 4-[CS 61A SP24] Midterm 2 Problem #4 Who's counting？.mkv
+        - 4-[CS 61A SP24] Midterm 2 Problem #4 Who's counting？.mkv_metadata.yaml
+      - **[CS 61A SP25] Midterm 1 Walkthrough/**
+        - 1-[CS61A SP25] Midterm 1 Problem #1： What Would Python Print？.webm
+        - 1-[CS61A SP25] Midterm 1 Problem #1： What Would Python Print？.webm_metadata.yaml
+        - 2-[CS61A SP25] Midterm 1 Problem #2： Which One.webm
+        - 2-[CS61A SP25] Midterm 1 Problem #2： Which One.webm_metadata.yaml
+        - 3-[CS61A SP25] Midterm 1 Problem #3： Legit Digit.webm
+        - 3-[CS61A SP25] Midterm 1 Problem #3： Legit Digit.webm_metadata.yaml
+        - 4-[CS61A SP25] Midterm 1 Problem #4： Hailstone Returns.mkv
+        - 4-[CS61A SP25] Midterm 1 Problem #4： Hailstone Returns.mkv_metadata.yaml
+        - 5-[CS61A SP25] Midterm 1 Problem #5： It Takes Two.mkv
+        - 5-[CS61A SP25] Midterm 1 Problem #5： It Takes Two.mkv_metadata.yaml
+      - **[CS 61A SP25] Midterm 2 Walkthrough/**
+        - 1-[CS 61A SP25] Midterm 2 Problem #1： What Would Python Do？.mkv
+        - 1-[CS 61A SP25] Midterm 2 Problem #1： What Would Python Do？.mkv_metadata.yaml
+        - 2-[CS 61A SP25] Midterm 2 Problem #3a： Berkeley Time.mkv
+        - 2-[CS 61A SP25] Midterm 2 Problem #3a： Berkeley Time.mkv_metadata.yaml
+        - 3-[CS 61A SP25] Midterm 2 Problem #3b： Berkeley Time.mkv
+        - 3-[CS 61A SP25] Midterm 2 Problem #3b： Berkeley Time.mkv_metadata.yaml
+        - 4-[CS 61A SP25] Midterm 2 Problem #4a DeepSeek.webm
+        - 4-[CS 61A SP25] Midterm 2 Problem #4a DeepSeek.webm_metadata.yaml
+        - 5-[CS 61A SP25] Midterm 2 Problem #4b DeepSeek.webm
+        - 5-[CS 61A SP25] Midterm 2 Problem #4b DeepSeek.webm_metadata.yaml
+        - 6-[CS 61A SP25] Midterm 2 Problem #5a Just Add and Multiply.mkv
+        - 6-[CS 61A SP25] Midterm 2 Problem #5a Just Add and Multiply.mkv_metadata.yaml
+        - 7-[CS 61A SP25] Midterm 2 Problem #5b Just Add and Multiply.mkv
+        - 7-[CS 61A SP25] Midterm 2 Problem #5b Just Add and Multiply.mkv_metadata.yaml
+        - 8-[CS 61A SP25] Midterm 2 Problem #5c Just Add and Multiply.mkv
+        - 8-[CS 61A SP25] Midterm 2 Problem #5c Just Add and Multiply.mkv_metadata.yaml
+      - **[CS 61A SU23] Midterm Walkthrough/**
+        - 1-[CS 61A SU23] Midterm Problem #1： WWPD？.webm
+        - 1-[CS 61A SU23] Midterm Problem #1： WWPD？.webm_metadata.yaml
+        - 2-[CS 61A SU23] Midterm Problem #2： The Fellowship of the List.mkv
+        - 2-[CS 61A SU23] Midterm Problem #2： The Fellowship of the List.mkv_metadata.yaml
+        - 4-[CS 61A SU23] Midterm Problem #4： Goatda.webm
+        - 5-[CS 61A SU23] Midterm Problem #5a： Sweetness Overload.mkv
+        - 6-[CS 61A SU23] Midterm Problem #5b： Sweetness Overload.mkv
+        - 7-[CS 61A SU23] Midterm Problem #5c： Sweetness Overload.mkv
+        - 8-[CS 61A SU23] Midterm Problem #6： All Treeils Lead to Rome.webm
+      - **[CS 61A SU24 Discussion 2]/**
+        - 1-Bottles.mkv
+        - 1-Bottles.mkv_metadata.yaml
+        - 2-Environment Diagrams： Assignment and Def Statements (Q7 & Q8).webm
+        - 2-Environment Diagrams： Assignment and Def Statements (Q7 & Q8).webm_metadata.yaml
+        - 3-Digit Finder.mkv
+        - 3-Digit Finder.mkv_metadata.yaml
+        - 4-61A FA21 Disc02： Make Keeper.mkv
+        - 4-61A FA21 Disc02： Make Keeper.mkv_metadata.yaml
+        - 5-Match Maker.mkv
+        - 5-Match Maker.mkv_metadata.yaml
+      - **[CS 61A SU24] Discussion 01/**
+        - 1-Race.mkv
+        - 1-Race.mkv_metadata.yaml
+        - 2-Fizzbuzz.mkv
+        - 2-Fizzbuzz.mkv_metadata.yaml
+        - 3-Is Prime.mkv
+        - 3-Is Prime.mkv_metadata.yaml
+        - 4-Unique Digits.mkv
+        - 4-Unique Digits.mkv_metadata.yaml
+        - 5-Ordered Digits.mkv
+        - 5-Ordered Digits.mkv_metadata.yaml
+      - **[CS 61A SU24] Final Walkthrough/**
+        - 1-[CS61A SU24] Final Problem #1： Phrase Phonetics.webm
+        - 1-[CS61A SU24] Final Problem #1： Phrase Phonetics.webm_metadata.yaml
+        - 2-[CS61A SU24] Final Problem #2： Sweet Diadreams.webm
+        - 2-[CS61A SU24] Final Problem #2： Sweet Diadreams.webm_metadata.yaml
+        - 3-[CS61A SU24] Final Problem #3： Movie Theater Seating.webm
+        - 3-[CS61A SU24] Final Problem #3： Movie Theater Seating.webm_metadata.yaml
+        - 4-[CS61A SU24] Final Problem #4： Linked Max Composite Value Path.webm
+        - 4-[CS61A SU24] Final Problem #4： Linked Max Composite Value Path.webm_metadata.yaml
+        - 5-[CS61A SU24] Final Problem #5： CS61A Web Browser.webm
+        - 5-[CS61A SU24] Final Problem #5： CS61A Web Browser.webm_metadata.yaml
+        - 6-[CS61A SU24] Final Problem #6： Treequality.webm
+        - 6-[CS61A SU24] Final Problem #6： Treequality.webm_metadata.yaml
+        - 7-[CS61A SU24] Final Problem #7： Scheme Dictionary Abstraction.webm
+        - 7-[CS61A SU24] Final Problem #7： Scheme Dictionary Abstraction.webm_metadata.yaml
+        - 8-[CS61A SU24] Final Problem #8： Phrase Pho.webm
+        - 8-[CS61A SU24] Final Problem #8： Phrase Pho.webm_metadata.yaml
+      - **[CS 61A SU24] Midterm Walkthrough/**
+        - 1-[CS 61A SU24] Midterm Problem #1： Generiterator.mkv
+        - 1-[CS 61A SU24] Midterm Problem #1： Generiterator.mkv_metadata.yaml
+        - 2-[CS 61A SU24] Midterm Problem #2： Conveyor Belt.mkv
+        - 2-[CS 61A SU24] Midterm Problem #2： Conveyor Belt.mkv_metadata.yaml
+        - 3-[CS 61A SU24] Midterm Problem #3： Tree Sum.webm
+        - 3-[CS 61A SU24] Midterm Problem #3： Tree Sum.webm_metadata.yaml
+        - 4-[CS 61A SU24] Midterm Problem #4： Add Consecutive.webm
+        - 4-[CS 61A SU24] Midterm Problem #4： Add Consecutive.webm_metadata.yaml
+        - 5-[CS 61A SU24] Midterm Problem #5： Combine Tree.webm
+        - 5-[CS 61A SU24] Midterm Problem #5： Combine Tree.webm_metadata.yaml
+        - 6-[CS 61A SU24] Midterm Problem #6： Multi Compose.webm
+        - 6-[CS 61A SU24] Midterm Problem #6： Multi Compose.webm_metadata.yaml
+        - 7-[CS 61A SU24] Midterm Problem #7： Memoized Fibonacci Tree.webm
+        - 7-[CS 61A SU24] Midterm Problem #7： Memoized Fibonacci Tree.webm_metadata.yaml
+      - **[CS 61A SU25] Discussion 3/**
+        - 1-Question 1 - Recursive Multiplication.mkv
+        - 1-Question 1 - Recursive Multiplication.mkv_metadata.yaml
+        - 2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm
+        - 2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm_metadata.yaml
+        - 3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv
+        - 3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv_metadata.yaml
+        - 4-Question 5 - Recursive Hailstone.mkv
+        - 4-Question 5 - Recursive Hailstone.mkv_metadata.yaml
+      - **[CS 61A SU25] Discussion 6/**
+        - 1-Keyboard.webm
+        - 1-Keyboard.webm_metadata.yaml
+        - 2-Shapes.mkv
+        - 2-Shapes.mkv_metadata.yaml
+        - 3-Bear.webm
+        - 3-Bear.webm_metadata.yaml
+      - **[CS61A - Sp15] Final Solution Videos/**
+        - 1-[CS61A - Sp15] Final Fall 2014 - Problem 6b.mkv
+        - 1-[CS61A - Sp15] Final Fall 2014 - Problem 6b.mkv.json
+        - 1-[CS61A - Sp15] Final Fall 2014 - Problem 6b.mkv_metadata.yaml
+        - 10-[CS61A - Sp15] Final Fall 2014 - Problem 4a.mkv
+        - 10-[CS61A - Sp15] Final Fall 2014 - Problem 4a.mkv.json
+        - 10-[CS61A - Sp15] Final Fall 2014 - Problem 4a.mkv_metadata.yaml
+        - 11-[CS61A - Sp15] Final Fall 2014 - Problem 3b.mkv
+        - 11-[CS61A - Sp15] Final Fall 2014 - Problem 3b.mkv.json
+        - 11-[CS61A - Sp15] Final Fall 2014 - Problem 3b.mkv_metadata.yaml
+        - 12-[CS61A - Sp15] Final Fall 2014 - Problem 3a.mkv
+        - 12-[CS61A - Sp15] Final Fall 2014 - Problem 3a.mkv.json
+        - 12-[CS61A - Sp15] Final Fall 2014 - Problem 3a.mkv_metadata.yaml
+        - 13-[CS61A - Sp15] Final Fall 2014 - Problem 2b.mkv
+        - 13-[CS61A - Sp15] Final Fall 2014 - Problem 2b.mkv.json
+        - 13-[CS61A - Sp15] Final Fall 2014 - Problem 2b.mkv_metadata.yaml
+        - 14-[CS61A - Sp15] Final Fall 2014 - Problem 2a.mkv
+        - 14-[CS61A - Sp15] Final Fall 2014 - Problem 2a.mkv.json
+        - 14-[CS61A - Sp15] Final Fall 2014 - Problem 2a.mkv_metadata.yaml
+        - 2-[CS61A - Sp15] Final Fall 2014 - Problem 6a.mkv
+        - 2-[CS61A - Sp15] Final Fall 2014 - Problem 6a.mkv.json
+        - 2-[CS61A - Sp15] Final Fall 2014 - Problem 6a.mkv_metadata.yaml
+        - 3-[CS61A - Sp15] Final Fall 2014 - Problem 5e.mkv
+        - 3-[CS61A - Sp15] Final Fall 2014 - Problem 5e.mkv.json
+        - 3-[CS61A - Sp15] Final Fall 2014 - Problem 5e.mkv_metadata.yaml
+        - 4-[CS61A - Sp15] Final Fall 2014 - Problem 5d.mkv
+        - 4-[CS61A - Sp15] Final Fall 2014 - Problem 5d.mkv.json
+        - 4-[CS61A - Sp15] Final Fall 2014 - Problem 5d.mkv_metadata.yaml
+        - 5-[CS61A - Sp15] Final Fall 2014 - Problem 5c.mkv
+        - 5-[CS61A - Sp15] Final Fall 2014 - Problem 5c.mkv.json
+        - 5-[CS61A - Sp15] Final Fall 2014 - Problem 5c.mkv_metadata.yaml
+        - 6-[CS61A - Sp15] Final Fall 2014 - Problem 5b.mkv
+        - 6-[CS61A - Sp15] Final Fall 2014 - Problem 5b.mkv.json
+        - 6-[CS61A - Sp15] Final Fall 2014 - Problem 5b.mkv_metadata.yaml
+        - 7-[CS61A - Sp15] Final Fall 2014 - Problem 5a.mkv
+        - 7-[CS61A - Sp15] Final Fall 2014 - Problem 5a.mkv.json
+        - 7-[CS61A - Sp15] Final Fall 2014 - Problem 5a.mkv_metadata.yaml
+        - 8-[CS61A - Sp15] Final Fall 2014 - Problem 4cd.mkv
+        - 8-[CS61A - Sp15] Final Fall 2014 - Problem 4cd.mkv.json
+        - 8-[CS61A - Sp15] Final Fall 2014 - Problem 4cd.mkv_metadata.yaml
+        - 9-[CS61A - Sp15] Final Fall 2014 - Problem 4b.mkv
+        - 9-[CS61A - Sp15] Final Fall 2014 - Problem 4b.mkv.json
+        - 9-[CS61A - Sp15] Final Fall 2014 - Problem 4b.mkv_metadata.yaml
