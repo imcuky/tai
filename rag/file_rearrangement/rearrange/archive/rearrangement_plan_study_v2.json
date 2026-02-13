@@ -182,6 +182,41 @@
             "related_items": [
                 "study/lecture/assets/pdfs/61a-su25-mt-study-guide.pdf"
             ]
+        },
+        {
+            "group_name": "Course Information",
+            "main_item": "",
+            "related_items": [
+                "CS 61A/CS 61A Summer 2025.html"
+            ]
+        },
+        {
+            "group_name": "Assets",
+            "main_item": "",
+            "related_items": [
+                "study/lecture/assets"
+            ]
+        },
+        {
+            "group_name": "Discussion Materials",
+            "main_item": "",
+            "related_items": [
+                "study/lecture/disc"
+            ]
+        },
+        {
+            "group_name": "Study Guides",
+            "main_item": "",
+            "related_items": [
+                "study/lecture/study-guide"
+            ]
+        },
+        {
+            "group_name": "Video Lectures",
+            "main_item": "",
+            "related_items": [
+                "study/lecture/youtube"
+            ]
         }
     ]
 }
