@@ -23,10 +23,16 @@ class RearrangementPlan(BaseModel):
     rearranged_structure: List[RearrangedGroup]
 
 
+class BackboneFolderSelection(BaseModel):
+    """Model for LLM to identify the main backbone folder"""
+    main_backbone_folder: str
+    relative_path: str
+
+
 class OrphanMatch(BaseModel):
     item_path: str
     assigned_group: str
-    reason: str | None = None
+    
 
 
 class OrphanMatchResponse(BaseModel):
@@ -40,8 +46,108 @@ def load_structure_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         return f.read()
 
+def build_hierarchical_structure_from_db(db_path, output_path, course_prefix="CS 61A"):
+    """
+    Build a hierarchical JSON structure directly from the database.
+    The relative_path in the database already contains the organization structure.
+    ONLY processes files in the 'study' folder.
+    
+    Args:
+        db_path: Path to the SQLite database (e.g., CS 61A_metadata.db)
+        output_path: Path to save the enriched JSON structure
+        course_prefix: Prefix to strip from relative paths (default: "CS 61A")
+    """
+    print(f"Building hierarchical structure from database: {db_path}")
+    
+    if not os.path.exists(db_path):
+        raise FileNotFoundError(f"Database not found at: {db_path}")
+    
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    
+    # Fetch all files with their information - ONLY from study folder
+    query = """
+        SELECT file_name, relative_path, description, url
+        FROM file
+        WHERE relative_path IS NOT NULL 
+          AND relative_path != ''
+          AND (relative_path LIKE '%/study/%' OR relative_path LIKE 'study/%')
+        ORDER BY relative_path
+    """
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    conn.close()
+    
+    print(f"Found {len(rows)} files in study folder")
+    
+    # Build hierarchical structure
+    root = {'children': []}
+    
+    for file_name, relative_path, description, url in rows:
+        # Strip course prefix if present
+        if relative_path.startswith(f"{course_prefix}/"):
+            path = relative_path[len(course_prefix) + 1:]
+        else:
+            path = relative_path
+        
+        # Split path into parts
+        parts = path.split('/')
+        
+        # Navigate/create folder structure
+        current = root
+        for i, part in enumerate(parts[:-1]):  # All parts except the last (filename)
+            # Look for existing folder
+            folder = None
+            for child in current.get('children', []):
+                if child.get('name') == part and child.get('type') == 'folder':
+                    folder = child
+                    break
+            
+            # Create folder if not exists
+            if not folder:
+                folder_path = '/'.join(parts[:i+1])
+                folder = {
+                    'type': 'folder',
+                    'name': part,
+                    'relative_path': folder_path,
+                    'children': []
+                }
+                if 'children' not in current:
+                    current['children'] = []
+                current['children'].append(folder)
+            
+            current = folder
+        
+        # Add file node
+        file_node = {
+            'type': 'file',
+            'name': file_name,
+            'relative_path': relative_path
+        }
+        if description:
+            file_node['description'] = description
+        if url:
+            file_node['url'] = url
+        
+        if 'children' not in current:
+            current['children'] = []
+        current['children'].append(file_node)
+    
+    # Write JSON to output file
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(root, f, indent=2, ensure_ascii=False)
+    
+    print(f"Hierarchical structure saved to: {output_path}")
+    print(f"Processed {len(rows)} files")
+    
+    return output_path
+
+
 def enrich_structure_with_descriptions(structure_md_path, db_path, output_path):
     """
+    DEPRECATED: This function is kept for backward compatibility.
+    Use build_hierarchical_structure_from_db() instead.
+    
     Parse the markdown structure file, fetch descriptions from database,
     and generate a JSON file with hierarchical structure and descriptions.
     
@@ -176,6 +282,118 @@ def load_json_file(file_path):
         raise FileNotFoundError(f"Required file not found: {file_path}")
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
+
+
+def get_folder_structure_summary(enriched_data: Dict, max_depth: int = 3) -> str:
+    """
+    Generate a summary of the folder structure for LLM analysis.
+    
+    Args:
+        enriched_data: Hierarchical JSON structure
+        max_depth: Maximum depth to traverse (default: 3)
+    
+    Returns:
+        String representation of folder structure
+    """
+    lines = []
+    
+    def traverse(node: Dict, depth: int = 0, prefix: str = ""):
+        if depth > max_depth:
+            return
+        
+        name = node.get('name', '')
+        node_type = node.get('type', 'folder')
+        children = node.get('children', []) or []
+        
+        if not name and depth == 0:
+            # Root node
+            for child in children:
+                traverse(child, depth, prefix)
+            return
+        
+        indent = "  " * depth
+        if node_type == 'folder':
+            # Count files and subfolders
+            file_count = sum(1 for c in children if c.get('type') == 'file')
+            folder_count = sum(1 for c in children if c.get('type') == 'folder')
+            
+            path = node.get('relative_path', name)
+            info = f"{indent}📁 {name}/ ({file_count} files, {folder_count} folders)"
+            lines.append(info)
+            
+            # Traverse children
+            for child in children:
+                traverse(child, depth + 1, f"{prefix}{name}/")
+        else:
+            # File node - just count, don't list all files
+            pass
+    
+    for child in enriched_data.get('children', []):
+        traverse(child, 0)
+    
+    return '\n'.join(lines)
+
+
+def identify_main_backbone_folder(enriched_data: Dict) -> str:
+    """
+    Use LLM to identify the main backbone folder that should serve as the
+    chronological backbone of the course.
+    
+    Args:
+        enriched_data: Hierarchical JSON structure
+    
+    Returns:
+        Path to the main backbone folder (e.g., "study/lecture")
+    """
+    client = OpenAI()
+    
+    # Generate a summary of the folder structure
+    structure_summary = get_folder_structure_summary(enriched_data, max_depth=3)
+    
+    system_prompt = """
+You are analyzing a course material directory structure to identify the "main backbone folder".
+
+The main backbone folder should:
+1. Contain the primary chronological teaching materials (typically lecture slides, lecture notes, or similar)
+2. Be organized sequentially (e.g., lecture01, lecture02, etc.)
+3. Serve as the natural organizing structure for other course materials
+
+Common patterns:
+- "study/lecture" or "lecture" folders often contain the main lecture materials
+- Look for folders with sequential numbering (lec01, lec02, etc.)
+- Lecture materials typically include slides, code examples, and notes
+
+Your task: 
+1. Identify which folder path should be the main backbone
+2. Fill in 'main_backbone_folder' with a descriptive name (e.g., "lecture")
+3. Fill in 'relative_path' with the FULL folder path from the structure (e.g., "study/lecture")
+
+IMPORTANT: The 'relative_path' must be the complete path to the folder, not just the folder name.
+Example: If the backbone is the lecture folder under study, relative_path should be "study/lecture", NOT "study/" or "lecture/".
+"""
+    
+    messages = [
+        {
+            "role": "system",
+            "content": system_prompt
+        },
+        {
+            "role": "user",
+            "content": f"Here is the course folder structure:\n\n{structure_summary}\n\nIdentify the main backbone folder path."
+        }
+    ]
+    
+    completion = client.beta.chat.completions.parse(
+        model="gpt-5-nano",
+        messages=messages,
+        response_format=BackboneFolderSelection
+    )
+    
+    result = completion.choices[0].message.parsed
+    print(f"Main backbone folder name: {result.main_backbone_folder}")
+    print(f"Main backbone relative path: {result.relative_path}")
+    
+    return result.relative_path
 
 
 def collect_existing_plan_paths(plan_data: Dict) -> Set[str]:
@@ -421,40 +639,237 @@ def run_enrichment(base_dir: str):
     print(f"Database path: {db_file}")
     enrich_structure_with_descriptions(structure_file, db_file, enriched_output)
 
-def generate_rearrangement_plan(structure_content):
-    """Ask LLM to identify the main type and reorganize files into groups."""
+def generate_rearrangement_plan(enriched_data: Dict, backbone_folder: str) -> RearrangementPlan:
+    """
+    Generate a rearrangement plan based on the backbone folder.
+    Groups files from the backbone folder into logical lecture/topic groups.
+    
+    Args:
+        enriched_data: Hierarchical JSON structure
+        backbone_folder: Path to the main backbone folder (e.g., "study/lecture")
+    
+    Returns:
+        RearrangementPlan with grouped structure
+    """
     client = OpenAI() 
     
-    system_prompt = """
-    You are an intelligent file system organizer for university course materials.
+    # Extract files and folders from the backbone folder
+    backbone_items = []
     
-    Goal: 
-    1. Analyze the provided directory tree (Markdown).
-    2. Identify the "Main Type" folder that best serves as the chronological backbone of the course.
-    3. Create a new logical structure where files from other folders are grouped into the corresponding "Topic" unit defined by the backbone.
+    def extract_backbone_items(node: Dict, hierarchy_path: str = ""):
+        name = node.get('name', '')
+        node_type = node.get('type', 'folder')
+        children = node.get('children', []) or []
+        description = node.get('description', '')
+        
+        if not name and not hierarchy_path:
+            # Root node
+            for child in children:
+                extract_backbone_items(child, "")
+            return
+        
+        node_path = f"{hierarchy_path}/{name}" if hierarchy_path else name
+        
+        # Check if this is within or is the backbone folder
+        if node_path == backbone_folder:
+            # We're at the backbone root, extract its children
+            for child in children:
+                extract_backbone_items(child, node_path)
+            return
+        
+        if not node_path.startswith(f"{backbone_folder}/"):
+            # Not in backbone folder, check children for backbone
+            if backbone_folder.startswith(node_path):
+                for child in children:
+                    extract_backbone_items(child, node_path)
+            return
+        
+        # This item is within the backbone folder
+        if node_type == 'file':
+            backbone_items.append({
+                'path': node_path,
+                'name': name,
+                'type': node_type,
+                'description': description[:200] if description else ''
+            })
+        elif node_type == 'folder':
+            # Check if this is a leaf folder (contains only files)
+            has_subfolders = any(c.get('type') == 'folder' for c in children)
+            if not has_subfolders and children:
+                # Leaf folder with files
+                backbone_items.append({
+                    'path': node_path,
+                    'name': name,
+                    'type': 'folder',
+                    'file_count': len(children),
+                    'description': f"Folder containing {len(children)} files"
+                })
+            else:
+                # Recurse into subfolder
+                for child in children:
+                    extract_backbone_items(child, node_path)
     
-    Matching Logic:
-    - Match items primarily by content/topic relevance. For example, if "Lecture 1" covers "Introduction to AI", then other materials that relate to that topic should be grouped with it.
-    - Use string similarity/topic matching if numbers are missing or ambiguous.
-    - If a file doesn't clearly match a lecture, try to find the best fit based on content clues or place it in a "Miscellaneous" group under the backbone.
-    - The backbone should ideally be the folder that contains the core lecture materials, as it provides the main structure for the course. Other folders should be organized around this backbone.
-    - Just match lowest folder level items instead of the entire items in the folder to a single backbone folder.
-    - If you want to move a folder that contains multiple items (e.g., "practice/hw/sol-hw01/hw01.py", "practice/hw/sol-hw01/hw01.py_metadata.yaml"), simply listing the parent folder (e.g., "practice/hw/sol-hw01") in 'related_items' is sufficient; this implies moving every item under that folder.
-    - If a file doesn't fit well, place it in a "Miscellaneous" group under the backbone.
-    """
+    for child in enriched_data.get('children', []):
+        extract_backbone_items(child, "")
+    
+    print(f"Found {len(backbone_items)} items in backbone folder: {backbone_folder}")
+    
+    system_prompt = f"""
+You are organizing course materials for a university course.
+
+The backbone folder "{backbone_folder}" contains the main chronological teaching materials (lectures/topics).
+
+Your task:
+1. Analyze the items in the backbone folder
+2. Group them into logical lecture/topic units
+3. Each group should have:
+   - A descriptive name (e.g., "Lecture 01: Introduction to Python")
+   - A main item (typically the main slide or primary material)
+   - Related items (other materials for that topic)
+
+Grouping Logic:
+- Look for sequential patterns (lec01, lec02, lecture01, etc.)
+- Group materials by topic or lecture number
+- Main item should be the primary teaching material (usually slides with "_1pp.pdf" or similar)
+- Related items are supporting materials (code examples, additional slides, etc.)
+- Keep groups focused on single topics/lectures
+- Preserve the chronological order of the course
+
+Example:
+- study/lecture/lec01/slides/01-Welcome_1pp.pdf → Main item for "Lecture 01: Welcome"
+- study/lecture/lec01/slides/01.py → Related item for "Lecture 01: Welcome"
+"""
+    
+    messages = [
+        {
+            "role": "system",
+            "content": system_prompt
+        },
+        {
+            "role": "user",
+            "content": json.dumps({
+                "backbone_folder": backbone_folder,
+                "items": backbone_items[:200]  # Limit to avoid context overflow
+            }, indent=2)
+        }
+    ]
     
     completion = client.beta.chat.completions.parse(
-        model="gpt-5-nano",
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": f"Here is the course file structure:\n\n{structure_content}"}
-        ],
+        model="gpt-5-mini-2025-08-07",
+        messages=messages,
         response_format=RearrangementPlan
     )
     
     return completion.choices[0].message.parsed
 
+def run_enrichment_from_db(base_dir: str, db_path: str = None):
+    """
+    Step 1: Build hierarchical structure directly from database (NEW APPROACH).
+    ONLY processes files in the 'study' folder.
+    
+    Args:
+        base_dir: Base directory for output files
+        db_path: Path to database (if None, will look in 'new database' subfolder)
+    """
+    print("=" * 60)
+    print("Step 1: Building hierarchical structure from database (study folder only)")
+    print("=" * 60)
+    
+    if db_path is None:
+        # Default to 'new database' subfolder
+        db_path = os.path.join(base_dir, "new database", "CS 61A_metadata.db")
+    
+    if not os.path.exists(db_path):
+        raise FileNotFoundError(f"Database not found at: {db_path}")
+    
+    enriched_output = os.path.join(base_dir, "study_enriched.json")
+    
+    print(f"Database path: {db_path}")
+    build_hierarchical_structure_from_db(db_path, enriched_output, course_prefix="CS 61A")
+    print(f"step 1 completed: {enriched_output}")
+
+
+def run_backbone_identification(base_dir: str):
+    """
+    Step 2: Identify the main backbone folder using LLM (NEW APPROACH).
+    
+    Args:
+        base_dir: Base directory containing study_enriched.json
+    
+    Returns:
+        Path to the main backbone folder
+    """
+    print("\n" + "=" * 60)
+    print("Step 2: Identifying main backbone folder")
+    print("=" * 60)
+    
+    enriched_file = os.path.join(base_dir, "study_enriched.json")
+    enriched_data = load_json_file(enriched_file)
+    
+    backbone_folder = identify_main_backbone_folder(enriched_data)
+    print(f"step 2 completed: Main backbone folder is '{backbone_folder}'")
+    
+    return backbone_folder
+
+
+def run_plan_generation(base_dir: str, backbone_folder: str = None):
+    """
+    Step 3: Generate rearrangement plan based on backbone folder (NEW APPROACH).
+    
+    Args:
+        base_dir: Base directory containing study_enriched.json
+        backbone_folder: Path to main backbone folder (if None, will auto-identify)
+    """
+    print("\n" + "=" * 60)
+    print("Step 3: Generating rearrangement plan")
+    print("=" * 60)
+    
+    enriched_file = os.path.join(base_dir, "study_enriched.json")
+    output_file = os.path.join(base_dir, "rearrangement_plan_study.json")
+    
+    enriched_data = load_json_file(enriched_file)
+    
+    # If backbone folder not provided, identify it
+    if backbone_folder is None:
+        backbone_folder = identify_main_backbone_folder(enriched_data)
+    
+    print(f"Using backbone folder: {backbone_folder}")
+    print("Generating rearrangement plan...")
+    
+    plan_object = generate_rearrangement_plan(enriched_data, backbone_folder)
+    parsed_plan = plan_object.model_dump()
+    
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(parsed_plan, f, indent=4)
+    
+    print(f"step 3 completed: {output_file}")
+    print(f"Created {len(parsed_plan.get('rearranged_structure', []))} lecture groups.")
+
+
+def run_enrichment(base_dir: str):
+    """
+    DEPRECATED: Old approach using markdown file.
+    Use run_enrichment_from_db() instead.
+    """
+    workspace_root = os.path.abspath(os.path.join(base_dir, "..", "..", ".."))
+    structure_file = os.path.join(base_dir, "study.md")
+    db_file = os.path.join(workspace_root, "cs61a_metadata.db")
+    enriched_output = os.path.join(base_dir, "study_enriched.json")
+
+    print("=" * 60)
+    print("Step 1: Enriching structure with file descriptions")
+    print("=" * 60)
+    print(f"Database path: {db_file}")
+    enrich_structure_with_descriptions(structure_file, db_file, enriched_output)
+
+
 def main():
+    """
+    DEPRECATED: Old main function.
+    Use the new workflow functions instead:
+    1. run_enrichment_from_db()    2. run_backbone_identification()    3. run_plan_generation()
+    4. run_orphan_matching()
+    """
     # Paths
     base_dir = os.path.dirname(os.path.abspath(__file__))
     structure_file = os.path.join(base_dir, "study_enriched.md")
@@ -471,7 +886,9 @@ def main():
         #     content = content[:400000]
             
         print("Sending to LLM to generate rearrangement plan...")
-        plan_object = generate_rearrangement_plan(content)
+        enriched_data = load_json_file(os.path.join(base_dir, "study_enriched.json"))
+        backbone_folder = identify_main_backbone_folder(enriched_data)
+        plan_object = generate_rearrangement_plan(enriched_data, backbone_folder)
         
         # Convert Pydantic model to dict for saving
         parsed_plan = plan_object.model_dump()
@@ -552,26 +969,92 @@ def execute_rearrangement(plan_data, base_dir):
     print(f"\nRearrangement complete. Files copied to: {output_root}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="CS 61A study folder rearrangement helper")
+    parser = argparse.ArgumentParser(
+        description="CS 61A study folder rearrangement helper (NEW WORKFLOW)",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+NEW WORKFLOW (Database-based):
+  Default: Run all steps sequentially (no arguments needed)
+  
+  Optional arguments for running individual steps:
+    --step enrich     → Build study_enriched.json from database
+    --step identify   → Identify main backbone folder using LLM
+    --step plan       → Generate rearrangement plan based on backbone
+    --step match      → Match orphan items to lecture groups
+        """
+    )
     parser.add_argument(
         "--step",
-        choices=["enrich", "match", "plan"],
-        default="enrich",
-        help="Choose 'enrich' to build study_enriched.json, 'plan' to regenerate the backbone plan, or 'match' to attach non-backbone folders to lecture groups."
+        choices=["enrich", "identify", "plan", "match"],
+        default=None,
+        help="Optional: Choose specific step to run (default: run full workflow)"
     )
+    parser.add_argument(
+        "--db",
+        type=str,
+        default=None,
+        help="Path to database file (default: ./new database/CS 61A_metadata.db)"
+    )
+    parser.add_argument(
+        "--backbone",
+        type=str,
+        default=None,
+        help="Manually specify backbone folder path (skips identification step)"
+    )
+    
     args = parser.parse_args()
-
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
-    # try:
-    #     if args.step == "enrich":
-    #         run_enrichment(base_dir)
-    #     elif args.step == "plan":
-    #         main()
-    #     else:
-    #         run_orphan_matching(base_dir)
-    # except Exception as e:
-    #     print(f"Error: {str(e)}")
-    #     import traceback
-    #     traceback.print_exc()
-    run_orphan_matching(base_dir)
+    try:
+        # If no step specified, run full workflow
+        if args.step is None:
+            # Run full workflow
+            print("\n" + "="*60)
+            print("RUNNING FULL WORKFLOW")
+            print("="*60 + "\n")
+            
+            # Step 1: Build enriched structure from database
+            run_enrichment_from_db(base_dir, args.db)
+            
+            # Step 2: Identify backbone folder (or use provided one)
+            if args.backbone:
+                backbone = args.backbone
+                print(f"\nUsing provided backbone folder: {backbone}")
+            else:
+                backbone = run_backbone_identification(base_dir)
+            
+            # Step 3: Generate rearrangement plan
+            run_plan_generation(base_dir, backbone)
+            
+            # Step 4: Match orphan items
+            run_orphan_matching(base_dir)
+            
+            print("\n" + "="*60)
+            print("✓ FULL WORKFLOW COMPLETED")
+            print("="*60)
+            print("\nGenerated files:")
+            print(f"  - study_enriched.json")
+            print(f"  - rearrangement_plan_study.json")
+            print(f"  - rearrangement_plan_study_final.json")
+        
+        # Individual step execution    
+        elif args.step == "enrich":
+            run_enrichment_from_db(base_dir, args.db)
+            
+        elif args.step == "identify":
+            backbone = run_backbone_identification(base_dir)
+            print(f"\n{'='*60}")
+            print(f"Backbone folder: {backbone}")
+            print(f"{'='*60}")
+            
+        elif args.step == "plan":
+            run_plan_generation(base_dir, args.backbone)
+            
+        elif args.step == "match":
+            run_orphan_matching(base_dir)
+            
+    except Exception as e:
+        print(f"\n Error: {str(e)}")
+        import traceback
+        traceback.print_exc()
+

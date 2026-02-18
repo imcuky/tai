@@ -1,315 +1,435 @@
 {
-    "main_backbone_folder": "study/lecture",
+    "main_backbone_folder": "study",
     "rearranged_structure": [
         {
-            "group_name": "Lecture 01: Welcome",
-            "main_item": "study/lecture/assets/slides/01-Welcome_1pp.pdf",
+            "group_name": "Lecture 01: Course Introduction",
+            "main_item": "study/lec01/slides01",
             "related_items": [
-                "study/lecture/CS 61A Summer 2025.html",
-                "study/lecture/assets/slides/01.py",
-                "study/lecture/disc/Discussion 0 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc00",
-                "study/lecture/disc/sol-disc00"
+                "study/lec01/slides01/01-Welcome_1pp.pdf",
+                "study/lec01/slides01/01.py"
             ]
         },
         {
             "group_name": "Lecture 02: Functions",
-            "main_item": "study/lecture/assets/slides/02-Functions_1pp.pdf",
+            "main_item": "study/lec02/slides02",
             "related_items": [
-                "study/lecture/assets/slides/02.py",
-                "study/lecture/youtube/Functions"
+                "study/lec02/disc00/Discussion 0 CS 61A Summer 2025.html",
+                "study/lec02/disc00/disc00",
+                "study/lec02/textbook02",
+                "study/lec02/youtube02/Functions",
+                "study/lec02/disc00/disc00/disc00.pdf",
+                "study/lec02/slides02/02-Functions_1pp.pdf",
+                "study/lec02/slides02/02.py",
+                "study/lec02/textbook02/1.1 Getting Started.html",
+                "study/lec02/textbook02/1.2 Elements of Programming.html",
+                "study/lec02/textbook02/1.3 Defining New Functions.html",
+                "study/lec02/youtube02/Functions/1-Welcome.webm",
+                "study/lec02/youtube02/Functions/2-Call Expressions.webm",
+                "study/lec02/youtube02/Functions/3-Names, Assignment, and User-Defined Functions.webm",
+                "study/lec02/youtube02/Functions/4-Environment Diagrams.webm",
+                "study/lec02/youtube02/Functions/5-Defining Functions.webm",
+                "study/lec02/youtube02/Functions/6-Print and None.webm"
             ]
         },
         {
-            "group_name": "Lecture 03: Control",
-            "main_item": "study/lecture/assets/slides/03-Control_1pp.pdf",
+            "group_name": "Lecture 03: Control (Conditionals & Loops)",
+            "main_item": "study/lec03/slides03",
             "related_items": [
-                "study/lecture/assets/slides/03.py",
-                "study/lecture/disc/Discussion 1 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc01",
-                "study/lecture/disc/sol-disc01",
-                "study/lecture/youtube/Control",
-                "study/lecture/youtube/[CS 61A SU24] Discussion 01"
+                "study/lec03/textbook03",
+                "study/lec03/textbook04",
+                "study/lec03/youtube03/Control",
+                "study/lec03/slides03/03-Control_1pp.pdf",
+                "study/lec03/slides03/03.py",
+                "study/lec03/textbook03/1.4 Designing Functions.html",
+                "study/lec03/textbook03/1.5 Control.html",
+                "study/lec03/textbook04/1.6 Higher-Order Functions.html",
+                "study/lec03/youtube03/Control/1-Multiple Environments.webm",
+                "study/lec03/youtube03/Control/2-Miscellaneous Python Features.webm",
+                "study/lec03/youtube03/Control/3-Conditional statements.mkv",
+                "study/lec03/youtube03/Control/4-Iteration.mkv"
             ]
         },
         {
             "group_name": "Lecture 04: Higher-Order Functions",
-            "main_item": "study/lecture/assets/slides/04-Higher-Order_Functions_1pp.pdf",
+            "main_item": "study/lec04/slides04",
             "related_items": [
-                "study/lecture/assets/slides/04.py",
-                "study/lecture/disc/Discussion 2 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc02",
-                "study/lecture/disc/sol-disc02",
-                "study/lecture/youtube/Higher-Order Functions",
-                "study/lecture/youtube/[CS 61A SU24 Discussion 2]"
+                "study/lec04/disc01/Discussion 1 CS 61A Summer 2025.html",
+                "study/lec04/disc01/[CS 61A SU24] Discussion 01",
+                "study/lec04/disc01/disc01",
+                "study/lec04/youtube04/Higher-Order Functions",
+                "study/lec04/disc01/[CS 61A SU24] Discussion 01/1-Race.mkv",
+                "study/lec04/disc01/[CS 61A SU24] Discussion 01/2-Fizzbuzz.mkv",
+                "study/lec04/disc01/[CS 61A SU24] Discussion 01/3-Is Prime.mkv",
+                "study/lec04/disc01/[CS 61A SU24] Discussion 01/4-Unique Digits.mkv",
+                "study/lec04/disc01/[CS 61A SU24] Discussion 01/5-Ordered Digits.mkv",
+                "study/lec04/disc01/disc01/disc01.pdf",
+                "study/lec04/slides04/04-Higher-Order_Functions_1pp.pdf",
+                "study/lec04/slides04/04.py",
+                "study/lec04/youtube04/Higher-Order Functions/1-Iteration Example.webm",
+                "study/lec04/youtube04/Higher-Order Functions/2-Control.mkv",
+                "study/lec04/youtube04/Higher-Order Functions/3-Control Expressions.webm",
+                "study/lec04/youtube04/Higher-Order Functions/4-Higher-Order Functions.webm",
+                "study/lec04/youtube04/Higher-Order Functions/5-Functions as Return Values.mkv"
             ]
         },
         {
             "group_name": "Lecture 05: Environments",
-            "main_item": "study/lecture/assets/slides/05-Environments_1pp.pdf",
+            "main_item": "study/lec05/slides05",
             "related_items": [
-                "study/lecture/assets/slides/05.py",
-                "study/lecture/youtube/Environments",
-                "study/lecture/youtube/Environments (Su25)"
+                "study/lec05/youtube05/Environments (Su25)",
+                "study/lec05/youtube05/Environments",
+                "study/lec05/slides05/05-Environments_1pp.pdf",
+                "study/lec05/slides05/05.py",
+                "study/lec05/youtube05/Environments (Su25)/1-Environments for Higher-Order Functions.webm",
+                "study/lec05/youtube05/Environments (Su25)/2-Environments for Nested Definitions.mkv",
+                "study/lec05/youtube05/Environments (Su25)/3-Local Names.mkv",
+                "study/lec05/youtube05/Environments (Su25)/4-Function Composition.mkv",
+                "study/lec05/youtube05/Environments (Su25)/5-Lambda Expressions.mkv",
+                "study/lec05/youtube05/Environments (Su25)/6-Lambda Function Environments.webm",
+                "study/lec05/youtube05/Environments (Su25)/7-Function Currying.mkv",
+                "study/lec05/youtube05/Environments/1-Environments for Higher-Order Functions.webm",
+                "study/lec05/youtube05/Environments/2-Environments for Nested Definitions.mkv",
+                "study/lec05/youtube05/Environments/3-Local Names.mkv",
+                "study/lec05/youtube05/Environments/4-Function Composition.mkv",
+                "study/lec05/youtube05/Environments/5-Lambda Expressions.mkv",
+                "study/lec05/youtube05/Environments/6-Function Currying.mkv"
             ]
         },
         {
-            "group_name": "Lecture 06: Recursion",
-            "main_item": "study/lecture/assets/slides/06-Recursion_1pp.pdf",
+            "group_name": "Lecture 06: Recursion (Intro & Environment Diagrams)",
+            "main_item": "study/lec06/slides06",
             "related_items": [
-                "study/lecture/assets/slides/06.py",
-                "study/lecture/youtube/Interleave Digits.mkv",
-                "study/lecture/youtube/Recursion"
+                "study/lec06/disc02/Discussion 2 CS 61A Summer 2025.html",
+                "study/lec06/disc02/[CS 61A SU24 Discussion 2]",
+                "study/lec06/disc02/disc02",
+                "study/lec06/disc02/sol-disc02",
+                "study/lec06/textbook06",
+                "study/lec06/youtube06/Recursion",
+                "study/lec06/disc02/[CS 61A SU24 Discussion 2]/1-Bottles.mkv",
+                "study/lec06/disc02/[CS 61A SU24 Discussion 2]/2-Environment Diagrams\uff1a Assignment and Def Statements (Q7 & Q8).webm",
+                "study/lec06/disc02/[CS 61A SU24 Discussion 2]/3-Digit Finder.mkv",
+                "study/lec06/disc02/[CS 61A SU24 Discussion 2]/4-61A FA21 Disc02\uff1a Make Keeper.mkv",
+                "study/lec06/disc02/[CS 61A SU24 Discussion 2]/5-Match Maker.mkv",
+                "study/lec06/disc02/disc02/disc02.pdf",
+                "study/lec06/disc02/sol-disc02/disc02.pdf",
+                "study/lec06/slides06/06-Recursion_1pp.pdf",
+                "study/lec06/slides06/06.py",
+                "study/lec06/textbook06/1.7 Recursive Functions.html",
+                "study/lec06/youtube06/Recursion/1-Self-Reference.webm",
+                "study/lec06/youtube06/Recursion/2-Recursive Functions.mkv",
+                "study/lec06/youtube06/Recursion/3-Recursion in Environment Diagrams.mkv",
+                "study/lec06/youtube06/Recursion/4-Verifying Recursive Functions.mkv",
+                "study/lec06/youtube06/Recursion/5-Mutual Recursion.mkv",
+                "study/lec06/youtube06/Recursion/6-Recursion and Iteration.mkv"
             ]
         },
         {
             "group_name": "Lecture 07: Tree Recursion",
-            "main_item": "study/lecture/assets/slides/07-Tree_Recursion_1pp.pdf",
+            "main_item": "study/lec07/slides07",
             "related_items": [
-                "study/lecture/assets/slides/07.py",
-                "study/lecture/disc/Discussion 3 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc03",
-                "study/lecture/disc/sol-disc03",
-                "study/lecture/youtube/Discussion 4\uff1a Tree Recursion, Trees, Lists",
-                "study/lecture/youtube/Tree Recursion",
-                "study/lecture/youtube/[CS 61A SU25] Discussion 3"
+                "study/lec07/youtube07/Tree Recursion",
+                "study/lec07/slides07/07-Tree_Recursion_1pp.pdf",
+                "study/lec07/slides07/07.py",
+                "study/lec07/youtube07/Tree Recursion/1-Order of Recursive Calls.webm",
+                "study/lec07/youtube07/Tree Recursion/2-Example\uff1a Inverse Cascade.mkv",
+                "study/lec07/youtube07/Tree Recursion/3-Tree Recursion.mkv",
+                "study/lec07/youtube07/Tree Recursion/4-Example\uff1a Counting Partitions.webm"
             ]
         },
         {
-            "group_name": "Lecture 08: Sequences and Containers",
-            "main_item": "study/lecture/assets/slides/08-Sequences_and_Containers_1pp.pdf",
+            "group_name": "Lecture 08: Recursion & Sequences / Containers",
+            "main_item": "study/lec08/slides08",
             "related_items": [
-                "study/lecture/assets/slides/08.py",
-                "study/lecture/youtube/Sequences and Containers (Su25)"
+                "study/lec08/disc03/Discussion 3 CS 61A Summer 2025.html",
+                "study/lec08/disc03/[CS 61A SU25] Discussion 3",
+                "study/lec08/disc03/disc03",
+                "study/lec08/disc03/sol-disc03",
+                "study/lec08/textbook08",
+                "study/lec08/youtube08/Sequences and Containers (Su25)",
+                "study/lec08/disc03/[CS 61A SU25] Discussion 3/1-Question 1 - Recursive Multiplication.mkv",
+                "study/lec08/disc03/[CS 61A SU25] Discussion 3/2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm",
+                "study/lec08/disc03/[CS 61A SU25] Discussion 3/3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv",
+                "study/lec08/disc03/[CS 61A SU25] Discussion 3/4-Question 5 - Recursive Hailstone.mkv",
+                "study/lec08/disc03/disc03/disc03.pdf",
+                "study/lec08/disc03/sol-disc03/disc03.pdf",
+                "study/lec08/slides08/08-Sequences_and_Containers_1pp.pdf",
+                "study/lec08/slides08/08.py",
+                "study/lec08/textbook08/2.3 Sequences.html",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/1-Lists.webm",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/10-Strings.mkv",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/11-Dictionaries.mkv",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/2-Containers.mkv",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/3-For Statements.mkv",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/4-Ranges.mkv",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/5-List Comprehensions.mkv",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/6-Lists, Slices, & Recursion.mkv",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/7-Box-and-Pointer Notation.webm",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/8-Slicing.mkv",
+                "study/lec08/youtube08/Sequences and Containers (Su25)/9-Processing Container Values.mkv"
             ]
         },
         {
             "group_name": "Lecture 09: Data Abstraction and ADT Trees",
-            "main_item": "study/lecture/assets/slides/09-Data_Abstraction_and_ADT_Trees_1pp.pdf",
+            "main_item": "study/lec09/slides09",
             "related_items": [
-                "study/lecture/assets/slides/09.py",
-                "study/lecture/disc/Discussion 4 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc04",
-                "study/lecture/disc/sol-disc04",
-                "study/lecture/youtube/Data Abstraction and ADT Trees (Su25)"
+                "study/lec09/textbook09",
+                "study/lec09/youtube09/Data Abstraction and ADT Trees (Su25)",
+                "study/lec09/slides09/09-Data_Abstraction_and_ADT_Trees_1pp.pdf",
+                "study/lec09/slides09/09.py",
+                "study/lec09/textbook09/2.2 Data Abstraction.html",
+                "study/lec09/youtube09/Data Abstraction and ADT Trees (Su25)/1-Data Abstraction.webm",
+                "study/lec09/youtube09/Data Abstraction and ADT Trees (Su25)/2-Representing Rational Numbers.mkv",
+                "study/lec09/youtube09/Data Abstraction and ADT Trees (Su25)/3-Abstraction Barriers.mkv",
+                "study/lec09/youtube09/Data Abstraction and ADT Trees (Su25)/4-Data Representations.mkv",
+                "study/lec09/youtube09/Data Abstraction and ADT Trees (Su25)/5-Trees.mkv",
+                "study/lec09/youtube09/Data Abstraction and ADT Trees (Su25)/6-Tree Processing.mkv",
+                "study/lec09/youtube09/Data Abstraction and ADT Trees (Su25)/7-Example\uff1a Printing Trees.mkv",
+                "study/lec09/youtube09/Data Abstraction and ADT Trees (Su25)/8-Example\uff1a Summing Paths.mkv",
+                "study/lec09/youtube09/Data Abstraction and ADT Trees (Su25)/9-Example\uff1a Counting Paths.mkv"
             ]
         },
         {
-            "group_name": "Lecture 10: Mutability",
-            "main_item": "study/lecture/assets/slides/10-Mutability_1pp.pdf",
+            "group_name": "Lecture 10: Mutability (Lists, Dicts, Trees)",
+            "main_item": "study/lec10/slides10",
             "related_items": [
-                "study/lecture/assets/slides/10.py",
-                "study/lecture/youtube/Mutability (Su25)"
+                "study/lec10/disc04/Discussion 4 CS 61A Summer 2025.html",
+                "study/lec10/disc04/Discussion 4\uff1a Tree Recursion, Trees, Lists",
+                "study/lec10/disc04/disc04",
+                "study/lec10/textbook10",
+                "study/lec10/youtube10/Mutability (Su25)",
+                "study/lec10/disc04/Discussion 4\uff1a Tree Recursion, Trees, Lists/1-Disc04 Q4\uff1a Even Weighted.mkv",
+                "study/lec10/disc04/Discussion 4\uff1a Tree Recursion, Trees, Lists/2-Question #3\uff1a Max Path Sum.webm",
+                "study/lec10/disc04/Discussion 4\uff1a Tree Recursion, Trees, Lists/3-61A FA21 HW05 Q3\uff1a Preorder.mkv",
+                "study/lec10/disc04/Discussion 4\uff1a Tree Recursion, Trees, Lists/4-Find Path.webm",
+                "study/lec10/disc04/disc04/disc04.pdf",
+                "study/lec10/slides10/10-Mutability_1pp.pdf",
+                "study/lec10/slides10/10.py",
+                "study/lec10/textbook10/2.4 Mutable Data.html",
+                "study/lec10/youtube10/Mutability (Su25)/1-Objects.webm",
+                "study/lec10/youtube10/Mutability (Su25)/2-Example\uff1a Strings.mkv",
+                "study/lec10/youtube10/Mutability (Su25)/3-Mutation Operations.webm",
+                "study/lec10/youtube10/Mutability (Su25)/4-Tuples.webm",
+                "study/lec10/youtube10/Mutability (Su25)/5-Mutation.mkv",
+                "study/lec10/youtube10/Mutability (Su25)/6-Mutable Functions.mkv",
+                "study/lec10/youtube10/Mutability (Su25)/7-Examples\uff1a Lists.webm"
             ]
         },
         {
             "group_name": "Lecture 11: Iterators and Generators",
-            "main_item": "study/lecture/assets/slides/11-Iterators_and_Generators_1pp.pdf",
+            "main_item": "study/lec11/slides11",
             "related_items": [
-                "study/lecture/assets/slides/11.py",
-                "study/lecture/disc/Discussion 5 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc05",
-                "study/lecture/disc/sol-disc05",
-                "study/lecture/youtube/Discussion 5\uff1a Iterators, Generators, Efficiency",
-                "study/lecture/youtube/Iterators and Generators (Su25)"
+                "study/lec11/textbook11",
+                "study/lec11/youtube11/Iterators and Generators (Su25)",
+                "study/lec11/slides11/11-Iterators_and_Generators_1pp.pdf",
+                "study/lec11/slides11/11.py",
+                "study/lec11/textbook11/4.2 Implicit Sequences.html",
+                "study/lec11/youtube11/Iterators and Generators (Su25)/1-Iterators.webm",
+                "study/lec11/youtube11/Iterators and Generators (Su25)/10-Examples\uff1a Iterables & Iterators.mkv",
+                "study/lec11/youtube11/Iterators and Generators (Su25)/2-Dictionary Iteration.mkv",
+                "study/lec11/youtube11/Iterators and Generators (Su25)/3-For Statements.mkv",
+                "study/lec11/youtube11/Iterators and Generators (Su25)/4-Built-in Iterator Functions.webm",
+                "study/lec11/youtube11/Iterators and Generators (Su25)/5-Zip.mkv",
+                "study/lec11/youtube11/Iterators and Generators (Su25)/6-Using Iterators.mkv",
+                "study/lec11/youtube11/Iterators and Generators (Su25)/7-Generators.webm",
+                "study/lec11/youtube11/Iterators and Generators (Su25)/8-Generators & Iterators.mkv",
+                "study/lec11/youtube11/Iterators and Generators (Su25)/9-Example\uff1a Partitions.mkv"
             ]
         },
         {
-            "group_name": "Lecture 12: Midterm Review",
-            "main_item": "study/lecture/assets/slides/12-Midterm_Review_1pp.pdf",
+            "group_name": "Lecture 12: Iterators, Generators & Midterm Review",
+            "main_item": "study/lec12/slides12",
             "related_items": [
-                "study/lecture/assets/slides/12.py",
-                "study/lecture/youtube/CS 61A Spring 2016 Midterm 1 Walkthrough.mkv",
-                "study/lecture/youtube/CS 61A Spring 2016 Midterm 2 Walkthrough.mkv",
-                "study/lecture/youtube/CS 61A Fall 2016 Midterm 1",
-                "study/lecture/youtube/CS 61A Fall 2016 Midterm 2",
-                "study/lecture/youtube/CS 61A Fall 2017 Midterm 1",
-                "study/lecture/youtube/CS 61A Fall 2017 Midterm 2",
-                "study/lecture/youtube/CS 61A Fall 2018 Midterm 1",
-                "study/lecture/youtube/CS 61A Fall 2018 Midterm 2",
-                "study/lecture/youtube/CS 61A Fall 2020\uff1a Midterm 1 Walkthrough",
-                "study/lecture/youtube/CS 61A Fall 2020\uff1a Midterm 2 Walkthrough",
-                "study/lecture/youtube/CS 61A Spring 2017 Midterm 2 Walkthrough",
-                "study/lecture/youtube/CS 61A Spring 2018 Midterm 1",
-                "study/lecture/youtube/CS 61A Spring 2018 Midterm 2",
-                "study/lecture/youtube/CS 61A Spring 2019 Midterm 1",
-                "study/lecture/youtube/CS 61A Spring 2019 Midterm 2",
-                "study/lecture/youtube/CS61A Fall 2019 Midterm 1",
-                "study/lecture/youtube/CS61A Fall 2019 Midterm 2",
-                "study/lecture/youtube/CS61A Fall 2021 Midterm 1 Walkthrough",
-                "study/lecture/youtube/CS61A Fall 2021 Midterm 2",
-                "study/lecture/youtube/CS61A Spring 2020 Midterm 1",
-                "study/lecture/youtube/CS61A Spring 2022 Midterm 2 Walkthrough",
-                "study/lecture/youtube/Midterm Review (Su25)",
-                "study/lecture/youtube/[CS 61A FA22] Midterm 1 Walkthrough",
-                "study/lecture/youtube/[CS 61A FA22] Midterm 2 Walkthrough Videos",
-                "study/lecture/youtube/[CS 61A FA23] Midterm 1 Walkthrough",
-                "study/lecture/youtube/[CS 61A FA23] Midterm 2 Walkthrough Videos",
-                "study/lecture/youtube/[CS 61A FA24] Midterm 1 Walkthrough",
-                "study/lecture/youtube/[CS 61A FA24] Midterm 2 Walkthrough",
-                "study/lecture/youtube/[CS 61A SP23] Midterm 1 Walkthrough",
-                "study/lecture/youtube/[CS 61A SP23] Midterm 2 Walkthrough",
-                "study/lecture/youtube/[CS 61A SP24] Midterm 1 Walkthrough",
-                "study/lecture/youtube/[CS 61A SP24] Midterm 2 Walkthrough",
-                "study/lecture/youtube/[CS 61A SP25] Midterm 1 Walkthrough",
-                "study/lecture/youtube/[CS 61A SP25] Midterm 2 Walkthrough Videos",
-                "study/lecture/youtube/[CS 61A SU23] Midterm Walkthrough",
-                "study/lecture/youtube/[CS 61A SU24] Midterm Walkthrough"
+                "study/lec12/disc05/Discussion 5 CS 61A Summer 2025.html",
+                "study/lec12/disc05/Discussion 5\uff1a Iterators, Generators, Efficiency",
+                "study/lec12/disc05/disc05",
+                "study/lec12/disc05/sol-disc05",
+                "study/lec12/youtube12/Midterm Review (Su25)",
+                "study/lec12/disc05/Discussion 5\uff1a Iterators, Generators, Efficiency/1-[CS 61A FA23] Final Problem #1\uff1a Copying Copies.webm",
+                "study/lec12/disc05/Discussion 5\uff1a Iterators, Generators, Efficiency/2-WWPD Iterators.mkv",
+                "study/lec12/disc05/Discussion 5\uff1a Iterators, Generators, Efficiency/4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv",
+                "study/lec12/disc05/Discussion 5\uff1a Iterators, Generators, Efficiency/5-Primes Generator.mkv",
+                "study/lec12/disc05/disc05/disc05.pdf",
+                "study/lec12/disc05/sol-disc05/disc05.pdf",
+                "study/lec12/slides12/12-Midterm_Review_1pp.pdf",
+                "study/lec12/slides12/12.py",
+                "study/lec12/youtube12/Midterm Review (Su25)/1-Midterm 1 Review.mkv",
+                "study/lec12/youtube12/Midterm Review (Su25)/2-Implementing Functions.mkv"
             ]
         },
         {
             "group_name": "Lecture 13: Objects and Attributes",
-            "main_item": "study/lecture/assets/slides/13-Objects_and_Attributes_1pp.pdf",
+            "main_item": "study/lec13/slides13",
             "related_items": [
-                "study/lecture/assets/slides/13.py",
-                "study/lecture/disc/Discussion 6 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc06",
-                "study/lecture/disc/sol-disc06",
-                "study/lecture/youtube/Objects and Attributes (Su25)",
-                "study/lecture/youtube/[CS 61A SU25] Discussion 6"
+                "study/lec13/youtube13/Objects and Attributes (Su25)",
+                "study/lec13/slides13/13-Objects_and_Attributes_1pp.pdf",
+                "study/lec13/slides13/13.py",
+                "study/lec13/youtube13/Objects and Attributes (Su25)/1-Object-Oriented Programming.mkv",
+                "study/lec13/youtube13/Objects and Attributes (Su25)/2-Class Statements.mkv",
+                "study/lec13/youtube13/Objects and Attributes (Su25)/3-Creating Instances.mkv",
+                "study/lec13/youtube13/Objects and Attributes (Su25)/4-Methods.mkv",
+                "study/lec13/youtube13/Objects and Attributes (Su25)/5-Method Calls.mkv",
+                "study/lec13/youtube13/Objects and Attributes (Su25)/6-Attribute Lookup.mkv",
+                "study/lec13/youtube13/Objects and Attributes (Su25)/7-Class Attributes.mkv",
+                "study/lec13/youtube13/Objects and Attributes (Su25)/8-Bound Methods.mkv",
+                "study/lec13/youtube13/Objects and Attributes (Su25)/9-Attribute Assignment.mkv"
             ]
         },
         {
-            "group_name": "Lecture 14: Inheritance and String Representation",
-            "main_item": "study/lecture/assets/slides/14-Inheritance_and_String_Representation_1pp.pdf",
+            "group_name": "Lecture 14: Inheritance and Representation",
+            "main_item": "study/lec14/slides14",
             "related_items": [
-                "study/lecture/assets/slides/14.py",
-                "study/lecture/youtube/Inheritance and Representation (Su25)"
+                "study/lec14/textbook14",
+                "study/lec14/youtube14/Inheritance and Representation (Su25)",
+                "study/lec14/slides14/14-Inheritance_and_String_Representation_1pp.pdf",
+                "study/lec14/slides14/14.py",
+                "study/lec14/textbook14/2.5 Object-Oriented Programming.html",
+                "study/lec14/textbook14/2.7 Object Abstraction.html",
+                "study/lec14/youtube14/Inheritance and Representation (Su25)/1-Inheritance.webm",
+                "study/lec14/youtube14/Inheritance and Representation (Su25)/2-Object-Oriented Design.mkv",
+                "study/lec14/youtube14/Inheritance and Representation (Su25)/3-Attribute Lookup Practice.mkv",
+                "study/lec14/youtube14/Inheritance and Representation (Su25)/4-Multiple Inheritance.mkv",
+                "study/lec14/youtube14/Inheritance and Representation (Su25)/5-String Representations.mkv",
+                "study/lec14/youtube14/Inheritance and Representation (Su25)/6-String Interpolation.mkv",
+                "study/lec14/youtube14/Inheritance and Representation (Su25)/7-Polymorphic Functions.webm",
+                "study/lec14/youtube14/Inheritance and Representation (Su25)/9-Examples\uff1a Objects.mkv"
             ]
         },
         {
-            "group_name": "Lecture 15: Mutable Trees",
-            "main_item": "study/lecture/assets/slides/15-Mutable_Trees_1pp.pdf",
+            "group_name": "Lecture 15: Object-Oriented Programming / Mutable Trees",
+            "main_item": "study/lec15/slides15",
             "related_items": [
-                "study/lecture/assets/slides/15.py",
-                "study/lecture/disc/Discussion 7 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc07",
-                "study/lecture/disc/sol-disc07",
-                "study/lecture/youtube/Disc 07",
-                "study/lecture/youtube/Mutable Trees (Su25)"
+                "study/lec15/disc06/Discussion 6 CS 61A Summer 2025.html",
+                "study/lec15/disc06/[CS 61A SU25] Discussion 6",
+                "study/lec15/disc06/disc06",
+                "study/lec15/disc06/sol-disc06",
+                "study/lec15/youtube15/Mutable Trees (Su25)",
+                "study/lec15/disc06/[CS 61A SU25] Discussion 6/1-Keyboard.webm",
+                "study/lec15/disc06/[CS 61A SU25] Discussion 6/2-Shapes.mkv",
+                "study/lec15/disc06/[CS 61A SU25] Discussion 6/3-Bear.webm",
+                "study/lec15/disc06/disc06/disc06.pdf",
+                "study/lec15/disc06/sol-disc06/disc06.pdf",
+                "study/lec15/slides15/15-Mutable_Trees_1pp.pdf",
+                "study/lec15/slides15/15.py",
+                "study/lec15/youtube15/Mutable Trees (Su25)/1-Tree Class.mkv",
+                "study/lec15/youtube15/Mutable Trees (Su25)/2-Tree Mutation.mkv"
             ]
         },
         {
             "group_name": "Lecture 16: Linked Lists",
-            "main_item": "study/lecture/assets/slides/16-Linked_Lists_1pp.pdf",
+            "main_item": "study/lec16/slides16",
             "related_items": [
-                "study/lecture/assets/slides/16.py",
-                "study/lecture/youtube/Linked Lists (Su25)"
+                "study/lec16/youtube16/Linked Lists (Su25)",
+                "study/lec16/slides16/16-Linked_Lists_1pp.pdf",
+                "study/lec16/slides16/16.py",
+                "study/lec16/youtube16/Linked Lists (Su25)/1-Linked Lists.webm",
+                "study/lec16/youtube16/Linked Lists (Su25)/2-Linked List Processing.mkv",
+                "study/lec16/youtube16/Linked Lists (Su25)/3-Linked List Mutation.mkv",
+                "study/lec16/youtube16/Linked Lists (Su25)/4-Linked List Mutation Example.mkv",
+                "study/lec16/youtube16/Linked Lists (Su25)/5-Examples\uff1a Linked Lists.mkv"
             ]
         },
         {
-            "group_name": "Lecture 17: Efficiency",
-            "main_item": "study/lecture/assets/slides/17-Efficiency_1pp.pdf",
+            "group_name": "Lecture 17: Efficiency (Algorithmic Complexity)",
+            "main_item": "study/lec17/slides17",
             "related_items": [
-                "study/lecture/assets/slides/17.ipynb",
-                "study/lecture/assets/slides/17.py",
-                "study/lecture/youtube/Efficiency"
+                "study/lec17/disc07/Disc 07",
+                "study/lec17/disc07/Discussion 7 CS 61A Summer 2025.html",
+                "study/lec17/disc07/disc07",
+                "study/lec17/textbook17",
+                "study/lec17/youtube17/Efficiency",
+                "study/lec17/disc07/Disc 07/1-Prune Small Getting Started.webm",
+                "study/lec17/disc07/Disc 07/3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+                "study/lec17/disc07/Disc 07/4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm",
+                "study/lec17/disc07/Disc 07/5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+                "study/lec17/disc07/Disc 07/6-Duplicate Link Getting Started.mkv",
+                "study/lec17/disc07/disc07/disc07.pdf",
+                "study/lec17/slides17/17-Efficiency_1pp.pdf",
+                "study/lec17/slides17/17.ipynb",
+                "study/lec17/slides17/17.py",
+                "study/lec17/textbook17/2.8 Efficiency.html",
+                "study/lec17/youtube17/Efficiency/1-Measuring Efficiency.webm",
+                "study/lec17/youtube17/Efficiency/2-Memoization.mkv",
+                "study/lec17/youtube17/Efficiency/3-Exponentiation.mkv",
+                "study/lec17/youtube17/Efficiency/4-Orders of Growth.mkv",
+                "study/lec17/youtube17/Efficiency/5-Order of Growth Notation.mkv",
+                "study/lec17/youtube17/Efficiency/6-Space.mkv"
             ]
         },
         {
-            "group_name": "Lecture 18: Scheme",
-            "main_item": "study/lecture/assets/slides/18-Scheme_1pp.pdf",
+            "group_name": "Lecture 18: Scheme (Intro)",
+            "main_item": "study/lec18/slides18",
             "related_items": [
-                "study/lecture/assets/slides/18.py",
-                "study/lecture/assets/slides/18.scm",
-                "study/lecture/disc/Discussion 8 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc08",
-                "study/lecture/disc/sol-disc08",
-                "study/lecture/youtube/Scheme",
-                "study/lecture/youtube/[CS 61A SP24] Mega Discussion 08"
+                "study/lec18/textbook18",
+                "study/lec18/youtube18/Scheme",
+                "study/lec18/slides18/18-Scheme_1pp.pdf",
+                "study/lec18/slides18/18.py"
             ]
         },
         {
             "group_name": "Lecture 19: Scheme Lists",
-            "main_item": "study/lecture/assets/slides/19-Scheme_Lists_1pp.pdf",
+            "main_item": "study/lec19/slides19",
             "related_items": [
-                "study/lecture/assets/slides/19.scm",
-                "study/lecture/disc/Discussion 9 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc09",
-                "study/lecture/disc/sol-disc09",
-                "study/lecture/youtube/Scheme Lists"
+                "study/lec19/disc08/Discussion 8 CS 61A Summer 2025.html",
+                "study/lec19/disc08/[CS 61A SP24] Mega Discussion 08",
+                "study/lec19/disc08/disc08",
+                "study/lec19/disc08/sol-disc08",
+                "study/lec19/youtube19/Scheme Lists"
             ]
         },
         {
             "group_name": "Lecture 20: Interpreters",
-            "main_item": "study/lecture/assets/slides/20-Interpreters_1pp.pdf",
+            "main_item": "study/lec20/youtube20/Interpreters (Su25)",
             "related_items": [
-                "study/lecture/assets/slides/20.py",
-                "study/lecture/youtube/Discussion 9\uff1a Interpreters",
-                "study/lecture/youtube/Interpreters (Su25)"
+                "study/lec20/textbook20"
             ]
         },
         {
             "group_name": "Lecture 21: Tail Calls",
-            "main_item": "study/lecture/assets/slides/21-Tail_Calls_1pp.pdf",
+            "main_item": "study/lec21/slides21",
             "related_items": [
-                "study/lecture/assets/slides/21.py",
-                "study/lecture/assets/slides/21.scm",
-                "study/lecture/disc/Discussion 10 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc10",
-                "study/lecture/disc/sol-disc10",
-                "study/lecture/youtube/Discussion 10\uff1a Tail Calls, Scheme Data Abstractions, SQL",
-                "study/lecture/youtube/Tail Calls (Su25)"
+                "study/lec21/disc09/Discussion 9 CS 61A Summer 2025.html",
+                "study/lec21/disc09/Discussion 9\uff1a Interpreters",
+                "study/lec21/disc09/disc09",
+                "study/lec21/disc09/sol-disc09",
+                "study/lec21/youtube21/Tail Calls (Su25)"
             ]
         },
         {
             "group_name": "Lecture 22: SQL and Tables",
-            "main_item": "study/lecture/assets/slides/22-SQL_and_Tables_1pp.pdf",
+            "main_item": "study/lec22/slides22",
             "related_items": [
-                "study/lecture/assets/slides/22.py",
-                "study/lecture/assets/slides/22.scm",
-                "study/lecture/assets/slides/22.sql",
-                "study/lecture/youtube/SQL and Tables (Su25)"
+                "study/lec22/youtube22/SQL and Tables (Su25)"
             ]
         },
         {
             "group_name": "Lecture 23: Aggregation and Databases",
-            "main_item": "study/lecture/assets/slides/23-Aggregation_and_Databases_1pp.pdf",
+            "main_item": "study/lec23/slides23",
             "related_items": [
-                "study/lecture/assets/slides/23.py",
-                "study/lecture/assets/slides/23.sql",
-                "study/lecture/disc/Discussion 11 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc11",
-                "study/lecture/youtube/Aggregation and Databases (Su25)"
+                "study/lec23/disc10/Discussion 10 CS 61A Summer 2025.html",
+                "study/lec23/disc10/Discussion 10\uff1a Tail Calls, Scheme Data Abstractions, SQL",
+                "study/lec23/disc10/disc10",
+                "study/lec23/disc10/sol-disc10",
+                "study/lec23/youtube23/Aggregation and Databases (Su25)"
             ]
         },
         {
-            "group_name": "Lecture 24: CS Theory",
-            "main_item": "study/lecture/assets/slides/24-CS_Theory_1pp-updated.pdf",
+            "group_name": "Lecture 24: (Slides)",
+            "main_item": "study/lec24/slides24",
+            "related_items": []
+        },
+        {
+            "group_name": "Lecture 25: SQL Basics (Discussion)",
+            "main_item": "study/lec25/disc11/Discussion 11 CS 61A Summer 2025.html",
             "related_items": [
-                "study/lecture/assets/slides/24-CS_Theory_1pp-updated.pdf"
+                "study/lec25/disc11/disc11"
             ]
         },
         {
-            "group_name": "Lecture Miscellaneous",
-            "main_item": "study/lecture/assets/pdfs/61a-su24-final-study-guide.pdf",
+            "group_name": "Lecture 27: Final Review",
+            "main_item": "study/lec27/youtube27/Final Review (Su25)",
             "related_items": [
-                "study/lecture/assets/pdfs/61a-su25-mt-study-guide.pdf",
-                "study/lecture/assets/pdfs",
-                "study/lecture/disc/Discussion 12 CS 61A Summer 2025.html",
-                "study/lecture/disc/disc12",
-                "study/lecture/study-guide",
-                "study/lecture/youtube/CS 61A Fall 2015 Final Walkthrough.mkv",
-                "study/lecture/youtube/61A Fall 2023 Lecture 32",
-                "study/lecture/youtube/CS 61A Fall 2017 Final",
-                "study/lecture/youtube/CS 61A Fall 2018 Final",
-                "study/lecture/youtube/CS 61A Fall 2021 Final Walkthrough",
-                "study/lecture/youtube/CS 61A Spring 2016 Final",
-                "study/lecture/youtube/CS 61A Spring 2017 Final",
-                "study/lecture/youtube/CS 61A Spring 2018 Final Walkthrough",
-                "study/lecture/youtube/CS 61A Spring 2022 Final Walkthrough",
-                "study/lecture/youtube/CS 61A Summer 2017 Final Walkthrough",
-                "study/lecture/youtube/CS 61A Summer 2018 Final",
-                "study/lecture/youtube/CS 61A Summer 2018 Mock Final Walkthrough",
-                "study/lecture/youtube/CS 61A Summer 2022 Final Walkthrough",
-                "study/lecture/youtube/CS walkthrough vids",
-                "study/lecture/youtube/CS61A Fall 2019 Final",
-                "study/lecture/youtube/CS61A Spring 2019 Final",
-                "study/lecture/youtube/Final Review (Su25)",
-                "study/lecture/youtube/[CS 61A FA23] Final Walkthrough",
-                "study/lecture/youtube/[CS 61A SP23] Final Walkthrough",
-                "study/lecture/youtube/[CS 61A SU24] Final Walkthrough",
-                "study/lecture/youtube/[CS61A - Sp15] Final Solution Videos"
+                "study/lec27/disc12/Discussion 12 CS 61A Summer 2025.html",
+                "study/lec27/disc12/disc12"
             ]
         }
     ]
