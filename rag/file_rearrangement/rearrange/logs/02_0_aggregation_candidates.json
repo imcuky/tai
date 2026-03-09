@@ -1,0 +1,1433 @@
+[
+  {
+    "path": "study/lecture/assets/pdfs",
+    "num_files": 2,
+    "num_subfolders": 0,
+    "sample_files": [
+      "61a-su24-final-study-guide.pdf",
+      "61a-su25-mt-study-guide.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "61a-su25-mt-study-guide.pdf: A study guide PDF for CS 61A covering Python data structures and functions, including list comprehensions, list mutation, dictionaries, dictionary comprehensions, tuples, and aggregation functions. | 61a-su24-final-study-guide.pdf: A comprehensive study guide for the CS 61A final exam, summarizing key concepts in Python and Scheme programming, including evaluation rules, data structures, recursion, object-oriented programming, and interpreter design."
+  },
+  {
+    "path": "study/lecture/disc/disc00",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc00.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc00.pdf: A discussion handout for CS 61A, introducing students to the course website, a collaborative problem-solving activity, and strategies for success in the course."
+  },
+  {
+    "path": "study/lecture/disc/disc01",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc01.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc01.pdf: A discussion worksheet for introductory programming concepts, focusing on control flow using 'if' and 'while', and problem-solving with simple Python functions. Key topics include conditional statements, loops, arithmetic operations, and basic algorithmic thinking through problems like Fizzbuzz, prime checking, and digit analysis."
+  },
+  {
+    "path": "study/lecture/disc/disc02",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc02.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc02.pdf: A discussion worksheet for SICP focusing on environment diagrams, lambda expressions, and higher-order functions, with conceptual and coding exercises to build understanding of Python's execution model and functional programming."
+  },
+  {
+    "path": "study/lecture/disc/disc03",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc03.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc03.pdf: A discussion worksheet for recursion in computer science, covering recursive function structure, tree recursion, and practice problems such as recursive multiplication, factorial variants, the hailstone sequence, stair counting, and generating subsequences."
+  },
+  {
+    "path": "study/lecture/disc/disc04",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc04.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc04.pdf: A discussion worksheet for CS61A covering core Python data structures and recursion, focusing on lists, dictionaries, and trees, with practice problems on list comprehensions, dictionary lookups, and tree traversals."
+  },
+  {
+    "path": "study/lecture/disc/disc05",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc05.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc05.pdf: A discussion worksheet for SICP covering Python concepts such as mutability, iterators, generators, and recursive generator functions, with exercises on list mutation, iterator behavior, generator implementation, and recursive algorithms for primes and partitions."
+  },
+  {
+    "path": "study/lecture/disc/disc06",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc06.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc06.pdf: A discussion worksheet for object-oriented programming, covering class and object basics, inheritance, class design, and practice problems involving keyboard simulation, geometric shapes, and class inheritance for bears."
+  },
+  {
+    "path": "study/lecture/disc/disc07",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc07.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc07.pdf: A discussion worksheet for SICP covering tree and linked list data structures, including their class implementations, mutability, and related algorithmic problems such as binary search trees, pruning, summing, overlapping, duplicating, and decimal expansions."
+  },
+  {
+    "path": "study/lecture/disc/disc08",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc08.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc08.pdf: A discussion worksheet for SICP covering Scheme fundamentals, special forms, function definitions, recursion, and efficiency analysis including orders of growth."
+  },
+  {
+    "path": "study/lecture/disc/disc09",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc09.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc09.pdf: A discussion worksheet for Scheme lists, focusing on list construction, manipulation, evaluation, and representation in both Scheme and Python. It covers list operations, Scheme call expressions, evaluation order, and related programming exercises."
+  },
+  {
+    "path": "study/lecture/disc/disc10",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc10.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc10.pdf: This is a discussion worksheet for a computer science course (CS 61A) focusing on tail calls, tail call optimization, tail context, and related recursive programming concepts. It includes explanations, code examples, and practice problems on tail recursion, memory optimization, and recursive list processing."
+  },
+  {
+    "path": "study/lecture/disc/disc11",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc11.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc11.pdf: A discussion worksheet covering SQL basics and aggregation, including table creation, selection, operators, aggregation functions, and practical query exercises involving city and pizza place databases."
+  },
+  {
+    "path": "study/lecture/disc/disc12",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc12.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc12.pdf: A worksheet or discussion handout for final review, covering list mutation in Python, linked lists, Scheme lists, ropes, and SQL queries for data analysis and aggregation."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc00",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc00.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc00.pdf: A discussion handout for CS 61A, introducing students to the course website, a collaborative problem-solving activity, and strategies for success in the course."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc01",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc01.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc01.pdf: A discussion worksheet for introductory programming concepts, focusing on control flow using 'if' and 'while', and problem-solving with simple Python functions. Key topics include conditional statements, loops, arithmetic operations, and basic algorithmic thinking through problems like Fizzbuzz, prime checking, and digit analysis."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc02",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc02.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc02.pdf: A discussion worksheet for SICP focusing on environment diagrams, lambda expressions, and higher-order functions, with conceptual and coding exercises to build understanding of Python's execution model and functional programming."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc03",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc03.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc03.pdf: A discussion worksheet for recursion in computer science, covering recursive function structure, tree recursion, and practice problems such as recursive multiplication, factorial variants, the hailstone sequence, stair counting, and generating subsequences."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc04",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc04.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc04.pdf: A discussion worksheet for CS61A covering core Python data structures and recursion, focusing on lists, dictionaries, and trees, with practice problems on list comprehensions, dictionary lookups, and tree traversals."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc05",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc05.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc05.pdf: A discussion worksheet for SICP covering Python concepts such as mutability, iterators, generators, and recursive generator functions, with exercises on list mutation, iterator behavior, generator implementation, and recursive algorithms for primes and partitions."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc06",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc06.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc06.pdf: A discussion worksheet for object-oriented programming, covering class and object basics, inheritance, class design, and practice problems involving keyboard simulation, geometric shapes, and class inheritance for bears."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc07",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc07.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc07.pdf: A discussion worksheet for SICP covering tree and linked list data structures, including their class implementations, mutability, and related algorithmic problems such as binary search trees, pruning, summing, overlapping, duplicating, and decimal expansions."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc08",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc08.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc08.pdf: A discussion worksheet for SICP covering Scheme fundamentals, special forms, function definitions, recursion, and efficiency analysis including orders of growth."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc09",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc09.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc09.pdf: A discussion worksheet for Scheme lists, focusing on list construction, manipulation, evaluation, and representation in both Scheme and Python. It covers list operations, Scheme call expressions, evaluation order, and related programming exercises."
+  },
+  {
+    "path": "study/lecture/disc/sol-disc10",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "disc10.pdf"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "disc10.pdf: This is a discussion worksheet for a computer science course (CS 61A) focusing on tail calls, tail call optimization, tail context, and related recursive programming concepts. It includes explanations, code examples, and practice problems on tail recursion, memory optimization, and recursive list processing."
+  },
+  {
+    "path": "study/lecture/study-guide",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "Study Guide Orders of Growth CS 61A Summer 2025.html"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "Study Guide Orders of Growth CS 61A Summer 2025.html: A study guide for CS 61A covering the concept of orders of growth in algorithm analysis, including definitions, examples, visualizations, and practice problems for constant, logarithmic, linear, quadratic, and exponential time complexities."
+  },
+  {
+    "path": "study/lecture/youtube/61A Fall 2023 Lecture 32",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Tail Recursion.webm",
+      "2-Tail Calls.mkv",
+      "3-Tail Recursion Examples.mkv",
+      "4-Map and Reduce.mkv",
+      "5-General Computing Machines.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "4-Map and Reduce.mkv: A lecture segment introducing the higher-order functions 'map' and 'reduce', focusing on their definitions, recursive structure, and how to implement them efficiently with tail recursion. | 3-Tail Recursion Examples.mkv: A lecture segment analyzing examples of tail recursion, focusing on identifying which recursive procedures are tail recursive and explaining the implications for space usage. | 2-Tail Calls.mkv: A lecture recording on tail calls in recursive procedures, covering the definition of tail contexts, the importance of tail call optimization for space efficiency, and practical demonstrations in Scheme and Python interpreters. | 1-Tail Recursion.webm: A lecture recording introducing tail recursion in the context of functional programming, comparing recursive and iterative approaches, and discussing the efficiency benefits of tail recursion in functional languages."
+  },
+  {
+    "path": "study/lecture/youtube/Aggregation and Databases (Su25)",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Aggregation.webm",
+      "2-Grouping.mkv",
+      "3-Create Table and Drop Table.mkv",
+      "4-Modifying Tables.mkv",
+      "5-Python and SQL.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "5-Python and SQL.mkv: A lecture segment explaining how Python can interact with SQL databases using the sqlite3 module, covering database connections, executing SQL statements, and persisting data. | 4-Modifying Tables.mkv: A lecture segment on modifying tables in SQLite, covering how to insert, update, and delete rows, with practical demonstrations using a table of prime numbers. | 3-Create Table and Drop Table.mkv: A lecture recording on SQL table management, focusing on the syntax and usage of CREATE TABLE and DROP TABLE statements, including constraints like UNIQUE and DEFAULT, and the implications of creating or dropping tables. | 2-Grouping.mkv: A lecture recording on SQL grouping and aggregation, covering GROUP BY, HAVING, aggregate functions, and how to filter and partition data using these clauses. | 1-Aggregation.webm: A lecture video on SQL aggregation, focusing on aggregate functions such as MAX, MIN, SUM, AVG, and COUNT, their behavior in SELECT statements, and the implications of mixing aggregate and non-aggregate columns."
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2016 Midterm 1",
+    "num_files": 9,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Fall 2016 Midterm 1： Exeggcute - Question 1.mkv",
+      "2-CS 61A Fall 2016 Midterm 1： Goldeen State - Question 2.mkv",
+      "3-CS 61A Fall 2016 Midterm 1： Countizard - Question 3a.mkv",
+      "4-CS 61A Fall 2016 Midterm 1： Countizard - Question 3b.mkv",
+      "5-CS 61A Fall 2016 Midterm 1： Caterepeat - Question 4a.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2016 Midterm 2",
+    "num_files": 1,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Fall 2016 Midterm 2： Halloween - Question 1.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2017 Final",
+    "num_files": 8,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Fall 2017 Final – Question 1 (WWPD).mkv",
+      "2-CS 61A Fall 2017 Final – Question 2 (Environment Diagram).mkv",
+      "3-CS 61A Fall 2017 Final – Question 3 (Box and Pointer).mkv",
+      "4-CS 61A Fall 2017 Final – Question 4 (Pascal's Triangle).mp4",
+      "5-CS 61A Fall 2017 Final – Question 5a (Level Order Trees).mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2017 Midterm 1",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Fall 2017 Midterm 1： Question 1 - WWPD.mkv",
+      "2-CS 61A Fall 2017 Midterm 1： Question 2 - Environmental Influences.mkv",
+      "3-CS 61A Fall 2017 Midterm 1： Question 3 - Triangulate.mkv",
+      "4-CS 61A Fall 2017 Midterm 1： Question 4a - collapse.mkv",
+      "5-CS 61A Fall 2017 Midterm 1： Question 4b - find_pair.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2017 Midterm 2",
+    "num_files": 9,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Fall 2017 Midterm 2： Question 1 - WWPD.mkv",
+      "2-CS 61A Fall 2017 Midterm 2： Question 2 - Buy Local.mkv",
+      "3-CS 61A Fall 2017 Midterm 2： Question 3a & 3b - splice & all_splice.mkv",
+      "4-CS 61A Fall 2017 Midterm 2： Question 3c - splink.mkv",
+      "5-CS 61A Fall 2017 Midterm 2： Question 4a - Both Ways.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2018 Final",
+    "num_files": 13,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS61A Fall 2018 Final Q1.mkv",
+      "10-CS61A Fall 2018 Final Q6.mkv",
+      "11-CS61A Fall 2018 Final Q7a.mkv",
+      "12-CS61A Fall 2018 Final Q7b.mkv",
+      "13-CS61A Fall 2018 Final Q7c.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2018 Midterm 1",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS61A Fa18 MT1 Q1.mkv",
+      "2-CS61A Fa18 MT1 Q2.mkv",
+      "3-CS61A Fa18 MT1 Q3.mkv",
+      "4-CS61A Fa18 MT1 Q4.mkv",
+      "5-CS61A Fa18 MT1 Q5.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2018 Midterm 2",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS61A Fall 2018 MT2 Q1.mkv",
+      "3-CS61A Fall 2018 MT2 Q3.mkv",
+      "4-CS61A Fall 2018 MT2 Q4a.mkv",
+      "5-CS61A Fall 2018 MT2 Q4.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2020： Midterm 1 Walkthrough",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[Fa20] 61A MT1 Q1 Walkthrough.mkv",
+      "2-[Fa20] 61A MT1 Q2 Walkthrough.mkv",
+      "3-[Fa20] 61A MT1 Q3 Walkthrough.mkv",
+      "4-[Fa20] 61A MT1 Q4 Walkthrough.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2020： Midterm 2 Walkthrough",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[Fa20] 61A MT2 Q1 Walkthrough.mkv",
+      "2-[Fa20] 61A MT2 Q2 Walkthrough.mkv",
+      "3-[Fa20] 61A MT2 Q3 Walkthrough.webm",
+      "4-[Fa20] 61A MT2 Q4 Walkthrough.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Fall 2021 Final Walkthrough",
+    "num_files": 15,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Fall 2021 Final Q1A.mkv",
+      "10-CS 61A Fall 2021 Final Q4A.mkv",
+      "11-CS 61A Fall 2021 Final Q4B.mkv",
+      "12-CS 61A Fall 2021 Final Q4C.mkv",
+      "13-CS 61A Fall 2021 Final Q5A.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Spring 2016 Final",
+    "num_files": 11,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Spring 2016 Final： Silence of the Lambdas - Question 1.mkv",
+      "10-CS 61A Spring 2016 Final： Treebeard's Revenge - Question 10.mkv",
+      "11-CS 61A Spring 2016 Final： Exstream! - Question 11.mkv",
+      "2-CS 61A Spring 2016 Final： Point(er) of Order - Question 2.webm",
+      "3-CS 61A Spring 2016 Final： Environmentally Sound - Question 3.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Spring 2017 Final",
+    "num_files": 14,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Spring 2017 Final： Q1 - WWPD.mkv",
+      "10-CS 61A Spring 2017 Final： Q8 - Pair Up.mkv",
+      "11-CS 61A Spring 2017 Final： Q9a - Don't Go Down Part a.mkv",
+      "12-CS 61A Spring 2017 Final： Q9b - Don't Go Down Part b.mkv",
+      "13-CS 61A Spring 2017 Final： Q10 - Sum Range.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Spring 2017 Midterm 2 Walkthrough",
+    "num_files": 13,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Spring 2017 Midterm 2： Pointers - 1a.mkv",
+      "10-CS 61A Spring 2017 Midterm 2： Inflections - 5 (Generator Version).mkv",
+      "11-CS 61A Spring 2017 Midterm 2： Inflections - 5 (Iterator Version).mkv",
+      "12-CS 61A Spring 2017 Midterm 2： Tree Paths - 6.mkv",
+      "13-CS 61A Spring 2017 Midterm 2： Tree Intro.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Spring 2018 Final Walkthrough",
+    "num_files": 13,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Spring 2018 Final Walkthrough： Q1.mp4",
+      "10-CS 61A Spring 2018 Final Walkthrough： Q6c.mp4",
+      "11-CS 61A Spring 2018 Final Walkthrough： Q6d.mp4",
+      "12-CS 61A Spring 2018 Final Walkthrough： Q7a.mp4",
+      "13-CS 61A Spring 2018 Final Walkthrough： Q7b.mp4"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Spring 2018 Midterm 1",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Spring 2018 Midterm 1 – Problem 1.mkv",
+      "2-CS 61A Spring 2018 Midterm 1 – Problem 2.mkv",
+      "3-CS 61A Spring 2018 Midterm 1 – Problem 3.mkv",
+      "4-CS 61A Spring 2018 Midterm 1 – Problem 4.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Spring 2018 Midterm 2",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Spring 2018 Midterm 2 – Problem 1 (WWPD).mkv",
+      "2-CS 61A Spring 2018 Midterm 2 – Problem 2 (Environment Diagrams).mkv",
+      "3-CS 61A Spring 2018 Midterm 2 – Problem 3 (Lists).mkv",
+      "4-CS 61A Spring 2018 Midterm 2 – Problem 4 (Sequences).mkv",
+      "5-CS 61A Spring 2018 Midterm 2 – Problem 5 (Trees).mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Spring 2019 Midterm 1",
+    "num_files": 3,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Spring 2019 Midterm 1 Q1.mkv",
+      "2-Spring 2019 Midterm 1 Q2.mkv",
+      "3-Spring 2019 Midterm 1 Q3.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Spring 2019 Midterm 2",
+    "num_files": 6,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS61A Sp19 MT2 Q1.mkv",
+      "2-CS61A Sp19 MT2 Q2.mkv",
+      "3-CS61A Sp19 MT2 Q3.mkv",
+      "4-CS61A Sp19 MT2 Q4.mkv",
+      "5-CS61A Sp19 MT2 Q5.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Spring 2022 Final Walkthrough",
+    "num_files": 15,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Spring 2022 Final Q1.webm",
+      "10-CS 61A Spring 2022 Final Q10.webm",
+      "11-CS 61A Spring 2022 Final Q11.webm",
+      "12-CS 61A Spring 2022 Final Q12.webm",
+      "13-CS 61A Spring 2022 Final Q14.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Summer 2017 Final Walkthrough",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Summer 2017 Final： Q1 WWPD.webm",
+      "2-CS 61A Summer 2017 Final： Q3 Environment Diagram.mkv",
+      "3-CS 61A Summer 2017 Final： Q5 Trees.mkv",
+      "4-CS 61A Summer 2017 Final： Q7 Paths.mkv",
+      "5-CS 61A Summer 2017 Final： Q8b Tail Recursion.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Summer 2018 Final",
+    "num_files": 3,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Summer 2018 Final： Q5b.mkv",
+      "2-CS 61A Summer 2018 Final： Q6.mkv",
+      "3-CS 61A Summer 2018 Final： Q8.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Summer 2018 Mock Final Walkthrough",
+    "num_files": 10,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Summer 2018 Mock Final： Q1.mkv",
+      "10-CS 61A Summer 2018 Mock Final： Q6c.mkv",
+      "2-CS 61A Summer 2018 Mock Final： Q2.mkv",
+      "3-CS 61A Summer 2018 Mock Final： Q3.mkv",
+      "4-CS 61A Summer 2018 Mock Final： Q4a.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS 61A Summer 2022 Final Walkthrough",
+    "num_files": 10,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS 61A Summer 2022 Final Q1.mkv",
+      "10-CS 61A Summer 2022 Final Q9.mkv",
+      "2-CS 61A Summer 2022 Final Q2.mkv",
+      "3-CS 61A Summer 2022 Final Q3A.webm",
+      "4-CS 61A Summer 2022 Final Q3B.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS walkthrough vids",
+    "num_files": 16,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS61a Fall 2016 Final WWPD.mkv",
+      "10-CS61a Fall 2016 Final reset B.mkv",
+      "11-CS61a Fall 2016 Final I Scheme for Ice Cream A.mkv",
+      "12-CS61a Fall 2016 Final I Scheme for Ice Cream B.mkv",
+      "13-CS61a Fall 2016 Final I Scheme for Ice Cream C.mp4"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS61A Fall 2019 Final",
+    "num_files": 16,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS61A Fall 2019 Final Q1.mkv",
+      "10-CS61A Fall 2019 Final Q6e.webm",
+      "11-CS61A Fall 2019 Q7a.webm",
+      "12-CS61A Fall 2019 Final Q7b.mkv",
+      "13-CS61A Fall 2019 Q7c.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS61A Fall 2019 Midterm 1",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS61A Fall 2019 Midterm 1 Q1.mkv",
+      "2-CS61A Fall 2019 Midterm 1 Q2.mkv",
+      "3-CS61A Fall 2019 Midterm 1 Q3.mkv",
+      "4-CS61A Fall 2019 Midterm 1 Q4a.mkv",
+      "5-CS61A Fall 2019 Midterm 1 Q4b.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS61A Fall 2019 Midterm 2",
+    "num_files": 8,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS61A Fall 2019 Midterm 2 Q1.mkv",
+      "2-CS61A Fall 2019 Midterm 2 Q2.mkv",
+      "3-CS61A Fall 2019 Midterm 2 Q3.mkv",
+      "4-CS61A Fall 2019 Midterm 2 Q4.mkv",
+      "5-CS61A Fall 2019 Midterm 2 Q5.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS61A Fall 2021 Midterm 1 Walkthrough",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-61A FA21 MT1： Q1a.webm",
+      "2-61A FA21 MT1： Q1b.webm",
+      "3-61A FA21 MT1： Q2.webm",
+      "4-61A FA21 MT1： Q3a.webm",
+      "5-61A FA21 MT1： Q3b.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS61A Fall 2021 Midterm 2",
+    "num_files": 11,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-61A FA21 MT2 Q1： Hawkeye.mkv",
+      "10-61A FA21 MT2 Q5a： Groot (Twig).webm",
+      "11-61A FA21 MT2 Q5b： Groot (Twigs).webm",
+      "2-61A FA21 MT2 Q2a： Doctor Change (Change).mkv",
+      "3-61A FA21 MT2 Q2b： Doctor Change (Amounts).mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS61A Spring 2019 Final",
+    "num_files": 10,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS61A Spring 2019 Final Q1.mkv",
+      "10-CS61A Spring 2019 Final Q10.mkv",
+      "2-CS61A Spring 2019 Final Q2.mkv",
+      "3-CS61A Spring 2019 Final Q3.mkv",
+      "4-CS61A Spring 2019 Final Q4.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS61A Spring 2020 Midterm 1",
+    "num_files": 6,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-CS61A Spring 2020 Midterm 1 Q1.mkv",
+      "2-CS61A Spring 2020 Midterm 1 Q2.mkv",
+      "3-CS61A Spring 2020 Midterm 1 Q3ab.mkv",
+      "4-CS61A Spring 2020 Midterm 1 Q3cd.mkv",
+      "5-CS61A Spring 2020 Midterm 1 Q4a.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/CS61A Spring 2022 Midterm 2 Walkthrough",
+    "num_files": 16,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-61A SP22 MT2： Q1a.mkv",
+      "10-61A SP22 MT2： Q8a.mkv",
+      "11-61A SP22 MT2： Q8b (Readthrough).mkv",
+      "12-61A SP22 MT2： Q8b (Explanation).mkv",
+      "13-61A SP22 MT2： Q8c.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/Control",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Multiple Environments.webm",
+      "2-Miscellaneous Python Features.webm",
+      "3-Conditional statements.mkv",
+      "4-Iteration.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "4-Iteration.mkv: A lecture segment introducing iteration in Python, focusing on the use of the while statement to repeatedly execute code and explaining its execution rule step by step. | 3-Conditional statements.mkv: A lecture segment introducing conditional statements in Python, covering the structure and execution of compound statements, the use of if/elif/else, and the concept of Boolean contexts. | 2-Miscellaneous Python Features.webm: A lecture recording introducing miscellaneous Python features, including operator functions, division types, writing and testing Python files, docstrings, doctests, and default function arguments. | 1-Multiple Environments.webm: A lecture video on multiple environments in Python, focusing on environment diagrams, user-defined functions, frames, and how names are resolved in different environments."
+  },
+  {
+    "path": "study/lecture/youtube/Data Abstraction and ADT Trees (Su25)",
+    "num_files": 9,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Data Abstraction.webm",
+      "2-Representing Rational Numbers.mkv",
+      "3-Abstraction Barriers.mkv",
+      "4-Data Representations.mkv",
+      "5-Trees.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "9-Example： Counting Paths.mkv: A lecture segment introducing a recursive problem: counting the number of paths in a tree whose node labels sum to a given total, including detailed discussion of problem analysis and recursive solution structure. | 8-Example： Summing Paths.mkv: A lecture recording demonstrating recursive strategies for summing values along paths in trees, contrasting return-value-based and argument-passing recursion, with examples using factorial and tree traversal. | 7-Example： Printing Trees.mkv: A lecture segment demonstrating how to write and improve a tree-printing function in Python, focusing on visualizing tree structures using indentation to reflect depth. | 6-Tree Processing.mkv: A lecture recording on tree processing in computer programs, focusing on tree recursion, constructing and traversing trees, and implementing functions to manipulate tree structures such as counting leaves, extracting leaf labels, and incrementing tree values. | 5-Trees.mkv: A lecture recording introducing the tree data abstraction, covering tree vocabulary, recursive structure, and implementation details in Python, including constructors, selectors, and abstraction barriers."
+  },
+  {
+    "path": "study/lecture/youtube/Disc 07",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Prune Small Getting Started.webm",
+      "3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+      "4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm",
+      "5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+      "6-Duplicate Link Getting Started.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "6-Duplicate Link Getting Started.mkv: A video walkthrough for Lab 8, question 3 ('Duplicate Link'), explaining how to mutate a linked list by duplicating nodes with a specific value, with emphasis on in-place mutation and pointer manipulation. | 1-Prune Small Getting Started.webm: A video walkthrough for Lab 9, Question 4, focusing on implementing the pruneSmall function to mutatively prune a tree structure by keeping only the n branches with the smallest labels at each node."
+  },
+  {
+    "path": "study/lecture/youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL",
+    "num_files": 3,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A SU24] Discussion 10 Problem #1 Fast-Exp.mkv",
+      "2-Reverse.webm",
+      "3-Closer City.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "3-Closer City.webm: A discussion video walkthrough for the 'Closer City' problem, focusing on data abstraction, use of constructors/selectors, and leveraging a distance function to compare city proximity. | 2-Reverse.webm: A discussion video explaining how to implement a tail recursive reverse function in Scheme, focusing on helper functions, base cases, and the mechanics of tail recursion."
+  },
+  {
+    "path": "study/lecture/youtube/Discussion 4： Tree Recursion, Trees, Lists",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Disc04 Q4： Even Weighted.mkv",
+      "2-Question #3： Max Path Sum.webm",
+      "3-61A FA21 HW05 Q3： Preorder.mkv",
+      "4-Find Path.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "4-Find Path.webm: A lecture walkthrough for a tree recursion problem called 'Find Path', covering recursive strategies, base cases, and code structure for finding a path to a value in a tree. | 3-61A FA21 HW05 Q3： Preorder.mkv: A homework help video for CS 61A, focusing on pre-order tree traversal and recursive function design, including conceptual overviews and skeleton code hints. | 2-Question #3： Max Path Sum.webm: A lecture walkthrough for the 'Maximum Path Sum' tree recursion problem, covering recursive strategies, base cases, and code optimization for finding the maximum sum along any path in a tree. | 1-Disc04 Q4： Even Weighted.mkv: A discussion section walkthrough for CS61A, focusing on solving the 'even weighted' list comprehension problem, including list indexing, filtering, and mapping using Python list comprehensions."
+  },
+  {
+    "path": "study/lecture/youtube/Discussion 5： Iterators, Generators, Efficiency",
+    "num_files": 6,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A FA23] Final Problem #1： Copying Copies.webm",
+      "2-WWPD Iterators.mkv",
+      "3-[CS 61A SU24] Discussion 5 Problem #2 Repeated.mkv",
+      "4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv",
+      "5-Primes Generator.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "5-Primes Generator.mkv: A discussion section recording focused on implementing a recursive generator function to yield all prime numbers up to n in decreasing and ascending order, including an explanation of generator mechanics and recursive helper functions. | 2-WWPD Iterators.mkv: A discussion section video focused on Python iterators and iterables, including their definitions, behaviors, and internal workings, with step-by-step examples and diagrams."
+  },
+  {
+    "path": "study/lecture/youtube/Discussion 9： Interpreters",
+    "num_files": 3,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A SP24] Discussion 10 Problem #3 Print Evaluated Expressions Walkthrough.mkv",
+      "2-[CS 61A SP24] Discussion 10 Problem #2 Evaluation Walkthrough.mkv",
+      "3-[CS 61A SP24] Discussion 10 Question #1 Representing Expressions.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/Efficiency",
+    "num_files": 6,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Measuring Efficiency.webm",
+      "2-Memoization.mkv",
+      "3-Exponentiation.mkv",
+      "4-Orders of Growth.mkv",
+      "5-Order of Growth Notation.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "6-Space.mkv: A lecture segment on space (memory) consumption in recursive programs, focusing on environment frames, active environments, and measuring frame usage with recursive functions like Fibonacci. | 5-Order of Growth Notation.mkv: A lecture segment introducing mathematical order of growth notation, focusing on Big Theta and Big O, and their use in describing algorithm efficiency. | 4-Orders of Growth.mkv: A lecture video discussing the concept of orders of growth in computational complexity, including linear, quadratic, exponential, logarithmic, and constant time, with examples and implications for program performance. | 3-Exponentiation.mkv: A lecture recording on recursive exponentiation, comparing naive and efficient algorithms, and analyzing their time complexities using practical timing experiments. | 2-Memoization.mkv: A lecture segment on memoization, explaining its implementation, use with recursive functions like Fibonacci, and the impact on function call counts and computational efficiency."
+  },
+  {
+    "path": "study/lecture/youtube/Environments",
+    "num_files": 6,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Environments for Higher-Order Functions.webm",
+      "2-Environments for Nested Definitions.mkv",
+      "3-Local Names.mkv",
+      "4-Function Composition.mkv",
+      "5-Lambda Expressions.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "6-Function Currying.mkv: A lecture segment on function currying, demonstrating how to transform multi-argument functions into higher-order functions that return other functions, with practical examples and historical context. | 5-Lambda Expressions.mkv: A lecture video explaining lambda expressions in Python, comparing them to def statements, and discussing their syntax, limitations, and implications for environment diagrams. | 4-Function Composition.mkv: A lecture recording on function composition, demonstrating higher-order functions, environment diagrams, and the process of composing functions in Python. | 3-Local Names.mkv: A lecture segment discussing local names and the scope of formal parameters in Python functions, with a focus on how environments and frames determine variable accessibility and the implications of nested versus non-nested function definitions. | 2-Environments for Nested Definitions.mkv: A lecture recording on environments for nested definitions, focusing on how nested functions capture their environment, environment diagrams, and the mechanics of parent frames in Python."
+  },
+  {
+    "path": "study/lecture/youtube/Environments (Su25)",
+    "num_files": 8,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Environments for Higher-Order Functions.webm",
+      "2-Environments for Nested Definitions.mkv",
+      "3-Local Names.mkv",
+      "4-Function Composition.mkv",
+      "5-Lambda Expressions.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "7-Function Currying.mkv: A lecture segment on function currying, demonstrating how to transform multi-argument functions into chains of single-argument functions, with practical coding examples and historical context. | 6-Lambda Function Environments.webm: A lecture segment analyzing environment diagrams involving lambda expressions and function environments, focusing on variable scope, parent frames, and the evaluation process in nested function calls. | 5-Lambda Expressions.mkv: A lecture video explaining lambda expressions in Python, comparing them to def statements, and discussing their syntax, limitations, and implications for environment diagrams. | 4-Function Composition.mkv: A lecture recording on function composition, demonstrating higher-order functions, environment diagrams, and the process of composing functions in Python. | 3-Local Names.mkv: A lecture segment discussing local names and the scope of formal parameters in Python functions, with a focus on how environments and frames determine variable accessibility and the implications of nested versus non-nested function definitions."
+  },
+  {
+    "path": "study/lecture/youtube/Final Review (Su25)",
+    "num_files": 3,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Trees.mkv",
+      "2-Tree Processing.mkv",
+      "3-Recursive Accumulation.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "3-Recursive Accumulation.mkv: A lecture segment discussing alternative approaches to recursive accumulation in tree structures, focusing on using mutable state for accumulation and comparing it to previous methods. | 2-Tree Processing.mkv: A detailed lecture walkthrough on solving a tree processing problem, focusing on recursive problem-solving strategies, understanding problem statements, and implementing solutions for counting nodes with specific ancestor-related properties. | 1-Trees.mkv: A lecture segment introducing tree structures, their representations in Python, and their prevalence in computer science, with examples from data, language, and web development."
+  },
+  {
+    "path": "study/lecture/youtube/Functions",
+    "num_files": 6,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Welcome.webm",
+      "2-Call Expressions.webm",
+      "3-Names, Assignment, and User-Defined Functions.webm",
+      "4-Environment Diagrams.webm",
+      "5-Defining Functions.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "6-Print and None.webm: A lecture recording explaining the difference between print and None in Python, covering evaluation, side effects, pure vs non-pure functions, and how nested print calls behave. | 5-Defining Functions.webm: A lecture recording on defining functions in Python, covering abstraction, the def statement, function signatures, call expressions, environment diagrams, and name lookup in local and global frames. | 4-Environment Diagrams.webm: A lecture video introducing environment diagrams in Python, covering how they visualize name bindings, assignment statements, and function calls, including a walkthrough using the online Python tutor. | 3-Names, Assignment, and User-Defined Functions.webm: A lecture video introducing the concepts of names, assignment, and user-defined functions in Python, including demonstrations of import statements, assignment, function definitions, and the evaluation of expressions. | 2-Call Expressions.webm: A lecture video explaining call expressions in programming, focusing on their structure, evaluation procedure, nested expressions, and the concept of recursion in expression evaluation."
+  },
+  {
+    "path": "study/lecture/youtube/Higher-Order Functions",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Iteration Example.webm",
+      "2-Control.mkv",
+      "3-Control Expressions.webm",
+      "4-Higher-Order Functions.webm",
+      "5-Functions as Return Values.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "5-Functions as Return Values.mkv: A lecture recording on higher-order functions, focusing on functions as return values, the make_adder example, and the concept of functions as first-class values in Python. | 4-Higher-Order Functions.webm: A lecture recording introducing higher-order functions, focusing on generalizing computational patterns, code reuse, and abstraction using Python examples for geometric areas and summations. | 3-Control Expressions.webm: A lecture segment explaining Python's control expressions, focusing on short-circuit evaluation with logical operators 'and' and 'or', and their practical use in avoiding errors and controlling program flow. | 2-Control.mkv: A lecture segment discussing the role of control statements versus functions in programming languages, focusing on the evaluation rules of if statements and function calls, with a practical example involving the computation of real square roots. | 1-Iteration Example.webm: A lecture video introducing iteration through the example of the Fibonacci sequence, covering its mathematical background, properties, and iterative computation using a while statement, including a discussion on alternative initializations."
+  },
+  {
+    "path": "study/lecture/youtube/Inheritance and Representation (Su25)",
+    "num_files": 9,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Inheritance.webm",
+      "2-Object-Oriented Design.mkv",
+      "3-Attribute Lookup Practice.mkv",
+      "4-Multiple Inheritance.mkv",
+      "5-String Representations.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "9-Examples： Objects.mkv: A lecture segment on object-oriented programming in Python, focusing on attribute lookup, class inheritance, instance vs. class attributes, and method resolution order, illustrated with a worker-bourgeoisie example. | 7-Polymorphic Functions.webm: A lecture recording on polymorphic functions in Python, focusing on how built-in functions like str and repr work through special methods, the concept of interfaces, and implementing custom classes that adhere to these interfaces. | 6-String Interpolation.mkv: A lecture segment explaining Python's f-strings, focusing on string interpolation, expression evaluation within strings, and differences between str and repr representations. | 5-String Representations.mkv: A lecture segment discussing string representations in Python, focusing on the differences between the str and repr functions, their intended uses, and how they relate to object-oriented programming and human versus interpreter readability. | 4-Multiple Inheritance.mkv: A lecture segment explaining multiple inheritance in Python, using bank account classes as examples to illustrate method resolution order and the effects of inheriting from multiple base classes."
+  },
+  {
+    "path": "study/lecture/youtube/Interpreters (Su25)",
+    "num_files": 12,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Programming Languages.mkv",
+      "10-Lambda Expressions.mkv",
+      "11-Define Expressions.mkv",
+      "12-Dynamic Scope.mkv",
+      "2-Parsing.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "9-Quotation.mkv: A lecture segment discussing the quotation mechanism in Scheme, focusing on the quote special form, its syntactic shorthand, and how the SchemeReader processes quoted expressions. | 8-Logical Forms.mkv: A lecture segment discussing logical forms in programming, focusing on conditional expressions like 'if', 'or', and 'cond', their evaluation strategies, and how only certain sub-expressions are evaluated depending on conditions. | 7-Special Forms.mkv: A lecture segment introducing Scheme's special forms, focusing on how expressions are evaluated, the distinction between different expression types, and a recursive example using the 'demo' procedure. | 6-Interpreting Scheme.mkv: A lecture recording introducing the structure of a Scheme interpreter, focusing on the roles of eval and apply, recursion, environments, and handling user-defined procedures and special forms. | 5-Interactive Interpreters.mkv: A lecture segment discussing the user interface of interpreters, focusing on the read-eval-print loop, error handling, and the interactive experience in a Scheme-like calculator interpreter."
+  },
+  {
+    "path": "study/lecture/youtube/Iterators and Generators (Su25)",
+    "num_files": 10,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Iterators.webm",
+      "10-Examples： Iterables & Iterators.mkv",
+      "2-Dictionary Iteration.mkv",
+      "3-For Statements.mkv",
+      "4-Built-in Iterator Functions.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "9-Example： Partitions.mkv: A lecture recording on generating and listing integer partitions, contrasting list-based and generator (yield-based) recursive implementations, and discussing their efficiency and readability. | 8-Generators & Iterators.mkv: A lecture segment on Python generators and iterators, focusing on the 'yield from' statement, recursive generator patterns, and practical examples like countdowns and string prefix/substring generation. | 7-Generators.webm: A lecture segment explaining Python generators, their behavior, and how they differ from regular functions and other iterators, with examples of generator functions and their lazy evaluation. | 6-Using Iterators.mkv: A lecture segment discussing the use of iterators in Python, illustrated through the example of simulating a game of Casino Blackjack, covering data abstraction, iterator mechanics, and basic game strategy. | 5-Zip.mkv: A lecture segment explaining the Python built-in zip function and its use in implementing a palindrome checker, including discussion of iterators, list comparison, and generalization of element comparison."
+  },
+  {
+    "path": "study/lecture/youtube/Linked Lists (Su25)",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Linked Lists.webm",
+      "2-Linked List Processing.mkv",
+      "3-Linked List Mutation.mkv",
+      "4-Linked List Mutation Example.mkv",
+      "5-Examples： Linked Lists.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "5-Examples： Linked Lists.mkv: A lecture segment on linked list processing, focusing on checking order (with and without key functions), merging sorted linked lists, and performing in-place merges using mutation. | 4-Linked List Mutation Example.mkv: A lecture segment explaining linked list mutation, focusing on implementing an 'add' function that inserts elements into an ordered linked list without duplicates, while maintaining order. | 3-Linked List Mutation.mkv: A lecture segment on linked list mutation, focusing on how attribute assignment can change the structure of linked lists, including the creation of cyclic references. | 2-Linked List Processing.mkv: A lecture segment on recursive processing of linked lists, focusing on implementing range, map, and filter operations for user-defined linked lists in Python. | 1-Linked Lists.webm: A lecture recording introducing linked lists, covering their conceptual structure, Python implementation using classes, and practical manipulation and conventions."
+  },
+  {
+    "path": "study/lecture/youtube/Midterm Review (Su25)",
+    "num_files": 2,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Midterm 1 Review.mkv",
+      "2-Implementing Functions.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "2-Implementing Functions.mkv: A lecture segment discussing strategies for implementing functions, using a digit-removal problem as a worked example. The content covers problem understanding, working through examples, using templates, and iterative refinement of solutions. | 1-Midterm 1 Review.mkv: A midterm review lecture covering Python evaluation, function definitions, nested scopes, closures, and environment diagrams, with detailed walkthroughs of classic 'What would Python print?' questions."
+  },
+  {
+    "path": "study/lecture/youtube/Mutability (Su25)",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Objects.webm",
+      "2-Example： Strings.mkv",
+      "3-Mutation Operations.webm",
+      "4-Tuples.webm",
+      "5-Mutation.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "7-Examples： Lists.webm: A lecture video on list mutation and environment diagrams, covering how list operations like append, extend, addition, slicing, pop, remove, and slice assignment affect list contents and variable bindings in Python. | 6-Mutable Functions.mkv: A lecture segment explaining mutable functions in Python, focusing on how mutable values enable functions to maintain and update persistent local state, using a bank account withdrawal example. | 5-Mutation.mkv: A lecture segment on mutation in programming, discussing object identity, equality, and the dangers of mutable default arguments in functions. | 4-Tuples.webm: A lecture video introducing tuples in Python, focusing on their immutability, syntax, use cases, and differences from lists, as well as implications for dictionary keys and mutation. | 3-Mutation Operations.webm: A lecture recording introducing mutation operations in Python, focusing on how objects like lists and dictionaries can change their contents over time, with examples from playing cards and function calls."
+  },
+  {
+    "path": "study/lecture/youtube/Mutable Trees (Su25)",
+    "num_files": 2,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Tree Class.mkv",
+      "2-Tree Mutation.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "2-Tree Mutation.mkv: A lecture segment on tree mutation, specifically focusing on pruning subtrees from a tree data structure by modifying its branches in place. | 1-Tree Class.mkv: A lecture recording introducing the tree data structure, comparing it to linked lists, and demonstrating tree implementation and processing in Python using both data abstraction and object-oriented approaches."
+  },
+  {
+    "path": "study/lecture/youtube/Objects and Attributes (Su25)",
+    "num_files": 9,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Object-Oriented Programming.mkv",
+      "2-Class Statements.mkv",
+      "3-Creating Instances.mkv",
+      "4-Methods.mkv",
+      "5-Method Calls.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "9-Attribute Assignment.mkv: A lecture segment explaining attribute assignment in Python classes and instances, focusing on how assignments affect class and instance attributes, with illustrative examples using an Account class. | 8-Bound Methods.mkv: A lecture segment explaining Python's bound methods, class and instance attributes, and the distinction between functions and bound methods in object-oriented programming. | 7-Class Attributes.mkv: A lecture segment explaining class attributes in Python, focusing on how they are created, their behavior, and their distinction from instance attributes. | 6-Attribute Lookup.mkv: A lecture segment explaining attribute lookup in Python objects, covering the evaluation of dot expressions, the search order for attributes, and the use of built-in functions like getattr and hasattr. | 5-Method Calls.mkv: A lecture segment explaining method calls in Python, focusing on dot notation, bound methods, and practical examples using an Account class."
+  },
+  {
+    "path": "study/lecture/youtube/Recursion",
+    "num_files": 6,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Self-Reference.webm",
+      "2-Recursive Functions.mkv",
+      "3-Recursion in Environment Diagrams.mkv",
+      "4-Verifying Recursive Functions.mkv",
+      "5-Mutual Recursion.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "6-Recursion and Iteration.mkv: A lecture segment discussing the relationship between recursion and iteration, focusing on how to convert recursive functions to iterative implementations and vice versa, using the sumDigits example. | 5-Mutual Recursion.mkv: A lecture segment explaining mutual recursion, using the Luhn algorithm for credit card checksums as a practical example, including step-by-step computation and implementation details. | 4-Verifying Recursive Functions.mkv: A lecture segment discussing how to verify the correctness of recursive functions, focusing on the recursive leap of faith, base cases, and functional abstraction using the factorial example. | 3-Recursion in Environment Diagrams.mkv: A lecture recording discussing recursion in environment diagrams, focusing on the factorial function, the mechanics of recursive calls, and a comparison between recursive and iterative implementations. | 2-Recursive Functions.mkv: A lecture recording introducing recursive functions, focusing on their definition, real-world examples, and a step-by-step implementation for summing the digits of a number using recursion."
+  },
+  {
+    "path": "study/lecture/youtube/SQL and Tables (Su25)",
+    "num_files": 8,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Databases.webm",
+      "2-Structured Query Language.webm",
+      "3-Projecting Tables.webm",
+      "4-Arithmetic.mkv",
+      "5-Joining Tables.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "8-String Expressions.webm: A lecture segment on string expressions in SQL, focusing on string concatenation, basic string manipulation functions, and the use of strings to represent structured data, with practical examples of constructing sentences from database tables. | 7-Numerical Expressions.mkv: A lecture segment introducing numerical expressions in SQL, comparing them to Python, and demonstrating their use in SELECT statements, including arithmetic operations, function calls, and table joins for calculating distances between cities. | 6-Aliases & Dot Expressions.webm: A lecture video on SQL joins, focusing on the use of aliases and dot expressions to disambiguate columns and tables, especially when joining a table with itself. The session covers practical examples involving parent-child and grandparent-grandchild relationships, and includes a multiple-choice assessment on constructing grandparent-grandchild queries. | 5-Joining Tables.webm: A lecture recording on SQL joins, focusing on how to combine data from multiple tables using both implicit and explicit join syntax, with examples involving dog family trees and attributes. | 4-Arithmetic.mkv: A lecture recording on SQL SELECT statements, focusing on arithmetic operations, row-wise computation, and declarative programming properties, with examples involving ski lift data and powers of two."
+  },
+  {
+    "path": "study/lecture/youtube/Scheme",
+    "num_files": 6,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Scheme.webm",
+      "2-Scheme Interpreters.mkv",
+      "3-Special Forms.webm",
+      "4-Lambda Expressions.mkv",
+      "5-More Special Forms.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "5-More Special Forms.mkv: A lecture video introducing three Scheme special forms—cond, begin, and let—explaining their syntax, use cases, and differences from similar constructs in Python. | 4-Lambda Expressions.mkv: A lecture segment introducing lambda expressions in Scheme, focusing on their syntax, use for creating anonymous procedures, and their flexibility in procedure definition and application. | 3-Special Forms.webm: A lecture segment introducing Scheme's special forms, including 'if', 'and', 'or', and 'define', and demonstrating how to define procedures and recursive functions such as square root using these forms. | 2-Scheme Interpreters.mkv: A lecture segment explaining how Scheme code is executed, focusing on building and using a Scheme interpreter implemented in Python as part of a course project. | 1-Scheme.webm: An introductory lecture on the Scheme programming language, covering its historical context, syntax, core concepts, and basic usage, with comparisons to Python and an emphasis on the simplicity and beauty of Lisp dialects."
+  },
+  {
+    "path": "study/lecture/youtube/Scheme Lists",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Lists.mkv",
+      "2-Symbolic Programming.mkv",
+      "3-List Processing.webm",
+      "4-Example： Even Subsets.mkv",
+      "5-Discussion Question： Even Subsets Using Filter.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "5-Discussion Question： Even Subsets Using Filter.mkv: A discussion video exploring how to generate all even-sum subsets of an integer list using filtering, including a breakdown of subset generation and the use of higher-order functions for filtering. | 4-Example： Even Subsets.mkv: A lecture segment on recursive list processing, focusing on defining a procedure to find all nonempty subsets of a list of integers whose sums are even, and refactoring the solution using higher-order functions. | 3-List Processing.webm: A lecture segment introducing and demonstrating built-in list processing procedures in Scheme, including append, map, filter, and apply, with practical examples and distinctions between their behaviors. | 2-Symbolic Programming.mkv: A lecture segment introducing symbolic programming in Lisp, focusing on the concept of quotation and its role in manipulating symbols and lists directly, with practical demonstrations and an assessment question on list operations. | 1-Lists.mkv: A lecture video introducing Scheme's list data structures, comparing them to Python's linked lists, and demonstrating list construction, access, and built-in procedures in Scheme."
+  },
+  {
+    "path": "study/lecture/youtube/Sequences and Containers (Su25)",
+    "num_files": 11,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Lists.webm",
+      "10-Strings.mkv",
+      "11-Dictionaries.mkv",
+      "2-Containers.mkv",
+      "3-For Statements.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "9-Processing Container Values.mkv: A lecture recording on processing container values in Python, focusing on built-in sequence aggregation functions such as sum, max, all, min, and any, including their usage, parameters, and behavior. | 8-Slicing.mkv: A lecture segment explaining the concept of slicing in Python, focusing on its syntax, behavior, and effects on lists and sequences. | 7-Box-and-Pointer Notation.webm: A lecture segment explaining box and pointer notation for representing lists in environment diagrams, focusing on closure property, hierarchical structures, and how nested and compound values are depicted. | 6-Lists, Slices, & Recursion.mkv: A lecture video introducing lists, slicing, and recursion in Python, with examples of recursive list processing and tree recursion for sublist sum problems. | 5-List Comprehensions.mkv: A lecture segment introducing list comprehensions in Python, demonstrating their syntax, use cases, and how they can be used to filter and transform lists, including within functions."
+  },
+  {
+    "path": "study/lecture/youtube/Tail Calls (Su25)",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Tail Recursion.webm",
+      "2-Tail Calls.mkv",
+      "3-Tail Recursion Examples.mkv",
+      "4-Map and Reduce.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "4-Map and Reduce.mkv: A lecture segment introducing the higher-order functions 'map' and 'reduce', focusing on their definitions, recursive structure, and how to implement them efficiently with tail recursion. | 3-Tail Recursion Examples.mkv: A lecture segment analyzing examples of tail recursion, focusing on identifying which recursive procedures are tail recursive and explaining the implications for space usage. | 2-Tail Calls.mkv: A lecture recording on tail calls in recursive procedures, covering the definition of tail contexts, the importance of tail call optimization for space efficiency, and practical demonstrations in Scheme and Python interpreters. | 1-Tail Recursion.webm: A lecture recording introducing tail recursion in the context of functional programming, comparing recursive and iterative approaches, and discussing the efficiency benefits of tail recursion in functional languages."
+  },
+  {
+    "path": "study/lecture/youtube/Tree Recursion",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Order of Recursive Calls.webm",
+      "2-Example： Inverse Cascade.mkv",
+      "3-Tree Recursion.mkv",
+      "4-Example： Counting Partitions.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "4-Example： Counting Partitions.webm: A lecture video explaining the concept of counting integer partitions using tree recursion, including the recursive decomposition strategy, base cases, and a step-by-step walkthrough of the recursive process and its implementation. | 3-Tree Recursion.mkv: A lecture recording explaining tree recursion, focusing on the Fibonacci sequence as a classic example, and analyzing the computational process, inefficiency, and tracing of recursive calls. | 2-Example： Inverse Cascade.mkv: A lecture segment introducing the concept of an inverse cascade, focusing on recursive function design using higher-order functions, specifically through the implementation of 'grow' and 'shrink' helper functions. | 1-Order of Recursive Calls.webm: A lecture recording discussing the order of recursive calls using the 'cascade' function as an example, covering base cases, recursive case structure, environment diagrams, and considerations for code clarity in recursive function design."
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A FA22] Midterm 1 Walkthrough",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Midterm 1 Question 1 Walkthrough.webm",
+      "2-Midterm 1 Question 2 Walkthrough.webm",
+      "3-Midterm 1 Question 3 Walkthrough.mkv",
+      "4-Midterm 1 Question 4 Walkthrough.mkv",
+      "5-Midterm 1 Question 5 Walkthrough.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A FA22] Midterm 2 Walkthrough Videos",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Question 1： What would Python Python？.mkv",
+      "2-Question 2： Environmental Disaster.mkv",
+      "3-Question 3： Hog Revisited.mkv",
+      "4-Question 4： The Lambdanean Hydra.webm",
+      "5-Question 5： Aim for 100.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A FA23] Final Walkthrough",
+    "num_files": 8,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A FA23] Final Problem #1： Copying Copies.webm",
+      "2-[CS 61A FA23] Final Problem #2： Path Math.webm",
+      "3-[CS 61A FA23] Final Problem #3： Talk Like a Pirate Day.webm",
+      "4-[CS 61A FA23] Final Problem #4： Six Pages of Pairings.webm",
+      "5-[CS 61A FA23] Final Problem #5： What Would Scheme Do？.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A FA23] Midterm 1 Walkthrough",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Problem #1： What Would Python Display？.mkv",
+      "2-Problem #2： An Odd Implementation of Even.mkv",
+      "3-Problem #3： In Your Prime.mkv",
+      "4-Problem #4： Choose Wisely.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A FA23] Midterm 2 Walkthrough Videos",
+    "num_files": 6,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Question #1： What Would Python Display？.mkv",
+      "2-Question #2： Making a List, Checking it Twice.mkv",
+      "3-Question #3： 24-Hour Library.mkv",
+      "4-Question #4： A Perfect Question.mkv",
+      "5-Question #5： Only Paths.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A FA24] Midterm 1 Walkthrough",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A FA24] Midterm 1 Problem #1： WWPD？.webm",
+      "2-[CS 61A FA24] Midterm 1 Problem #2： Which One.webm",
+      "3-[CS 61A FA24] Midterm 1 Problem #3： Final Digit.webm",
+      "4-[CS 61A FA24] Midterm 1 Problem #4： Close Enough.webm",
+      "5-[CS 61A FA24] Midterm 1 Problem #5： Shifty.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A FA24] Midterm 2 Walkthrough",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A FA24] Midterm 2 Problem #1： What Would Python Display？.webm",
+      "2-[CS 61A FA24] Midterm 2 Problem #2： Pizza by the Slice.mkv",
+      "3-[CS 61A FA24] Midterm 2 Problem #3： CS 61A Software Store.mkv",
+      "4-[CS 61A FA24] Midterm 2 Problem #4： Almost a Perfect Question.mkv",
+      "5-[CS 61A FA24] Midterm 2 Problem #5a： How Long is this Exam？.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SP23] Final Walkthrough",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A SP23] Final Problem #1： What Would Python Display？.webm",
+      "2-[CS 61A SP23] Final Problem #2： Framed.webm",
+      "3-[CS 61A SP23] Final Problem #3： Trees Get Degrees.webm",
+      "4-[CS 61A SP23] Final Problem #4： Repark the Car.webm",
+      "5-[CS 61A SP23] Final Problem #5： Pairings.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SP23] Midterm 1 Walkthrough",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Problem #1： What would Python Display？.mkv",
+      "2-Problem #2： Square the Square.mkv",
+      "3-Problem #3a： On Repeat.mkv",
+      "4-Problem #3b： On Repeat.mkv",
+      "5-Problem #4： Perfect Ten.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SP23] Midterm 2 Walkthrough",
+    "num_files": 10,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Problem #1： What Would Python Display？.mkv",
+      "10-Problem #5c： Parking.mkv",
+      "2-Problem #2a： Letter Grade.mkv",
+      "3-Problem #2b： Letter Grade.mkv",
+      "4-Problem #3a： Prefixes.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SP24] Mega Discussion 08",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A SP24] Discussion 8 Problem #1 Strange Loop.mkv",
+      "2-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+      "3-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+      "4-[CS61A SP24] Discussion 8 Question #4 Overlap Growth.webm",
+      "5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm: A discussion video walkthrough for CS61A's 'overlap' problem, focusing on developing a recursive solution to count common elements in two sorted linked lists. | 4-[CS61A SP24] Discussion 8 Question #4 Overlap Growth.webm: A discussion video analyzing the runtime complexity of an alternative implementation of the 'overlap' function in CS61A, focusing on runtime analysis, composite function calls, and order of growth (constant, linear, quadratic, exponential). | 3-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm: A discussion video walkthrough for CS61A's 'overlap' problem, focusing on designing and implementing an iterative solution to count overlapping elements in two sorted linked lists. | 2-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv: A discussion walkthrough video for CS 61A, focusing on implementing sum functions for linked lists using both recursion and iteration, highlighting base and recursive cases, and iterative traversal. | 1-[CS 61A SP24] Discussion 8 Problem #1 Strange Loop.mkv: A discussion section walkthrough video for CS 61A, focusing on constructing a cyclic linked list (a 'strange loop') using the Link class, including diagramming, step-by-step construction, and handling cyclic references in code."
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SP24] Midterm 1 Walkthrough",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A SP24] Midterm 1 WWPD.mkv",
+      "2-[CS 61A SP24] Midterm 1 Silence of the Lambda.mkv",
+      "3-[CS 61A SP24] Midterm 1 Nearly Square.mkv",
+      "4-[CS 61A SP24] Midterm 1 Nice Dice.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SP24] Midterm 2 Walkthrough",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A SP24] Midterm 2 Problem #1 What Would Python Display Walkthrough.mkv",
+      "2-[CS 61A SP24] Midterm 2 Problem #2 Spin Cycle.webm",
+      "3-[CS 61A SP24] Midterm 2 Problem #3 Fearless Walkthrough.mkv",
+      "4-[CS 61A SP24] Midterm 2 Problem #4 Who's counting？.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SP25] Midterm 1 Walkthrough",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS61A SP25] Midterm 1 Problem #1： What Would Python Print？.webm",
+      "2-[CS61A SP25] Midterm 1 Problem #2： Which One.webm",
+      "3-[CS61A SP25] Midterm 1 Problem #3： Legit Digit.webm",
+      "4-[CS61A SP25] Midterm 1 Problem #4： Hailstone Returns.mkv",
+      "5-[CS61A SP25] Midterm 1 Problem #5： It Takes Two.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SP25] Midterm 2 Walkthrough",
+    "num_files": 8,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A SP25] Midterm 2 Problem #1： What Would Python Do？.mkv",
+      "2-[CS 61A SP25] Midterm 2 Problem #3a： Berkeley Time.mkv",
+      "3-[CS 61A SP25] Midterm 2 Problem #3b： Berkeley Time.mkv",
+      "4-[CS 61A SP25] Midterm 2 Problem #4a DeepSeek.webm",
+      "5-[CS 61A SP25] Midterm 2 Problem #4b DeepSeek.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SU23] Midterm Walkthrough",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A SU23] Midterm Problem #1： WWPD？.webm",
+      "2-[CS 61A SU23] Midterm Problem #2： The Fellowship of the List.mkv",
+      "4-[CS 61A SU23] Midterm Problem #4： Goatda.webm",
+      "5-[CS 61A SU23] Midterm Problem #5a： Sweetness Overload.mkv",
+      "6-[CS 61A SU23] Midterm Problem #5b： Sweetness Overload.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SU24 Discussion 2]",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Bottles.mkv",
+      "2-Environment Diagrams： Assignment and Def Statements (Q7 & Q8).webm",
+      "3-Digit Finder.mkv",
+      "4-61A FA21 Disc02： Make Keeper.mkv",
+      "5-Match Maker.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "5-Match Maker.mkv: A lecture walkthrough for the 'match k' function problem, focusing on digit manipulation without string conversion, using modular arithmetic and floor division to compare digits k apart in a number. | 4-61A FA21 Disc02： Make Keeper.mkv: A discussion section walkthrough video for the 'makeKeeper' higher-order function problem, covering function definition, inner functions, parameter passing, and control flow in Python. | 3-Digit Finder.mkv: A lecture recording explaining the implementation of a higher-order function to find the kth digit from the right in a number, covering digit manipulation techniques and edge cases. | 2-Environment Diagrams： Assignment and Def Statements (Q7 & Q8).webm: A lecture segment introducing environment diagrams in Python, focusing on assignment statements and def statements, including step-by-step procedures and binding rules. | 1-Bottles.mkv: A lecture walkthrough on environment diagrams, focusing on how function calls create frames, variable assignment within frames, and the effects of local versus global variable assignment in Python."
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SU24] Discussion 01",
+    "num_files": 5,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Race.mkv",
+      "2-Fizzbuzz.mkv",
+      "3-Is Prime.mkv",
+      "4-Unique Digits.mkv",
+      "5-Ordered Digits.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "5-Ordered Digits.mkv: A walkthrough video for Lab 3 of CS 61A, focusing on the 'ordered digits' problem. The video covers problem interpretation, human and algorithmic strategies, digit extraction techniques, and implementation logic for checking non-decreasing digit order in integers. | 4-Unique Digits.mkv: A walkthrough video for the 'unique digits' programming problem, covering two algorithmic approaches to count unique digits in a positive integer using digit extraction and helper functions. | 3-Is Prime.mkv: A solution walkthrough video for a discussion problem on implementing a recursive function to check if a number is prime, focusing on recursion, helper functions, and base cases. | 2-Fizzbuzz.mkv: A lecture segment explaining the implementation of the FizzBuzz function, focusing on loop construction, conditional logic, and correct ordering of conditions. | 1-Race.mkv: A walkthrough video explaining the implementation and analysis of a 'race' function, focusing on edge cases where the function returns incorrect results or runs indefinitely."
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SU24] Final Walkthrough",
+    "num_files": 8,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS61A SU24] Final Problem #1： Phrase Phonetics.webm",
+      "2-[CS61A SU24] Final Problem #2： Sweet Diadreams.webm",
+      "3-[CS61A SU24] Final Problem #3： Movie Theater Seating.webm",
+      "4-[CS61A SU24] Final Problem #4： Linked Max Composite Value Path.webm",
+      "5-[CS61A SU24] Final Problem #5： CS61A Web Browser.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SU24] Midterm Walkthrough",
+    "num_files": 7,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS 61A SU24] Midterm Problem #1： Generiterator.mkv",
+      "2-[CS 61A SU24] Midterm Problem #2： Conveyor Belt.mkv",
+      "3-[CS 61A SU24] Midterm Problem #3： Tree Sum.webm",
+      "4-[CS 61A SU24] Midterm Problem #4： Add Consecutive.webm",
+      "5-[CS 61A SU24] Midterm Problem #5： Combine Tree.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SU25] Discussion 3",
+    "num_files": 4,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Question 1 - Recursive Multiplication.mkv",
+      "2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm",
+      "3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv",
+      "4-Question 5 - Recursive Hailstone.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "4-Question 5 - Recursive Hailstone.mkv: A video walkthrough for a programming question on implementing the Hailstone sequence recursively, covering base cases, recursive cases, and the relationship between iterative and recursive solutions. | 3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv: A discussion walkthrough for a recursion problem, specifically focusing on defining the base case for a skip factorial function and analyzing recursive structure and test cases. | 2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm: A discussion section walkthrough for a recursion problem, focusing on implementing a function to print digits of a number backwards and then forwards without using iteration. | 1-Question 1 - Recursive Multiplication.mkv: A lecture recording discussing recursive multiplication, focusing on defining a multiplication function using recursion instead of the multiplication operator."
+  },
+  {
+    "path": "study/lecture/youtube/[CS 61A SU25] Discussion 6",
+    "num_files": 3,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-Keyboard.webm",
+      "2-Shapes.mkv",
+      "3-Bear.webm"
+    ],
+    "sample_subfolders": [],
+    "folder_description": "3-Bear.webm: A lecture walkthrough for the 'bear problem' in object-oriented programming, focusing on class inheritance, method overriding, and code reuse with custom bear classes. | 2-Shapes.mkv: A lecture recording on object-oriented programming, focusing on class inheritance and implementation for geometric shapes such as circles, regular polygons, squares, and triangles. | 1-Keyboard.webm: A lecture walkthrough of the 'keyboard problem', focusing on the design and implementation of interacting classes: CapsLock, Button, and Keyboard, including their attributes, methods, and how they work together to simulate keyboard behavior."
+  },
+  {
+    "path": "study/lecture/youtube/[CS61A - Sp15] Final Solution Videos",
+    "num_files": 14,
+    "num_subfolders": 0,
+    "sample_files": [
+      "1-[CS61A - Sp15] Final Fall 2014 - Problem 6b.mkv",
+      "10-[CS61A - Sp15] Final Fall 2014 - Problem 4a.mkv",
+      "11-[CS61A - Sp15] Final Fall 2014 - Problem 3b.mkv",
+      "12-[CS61A - Sp15] Final Fall 2014 - Problem 3a.mkv",
+      "13-[CS61A - Sp15] Final Fall 2014 - Problem 2b.mkv"
+    ],
+    "sample_subfolders": [],
+    "folder_description": ""
+  }
+]

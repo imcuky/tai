@@ -1,0 +1,68 @@
+{
+    "main_backbone_folder": "study/lecture",
+    "rearranged_structure": [
+        {
+            "group_name": "Course Overview & Logistics",
+            "main_item": "CS 61A Summer 2025.html",
+            "related_items": []
+        },
+        {
+            "group_name": "Lecture Slides",
+            "main_item": "01-Welcome_1pp.pdf",
+            "related_items": [
+                "study/lecture/assets/slides/02-Functions_1pp.pdf",
+                "study/lecture/assets/slides/03-Control_1pp.pdf",
+                "study/lecture/assets/slides/04-Higher-Order_Functions_1pp.pdf",
+                "study/lecture/assets/slides/05-Environments_1pp.pdf",
+                "study/lecture/assets/slides/06-Recursion_1pp.pdf",
+                "study/lecture/assets/slides/07-Tree_Recursion_1pp.pdf",
+                "study/lecture/assets/slides/08-Sequences_and_Containers_1pp.pdf",
+                "study/lecture/assets/slides/09-Data_Abstraction_and_ADT_Trees_1pp.pdf",
+                "study/lecture/assets/slides/10-Mutability_1pp.pdf",
+                "study/lecture/assets/slides/11-Iterators_and_Generators_1pp.pdf",
+                "study/lecture/assets/slides/12-Midterm_Review_1pp.pdf",
+                "study/lecture/assets/slides/13-Objects_and_Attributes_1pp.pdf",
+                "study/lecture/assets/slides/14-Inheritance_and_String_Representation_1pp.pdf",
+                "study/lecture/assets/slides/15-Mutable_Trees_1pp.pdf",
+                "study/lecture/assets/slides/16-Linked_Lists_1pp.pdf",
+                "study/lecture/assets/slides/17-Efficiency_1pp.pdf",
+                "study/lecture/assets/slides/18-Scheme_1pp.pdf",
+                "study/lecture/assets/slides/19-Scheme_Lists_1pp.pdf",
+                "study/lecture/assets/slides/20-Interpreters_1pp.pdf",
+                "study/lecture/assets/slides/21-Tail_Calls_1pp.pdf",
+                "study/lecture/assets/slides/22-SQL_and_Tables_1pp.pdf",
+                "study/lecture/assets/slides/23-Aggregation_and_Databases_1pp.pdf",
+                "study/lecture/assets/slides/24-CS_Theory_1pp-updated.pdf",
+                "study/lecture/assets/slides/18.scm",
+                "study/lecture/assets/slides/18.py"
+            ]
+        },
+        {
+            "group_name": "Discussion & Tutorials",
+            "main_item": "Discussion 0 CS 61A Summer 2025.html",
+            "related_items": [
+                "study/lecture/disc"
+            ]
+        },
+        {
+            "group_name": "YouTube Lectures",
+            "main_item": "study/lecture/youtube",
+            "related_items": [
+                "study/lecture/youtube"
+            ]
+        },
+        {
+            "group_name": "Study Guides & Exam Prep",
+            "main_item": "study/lecture/assets/pdfs/61a-su24-final-study-guide.pdf",
+            "related_items": [
+                "study/lecture/assets/pdfs/61a-su25-mt-study-guide.pdf",
+                "study/lecture/study-guide/Study Guide Orders of Growth CS 61A Summer 2025.html"
+            ]
+        },
+        {
+            "group_name": "Miscellaneous",
+            "main_item": "Miscellaneous",
+            "related_items": []
+        }
+    ]
+}

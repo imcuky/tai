@@ -1,0 +1,272 @@
+{
+    "matches": [
+        {
+            "item_path": "study/disc/disc00",
+            "assigned_group": "Lecture 01: Welcome & Intro to Expressions"
+        },
+        {
+            "item_path": "study/disc/disc01",
+            "assigned_group": "Lecture 03: Control Structures"
+        },
+        {
+            "item_path": "study/disc/disc02",
+            "assigned_group": "Lecture 05: Environments & Closures"
+        },
+        {
+            "item_path": "study/disc/disc03",
+            "assigned_group": "Lecture 06: Recursion (Intro)"
+        },
+        {
+            "item_path": "study/disc/disc04",
+            "assigned_group": "Lecture 09: Data Abstraction & Trees"
+        },
+        {
+            "item_path": "study/disc/disc05",
+            "assigned_group": "Lecture 11: Iterators and Generators"
+        },
+        {
+            "item_path": "study/disc/disc06",
+            "assigned_group": "Lecture 13: Objects and Attributes"
+        },
+        {
+            "item_path": "study/disc/disc07",
+            "assigned_group": "Lecture 15: Mutable Trees"
+        },
+        {
+            "item_path": "study/disc/disc08",
+            "assigned_group": "Lecture 18: Scheme (Intro)"
+        },
+        {
+            "item_path": "study/disc/disc09",
+            "assigned_group": "Lecture 19: Scheme Lists"
+        },
+        {
+            "item_path": "study/disc/disc10",
+            "assigned_group": "Lecture 21: Tail Calls & Recursion Space"
+        },
+        {
+            "item_path": "study/disc/disc11",
+            "assigned_group": "Lecture 23: Aggregation and Databases"
+        },
+        {
+            "item_path": "study/disc/disc12",
+            "assigned_group": "Lecture 12: Midterm Review"
+        },
+        {
+            "item_path": "study/disc/sol-disc02",
+            "assigned_group": "Lecture 05: Environments & Closures"
+        },
+        {
+            "item_path": "study/disc/sol-disc03",
+            "assigned_group": "Lecture 06: Recursion (Intro)"
+        },
+        {
+            "item_path": "study/disc/sol-disc05",
+            "assigned_group": "Lecture 11: Iterators and Generators"
+        },
+        {
+            "item_path": "study/disc/sol-disc06",
+            "assigned_group": "Lecture 13: Objects and Attributes"
+        },
+        {
+            "item_path": "study/disc/sol-disc08",
+            "assigned_group": "Lecture 18: Scheme (Intro)"
+        },
+        {
+            "item_path": "study/disc/sol-disc09",
+            "assigned_group": "Lecture 19: Scheme Lists"
+        },
+        {
+            "item_path": "study/disc/sol-disc10",
+            "assigned_group": "Lecture 21: Tail Calls & Recursion Space"
+        },
+        {
+            "item_path": "study/disc/Discussion 0 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 01: Welcome & Intro to Expressions"
+        },
+        {
+            "item_path": "study/disc/Discussion 1 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 03: Control Structures"
+        },
+        {
+            "item_path": "study/disc/Discussion 10 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 21: Tail Calls & Recursion Space"
+        },
+        {
+            "item_path": "study/disc/Discussion 11 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 23: Aggregation and Databases"
+        },
+        {
+            "item_path": "study/disc/Discussion 12 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 12: Midterm Review"
+        },
+        {
+            "item_path": "study/disc/Discussion 2 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 04: Higher-Order Functions"
+        },
+        {
+            "item_path": "study/disc/Discussion 3 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 06: Recursion (Intro)"
+        },
+        {
+            "item_path": "study/disc/Discussion 4 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 07: Tree Recursion"
+        },
+        {
+            "item_path": "study/disc/Discussion 5 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 11: Iterators and Generators"
+        },
+        {
+            "item_path": "study/disc/Discussion 6 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 14: Inheritance & Representation"
+        },
+        {
+            "item_path": "study/disc/Discussion 7 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 15: Mutable Trees"
+        },
+        {
+            "item_path": "study/disc/Discussion 8 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 18: Scheme (Intro)"
+        },
+        {
+            "item_path": "study/disc/Discussion 9 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 19: Scheme Lists"
+        },
+        {
+            "item_path": "study/youtube/Aggregation and Databases (Su25)",
+            "assigned_group": "Lecture 23: Aggregation and Databases"
+        },
+        {
+            "item_path": "study/youtube/Control",
+            "assigned_group": "Lecture 03: Control Structures"
+        },
+        {
+            "item_path": "study/youtube/Data Abstraction and ADT Trees (Su25)",
+            "assigned_group": "Lecture 09: Data Abstraction & Trees"
+        },
+        {
+            "item_path": "study/youtube/Disc 07",
+            "assigned_group": "Lecture 15: Mutable Trees"
+        },
+        {
+            "item_path": "study/youtube/Discussion 10\uff1a Tail Calls, Scheme Data Abstractions, SQL",
+            "assigned_group": "Lecture 21: Tail Calls & Recursion Space"
+        },
+        {
+            "item_path": "study/youtube/Discussion 4\uff1a Tree Recursion, Trees, Lists",
+            "assigned_group": "Lecture 07: Tree Recursion"
+        },
+        {
+            "item_path": "study/youtube/Discussion 5\uff1a Iterators, Generators, Efficiency",
+            "assigned_group": "Lecture 11: Iterators and Generators"
+        },
+        {
+            "item_path": "study/youtube/Discussion 9\uff1a Interpreters",
+            "assigned_group": "Lecture 18: Scheme (Intro)"
+        },
+        {
+            "item_path": "study/youtube/Efficiency",
+            "assigned_group": "Lecture 17: Efficiency"
+        },
+        {
+            "item_path": "study/youtube/Environments",
+            "assigned_group": "Lecture 05: Environments & Closures"
+        },
+        {
+            "item_path": "study/youtube/Environments (Su25)",
+            "assigned_group": "Lecture 05: Environments & Closures"
+        },
+        {
+            "item_path": "study/youtube/Final Review (Su25)",
+            "assigned_group": "Lecture 12: Midterm Review"
+        },
+        {
+            "item_path": "study/youtube/Functions",
+            "assigned_group": "Lecture 02: Functions"
+        },
+        {
+            "item_path": "study/youtube/Higher-Order Functions",
+            "assigned_group": "Lecture 04: Higher-Order Functions"
+        },
+        {
+            "item_path": "study/youtube/Inheritance and Representation (Su25)",
+            "assigned_group": "Lecture 14: Inheritance & Representation"
+        },
+        {
+            "item_path": "study/youtube/Interpreters (Su25)",
+            "assigned_group": "Lecture 18: Scheme (Intro)"
+        },
+        {
+            "item_path": "study/youtube/Iterators and Generators (Su25)",
+            "assigned_group": "Lecture 11: Iterators and Generators"
+        },
+        {
+            "item_path": "study/youtube/Linked Lists (Su25)",
+            "assigned_group": "Lecture 16: Linked Lists"
+        },
+        {
+            "item_path": "study/youtube/Midterm Review (Su25)",
+            "assigned_group": "Lecture 12: Midterm Review"
+        },
+        {
+            "item_path": "study/youtube/Mutability (Su25)",
+            "assigned_group": "Lecture 10: Mutability"
+        },
+        {
+            "item_path": "study/youtube/Mutable Trees (Su25)",
+            "assigned_group": "Lecture 15: Mutable Trees"
+        },
+        {
+            "item_path": "study/youtube/Objects and Attributes (Su25)",
+            "assigned_group": "Lecture 13: Objects and Attributes"
+        },
+        {
+            "item_path": "study/youtube/Recursion",
+            "assigned_group": "Lecture 06: Recursion (Intro)"
+        },
+        {
+            "item_path": "study/youtube/SQL and Tables (Su25)",
+            "assigned_group": "Lecture 22: SQL and Tables"
+        },
+        {
+            "item_path": "study/youtube/Scheme",
+            "assigned_group": "Lecture 18: Scheme (Intro)"
+        },
+        {
+            "item_path": "study/youtube/Scheme Lists",
+            "assigned_group": "Lecture 19: Scheme Lists"
+        },
+        {
+            "item_path": "study/youtube/Sequences and Containers (Su25)",
+            "assigned_group": "Lecture 08: Sequences and Containers"
+        },
+        {
+            "item_path": "study/youtube/Tail Calls (Su25)",
+            "assigned_group": "Lecture 21: Tail Calls & Recursion Space"
+        },
+        {
+            "item_path": "study/youtube/Tree Recursion",
+            "assigned_group": "Lecture 07: Tree Recursion"
+        },
+        {
+            "item_path": "study/youtube/[CS 61A SP24] Mega Discussion 08",
+            "assigned_group": "Lecture 16: Linked Lists"
+        },
+        {
+            "item_path": "study/youtube/[CS 61A SU24 Discussion 2]",
+            "assigned_group": "Lecture 05: Environments & Closures"
+        },
+        {
+            "item_path": "study/youtube/[CS 61A SU24] Discussion 01",
+            "assigned_group": "Lecture 03: Control Structures"
+        },
+        {
+            "item_path": "study/youtube/[CS 61A SU25] Discussion 3",
+            "assigned_group": "Lecture 06: Recursion (Intro)"
+        },
+        {
+            "item_path": "study/youtube/[CS 61A SU25] Discussion 6",
+            "assigned_group": "Lecture 14: Inheritance & Representation"
+        }
+    ]
+}

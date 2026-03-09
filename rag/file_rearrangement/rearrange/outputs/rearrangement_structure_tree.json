@@ -1,0 +1,2467 @@
+[
+  {
+    "type": "group",
+    "name": "Lecture 01: Welcome & Intro to Expressions",
+    "children": [
+      {
+        "type": "file",
+        "name": "01-Welcome_1pp.pdf",
+        "relative_path": "study/assets/slides/01-Welcome_1pp.pdf",
+        "description": "A lecture slide deck introducing CS 61A, covering course logistics, expectations, policies, and an initial overview of expressions and call expressions in programming.",
+        "file_hash": "b6afc99739ccc5af36878a3825615de01fe55a9aa5ef90b7b28208df74855b3c"
+      },
+      {
+        "type": "file",
+        "name": "01.py",
+        "relative_path": "study/assets/slides/01.py",
+        "description": "A Python programming lecture script introducing numeric expressions, functions, values, objects, sets, and data combinations, with practical examples using Shakespeare's text.",
+        "file_hash": "4bfb78af06c9e3ef7cb06f7d5f576980542213b9b0ce1f82e00b75204831caad"
+      },
+      {
+        "type": "folder",
+        "name": "disc00",
+        "relative_path": "study/disc/disc00",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc00.pdf",
+            "relative_path": "study/disc/disc00/disc00.pdf",
+            "description": "A discussion handout for CS 61A, introducing students to the course website, a collaborative problem-solving activity, and strategies for success in the course.",
+            "file_hash": "5987bcd566ce1dbbaeb2f54fee346ba57e47d7f223b9c11ca3f13ad325b37f1a"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "Discussion 0 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 0 CS 61A Summer 2025.html",
+        "description": "A discussion handout introducing CS 61A, summarizing course resources, presenting a group survival ranking activity, and offering strategies for success in the course.",
+        "file_hash": "4cd6d08a5b14f51fbf7e3035cf2fe6df1e680c2efbc5c29fbaa962ee587634c8"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 02: Functions",
+    "children": [
+      {
+        "type": "file",
+        "name": "02-Functions_1pp.pdf",
+        "relative_path": "study/assets/slides/02-Functions_1pp.pdf",
+        "description": "A lecture note covering the basics of functions in programming, including assignment statements, environment diagrams, frames and environments, multiple assignment, and small expressions using specific function calls.",
+        "file_hash": "11faa18aaa0f1111c94a63764a3300e4fdb0c3a0897e9c3f51e44cc02801c5b7"
+      },
+      {
+        "type": "file",
+        "name": "02.py",
+        "relative_path": "study/assets/slides/02.py",
+        "description": "A Python programming lecture script covering assignment, name conflicts, multiple assignment, print/None behavior, and a combinatorial function generator called 'smalls'.",
+        "file_hash": "ddad3976f5c94a25b615521014ddda159a7a0acc346cff23ce95f6f96745bd6c"
+      },
+      {
+        "type": "folder",
+        "name": "Functions",
+        "relative_path": "study/youtube/Functions",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Welcome.webm",
+            "relative_path": "study/youtube/Functions/1-Welcome.webm",
+            "description": "An introductory lecture video for UC Berkeley's CS61A and Data C88C (CS88), explaining the structure and purpose of the course's video lectures and how they integrate with live lectures.",
+            "file_hash": "3f81c1f1d9e733047aa41bbb16f1b63f896622a8f07f0dab787ace00b7116218"
+          },
+          {
+            "type": "file",
+            "name": "2-Call Expressions.webm",
+            "relative_path": "study/youtube/Functions/2-Call Expressions.webm",
+            "description": "A lecture video explaining call expressions in programming, focusing on their structure, evaluation procedure, nested expressions, and the concept of recursion in expression evaluation.",
+            "file_hash": "40a7630abb56406ac29c5eabade59d4a575cca54468dda2c9c775ac268143f81"
+          },
+          {
+            "type": "file",
+            "name": "3-Names, Assignment, and User-Defined Functions.webm",
+            "relative_path": "study/youtube/Functions/3-Names, Assignment, and User-Defined Functions.webm",
+            "description": "A lecture video introducing the concepts of names, assignment, and user-defined functions in Python, including demonstrations of import statements, assignment, function definitions, and the evaluation of expressions.",
+            "file_hash": "5eac7ac0408c5bb232a465963afc52cf58de7cb7770556e7c04cd32befa2b1ff"
+          },
+          {
+            "type": "file",
+            "name": "4-Environment Diagrams.webm",
+            "relative_path": "study/youtube/Functions/4-Environment Diagrams.webm",
+            "description": "A lecture video introducing environment diagrams in Python, covering how they visualize name bindings, assignment statements, and function calls, including a walkthrough using the online Python tutor.",
+            "file_hash": "f81915bab1a96a962839793b591644008095525ced223ba992db0dc577b69f3b"
+          },
+          {
+            "type": "file",
+            "name": "5-Defining Functions.webm",
+            "relative_path": "study/youtube/Functions/5-Defining Functions.webm",
+            "description": "A lecture recording on defining functions in Python, covering abstraction, the def statement, function signatures, call expressions, environment diagrams, and name lookup in local and global frames.",
+            "file_hash": "a5e85e9b90876b26641ff6d59b50380001a1e25c0108c8c54abec2907bf71b87"
+          },
+          {
+            "type": "file",
+            "name": "6-Print and None.webm",
+            "relative_path": "study/youtube/Functions/6-Print and None.webm",
+            "description": "A lecture recording explaining the difference between print and None in Python, covering evaluation, side effects, pure vs non-pure functions, and how nested print calls behave.",
+            "file_hash": "6c6da9f460e63012260fc0065db1f8311b3097b9c85182d96c509d68efc4ce8b"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 03: Control Structures",
+    "children": [
+      {
+        "type": "file",
+        "name": "03-Control_1pp.pdf",
+        "relative_path": "study/assets/slides/03-Control_1pp.pdf",
+        "description": "A lecture note covering control structures in programming, including conditional statements, while loops, and practical examples such as prime factorization and finding the maximum digit in a number.",
+        "file_hash": "615d4d5ff53efbec4ac88dc4de1fb717906cc82d2f9b514f927c2423012228e4"
+      },
+      {
+        "type": "file",
+        "name": "03.py",
+        "relative_path": "study/assets/slides/03.py",
+        "description": "A Python lecture note file covering function return values, environment diagrams, conditional statements, while loops, and algorithmic examples such as prime factorization and finding the maximum digit in an integer.",
+        "file_hash": "3f1731f16faebf65100cca3297d80d77b54ae7057e27e42398439b06083c7577"
+      },
+      {
+        "type": "folder",
+        "name": "disc01",
+        "relative_path": "study/disc/disc01",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc01.pdf",
+            "relative_path": "study/disc/disc01/disc01.pdf",
+            "description": "A discussion worksheet for introductory programming concepts, focusing on control flow using 'if' and 'while', and problem-solving with simple Python functions. Key topics include conditional statements, loops, arithmetic operations, and basic algorithmic thinking through problems like Fizzbuzz, prime checking, and digit analysis.",
+            "file_hash": "574c55818532dce0fd1a365bfbfbdf7c8ff3c921f6f9442f7b1bb049081f0a2d"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "Discussion 1 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 1 CS 61A Summer 2025.html",
+        "description": "A discussion worksheet for CS 61A covering basic Python control structures and problem-solving strategies, with practice problems on if/while, Fizzbuzz, prime checking, unique digits, and ordered digits.",
+        "file_hash": "556ca7ce4c1ed2710ff5bc806ff6aae214c1ab50d1a0fcfe6b2ef1c849567b18"
+      },
+      {
+        "type": "folder",
+        "name": "Control",
+        "relative_path": "study/youtube/Control",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Multiple Environments.webm",
+            "relative_path": "study/youtube/Control/1-Multiple Environments.webm",
+            "description": "A lecture video on multiple environments in Python, focusing on environment diagrams, user-defined functions, frames, and how names are resolved in different environments.",
+            "file_hash": "c878ed20a401653d38dfaa2fcf3056eec80398b1dc22548a9df4ca09a4c2e759"
+          },
+          {
+            "type": "file",
+            "name": "2-Miscellaneous Python Features.webm",
+            "relative_path": "study/youtube/Control/2-Miscellaneous Python Features.webm",
+            "description": "A lecture recording introducing miscellaneous Python features, including operator functions, division types, writing and testing Python files, docstrings, doctests, and default function arguments.",
+            "file_hash": "4ed5e64a82ef22797a228003f625a745f3a36d6d599fc096a79b3af5356831ad"
+          },
+          {
+            "type": "file",
+            "name": "3-Conditional statements.mkv",
+            "relative_path": "study/youtube/Control/3-Conditional statements.mkv",
+            "description": "A lecture segment introducing conditional statements in Python, covering the structure and execution of compound statements, the use of if/elif/else, and the concept of Boolean contexts.",
+            "file_hash": "0e6aa5d9d4d717e851e0c691254fcd58a3680366753dfa4c00c89328011d1611"
+          },
+          {
+            "type": "file",
+            "name": "4-Iteration.mkv",
+            "relative_path": "study/youtube/Control/4-Iteration.mkv",
+            "description": "A lecture segment introducing iteration in Python, focusing on the use of the while statement to repeatedly execute code and explaining its execution rule step by step.",
+            "file_hash": "dd2876260363a6545e38d3192aa11f98e013064f105730f227ca4bf39f6c0fdb"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "[CS 61A SU24] Discussion 01",
+        "relative_path": "study/youtube/[CS 61A SU24] Discussion 01",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Race.mkv",
+            "relative_path": "study/youtube/[CS 61A SU24] Discussion 01/1-Race.mkv",
+            "description": "A walkthrough video explaining the implementation and analysis of a 'race' function, focusing on edge cases where the function returns incorrect results or runs indefinitely.",
+            "file_hash": "126cc4392c5c12fc075a4d56d217c30e221b3ce3e4ecc4d59f29840f5ee1d670"
+          },
+          {
+            "type": "file",
+            "name": "2-Fizzbuzz.mkv",
+            "relative_path": "study/youtube/[CS 61A SU24] Discussion 01/2-Fizzbuzz.mkv",
+            "description": "A lecture segment explaining the implementation of the FizzBuzz function, focusing on loop construction, conditional logic, and correct ordering of conditions.",
+            "file_hash": "b47adda5d40229f1d82ac2b52781d8db642a5e2307e5e2100404d7132c2d66c3"
+          },
+          {
+            "type": "file",
+            "name": "3-Is Prime.mkv",
+            "relative_path": "study/youtube/[CS 61A SU24] Discussion 01/3-Is Prime.mkv",
+            "description": "A solution walkthrough video for a discussion problem on implementing a recursive function to check if a number is prime, focusing on recursion, helper functions, and base cases.",
+            "file_hash": "fdedd91d60eeafb63d0211b4748feb3dc3ee16659e579d6ef09d10641e04677e"
+          },
+          {
+            "type": "file",
+            "name": "4-Unique Digits.mkv",
+            "relative_path": "study/youtube/[CS 61A SU24] Discussion 01/4-Unique Digits.mkv",
+            "description": "A walkthrough video for the 'unique digits' programming problem, covering two algorithmic approaches to count unique digits in a positive integer using digit extraction and helper functions.",
+            "file_hash": "a8b2e1027ff4472269ec5bf0463591456a487fb27000f518c7c701e1ed03076b"
+          },
+          {
+            "type": "file",
+            "name": "5-Ordered Digits.mkv",
+            "relative_path": "study/youtube/[CS 61A SU24] Discussion 01/5-Ordered Digits.mkv",
+            "description": "A walkthrough video for Lab 3 of CS 61A, focusing on the 'ordered digits' problem. The video covers problem interpretation, human and algorithmic strategies, digit extraction techniques, and implementation logic for checking non-decreasing digit order in integers.",
+            "file_hash": "2f5176805cf00257efabb33a6d53680d3c084f8f247ec13418d1d0781ad378db"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 04: Higher-Order Functions",
+    "children": [
+      {
+        "type": "file",
+        "name": "04-Higher-Order_Functions_1pp.pdf",
+        "relative_path": "study/assets/slides/04-Higher-Order_Functions_1pp.pdf",
+        "description": "A lecture note covering higher-order functions in Python, focusing on functions as arguments and return values, as well as foundational concepts like function design, modularity, and evaluation of expressions.",
+        "file_hash": "abd5fa7a10c0cf11070f7319ba735646cb3cbdcea798468fce622c93410d9af9"
+      },
+      {
+        "type": "file",
+        "name": "04.py",
+        "relative_path": "study/assets/slides/04.py",
+        "description": "A Python lecture script covering DRY principles, higher-order functions, and the game of Nim, with examples of functions as arguments and return values.",
+        "file_hash": "3b7b70b508402dc6814ce906167608610c3de8bcf068078d6113b264c57553a1"
+      },
+      {
+        "type": "file",
+        "name": "Discussion 2 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 2 CS 61A Summer 2025.html",
+        "description": "A CS 61A discussion worksheet focusing on higher-order functions and environment diagrams, including conceptual questions and coding exercises on lambda expressions, function frames, and digit manipulation without string operations.",
+        "file_hash": "3bf58c27391fe2f09974ee53509238a9f88a3671ae1238d8832c907cbfbbfc9f"
+      },
+      {
+        "type": "folder",
+        "name": "Higher-Order Functions",
+        "relative_path": "study/youtube/Higher-Order Functions",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Iteration Example.webm",
+            "relative_path": "study/youtube/Higher-Order Functions/1-Iteration Example.webm",
+            "description": "A lecture video introducing iteration through the example of the Fibonacci sequence, covering its mathematical background, properties, and iterative computation using a while statement, including a discussion on alternative initializations.",
+            "file_hash": "ec2d645559b7d0156969e3af09ea57f167459395389b3d2eb2fbd6a04b6454f8"
+          },
+          {
+            "type": "file",
+            "name": "2-Control.mkv",
+            "relative_path": "study/youtube/Higher-Order Functions/2-Control.mkv",
+            "description": "A lecture segment discussing the role of control statements versus functions in programming languages, focusing on the evaluation rules of if statements and function calls, with a practical example involving the computation of real square roots.",
+            "file_hash": "cb880c97406a5a5d7e5776c6170173b6d3405762d3ce5ac92e63c11d5141f0f3"
+          },
+          {
+            "type": "file",
+            "name": "3-Control Expressions.webm",
+            "relative_path": "study/youtube/Higher-Order Functions/3-Control Expressions.webm",
+            "description": "A lecture segment explaining Python's control expressions, focusing on short-circuit evaluation with logical operators 'and' and 'or', and their practical use in avoiding errors and controlling program flow.",
+            "file_hash": "33423599f2bfc707997068087bd7acb118042b2246be5e36ae610c7829f28402"
+          },
+          {
+            "type": "file",
+            "name": "4-Higher-Order Functions.webm",
+            "relative_path": "study/youtube/Higher-Order Functions/4-Higher-Order Functions.webm",
+            "description": "A lecture recording introducing higher-order functions, focusing on generalizing computational patterns, code reuse, and abstraction using Python examples for geometric areas and summations.",
+            "file_hash": "a0523d27c7c06fe881d5f634255e5e9aef2bf51a58795ef40dfcac4a191000ba"
+          },
+          {
+            "type": "file",
+            "name": "5-Functions as Return Values.mkv",
+            "relative_path": "study/youtube/Higher-Order Functions/5-Functions as Return Values.mkv",
+            "description": "A lecture recording on higher-order functions, focusing on functions as return values, the make_adder example, and the concept of functions as first-class values in Python.",
+            "file_hash": "864a21e29897e5fde927533f57d528a639f418bea5160fbee44ba8f6338d9b76"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 05: Environments & Closures",
+    "children": [
+      {
+        "type": "file",
+        "name": "05-Environments_1pp.pdf",
+        "relative_path": "study/assets/slides/05-Environments_1pp.pdf",
+        "description": "A lecture note PDF covering the concept of environments in Python, with a focus on environment diagrams, higher-order functions, currying, lambda expressions, and iterative problem-solving using function definitions and examples.",
+        "file_hash": "a3e9db0b188e699e6421135a215f52b210e2537654b6a9c241150004a46af6ae"
+      },
+      {
+        "type": "file",
+        "name": "05.py",
+        "relative_path": "study/assets/slides/05.py",
+        "description": "A Python lecture code file covering higher-order functions, iteration patterns, lambda expressions, environment diagrams, and currying, with practical examples and exercises.",
+        "file_hash": "8971ab124ba60dc0bc226256a6e4b7f460815c581f7ca308aa414cd3f9cc504e"
+      },
+      {
+        "type": "folder",
+        "name": "disc02",
+        "relative_path": "study/disc/disc02",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc02.pdf",
+            "relative_path": "study/disc/disc02/disc02.pdf",
+            "description": "A discussion worksheet for SICP focusing on environment diagrams, lambda expressions, and higher-order functions, with conceptual and coding exercises to build understanding of Python's execution model and functional programming.",
+            "file_hash": "08c370be07d957fa411f73a6561cab711480c588687215f51228488a2320f02d"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "sol-disc02",
+        "relative_path": "study/disc/sol-disc02",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc02.pdf",
+            "relative_path": "study/disc/sol-disc02/disc02.pdf",
+            "description": "A discussion worksheet for SICP focusing on environment diagrams, lambda expressions, and higher-order functions, with conceptual and coding exercises to build understanding of Python's execution model and functional programming.",
+            "file_hash": "08c370be07d957fa411f73a6561cab711480c588687215f51228488a2320f02d"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Environments",
+        "relative_path": "study/youtube/Environments",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Environments for Higher-Order Functions.webm",
+            "relative_path": "study/youtube/Environments/1-Environments for Higher-Order Functions.webm",
+            "description": "A lecture segment explaining higher-order functions and their interaction with environment diagrams, including a step-by-step demonstration using Python functions and environment frames.",
+            "file_hash": "39df5bf762be9e5bc2a3e2da38023ebc213abc515e17487c48b9ee9d6b1e2274"
+          },
+          {
+            "type": "file",
+            "name": "2-Environments for Nested Definitions.mkv",
+            "relative_path": "study/youtube/Environments/2-Environments for Nested Definitions.mkv",
+            "description": "A lecture recording on environments for nested definitions, focusing on how nested functions capture their environment, environment diagrams, and the mechanics of parent frames in Python.",
+            "file_hash": "98630ab4892d699f85cfb320dd17ee7759442e3af547067466047629541a436e"
+          },
+          {
+            "type": "file",
+            "name": "3-Local Names.mkv",
+            "relative_path": "study/youtube/Environments/3-Local Names.mkv",
+            "description": "A lecture segment discussing local names and the scope of formal parameters in Python functions, with a focus on how environments and frames determine variable accessibility and the implications of nested versus non-nested function definitions.",
+            "file_hash": "cde8e531b4edaeb7bd2bf426353c948e7a48339ab3936be1d94f48e3f486d441"
+          },
+          {
+            "type": "file",
+            "name": "4-Function Composition.mkv",
+            "relative_path": "study/youtube/Environments/4-Function Composition.mkv",
+            "description": "A lecture recording on function composition, demonstrating higher-order functions, environment diagrams, and the process of composing functions in Python.",
+            "file_hash": "26e70dd843d4651a1c3ab1bdc0eed314612308bfcb4b22601d2e4214a6c7ed55"
+          },
+          {
+            "type": "file",
+            "name": "5-Lambda Expressions.mkv",
+            "relative_path": "study/youtube/Environments/5-Lambda Expressions.mkv",
+            "description": "A lecture video explaining lambda expressions in Python, comparing them to def statements, and discussing their syntax, limitations, and implications for environment diagrams.",
+            "file_hash": "413a53b80212b15c09c3d79561f1a47d077bfab9284f8ff3e7b02368b400d2c6"
+          },
+          {
+            "type": "file",
+            "name": "6-Function Currying.mkv",
+            "relative_path": "study/youtube/Environments/6-Function Currying.mkv",
+            "description": "A lecture segment on function currying, demonstrating how to transform multi-argument functions into higher-order functions that return other functions, with practical examples and historical context.",
+            "file_hash": "9079dedd74800380eb1350aaeacd299ce837bc63c16249fb8aadcfd4e89755d0"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Environments (Su25)",
+        "relative_path": "study/youtube/Environments (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Environments for Higher-Order Functions.webm",
+            "relative_path": "study/youtube/Environments (Su25)/1-Environments for Higher-Order Functions.webm",
+            "description": "A lecture segment explaining higher-order functions and their interaction with environment diagrams, including a step-by-step demonstration using Python functions and environment frames.",
+            "file_hash": "39df5bf762be9e5bc2a3e2da38023ebc213abc515e17487c48b9ee9d6b1e2274"
+          },
+          {
+            "type": "file",
+            "name": "2-Environments for Nested Definitions.mkv",
+            "relative_path": "study/youtube/Environments (Su25)/2-Environments for Nested Definitions.mkv",
+            "description": "A lecture recording on environments for nested definitions, focusing on how nested functions capture their environment, environment diagrams, and the mechanics of parent frames in Python.",
+            "file_hash": "98630ab4892d699f85cfb320dd17ee7759442e3af547067466047629541a436e"
+          },
+          {
+            "type": "file",
+            "name": "3-Local Names.mkv",
+            "relative_path": "study/youtube/Environments (Su25)/3-Local Names.mkv",
+            "description": "A lecture segment discussing local names and the scope of formal parameters in Python functions, with a focus on how environments and frames determine variable accessibility and the implications of nested versus non-nested function definitions.",
+            "file_hash": "cde8e531b4edaeb7bd2bf426353c948e7a48339ab3936be1d94f48e3f486d441"
+          },
+          {
+            "type": "file",
+            "name": "4-Function Composition.mkv",
+            "relative_path": "study/youtube/Environments (Su25)/4-Function Composition.mkv",
+            "description": "A lecture recording on function composition, demonstrating higher-order functions, environment diagrams, and the process of composing functions in Python.",
+            "file_hash": "26e70dd843d4651a1c3ab1bdc0eed314612308bfcb4b22601d2e4214a6c7ed55"
+          },
+          {
+            "type": "file",
+            "name": "5-Lambda Expressions.mkv",
+            "relative_path": "study/youtube/Environments (Su25)/5-Lambda Expressions.mkv",
+            "description": "A lecture video explaining lambda expressions in Python, comparing them to def statements, and discussing their syntax, limitations, and implications for environment diagrams.",
+            "file_hash": "413a53b80212b15c09c3d79561f1a47d077bfab9284f8ff3e7b02368b400d2c6"
+          },
+          {
+            "type": "file",
+            "name": "6-Lambda Function Environments.webm",
+            "relative_path": "study/youtube/Environments (Su25)/6-Lambda Function Environments.webm",
+            "description": "A lecture segment analyzing environment diagrams involving lambda expressions and function environments, focusing on variable scope, parent frames, and the evaluation process in nested function calls.",
+            "file_hash": "1ce73d0f358701d13c81eab148be937c1f6f149b717b40296de0a9cc9bc19a2c"
+          },
+          {
+            "type": "file",
+            "name": "7-Function Currying.mkv",
+            "relative_path": "study/youtube/Environments (Su25)/7-Function Currying.mkv",
+            "description": "A lecture segment on function currying, demonstrating how to transform multi-argument functions into chains of single-argument functions, with practical coding examples and historical context.",
+            "file_hash": "0ba7bb53c7b6447cacdb5c5914d5a21c467e8142fccf48a4aa5e12ea685b093d"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "[CS 61A SU24 Discussion 2]",
+        "relative_path": "study/youtube/[CS 61A SU24 Discussion 2]",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Bottles.mkv",
+            "relative_path": "study/youtube/[CS 61A SU24 Discussion 2]/1-Bottles.mkv",
+            "description": "A lecture walkthrough on environment diagrams, focusing on how function calls create frames, variable assignment within frames, and the effects of local versus global variable assignment in Python.",
+            "file_hash": "1ad74c82aa3a6ea22d1ff2358b523d55513bc4281ac158d2dd02de900bc2d096"
+          },
+          {
+            "type": "file",
+            "name": "2-Environment Diagrams： Assignment and Def Statements (Q7 & Q8).webm",
+            "relative_path": "study/youtube/[CS 61A SU24 Discussion 2]/2-Environment Diagrams： Assignment and Def Statements (Q7 & Q8).webm",
+            "description": "A lecture segment introducing environment diagrams in Python, focusing on assignment statements and def statements, including step-by-step procedures and binding rules.",
+            "file_hash": "2994b59d50c362bb83e3e9e928ae5cd066be0fa0f1f4694be45d771e3bc8110a"
+          },
+          {
+            "type": "file",
+            "name": "3-Digit Finder.mkv",
+            "relative_path": "study/youtube/[CS 61A SU24 Discussion 2]/3-Digit Finder.mkv",
+            "description": "A lecture recording explaining the implementation of a higher-order function to find the kth digit from the right in a number, covering digit manipulation techniques and edge cases.",
+            "file_hash": "147d2669b91cb21f0f31f667400d1b9c46580eb9b77b05209c320087b17a931b"
+          },
+          {
+            "type": "file",
+            "name": "4-61A FA21 Disc02： Make Keeper.mkv",
+            "relative_path": "study/youtube/[CS 61A SU24 Discussion 2]/4-61A FA21 Disc02： Make Keeper.mkv",
+            "description": "A discussion section walkthrough video for the 'makeKeeper' higher-order function problem, covering function definition, inner functions, parameter passing, and control flow in Python.",
+            "file_hash": "8d525ed21b00b87028b9c974630f70ee22283ff0b2bbace0b7904acedbebf309"
+          },
+          {
+            "type": "file",
+            "name": "5-Match Maker.mkv",
+            "relative_path": "study/youtube/[CS 61A SU24 Discussion 2]/5-Match Maker.mkv",
+            "description": "A lecture walkthrough for the 'match k' function problem, focusing on digit manipulation without string conversion, using modular arithmetic and floor division to compare digits k apart in a number.",
+            "file_hash": "db08c0363ee082d49ae92fd4d2f7bce0775a2194ecbb60d43daade3a423199fe"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 06: Recursion (Intro)",
+    "children": [
+      {
+        "type": "file",
+        "name": "06-Recursion_1pp.pdf",
+        "relative_path": "study/assets/slides/06-Recursion_1pp.pdf",
+        "description": "A lecture note for recursion, covering key concepts such as base cases, recursive calls, analogies for recursion, and the process of converting iterative solutions to recursive ones.",
+        "file_hash": "0564e660608e88f5443b8c835c0e9032b7b324f38854506eeeb3b9b5d3db2d42"
+      },
+      {
+        "type": "file",
+        "name": "06.py",
+        "relative_path": "study/assets/slides/06.py",
+        "description": "A lecture note covering currying (partial and conditional), recursion, converting iteration to recursion, and prime-checking helper functions in Python.",
+        "file_hash": "08905b9908a643d72ce0527bae3287ec59482ee044e0b400299e38cedf952264"
+      },
+      {
+        "type": "folder",
+        "name": "disc03",
+        "relative_path": "study/disc/disc03",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc03.pdf",
+            "relative_path": "study/disc/disc03/disc03.pdf",
+            "description": "A discussion worksheet for recursion in computer science, covering recursive function structure, tree recursion, and practice problems such as recursive multiplication, factorial variants, the hailstone sequence, stair counting, and generating subsequences.",
+            "file_hash": "593046b0158ddb064001185466ecbbbda833a5a7d2111dfe08e532c04431cd13"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "sol-disc03",
+        "relative_path": "study/disc/sol-disc03",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc03.pdf",
+            "relative_path": "study/disc/sol-disc03/disc03.pdf",
+            "description": "A discussion worksheet for recursion in computer science, covering recursive function structure, tree recursion, and practice problems such as recursive multiplication, factorial variants, the hailstone sequence, stair counting, and generating subsequences.",
+            "file_hash": "593046b0158ddb064001185466ecbbbda833a5a7d2111dfe08e532c04431cd13"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "Discussion 3 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 3 CS 61A Summer 2025.html",
+        "description": "A discussion worksheet for CS 61A focusing on recursion and tree recursion, including conceptual explanations and coding exercises such as recursive multiplication, swipe, skip factorial, recursive hailstone, counting stair ways, and generating subsequences.",
+        "file_hash": "06f32fc93bde77966b96ef44bdc1cdadbc6988a016cd73f73bfe3eabd12c80d5"
+      },
+      {
+        "type": "folder",
+        "name": "Recursion",
+        "relative_path": "study/youtube/Recursion",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Self-Reference.webm",
+            "relative_path": "study/youtube/Recursion/1-Self-Reference.webm",
+            "description": "A lecture segment discussing self-reference in functions, focusing on how functions can refer to themselves and use inner functions to accumulate state across calls.",
+            "file_hash": "fb84f76206da8eeb88ae71998478c78864014141671e317a9daff54ca418d654"
+          },
+          {
+            "type": "file",
+            "name": "2-Recursive Functions.mkv",
+            "relative_path": "study/youtube/Recursion/2-Recursive Functions.mkv",
+            "description": "A lecture recording introducing recursive functions, focusing on their definition, real-world examples, and a step-by-step implementation for summing the digits of a number using recursion.",
+            "file_hash": "604a5e38384c5abb827775b542315f52e277aa65de104950b5194d6ff15d849e"
+          },
+          {
+            "type": "file",
+            "name": "3-Recursion in Environment Diagrams.mkv",
+            "relative_path": "study/youtube/Recursion/3-Recursion in Environment Diagrams.mkv",
+            "description": "A lecture recording discussing recursion in environment diagrams, focusing on the factorial function, the mechanics of recursive calls, and a comparison between recursive and iterative implementations.",
+            "file_hash": "8557be4c5289e8859232580d3148ace4dc3bcc8ee1eee9d9a5134e7987186355"
+          },
+          {
+            "type": "file",
+            "name": "4-Verifying Recursive Functions.mkv",
+            "relative_path": "study/youtube/Recursion/4-Verifying Recursive Functions.mkv",
+            "description": "A lecture segment discussing how to verify the correctness of recursive functions, focusing on the recursive leap of faith, base cases, and functional abstraction using the factorial example.",
+            "file_hash": "e69134f13ab37bed5d5f401793ab9eb4705a70dcc82b3dcd452fd4c88d54dde7"
+          },
+          {
+            "type": "file",
+            "name": "5-Mutual Recursion.mkv",
+            "relative_path": "study/youtube/Recursion/5-Mutual Recursion.mkv",
+            "description": "A lecture segment explaining mutual recursion, using the Luhn algorithm for credit card checksums as a practical example, including step-by-step computation and implementation details.",
+            "file_hash": "067f1d760518d35300072a9f3a5dff3136a7f89eee414395b5893d2693286e3c"
+          },
+          {
+            "type": "file",
+            "name": "6-Recursion and Iteration.mkv",
+            "relative_path": "study/youtube/Recursion/6-Recursion and Iteration.mkv",
+            "description": "A lecture segment discussing the relationship between recursion and iteration, focusing on how to convert recursive functions to iterative implementations and vice versa, using the sumDigits example.",
+            "file_hash": "a7ea9c2499eb4429d9afe0a9abc240e3519efe0a3362fe6362a2d2df0e969c81"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "[CS 61A SU25] Discussion 3",
+        "relative_path": "study/youtube/[CS 61A SU25] Discussion 3",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Question 1 - Recursive Multiplication.mkv",
+            "relative_path": "study/youtube/[CS 61A SU25] Discussion 3/1-Question 1 - Recursive Multiplication.mkv",
+            "description": "A lecture recording discussing recursive multiplication, focusing on defining a multiplication function using recursion instead of the multiplication operator.",
+            "file_hash": "079f4f80ee4d389b2dd94ab2b24537b1ad6cb9782a42be54049c7ffcbaed91bc"
+          },
+          {
+            "type": "file",
+            "name": "2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm",
+            "relative_path": "study/youtube/[CS 61A SU25] Discussion 3/2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm",
+            "description": "A discussion section walkthrough for a recursion problem, focusing on implementing a function to print digits of a number backwards and then forwards without using iteration.",
+            "file_hash": "5668f65d030d4209a28933a02e4cc3351fd57fb8aeb03e9d51220a5ae7379a64"
+          },
+          {
+            "type": "file",
+            "name": "3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv",
+            "relative_path": "study/youtube/[CS 61A SU25] Discussion 3/3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv",
+            "description": "A discussion walkthrough for a recursion problem, specifically focusing on defining the base case for a skip factorial function and analyzing recursive structure and test cases.",
+            "file_hash": "aeb3174ce037f7fb4e5dbd572ab2d52fa2f55d7eb75fb383dc995376b9528e79"
+          },
+          {
+            "type": "file",
+            "name": "4-Question 5 - Recursive Hailstone.mkv",
+            "relative_path": "study/youtube/[CS 61A SU25] Discussion 3/4-Question 5 - Recursive Hailstone.mkv",
+            "description": "A video walkthrough for a programming question on implementing the Hailstone sequence recursively, covering base cases, recursive cases, and the relationship between iterative and recursive solutions.",
+            "file_hash": "5ccb453f065f4199c7935a92551dbafaaccd4a337191dd21340fa87367eac4c7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 07: Tree Recursion",
+    "children": [
+      {
+        "type": "file",
+        "name": "07-Tree_Recursion_1pp.pdf",
+        "relative_path": "study/assets/slides/07-Tree_Recursion_1pp.pdf",
+        "description": "A lecture note for tree recursion in SICP, covering recursion review, converting iteration to recursion, helper functions, and classic tree recursion problems such as counting partitions and parking vehicles.",
+        "file_hash": "3c4d717c4dc64b46be582198218c904debc825984ff97c690526ba8608b0828b"
+      },
+      {
+        "type": "file",
+        "name": "07.py",
+        "relative_path": "study/assets/slides/07.py",
+        "description": "A programming lecture note covering recursion and iteration, with examples including digit counting, pattern recognition, game simulation, combinatorial counting, and recursive pathfinding.",
+        "file_hash": "5077dd546e7faeaf4c310d6061be43bad6588c75aec98a2e9f5d073498812412"
+      },
+      {
+        "type": "file",
+        "name": "Discussion 4 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 4 CS 61A Summer 2025.html",
+        "description": "A discussion worksheet for CS 61A covering Python lists, dictionaries, and tree data structures, including list comprehensions, dictionary key-value relationships, and tree traversals and path-finding.",
+        "file_hash": "331d97ce512ba58038edfaf2206cd6f253999178d8ced195a20bcd0a4470aa2c"
+      },
+      {
+        "type": "folder",
+        "name": "Discussion 4： Tree Recursion, Trees, Lists",
+        "relative_path": "study/youtube/Discussion 4： Tree Recursion, Trees, Lists",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Disc04 Q4： Even Weighted.mkv",
+            "relative_path": "study/youtube/Discussion 4： Tree Recursion, Trees, Lists/1-Disc04 Q4： Even Weighted.mkv",
+            "description": "A discussion section walkthrough for CS61A, focusing on solving the 'even weighted' list comprehension problem, including list indexing, filtering, and mapping using Python list comprehensions.",
+            "file_hash": "6157bd98d33516dda361f6ce7de34629714c081ab602fa75060db691823a043b"
+          },
+          {
+            "type": "file",
+            "name": "2-Question #3： Max Path Sum.webm",
+            "relative_path": "study/youtube/Discussion 4： Tree Recursion, Trees, Lists/2-Question #3： Max Path Sum.webm",
+            "description": "A lecture walkthrough for the 'Maximum Path Sum' tree recursion problem, covering recursive strategies, base cases, and code optimization for finding the maximum sum along any path in a tree.",
+            "file_hash": "110f833bbb60597230251d387831437bddc8e32cc8393a30ec3e424292fba04e"
+          },
+          {
+            "type": "file",
+            "name": "3-61A FA21 HW05 Q3： Preorder.mkv",
+            "relative_path": "study/youtube/Discussion 4： Tree Recursion, Trees, Lists/3-61A FA21 HW05 Q3： Preorder.mkv",
+            "description": "A homework help video for CS 61A, focusing on pre-order tree traversal and recursive function design, including conceptual overviews and skeleton code hints.",
+            "file_hash": "5cc11b62d37499e467d6e6c9617780b4ebf7cc03419ee6783fc85a5ed1be6569"
+          },
+          {
+            "type": "file",
+            "name": "4-Find Path.webm",
+            "relative_path": "study/youtube/Discussion 4： Tree Recursion, Trees, Lists/4-Find Path.webm",
+            "description": "A lecture walkthrough for a tree recursion problem called 'Find Path', covering recursive strategies, base cases, and code structure for finding a path to a value in a tree.",
+            "file_hash": "0000ca9b73c4ea04b107a694beaa3474d783dee7a6b714085eeefd440464bea8"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Tree Recursion",
+        "relative_path": "study/youtube/Tree Recursion",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Order of Recursive Calls.webm",
+            "relative_path": "study/youtube/Tree Recursion/1-Order of Recursive Calls.webm",
+            "description": "A lecture recording discussing the order of recursive calls using the 'cascade' function as an example, covering base cases, recursive case structure, environment diagrams, and considerations for code clarity in recursive function design.",
+            "file_hash": "fa282397b881f5c7ef18724e0f4554073a5b59b4faf3e99d34e89d15285f3b2e"
+          },
+          {
+            "type": "file",
+            "name": "2-Example： Inverse Cascade.mkv",
+            "relative_path": "study/youtube/Tree Recursion/2-Example： Inverse Cascade.mkv",
+            "description": "A lecture segment introducing the concept of an inverse cascade, focusing on recursive function design using higher-order functions, specifically through the implementation of 'grow' and 'shrink' helper functions.",
+            "file_hash": "1bdb22e83dbff62222978cca76545be365e126947c38a3fa8f7b5b8b42fa0a10"
+          },
+          {
+            "type": "file",
+            "name": "3-Tree Recursion.mkv",
+            "relative_path": "study/youtube/Tree Recursion/3-Tree Recursion.mkv",
+            "description": "A lecture recording explaining tree recursion, focusing on the Fibonacci sequence as a classic example, and analyzing the computational process, inefficiency, and tracing of recursive calls.",
+            "file_hash": "e47d728fd9f665e5d5343a44f56fe277b591ba8f38b96e7de97e4e93480d9895"
+          },
+          {
+            "type": "file",
+            "name": "4-Example： Counting Partitions.webm",
+            "relative_path": "study/youtube/Tree Recursion/4-Example： Counting Partitions.webm",
+            "description": "A lecture video explaining the concept of counting integer partitions using tree recursion, including the recursive decomposition strategy, base cases, and a step-by-step walkthrough of the recursive process and its implementation.",
+            "file_hash": "df04adcac9c0645a56c86c3ff9a23dc09585df517c147d66ce0dadc315b802eb"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 08: Sequences and Containers",
+    "children": [
+      {
+        "type": "file",
+        "name": "08-Sequences_and_Containers_1pp.pdf",
+        "relative_path": "study/assets/slides/08-Sequences_and_Containers_1pp.pdf",
+        "description": "A lecture note PDF for 'Sequences and Containers' in SICP, covering tree recursion, list comprehensions, recursive list processing, and related exam problems.",
+        "file_hash": "059074c352d61b81e31e07720f6f79f9ab3a3eece9c448de7a88181de82b349c"
+      },
+      {
+        "type": "file",
+        "name": "08.py",
+        "relative_path": "study/assets/slides/08.py",
+        "description": "A Python lecture note covering tree recursion, list operations, range usage, list comprehensions, and recursive problem-solving with examples and practice exercises.",
+        "file_hash": "165b7cf85f9524ff8ec53196eed705fa39ed3d4624f764eb1e192a48d013a1f8"
+      },
+      {
+        "type": "folder",
+        "name": "Sequences and Containers (Su25)",
+        "relative_path": "study/youtube/Sequences and Containers (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Lists.webm",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/1-Lists.webm",
+            "description": "A lecture segment introducing Python lists, covering list creation, indexing, list operations, nested lists, and related built-in functions.",
+            "file_hash": "9654267c2a5cecced7ab21694eb34f431d63f5f521448e2590607f7f994f58f8"
+          },
+          {
+            "type": "file",
+            "name": "10-Strings.mkv",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/10-Strings.mkv",
+            "description": "A lecture segment introducing strings in Python, discussing their abstraction, representation, syntax, and sequence-like behaviors, with comparisons to other sequence types.",
+            "file_hash": "627deb8665ab1d044c50f8efdd02dfa22616571173aebd6de0f26c2c516a3aae"
+          },
+          {
+            "type": "file",
+            "name": "11-Dictionaries.mkv",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/11-Dictionaries.mkv",
+            "description": "A lecture recording introducing Python dictionaries, covering their syntax, key-value structure, restrictions, dictionary comprehensions, and practical applications such as building index functions.",
+            "file_hash": "a00c8a1e9ae96a604183c63fb3981cf29e79ea48cc0bacafdfa04c44538b5722"
+          },
+          {
+            "type": "file",
+            "name": "2-Containers.mkv",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/2-Containers.mkv",
+            "description": "A lecture segment introducing Python's 'in' and 'not in' operators for checking membership in containers, with examples and clarifications on how these operators work with lists and nested structures.",
+            "file_hash": "033d3cc758d7dc89d8cd2de9e4e6f1ee1a557083c807bcb026d0763736cad85f"
+          },
+          {
+            "type": "file",
+            "name": "3-For Statements.mkv",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/3-For Statements.mkv",
+            "description": "A lecture recording introducing the 'for' statement in Python, focusing on sequence iteration, assignment operators, and sequence unpacking within for loops.",
+            "file_hash": "606f11531ee62b7af3ab2b8d7fa17ad2398392b6b7f2652ee660e61aa8f8f0ab"
+          },
+          {
+            "type": "file",
+            "name": "4-Ranges.mkv",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/4-Ranges.mkv",
+            "description": "A lecture recording introducing the concept of ranges in Python, explaining their properties, usage, and differences from lists, with practical examples and conventions for iteration.",
+            "file_hash": "7871a9bb16def43a831e8d61b279821483d674788148ab17b029e1c4c851a91f"
+          },
+          {
+            "type": "file",
+            "name": "5-List Comprehensions.mkv",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/5-List Comprehensions.mkv",
+            "description": "A lecture segment introducing list comprehensions in Python, demonstrating their syntax, use cases, and how they can be used to filter and transform lists, including within functions.",
+            "file_hash": "57ae896e601deb978eac3a97e8317dd6c213d3f014e11711a3b3818c9ff310a9"
+          },
+          {
+            "type": "file",
+            "name": "6-Lists, Slices, & Recursion.mkv",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/6-Lists, Slices, & Recursion.mkv",
+            "description": "A lecture video introducing lists, slicing, and recursion in Python, with examples of recursive list processing and tree recursion for sublist sum problems.",
+            "file_hash": "6ba5debd70bb668bdf996da9ad227179e0bda88667f10c6f6c82acb23504b453"
+          },
+          {
+            "type": "file",
+            "name": "7-Box-and-Pointer Notation.webm",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/7-Box-and-Pointer Notation.webm",
+            "description": "A lecture segment explaining box and pointer notation for representing lists in environment diagrams, focusing on closure property, hierarchical structures, and how nested and compound values are depicted.",
+            "file_hash": "6eeaaaebd4587299f218ae2e4a955152fd7ffd2215a1b78b99cc3335f69d8c66"
+          },
+          {
+            "type": "file",
+            "name": "8-Slicing.mkv",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/8-Slicing.mkv",
+            "description": "A lecture segment explaining the concept of slicing in Python, focusing on its syntax, behavior, and effects on lists and sequences.",
+            "file_hash": "01e3219474b9280af464b7c974fb8f5047e15634a3a89c8f89afa3fa5b99d09a"
+          },
+          {
+            "type": "file",
+            "name": "9-Processing Container Values.mkv",
+            "relative_path": "study/youtube/Sequences and Containers (Su25)/9-Processing Container Values.mkv",
+            "description": "A lecture recording on processing container values in Python, focusing on built-in sequence aggregation functions such as sum, max, all, min, and any, including their usage, parameters, and behavior.",
+            "file_hash": "e55a39e4f3865cb8afd57bd45dacde0c103307fcfd10d273fa253d018c428ef7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 09: Data Abstraction & Trees",
+    "children": [
+      {
+        "type": "file",
+        "name": "09-Data_Abstraction_and_ADT_Trees_1pp.pdf",
+        "relative_path": "study/assets/slides/09-Data_Abstraction_and_ADT_Trees_1pp.pdf",
+        "description": "A lecture note covering data abstraction and tree abstract data types (ADTs), including recursion with lists, dictionary comprehensions, and the implementation and processing of tree structures in Python.",
+        "file_hash": "29a68e36fc513e30b367c4f3ece8f4b2dc434e49adb5e3c87c57e1c026da2934"
+      },
+      {
+        "type": "file",
+        "name": "09.py",
+        "relative_path": "study/assets/slides/09.py",
+        "description": "A Python lecture note covering dictionaries, dictionary comprehensions, data abstraction, abstraction barriers, and tree data structures with examples and exercises.",
+        "file_hash": "c19e890a9f703bf0795e9076f801b7f5d13bd04fff2a36a9296a424d79a06197"
+      },
+      {
+        "type": "folder",
+        "name": "disc04",
+        "relative_path": "study/disc/disc04",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc04.pdf",
+            "relative_path": "study/disc/disc04/disc04.pdf",
+            "description": "A discussion worksheet for CS61A covering core Python data structures and recursion, focusing on lists, dictionaries, and trees, with practice problems on list comprehensions, dictionary lookups, and tree traversals.",
+            "file_hash": "99bc7791bbd250e3b8cdb7b611281a1fc80c23334be3346d6b1f355203269ca5"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Data Abstraction and ADT Trees (Su25)",
+        "relative_path": "study/youtube/Data Abstraction and ADT Trees (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Data Abstraction.webm",
+            "relative_path": "study/youtube/Data Abstraction and ADT Trees (Su25)/1-Data Abstraction.webm",
+            "description": "A lecture recording introducing data abstraction, focusing on abstract data types, compound data, and the implementation of rational numbers as an example.",
+            "file_hash": "b115a7c92e97cec855e64388c0d807e55c23a785528a0e133915d21b32fee5ac"
+          },
+          {
+            "type": "file",
+            "name": "2-Representing Rational Numbers.mkv",
+            "relative_path": "study/youtube/Data Abstraction and ADT Trees (Su25)/2-Representing Rational Numbers.mkv",
+            "description": "A lecture segment introducing the representation of rational numbers using lists in Python, covering pairs, list operations, and the importance of data abstraction and normalization (lowest terms) for rational numbers.",
+            "file_hash": "382a07798ff5f57b8707f42c070ac832b0a4c8ab91e5d2307d780c1118b6973b"
+          },
+          {
+            "type": "file",
+            "name": "3-Abstraction Barriers.mkv",
+            "relative_path": "study/youtube/Data Abstraction and ADT Trees (Su25)/3-Abstraction Barriers.mkv",
+            "description": "A lecture segment discussing abstraction barriers in programming, using the example of rational arithmetic systems, and illustrating the consequences of violating these barriers with code examples.",
+            "file_hash": "907f53596e9da470da471ef884828a0ac526640c50dcbac5492a582c36bffe50"
+          },
+          {
+            "type": "file",
+            "name": "4-Data Representations.mkv",
+            "relative_path": "study/youtube/Data Abstraction and ADT Trees (Su25)/4-Data Representations.mkv",
+            "description": "A lecture segment discussing data abstraction, focusing on abstraction barriers, data representation, and implementing rational numbers using both lists and functions.",
+            "file_hash": "af8becedb17ba28af33d2108a9f70ecd62be25afb8382a3defe0c13de86d9aab"
+          },
+          {
+            "type": "file",
+            "name": "5-Trees.mkv",
+            "relative_path": "study/youtube/Data Abstraction and ADT Trees (Su25)/5-Trees.mkv",
+            "description": "A lecture recording introducing the tree data abstraction, covering tree vocabulary, recursive structure, and implementation details in Python, including constructors, selectors, and abstraction barriers.",
+            "file_hash": "bdc1bc1f52d8dff9c4625bb9f9006ed4c63be90f3484f03fe0539efe446fd977"
+          },
+          {
+            "type": "file",
+            "name": "6-Tree Processing.mkv",
+            "relative_path": "study/youtube/Data Abstraction and ADT Trees (Su25)/6-Tree Processing.mkv",
+            "description": "A lecture recording on tree processing in computer programs, focusing on tree recursion, constructing and traversing trees, and implementing functions to manipulate tree structures such as counting leaves, extracting leaf labels, and incrementing tree values.",
+            "file_hash": "97455fc22947d594cfdfa9a85adc83e5154df677dca0acbf8b1d8d4fda9f260d"
+          },
+          {
+            "type": "file",
+            "name": "7-Example： Printing Trees.mkv",
+            "relative_path": "study/youtube/Data Abstraction and ADT Trees (Su25)/7-Example： Printing Trees.mkv",
+            "description": "A lecture segment demonstrating how to write and improve a tree-printing function in Python, focusing on visualizing tree structures using indentation to reflect depth.",
+            "file_hash": "3f593228085a86fe618344014bf360edee139fd757b2dc1c9f32b4f52b052b5b"
+          },
+          {
+            "type": "file",
+            "name": "8-Example： Summing Paths.mkv",
+            "relative_path": "study/youtube/Data Abstraction and ADT Trees (Su25)/8-Example： Summing Paths.mkv",
+            "description": "A lecture recording demonstrating recursive strategies for summing values along paths in trees, contrasting return-value-based and argument-passing recursion, with examples using factorial and tree traversal.",
+            "file_hash": "7d6e484ed583888255b963e41c2716d8c34435fbcd7c26ab452af35b4413595a"
+          },
+          {
+            "type": "file",
+            "name": "9-Example： Counting Paths.mkv",
+            "relative_path": "study/youtube/Data Abstraction and ADT Trees (Su25)/9-Example： Counting Paths.mkv",
+            "description": "A lecture segment introducing a recursive problem: counting the number of paths in a tree whose node labels sum to a given total, including detailed discussion of problem analysis and recursive solution structure.",
+            "file_hash": "20eed0cfa966e5dfcc8260669babf138c7a3aa274a4650dfebd4af052d1be8d2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 10: Mutability",
+    "children": [
+      {
+        "type": "file",
+        "name": "10-Mutability_1pp.pdf",
+        "relative_path": "study/assets/slides/10-Mutability_1pp.pdf",
+        "description": "A lecture note covering mutability in Python, focusing on list mutation, identity vs equality, and recursive list/tree construction and modification, including practical examples and code walkthroughs.",
+        "file_hash": "4eba8acd633629deec8b7c163d9f3ad1ebb0192f498c8ef03584d806a2d38c6c"
+      },
+      {
+        "type": "file",
+        "name": "10.py",
+        "relative_path": "study/assets/slides/10.py",
+        "description": "A Python code file containing function demonstrations and exercises on tree recursion, list mutation, identity, and list-of-lists behaviors.",
+        "file_hash": "143f5c4470150df172e2d1ddad6d027a4e6b7265174e802b185ac47cc236304f"
+      },
+      {
+        "type": "folder",
+        "name": "Mutability (Su25)",
+        "relative_path": "study/youtube/Mutability (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Objects.webm",
+            "relative_path": "study/youtube/Mutability (Su25)/1-Objects.webm",
+            "description": "A lecture segment introducing the concept of objects in software engineering, focusing on Python's object system, classes, attributes, methods, and the object-oriented programming paradigm.",
+            "file_hash": "2fd61033d25145f6397d7034227312c314c8ebdfe2516d3af04015f914a24cbe"
+          },
+          {
+            "type": "file",
+            "name": "2-Example： Strings.mkv",
+            "relative_path": "study/youtube/Mutability (Su25)/2-Example： Strings.mkv",
+            "description": "A lecture recording introducing strings in programming, focusing on string methods, character encoding (ASCII and Unicode), and how text is represented and manipulated in Python and other languages.",
+            "file_hash": "e6f48ffa0c94e76b119392c9891b5fbb87e44899f5651296e65e0120838296a0"
+          },
+          {
+            "type": "file",
+            "name": "3-Mutation Operations.webm",
+            "relative_path": "study/youtube/Mutability (Su25)/3-Mutation Operations.webm",
+            "description": "A lecture recording introducing mutation operations in Python, focusing on how objects like lists and dictionaries can change their contents over time, with examples from playing cards and function calls.",
+            "file_hash": "b5d3c7c32e41e622ced3b856e5ef8f1684224949ba62d4d20181d911977aec4d"
+          },
+          {
+            "type": "file",
+            "name": "4-Tuples.webm",
+            "relative_path": "study/youtube/Mutability (Su25)/4-Tuples.webm",
+            "description": "A lecture video introducing tuples in Python, focusing on their immutability, syntax, use cases, and differences from lists, as well as implications for dictionary keys and mutation.",
+            "file_hash": "dd97581b549b80d2032398b26cc2cc1b22a629c1477d1420471ab4aaa123efb0"
+          },
+          {
+            "type": "file",
+            "name": "5-Mutation.mkv",
+            "relative_path": "study/youtube/Mutability (Su25)/5-Mutation.mkv",
+            "description": "A lecture segment on mutation in programming, discussing object identity, equality, and the dangers of mutable default arguments in functions.",
+            "file_hash": "b24867f567268b81b6a98febd4b98f4e3a1449041f4b510a9ed9771d4232b6c9"
+          },
+          {
+            "type": "file",
+            "name": "6-Mutable Functions.mkv",
+            "relative_path": "study/youtube/Mutability (Su25)/6-Mutable Functions.mkv",
+            "description": "A lecture segment explaining mutable functions in Python, focusing on how mutable values enable functions to maintain and update persistent local state, using a bank account withdrawal example.",
+            "file_hash": "32ced3d8f9372dd2d66db44f649b56d849d627a1d3e4fe216c6041e315378da1"
+          },
+          {
+            "type": "file",
+            "name": "7-Examples： Lists.webm",
+            "relative_path": "study/youtube/Mutability (Su25)/7-Examples： Lists.webm",
+            "description": "A lecture video on list mutation and environment diagrams, covering how list operations like append, extend, addition, slicing, pop, remove, and slice assignment affect list contents and variable bindings in Python.",
+            "file_hash": "5e2fd101674b0d1fcdfdd53b15807641dcb93511fc1c58828d9e464fb7b03846"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 11: Iterators and Generators",
+    "children": [
+      {
+        "type": "file",
+        "name": "11-Iterators_and_Generators_1pp.pdf",
+        "relative_path": "study/assets/slides/11-Iterators_and_Generators_1pp.pdf",
+        "description": "A lecture note covering iterators and generators in Python, including practical examples such as building lists of branches, implementing path creation in trees, list manipulation, the map function, and generator-based combinatorial problems.",
+        "file_hash": "aad756a2635ba8cc0d29af5ac4aa46dd116d5ac293971c4e97afbb844698ab49"
+      },
+      {
+        "type": "file",
+        "name": "11.py",
+        "relative_path": "study/assets/slides/11.py",
+        "description": "A Python code lecture file covering tuples, iterators, map, generators, and recursive/iterative solutions to a combinatorial parking problem.",
+        "file_hash": "14952cc712ca5c9333896633d598c45bdda94a8ebe90ee0a50b24f048dd270ee"
+      },
+      {
+        "type": "folder",
+        "name": "disc05",
+        "relative_path": "study/disc/disc05",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc05.pdf",
+            "relative_path": "study/disc/disc05/disc05.pdf",
+            "description": "A discussion worksheet for SICP covering Python concepts such as mutability, iterators, generators, and recursive generator functions, with exercises on list mutation, iterator behavior, generator implementation, and recursive algorithms for primes and partitions.",
+            "file_hash": "c13dfc4ac2f8ef74d2b02acb53d29617a0fd0e91fca67c954b59807339a1a710"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "sol-disc05",
+        "relative_path": "study/disc/sol-disc05",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc05.pdf",
+            "relative_path": "study/disc/sol-disc05/disc05.pdf",
+            "description": "A discussion worksheet for SICP covering Python concepts such as mutability, iterators, generators, and recursive generator functions, with exercises on list mutation, iterator behavior, generator implementation, and recursive algorithms for primes and partitions.",
+            "file_hash": "c13dfc4ac2f8ef74d2b02acb53d29617a0fd0e91fca67c954b59807339a1a710"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "Discussion 5 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 5 CS 61A Summer 2025.html",
+        "description": "A discussion worksheet for CS 61A covering mutability, iterators, and generators in Python, including hands-on exercises and code examples for each concept.",
+        "file_hash": "47b7e324515eb24bd6704c900ad293edc3af6971ee3a9c59647074550403e852"
+      },
+      {
+        "type": "folder",
+        "name": "Discussion 5： Iterators, Generators, Efficiency",
+        "relative_path": "study/youtube/Discussion 5： Iterators, Generators, Efficiency",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-[CS 61A FA23] Final Problem #1： Copying Copies.webm",
+            "relative_path": "study/youtube/Discussion 5： Iterators, Generators, Efficiency/1-[CS 61A FA23] Final Problem #1： Copying Copies.webm",
+            "description": "",
+            "file_hash": ""
+          },
+          {
+            "type": "file",
+            "name": "2-WWPD Iterators.mkv",
+            "relative_path": "study/youtube/Discussion 5： Iterators, Generators, Efficiency/2-WWPD Iterators.mkv",
+            "description": "A discussion section video focused on Python iterators and iterables, including their definitions, behaviors, and internal workings, with step-by-step examples and diagrams.",
+            "file_hash": "598175255ddfc9ca227e237de1f3075876eefd2f05c6e871f62fa7a2c397e551"
+          },
+          {
+            "type": "file",
+            "name": "4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv",
+            "relative_path": "study/youtube/Discussion 5： Iterators, Generators, Efficiency/4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv",
+            "description": "",
+            "file_hash": ""
+          },
+          {
+            "type": "file",
+            "name": "5-Primes Generator.mkv",
+            "relative_path": "study/youtube/Discussion 5： Iterators, Generators, Efficiency/5-Primes Generator.mkv",
+            "description": "A discussion section recording focused on implementing a recursive generator function to yield all prime numbers up to n in decreasing and ascending order, including an explanation of generator mechanics and recursive helper functions.",
+            "file_hash": "ee71af31f1248c4e732890cf2df3335a422c1fe79b83aa0748eb62196ae8d040"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Iterators and Generators (Su25)",
+        "relative_path": "study/youtube/Iterators and Generators (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Iterators.webm",
+            "relative_path": "study/youtube/Iterators and Generators (Su25)/1-Iterators.webm",
+            "description": "A lecture segment introducing iterators in Python, explaining their behavior, usage with containers, and how iteration state is managed, including handling of nested lists and stop iteration exceptions.",
+            "file_hash": "100b97e59303ee61ead094fecc61084fe8ff9f1b79c92d49e5a334779504ff3c"
+          },
+          {
+            "type": "file",
+            "name": "10-Examples： Iterables & Iterators.mkv",
+            "relative_path": "study/youtube/Iterators and Generators (Su25)/10-Examples： Iterables & Iterators.mkv",
+            "description": "A lecture recording focused on practical examples of manipulating iterables and iterators in Python, covering list comprehensions, built-in functions, and dictionary comprehensions for solving moderately complex data manipulation problems.",
+            "file_hash": "bc3e5fd0c83d020047a62f8969a08e6c44cd9f2d5bad9e1f22acbd6fa7602503"
+          },
+          {
+            "type": "file",
+            "name": "2-Dictionary Iteration.mkv",
+            "relative_path": "study/youtube/Iterators and Generators (Su25)/2-Dictionary Iteration.mkv",
+            "description": "A lecture segment on dictionary iteration in Python, covering iterables, iterators, dictionary ordering, and the effects of mutating dictionaries during iteration.",
+            "file_hash": "bfdf47b306682f1b06a2c84a3efbf39466efc36aaf40a95a8c80ae21b7ac6a31"
+          },
+          {
+            "type": "file",
+            "name": "3-For Statements.mkv",
+            "relative_path": "study/youtube/Iterators and Generators (Su25)/3-For Statements.mkv",
+            "description": "A lecture recording introducing the 'for' statement in Python, focusing on sequence iteration, assignment operators, and sequence unpacking within for loops.",
+            "file_hash": "606f11531ee62b7af3ab2b8d7fa17ad2398392b6b7f2652ee660e61aa8f8f0ab"
+          },
+          {
+            "type": "file",
+            "name": "4-Built-in Iterator Functions.webm",
+            "relative_path": "study/youtube/Iterators and Generators (Su25)/4-Built-in Iterator Functions.webm",
+            "description": "A lecture recording on Python's built-in iterator functions, focusing on lazy computation, the behavior of map, filter, zip, and reversed, and practical implications of using iterators versus lists.",
+            "file_hash": "8da0f42aa77f5cfbcb1cd49e5d6502724cf19742afa42c12c4dd6f1a865f2f3b"
+          },
+          {
+            "type": "file",
+            "name": "5-Zip.mkv",
+            "relative_path": "study/youtube/Iterators and Generators (Su25)/5-Zip.mkv",
+            "description": "A lecture segment explaining the Python built-in zip function and its use in implementing a palindrome checker, including discussion of iterators, list comparison, and generalization of element comparison.",
+            "file_hash": "f0d52ec61ed5843004fe37702639dda738b9a43a4816673bfc0b630c684ae28b"
+          },
+          {
+            "type": "file",
+            "name": "6-Using Iterators.mkv",
+            "relative_path": "study/youtube/Iterators and Generators (Su25)/6-Using Iterators.mkv",
+            "description": "A lecture segment discussing the use of iterators in Python, illustrated through the example of simulating a game of Casino Blackjack, covering data abstraction, iterator mechanics, and basic game strategy.",
+            "file_hash": "a5c0ef7ba4aa3cb4857ae5304204e71b45bda54ef26e13cde9f623092437c9a0"
+          },
+          {
+            "type": "file",
+            "name": "7-Generators.webm",
+            "relative_path": "study/youtube/Iterators and Generators (Su25)/7-Generators.webm",
+            "description": "A lecture segment explaining Python generators, their behavior, and how they differ from regular functions and other iterators, with examples of generator functions and their lazy evaluation.",
+            "file_hash": "02aee18e105d2e1354475e84f5695eb61cca8113c99002c9e1c7972ae6f026d4"
+          },
+          {
+            "type": "file",
+            "name": "8-Generators & Iterators.mkv",
+            "relative_path": "study/youtube/Iterators and Generators (Su25)/8-Generators & Iterators.mkv",
+            "description": "A lecture segment on Python generators and iterators, focusing on the 'yield from' statement, recursive generator patterns, and practical examples like countdowns and string prefix/substring generation.",
+            "file_hash": "a6a46e5783890ae3e8cfee6846c5f17adb6b6dc6340b32481d90aadca2706b06"
+          },
+          {
+            "type": "file",
+            "name": "9-Example： Partitions.mkv",
+            "relative_path": "study/youtube/Iterators and Generators (Su25)/9-Example： Partitions.mkv",
+            "description": "A lecture recording on generating and listing integer partitions, contrasting list-based and generator (yield-based) recursive implementations, and discussing their efficiency and readability.",
+            "file_hash": "cc15fe41cb8ca7d3ffd3633fd81d264717c7c7947109f6ec537436600b2e5dcf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 12: Midterm Review",
+    "children": [
+      {
+        "type": "file",
+        "name": "12-Midterm_Review_1pp.pdf",
+        "relative_path": "study/assets/slides/12-Midterm_Review_1pp.pdf",
+        "description": "A midterm review handout for the course 'The Structure and Interpretation of Computer Programs', covering topics such as generators, list operations, environment diagrams, recursion, and tree manipulation.",
+        "file_hash": "e839d4156d5047ff5371fcad720e21bb1a11d7920335b7a709f6ea8c8c66c983"
+      },
+      {
+        "type": "file",
+        "name": "12.py",
+        "relative_path": "study/assets/slides/12.py",
+        "description": "A Python lecture note covering recursive problem solving, including combinatorial counting, generator recursion, list recursion, and dynamic programming via the least resistance path problem.",
+        "file_hash": "6280d94d73d072697b22a27b1949b88d304cba08b9bdd4a24f339d645f9b8699"
+      },
+      {
+        "type": "folder",
+        "name": "disc12",
+        "relative_path": "study/disc/disc12",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc12.pdf",
+            "relative_path": "study/disc/disc12/disc12.pdf",
+            "description": "A worksheet or discussion handout for final review, covering list mutation in Python, linked lists, Scheme lists, ropes, and SQL queries for data analysis and aggregation.",
+            "file_hash": "316c37ee810a6ce458785146196d8c635121122c3a4f104c7e7ca3ffcc18a697"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "Discussion 12 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 12 CS 61A Summer 2025.html",
+        "description": "A discussion worksheet for CS 61A covering final review topics including Python lists and mutation, linked lists, Scheme lists and procedures, and SQL queries with practical table examples.",
+        "file_hash": "c79c574426498263453e63caacf230e36c20dd35549f42356bdb63cc3d89e9ee"
+      },
+      {
+        "type": "folder",
+        "name": "Final Review (Su25)",
+        "relative_path": "study/youtube/Final Review (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Trees.mkv",
+            "relative_path": "study/youtube/Final Review (Su25)/1-Trees.mkv",
+            "description": "A lecture segment introducing tree structures, their representations in Python, and their prevalence in computer science, with examples from data, language, and web development.",
+            "file_hash": "0a9001c6e6bb4158ae5e4e76f42605df0adcabc024a3584dfbc5fb9d61b2fb00"
+          },
+          {
+            "type": "file",
+            "name": "2-Tree Processing.mkv",
+            "relative_path": "study/youtube/Final Review (Su25)/2-Tree Processing.mkv",
+            "description": "A detailed lecture walkthrough on solving a tree processing problem, focusing on recursive problem-solving strategies, understanding problem statements, and implementing solutions for counting nodes with specific ancestor-related properties.",
+            "file_hash": "02a7316f8e4fbd8e7236a1b96b403c37197a2b118badad199eb5dbdc7147e8b0"
+          },
+          {
+            "type": "file",
+            "name": "3-Recursive Accumulation.mkv",
+            "relative_path": "study/youtube/Final Review (Su25)/3-Recursive Accumulation.mkv",
+            "description": "A lecture segment discussing alternative approaches to recursive accumulation in tree structures, focusing on using mutable state for accumulation and comparing it to previous methods.",
+            "file_hash": "460d1424ae52e8b9d0d3eec281baf24ced2a36e9d3de0d567507440c545380ca"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Midterm Review (Su25)",
+        "relative_path": "study/youtube/Midterm Review (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Midterm 1 Review.mkv",
+            "relative_path": "study/youtube/Midterm Review (Su25)/1-Midterm 1 Review.mkv",
+            "description": "A midterm review lecture covering Python evaluation, function definitions, nested scopes, closures, and environment diagrams, with detailed walkthroughs of classic 'What would Python print?' questions.",
+            "file_hash": "1b5a304c866802395802a7e6a616544a444ad1bcaec008144f8790c5d583115e"
+          },
+          {
+            "type": "file",
+            "name": "2-Implementing Functions.mkv",
+            "relative_path": "study/youtube/Midterm Review (Su25)/2-Implementing Functions.mkv",
+            "description": "A lecture segment discussing strategies for implementing functions, using a digit-removal problem as a worked example. The content covers problem understanding, working through examples, using templates, and iterative refinement of solutions.",
+            "file_hash": "3a453918d2d16dd348bd5dacb2b7dde443fa2fe2e685cbab08f3bfdba08f5ea8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 13: Objects and Attributes",
+    "children": [
+      {
+        "type": "file",
+        "name": "13-Objects_and_Attributes_1pp.pdf",
+        "relative_path": "study/assets/slides/13-Objects_and_Attributes_1pp.pdf",
+        "description": "A lecture note on object-oriented programming in Python, focusing on classes, attributes, methods, attribute lookup, class vs instance attributes, and practical exercises with custom classes like Account and Place.",
+        "file_hash": "2616f8d35eb7240242d696baba9bdb3a734004a34ff0ab3cae2e58f7a559f148"
+      },
+      {
+        "type": "file",
+        "name": "13.py",
+        "relative_path": "study/assets/slides/13.py",
+        "description": "A Python lecture note covering object-oriented programming concepts, including class and instance attributes, method calls, and object behaviors through examples like Account, Town, and Beach classes.",
+        "file_hash": "f82ec15bad3c1393b96b986a9e4b452fb604b408691b256dfae30dca13b6e83d"
+      },
+      {
+        "type": "folder",
+        "name": "disc06",
+        "relative_path": "study/disc/disc06",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc06.pdf",
+            "relative_path": "study/disc/disc06/disc06.pdf",
+            "description": "A discussion worksheet for object-oriented programming, covering class and object basics, inheritance, class design, and practice problems involving keyboard simulation, geometric shapes, and class inheritance for bears.",
+            "file_hash": "d7a935366f86075515163b6e0b0c8d44b60e8004761ef283edf9e585ebf1f5d7"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "sol-disc06",
+        "relative_path": "study/disc/sol-disc06",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc06.pdf",
+            "relative_path": "study/disc/sol-disc06/disc06.pdf",
+            "description": "A discussion worksheet for object-oriented programming, covering class and object basics, inheritance, class design, and practice problems involving keyboard simulation, geometric shapes, and class inheritance for bears.",
+            "file_hash": "d7a935366f86075515163b6e0b0c8d44b60e8004761ef283edf9e585ebf1f5d7"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Objects and Attributes (Su25)",
+        "relative_path": "study/youtube/Objects and Attributes (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Object-Oriented Programming.mkv",
+            "relative_path": "study/youtube/Objects and Attributes (Su25)/1-Object-Oriented Programming.mkv",
+            "description": "A lecture recording introducing object-oriented programming, focusing on its principles, terminology, and how Python implements classes, objects, and methods.",
+            "file_hash": "eb9cc86a9093e3333c05a2c4f438ecbf084d5e9b1a1cf0b15c6ab9b600485f37"
+          },
+          {
+            "type": "file",
+            "name": "2-Class Statements.mkv",
+            "relative_path": "study/youtube/Objects and Attributes (Su25)/2-Class Statements.mkv",
+            "description": "A lecture segment introducing class statements in Python, focusing on defining custom classes, instance attributes, and methods using a bank account example.",
+            "file_hash": "c046e4af7b236b70e143f8835284167f871a2f8dfe63fc78fd406dff06f26b13"
+          },
+          {
+            "type": "file",
+            "name": "3-Creating Instances.mkv",
+            "relative_path": "study/youtube/Objects and Attributes (Su25)/3-Creating Instances.mkv",
+            "description": "A lecture segment on object-oriented programming in Python, focusing on how instances are created, how attributes are assigned and accessed, and the concept of object identity.",
+            "file_hash": "66a3a4a062af4d5cefea95fa8410bd935fa5893f2d2bb982a8006e59948581d7"
+          },
+          {
+            "type": "file",
+            "name": "4-Methods.mkv",
+            "relative_path": "study/youtube/Objects and Attributes (Su25)/4-Methods.mkv",
+            "description": "A lecture segment explaining method definitions in Python classes, focusing on how methods access object state via 'self', the use of dot notation, and the rationale for defining class-specific methods.",
+            "file_hash": "707840c55b91d693d3f971091fa1a6547c1925753411bf0bfaa4d02498639292"
+          },
+          {
+            "type": "file",
+            "name": "5-Method Calls.mkv",
+            "relative_path": "study/youtube/Objects and Attributes (Su25)/5-Method Calls.mkv",
+            "description": "A lecture segment explaining method calls in Python, focusing on dot notation, bound methods, and practical examples using an Account class.",
+            "file_hash": "c9c657eaebaabd70500296c576f4aeb9b10fbcc08443018e38e6b37759eafa5b"
+          },
+          {
+            "type": "file",
+            "name": "6-Attribute Lookup.mkv",
+            "relative_path": "study/youtube/Objects and Attributes (Su25)/6-Attribute Lookup.mkv",
+            "description": "A lecture segment explaining attribute lookup in Python objects, covering the evaluation of dot expressions, the search order for attributes, and the use of built-in functions like getattr and hasattr.",
+            "file_hash": "e137852e3fb6870078e260563030e1aad3f65904d93c8b060508276165b3b287"
+          },
+          {
+            "type": "file",
+            "name": "7-Class Attributes.mkv",
+            "relative_path": "study/youtube/Objects and Attributes (Su25)/7-Class Attributes.mkv",
+            "description": "A lecture segment explaining class attributes in Python, focusing on how they are created, their behavior, and their distinction from instance attributes.",
+            "file_hash": "7320810d6f9f4efe73eb9d7ce8816228f5a65ae33c740ea9b3a6d0f6c2b113bd"
+          },
+          {
+            "type": "file",
+            "name": "8-Bound Methods.mkv",
+            "relative_path": "study/youtube/Objects and Attributes (Su25)/8-Bound Methods.mkv",
+            "description": "A lecture segment explaining Python's bound methods, class and instance attributes, and the distinction between functions and bound methods in object-oriented programming.",
+            "file_hash": "0f941184468e19decaa9ce2b93b36bbc34c42bfc39ebda36e4e261174adbd071"
+          },
+          {
+            "type": "file",
+            "name": "9-Attribute Assignment.mkv",
+            "relative_path": "study/youtube/Objects and Attributes (Su25)/9-Attribute Assignment.mkv",
+            "description": "A lecture segment explaining attribute assignment in Python classes and instances, focusing on how assignments affect class and instance attributes, with illustrative examples using an Account class.",
+            "file_hash": "a9563ff30c20ba1d28282877e3f45ae9b6f49c6dfafedf973aca31097bb546f0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 14: Inheritance & Representation",
+    "children": [
+      {
+        "type": "file",
+        "name": "14-Inheritance_and_String_Representation_1pp.pdf",
+        "relative_path": "study/assets/slides/14-Inheritance_and_String_Representation_1pp.pdf",
+        "description": "A lecture note covering object-oriented programming concepts in Python, focusing on inheritance, attribute lookup, and string representations of objects, with practical class implementation exercises.",
+        "file_hash": "6516fea647229ed92c478eacc1e13113c91c4dc1f09abdca52642d76cef6d0b1"
+      },
+      {
+        "type": "file",
+        "name": "14.py",
+        "relative_path": "study/assets/slides/14.py",
+        "description": "A Python lecture script covering object-oriented programming concepts such as tracking instances, attribute access, class inheritance, object representation, and class practice exercises.",
+        "file_hash": "b8f8eeb489e52dc3f6cb5d253e1e636f35a39fe7c92deb1323bf1e4e957041e6"
+      },
+      {
+        "type": "file",
+        "name": "Discussion 6 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 6 CS 61A Summer 2025.html",
+        "description": "A discussion worksheet for CS 61A covering object-oriented programming concepts, including class/instance attributes, inheritance, method overriding, and practical exercises on keyboards, geometric shapes, and class-based string representation.",
+        "file_hash": "09a46f6490c39edf9c05fa88ea5ac8f0510fde0aed9abb5e64e9019ab90354f3"
+      },
+      {
+        "type": "folder",
+        "name": "Inheritance and Representation (Su25)",
+        "relative_path": "study/youtube/Inheritance and Representation (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Inheritance.webm",
+            "relative_path": "study/youtube/Inheritance and Representation (Su25)/1-Inheritance.webm",
+            "description": "A lecture recording introducing inheritance in Python's object system, covering the concept, syntax, use cases, and a detailed example with bank account classes.",
+            "file_hash": "436d7ba456dd24f7357b95814e122afa56ec91691df8199317049095499238e3"
+          },
+          {
+            "type": "file",
+            "name": "2-Object-Oriented Design.mkv",
+            "relative_path": "study/youtube/Inheritance and Representation (Su25)/2-Object-Oriented Design.mkv",
+            "description": "A lecture recording on object-oriented design, focusing on inheritance, composition, attribute lookup, and practical implementation of banking-related classes.",
+            "file_hash": "161903afbf7c2c07ddccaf4ac7e712b64931e0c767bcbc639abe5725f5a62b51"
+          },
+          {
+            "type": "file",
+            "name": "3-Attribute Lookup Practice.mkv",
+            "relative_path": "study/youtube/Inheritance and Representation (Su25)/3-Attribute Lookup Practice.mkv",
+            "description": "A lecture walkthrough on attribute lookup and inheritance in Python classes, featuring a complex example with multiple inheritance levels, attribute assignments, and method resolution order. The session includes a step-by-step solution to an assessment question about evaluating expressions involving class and instance attributes.",
+            "file_hash": "e2c1eb82826e11daab6d1a865baad5d4310fa40200642fb53f1157944358ef49"
+          },
+          {
+            "type": "file",
+            "name": "4-Multiple Inheritance.mkv",
+            "relative_path": "study/youtube/Inheritance and Representation (Su25)/4-Multiple Inheritance.mkv",
+            "description": "A lecture segment explaining multiple inheritance in Python, using bank account classes as examples to illustrate method resolution order and the effects of inheriting from multiple base classes.",
+            "file_hash": "228bc9e5d1affc81dfebce653ebc90d4baad6847076debfafa4059398080dc8f"
+          },
+          {
+            "type": "file",
+            "name": "5-String Representations.mkv",
+            "relative_path": "study/youtube/Inheritance and Representation (Su25)/5-String Representations.mkv",
+            "description": "A lecture segment discussing string representations in Python, focusing on the differences between the str and repr functions, their intended uses, and how they relate to object-oriented programming and human versus interpreter readability.",
+            "file_hash": "ccc732d52d8e5e13b64b57c4e16b0be23ba99b00bf4293c9d96d386b3866b951"
+          },
+          {
+            "type": "file",
+            "name": "6-String Interpolation.mkv",
+            "relative_path": "study/youtube/Inheritance and Representation (Su25)/6-String Interpolation.mkv",
+            "description": "A lecture segment explaining Python's f-strings, focusing on string interpolation, expression evaluation within strings, and differences between str and repr representations.",
+            "file_hash": "a3b76334bf6937c7f188dc661797eb6301694282b94a34d2a58a2586d2d8bde6"
+          },
+          {
+            "type": "file",
+            "name": "7-Polymorphic Functions.webm",
+            "relative_path": "study/youtube/Inheritance and Representation (Su25)/7-Polymorphic Functions.webm",
+            "description": "A lecture recording on polymorphic functions in Python, focusing on how built-in functions like str and repr work through special methods, the concept of interfaces, and implementing custom classes that adhere to these interfaces.",
+            "file_hash": "ae60cfddbc07c2a2159fedb84bca0dcd42ede2e393ded5b1d4cb45482ffc127f"
+          },
+          {
+            "type": "file",
+            "name": "8-Special Method Names.mkv",
+            "relative_path": "study/youtube/Inheritance and Representation (Su25)/8-Special Method Names.mkv",
+            "description": "",
+            "file_hash": ""
+          },
+          {
+            "type": "file",
+            "name": "9-Examples： Objects.mkv",
+            "relative_path": "study/youtube/Inheritance and Representation (Su25)/9-Examples： Objects.mkv",
+            "description": "A lecture segment on object-oriented programming in Python, focusing on attribute lookup, class inheritance, instance vs. class attributes, and method resolution order, illustrated with a worker-bourgeoisie example.",
+            "file_hash": "482ba58f1ad8eb0b3ad191fb5aef6c32dfe17b38efd56aa3bf2b65253fc8aa15"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "[CS 61A SU25] Discussion 6",
+        "relative_path": "study/youtube/[CS 61A SU25] Discussion 6",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Keyboard.webm",
+            "relative_path": "study/youtube/[CS 61A SU25] Discussion 6/1-Keyboard.webm",
+            "description": "A lecture walkthrough of the 'keyboard problem', focusing on the design and implementation of interacting classes: CapsLock, Button, and Keyboard, including their attributes, methods, and how they work together to simulate keyboard behavior.",
+            "file_hash": "751b92ac2fe466ced81b8fbd1f950845d650563ea7c1cc53bc5be1ce9965deac"
+          },
+          {
+            "type": "file",
+            "name": "2-Shapes.mkv",
+            "relative_path": "study/youtube/[CS 61A SU25] Discussion 6/2-Shapes.mkv",
+            "description": "A lecture recording on object-oriented programming, focusing on class inheritance and implementation for geometric shapes such as circles, regular polygons, squares, and triangles.",
+            "file_hash": "d63a90a589b2a3084517f322f1063dd8dc5fef80e52dac73aebb5a83c2a44e52"
+          },
+          {
+            "type": "file",
+            "name": "3-Bear.webm",
+            "relative_path": "study/youtube/[CS 61A SU25] Discussion 6/3-Bear.webm",
+            "description": "A lecture walkthrough for the 'bear problem' in object-oriented programming, focusing on class inheritance, method overriding, and code reuse with custom bear classes.",
+            "file_hash": "40d7992f818f62262a7cb9d8486373320023d9266f3f8c44d8ab9d8d54f8bb07"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 15: Mutable Trees",
+    "children": [
+      {
+        "type": "file",
+        "name": "15-Mutable_Trees_1pp.pdf",
+        "relative_path": "study/assets/slides/15-Mutable_Trees_1pp.pdf",
+        "description": "A lecture note on mutable trees in Python, covering string representations, the Tree class structure, tree-based algorithms, and practical coding exercises involving trees.",
+        "file_hash": "338bbbffe6ab45ab0cfc91f1adb6726c933f6a7a29c221438659b77818690804"
+      },
+      {
+        "type": "file",
+        "name": "15.py",
+        "relative_path": "study/assets/slides/15.py",
+        "description": "A code lecture file introducing Python class representation, string conversion methods, and advanced tree data structures with mutation operations.",
+        "file_hash": "f16101c9a1515e2eb835d30205930fc1386d51424c55dfaf1df4e7f6ac3d9cc5"
+      },
+      {
+        "type": "folder",
+        "name": "disc07",
+        "relative_path": "study/disc/disc07",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc07.pdf",
+            "relative_path": "study/disc/disc07/disc07.pdf",
+            "description": "A discussion worksheet for SICP covering tree and linked list data structures, including their class implementations, mutability, and related algorithmic problems such as binary search trees, pruning, summing, overlapping, duplicating, and decimal expansions.",
+            "file_hash": "a1a83478ff15b25e61c772f16da08ba5216a81bb3f6b817d1d6026676e00e0c8"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "Discussion 7 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 7 CS 61A Summer 2025.html",
+        "description": "A CS 61A discussion worksheet focusing on mutable trees and linked lists, including class-based data abstractions, mutation, and algorithmic problems involving both structures.",
+        "file_hash": "63917a2ab6e968f972c86fa17240d979b6f246d4f7bec7097244b00fc98c3ed9"
+      },
+      {
+        "type": "folder",
+        "name": "Disc 07",
+        "relative_path": "study/youtube/Disc 07",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Prune Small Getting Started.webm",
+            "relative_path": "study/youtube/Disc 07/1-Prune Small Getting Started.webm",
+            "description": "A video walkthrough for Lab 9, Question 4, focusing on implementing the pruneSmall function to mutatively prune a tree structure by keeping only the n branches with the smallest labels at each node.",
+            "file_hash": "f4832d87e1fee645672a7f1b4e90b56aade7f221b14c6c2f5937767ffc288ba6"
+          },
+          {
+            "type": "file",
+            "name": "3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+            "relative_path": "study/youtube/Disc 07/3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+            "description": "",
+            "file_hash": ""
+          },
+          {
+            "type": "file",
+            "name": "4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm",
+            "relative_path": "study/youtube/Disc 07/4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm",
+            "description": "",
+            "file_hash": ""
+          },
+          {
+            "type": "file",
+            "name": "5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+            "relative_path": "study/youtube/Disc 07/5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+            "description": "",
+            "file_hash": ""
+          },
+          {
+            "type": "file",
+            "name": "6-Duplicate Link Getting Started.mkv",
+            "relative_path": "study/youtube/Disc 07/6-Duplicate Link Getting Started.mkv",
+            "description": "A video walkthrough for Lab 8, question 3 ('Duplicate Link'), explaining how to mutate a linked list by duplicating nodes with a specific value, with emphasis on in-place mutation and pointer manipulation.",
+            "file_hash": "26492bf08b023894bac3cfaeac0d627c68a4f06d058db502745052e4e8506d25"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Mutable Trees (Su25)",
+        "relative_path": "study/youtube/Mutable Trees (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Tree Class.mkv",
+            "relative_path": "study/youtube/Mutable Trees (Su25)/1-Tree Class.mkv",
+            "description": "A lecture recording introducing the tree data structure, comparing it to linked lists, and demonstrating tree implementation and processing in Python using both data abstraction and object-oriented approaches.",
+            "file_hash": "638f768bc4b9fb42d990859cb02c7bf7cd3615c9dc45c25c1c508f8b7849aecf"
+          },
+          {
+            "type": "file",
+            "name": "2-Tree Mutation.mkv",
+            "relative_path": "study/youtube/Mutable Trees (Su25)/2-Tree Mutation.mkv",
+            "description": "A lecture segment on tree mutation, specifically focusing on pruning subtrees from a tree data structure by modifying its branches in place.",
+            "file_hash": "87029bda5a5d98a1ad8f59a42fa1167321f4c88e4c0ab792c13de792a1f7365f"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 16: Linked Lists",
+    "children": [
+      {
+        "type": "file",
+        "name": "16-Linked_Lists_1pp.pdf",
+        "relative_path": "study/assets/slides/16-Linked_Lists_1pp.pdf",
+        "description": "A lecture note on linked lists, covering their structure, class implementation, recursive and iterative processing, and common operations such as insertion, slicing, appending, and popping elements.",
+        "file_hash": "adaa3f10ef40c6f6c63b69f57de32e54c35ae887c2fb8ee2cb0d3031a1459a11"
+      },
+      {
+        "type": "file",
+        "name": "16.py",
+        "relative_path": "study/assets/slides/16.py",
+        "description": "A Python code file introducing a custom linked list class (Link), with demonstrations of its usage and mutation, and functions for duplicating elements in both Python lists and linked lists.",
+        "file_hash": "fb0be685325b1bd86a29a16b9a6ec81aecee3555978f3e9a96a4012306723665"
+      },
+      {
+        "type": "folder",
+        "name": "Linked Lists (Su25)",
+        "relative_path": "study/youtube/Linked Lists (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Linked Lists.webm",
+            "relative_path": "study/youtube/Linked Lists (Su25)/1-Linked Lists.webm",
+            "description": "A lecture recording introducing linked lists, covering their conceptual structure, Python implementation using classes, and practical manipulation and conventions.",
+            "file_hash": "3258d81741aac023a675b0f4e6753f66f2362a665b2be1a689bbecbb859db4fa"
+          },
+          {
+            "type": "file",
+            "name": "2-Linked List Processing.mkv",
+            "relative_path": "study/youtube/Linked Lists (Su25)/2-Linked List Processing.mkv",
+            "description": "A lecture segment on recursive processing of linked lists, focusing on implementing range, map, and filter operations for user-defined linked lists in Python.",
+            "file_hash": "1e0ebaee6c853a0a92c46d264ba38d10d881072dc08659a153f86a921c8f2c9e"
+          },
+          {
+            "type": "file",
+            "name": "3-Linked List Mutation.mkv",
+            "relative_path": "study/youtube/Linked Lists (Su25)/3-Linked List Mutation.mkv",
+            "description": "A lecture segment on linked list mutation, focusing on how attribute assignment can change the structure of linked lists, including the creation of cyclic references.",
+            "file_hash": "5cd0e0fcd5145be72f9ca573aa29e3454a4d57597d5f04b6a9dccd5fd43055a3"
+          },
+          {
+            "type": "file",
+            "name": "4-Linked List Mutation Example.mkv",
+            "relative_path": "study/youtube/Linked Lists (Su25)/4-Linked List Mutation Example.mkv",
+            "description": "A lecture segment explaining linked list mutation, focusing on implementing an 'add' function that inserts elements into an ordered linked list without duplicates, while maintaining order.",
+            "file_hash": "1a5790ba2bfae9c1281876c59b5cff3ef952623076848c33efa1ebb88f2847d7"
+          },
+          {
+            "type": "file",
+            "name": "5-Examples： Linked Lists.mkv",
+            "relative_path": "study/youtube/Linked Lists (Su25)/5-Examples： Linked Lists.mkv",
+            "description": "A lecture segment on linked list processing, focusing on checking order (with and without key functions), merging sorted linked lists, and performing in-place merges using mutation.",
+            "file_hash": "8d0ba68f21cb32c97d35fb5162d6e01e804da7f3db127ef15a97efcd9e20f9f8"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "[CS 61A SP24] Mega Discussion 08",
+        "relative_path": "study/youtube/[CS 61A SP24] Mega Discussion 08",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-[CS 61A SP24] Discussion 8 Problem #1 Strange Loop.mkv",
+            "relative_path": "study/youtube/[CS 61A SP24] Mega Discussion 08/1-[CS 61A SP24] Discussion 8 Problem #1 Strange Loop.mkv",
+            "description": "A discussion section walkthrough video for CS 61A, focusing on constructing a cyclic linked list (a 'strange loop') using the Link class, including diagramming, step-by-step construction, and handling cyclic references in code.",
+            "file_hash": "5e4a16315ac90581c13255c6102f21df6287e45e2c5f68ba485639ae42c3b1bb"
+          },
+          {
+            "type": "file",
+            "name": "2-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+            "relative_path": "study/youtube/[CS 61A SP24] Mega Discussion 08/2-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+            "description": "A discussion walkthrough video for CS 61A, focusing on implementing sum functions for linked lists using both recursion and iteration, highlighting base and recursive cases, and iterative traversal.",
+            "file_hash": "a927166d09367c4e2093dc616528334397d9222b612e270c40224d12984c03d8"
+          },
+          {
+            "type": "file",
+            "name": "3-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+            "relative_path": "study/youtube/[CS 61A SP24] Mega Discussion 08/3-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+            "description": "A discussion video walkthrough for CS61A's 'overlap' problem, focusing on designing and implementing an iterative solution to count overlapping elements in two sorted linked lists.",
+            "file_hash": "dc57badddf898502909c36fd19faee6da43ad986212ca28ad63f691894581b2d"
+          },
+          {
+            "type": "file",
+            "name": "4-[CS61A SP24] Discussion 8 Question #4 Overlap Growth.webm",
+            "relative_path": "study/youtube/[CS 61A SP24] Mega Discussion 08/4-[CS61A SP24] Discussion 8 Question #4 Overlap Growth.webm",
+            "description": "A discussion video analyzing the runtime complexity of an alternative implementation of the 'overlap' function in CS61A, focusing on runtime analysis, composite function calls, and order of growth (constant, linear, quadratic, exponential).",
+            "file_hash": "802967c5471415f0c465a1e3bc7f58a2e9895f39248ac843079d8f176b4e8462"
+          },
+          {
+            "type": "file",
+            "name": "5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm",
+            "relative_path": "study/youtube/[CS 61A SP24] Mega Discussion 08/5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm",
+            "description": "A discussion video walkthrough for CS61A's 'overlap' problem, focusing on developing a recursive solution to count common elements in two sorted linked lists.",
+            "file_hash": "0b1e43890d2f8c16d776d98d0262f1bd08432897a08bd7b59568f0cd68756268"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 17: Efficiency",
+    "children": [
+      {
+        "type": "file",
+        "name": "17-Efficiency_1pp.pdf",
+        "relative_path": "study/assets/slides/17-Efficiency_1pp.pdf",
+        "description": "A lecture note on computational efficiency, focusing on analyzing program resource usage, orders of growth, and practical examples with recursive and iterative approaches, especially in the context of linked lists.",
+        "file_hash": "11af5e59880fc817c8e87024f8782bd0b78bb85b191283c12c106b5f4a80b77d"
+      },
+      {
+        "type": "file",
+        "name": "17.ipynb",
+        "relative_path": "study/assets/slides/17.ipynb",
+        "description": "A Jupyter notebook lecture on algorithmic efficiency and orders of growth, demonstrating time complexity concepts with Python code and performance plots, and comparing linked lists with Python lists for insertion operations.",
+        "file_hash": "559d8472ed2d5dc781e66917948496ccb8ecbc6b78534087ce2f38d7f51f49ad"
+      },
+      {
+        "type": "file",
+        "name": "17.py",
+        "relative_path": "study/assets/slides/17.py",
+        "description": "A Python code example demonstrating function call counting, naive recursion, and memoization using the Fibonacci function.",
+        "file_hash": "4ca398bb8558d6b06b5c6074a6d17d611e3b546b62cae5542c59d99fa17210ef"
+      },
+      {
+        "type": "folder",
+        "name": "Efficiency",
+        "relative_path": "study/youtube/Efficiency",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Measuring Efficiency.webm",
+            "relative_path": "study/youtube/Efficiency/1-Measuring Efficiency.webm",
+            "description": "A lecture segment discussing how to measure the efficiency of recursive algorithms, using the Fibonacci sequence and tree recursion as a case study. It introduces function call counting and sets the stage for more advanced analysis of program running time.",
+            "file_hash": "2138dac96fbca1c5618fadc47c0cea6dee335707dbff63b77aecd8cb8c74aa8d"
+          },
+          {
+            "type": "file",
+            "name": "2-Memoization.mkv",
+            "relative_path": "study/youtube/Efficiency/2-Memoization.mkv",
+            "description": "A lecture segment on memoization, explaining its implementation, use with recursive functions like Fibonacci, and the impact on function call counts and computational efficiency.",
+            "file_hash": "ad745eb7a52ff06900917e11f3bae5a9dace9b62b6d8a2f583064a7d9a4d4b46"
+          },
+          {
+            "type": "file",
+            "name": "3-Exponentiation.mkv",
+            "relative_path": "study/youtube/Efficiency/3-Exponentiation.mkv",
+            "description": "A lecture recording on recursive exponentiation, comparing naive and efficient algorithms, and analyzing their time complexities using practical timing experiments.",
+            "file_hash": "893945fc72f3daebfe1c3ce00521bba5a1d4e6094bb1313cd7f61db6b63ecf47"
+          },
+          {
+            "type": "file",
+            "name": "4-Orders of Growth.mkv",
+            "relative_path": "study/youtube/Efficiency/4-Orders of Growth.mkv",
+            "description": "A lecture video discussing the concept of orders of growth in computational complexity, including linear, quadratic, exponential, logarithmic, and constant time, with examples and implications for program performance.",
+            "file_hash": "a1d02997ef36e669a64d4b6c6b939a328e566bc3292076e28b43458ffac33e17"
+          },
+          {
+            "type": "file",
+            "name": "5-Order of Growth Notation.mkv",
+            "relative_path": "study/youtube/Efficiency/5-Order of Growth Notation.mkv",
+            "description": "A lecture segment introducing mathematical order of growth notation, focusing on Big Theta and Big O, and their use in describing algorithm efficiency.",
+            "file_hash": "970e413e8b8ea9d71b53327c9f4b57fb0a4374d2d7d4b880e41e81c0c5f03338"
+          },
+          {
+            "type": "file",
+            "name": "6-Space.mkv",
+            "relative_path": "study/youtube/Efficiency/6-Space.mkv",
+            "description": "A lecture segment on space (memory) consumption in recursive programs, focusing on environment frames, active environments, and measuring frame usage with recursive functions like Fibonacci.",
+            "file_hash": "815c5b138cbbd5173f265945c95fbee2761379c8e362b1b113403ec9d8a47895"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 18: Scheme (Intro)",
+    "children": [
+      {
+        "type": "file",
+        "name": "18-Scheme_1pp.pdf",
+        "relative_path": "study/assets/slides/18-Scheme_1pp.pdf",
+        "description": "A lecture handout covering the basics of the Scheme programming language, including its syntax, evaluation model, lambda expressions, recursion, efficiency analysis, and linked list manipulation.",
+        "file_hash": "7ab95a4f2590cc7a1e0e766da884b428c0b64e0a932540b3fe7ca91c63ea618d"
+      },
+      {
+        "type": "file",
+        "name": "18.py",
+        "relative_path": "study/assets/slides/18.py",
+        "description": "A code example and analysis prompt focusing on the efficiency of a recursive function (link_comp_recur) that combines mapping and filtering over a linked list, assuming constant-time map and filter functions.",
+        "file_hash": "21188a1b8cf73dfb9d8a3875fc6572ee8b9b3ff3489a8f862e914392890c9b1d"
+      },
+      {
+        "type": "folder",
+        "name": "disc08",
+        "relative_path": "study/disc/disc08",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc08.pdf",
+            "relative_path": "study/disc/disc08/disc08.pdf",
+            "description": "A discussion worksheet for SICP covering Scheme fundamentals, special forms, function definitions, recursion, and efficiency analysis including orders of growth.",
+            "file_hash": "24ee9be4742887d330079b7cd525b1ffeccbd64c767844ef1a12b840567d815f"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "sol-disc08",
+        "relative_path": "study/disc/sol-disc08",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc08.pdf",
+            "relative_path": "study/disc/sol-disc08/disc08.pdf",
+            "description": "A discussion worksheet for SICP covering Scheme fundamentals, special forms, function definitions, recursion, and efficiency analysis including orders of growth.",
+            "file_hash": "24ee9be4742887d330079b7cd525b1ffeccbd64c767844ef1a12b840567d815f"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "Discussion 8 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 8 CS 61A Summer 2025.html",
+        "description": "A discussion worksheet for CS 61A covering Scheme programming fundamentals, special forms, and computational efficiency including orders of growth.",
+        "file_hash": "41fb50772f6fa4952b97ddd05a047eea6c3676dfc28dce901b1f63636cbcf2ae"
+      },
+      {
+        "type": "folder",
+        "name": "Discussion 9： Interpreters",
+        "relative_path": "study/youtube/Discussion 9： Interpreters",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-[CS 61A SP24] Discussion 10 Problem #3 Print Evaluated Expressions Walkthrough.mkv",
+            "relative_path": "study/youtube/Discussion 9： Interpreters/1-[CS 61A SP24] Discussion 10 Problem #3 Print Evaluated Expressions Walkthrough.mkv",
+            "description": "",
+            "file_hash": ""
+          },
+          {
+            "type": "file",
+            "name": "2-[CS 61A SP24] Discussion 10 Problem #2 Evaluation Walkthrough.mkv",
+            "relative_path": "study/youtube/Discussion 9： Interpreters/2-[CS 61A SP24] Discussion 10 Problem #2 Evaluation Walkthrough.mkv",
+            "description": "",
+            "file_hash": ""
+          },
+          {
+            "type": "file",
+            "name": "3-[CS 61A SP24] Discussion 10 Question #1 Representing Expressions.mkv",
+            "relative_path": "study/youtube/Discussion 9： Interpreters/3-[CS 61A SP24] Discussion 10 Question #1 Representing Expressions.mkv",
+            "description": "",
+            "file_hash": ""
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Interpreters (Su25)",
+        "relative_path": "study/youtube/Interpreters (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Programming Languages.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/1-Programming Languages.mkv",
+            "description": "A lecture recording introducing programming languages and interpreters, discussing the distinction between machine and high-level languages, abstraction mechanisms, and the process of language creation and execution.",
+            "file_hash": "8bec6211fa1d1c189b89be65ddd1f1acdaaf3ea6f2fd9efd148f9093a97834dd"
+          },
+          {
+            "type": "file",
+            "name": "10-Lambda Expressions.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/10-Lambda Expressions.mkv",
+            "description": "A lecture segment explaining lambda expressions in Scheme and their implementation in Python, focusing on user-defined procedures, frames, environments, and variable lookup.",
+            "file_hash": "3bb31889a320ede64a096c48598ca1de4bb49287fb7332c16cf6300bbf81af13"
+          },
+          {
+            "type": "file",
+            "name": "11-Define Expressions.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/11-Define Expressions.mkv",
+            "description": "A lecture segment discussing the mechanics of 'define' expressions in Scheme, focusing on symbol binding, environment frames, user-defined procedures, and the historical context of eval and apply in Lisp interpreters.",
+            "file_hash": "8648aaab5d02c9fb70c5d25995ba9129bdc9220400d1358a3b93f972a8da2620"
+          },
+          {
+            "type": "file",
+            "name": "12-Dynamic Scope.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/12-Dynamic Scope.mkv",
+            "description": "A lecture segment discussing the difference between lexical (static) scope and dynamic scope in programming languages, using examples from Lisp, Python, and Scheme.",
+            "file_hash": "56a14491a3ba295af09284e20cd27709f7a7d92c7445d2fa4bf565100bfbdc4a"
+          },
+          {
+            "type": "file",
+            "name": "2-Parsing.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/2-Parsing.mkv",
+            "description": "A lecture recording on parsing in the context of interpreting Scheme code, covering the transformation of textual code into structured expression trees, the roles of lexical and syntactic analysis, and the implementation of these concepts in Python.",
+            "file_hash": "f36a2eb872964e5b2c37ee06a0b379544f3a84897cede983d108c875c0794a28"
+          },
+          {
+            "type": "file",
+            "name": "3-Scheme-Syntax Calculator.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/3-Scheme-Syntax Calculator.mkv",
+            "description": "A lecture recording introducing the Scheme syntax calculator, focusing on its arithmetic operations, expression representation, and evaluation semantics, including examples of nested expressions and operator behaviors.",
+            "file_hash": "0e0fcaacd0fdf0f2bd5dddd24fed89c4a83274b0426a07cd8e5e523d4c9734fc"
+          },
+          {
+            "type": "file",
+            "name": "4-Evaluation.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/4-Evaluation.mkv",
+            "description": "A lecture segment on implementing an interpreter for a calculator language, focusing on the eval and apply functions, their recursive structure, and handling of primitive and call expressions.",
+            "file_hash": "4bb6f7c65c0e6a52468ff6352cc0923ffff54ee80e57a84819ac4f8252d55e25"
+          },
+          {
+            "type": "file",
+            "name": "5-Interactive Interpreters.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/5-Interactive Interpreters.mkv",
+            "description": "A lecture segment discussing the user interface of interpreters, focusing on the read-eval-print loop, error handling, and the interactive experience in a Scheme-like calculator interpreter.",
+            "file_hash": "be58af166bd91ed30a1dd9bfd8ca2ca29554c0a68245aa340c3b66f5b86bd1fc"
+          },
+          {
+            "type": "file",
+            "name": "6-Interpreting Scheme.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/6-Interpreting Scheme.mkv",
+            "description": "A lecture recording introducing the structure of a Scheme interpreter, focusing on the roles of eval and apply, recursion, environments, and handling user-defined procedures and special forms.",
+            "file_hash": "0d91eb3de62622663d2fdad874910748bc42773634f4b691fa7b75e2951a3724"
+          },
+          {
+            "type": "file",
+            "name": "7-Special Forms.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/7-Special Forms.mkv",
+            "description": "A lecture segment introducing Scheme's special forms, focusing on how expressions are evaluated, the distinction between different expression types, and a recursive example using the 'demo' procedure.",
+            "file_hash": "9ec5be3176dab7ff08baff45fd04678fc6c86d952453c971045f86ce4035fa27"
+          },
+          {
+            "type": "file",
+            "name": "8-Logical Forms.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/8-Logical Forms.mkv",
+            "description": "A lecture segment discussing logical forms in programming, focusing on conditional expressions like 'if', 'or', and 'cond', their evaluation strategies, and how only certain sub-expressions are evaluated depending on conditions.",
+            "file_hash": "ad3144ace4c39d1868d63f791a5445ff3662b363d4c035c02e3df4cc451920e8"
+          },
+          {
+            "type": "file",
+            "name": "9-Quotation.mkv",
+            "relative_path": "study/youtube/Interpreters (Su25)/9-Quotation.mkv",
+            "description": "A lecture segment discussing the quotation mechanism in Scheme, focusing on the quote special form, its syntactic shorthand, and how the SchemeReader processes quoted expressions.",
+            "file_hash": "5d3399d19b26b7fa3492b18c42f5f41684508bf2f2eec486b26f5b0fe1ef8710"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Scheme",
+        "relative_path": "study/youtube/Scheme",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Scheme.webm",
+            "relative_path": "study/youtube/Scheme/1-Scheme.webm",
+            "description": "An introductory lecture on the Scheme programming language, covering its historical context, syntax, core concepts, and basic usage, with comparisons to Python and an emphasis on the simplicity and beauty of Lisp dialects.",
+            "file_hash": "6d20cd59f3d1bc293e7d80b7f3b2fe0e1c88681864bd06a26368c3cf3c73e3fc"
+          },
+          {
+            "type": "file",
+            "name": "2-Scheme Interpreters.mkv",
+            "relative_path": "study/youtube/Scheme/2-Scheme Interpreters.mkv",
+            "description": "A lecture segment explaining how Scheme code is executed, focusing on building and using a Scheme interpreter implemented in Python as part of a course project.",
+            "file_hash": "da149dee2722b1ad9085eccc99d7c2307a91fe460aebe408315c2923bd687992"
+          },
+          {
+            "type": "file",
+            "name": "3-Special Forms.webm",
+            "relative_path": "study/youtube/Scheme/3-Special Forms.webm",
+            "description": "A lecture segment introducing Scheme's special forms, including 'if', 'and', 'or', and 'define', and demonstrating how to define procedures and recursive functions such as square root using these forms.",
+            "file_hash": "6748dcdd89d14bb6e32335ea77c3151054ca2029caa7498a1a7470fd7565026c"
+          },
+          {
+            "type": "file",
+            "name": "4-Lambda Expressions.mkv",
+            "relative_path": "study/youtube/Scheme/4-Lambda Expressions.mkv",
+            "description": "A lecture segment introducing lambda expressions in Scheme, focusing on their syntax, use for creating anonymous procedures, and their flexibility in procedure definition and application.",
+            "file_hash": "dbf6d27e1e0b701999d57e519fc2d0600c1e1e926017641a390e7524ba327049"
+          },
+          {
+            "type": "file",
+            "name": "5-More Special Forms.mkv",
+            "relative_path": "study/youtube/Scheme/5-More Special Forms.mkv",
+            "description": "A lecture video introducing three Scheme special forms—cond, begin, and let—explaining their syntax, use cases, and differences from similar constructs in Python.",
+            "file_hash": "56c3d007cd32bb0ef84381563dbb0209479bbc789b75110a9ef6abe520904cb9"
+          },
+          {
+            "type": "file",
+            "name": "6-Example： Sierpinski's Triangle.mkv",
+            "relative_path": "study/youtube/Scheme/6-Example： Sierpinski's Triangle.mkv",
+            "description": "",
+            "file_hash": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 19: Scheme Lists",
+    "children": [
+      {
+        "type": "file",
+        "name": "19-Scheme_Lists_1pp.pdf",
+        "relative_path": "study/assets/slides/19-Scheme_Lists_1pp.pdf",
+        "description": "A lecture handout covering Scheme lists, including list construction, built-in list procedures, symbolic programming with quotation, and list processing techniques. It also introduces special forms like cond, begin, and let, and provides practical examples and code snippets for working with lists in Scheme.",
+        "file_hash": "543f02dec55b0989d285d2f6d711ed5fc2c9c4978076c14263facf8091622b5a"
+      },
+      {
+        "type": "folder",
+        "name": "disc09",
+        "relative_path": "study/disc/disc09",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc09.pdf",
+            "relative_path": "study/disc/disc09/disc09.pdf",
+            "description": "A discussion worksheet for Scheme lists, focusing on list construction, manipulation, evaluation, and representation in both Scheme and Python. It covers list operations, Scheme call expressions, evaluation order, and related programming exercises.",
+            "file_hash": "566ddcd466e524549fd888068143a37b2a155a9397432b43b16f565eacf0a718"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "sol-disc09",
+        "relative_path": "study/disc/sol-disc09",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc09.pdf",
+            "relative_path": "study/disc/sol-disc09/disc09.pdf",
+            "description": "A discussion worksheet for Scheme lists, focusing on list construction, manipulation, evaluation, and representation in both Scheme and Python. It covers list operations, Scheme call expressions, evaluation order, and related programming exercises.",
+            "file_hash": "566ddcd466e524549fd888068143a37b2a155a9397432b43b16f565eacf0a718"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "Discussion 9 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 9 CS 61A Summer 2025.html",
+        "description": "A discussion worksheet for CS 61A covering Scheme lists, list manipulation procedures, Scheme call expressions, evaluation order, and a slicing challenge.",
+        "file_hash": "00293ec520098b104b5742550b01a65f33f7c4cb0e75133c563ecead24c64bc8"
+      },
+      {
+        "type": "folder",
+        "name": "Scheme Lists",
+        "relative_path": "study/youtube/Scheme Lists",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Lists.mkv",
+            "relative_path": "study/youtube/Scheme Lists/1-Lists.mkv",
+            "description": "A lecture video introducing Scheme's list data structures, comparing them to Python's linked lists, and demonstrating list construction, access, and built-in procedures in Scheme.",
+            "file_hash": "03d0e6b53972760ccb39713610d69e7fa7dd5a873e683d187034785d5fe0a001"
+          },
+          {
+            "type": "file",
+            "name": "2-Symbolic Programming.mkv",
+            "relative_path": "study/youtube/Scheme Lists/2-Symbolic Programming.mkv",
+            "description": "A lecture segment introducing symbolic programming in Lisp, focusing on the concept of quotation and its role in manipulating symbols and lists directly, with practical demonstrations and an assessment question on list operations.",
+            "file_hash": "270e0eec53f12ad54749a8db844e8c0d014fa935d9f53dff6e1f80694b68ed98"
+          },
+          {
+            "type": "file",
+            "name": "3-List Processing.webm",
+            "relative_path": "study/youtube/Scheme Lists/3-List Processing.webm",
+            "description": "A lecture segment introducing and demonstrating built-in list processing procedures in Scheme, including append, map, filter, and apply, with practical examples and distinctions between their behaviors.",
+            "file_hash": "129607291d5ac2884832718ad808ae5aada37095aa44f6f5e141a396adcb6206"
+          },
+          {
+            "type": "file",
+            "name": "4-Example： Even Subsets.mkv",
+            "relative_path": "study/youtube/Scheme Lists/4-Example： Even Subsets.mkv",
+            "description": "A lecture segment on recursive list processing, focusing on defining a procedure to find all nonempty subsets of a list of integers whose sums are even, and refactoring the solution using higher-order functions.",
+            "file_hash": "6f5ae858a333ce31e408ae681fa185a92ed3882e8062d6dd7f861e5fece5976d"
+          },
+          {
+            "type": "file",
+            "name": "5-Discussion Question： Even Subsets Using Filter.mkv",
+            "relative_path": "study/youtube/Scheme Lists/5-Discussion Question： Even Subsets Using Filter.mkv",
+            "description": "A discussion video exploring how to generate all even-sum subsets of an integer list using filtering, including a breakdown of subset generation and the use of higher-order functions for filtering.",
+            "file_hash": "ad09ff9590697ed0dcf29e9f5d29fe6eca57b57ae812e1a6e4014b970677d0f0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 21: Tail Calls & Recursion Space",
+    "children": [
+      {
+        "type": "file",
+        "name": "21-Tail_Calls_1pp.pdf",
+        "relative_path": "study/assets/slides/21-Tail_Calls_1pp.pdf",
+        "description": "A lecture note on tail calls and recursion, covering Scheme evaluation, dynamic vs. lexical scope, space efficiency, and techniques for writing tail-recursive procedures.",
+        "file_hash": "fae00e278415378fcbaa9e742fa1dbeb370898c5f21535a89bc4865f0c650d36"
+      },
+      {
+        "type": "file",
+        "name": "21.py",
+        "relative_path": "study/assets/slides/21.py",
+        "description": "A code file for a Scheme interpreter project, demonstrating evaluation and application, referential transparency issues, and tail recursion techniques.",
+        "file_hash": "5591973b7083a6cbd1e5ab3eddd601dcc367aee0bf7e97b02f5b0ebbeb25c0f2"
+      },
+      {
+        "type": "folder",
+        "name": "disc10",
+        "relative_path": "study/disc/disc10",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc10.pdf",
+            "relative_path": "study/disc/disc10/disc10.pdf",
+            "description": "This is a discussion worksheet for a computer science course (CS 61A) focusing on tail calls, tail call optimization, tail context, and related recursive programming concepts. It includes explanations, code examples, and practice problems on tail recursion, memory optimization, and recursive list processing.",
+            "file_hash": "232319f25a1f4d9291369daafd74d28bfbc0ba24822385d7522d7eb9d52204a9"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "sol-disc10",
+        "relative_path": "study/disc/sol-disc10",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc10.pdf",
+            "relative_path": "study/disc/sol-disc10/disc10.pdf",
+            "description": "This is a discussion worksheet for a computer science course (CS 61A) focusing on tail calls, tail call optimization, tail context, and related recursive programming concepts. It includes explanations, code examples, and practice problems on tail recursion, memory optimization, and recursive list processing.",
+            "file_hash": "232319f25a1f4d9291369daafd74d28bfbc0ba24822385d7522d7eb9d52204a9"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "Discussion 10 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 10 CS 61A Summer 2025.html",
+        "description": "A discussion worksheet for CS 61A covering tail calls, tail call optimization, tail context, and practice problems on recursion, linked lists, and tree traversals.",
+        "file_hash": "c9677b87eff64e504aae91c39c8e7b88ee6fec96957e69ace1c78fcd93b1a8af"
+      },
+      {
+        "type": "folder",
+        "name": "Discussion 10： Tail Calls, Scheme Data Abstractions, SQL",
+        "relative_path": "study/youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-[CS 61A SU24] Discussion 10 Problem #1 Fast-Exp.mkv",
+            "relative_path": "study/youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL/1-[CS 61A SU24] Discussion 10 Problem #1 Fast-Exp.mkv",
+            "description": "",
+            "file_hash": ""
+          },
+          {
+            "type": "file",
+            "name": "2-Reverse.webm",
+            "relative_path": "study/youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL/2-Reverse.webm",
+            "description": "A discussion video explaining how to implement a tail recursive reverse function in Scheme, focusing on helper functions, base cases, and the mechanics of tail recursion.",
+            "file_hash": "bb9a32ec5a817f9dd74a15100580cddfc0bc990de754cd1514fef42cbed7e999"
+          },
+          {
+            "type": "file",
+            "name": "3-Closer City.webm",
+            "relative_path": "study/youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL/3-Closer City.webm",
+            "description": "A discussion video walkthrough for the 'Closer City' problem, focusing on data abstraction, use of constructors/selectors, and leveraging a distance function to compare city proximity.",
+            "file_hash": "0e7922060db405635d500c6769d9a9807210b3f9e6455ef6bb77923c07091ab4"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Tail Calls (Su25)",
+        "relative_path": "study/youtube/Tail Calls (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Tail Recursion.webm",
+            "relative_path": "study/youtube/Tail Calls (Su25)/1-Tail Recursion.webm",
+            "description": "A lecture recording introducing tail recursion in the context of functional programming, comparing recursive and iterative approaches, and discussing the efficiency benefits of tail recursion in functional languages.",
+            "file_hash": "126f099feb209193c9fc98aa4dec60e1ee6d9c5529b70af00c94070c1a973298"
+          },
+          {
+            "type": "file",
+            "name": "2-Tail Calls.mkv",
+            "relative_path": "study/youtube/Tail Calls (Su25)/2-Tail Calls.mkv",
+            "description": "A lecture recording on tail calls in recursive procedures, covering the definition of tail contexts, the importance of tail call optimization for space efficiency, and practical demonstrations in Scheme and Python interpreters.",
+            "file_hash": "1a4c75f0fced929cdeecb5e54b6d8b5f876c47783ab729ab0e439793eba31175"
+          },
+          {
+            "type": "file",
+            "name": "3-Tail Recursion Examples.mkv",
+            "relative_path": "study/youtube/Tail Calls (Su25)/3-Tail Recursion Examples.mkv",
+            "description": "A lecture segment analyzing examples of tail recursion, focusing on identifying which recursive procedures are tail recursive and explaining the implications for space usage.",
+            "file_hash": "88da0929ae45451c8ac3b5e38e7c81157acd157fee938e88d6082ef38c83b57a"
+          },
+          {
+            "type": "file",
+            "name": "4-Map and Reduce.mkv",
+            "relative_path": "study/youtube/Tail Calls (Su25)/4-Map and Reduce.mkv",
+            "description": "A lecture segment introducing the higher-order functions 'map' and 'reduce', focusing on their definitions, recursive structure, and how to implement them efficiently with tail recursion.",
+            "file_hash": "04e650d8857b64ea4c8d6e967f03be14db36f10a3396025fc9920e04a689c756"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 22: SQL and Tables",
+    "children": [
+      {
+        "type": "file",
+        "name": "22-SQL_and_Tables_1pp.pdf",
+        "relative_path": "study/assets/slides/22-SQL_and_Tables_1pp.pdf",
+        "description": "This is a lecture note file introducing SQL and relational databases, covering fundamental concepts such as tables, select statements, joins, aliases, and practical SQL query examples.",
+        "file_hash": "fe40fa0f612e17fd0cdcbba0f04c4aef38956eeb83c81cccd79a3ab09abd910d"
+      },
+      {
+        "type": "file",
+        "name": "22.py",
+        "relative_path": "study/assets/slides/22.py",
+        "description": "A code and SQL demonstration file covering tail recursion techniques in Python and advanced SQL queries including joins, filtering, and string manipulation.",
+        "file_hash": "a3ed8becca57b05178b40ec0a79170afe00e97d91f6a62c215b219e445e83ce4"
+      },
+      {
+        "type": "folder",
+        "name": "SQL and Tables (Su25)",
+        "relative_path": "study/youtube/SQL and Tables (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Databases.webm",
+            "relative_path": "study/youtube/SQL and Tables (Su25)/1-Databases.webm",
+            "description": "A lecture video introducing databases, focusing on database management systems, table structures, and the declarative nature of SQL compared to imperative programming languages.",
+            "file_hash": "a4719a15a4898cbc44a62ff8ce5c56fe50bf960785605d20fa8722ac87e0dd9f"
+          },
+          {
+            "type": "file",
+            "name": "2-Structured Query Language.webm",
+            "relative_path": "study/youtube/SQL and Tables (Su25)/2-Structured Query Language.webm",
+            "description": "A lecture video introducing the basics of SQL, focusing on installation, basic usage with SQLite, SELECT statements, and table creation using CREATE TABLE and UNION.",
+            "file_hash": "61dc46cf867f664ecd80f81fa58389138d558369bd5a5defe05db64a43635cb4"
+          },
+          {
+            "type": "file",
+            "name": "3-Projecting Tables.webm",
+            "relative_path": "study/youtube/SQL and Tables (Su25)/3-Projecting Tables.webm",
+            "description": "A lecture recording on projecting tables in SQL, focusing on how SELECT statements can create new tables from existing ones by specifying columns, filtering rows, and ordering results.",
+            "file_hash": "0ac9b8811d5ed09e746e2b1b2ef9863dab59b4e9f91064d1a5df3b561ee07196"
+          },
+          {
+            "type": "file",
+            "name": "4-Arithmetic.mkv",
+            "relative_path": "study/youtube/SQL and Tables (Su25)/4-Arithmetic.mkv",
+            "description": "A lecture recording on SQL SELECT statements, focusing on arithmetic operations, row-wise computation, and declarative programming properties, with examples involving ski lift data and powers of two.",
+            "file_hash": "da1fecc7e45025467b5c7df131dbe2f29eb75f8847595f71a5db11ece9ec0a72"
+          },
+          {
+            "type": "file",
+            "name": "5-Joining Tables.webm",
+            "relative_path": "study/youtube/SQL and Tables (Su25)/5-Joining Tables.webm",
+            "description": "A lecture recording on SQL joins, focusing on how to combine data from multiple tables using both implicit and explicit join syntax, with examples involving dog family trees and attributes.",
+            "file_hash": "f95f0817fe9e0830de1bc9bb77e796b27e3a6e453a379415bfde00679e138f85"
+          },
+          {
+            "type": "file",
+            "name": "6-Aliases & Dot Expressions.webm",
+            "relative_path": "study/youtube/SQL and Tables (Su25)/6-Aliases & Dot Expressions.webm",
+            "description": "A lecture video on SQL joins, focusing on the use of aliases and dot expressions to disambiguate columns and tables, especially when joining a table with itself. The session covers practical examples involving parent-child and grandparent-grandchild relationships, and includes a multiple-choice assessment on constructing grandparent-grandchild queries.",
+            "file_hash": "8ef8d6d74578504f839203da23af1523a80a47e8574f083eced4d5e4ded6ef04"
+          },
+          {
+            "type": "file",
+            "name": "7-Numerical Expressions.mkv",
+            "relative_path": "study/youtube/SQL and Tables (Su25)/7-Numerical Expressions.mkv",
+            "description": "A lecture segment introducing numerical expressions in SQL, comparing them to Python, and demonstrating their use in SELECT statements, including arithmetic operations, function calls, and table joins for calculating distances between cities.",
+            "file_hash": "49c1a7f4b88a20edfb0f5a18275ed02ee550be09b2bc340eb1c139319944b0ff"
+          },
+          {
+            "type": "file",
+            "name": "8-String Expressions.webm",
+            "relative_path": "study/youtube/SQL and Tables (Su25)/8-String Expressions.webm",
+            "description": "A lecture segment on string expressions in SQL, focusing on string concatenation, basic string manipulation functions, and the use of strings to represent structured data, with practical examples of constructing sentences from database tables.",
+            "file_hash": "6b9c49ea37c9f2e22a63eedf2517c1b256455f78249aa278a800b71bc3377007"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 23: Aggregation and Databases",
+    "children": [
+      {
+        "type": "file",
+        "name": "23-Aggregation_and_Databases_1pp.pdf",
+        "relative_path": "study/assets/slides/23-Aggregation_and_Databases_1pp.pdf",
+        "description": "A lecture handout covering SQL aggregation and database concepts, including group by, joins, string expressions, and practical exercises with animal and room data.",
+        "file_hash": "ae106eaa6cab2425c946eb5d96c79f4a284a06b248d36e50c0ef3139795b5aca"
+      },
+      {
+        "type": "file",
+        "name": "23.py",
+        "relative_path": "study/assets/slides/23.py",
+        "description": "A Python file containing annotated SQL query examples and explanations, focusing on multi-table queries, string manipulation, aggregation, grouping, and practice problems using SQLite.",
+        "file_hash": "56e699d499a6f22b4e507f2d99516f520ba3b2dbaaffbe58694a0b3d7d061301"
+      },
+      {
+        "type": "folder",
+        "name": "disc11",
+        "relative_path": "study/disc/disc11",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "disc11.pdf",
+            "relative_path": "study/disc/disc11/disc11.pdf",
+            "description": "A discussion worksheet covering SQL basics and aggregation, including table creation, selection, operators, aggregation functions, and practical query exercises involving city and pizza place databases.",
+            "file_hash": "872fcbb90169473c3bf79da5642c67fccf01bc4a36b13c72a6504cf427ce26ac"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "Discussion 11 CS 61A Summer 2025.html",
+        "relative_path": "study/disc/Discussion 11 CS 61A Summer 2025.html",
+        "description": "A discussion worksheet for CS 61A covering SQL basics, table creation, selection, operators, aggregation, and applied SQL query problems involving city/state and pizza shop datasets.",
+        "file_hash": "1e66af122ddea683accf23d63667e07b3879515b10343999307317ee83f9b512"
+      },
+      {
+        "type": "folder",
+        "name": "Aggregation and Databases (Su25)",
+        "relative_path": "study/youtube/Aggregation and Databases (Su25)",
+        "description": "",
+        "children": [
+          {
+            "type": "file",
+            "name": "1-Aggregation.webm",
+            "relative_path": "study/youtube/Aggregation and Databases (Su25)/1-Aggregation.webm",
+            "description": "A lecture video on SQL aggregation, focusing on aggregate functions such as MAX, MIN, SUM, AVG, and COUNT, their behavior in SELECT statements, and the implications of mixing aggregate and non-aggregate columns.",
+            "file_hash": "fa9c4a1547c4f0d8d937c9579d4cedf070ef7fa07ac038e10402d053f71ca50f"
+          },
+          {
+            "type": "file",
+            "name": "2-Grouping.mkv",
+            "relative_path": "study/youtube/Aggregation and Databases (Su25)/2-Grouping.mkv",
+            "description": "A lecture recording on SQL grouping and aggregation, covering GROUP BY, HAVING, aggregate functions, and how to filter and partition data using these clauses.",
+            "file_hash": "4e1cb768985a8dc13dd9d3fd2319cf7884887b3d19e2408dbd680969f3aea9e2"
+          },
+          {
+            "type": "file",
+            "name": "3-Create Table and Drop Table.mkv",
+            "relative_path": "study/youtube/Aggregation and Databases (Su25)/3-Create Table and Drop Table.mkv",
+            "description": "A lecture recording on SQL table management, focusing on the syntax and usage of CREATE TABLE and DROP TABLE statements, including constraints like UNIQUE and DEFAULT, and the implications of creating or dropping tables.",
+            "file_hash": "4c047dfcf32319f4cd6e38d5bc314dbc0e32c58d659d24fbe865353b84703dfe"
+          },
+          {
+            "type": "file",
+            "name": "4-Modifying Tables.mkv",
+            "relative_path": "study/youtube/Aggregation and Databases (Su25)/4-Modifying Tables.mkv",
+            "description": "A lecture segment on modifying tables in SQLite, covering how to insert, update, and delete rows, with practical demonstrations using a table of prime numbers.",
+            "file_hash": "1ab12d000ec3490ad412637a77a73b205f5566d272bbdfd67c0e022b683b694a"
+          },
+          {
+            "type": "file",
+            "name": "5-Python and SQL.mkv",
+            "relative_path": "study/youtube/Aggregation and Databases (Su25)/5-Python and SQL.mkv",
+            "description": "A lecture segment explaining how Python can interact with SQL databases using the sqlite3 module, covering database connections, executing SQL statements, and persisting data.",
+            "file_hash": "e3514a029b9466d75a363ebd06c7833155d59f8cb6e9e827350f02005b2ef0b8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture 24: CS Theory",
+    "children": [
+      {
+        "type": "file",
+        "name": "24-CS_Theory_1pp-updated.pdf",
+        "relative_path": "study/assets/slides/24-CS_Theory_1pp-updated.pdf",
+        "description": "A lecture note document introducing foundational topics in theoretical computer science, focusing on computational complexity, computability, problem reductions, and the P vs NP question, with practical algorithm examples and implications for real-world computing.",
+        "file_hash": "05029e329fbf3fb20d8102f9813aa0b52a67b826a8c461edc9a01a36dfe1a011"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "name": "Lecture Miscellaneous",
+    "children": []
+  }
+]
