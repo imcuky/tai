@@ -860,7 +860,7 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str) -> OrphanMatchRes
                             f"- A batch of 'Orphan Files' that need to be categorized.\n\n"
 
                             f"Your Task:\n"
-                            f"For EACH orphan, assign it to the most semantically relevant group.\n\n"
+                            f"For EACH orphan, assign it to the most semantically relevant group. If you think this material can have multiple matches, you can select multiple.\n\n"
 
                             f"Matching Considerations:\n"
                             f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
@@ -874,7 +874,7 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str) -> OrphanMatchRes
                             # f"   - Examples: 'New: Exams', 'New: Homework', 'New: Resources', 'New: Miscellaneous'. NOTE: Can you rearrange previous assigned file to new group if it's more appropriate\n\n"
                             f"Constraints:\n"
                             f"- Use existing 'group_name' exactly as provided when matching.\n"
-                            f"- Every single orphan file must appear in the output list exactly once.\n"
+                            #f"- Every single orphan file must appear in the output list exactly once.\n"
                             f"- Do NOT create files that do not exist in orphans.\n"
                             # f"- Return structured JSON."
                         )
@@ -1233,7 +1233,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--step",
         choices=["enrich", "backbone", "match", "all", "tree"],
-        default="tree",
+        default="all",
         help="Pipeline step: 'enrich', 'backbone', 'match', 'all', or 'tree'."
     )
     parser.add_argument(
