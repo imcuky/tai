@@ -860,21 +860,21 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str) -> OrphanMatchRes
                             f"- A batch of 'Orphan Files' that need to be categorized.\n\n"
 
                             f"Your Task:\n"
-                            f"For EACH orphan, assign it to the most semantically relevant group. If you think this material can have multiple matches, you can select multiple.\n\n"
+                            f"For EACH orphan, assign it to its relevant group. If you think this material can have match to multiple groups, match ALL of them.\n\n"
 
                             f"Matching Considerations:\n"
                             f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
-                            f"   - Example: A file named 'Derivatives Practice' or on Derivatives fits into 'Lecture XX: Differentiation' or Derivatives topic is include in the group description.\n"
+                            f"   - Example: A file focusing on both recursion and tree recursion fits into 'Lecture XX: recursion' and 'Lecture XX: tree recursion' if the both topic is include in the group description.\n"
                             
                             f"2. **Ambiguous/No Match (Fallback)**: If the file does not clearly fit any specific backbone unit, place it in 'Lecture Miscellaneous' category\n"
 
-                            f"NOTE: Try to infer its topic from its name. If the Orphan description and the name is not informative, it's safer to put it in Miscellaneous than to risk misplacement.\n"
+                            f"NOTE: Try to infer its topic from its description. If the Orphan description is not informative, it's safer to put it in Miscellaneous than to risk misplacement.\n"
                             
                             # f"   Create a new group by prefixing with 'New: '.\n"
                             # f"   - Examples: 'New: Exams', 'New: Homework', 'New: Resources', 'New: Miscellaneous'. NOTE: Can you rearrange previous assigned file to new group if it's more appropriate\n\n"
                             f"Constraints:\n"
                             f"- Use existing 'group_name' exactly as provided when matching.\n"
-                            #f"- Every single orphan file must appear in the output list exactly once.\n"
+                            f"- Every single orphan file MUST be assigned to AT LEAST one group.\n"
                             f"- Do NOT create files that do not exist in orphans.\n"
                             # f"- Return structured JSON."
                         )
