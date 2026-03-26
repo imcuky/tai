@@ -941,6 +941,23 @@ def run_file_rearrangement(orphan_matches: OrphanMatchResponse, enriched_data: D
 # Utility: Build Structure Tree from Plan
 # =============================================================================
 
+def _detect_course_prefix(paths: List[str]) -> str:
+    """Detect the common course prefix from database paths (e.g. 'CS 61A/', 'EECS 106B/')."""
+    if not paths:
+        return ""
+    top_segments = []
+    for p in paths:
+        if "/" in p:
+            top_segments.append(p.split("/")[0])
+    if not top_segments:
+        return ""
+    from collections import Counter
+    most_common = Counter(top_segments).most_common(1)[0]
+    if most_common[1] > len(paths) * 0.5:
+        return most_common[0] + "/"
+    return ""
+
+
 def load_file_hashes(db_path: str) -> Dict[str, str]:
     """Load all file hashes from the database into a dictionary keyed by relative_path."""
     if not os.path.exists(db_path):
@@ -953,23 +970,25 @@ def load_file_hashes(db_path: str) -> Dict[str, str]:
         cursor.execute("SELECT relative_path, file_hash, file_name FROM file")
         rows = cursor.fetchall()
         result = {}
+
+        course_prefix = _detect_course_prefix([r[0] for r in rows if r[0]])
+
         for row in rows:
             path, h, filename = row
             if not path: continue
             
-            # 1. Exact path
             result[path] = h
             
-            # 2. Strip "CS 61A/" prefix
-            if path.startswith("CS 61A/"):
-                stripped = path[7:]
+            if course_prefix and path.startswith(course_prefix):
+                stripped = path[len(course_prefix):]
                 result[stripped] = h
                 
-            # 3. Filename based (fallback, might overwrite duplicates but useful)
             if filename:
                 result[f"__NAME__{filename}"] = h
                 
         print(f"Loaded {len(rows)} file rows from database. Lookup map size: {len(result)}")
+        if course_prefix:
+            print(f"Detected course prefix: '{course_prefix}'")
         return result
     except sqlite3.Error as e:
         print(f"Database error: {e}")
@@ -1139,14 +1158,24 @@ def build_rearranged_structure_tree(plan_path: str, enriched_data_path: str, db_
 # CLI Orchestration
 # =============================================================================
 
-def run_enrichment(base_dir: str, input_filename: str) -> str:
+def run_enrichment(base_dir: str, input_filename: str, db_filename: str = None) -> str:
     """Preprocessing: parse input tree JSON + SQLite DB → enriched JSON."""
-    workspace_root = os.path.abspath(os.path.join(base_dir, "..", "..", ".."))
-    
-    # Input now comes from 'input' folder
     input_file = os.path.join(base_dir, "input", input_filename)
-        
-    db_file = os.path.join(workspace_root, "cs61a_metadata.db")
+
+    if db_filename:
+        db_file = os.path.join(base_dir, "input", db_filename)
+    else:
+        db_candidates = [f for f in os.listdir(os.path.join(base_dir, "input")) if f.endswith("_metadata.db")]
+        if len(db_candidates) == 1:
+            db_file = os.path.join(base_dir, "input", db_candidates[0])
+        elif len(db_candidates) > 1:
+            raise FileNotFoundError(
+                f"Multiple metadata databases found in input/: {db_candidates}. "
+                "Use --db to specify which one."
+            )
+        else:
+            raise FileNotFoundError("No *_metadata.db file found in input/ folder. Use --db to specify one.")
+
     output_dir = os.path.join(base_dir, "outputs")
     os.makedirs(output_dir, exist_ok=True)
     enriched_output = os.path.join(output_dir, "study_enriched.json")
@@ -1178,6 +1207,27 @@ def _test_orphan_collection(base_dir: str):
     for o in orphans:
         print(f"- {o['structure_path']} (type: {o['type']})")
 
+def _resolve_db_path(base_dir: str, db_arg: str = None) -> str:
+    """Resolve the metadata database path from --db arg or auto-detect from input/."""
+    input_dir = os.path.join(base_dir, "input")
+    if db_arg:
+        db_path = os.path.join(input_dir, db_arg)
+        if not os.path.exists(db_path):
+            db_path = db_arg
+        return db_path
+    
+    db_candidates = [f for f in os.listdir(input_dir) if f.endswith("_metadata.db")]
+    if len(db_candidates) == 1:
+        return os.path.join(input_dir, db_candidates[0])
+    elif len(db_candidates) > 1:
+        raise FileNotFoundError(
+            f"Multiple metadata databases found in input/: {db_candidates}. "
+            "Use --db to specify which one."
+        )
+    else:
+        raise FileNotFoundError("No *_metadata.db file found in input/ folder. Use --db to specify one.")
+
+
 def _run_pipeline(args):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     output_dir = os.path.join(base_dir, "outputs")
@@ -1185,9 +1235,8 @@ def _run_pipeline(args):
 
     try:
         if args.step in ("enrich", "all"):
-            # If running all, ensure input is provided or default used
             input_file = args.input
-            run_enrichment(base_dir, input_file)
+            run_enrichment(base_dir, input_file, args.db)
 
         if args.step in ("backbone", "all"):
             print("=" * 60)
@@ -1242,6 +1291,12 @@ if __name__ == "__main__":
         default="bfs_v3_tree.json",
         help="Input JSON filename located in 'input' folder (e.g. bfs_v3_tree.json)."
     )
+    parser.add_argument(
+        "--db",
+        required=False,
+        default="cs61a_metadata.db",
+        help="Metadata database filename in 'input' folder (e.g. 'EECS 106B_metadata.db'). Auto-detected if only one *_metadata.db exists."
+    )
     args = parser.parse_args()
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -1249,16 +1304,12 @@ if __name__ == "__main__":
     os.makedirs(output_dir, exist_ok=True)
 
     if args.step == "tree":
-        # Run only the tree building step
         plan_path = os.path.join(base_dir, "logs", "06_rearrangement_plan.json")
         enriched_path = os.path.join(base_dir, "outputs", "study_enriched.json")
         if not os.path.exists(enriched_path):
              enriched_path = os.path.join(base_dir, "study_enriched.json")
         
-        # Determine DB path
-        workspace_root = os.path.abspath(os.path.join(base_dir, "..", "..", ".."))
-        db_path = os.path.join(workspace_root, "cs61a_metadata.db")
-        
+        db_path = _resolve_db_path(base_dir, args.db)
         output_tree_path = os.path.join(output_dir, "rearrangement_structure_tree.json")
         
         build_rearranged_structure_tree(plan_path, enriched_path, db_path, output_tree_path)
