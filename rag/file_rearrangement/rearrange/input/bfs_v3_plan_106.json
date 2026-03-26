@@ -1,0 +1,550 @@
+{
+  "stats": {
+    "files_on_disk": 65,
+    "files_via_folder": 57,
+    "files_individual": 8,
+    "total_mappings": 65,
+    "skipped_folders": 4,
+    "files_missing_in_db": 0,
+    "files_stale_in_db": 0
+  },
+  "folder_decisions": {
+    "EECS 106B": {
+      "category": "skip",
+      "is_mixed": true,
+      "folder_description": "Course website housing lectures and discussion notes, assignments and lab/project specs, and administrative/support materials for a Robotic Manipulation and Interaction course.",
+      "by_type": false,
+      "by_sequence": false
+    },
+    "EECS 106B/course_website": {
+      "category": "skip",
+      "is_mixed": true,
+      "folder_description": "Top-level course website aggregating administrative/support pages, lecture and discussion materials, and assignment/lab/project specifications for a Robotic Manipulation course.",
+      "by_type": false,
+      "by_sequence": false
+    },
+    "EECS 106B/course_website/106b-sp23site": {
+      "category": "skip",
+      "is_mixed": true,
+      "folder_description": "Course website root that aggregates administrative/support pages, lecture and discussion materials, and homework/lab/project specifications for a Robotic Manipulation course.",
+      "by_type": false,
+      "by_sequence": false
+    },
+    "EECS 106B/course_website/106b-sp23site/assets": {
+      "category": "skip",
+      "is_mixed": true,
+      "folder_description": "Collection of course materials for EECS106B including lectures and discussions, homework/labs/projects, and reference/support documents.",
+      "by_type": false,
+      "by_sequence": false
+    },
+    "EECS 106B/course_website/106b-sp23site/assets/proj": {
+      "category": "practice",
+      "is_mixed": false,
+      "folder_description": "Contains lab and project specifications and robot usage/operation instructions for students to complete hands-on assignments and projects.",
+      "by_type": false,
+      "by_sequence": true
+    },
+    "EECS 106B/course_website/106b-sp23site/assets/misc": {
+      "category": "practice",
+      "is_mixed": false,
+      "folder_description": "A diagnostic/background assessment for students to complete that checks prerequisite math and physics concepts.",
+      "by_type": false,
+      "by_sequence": false
+    },
+    "EECS 106B/course_website/106b-sp23site/assets/hw": {
+      "category": "practice",
+      "is_mixed": false,
+      "folder_description": "A collection of homework assignment PDFs and numbered homework subfolders for students to complete.",
+      "by_type": false,
+      "by_sequence": true
+    },
+    "EECS 106B/course_website/106b-sp23site/assets/final_proj": {
+      "category": "practice",
+      "is_mixed": false,
+      "folder_description": "Contains the final project specification and guidelines describing required student deliverables and expectations for the course's final project.",
+      "by_type": false,
+      "by_sequence": false
+    },
+    "EECS 106B/course_website/106b-sp23site/assets/lec": {
+      "category": "study",
+      "is_mixed": false,
+      "folder_description": "Collection of lecture slides and boardwork/lecture notes for EECS106B meant for student reading and review.",
+      "by_type": false,
+      "by_sequence": true
+    },
+    "EECS 106B/course_website/106b-sp23site/assets/disc": {
+      "category": "study",
+      "is_mixed": false,
+      "folder_description": "Collection of discussion session handouts and solution sets used as instructor-provided reading/review for course topics.",
+      "by_type": false,
+      "by_sequence": true
+    }
+  },
+  "dest_tree": {
+    "practice": {
+      "EECS 106B": {
+        "course_website": {
+          "106b-sp23site": {
+            "assets": {
+              "final_proj": {
+                "_files": [
+                  "C106B_Final_Project_Guidelines.pdf"
+                ]
+              },
+              "hw": {
+                "_files": [
+                  "Homework_1__Dynamical_Systems.pdf",
+                  "Homework_4__Vision_and_Estimation.pdf",
+                  "Homework_5__Grasping.pdf",
+                  "Homework_6__Optimal_Control_and_RL.pdf"
+                ],
+                "hw2": {
+                  "_files": [
+                    "Homework_2__Controls.pdf"
+                  ]
+                },
+                "hw3": {
+                  "_files": [
+                    "Homework_3__Path_Planning.pdf"
+                  ]
+                }
+              },
+              "misc": {
+                "_files": [
+                  "Background_Assessment.pdf"
+                ]
+              },
+              "proj": {
+                "_files": [
+                  "Spring_2023_EECS106B_Project_4.pdf",
+                  "lab1.pdf",
+                  "lab2.pdf",
+                  "proj0.pdf",
+                  "proj1a.pdf",
+                  "proj1b.pdf",
+                  "proj2.pdf",
+                  "robot_usage_guide_sp23.pdf"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "study": {
+      "EECS 106B": {
+        "course_website": {
+          "106b-sp23site": {
+            "assets": {
+              "disc": {
+                "_files": [
+                  "118_disc.pdf",
+                  "125_disc.pdf",
+                  "217_disc.pdf",
+                  "421_disc.pdf",
+                  "Discussion_10_Control_Barrier_Functions.pdf",
+                  "Discussion_11_OCRL.pdf",
+                  "Discussion_1_Dynamical_Systems.pdf",
+                  "Discussion_1_Dynamical_Systems_Solution.pdf",
+                  "Discussion_2_Lyapunov_Stability_Solns.pdf",
+                  "Discussion_3_Feedback_Linearization.pdf",
+                  "Discussion_3_Feedback_Linearization_Solns.pdf",
+                  "Discussion_4_Model_Predictive_Control.pdf",
+                  "Discussion_4_Model_Predictive_Control_Solns.pdf",
+                  "Discussion_5_Kinematic_Constraints.pdf",
+                  "Discussion_5_Kinematic_Constraints_Solns.pdf",
+                  "Discussion_6_Probability_Computer_Vision.pdf",
+                  "Discussion_7_SLAM.pdf",
+                  "Discussion_7_SLAM_Solns.pdf",
+                  "Discussion_8_Midsemester_Review.pdf",
+                  "Discussion_8_Midsemester_Review_Boardwork.pdf",
+                  "Discussion_9_Grasping.pdf",
+                  "Discussion_9_Grasping_Solns.pdf"
+                ]
+              },
+              "lec": {
+                "_files": [
+                  "230323-EECS206B_Guest_Lecture.pdf",
+                  "3D_Quadrotor_2022.pdf",
+                  "SLAM_Presentation___106B_2023.pdf",
+                  "boardwork_1_26.pdf",
+                  "boardwork_1_31.pdf",
+                  "boardwork_2_14.pdf",
+                  "boardwork_2_16.pdf",
+                  "boardwork_2_2.pdf",
+                  "boardwork_2_9.pdf",
+                  "boardwork_pi.pdf",
+                  "eecs106b-handcontrol.pdf",
+                  "eecs106b-nonholo.pdf",
+                  "feedback_linearization.pdf",
+                  "grasping_intro.pdf",
+                  "lec2_quadrotor_dynamics.pdf",
+                  "lec3_state_space.pdf",
+                  "lec4_linear_control.pdf",
+                  "legged-lec-1.pdf",
+                  "legged-lec-2.pdf"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "support": {
+      "EECS 106B": {
+        "course_website": {
+          "106b-sp23site": {
+            "_files": [
+              "About - EECS C106B.html",
+              "Announcements - EECS C106B.html",
+              "Home - EECS C106B.html",
+              "Policies - EECS C106B.html",
+              "Resources - EECS C106B.html",
+              "Staff - EECS C106B.html",
+              "Weekly Schedule - EECS C106B.html"
+            ],
+            "assets": {
+              "_files": [
+                "MLS.pdf"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "mappings": [
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/About - EECS C106B.html",
+      "dest": "support/EECS 106B/course_website/106b-sp23site/About - EECS C106B.html",
+      "category": "support"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/Announcements - EECS C106B.html",
+      "dest": "support/EECS 106B/course_website/106b-sp23site/Announcements - EECS C106B.html",
+      "category": "support"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/Home - EECS C106B.html",
+      "dest": "support/EECS 106B/course_website/106b-sp23site/Home - EECS C106B.html",
+      "category": "support"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/Policies - EECS C106B.html",
+      "dest": "support/EECS 106B/course_website/106b-sp23site/Policies - EECS C106B.html",
+      "category": "support"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/Resources - EECS C106B.html",
+      "dest": "support/EECS 106B/course_website/106b-sp23site/Resources - EECS C106B.html",
+      "category": "support"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/Staff - EECS C106B.html",
+      "dest": "support/EECS 106B/course_website/106b-sp23site/Staff - EECS C106B.html",
+      "category": "support"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/Weekly Schedule - EECS C106B.html",
+      "dest": "support/EECS 106B/course_website/106b-sp23site/Weekly Schedule - EECS C106B.html",
+      "category": "support"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/proj/Spring_2023_EECS106B_Project_4.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/proj/Spring_2023_EECS106B_Project_4.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/proj/lab1.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/proj/lab1.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/proj/lab2.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/proj/lab2.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/proj/proj0.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/proj/proj0.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/proj/proj1a.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/proj/proj1a.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/proj/proj1b.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/proj/proj1b.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/proj/proj2.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/proj/proj2.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/proj/robot_usage_guide_sp23.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/proj/robot_usage_guide_sp23.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/misc/Background_Assessment.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/misc/Background_Assessment.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/hw/Homework_1__Dynamical_Systems.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/hw/Homework_1__Dynamical_Systems.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/hw/Homework_4__Vision_and_Estimation.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/hw/Homework_4__Vision_and_Estimation.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/hw/Homework_5__Grasping.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/hw/Homework_5__Grasping.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/hw/Homework_6__Optimal_Control_and_RL.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/hw/Homework_6__Optimal_Control_and_RL.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/hw/hw2/Homework_2__Controls.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/hw/hw2/Homework_2__Controls.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/hw/hw3/Homework_3__Path_Planning.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/hw/hw3/Homework_3__Path_Planning.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/final_proj/C106B_Final_Project_Guidelines.pdf",
+      "dest": "practice/EECS 106B/course_website/106b-sp23site/assets/final_proj/C106B_Final_Project_Guidelines.pdf",
+      "category": "practice"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/230323-EECS206B_Guest_Lecture.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/230323-EECS206B_Guest_Lecture.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/3D_Quadrotor_2022.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/3D_Quadrotor_2022.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/SLAM_Presentation___106B_2023.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/SLAM_Presentation___106B_2023.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_1_26.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_1_26.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_1_31.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_1_31.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_14.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_14.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_16.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_16.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_2.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_2.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_9.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_9.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_pi.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_pi.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/eecs106b-handcontrol.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/eecs106b-handcontrol.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/eecs106b-nonholo.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/eecs106b-nonholo.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/feedback_linearization.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/feedback_linearization.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/grasping_intro.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/grasping_intro.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/lec2_quadrotor_dynamics.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/lec2_quadrotor_dynamics.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/lec3_state_space.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/lec3_state_space.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/lec4_linear_control.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/lec4_linear_control.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/legged-lec-1.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/legged-lec-1.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/lec/legged-lec-2.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/lec/legged-lec-2.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/118_disc.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/118_disc.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/125_disc.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/125_disc.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/217_disc.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/217_disc.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/421_disc.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/421_disc.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_10_Control_Barrier_Functions.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_10_Control_Barrier_Functions.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_11_OCRL.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_11_OCRL.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems_Solution.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems_Solution.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_2_Lyapunov_Stability_Solns.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_2_Lyapunov_Stability_Solns.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization_Solns.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization_Solns.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control_Solns.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control_Solns.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints_Solns.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints_Solns.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_6_Probability_Computer_Vision.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_6_Probability_Computer_Vision.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM_Solns.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM_Solns.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review_Boardwork.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review_Boardwork.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping_Solns.pdf",
+      "dest": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping_Solns.pdf",
+      "category": "study"
+    },
+    {
+      "source": "EECS 106B/course_website/106b-sp23site/assets/MLS.pdf",
+      "dest": "support/EECS 106B/course_website/106b-sp23site/assets/MLS.pdf",
+      "category": "support"
+    }
+  ],
+  "skipped_folders": [
+    "EECS 106B",
+    "EECS 106B/course_website",
+    "EECS 106B/course_website/106b-sp23site",
+    "EECS 106B/course_website/106b-sp23site/assets"
+  ],
+  "files_missing_in_db": []
+}
