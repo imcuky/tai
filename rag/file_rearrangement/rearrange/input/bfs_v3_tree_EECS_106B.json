@@ -1,0 +1,667 @@
+{
+  "path": ".",
+  "name": "root",
+  "type": "folder",
+  "children": {
+    "EECS 106B": {
+      "path": "EECS 106B",
+      "name": "EECS 106B",
+      "type": "folder",
+      "category": "skip",
+      "is_mixed": true,
+      "folder_description": "Course website housing lectures and discussion notes, assignments and lab/project specs, and administrative/support materials for a Robotic Manipulation and Interaction course.",
+      "by_type": false,
+      "by_sequence": false,
+      "children": {
+        "course_website": {
+          "path": "EECS 106B/course_website",
+          "name": "course_website",
+          "type": "folder",
+          "category": "skip",
+          "is_mixed": true,
+          "folder_description": "Top-level course website aggregating administrative/support pages, lecture and discussion materials, and assignment/lab/project specifications for a Robotic Manipulation course.",
+          "by_type": false,
+          "by_sequence": false,
+          "children": {
+            "106b-sp23site": {
+              "path": "EECS 106B/course_website/106b-sp23site",
+              "name": "106b-sp23site",
+              "type": "folder",
+              "category": "skip",
+              "is_mixed": true,
+              "folder_description": "Course website root that aggregates administrative/support pages, lecture and discussion materials, and homework/lab/project specifications for a Robotic Manipulation course.",
+              "by_type": false,
+              "by_sequence": false,
+              "files": {
+                "93e82aec4482a65484a8e47e4837b94f48864aedaf4e344113601dbb234712d1": {
+                  "path": "EECS 106B/course_website/106b-sp23site/About - EECS C106B.html",
+                  "name": "About - EECS C106B.html",
+                  "type": "file",
+                  "file_hash": "93e82aec4482a65484a8e47e4837b94f48864aedaf4e344113601dbb234712d1",
+                  "category": "support",
+                  "classified_by": "file"
+                },
+                "ba362a06c3259cafe342942a0f5f8816b23d25d2662dc593aff46294225ce7ea": {
+                  "path": "EECS 106B/course_website/106b-sp23site/Announcements - EECS C106B.html",
+                  "name": "Announcements - EECS C106B.html",
+                  "type": "file",
+                  "file_hash": "ba362a06c3259cafe342942a0f5f8816b23d25d2662dc593aff46294225ce7ea",
+                  "category": "support",
+                  "classified_by": "file"
+                },
+                "3a5e0bbe03bbfe4a87d5c00e769a32d0c6ad54482098c1bfa8e3888e7cf21db0": {
+                  "path": "EECS 106B/course_website/106b-sp23site/Home - EECS C106B.html",
+                  "name": "Home - EECS C106B.html",
+                  "type": "file",
+                  "file_hash": "3a5e0bbe03bbfe4a87d5c00e769a32d0c6ad54482098c1bfa8e3888e7cf21db0",
+                  "category": "support",
+                  "classified_by": "file"
+                },
+                "6230b56f0f2c53acc9b0c972eb258817e605942a3305bbc677597730ee475277": {
+                  "path": "EECS 106B/course_website/106b-sp23site/Policies - EECS C106B.html",
+                  "name": "Policies - EECS C106B.html",
+                  "type": "file",
+                  "file_hash": "6230b56f0f2c53acc9b0c972eb258817e605942a3305bbc677597730ee475277",
+                  "category": "support",
+                  "classified_by": "file"
+                },
+                "555b6e4d97410794fba3c65a053d27077956d669985f9cfca45f600570e21c96": {
+                  "path": "EECS 106B/course_website/106b-sp23site/Resources - EECS C106B.html",
+                  "name": "Resources - EECS C106B.html",
+                  "type": "file",
+                  "file_hash": "555b6e4d97410794fba3c65a053d27077956d669985f9cfca45f600570e21c96",
+                  "category": "support",
+                  "classified_by": "file"
+                },
+                "7010ce22af13733e95c362604bdcd1308b86351fec27532f16c44c73b56c18c2": {
+                  "path": "EECS 106B/course_website/106b-sp23site/Staff - EECS C106B.html",
+                  "name": "Staff - EECS C106B.html",
+                  "type": "file",
+                  "file_hash": "7010ce22af13733e95c362604bdcd1308b86351fec27532f16c44c73b56c18c2",
+                  "category": "support",
+                  "classified_by": "file"
+                },
+                "2979785f7672c826d60bb2dc9eaf5fcca4885b91202dfd23bcad798b974bac59": {
+                  "path": "EECS 106B/course_website/106b-sp23site/Weekly Schedule - EECS C106B.html",
+                  "name": "Weekly Schedule - EECS C106B.html",
+                  "type": "file",
+                  "file_hash": "2979785f7672c826d60bb2dc9eaf5fcca4885b91202dfd23bcad798b974bac59",
+                  "category": "support",
+                  "classified_by": "file"
+                }
+              },
+              "children": {
+                "assets": {
+                  "path": "EECS 106B/course_website/106b-sp23site/assets",
+                  "name": "assets",
+                  "type": "folder",
+                  "category": "skip",
+                  "is_mixed": true,
+                  "folder_description": "Collection of course materials for EECS106B including lectures and discussions, homework/labs/projects, and reference/support documents.",
+                  "by_type": false,
+                  "by_sequence": false,
+                  "files": {
+                    "6d9882d75d15f3c600ec21854a692de54383f9e85f5c29e4ad2b1158d45bb766": {
+                      "path": "EECS 106B/course_website/106b-sp23site/assets/MLS.pdf",
+                      "name": "MLS.pdf",
+                      "type": "file",
+                      "file_hash": "6d9882d75d15f3c600ec21854a692de54383f9e85f5c29e4ad2b1158d45bb766",
+                      "category": "support",
+                      "classified_by": "file"
+                    }
+                  },
+                  "children": {
+                    "disc": {
+                      "path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+                      "name": "disc",
+                      "type": "folder",
+                      "category": "study",
+                      "is_mixed": false,
+                      "folder_description": "Collection of discussion session handouts and solution sets used as instructor-provided reading/review for course topics.",
+                      "by_type": false,
+                      "by_sequence": true,
+                      "files": {
+                        "57985b13e17f874071f590a52a8f651b1106075e1ab84616b19cd74bf1567b10": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/118_disc.pdf",
+                          "name": "118_disc.pdf",
+                          "type": "file",
+                          "file_hash": "57985b13e17f874071f590a52a8f651b1106075e1ab84616b19cd74bf1567b10",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "33b859edea47b6672cfed34ffb29e7a452a1f87e862e0dc89c8294c512219a42": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/125_disc.pdf",
+                          "name": "125_disc.pdf",
+                          "type": "file",
+                          "file_hash": "33b859edea47b6672cfed34ffb29e7a452a1f87e862e0dc89c8294c512219a42",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "53913c7623e3afc0a7945428fa9dfbd8d7a23b02e7ce2e612d06ad85a6ee6939": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/217_disc.pdf",
+                          "name": "217_disc.pdf",
+                          "type": "file",
+                          "file_hash": "53913c7623e3afc0a7945428fa9dfbd8d7a23b02e7ce2e612d06ad85a6ee6939",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "9d69a486194378f653e34ca8caa97e41aba25d7ad42b8633dd0214ce9be563f5": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/421_disc.pdf",
+                          "name": "421_disc.pdf",
+                          "type": "file",
+                          "file_hash": "9d69a486194378f653e34ca8caa97e41aba25d7ad42b8633dd0214ce9be563f5",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "de4ac8b1f4cacf1dd3331327b4440c35afb99d7bc2b5d1621b478a76dd6abfd4": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_10_Control_Barrier_Functions.pdf",
+                          "name": "Discussion_10_Control_Barrier_Functions.pdf",
+                          "type": "file",
+                          "file_hash": "de4ac8b1f4cacf1dd3331327b4440c35afb99d7bc2b5d1621b478a76dd6abfd4",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "4d9e2ffe4724faa8f201b76f931f01d1e2621559859b01d1372aca08f7014cbf": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_11_OCRL.pdf",
+                          "name": "Discussion_11_OCRL.pdf",
+                          "type": "file",
+                          "file_hash": "4d9e2ffe4724faa8f201b76f931f01d1e2621559859b01d1372aca08f7014cbf",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "3a5bfd2a50cc3a524ed5df1ec70d436e91daa5a9d12dbb948deadd2a2c24bc6a": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems.pdf",
+                          "name": "Discussion_1_Dynamical_Systems.pdf",
+                          "type": "file",
+                          "file_hash": "3a5bfd2a50cc3a524ed5df1ec70d436e91daa5a9d12dbb948deadd2a2c24bc6a",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "ba6ce8f5327f733fa6a911aaac19360349b8fe291fb614e97bb6c352f485cbb9": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems_Solution.pdf",
+                          "name": "Discussion_1_Dynamical_Systems_Solution.pdf",
+                          "type": "file",
+                          "file_hash": "ba6ce8f5327f733fa6a911aaac19360349b8fe291fb614e97bb6c352f485cbb9",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "b4c7eb981a36275737d0e0f862d2c199ed5992c2b84167f4f8bfb2c6189a6a20": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_2_Lyapunov_Stability_Solns.pdf",
+                          "name": "Discussion_2_Lyapunov_Stability_Solns.pdf",
+                          "type": "file",
+                          "file_hash": "b4c7eb981a36275737d0e0f862d2c199ed5992c2b84167f4f8bfb2c6189a6a20",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "14a838617dc7a4692e71384a8608a9a2b37db1188323b5fb6128800fa4efecfe": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization.pdf",
+                          "name": "Discussion_3_Feedback_Linearization.pdf",
+                          "type": "file",
+                          "file_hash": "14a838617dc7a4692e71384a8608a9a2b37db1188323b5fb6128800fa4efecfe",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "628733f6e35e31f41159e0cf0fbc4353283ad833baa0dab4e32c09b52da46cd5": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization_Solns.pdf",
+                          "name": "Discussion_3_Feedback_Linearization_Solns.pdf",
+                          "type": "file",
+                          "file_hash": "628733f6e35e31f41159e0cf0fbc4353283ad833baa0dab4e32c09b52da46cd5",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "ed24d8e12293f602d9eeeae275ed9f36edc5b2eb3ff9dbb7a3b4f8e66f5bc5b6": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control.pdf",
+                          "name": "Discussion_4_Model_Predictive_Control.pdf",
+                          "type": "file",
+                          "file_hash": "ed24d8e12293f602d9eeeae275ed9f36edc5b2eb3ff9dbb7a3b4f8e66f5bc5b6",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "2c5afe8cba09eb643c532f10a2e38998c6c5fa85b190a1993cb1442abd6b92dd": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control_Solns.pdf",
+                          "name": "Discussion_4_Model_Predictive_Control_Solns.pdf",
+                          "type": "file",
+                          "file_hash": "2c5afe8cba09eb643c532f10a2e38998c6c5fa85b190a1993cb1442abd6b92dd",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "c754ded001fc8407df78bdaff3d08708c6ab3db7d78d09220c528aae747ae165": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints.pdf",
+                          "name": "Discussion_5_Kinematic_Constraints.pdf",
+                          "type": "file",
+                          "file_hash": "c754ded001fc8407df78bdaff3d08708c6ab3db7d78d09220c528aae747ae165",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "2e8748cacf7a0ed41d8f8527551748ee172672c90ba7c2ee04264ba0a97f22b1": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints_Solns.pdf",
+                          "name": "Discussion_5_Kinematic_Constraints_Solns.pdf",
+                          "type": "file",
+                          "file_hash": "2e8748cacf7a0ed41d8f8527551748ee172672c90ba7c2ee04264ba0a97f22b1",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "33fc9aefd45ed191b1e95880b534ac89f919230965d629336bf8b95cbd095d93": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_6_Probability_Computer_Vision.pdf",
+                          "name": "Discussion_6_Probability_Computer_Vision.pdf",
+                          "type": "file",
+                          "file_hash": "33fc9aefd45ed191b1e95880b534ac89f919230965d629336bf8b95cbd095d93",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "5f98b48e3312d4cf28a21a60a3c56d5d37767783b2f105c8720f2f9aff8b17be": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM.pdf",
+                          "name": "Discussion_7_SLAM.pdf",
+                          "type": "file",
+                          "file_hash": "5f98b48e3312d4cf28a21a60a3c56d5d37767783b2f105c8720f2f9aff8b17be",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "4532c3f6a2c6cd57c2113d4dd6743955bd6d8d30c87d47859601145f27bea7a9": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM_Solns.pdf",
+                          "name": "Discussion_7_SLAM_Solns.pdf",
+                          "type": "file",
+                          "file_hash": "4532c3f6a2c6cd57c2113d4dd6743955bd6d8d30c87d47859601145f27bea7a9",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "0f077a45fd062ef530120cadb6514111ce2ee3e87f5d1b23c4b5823ea104bee9": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review.pdf",
+                          "name": "Discussion_8_Midsemester_Review.pdf",
+                          "type": "file",
+                          "file_hash": "0f077a45fd062ef530120cadb6514111ce2ee3e87f5d1b23c4b5823ea104bee9",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "120ebf801644110cfda2db69e7f7010c9b06aef589bf3141b4ad1fedc639cacb": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review_Boardwork.pdf",
+                          "name": "Discussion_8_Midsemester_Review_Boardwork.pdf",
+                          "type": "file",
+                          "file_hash": "120ebf801644110cfda2db69e7f7010c9b06aef589bf3141b4ad1fedc639cacb",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "8aeaefbd03d5205834abc34abfaf1c274f0b30677171f311bae172c56414ba29": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping.pdf",
+                          "name": "Discussion_9_Grasping.pdf",
+                          "type": "file",
+                          "file_hash": "8aeaefbd03d5205834abc34abfaf1c274f0b30677171f311bae172c56414ba29",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "9443c8f2a7fdab72b97d7d0dd781272a4ba2a39170980c3209f9603bbc1f20cb": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping_Solns.pdf",
+                          "name": "Discussion_9_Grasping_Solns.pdf",
+                          "type": "file",
+                          "file_hash": "9443c8f2a7fdab72b97d7d0dd781272a4ba2a39170980c3209f9603bbc1f20cb",
+                          "category": "study",
+                          "classified_by": "folder"
+                        }
+                      }
+                    },
+                    "final_proj": {
+                      "path": "EECS 106B/course_website/106b-sp23site/assets/final_proj",
+                      "name": "final_proj",
+                      "type": "folder",
+                      "category": "practice",
+                      "is_mixed": false,
+                      "folder_description": "Contains the final project specification and guidelines describing required student deliverables and expectations for the course's final project.",
+                      "by_type": false,
+                      "by_sequence": false,
+                      "files": {
+                        "d09fd32a13183f438a653fbff7602fee240e2988e21fcefc2f863ab95f6b23cc": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/final_proj/C106B_Final_Project_Guidelines.pdf",
+                          "name": "C106B_Final_Project_Guidelines.pdf",
+                          "type": "file",
+                          "file_hash": "d09fd32a13183f438a653fbff7602fee240e2988e21fcefc2f863ab95f6b23cc",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        }
+                      }
+                    },
+                    "hw": {
+                      "path": "EECS 106B/course_website/106b-sp23site/assets/hw",
+                      "name": "hw",
+                      "type": "folder",
+                      "category": "practice",
+                      "is_mixed": false,
+                      "folder_description": "A collection of homework assignment PDFs and numbered homework subfolders for students to complete.",
+                      "by_type": false,
+                      "by_sequence": true,
+                      "files": {
+                        "dfb84d7138a862972be1de8aef89ceaf51f30232ff9b4521b59e0cc23c556c67": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/hw/Homework_1__Dynamical_Systems.pdf",
+                          "name": "Homework_1__Dynamical_Systems.pdf",
+                          "type": "file",
+                          "file_hash": "dfb84d7138a862972be1de8aef89ceaf51f30232ff9b4521b59e0cc23c556c67",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        },
+                        "1f876ecdc824f8ec18aaba2aa51a317fa7cc521127ea6687892d2ab3e8d6cc56": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/hw/Homework_4__Vision_and_Estimation.pdf",
+                          "name": "Homework_4__Vision_and_Estimation.pdf",
+                          "type": "file",
+                          "file_hash": "1f876ecdc824f8ec18aaba2aa51a317fa7cc521127ea6687892d2ab3e8d6cc56",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        },
+                        "faabc4f9a9a65ea872adfcbab4cfb25df75585bb75f7c76066dabf864ed34237": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/hw/Homework_5__Grasping.pdf",
+                          "name": "Homework_5__Grasping.pdf",
+                          "type": "file",
+                          "file_hash": "faabc4f9a9a65ea872adfcbab4cfb25df75585bb75f7c76066dabf864ed34237",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        },
+                        "b4322603c3a8ab7d13ab51a8f6e9e2d64d10611adeca336304f7b1dc0fc957bd": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/hw/Homework_6__Optimal_Control_and_RL.pdf",
+                          "name": "Homework_6__Optimal_Control_and_RL.pdf",
+                          "type": "file",
+                          "file_hash": "b4322603c3a8ab7d13ab51a8f6e9e2d64d10611adeca336304f7b1dc0fc957bd",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        }
+                      },
+                      "children": {
+                        "hw2": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/hw/hw2",
+                          "name": "hw2",
+                          "type": "folder",
+                          "files": {
+                            "76d416dfca426e5203439f46f48595b9c1c0f36de928cd7a6419e03bc1272383": {
+                              "path": "EECS 106B/course_website/106b-sp23site/assets/hw/hw2/Homework_2__Controls.pdf",
+                              "name": "Homework_2__Controls.pdf",
+                              "type": "file",
+                              "file_hash": "76d416dfca426e5203439f46f48595b9c1c0f36de928cd7a6419e03bc1272383",
+                              "category": "practice",
+                              "classified_by": "folder"
+                            }
+                          }
+                        },
+                        "hw3": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/hw/hw3",
+                          "name": "hw3",
+                          "type": "folder",
+                          "files": {
+                            "ea1e60af715545529c111f0d2e31d389abb038e6547c8367ed5a54a57b510794": {
+                              "path": "EECS 106B/course_website/106b-sp23site/assets/hw/hw3/Homework_3__Path_Planning.pdf",
+                              "name": "Homework_3__Path_Planning.pdf",
+                              "type": "file",
+                              "file_hash": "ea1e60af715545529c111f0d2e31d389abb038e6547c8367ed5a54a57b510794",
+                              "category": "practice",
+                              "classified_by": "folder"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "lec": {
+                      "path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+                      "name": "lec",
+                      "type": "folder",
+                      "category": "study",
+                      "is_mixed": false,
+                      "folder_description": "Collection of lecture slides and boardwork/lecture notes for EECS106B meant for student reading and review.",
+                      "by_type": false,
+                      "by_sequence": true,
+                      "files": {
+                        "380efc1b93bbb96b295280a7083d8dd115b1e71c5912f5493680b62793eb0577": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/230323-EECS206B_Guest_Lecture.pdf",
+                          "name": "230323-EECS206B_Guest_Lecture.pdf",
+                          "type": "file",
+                          "file_hash": "380efc1b93bbb96b295280a7083d8dd115b1e71c5912f5493680b62793eb0577",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "748a56b04cef83a7ea29d6ca62577e29656c66923398cc3a6bb5d87f99c92f1c": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/3D_Quadrotor_2022.pdf",
+                          "name": "3D_Quadrotor_2022.pdf",
+                          "type": "file",
+                          "file_hash": "748a56b04cef83a7ea29d6ca62577e29656c66923398cc3a6bb5d87f99c92f1c",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "2866f7a0e27f58e27a73e5bae8f8b6f5670bc0e385e1100433195a8ff4b09b6c": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/SLAM_Presentation___106B_2023.pdf",
+                          "name": "SLAM_Presentation___106B_2023.pdf",
+                          "type": "file",
+                          "file_hash": "2866f7a0e27f58e27a73e5bae8f8b6f5670bc0e385e1100433195a8ff4b09b6c",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "0253ae051ebd49b31d0035684f866d98e5e9adaefdc5bb1965c80aa7d0417c5f": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_1_26.pdf",
+                          "name": "boardwork_1_26.pdf",
+                          "type": "file",
+                          "file_hash": "0253ae051ebd49b31d0035684f866d98e5e9adaefdc5bb1965c80aa7d0417c5f",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "a76af3f491cb3f3005a299191e55b954ea3673c4d25d40c7fa8360e60f15bca5": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_1_31.pdf",
+                          "name": "boardwork_1_31.pdf",
+                          "type": "file",
+                          "file_hash": "a76af3f491cb3f3005a299191e55b954ea3673c4d25d40c7fa8360e60f15bca5",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "b0330f893145d7b32150646045a75fe2805fe07bcc977a022575628178883811": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_14.pdf",
+                          "name": "boardwork_2_14.pdf",
+                          "type": "file",
+                          "file_hash": "b0330f893145d7b32150646045a75fe2805fe07bcc977a022575628178883811",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "2b40375359676cb3802085575ad8e30848637de6091e0ab1f01963bc75fa08c4": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_16.pdf",
+                          "name": "boardwork_2_16.pdf",
+                          "type": "file",
+                          "file_hash": "2b40375359676cb3802085575ad8e30848637de6091e0ab1f01963bc75fa08c4",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "f451bafb859fd9e34bb1567e29d997dcf426c8447501dd94e56142d72bf2516b": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_2.pdf",
+                          "name": "boardwork_2_2.pdf",
+                          "type": "file",
+                          "file_hash": "f451bafb859fd9e34bb1567e29d997dcf426c8447501dd94e56142d72bf2516b",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "d57efd29b42202a03dc661f92186cdaf52c5fd9246c4f5affd6743ec517d5da5": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_9.pdf",
+                          "name": "boardwork_2_9.pdf",
+                          "type": "file",
+                          "file_hash": "d57efd29b42202a03dc661f92186cdaf52c5fd9246c4f5affd6743ec517d5da5",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "b3fbc203f953d3ac0996ec77aff9fe02802c659ba4318e45d2baec2f500eca89": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_pi.pdf",
+                          "name": "boardwork_pi.pdf",
+                          "type": "file",
+                          "file_hash": "b3fbc203f953d3ac0996ec77aff9fe02802c659ba4318e45d2baec2f500eca89",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "e461763eedbccbbca96601ff82aa1a48299d51be886c8218bca37138d715510d": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/eecs106b-handcontrol.pdf",
+                          "name": "eecs106b-handcontrol.pdf",
+                          "type": "file",
+                          "file_hash": "e461763eedbccbbca96601ff82aa1a48299d51be886c8218bca37138d715510d",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "648f89fec43dbfbd79548805d6466342b8e6e7cf45ce745d6ac52f7c58d620d9": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/eecs106b-nonholo.pdf",
+                          "name": "eecs106b-nonholo.pdf",
+                          "type": "file",
+                          "file_hash": "648f89fec43dbfbd79548805d6466342b8e6e7cf45ce745d6ac52f7c58d620d9",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "8504a1726bd2f64ed63ed9f0b6100b2918e04e3f4b5c754940d4273aaf311176": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/feedback_linearization.pdf",
+                          "name": "feedback_linearization.pdf",
+                          "type": "file",
+                          "file_hash": "8504a1726bd2f64ed63ed9f0b6100b2918e04e3f4b5c754940d4273aaf311176",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "12bc372bc17be663ab2f9cb98636fa25882c433c83721137f18fb57823ab2bb6": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/grasping_intro.pdf",
+                          "name": "grasping_intro.pdf",
+                          "type": "file",
+                          "file_hash": "12bc372bc17be663ab2f9cb98636fa25882c433c83721137f18fb57823ab2bb6",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "1eb51c5166f33a17e7e5a8828d82ca475cb92fe8ee89a08a87b5b98a3006d7b6": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/lec2_quadrotor_dynamics.pdf",
+                          "name": "lec2_quadrotor_dynamics.pdf",
+                          "type": "file",
+                          "file_hash": "1eb51c5166f33a17e7e5a8828d82ca475cb92fe8ee89a08a87b5b98a3006d7b6",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "3cc60cc0c24386173ef85b0740abdc277dd3df8057a515d4cda81ccfab683386": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/lec3_state_space.pdf",
+                          "name": "lec3_state_space.pdf",
+                          "type": "file",
+                          "file_hash": "3cc60cc0c24386173ef85b0740abdc277dd3df8057a515d4cda81ccfab683386",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "8c91aad1c487416b9b9e2dcc9afbe968aef88719099113e275cc4bb5b70cba05": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/lec4_linear_control.pdf",
+                          "name": "lec4_linear_control.pdf",
+                          "type": "file",
+                          "file_hash": "8c91aad1c487416b9b9e2dcc9afbe968aef88719099113e275cc4bb5b70cba05",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "91d4f130e6da4c69c38eacdc405ae86a91833ef49024438cbd0ce0abb2df7b89": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/legged-lec-1.pdf",
+                          "name": "legged-lec-1.pdf",
+                          "type": "file",
+                          "file_hash": "91d4f130e6da4c69c38eacdc405ae86a91833ef49024438cbd0ce0abb2df7b89",
+                          "category": "study",
+                          "classified_by": "folder"
+                        },
+                        "a76e479aca00837a2bda2e86d9f3631395c5312a89deb73252fc6023a3514554": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/lec/legged-lec-2.pdf",
+                          "name": "legged-lec-2.pdf",
+                          "type": "file",
+                          "file_hash": "a76e479aca00837a2bda2e86d9f3631395c5312a89deb73252fc6023a3514554",
+                          "category": "study",
+                          "classified_by": "folder"
+                        }
+                      }
+                    },
+                    "misc": {
+                      "path": "EECS 106B/course_website/106b-sp23site/assets/misc",
+                      "name": "misc",
+                      "type": "folder",
+                      "category": "practice",
+                      "is_mixed": false,
+                      "folder_description": "A diagnostic/background assessment for students to complete that checks prerequisite math and physics concepts.",
+                      "by_type": false,
+                      "by_sequence": false,
+                      "files": {
+                        "d01b321c7870d7015fbb53f7ccc9ed414e992045c0f8dc91dea2baf79a7353eb": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/misc/Background_Assessment.pdf",
+                          "name": "Background_Assessment.pdf",
+                          "type": "file",
+                          "file_hash": "d01b321c7870d7015fbb53f7ccc9ed414e992045c0f8dc91dea2baf79a7353eb",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        }
+                      }
+                    },
+                    "proj": {
+                      "path": "EECS 106B/course_website/106b-sp23site/assets/proj",
+                      "name": "proj",
+                      "type": "folder",
+                      "category": "practice",
+                      "is_mixed": false,
+                      "folder_description": "Contains lab and project specifications and robot usage/operation instructions for students to complete hands-on assignments and projects.",
+                      "by_type": false,
+                      "by_sequence": true,
+                      "files": {
+                        "7dfe909237b7fd300708585dcb7e3180aa32b68ecd58ea4224dcf82c8058c72d": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/proj/Spring_2023_EECS106B_Project_4.pdf",
+                          "name": "Spring_2023_EECS106B_Project_4.pdf",
+                          "type": "file",
+                          "file_hash": "7dfe909237b7fd300708585dcb7e3180aa32b68ecd58ea4224dcf82c8058c72d",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        },
+                        "de79113df3391cbbac66ff6cd66a7f613549350b184a5fe80c04065e1cee4acf": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/proj/lab1.pdf",
+                          "name": "lab1.pdf",
+                          "type": "file",
+                          "file_hash": "de79113df3391cbbac66ff6cd66a7f613549350b184a5fe80c04065e1cee4acf",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        },
+                        "4406e0548989e1a2a10d68d68232e772e9347ff6f4750671f2185ffe9f449ddd": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/proj/lab2.pdf",
+                          "name": "lab2.pdf",
+                          "type": "file",
+                          "file_hash": "4406e0548989e1a2a10d68d68232e772e9347ff6f4750671f2185ffe9f449ddd",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        },
+                        "abf9f422de80c9653a40ca7dc7e7dde81b55e560662a98d95a28f85d2258ca5a": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/proj/proj0.pdf",
+                          "name": "proj0.pdf",
+                          "type": "file",
+                          "file_hash": "abf9f422de80c9653a40ca7dc7e7dde81b55e560662a98d95a28f85d2258ca5a",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        },
+                        "1b887061dc4b3d3bc248de0f83741ecc6be54131af9e6f8ea94ba39cb5e2bd6e": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/proj/proj1a.pdf",
+                          "name": "proj1a.pdf",
+                          "type": "file",
+                          "file_hash": "1b887061dc4b3d3bc248de0f83741ecc6be54131af9e6f8ea94ba39cb5e2bd6e",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        },
+                        "d00bd265f2d8ce91c37d5aab72b82b9c54ca0264abcbd58411cc9fc6c5015cca": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/proj/proj1b.pdf",
+                          "name": "proj1b.pdf",
+                          "type": "file",
+                          "file_hash": "d00bd265f2d8ce91c37d5aab72b82b9c54ca0264abcbd58411cc9fc6c5015cca",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        },
+                        "99ec6873c7b3e2562ca73683c5a71f9a6a437f5c1175ff9b18eac353ad4627f3": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/proj/proj2.pdf",
+                          "name": "proj2.pdf",
+                          "type": "file",
+                          "file_hash": "99ec6873c7b3e2562ca73683c5a71f9a6a437f5c1175ff9b18eac353ad4627f3",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        },
+                        "7483c7f9f8a24201dbc79b3badac65d103ef4c8c8c24ef8130397ef61544b37d": {
+                          "path": "EECS 106B/course_website/106b-sp23site/assets/proj/robot_usage_guide_sp23.pdf",
+                          "name": "robot_usage_guide_sp23.pdf",
+                          "type": "file",
+                          "file_hash": "7483c7f9f8a24201dbc79b3badac65d103ef4c8c8c24ef8130397ef61544b37d",
+                          "category": "practice",
+                          "classified_by": "folder"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
