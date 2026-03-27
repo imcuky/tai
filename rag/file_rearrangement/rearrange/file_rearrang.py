@@ -1183,7 +1183,7 @@ def _run_pipeline(args):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     output_dir = os.path.join(base_dir, "outputs")
     os.makedirs(output_dir, exist_ok=True)
-    db_path = os.path.abspath(args.db)
+    db_path = os.path.join(base_dir, args.db) if not os.path.isabs(args.db) else args.db
 
     try:
         if args.step in ("enrich", "all"):
@@ -1234,19 +1234,19 @@ if __name__ == "__main__":
     parser.add_argument(
         "--step",
         choices=["enrich", "backbone", "match", "all", "tree"],
-        default="tree",
+        default="all",
         help="Pipeline step: 'enrich', 'backbone', 'match', 'all', or 'tree'."
     )
     parser.add_argument(
         "--input",
         required=False,
-        default="bfs_v3_tree.json",
+        default="bfs_v3_tree_61.json",
         help="Input JSON filename located in 'input' folder (e.g. bfs_v3_tree.json)."
     )
     parser.add_argument(
         "--db",
-        required=True,
-        default="input/cs61a_metadata.db",
+        required=False,
+        default="input/CS_61A_metadata_NewPT.db",
         help="Path to the course metadata SQLite database (e.g. input/EECS 106B_metadata.db)."
     )
     args = parser.parse_args()
@@ -1261,7 +1261,7 @@ if __name__ == "__main__":
         if not os.path.exists(enriched_path):
              enriched_path = os.path.join(base_dir, "study_enriched.json")
         
-        db_path = os.path.abspath(args.db)
+        db_path = os.path.join(base_dir, args.db) if not os.path.isabs(args.db) else args.db
         output_tree_path = os.path.join(output_dir, "rearrangement_structure_tree.json")
         
         build_rearranged_structure_tree(plan_path, enriched_path, db_path, output_tree_path)

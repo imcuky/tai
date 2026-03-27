@@ -5,7 +5,7 @@
     "related_items": [
       "study/assets/slides/01.py"
     ],
-    "description": "Course introduction and an initial overview of expressions and call expressions in programming."
+    "description": "A course introduction focused on logistics, expectations, community guidelines, and an initial overview of expressions and call expressions."
   },
   {
     "group_name": "Lecture 02: Functions",
@@ -13,7 +13,7 @@
     "related_items": [
       "study/assets/slides/02.py"
     ],
-    "description": "Basics of functions, assignment, environment diagrams, and related examples."
+    "description": "Mechanics of assignment statements, environment diagrams, and calling user-defined functions; how names bind to values and environments change during calls."
   },
   {
     "group_name": "Lecture 03: Control",
@@ -21,7 +21,7 @@
     "related_items": [
       "study/assets/slides/03.py"
     ],
-    "description": "Control structures including conditionals and while loops with algorithmic examples."
+    "description": "Control structures in programming, specifically conditional statements and loops, applied to algorithmic problems like prime factorization and digit analysis."
   },
   {
     "group_name": "Lecture 04: Higher-Order Functions",
@@ -29,7 +29,7 @@
     "related_items": [
       "study/assets/slides/04.py"
     ],
-    "description": "Functions as arguments and return values, DRY principles, and higher-order examples."
+    "description": "Higher-order functions: using functions as arguments and return values to support modularity and abstraction."
   },
   {
     "group_name": "Lecture 05: Environments",
@@ -37,7 +37,7 @@
     "related_items": [
       "study/assets/slides/05.py"
     ],
-    "description": "Environment diagrams, lambda expressions, currying, and evaluation models."
+    "description": "How environment diagrams represent function calls, higher-order functions, and currying, including lambda expressions and nested definitions."
   },
   {
     "group_name": "Lecture 06: Recursion",
@@ -45,7 +45,7 @@
     "related_items": [
       "study/assets/slides/06.py"
     ],
-    "description": "Recursion fundamentals, base cases, and converting iteration to recursion."
+    "description": "Principles of recursion: conceptualizing, implementing, and converting iterative processes into recursive functions."
   },
   {
     "group_name": "Lecture 07: Tree Recursion",
@@ -53,7 +53,7 @@
     "related_items": [
       "study/assets/slides/07.py"
     ],
-    "description": "Tree recursion concepts and classic recursive combinatorial problems."
+    "description": "Tree recursion: recursive problem decomposition and multiple recursive branches for partitioning and combinatorial counting problems."
   },
   {
     "group_name": "Lecture 08: Sequences and Containers",
@@ -61,7 +61,7 @@
     "related_items": [
       "study/assets/slides/08.py"
     ],
-    "description": "List comprehensions, recursive list processing, and sequence operations."
+    "description": "Recursive problem solving with sequences and containers, list processing, and partitioning using recursive algorithms."
   },
   {
     "group_name": "Lecture 09: Data Abstraction and ADT Trees",
@@ -69,7 +69,7 @@
     "related_items": [
       "study/assets/slides/09.py"
     ],
-    "description": "Data abstraction, tree ADTs, and dictionary/list-based recursive structures."
+    "description": "Data abstraction and abstract data types for trees: recursive structure, implementation, and processing techniques."
   },
   {
     "group_name": "Lecture 10: Mutability",
@@ -77,7 +77,7 @@
     "related_items": [
       "study/assets/slides/10.py"
     ],
-    "description": "Mutability in Python, list mutation, identity vs equality, and recursive mutations."
+    "description": "Mutability in Python: list mutation, object identity vs equality, and implications for compound data structures."
   },
   {
     "group_name": "Lecture 11: Iterators and Generators",
@@ -85,7 +85,7 @@
     "related_items": [
       "study/assets/slides/11.py"
     ],
-    "description": "Iterators, generators, map usage, and generator-based combinatorial problems."
+    "description": "Iterators and generators in Python: definitions, usage, implementation, and examples using yield and recursion."
   },
   {
     "group_name": "Lecture 12: Midterm Review",
@@ -93,7 +93,7 @@
     "related_items": [
       "study/assets/slides/12.py"
     ],
-    "description": "Midterm review covering generators, recursion, environment diagrams, and tree manipulation."
+    "description": "Midterm review: recursive problem solving, list operations and mutations, environment diagrams, and tree recursion with practice problems."
   },
   {
     "group_name": "Lecture 13: Objects and Attributes",
@@ -101,7 +101,7 @@
     "related_items": [
       "study/assets/slides/13.py"
     ],
-    "description": "Introduction to object-oriented programming: classes, attributes, methods, and lookups."
+    "description": "Object-oriented programming in Python: classes, instances, attributes, methods, and attribute lookup mechanisms."
   },
   {
     "group_name": "Lecture 14: Inheritance and String Representation",
@@ -109,7 +109,7 @@
     "related_items": [
       "study/assets/slides/14.py"
     ],
-    "description": "Inheritance, attribute lookup, and object string representations with practice exercises."
+    "description": "Class inheritance and string representation in Python, covering attribute lookup, method overriding, and str vs repr."
   },
   {
     "group_name": "Lecture 15: Mutable Trees",
@@ -117,7 +117,7 @@
     "related_items": [
       "study/assets/slides/15.py"
     ],
-    "description": "Mutable tree structures, Tree class design, and mutation-based tree algorithms."
+    "description": "Mutable tree data structures: implementation, string representations, and manipulation through classes and example functions."
   },
   {
     "group_name": "Lecture 16: Linked Lists",
@@ -125,7 +125,7 @@
     "related_items": [
       "study/assets/slides/16.py"
     ],
-    "description": "Linked list structure and class implementation, with recursive and iterative operations."
+    "description": "Linked lists: structure, implementation, and operations such as insertion, slicing, traversal, and in-place mutation."
   },
   {
     "group_name": "Lecture 17: Efficiency",
@@ -134,21 +134,21 @@
       "study/assets/slides/17.ipynb",
       "study/assets/slides/17.py"
     ],
-    "description": "Algorithmic efficiency, orders of growth, and performance comparisons (including linked lists vs Python lists)."
+    "description": "Analyzing algorithmic efficiency: orders of growth, timing experiments, and techniques like memoization; includes notebook experiments."
   },
   {
-    "group_name": "Lecture 18: Scheme",
+    "group_name": "Lecture 18: Scheme (Intro)",
     "main_item": "study/assets/slides/18-Scheme_1pp.pdf",
     "related_items": [
       "study/assets/slides/18.py"
     ],
-    "description": "Introduction to Scheme: syntax, evaluation, lambda expressions, and recursion."
+    "description": "Introduction to Scheme: evaluation model, expression types, recursion for iteration, lambda expressions, and linked list manipulation."
   },
   {
     "group_name": "Lecture 19: Scheme Lists",
     "main_item": "study/assets/slides/19-Scheme_Lists_1pp.pdf",
     "related_items": [],
-    "description": "Scheme list construction and processing, special forms, and symbolic programming techniques."
+    "description": "Scheme lists: construction, manipulation, and core list-processing procedures in Scheme."
   },
   {
     "group_name": "Lecture 21: Tail Calls",
@@ -156,7 +156,7 @@
     "related_items": [
       "study/assets/slides/21.py"
     ],
-    "description": "Tail call optimization, space-efficient recursion, and evaluation scope considerations."
+    "description": "Tail calls and tail recursion: space-efficient iterative computation and tail-recursive techniques in Scheme and Python."
   },
   {
     "group_name": "Lecture 22: SQL and Tables",
@@ -164,7 +164,7 @@
     "related_items": [
       "study/assets/slides/22.py"
     ],
-    "description": "Introduction to SQL and relational tables, select statements, joins, and query examples."
+    "description": "Fundamentals of SQL and relational databases: table structures, queries, joins, aliases, and expressions."
   },
   {
     "group_name": "Lecture 23: Aggregation and Databases",
@@ -172,18 +172,18 @@
     "related_items": [
       "study/assets/slides/23.py"
     ],
-    "description": "SQL aggregation, GROUP BY, multi-table queries, and practical database exercises."
+    "description": "SQL aggregation and database operations: grouping, aggregation functions, joins, and practical query construction."
   },
   {
     "group_name": "Lecture 24: CS Theory",
     "main_item": "study/assets/slides/24-CS_Theory_1pp-updated.pdf",
     "related_items": [],
-    "description": "Foundations of theoretical computer science: complexity, computability, reductions, and P vs NP."
+    "description": "Foundations of theoretical computer science: computational complexity (P vs NP, reductions, NP-completeness), computability, and undecidability."
   },
   {
     "group_name": "Lecture Miscellaneous",
     "main_item": "",
     "related_items": [],
-    "description": "Files that do not belong to a specific numbered lecture unit."
+    "description": "Placeholder for files that do not fit a specific lecture unit (no unassigned files in this backbone)."
   }
 ]

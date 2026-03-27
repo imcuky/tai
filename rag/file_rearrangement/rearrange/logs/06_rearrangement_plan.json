@@ -5,10 +5,9 @@
     "related_items": [
       "study/assets/slides/01.py",
       "disc/disc00",
-      "disc/Discussion 0 CS 61A Summer 2025.html",
-      "youtube/Functions"
+      "disc/Discussion 0 CS 61A Summer 2025.html"
     ],
-    "description": "Course introduction and an initial overview of expressions and call expressions in programming."
+    "description": "A course introduction focused on logistics, expectations, community guidelines, and an initial overview of expressions and call expressions."
   },
   {
     "group_name": "Lecture 02: Functions",
@@ -19,10 +18,10 @@
       "disc/sol-disc02",
       "disc/Discussion 2 CS 61A Summer 2025.html",
       "youtube/Functions",
-      "youtube/[CS 61A SU24 Discussion 2]",
-      "youtube/[CS 61A SU24] Discussion 01"
+      "youtube/Midterm Review (Su25)",
+      "youtube/[CS 61A SU24 Discussion 2]"
     ],
-    "description": "Basics of functions, assignment, environment diagrams, and related examples."
+    "description": "Mechanics of assignment statements, environment diagrams, and calling user-defined functions; how names bind to values and environments change during calls."
   },
   {
     "group_name": "Lecture 03: Control",
@@ -32,10 +31,9 @@
       "disc/disc01",
       "disc/Discussion 1 CS 61A Summer 2025.html",
       "youtube/Control",
-      "youtube/Higher-Order Functions",
       "youtube/[CS 61A SU24] Discussion 01"
     ],
-    "description": "Control structures including conditionals and while loops with algorithmic examples."
+    "description": "Control structures in programming, specifically conditional statements and loops, applied to algorithmic problems like prime factorization and digit analysis."
   },
   {
     "group_name": "Lecture 04: Higher-Order Functions",
@@ -48,10 +46,9 @@
       "youtube/Environments",
       "youtube/Environments (Su25)",
       "youtube/Higher-Order Functions",
-      "youtube/Tail Calls (Su25)",
       "youtube/[CS 61A SU24 Discussion 2]"
     ],
-    "description": "Functions as arguments and return values, DRY principles, and higher-order examples."
+    "description": "Higher-order functions: using functions as arguments and return values to support modularity and abstraction."
   },
   {
     "group_name": "Lecture 05: Environments",
@@ -61,13 +58,12 @@
       "disc/disc02",
       "disc/sol-disc02",
       "disc/Discussion 2 CS 61A Summer 2025.html",
-      "youtube/Control",
       "youtube/Environments",
       "youtube/Environments (Su25)",
-      "youtube/Functions",
+      "youtube/Midterm Review (Su25)",
       "youtube/[CS 61A SU24 Discussion 2]"
     ],
-    "description": "Environment diagrams, lambda expressions, currying, and evaluation models."
+    "description": "How environment diagrams represent function calls, higher-order functions, and currying, including lambda expressions and nested definitions."
   },
   {
     "group_name": "Lecture 06: Recursion",
@@ -81,7 +77,7 @@
       "youtube/[CS 61A SU24] Discussion 01",
       "youtube/[CS 61A SU25] Discussion 3"
     ],
-    "description": "Recursion fundamentals, base cases, and converting iteration to recursion."
+    "description": "Principles of recursion: conceptualizing, implementing, and converting iterative processes into recursive functions."
   },
   {
     "group_name": "Lecture 07: Tree Recursion",
@@ -90,14 +86,12 @@
       "study/assets/slides/07.py",
       "disc/disc03",
       "disc/sol-disc03",
-      "disc/Discussion 10 CS 61A Summer 2025.html",
       "disc/Discussion 3 CS 61A Summer 2025.html",
-      "disc/Discussion 4 CS 61A Summer 2025.html",
       "youtube/Discussion 4： Tree Recursion, Trees, Lists",
       "youtube/Final Review (Su25)",
       "youtube/Tree Recursion"
     ],
-    "description": "Tree recursion concepts and classic recursive combinatorial problems."
+    "description": "Tree recursion: recursive problem decomposition and multiple recursive branches for partitioning and combinatorial counting problems."
   },
   {
     "group_name": "Lecture 08: Sequences and Containers",
@@ -107,10 +101,9 @@
       "disc/disc04",
       "disc/Discussion 4 CS 61A Summer 2025.html",
       "youtube/Discussion 4： Tree Recursion, Trees, Lists",
-      "youtube/Iterators and Generators (Su25)",
       "youtube/Sequences and Containers (Su25)"
     ],
-    "description": "List comprehensions, recursive list processing, and sequence operations."
+    "description": "Recursive problem solving with sequences and containers, list processing, and partitioning using recursive algorithms."
   },
   {
     "group_name": "Lecture 09: Data Abstraction and ADT Trees",
@@ -118,15 +111,13 @@
     "related_items": [
       "study/assets/slides/09.py",
       "disc/disc04",
-      "disc/disc07",
       "disc/Discussion 4 CS 61A Summer 2025.html",
       "youtube/Data Abstraction and ADT Trees (Su25)",
       "youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL",
       "youtube/Discussion 4： Tree Recursion, Trees, Lists",
-      "youtube/Final Review (Su25)",
-      "youtube/Mutable Trees (Su25)"
+      "youtube/Final Review (Su25)"
     ],
-    "description": "Data abstraction, tree ADTs, and dictionary/list-based recursive structures."
+    "description": "Data abstraction and abstract data types for trees: recursive structure, implementation, and processing techniques."
   },
   {
     "group_name": "Lecture 10: Mutability",
@@ -141,7 +132,7 @@
       "youtube/Linked Lists (Su25)",
       "youtube/Mutability (Su25)"
     ],
-    "description": "Mutability in Python, list mutation, identity vs equality, and recursive mutations."
+    "description": "Mutability in Python: list mutation, object identity vs equality, and implications for compound data structures."
   },
   {
     "group_name": "Lecture 11: Iterators and Generators",
@@ -154,17 +145,19 @@
       "youtube/Discussion 5： Iterators, Generators, Efficiency",
       "youtube/Iterators and Generators (Su25)"
     ],
-    "description": "Iterators, generators, map usage, and generator-based combinatorial problems."
+    "description": "Iterators and generators in Python: definitions, usage, implementation, and examples using yield and recursion."
   },
   {
     "group_name": "Lecture 12: Midterm Review",
     "main_item": "study/assets/slides/12-Midterm_Review_1pp.pdf",
     "related_items": [
       "study/assets/slides/12.py",
+      "disc/disc12",
+      "disc/Discussion 12 CS 61A Summer 2025.html",
       "youtube/Final Review (Su25)",
       "youtube/Midterm Review (Su25)"
     ],
-    "description": "Midterm review covering generators, recursion, environment diagrams, and tree manipulation."
+    "description": "Midterm review: recursive problem solving, list operations and mutations, environment diagrams, and tree recursion with practice problems."
   },
   {
     "group_name": "Lecture 13: Objects and Attributes",
@@ -175,11 +168,10 @@
       "disc/sol-disc06",
       "disc/Discussion 6 CS 61A Summer 2025.html",
       "youtube/Inheritance and Representation (Su25)",
-      "youtube/Mutability (Su25)",
       "youtube/Objects and Attributes (Su25)",
       "youtube/[CS 61A SU25] Discussion 6"
     ],
-    "description": "Introduction to object-oriented programming: classes, attributes, methods, and lookups."
+    "description": "Object-oriented programming in Python: classes, instances, attributes, methods, and attribute lookup mechanisms."
   },
   {
     "group_name": "Lecture 14: Inheritance and String Representation",
@@ -190,9 +182,10 @@
       "disc/sol-disc06",
       "disc/Discussion 6 CS 61A Summer 2025.html",
       "youtube/Inheritance and Representation (Su25)",
+      "youtube/Objects and Attributes (Su25)",
       "youtube/[CS 61A SU25] Discussion 6"
     ],
-    "description": "Inheritance, attribute lookup, and object string representations with practice exercises."
+    "description": "Class inheritance and string representation in Python, covering attribute lookup, method overriding, and str vs repr."
   },
   {
     "group_name": "Lecture 15: Mutable Trees",
@@ -204,7 +197,7 @@
       "youtube/Disc 07",
       "youtube/Mutable Trees (Su25)"
     ],
-    "description": "Mutable tree structures, Tree class design, and mutation-based tree algorithms."
+    "description": "Mutable tree data structures: implementation, string representations, and manipulation through classes and example functions."
   },
   {
     "group_name": "Lecture 16: Linked Lists",
@@ -213,14 +206,13 @@
       "study/assets/slides/16.py",
       "disc/disc07",
       "disc/disc12",
-      "disc/Discussion 10 CS 61A Summer 2025.html",
       "disc/Discussion 12 CS 61A Summer 2025.html",
       "disc/Discussion 7 CS 61A Summer 2025.html",
       "youtube/Disc 07",
       "youtube/Linked Lists (Su25)",
       "youtube/[CS 61A SP24] Mega Discussion 08"
     ],
-    "description": "Linked list structure and class implementation, with recursive and iterative operations."
+    "description": "Linked lists: structure, implementation, and operations such as insertion, slicing, traversal, and in-place mutation."
   },
   {
     "group_name": "Lecture 17: Efficiency",
@@ -235,21 +227,23 @@
       "youtube/Efficiency",
       "youtube/[CS 61A SP24] Mega Discussion 08"
     ],
-    "description": "Algorithmic efficiency, orders of growth, and performance comparisons (including linked lists vs Python lists)."
+    "description": "Analyzing algorithmic efficiency: orders of growth, timing experiments, and techniques like memoization; includes notebook experiments."
   },
   {
-    "group_name": "Lecture 18: Scheme",
+    "group_name": "Lecture 18: Scheme (Intro)",
     "main_item": "study/assets/slides/18-Scheme_1pp.pdf",
     "related_items": [
       "study/assets/slides/18.py",
       "disc/disc08",
       "disc/sol-disc08",
       "disc/Discussion 8 CS 61A Summer 2025.html",
+      "disc/Discussion 9 CS 61A Summer 2025.html",
+      "youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL",
       "youtube/Discussion 9： Interpreters",
       "youtube/Interpreters (Su25)",
       "youtube/Scheme"
     ],
-    "description": "Introduction to Scheme: syntax, evaluation, lambda expressions, and recursion."
+    "description": "Introduction to Scheme: evaluation model, expression types, recursion for iteration, lambda expressions, and linked list manipulation."
   },
   {
     "group_name": "Lecture 19: Scheme Lists",
@@ -262,7 +256,7 @@
       "disc/Discussion 9 CS 61A Summer 2025.html",
       "youtube/Scheme Lists"
     ],
-    "description": "Scheme list construction and processing, special forms, and symbolic programming techniques."
+    "description": "Scheme lists: construction, manipulation, and core list-processing procedures in Scheme."
   },
   {
     "group_name": "Lecture 21: Tail Calls",
@@ -275,7 +269,7 @@
       "youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL",
       "youtube/Tail Calls (Su25)"
     ],
-    "description": "Tail call optimization, space-efficient recursion, and evaluation scope considerations."
+    "description": "Tail calls and tail recursion: space-efficient iterative computation and tail-recursive techniques in Scheme and Python."
   },
   {
     "group_name": "Lecture 22: SQL and Tables",
@@ -283,14 +277,11 @@
     "related_items": [
       "study/assets/slides/22.py",
       "disc/disc11",
-      "disc/disc12",
       "disc/Discussion 11 CS 61A Summer 2025.html",
-      "disc/Discussion 12 CS 61A Summer 2025.html",
       "youtube/Aggregation and Databases (Su25)",
-      "youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL",
       "youtube/SQL and Tables (Su25)"
     ],
-    "description": "Introduction to SQL and relational tables, select statements, joins, and query examples."
+    "description": "Fundamentals of SQL and relational databases: table structures, queries, joins, aliases, and expressions."
   },
   {
     "group_name": "Lecture 23: Aggregation and Databases",
@@ -303,18 +294,18 @@
       "disc/Discussion 12 CS 61A Summer 2025.html",
       "youtube/Aggregation and Databases (Su25)"
     ],
-    "description": "SQL aggregation, GROUP BY, multi-table queries, and practical database exercises."
+    "description": "SQL aggregation and database operations: grouping, aggregation functions, joins, and practical query construction."
   },
   {
     "group_name": "Lecture 24: CS Theory",
     "main_item": "study/assets/slides/24-CS_Theory_1pp-updated.pdf",
     "related_items": [],
-    "description": "Foundations of theoretical computer science: complexity, computability, reductions, and P vs NP."
+    "description": "Foundations of theoretical computer science: computational complexity (P vs NP, reductions, NP-completeness), computability, and undecidability."
   },
   {
     "group_name": "Lecture Miscellaneous",
     "main_item": "",
     "related_items": [],
-    "description": "Files that do not belong to a specific numbered lecture unit."
+    "description": "Placeholder for files that do not fit a specific lecture unit (no unassigned files in this backbone)."
   }
 ]
