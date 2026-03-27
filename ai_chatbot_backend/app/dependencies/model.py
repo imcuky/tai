@@ -1,40 +1,40 @@
 import json
+from openai import OpenAI, AsyncOpenAI
 from app.dependencies.remote_model import RemoteModelClient
+from app.dependencies.openai_model import OpenAIModelClient
 from app.config import settings
-from vllm import AsyncLLMEngine, AsyncEngineArgs
-from faster_whisper import WhisperModel
-import os
-from sentence_transformers import SentenceTransformer
 
-# Global variable to store the loaded pipeline (singleton pattern)
+# Global variable to store the loaded clients (singleton pattern)
 _model_engine = None
 _whisper_engine = None
 _embedding_engine = None
+# Model IDs from config (with fallback defaults)
+LLM_MODEL_ID = settings.vllm_chat_model
 
 
-def get_local_model_engine():
-    os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
-    # MODEL_ID = "THUDM/GLM-4-9B-0414"
-    MODEL_ID = "openai/gpt-oss-20b"
-    TP_SIZE = 2  # tensor_parallel_size
-    GPU_UTIL = 0.47
-    engine_args = AsyncEngineArgs(
-        model=MODEL_ID,
-        tensor_parallel_size=TP_SIZE,
-        gpu_memory_utilization=GPU_UTIL,
+def get_vllm_chat_client():
+    """Returns an AsyncOpenAI client configured for vLLM chat/responses API."""
+    return AsyncOpenAI(
+        base_url=settings.vllm_chat_url,
+        api_key=settings.vllm_api_key
     )
-    engine = AsyncLLMEngine.from_engine_args(engine_args)
-    return engine
 
-def get_whisper_model_engine():
-    """Returns a Whisper model engine for audio transcription."""
-    model_size = "large-v3"
-    return WhisperModel(model_size, device="cuda",device_index=0, compute_type="float32")
 
-def get_local_embedding_engine():
-    return SentenceTransformer("Qwen/Qwen3-Embedding-4B", device="cuda:1",
-                                      model_kwargs={"torch_dtype": "auto"},
-                                      tokenizer_kwargs={"padding_side": "left"})
+def get_vllm_whisper_client():
+    """Returns an OpenAI client configured for vLLM Whisper transcription API."""
+    return OpenAI(
+        base_url=settings.vllm_whisper_url,
+        api_key=settings.vllm_api_key
+    )
+
+
+def get_vllm_embedding_client():
+    """Returns an OpenAI client configured for vLLM embeddings API."""
+    return OpenAI(
+        base_url=settings.vllm_embedding_url,
+        api_key=settings.vllm_api_key
+    )
+
 
 def get_remote_model_pipeline():
     """Returns a pipeline that sends inference requests to a remote service.
@@ -42,6 +42,18 @@ def get_remote_model_pipeline():
     Tokenization is performed locally to maintain a consistent interface.
     """
     return RemoteModelClient(url=settings.remote_model_url)
+
+
+def get_openai_model_pipeline():
+    """Returns an OpenAI API client for inference.
+
+    Uses OpenAI's native structured output support for guaranteed valid JSON.
+    Requires OPENAI_API_KEY and optionally OPENAI_MODEL in environment.
+    """
+    return OpenAIModelClient(
+        api_key=settings.openai_api_key,
+        model=settings.openai_model
+    )
 
 
 def get_mock_model_pipeline():
@@ -77,9 +89,9 @@ def get_mock_model_pipeline():
 
 
 def initialize_model_engine():
-    """Initialize the model pipeline once at startup.
+    """Initialize the model clients once at startup.
 
-    Returns the appropriate model pipeline based on configuration.
+    Returns the appropriate model client based on configuration.
     This should be called once during app startup.
     """
     global _model_engine
@@ -87,26 +99,35 @@ def initialize_model_engine():
     global _embedding_engine
     if _model_engine is not None:
         print("⚠️  Model pipeline already initialized, returning existing instance")
-        # return _model_engine, _whisper_engine
         return _model_engine
     print("🚀 Initializing model pipeline...")
     mode = settings.effective_llm_mode
     print(f"📦 Using LLM mode: {mode}")
 
     if mode == "local":
-        print("🔧 Loading local model pipeline...")
-        _model_engine = get_local_model_engine()
-        print("✅ Local model pipeline loaded successfully!")
-        print("🔊 Loading Whisper model engine...")
-        _whisper_engine = get_whisper_model_engine()
-        print("✅ Whisper model engine loaded successfully!")
-        print("📚 Loading local embedding engine...")
-        _embedding_engine = get_local_embedding_engine()
-        print("✅ Local embedding engine loaded successfully!")
+        print("🔧 Connecting to vLLM chat server...")
+        _model_engine = get_vllm_chat_client()
+        print(f"✅ Connected to vLLM chat server at {settings.vllm_chat_url}")
+        print("🔊 Connecting to vLLM Whisper server...")
+        _whisper_engine = get_vllm_whisper_client()
+        print(f"✅ Connected to vLLM Whisper server at {settings.vllm_whisper_url}")
+        print("📚 Connecting to vLLM embedding server...")
+        _embedding_engine = get_vllm_embedding_client()
+        print(f"✅ Connected to vLLM embedding server at {settings.vllm_embedding_url}")
     elif mode == "remote":
         print("🌐 Setting up remote model pipeline...")
         _model_engine = get_remote_model_pipeline()
         print("✅ Remote model pipeline setup successfully!")
+        print("📚 Loading vLLM embedding engine for RAG...")
+        _embedding_engine = get_vllm_embedding_client()
+        print(f"✅ vLLM embedding engine loaded successfully at {settings.vllm_embedding_url}")
+    elif mode == "openai":
+        print("🌐 Setting up OpenAI model pipeline...")
+        _model_engine = get_openai_model_pipeline()
+        print(f"✅ OpenAI model pipeline setup successfully! (model: {settings.openai_model})")
+        print("📚 Loading vLLM embedding engine for RAG...")
+        _embedding_engine = get_vllm_embedding_client()
+        print(f"✅ vLLM embedding engine loaded successfully at {settings.vllm_embedding_url}")
     elif mode == "mock":
         print("🎭 Setting up mock model pipeline...")
         _model_engine = get_mock_model_pipeline()
@@ -114,11 +135,11 @@ def initialize_model_engine():
     else:
         raise ValueError(f"Unknown effective LLM mode: {mode}")
 
-    # return _model_engine, _whisper_engine
     return _model_engine
 
+
 def get_model_engine():
-    """Returns the pre-initialized model pipeline.
+    """Returns the pre-initialized model client.
 
     This function should be used after initialize_model_pipeline() has been called.
     If the pipeline hasn't been initialized, it will initialize it on first call.
@@ -126,21 +147,45 @@ def get_model_engine():
     global _model_engine
     if _model_engine is None:
         print("⚠️  Model pipeline not initialized, initializing now...")
-        _model_engine, _ = initialize_model_engine()
+        initialize_model_engine()
     return _model_engine
 
+
+_override_engines: dict = {}
+
+
+def get_engine_for_mode(mode: str):
+    """Get a cached engine for the given mode."""
+    # If it matches startup mode, return the default singleton
+    if mode == settings.effective_llm_mode:
+        return get_model_engine()
+    if mode in _override_engines:
+        return _override_engines[mode]
+    # Create and cache
+    if mode == "openai":
+        engine = get_openai_model_pipeline()
+    elif mode == "local":
+        engine = get_vllm_chat_client()
+    else:
+        raise ValueError(f"Unsupported mode: {mode}")
+    _override_engines[mode] = engine
+    print(f"[INFO] Created override engine for mode: {mode}")
+    return engine
+
+
 def get_whisper_engine():
-    """Returns the pre-initialized Whisper model engine."""
+    """Returns the pre-initialized Whisper client."""
     global _whisper_engine
     if _whisper_engine is None:
-        print("⚠️  Whisper model engine not initialized, initializing now...")
-        _, _whisper_engine = initialize_model_engine()
+        print("⚠️  Whisper client not initialized, initializing now...")
+        initialize_model_engine()
     return _whisper_engine
 
+
 def get_embedding_engine():
-    """Returns the pre-initialized embedding engine."""
+    """Returns the pre-initialized embedding client."""
     global _embedding_engine
     if _embedding_engine is None:
-        print("⚠️  Embedding engine not initialized, initializing now...")
-        _, _, _embedding_engine = initialize_model_engine()
+        print("⚠️  Embedding client not initialized, initializing now...")
+        initialize_model_engine()
     return _embedding_engine
