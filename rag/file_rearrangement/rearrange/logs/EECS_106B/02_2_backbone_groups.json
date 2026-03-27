@@ -1,0 +1,67 @@
+[
+  {
+    "group_name": "Lecture: Quadrotor dynamics & state-space",
+    "main_item": "study/EECS 106B/course_website/106b-sp23site/assets/lec/lec2_quadrotor_dynamics.pdf",
+    "related_items": [
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/lec3_state_space.pdf",
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/lec4_linear_control.pdf",
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/3D_Quadrotor_2022.pdf"
+    ],
+    "description": "Quadrotor modeling and state-space representations, linearization, and control approaches (includes dedicated quadrotor slide deck)."
+  },
+  {
+    "group_name": "Lecture: Feedback linearization & nonlinear control",
+    "main_item": "study/EECS 106B/course_website/106b-sp23site/assets/lec/feedback_linearization.pdf",
+    "related_items": [
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_1_26.pdf",
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_1_31.pdf",
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_2.pdf",
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/eecs106b-nonholo.pdf"
+    ],
+    "description": "Materials on feedback linearization, relative degree, Lie derivatives, and related nonlinear control foundations and examples."
+  },
+  {
+    "group_name": "Lecture: Controllability, Lie brackets & integrability",
+    "main_item": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_14.pdf",
+    "related_items": [
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_16.pdf",
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_9.pdf"
+    ],
+    "description": "Handwritten boardwork covering controllability, Lie brackets, Chow and Frobenius theorems, and integrability of constraint distributions."
+  },
+  {
+    "group_name": "Lecture: Grasping and multi-finger hand control",
+    "main_item": "study/EECS 106B/course_website/106b-sp23site/assets/lec/grasping_intro.pdf",
+    "related_items": [
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/eecs106b-handcontrol.pdf",
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_pi.pdf"
+    ],
+    "description": "Grasping fundamentals and multi-finger hand dynamics: contact models, force closure, Pfaffian constraints, and Lagrangian mechanics with constraints."
+  },
+  {
+    "group_name": "Lecture: SLAM (Simultaneous Localization and Mapping)",
+    "main_item": "study/EECS 106B/course_website/106b-sp23site/assets/lec/SLAM_Presentation___106B_2023.pdf",
+    "related_items": [],
+    "description": "Comprehensive SLAM lecture covering front-end/back-end, optimization-based formulations, Kalman filtering, loop closure, and modern directions."
+  },
+  {
+    "group_name": "Lecture: Legged robots — optimal control & RL",
+    "main_item": "study/EECS 106B/course_website/106b-sp23site/assets/lec/legged-lec-1.pdf",
+    "related_items": [
+      "study/EECS 106B/course_website/106b-sp23site/assets/lec/legged-lec-2.pdf"
+    ],
+    "description": "Two-part material on legged robot dynamics, model-based optimal control (MPC) and reinforcement learning approaches, and case studies."
+  },
+  {
+    "group_name": "Lecture: Guest lecture — Control Barrier Functions (CBFs)",
+    "main_item": "study/EECS 106B/course_website/106b-sp23site/assets/lec/230323-EECS206B_Guest_Lecture.pdf",
+    "related_items": [],
+    "description": "Guest lecture on safety-critical control using Control Barrier Functions, comparisons to reachability and MPC, and robustness considerations."
+  },
+  {
+    "group_name": "Lecture Miscellaneous",
+    "main_item": "",
+    "related_items": [],
+    "description": "Unassigned or miscellaneous lecture materials (no items currently ungrouped)."
+  }
+]

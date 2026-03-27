@@ -1,0 +1,301 @@
+{
+  "type": "folder",
+  "name": "study",
+  "relative_path": "study",
+  "children": [
+    {
+      "type": "folder",
+      "name": "EECS 106B",
+      "relative_path": "study/EECS 106B",
+      "children": [
+        {
+          "type": "folder",
+          "name": "course_website",
+          "relative_path": "study/EECS 106B/course_website",
+          "children": [
+            {
+              "type": "folder",
+              "name": "106b-sp23site",
+              "relative_path": "study/EECS 106B/course_website/106b-sp23site",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "assets",
+                  "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets",
+                  "children": [
+                    {
+                      "type": "folder",
+                      "name": "disc",
+                      "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "118_disc.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/118_disc.pdf",
+                          "description": "A discussion session note for Robotic Manipulation and Interaction, focusing on dynamical systems, state-space representation, state, input, and output vectors, phase variables, and equilibrium points in the context of linear and nonlinear systems."
+                        },
+                        {
+                          "type": "file",
+                          "name": "125_disc.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/125_disc.pdf",
+                          "description": "This is a discussion lecture note focusing on Lyapunov stability theory for dynamical systems, particularly emphasizing the use of energy-like functions to study stability without solving the system's equations directly. Key topics include definitions of Lyapunov stability, energy-like (positive definite) functions, and the basic Lyapunov theorem."
+                        },
+                        {
+                          "type": "file",
+                          "name": "217_disc.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/217_disc.pdf",
+                          "description": "This is a set of lecture notes for a robotics course, focusing on Pfaffian constraints, holonomic and nonholonomic systems, equivalent control systems, and Lie brackets, including their mathematical representations and implications for robot motion and controllability."
+                        },
+                        {
+                          "type": "file",
+                          "name": "421_disc.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/421_disc.pdf",
+                          "description": "A discussion session summary for Robotic Manipulation and Interaction, focusing on optimal control, dynamic programming, and reinforcement learning, with worked examples and theoretical frameworks for solving discrete-time optimal control problems."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_10_Control_Barrier_Functions.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_10_Control_Barrier_Functions.pdf",
+                          "description": "A discussion note for a robotics course, introducing the concept of control barrier functions (CBFs), defining safe sets, and explaining how CBFs can be used with quadratic programming to ensure system safety while allowing for task execution."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_11_OCRL.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_11_OCRL.pdf",
+                          "description": "A discussion handout for a robotics course, covering the fundamentals of optimal control, dynamic programming, and reinforcement learning, including practical problems and examples such as LQR and gridworld."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_1_Dynamical_Systems.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems.pdf",
+                          "description": "A discussion handout for a robotics course, covering foundational concepts in dynamical systems, linear control, state space representation, stability analysis, and state feedback control."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_1_Dynamical_Systems_Solution.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems_Solution.pdf",
+                          "description": "A discussion session handout for Robotic Manipulation and Interaction, focusing on dynamical systems and linear control. It covers state space modeling, linear differential equations, stability concepts, and state feedback control with worked examples and solutions."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_2_Lyapunov_Stability_Solns.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_2_Lyapunov_Stability_Solns.pdf",
+                          "description": "A discussion handout for a robotics course, covering Lyapunov stability, energy-like functions, and the basic theorem of Lyapunov, including formal definitions, worked examples, and applications to dynamical systems."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_3_Feedback_Linearization.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization.pdf",
+                          "description": "A discussion handout for a robotics course session, focusing on feedback linearization in control systems. It covers the principles of SISO and MIMO feedback linearization, relative degree, Lie derivatives, and provides example problems involving nonlinear systems such as the pendulum."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_3_Feedback_Linearization_Solns.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization_Solns.pdf",
+                          "description": "A discussion handout for a robotics course, covering the principles and techniques of feedback linearization for both single-input single-output (SISO) and multi-input multi-output (MIMO) nonlinear systems, including the concepts of Lie derivatives and relative degree."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_4_Model_Predictive_Control.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control.pdf",
+                          "description": "A discussion handout for a robotics course, covering the fundamentals of Model Predictive Control (MPC), including optimization problems, MPC formulation, and the integration of constraints for tasks like obstacle avoidance."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_4_Model_Predictive_Control_Solns.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control_Solns.pdf",
+                          "description": "A discussion handout for a robotics course, focusing on model predictive control (MPC), including optimization problem formulation, unconstrained and constrained MPC, and practical considerations such as warm-starting and obstacle avoidance."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_5_Kinematic_Constraints.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints.pdf",
+                          "description": "A discussion handout for a robotics course covering kinematic constraints, with a focus on Pfaffian constraints, equivalent control systems, and the use of Lie brackets and Lie algebras to analyze system controllability."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_5_Kinematic_Constraints_Solns.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints_Solns.pdf",
+                          "description": "A discussion session solution PDF for Robotic Manipulation and Interaction, focusing on kinematic constraints, Pfaffian constraints, equivalent control systems, and the role of Lie brackets and Lie algebras in controllability analysis."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_6_Probability_Computer_Vision.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_6_Probability_Computer_Vision.pdf",
+                          "description": "A discussion handout for a robotics course focusing on probability and computer vision, covering topics such as linearity of expectation, multivariate random variables, Hidden Markov Models, and foundational computer vision concepts like the pinhole camera model and homography."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_7_SLAM.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM.pdf",
+                          "description": "A discussion handout for a robotics course covering Simultaneous Localization and Mapping (SLAM), focusing on its structure, front-end and back-end processing, feature extraction, data association, and Kalman filter-based estimation methods."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_7_SLAM_Solns.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM_Solns.pdf",
+                          "description": "A discussion session solution set for Robotic Manipulation and Interaction, focusing on Simultaneous Localization and Mapping (SLAM), including its front-end (feature extraction, data association, outlier rejection) and back-end (Kalman and Extended Kalman Filtering, EKF SLAM) components."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_8_Midsemester_Review.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review.pdf",
+                          "description": "A midsemester discussion review document for Robotic Manipulation and Interaction, summarizing key course topics including systems modeling, control strategies, constraints, path planning, and the concept of wrenches in robotic dynamics."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_8_Midsemester_Review_Boardwork.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review_Boardwork.pdf",
+                          "description": "A discussion handout for a midsemester review in Robotic Manipulation and Interaction, covering key topics such as system modeling, control (including feedback linearization and Lyapunov stability), constraints, path planning, and wrenches in robotics."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_9_Grasping.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping.pdf",
+                          "description": "A discussion handout for a robotics course focused on the theory and mathematics of robotic grasping, covering wrenches, adjoints, Jacobians, grasp maps, force closure, and friction cone discretization."
+                        },
+                        {
+                          "type": "file",
+                          "name": "Discussion_9_Grasping_Solns.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping_Solns.pdf",
+                          "description": "A discussion handout for a robotics course, focusing on the mathematical foundations and practical considerations of robotic grasping, including wrenches, adjoints, Jacobians, grasp maps, force closure, and friction cone approximations."
+                        }
+                      ],
+                      "by_sequence": true
+                    },
+                    {
+                      "type": "folder",
+                      "name": "lec",
+                      "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "230323-EECS206B_Guest_Lecture.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/230323-EECS206B_Guest_Lecture.pdf",
+                          "description": "This is a guest lecture slide deck for a course on Robotic Manipulation and Interaction, focusing on the theory and application of Control Barrier Functions (CBFs) for nonlinear system safety control, with comparisons to Hamilton-Jacobi reachability and Model Predictive Control (MPC) methods. Key topics include safety filter design, control invariant sets, CBF-based safety guarantees, alternative safety control methods, and robustness considerations for CBFs."
+                        },
+                        {
+                          "type": "file",
+                          "name": "3D_Quadrotor_2022.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/3D_Quadrotor_2022.pdf",
+                          "description": "A lecture slide deck on 3D quadrotor modeling and control, covering quadrotor dynamics, coordinate transformations, and control strategies for robotic manipulation and interaction."
+                        },
+                        {
+                          "type": "file",
+                          "name": "SLAM_Presentation___106B_2023.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/SLAM_Presentation___106B_2023.pdf",
+                          "description": "A comprehensive lecture slide deck for a course on Simultaneous Localization and Mapping (SLAM), focusing on a unifying optimization-based framework. It covers SLAM fundamentals, front-end and back-end architectures, state estimation via Kalman filters, state-of-the-art algorithms, loop closures, and emerging directions such as semantic and dynamic SLAM."
+                        },
+                        {
+                          "type": "file",
+                          "name": "boardwork_1_26.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_1_26.pdf",
+                          "description": "A lecture note for EECS106B Robotics, covering topics such as Lyapunov stability, energy functions, probability density functions, and feedback linearization in the context of robotic manipulation and control systems."
+                        },
+                        {
+                          "type": "file",
+                          "name": "boardwork_1_31.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_1_31.pdf",
+                          "description": "This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on nonlinear control systems, feedback linearization, Lie derivatives, regularity, and state feedback laws."
+                        },
+                        {
+                          "type": "file",
+                          "name": "boardwork_2_14.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_14.pdf",
+                          "description": "This file is a set of handwritten lecture notes for a Robotic Manipulation and Interaction course, focusing on advanced concepts in control theory such as controllability, Lie brackets, the Chow theorem, and the Frobenius theorem, with mathematical derivations and examples."
+                        },
+                        {
+                          "type": "file",
+                          "name": "boardwork_2_16.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_16.pdf",
+                          "description": "This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on the mathematical concept of integrability, the Frobenius theorem, and related manifold and constraint structures in higher-dimensional spaces."
+                        },
+                        {
+                          "type": "file",
+                          "name": "boardwork_2_2.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_2.pdf",
+                          "description": "This is a lecture boardwork file for a course on Robotic Manipulation and Interaction, focusing on Multi-Input Multi-Output (MIMO) control systems, particularly continuous-time input-to-output (CTITO) systems, their mathematical representation, and properties such as controllability and relative degree."
+                        },
+                        {
+                          "type": "file",
+                          "name": "boardwork_2_9.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_2_9.pdf",
+                          "description": "This file appears to be a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on non-holonomic motion planning, Pfaffian systems, constraints, and related mathematical formulations."
+                        },
+                        {
+                          "type": "file",
+                          "name": "boardwork_pi.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/boardwork_pi.pdf",
+                          "description": "A boardwork PDF for Robotic Manipulation and Interaction, focusing on the coefficient of friction, soft finger contacts, and related physical parameters in robotic grasping."
+                        },
+                        {
+                          "type": "file",
+                          "name": "eecs106b-handcontrol.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/eecs106b-handcontrol.pdf",
+                          "description": "A lecture note excerpt on advanced robotic manipulation, focusing on the dynamics and control of multi-fingered robot hands using Lagrangian mechanics with constraints, including force closure, Pfaffian constraints, Lagrange multipliers, and connections to biological hand control."
+                        },
+                        {
+                          "type": "file",
+                          "name": "eecs106b-nonholo.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/eecs106b-nonholo.pdf",
+                          "description": "A lecture note document on nonholonomic systems in robotics, covering mathematical foundations, examples, and control theory concepts such as Pfaffian constraints, integrability, holonomy, Lie brackets, Frobenius and Chow's theorems, and applications to robotic vehicles and mechanisms."
+                        },
+                        {
+                          "type": "file",
+                          "name": "feedback_linearization.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/feedback_linearization.pdf",
+                          "description": "A discussion handout for a robotics course session, focusing on feedback linearization in control systems. It covers the principles of SISO and MIMO feedback linearization, relative degree, Lie derivatives, and provides example problems involving nonlinear systems such as the pendulum."
+                        },
+                        {
+                          "type": "file",
+                          "name": "grasping_intro.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/grasping_intro.pdf",
+                          "description": "These are detailed lecture notes for Chapter 5 of 'A Mathematical Introduction to Robotic Manipulation', focusing on the modeling and control of multifingered robotic hands. The notes cover hand function and design, grasp statics, contact and hand kinematics, grasp planning, force optimization, and coordinated control strategies."
+                        },
+                        {
+                          "type": "file",
+                          "name": "lec2_quadrotor_dynamics.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/lec2_quadrotor_dynamics.pdf",
+                          "description": "A lecture note on quadrotor dynamics and state-space system modeling, covering the Newton-Euler equations of motion, their application to rigid bodies and quadrotors, and the derivation of state-space models for quadrotor control."
+                        },
+                        {
+                          "type": "file",
+                          "name": "lec3_state_space.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/lec3_state_space.pdf",
+                          "description": "A lecture note on state-space and system modeling in robotics, covering the mathematical representation of dynamical systems, state-space formulation, linearization around equilibria, and stability analysis using examples such as the planar quadrotor and damped pendulum."
+                        },
+                        {
+                          "type": "file",
+                          "name": "lec4_linear_control.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/lec4_linear_control.pdf",
+                          "description": "A lecture note on linear control for robotic manipulation, covering feedback control, stability concepts (Lyapunov, asymptotic, exponential), control strategies for first and second order systems, PID and model-based control, and application to quadrotor dynamics and control."
+                        },
+                        {
+                          "type": "file",
+                          "name": "legged-lec-1.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/legged-lec-1.pdf",
+                          "description": "This is a lecture slide deck for a course on Robotic Manipulation and Interaction, specifically focusing on optimal control and reinforcement learning for legged robots. It covers the dynamics of legged robots, model-based optimal control methods, challenges in optimization, simplification strategies, and an introduction to deep reinforcement learning approaches."
+                        },
+                        {
+                          "type": "file",
+                          "name": "legged-lec-2.pdf",
+                          "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/lec/legged-lec-2.pdf",
+                          "description": "This is a lecture note from a course on Robotic Manipulation and Interaction, focusing on predictive control and reinforcement learning for legged robots. The document covers the historical development of legged robots, key control strategies such as Model Predictive Control (MPC) and Reinforcement Learning (RL), detailed case studies of prominent legged robots (MIT Cheetah, Boston Dynamics Atlas, ETH ANYmal, OSU Cassie), and special topics including contact modeling and simulation environments."
+                        }
+                      ],
+                      "by_sequence": true
+                    }
+                  ],
+                  "by_sequence": false
+                }
+              ],
+              "by_sequence": false
+            }
+          ],
+          "by_sequence": false
+        }
+      ],
+      "by_sequence": false
+    }
+  ]
+}

@@ -66,12 +66,17 @@ def load_json_file(file_path: str) -> Dict:
         return json.load(f)
 
 
+_COURSE_LOG_DIR: str | None = None
+
 def save_debug_log(data: any, step_name: str, base_dir: str | None = None) -> str:
     """Save intermediate data to a JSON log file."""
-    if base_dir is None:
-        base_dir = os.path.dirname(os.path.abspath(__file__))
+    if _COURSE_LOG_DIR:
+        log_dir = _COURSE_LOG_DIR
+    else:
+        if base_dir is None:
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+        log_dir = os.path.join(base_dir, "logs")
     
-    log_dir = os.path.join(base_dir, "logs")
     os.makedirs(log_dir, exist_ok=True)
     
     file_path = os.path.join(log_dir, f"{step_name}.json")
@@ -446,7 +451,8 @@ def collect_orphan_items(enriched_data: Dict, backbone_path: str, aggregated_pat
              folder_children = [c for c in children if c.get('type') == 'folder']
              file_children = [c for c in children if c.get('type') == 'file']
 
-             should_aggregate = (len(folder_children) == 0 and len(file_children) > 0)
+             is_sequential = node.get('by_sequence', False)
+             should_aggregate = (len(folder_children) == 0 and len(file_children) > 0 and not is_sequential)
              
              if should_aggregate:
                   # Compute description from files
@@ -894,24 +900,30 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str) -> OrphanMatchRes
             
             batch_result = match_completion.choices[0].message.parsed
             if batch_result and batch_result.matches:
-                # Post-processing: Filter out hallucinations (items not in the input)
-                # Ensure we match against the 'relative_path' or 'structure_path' sent to the model
-                # The model sees 'relative_path' as the key if it was in the input dump.
                 valid_orphan_paths = set()
+                normalized_to_original = {}
                 for o in batch_orphans:
-                    valid_orphan_paths.add(o.get('relative_path'))
-                    valid_orphan_paths.add(o.get('structure_path')) # Just in case model returns structure path
+                    for key in ('relative_path', 'structure_path'):
+                        p = o.get(key)
+                        if p:
+                            valid_orphan_paths.add(p)
+                            normalized_to_original[re.sub(r'\s+', ' ', p).strip()] = p
                 
                 filtered_matches = []
                 
                 for match in batch_result.matches:
-                    # Clean up path just in case
                     cleaned_path = match.item_path.strip()
                     
                     if cleaned_path in valid_orphan_paths:
                         filtered_matches.append(match)
                     else:
-                        print(f"  - Warning: Filtered out hallucinated item: {cleaned_path}")
+                        normalized = re.sub(r'\s+', ' ', cleaned_path)
+                        if normalized in normalized_to_original:
+                            match.item_path = normalized_to_original[normalized]
+                            filtered_matches.append(match)
+                            print(f"  - Fixed LLM path: '{cleaned_path}' → '{match.item_path}'")
+                        else:
+                            print(f"  - Warning: Filtered out hallucinated item: {cleaned_path}")
 
                 all_matches.extend(filtered_matches)
                 print(f"  - Matched {len(filtered_matches)} valid items in this batch.")
@@ -1158,7 +1170,22 @@ def build_rearranged_structure_tree(plan_path: str, enriched_data_path: str, db_
 # CLI Orchestration
 # =============================================================================
 
-def run_enrichment(base_dir: str, input_filename: str, db_filename: str = None) -> str:
+def _derive_course_name(db_filename: str = None, input_filename: str = None) -> str:
+    """Derive a course identifier from the db or input filename for folder organization."""
+    if db_filename:
+        name = os.path.basename(db_filename)
+        name = re.sub(r'_metadata\.db$', '', name)
+        return name.strip().replace(' ', '_')
+    if input_filename:
+        name = os.path.basename(input_filename)
+        name = re.sub(r'^bfs_v3_tree_?', '', name)
+        name = re.sub(r'\.json$', '', name)
+        if name:
+            return name.strip().replace(' ', '_')
+    return "default"
+
+
+def run_enrichment(base_dir: str, input_filename: str, db_filename: str = None, course_name: str = None) -> str:
     """Preprocessing: parse input tree JSON + SQLite DB → enriched JSON."""
     input_file = os.path.join(base_dir, "input", input_filename)
 
@@ -1176,12 +1203,15 @@ def run_enrichment(base_dir: str, input_filename: str, db_filename: str = None) 
         else:
             raise FileNotFoundError("No *_metadata.db file found in input/ folder. Use --db to specify one.")
 
-    output_dir = os.path.join(base_dir, "outputs")
+    if not course_name:
+        course_name = _derive_course_name(db_filename, input_filename)
+
+    output_dir = os.path.join(base_dir, "outputs", course_name)
     os.makedirs(output_dir, exist_ok=True)
     enriched_output = os.path.join(output_dir, "study_enriched.json")
 
     print("=" * 60)
-    print("Preprocessing: Enriching structure with file descriptions")
+    print(f"Preprocessing: Enriching structure for course '{course_name}'")
     print("=" * 60)
     print(f"Database path: {db_file}")
     print(f"Input file path: {input_file}")
@@ -1189,17 +1219,20 @@ def run_enrichment(base_dir: str, input_filename: str, db_filename: str = None) 
     return enrich_structure_with_descriptions(input_file, db_file, enriched_output)
 
 
-def _load_enriched(base_dir: str) -> Dict:
-    enriched_file = os.path.join(base_dir, "outputs", "study_enriched.json")
+def _load_enriched(base_dir: str, course_name: str = None) -> Dict:
+    if course_name:
+        enriched_file = os.path.join(base_dir, "outputs", course_name, "study_enriched.json")
+    else:
+        enriched_file = os.path.join(base_dir, "outputs", "study_enriched.json")
     if not os.path.exists(enriched_file):
-        # Fallback to root-level file from previous runs
         enriched_file = os.path.join(base_dir, "study_enriched.json")
     return load_json_file(enriched_file)
 
 
-def _test_orphan_collection(base_dir: str):
-    enriched_data = _load_enriched(base_dir)
-    backbone_file = os.path.join(base_dir, "outputs", "backbone_result.json")
+def _test_orphan_collection(base_dir: str, course_name: str = None):
+    enriched_data = _load_enriched(base_dir, course_name)
+    output_dir = os.path.join(base_dir, "outputs", course_name) if course_name else os.path.join(base_dir, "outputs")
+    backbone_file = os.path.join(output_dir, "backbone_result.json")
     backbone_path = load_json_file(backbone_file)["backbone_path"]
     orphans = collect_orphan_items(enriched_data, backbone_path)
     save_debug_log(orphans, "test_orphans_collected")
@@ -1229,20 +1262,30 @@ def _resolve_db_path(base_dir: str, db_arg: str = None) -> str:
 
 
 def _run_pipeline(args):
+    global _COURSE_LOG_DIR
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    output_dir = os.path.join(base_dir, "outputs")
+    
+    course_name = args.course or _derive_course_name(args.db, args.input)
+    output_dir = os.path.join(base_dir, "outputs", course_name)
+    log_dir = os.path.join(base_dir, "logs", course_name)
     os.makedirs(output_dir, exist_ok=True)
+    os.makedirs(log_dir, exist_ok=True)
+    _COURSE_LOG_DIR = log_dir
+    
+    print(f"Course: {course_name}")
+    print(f"Outputs: {output_dir}")
+    print(f"Logs:    {log_dir}")
 
     try:
         if args.step in ("enrich", "all"):
             input_file = args.input
-            run_enrichment(base_dir, input_file, args.db)
+            run_enrichment(base_dir, input_file, args.db, course_name)
 
         if args.step in ("backbone", "all"):
             print("=" * 60)
             print("Step 1: Backbone Identification")
             print("=" * 60)
-            enriched_data = _load_enriched(base_dir)
+            enriched_data = _load_enriched(base_dir, course_name)
             backbone_path = run_backbone_identification(enriched_data)
 
             backbone_output = os.path.join(output_dir, "backbone_result.json")
@@ -1254,9 +1297,8 @@ def _run_pipeline(args):
             print("=" * 60)
             print("Step 2: Orphan Matching")
             print("=" * 60)
-            enriched_data = _load_enriched(base_dir)
+            enriched_data = _load_enriched(base_dir, course_name)
 
-            # Load backbone from previous step or run it
             backbone_file = os.path.join(output_dir, "backbone_result.json")
             if os.path.exists(backbone_file):
                 backbone_path = load_json_file(backbone_file)["backbone_path"]
@@ -1266,7 +1308,6 @@ def _run_pipeline(args):
 
             matches = run_plan_matching(enriched_data, backbone_path)
 
-            # Save raw matches
             matches_output = os.path.join(output_dir, "orphan_matches.json")
             with open(matches_output, 'w', encoding='utf-8') as f:
                 json.dump(matches.model_dump(), f, indent=4)
@@ -1294,18 +1335,27 @@ if __name__ == "__main__":
     parser.add_argument(
         "--db",
         required=False,
-        default="cs61a_metadata.db",
+        default=None,
         help="Metadata database filename in 'input' folder (e.g. 'EECS 106B_metadata.db'). Auto-detected if only one *_metadata.db exists."
+    )
+    parser.add_argument(
+        "--course",
+        required=False,
+        default=None,
+        help="Course identifier for output folder (e.g. 'EECS_106B'). Auto-derived from --db or --input if not specified."
     )
     args = parser.parse_args()
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    output_dir = os.path.join(base_dir, "outputs")
-    os.makedirs(output_dir, exist_ok=True)
+    course_name = args.course or _derive_course_name(args.db, args.input)
 
     if args.step == "tree":
-        plan_path = os.path.join(base_dir, "logs", "06_rearrangement_plan.json")
-        enriched_path = os.path.join(base_dir, "outputs", "study_enriched.json")
+        _COURSE_LOG_DIR = os.path.join(base_dir, "logs", course_name)
+        output_dir = os.path.join(base_dir, "outputs", course_name)
+        os.makedirs(output_dir, exist_ok=True)
+
+        plan_path = os.path.join(base_dir, "logs", course_name, "06_rearrangement_plan.json")
+        enriched_path = os.path.join(base_dir, "outputs", course_name, "study_enriched.json")
         if not os.path.exists(enriched_path):
              enriched_path = os.path.join(base_dir, "study_enriched.json")
         
