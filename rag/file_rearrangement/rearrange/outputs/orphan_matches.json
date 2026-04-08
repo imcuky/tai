@@ -62,7 +62,7 @@
         },
         {
             "item_path": "disc/disc08",
-            "assigned_group": "Lecture 18: Scheme (Intro)"
+            "assigned_group": "Lecture 18: Scheme"
         },
         {
             "item_path": "disc/disc08",
@@ -71,6 +71,10 @@
         {
             "item_path": "disc/disc09",
             "assigned_group": "Lecture 19: Scheme Lists"
+        },
+        {
+            "item_path": "disc/disc09",
+            "assigned_group": "Lecture 18: Scheme"
         },
         {
             "item_path": "disc/disc10",
@@ -86,10 +90,6 @@
         },
         {
             "item_path": "disc/disc12",
-            "assigned_group": "Lecture 12: Midterm Review"
-        },
-        {
-            "item_path": "disc/disc12",
             "assigned_group": "Lecture 10: Mutability"
         },
         {
@@ -98,7 +98,15 @@
         },
         {
             "item_path": "disc/disc12",
+            "assigned_group": "Lecture 06: Recursion"
+        },
+        {
+            "item_path": "disc/disc12",
             "assigned_group": "Lecture 19: Scheme Lists"
+        },
+        {
+            "item_path": "disc/disc12",
+            "assigned_group": "Lecture 22: SQL and Tables"
         },
         {
             "item_path": "disc/disc12",
@@ -142,7 +150,7 @@
         },
         {
             "item_path": "disc/sol-disc08",
-            "assigned_group": "Lecture 18: Scheme (Intro)"
+            "assigned_group": "Lecture 18: Scheme"
         },
         {
             "item_path": "disc/sol-disc08",
@@ -151,6 +159,10 @@
         {
             "item_path": "disc/sol-disc09",
             "assigned_group": "Lecture 19: Scheme Lists"
+        },
+        {
+            "item_path": "disc/sol-disc09",
+            "assigned_group": "Lecture 18: Scheme"
         },
         {
             "item_path": "disc/sol-disc10",
@@ -178,10 +190,6 @@
         },
         {
             "item_path": "disc/Discussion 12 CS 61A Summer 2025.html",
-            "assigned_group": "Lecture 12: Midterm Review"
-        },
-        {
-            "item_path": "disc/Discussion 12 CS 61A Summer 2025.html",
             "assigned_group": "Lecture 10: Mutability"
         },
         {
@@ -190,11 +198,23 @@
         },
         {
             "item_path": "disc/Discussion 12 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 06: Recursion"
+        },
+        {
+            "item_path": "disc/Discussion 12 CS 61A Summer 2025.html",
             "assigned_group": "Lecture 19: Scheme Lists"
         },
         {
             "item_path": "disc/Discussion 12 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 22: SQL and Tables"
+        },
+        {
+            "item_path": "disc/Discussion 12 CS 61A Summer 2025.html",
             "assigned_group": "Lecture 23: Aggregation and Databases"
+        },
+        {
+            "item_path": "disc/Discussion 2 CS 61A Summer 2025.html",
+            "assigned_group": "Lecture 02: Functions"
         },
         {
             "item_path": "disc/Discussion 2 CS 61A Summer 2025.html",
@@ -203,10 +223,6 @@
         {
             "item_path": "disc/Discussion 2 CS 61A Summer 2025.html",
             "assigned_group": "Lecture 05: Environments"
-        },
-        {
-            "item_path": "disc/Discussion 2 CS 61A Summer 2025.html",
-            "assigned_group": "Lecture 02: Functions"
         },
         {
             "item_path": "disc/Discussion 3 CS 61A Summer 2025.html",
@@ -250,7 +266,7 @@
         },
         {
             "item_path": "disc/Discussion 8 CS 61A Summer 2025.html",
-            "assigned_group": "Lecture 18: Scheme (Intro)"
+            "assigned_group": "Lecture 18: Scheme"
         },
         {
             "item_path": "disc/Discussion 8 CS 61A Summer 2025.html",
@@ -258,11 +274,11 @@
         },
         {
             "item_path": "disc/Discussion 9 CS 61A Summer 2025.html",
-            "assigned_group": "Lecture 19: Scheme Lists"
+            "assigned_group": "Lecture 18: Scheme"
         },
         {
             "item_path": "disc/Discussion 9 CS 61A Summer 2025.html",
-            "assigned_group": "Lecture 18: Scheme (Intro)"
+            "assigned_group": "Lecture 19: Scheme Lists"
         },
         {
             "item_path": "youtube/Aggregation and Databases (Su25)",
@@ -275,6 +291,14 @@
         {
             "item_path": "youtube/Control",
             "assigned_group": "Lecture 03: Control"
+        },
+        {
+            "item_path": "youtube/Control",
+            "assigned_group": "Lecture 05: Environments"
+        },
+        {
+            "item_path": "youtube/Control",
+            "assigned_group": "Lecture 02: Functions"
         },
         {
             "item_path": "youtube/Data Abstraction and ADT Trees (Su25)",
@@ -294,7 +318,7 @@
         },
         {
             "item_path": "youtube/Discussion 10\uff1a Tail Calls, Scheme Data Abstractions, SQL",
-            "assigned_group": "Lecture 18: Scheme (Intro)"
+            "assigned_group": "Lecture 19: Scheme Lists"
         },
         {
             "item_path": "youtube/Discussion 10\uff1a Tail Calls, Scheme Data Abstractions, SQL",
@@ -309,10 +333,6 @@
             "assigned_group": "Lecture 09: Data Abstraction and ADT Trees"
         },
         {
-            "item_path": "youtube/Discussion 4\uff1a Tree Recursion, Trees, Lists",
-            "assigned_group": "Lecture 08: Sequences and Containers"
-        },
-        {
             "item_path": "youtube/Discussion 5\uff1a Iterators, Generators, Efficiency",
             "assigned_group": "Lecture 11: Iterators and Generators"
         },
@@ -322,7 +342,7 @@
         },
         {
             "item_path": "youtube/Discussion 9\uff1a Interpreters",
-            "assigned_group": "Lecture 18: Scheme (Intro)"
+            "assigned_group": "Lecture 18: Scheme"
         },
         {
             "item_path": "youtube/Efficiency",
@@ -346,7 +366,7 @@
         },
         {
             "item_path": "youtube/Final Review (Su25)",
-            "assigned_group": "Lecture 12: Midterm Review"
+            "assigned_group": "Lecture 09: Data Abstraction and ADT Trees"
         },
         {
             "item_path": "youtube/Final Review (Su25)",
@@ -354,15 +374,27 @@
         },
         {
             "item_path": "youtube/Final Review (Su25)",
-            "assigned_group": "Lecture 09: Data Abstraction and ADT Trees"
+            "assigned_group": "Lecture 06: Recursion"
+        },
+        {
+            "item_path": "youtube/Functions",
+            "assigned_group": "Lecture 01: Welcome"
         },
         {
             "item_path": "youtube/Functions",
             "assigned_group": "Lecture 02: Functions"
         },
         {
+            "item_path": "youtube/Functions",
+            "assigned_group": "Lecture 05: Environments"
+        },
+        {
             "item_path": "youtube/Higher-Order Functions",
             "assigned_group": "Lecture 04: Higher-Order Functions"
+        },
+        {
+            "item_path": "youtube/Higher-Order Functions",
+            "assigned_group": "Lecture 03: Control"
         },
         {
             "item_path": "youtube/Inheritance and Representation (Su25)",
@@ -374,114 +406,110 @@
         },
         {
             "item_path": "youtube/Interpreters (Su25)",
-            "assigned_group": "Lecture 18: Scheme (Intro)"
+            "assigned_group": "Lecture 18: Scheme"
         },
         {
             "item_path": "youtube/Iterators and Generators (Su25)",
             "assigned_group": "Lecture 11: Iterators and Generators"
         },
         {
-            "item_path": "youtube/Linked Lists (Su25)",
+            "item_path": "study/youtube/Linked Lists (Su25)",
             "assigned_group": "Lecture 16: Linked Lists"
         },
         {
-            "item_path": "youtube/Linked Lists (Su25)",
+            "item_path": "study/youtube/Linked Lists (Su25)",
             "assigned_group": "Lecture 10: Mutability"
         },
         {
-            "item_path": "youtube/Midterm Review (Su25)",
+            "item_path": "study/youtube/Midterm Review (Su25)",
             "assigned_group": "Lecture 12: Midterm Review"
         },
         {
-            "item_path": "youtube/Midterm Review (Su25)",
-            "assigned_group": "Lecture 05: Environments"
-        },
-        {
-            "item_path": "youtube/Midterm Review (Su25)",
+            "item_path": "study/youtube/Midterm Review (Su25)",
             "assigned_group": "Lecture 02: Functions"
         },
         {
-            "item_path": "youtube/Mutability (Su25)",
+            "item_path": "study/youtube/Midterm Review (Su25)",
+            "assigned_group": "Lecture 05: Environments"
+        },
+        {
+            "item_path": "study/youtube/Mutability (Su25)",
             "assigned_group": "Lecture 10: Mutability"
         },
         {
-            "item_path": "youtube/Mutable Trees (Su25)",
+            "item_path": "study/youtube/Mutable Trees (Su25)",
             "assigned_group": "Lecture 15: Mutable Trees"
         },
         {
-            "item_path": "youtube/Objects and Attributes (Su25)",
+            "item_path": "study/youtube/Objects and Attributes (Su25)",
             "assigned_group": "Lecture 13: Objects and Attributes"
         },
         {
-            "item_path": "youtube/Objects and Attributes (Su25)",
-            "assigned_group": "Lecture 14: Inheritance and String Representation"
-        },
-        {
-            "item_path": "youtube/Recursion",
+            "item_path": "study/youtube/Recursion",
             "assigned_group": "Lecture 06: Recursion"
         },
         {
-            "item_path": "youtube/SQL and Tables (Su25)",
+            "item_path": "study/youtube/SQL and Tables (Su25)",
             "assigned_group": "Lecture 22: SQL and Tables"
         },
         {
-            "item_path": "youtube/Scheme",
-            "assigned_group": "Lecture 18: Scheme (Intro)"
+            "item_path": "study/youtube/Scheme",
+            "assigned_group": "Lecture 18: Scheme"
         },
         {
-            "item_path": "youtube/Scheme Lists",
+            "item_path": "study/youtube/Scheme Lists",
             "assigned_group": "Lecture 19: Scheme Lists"
         },
         {
-            "item_path": "youtube/Sequences and Containers (Su25)",
+            "item_path": "study/youtube/Sequences and Containers (Su25)",
             "assigned_group": "Lecture 08: Sequences and Containers"
         },
         {
-            "item_path": "youtube/Tail Calls (Su25)",
+            "item_path": "study/youtube/Tail Calls (Su25)",
             "assigned_group": "Lecture 21: Tail Calls"
         },
         {
-            "item_path": "youtube/Tree Recursion",
+            "item_path": "study/youtube/Tree Recursion",
             "assigned_group": "Lecture 07: Tree Recursion"
         },
         {
-            "item_path": "youtube/[CS 61A SP24] Mega Discussion 08",
+            "item_path": "study/youtube/[CS 61A SP24] Mega Discussion 08",
             "assigned_group": "Lecture 16: Linked Lists"
         },
         {
-            "item_path": "youtube/[CS 61A SP24] Mega Discussion 08",
+            "item_path": "study/youtube/[CS 61A SP24] Mega Discussion 08",
             "assigned_group": "Lecture 17: Efficiency"
         },
         {
-            "item_path": "youtube/[CS 61A SU24 Discussion 2]",
-            "assigned_group": "Lecture 05: Environments"
-        },
-        {
-            "item_path": "youtube/[CS 61A SU24 Discussion 2]",
-            "assigned_group": "Lecture 04: Higher-Order Functions"
-        },
-        {
-            "item_path": "youtube/[CS 61A SU24 Discussion 2]",
+            "item_path": "study/youtube/[CS 61A SU24 Discussion 2]",
             "assigned_group": "Lecture 02: Functions"
         },
         {
-            "item_path": "youtube/[CS 61A SU24] Discussion 01",
+            "item_path": "study/youtube/[CS 61A SU24 Discussion 2]",
+            "assigned_group": "Lecture 04: Higher-Order Functions"
+        },
+        {
+            "item_path": "study/youtube/[CS 61A SU24 Discussion 2]",
+            "assigned_group": "Lecture 05: Environments"
+        },
+        {
+            "item_path": "study/youtube/[CS 61A SU24] Discussion 01",
             "assigned_group": "Lecture 03: Control"
         },
         {
-            "item_path": "youtube/[CS 61A SU24] Discussion 01",
+            "item_path": "study/youtube/[CS 61A SU24] Discussion 01",
             "assigned_group": "Lecture 06: Recursion"
         },
         {
-            "item_path": "youtube/[CS 61A SU25] Discussion 3",
+            "item_path": "study/youtube/[CS 61A SU25] Discussion 3",
             "assigned_group": "Lecture 06: Recursion"
         },
         {
-            "item_path": "youtube/[CS 61A SU25] Discussion 6",
+            "item_path": "study/youtube/[CS 61A SU25] Discussion 6",
             "assigned_group": "Lecture 13: Objects and Attributes"
         },
         {
-            "item_path": "youtube/[CS 61A SU25] Discussion 6",
+            "item_path": "study/youtube/[CS 61A SU25] Discussion 6",
             "assigned_group": "Lecture 14: Inheritance and String Representation"
         }
     ]

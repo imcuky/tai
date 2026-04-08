@@ -862,6 +862,11 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str) -> OrphanMatchRes
                             f"Your Task:\n"
                             f"For EACH orphan, assign it to its relevant group. If you think this material can have match to multiple groups, match ALL of them.\n\n"
 
+                            f"Topic-Only Mapping Rule (Critical):\n"
+                            f"- Assign based on actual lecture topic coverage only (concepts/skills in the orphan description and group description).\n"
+                            f"- Do NOT assign by assessment stage words such as 'review', 'midterm', 'final', 'exam', or 'discussion' alone.\n"
+                            f"- 'Final Review' content is NOT automatically 'Midterm Review'; map it only to lectures whose topics are explicitly covered.\n\n"
+
                             f"Matching Considerations:\n"
                             f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
                             f"   - Example: A file focusing on both recursion and tree recursion fits into 'Lecture XX: recursion' and 'Lecture XX: tree recursion' if the both topic is include in the group description.\n"
