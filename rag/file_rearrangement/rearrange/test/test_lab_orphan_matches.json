@@ -29,6 +29,10 @@
       "assigned_group": "Lecture 21: Tail Calls"
     },
     {
+      "item_path": "lab/Lab 10 Tail Calls CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 18: Scheme"
+    },
+    {
       "item_path": "lab/Lab 11 SQL CS 61A Summer 2025.html",
       "assigned_group": "Lecture 22: SQL and Tables"
     },
@@ -97,12 +101,20 @@
       "assigned_group": "Lecture 10: Mutability"
     },
     {
+      "item_path": "lab/Lab 4 Sequences, Mutability, Trees CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 15: Mutable Trees"
+    },
+    {
       "item_path": "lab/Lab 4 Solutions CS 61A Summer 2025.html",
       "assigned_group": "Lecture 08: Sequences and Containers"
     },
     {
       "item_path": "lab/Lab 4 Solutions CS 61A Summer 2025.html",
       "assigned_group": "Lecture 10: Mutability"
+    },
+    {
+      "item_path": "lab/Lab 4 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 15: Mutable Trees"
     },
     {
       "item_path": "lab/Lab 5 Iterators, Generators CS 61A Summer 2025.html",
@@ -169,20 +181,12 @@
       "assigned_group": "Lecture 19: Scheme Lists"
     },
     {
-      "item_path": "lab/Lab 9 Interpreters CS 61A Summer 2025.html",
-      "assigned_group": "Lecture 05: Environments"
-    },
-    {
       "item_path": "lab/Lab 9 Solutions CS 61A Summer 2025.html",
       "assigned_group": "Lecture 18: Scheme"
     },
     {
       "item_path": "lab/Lab 9 Solutions CS 61A Summer 2025.html",
       "assigned_group": "Lecture 19: Scheme Lists"
-    },
-    {
-      "item_path": "lab/Lab 9 Solutions CS 61A Summer 2025.html",
-      "assigned_group": "Lecture 05: Environments"
     }
   ]
 }
