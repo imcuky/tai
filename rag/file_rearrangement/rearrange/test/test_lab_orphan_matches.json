@@ -1,0 +1,188 @@
+{
+  "matches": [
+    {
+      "item_path": "lab/Lab 0 Getting Started CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 01: Welcome"
+    },
+    {
+      "item_path": "lab/Lab 0 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 01: Welcome"
+    },
+    {
+      "item_path": "lab/Lab 1 Functions, Control CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 02: Functions"
+    },
+    {
+      "item_path": "lab/Lab 1 Functions, Control CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 03: Control"
+    },
+    {
+      "item_path": "lab/Lab 1 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 02: Functions"
+    },
+    {
+      "item_path": "lab/Lab 1 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 03: Control"
+    },
+    {
+      "item_path": "lab/Lab 10 Tail Calls CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 21: Tail Calls"
+    },
+    {
+      "item_path": "lab/Lab 11 SQL CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 22: SQL and Tables"
+    },
+    {
+      "item_path": "lab/Lab 11 SQL CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 23: Aggregation and Databases"
+    },
+    {
+      "item_path": "lab/Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 22: SQL and Tables"
+    },
+    {
+      "item_path": "lab/Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 23: Aggregation and Databases"
+    },
+    {
+      "item_path": "lab/Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 15: Mutable Trees"
+    },
+    {
+      "item_path": "lab/Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 06: Recursion"
+    },
+    {
+      "item_path": "lab/Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 08: Sequences and Containers"
+    },
+    {
+      "item_path": "lab/Lab 2 Higher-Order Functions, Lambda Expressions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 04: Higher-Order Functions"
+    },
+    {
+      "item_path": "lab/Lab 2 Higher-Order Functions, Lambda Expressions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 05: Environments"
+    },
+    {
+      "item_path": "lab/Lab 2 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 04: Higher-Order Functions"
+    },
+    {
+      "item_path": "lab/Lab 2 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 05: Environments"
+    },
+    {
+      "item_path": "lab/Lab 3 Recursion, Tree Recursion CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 06: Recursion"
+    },
+    {
+      "item_path": "lab/Lab 3 Recursion, Tree Recursion CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 07: Tree Recursion"
+    },
+    {
+      "item_path": "lab/Lab 3 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 06: Recursion"
+    },
+    {
+      "item_path": "lab/Lab 3 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 07: Tree Recursion"
+    },
+    {
+      "item_path": "lab/Lab 4 Sequences, Mutability, Trees CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 08: Sequences and Containers"
+    },
+    {
+      "item_path": "lab/Lab 4 Sequences, Mutability, Trees CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 10: Mutability"
+    },
+    {
+      "item_path": "lab/Lab 4 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 08: Sequences and Containers"
+    },
+    {
+      "item_path": "lab/Lab 4 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 10: Mutability"
+    },
+    {
+      "item_path": "lab/Lab 5 Iterators, Generators CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 11: Iterators and Generators"
+    },
+    {
+      "item_path": "lab/Lab 5 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 11: Iterators and Generators"
+    },
+    {
+      "item_path": "lab/Lab 6 Object-Oriented Programming, Inheritance CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 13: Objects and Attributes"
+    },
+    {
+      "item_path": "lab/Lab 6 Object-Oriented Programming, Inheritance CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 14: Inheritance and String Representation"
+    },
+    {
+      "item_path": "lab/Lab 6 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 13: Objects and Attributes"
+    },
+    {
+      "item_path": "lab/Lab 6 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 14: Inheritance and String Representation"
+    },
+    {
+      "item_path": "lab/Lab 7 Mutable Trees, Linked Lists CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 15: Mutable Trees"
+    },
+    {
+      "item_path": "lab/Lab 7 Mutable Trees, Linked Lists CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 16: Linked Lists"
+    },
+    {
+      "item_path": "lab/Lab 7 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 15: Mutable Trees"
+    },
+    {
+      "item_path": "lab/Lab 7 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 16: Linked Lists"
+    },
+    {
+      "item_path": "lab/Lab 8 Scheme, Scheme Lists CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 18: Scheme"
+    },
+    {
+      "item_path": "lab/Lab 8 Scheme, Scheme Lists CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 19: Scheme Lists"
+    },
+    {
+      "item_path": "lab/Lab 8 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 18: Scheme"
+    },
+    {
+      "item_path": "lab/Lab 8 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 19: Scheme Lists"
+    },
+    {
+      "item_path": "lab/Lab 9 Interpreters CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 18: Scheme"
+    },
+    {
+      "item_path": "lab/Lab 9 Interpreters CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 19: Scheme Lists"
+    },
+    {
+      "item_path": "lab/Lab 9 Interpreters CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 05: Environments"
+    },
+    {
+      "item_path": "lab/Lab 9 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 18: Scheme"
+    },
+    {
+      "item_path": "lab/Lab 9 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 19: Scheme Lists"
+    },
+    {
+      "item_path": "lab/Lab 9 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 05: Environments"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "matches": [
+    {
+      "item_path": "hw/Homework 1 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 02: Functions"
+    },
+    {
+      "item_path": "hw/Homework 1 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 03: Control"
+    },
+    {
+      "item_path": "hw/Homework 1 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 04: Higher-Order Functions"
+    },
+    {
+      "item_path": "hw/Homework 1 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 02: Functions"
+    },
+    {
+      "item_path": "hw/Homework 1 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 03: Control"
+    },
+    {
+      "item_path": "hw/Homework 1 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 04: Higher-Order Functions"
+    },
+    {
+      "item_path": "hw/Homework 2 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 06: Recursion"
+    },
+    {
+      "item_path": "hw/Homework 2 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 06: Recursion"
+    },
+    {
+      "item_path": "hw/Homework 3 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 07: Tree Recursion"
+    },
+    {
+      "item_path": "hw/Homework 3 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 11: Iterators and Generators"
+    },
+    {
+      "item_path": "hw/Homework 3 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 09: Data Abstraction and ADT Trees"
+    },
+    {
+      "item_path": "hw/Homework 3 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 15: Mutable Trees"
+    },
+    {
+      "item_path": "hw/Homework 3 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 07: Tree Recursion"
+    },
+    {
+      "item_path": "hw/Homework 3 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 11: Iterators and Generators"
+    },
+    {
+      "item_path": "hw/Homework 3 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 09: Data Abstraction and ADT Trees"
+    },
+    {
+      "item_path": "hw/Homework 3 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 15: Mutable Trees"
+    },
+    {
+      "item_path": "hw/Homework 4 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 13: Objects and Attributes"
+    },
+    {
+      "item_path": "hw/Homework 4 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 15: Mutable Trees"
+    },
+    {
+      "item_path": "hw/Homework 4 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 13: Objects and Attributes"
+    },
+    {
+      "item_path": "hw/Homework 4 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 15: Mutable Trees"
+    },
+    {
+      "item_path": "hw/Homework 5 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 16: Linked Lists"
+    },
+    {
+      "item_path": "hw/Homework 5 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 10: Mutability"
+    },
+    {
+      "item_path": "hw/Homework 5 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 17: Efficiency"
+    },
+    {
+      "item_path": "hw/Homework 5 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 18: Scheme"
+    },
+    {
+      "item_path": "hw/Homework 5 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 16: Linked Lists"
+    },
+    {
+      "item_path": "hw/Homework 5 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 17: Efficiency"
+    },
+    {
+      "item_path": "hw/Homework 5 Solutions CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 10: Mutability"
+    },
+    {
+      "item_path": "hw/Homework 6 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 22: SQL and Tables"
+    },
+    {
+      "item_path": "hw/Homework 6 CS 61A Summer 2025.html",
+      "assigned_group": "Lecture 23: Aggregation and Databases"
+    },
+    {
+      "item_path": "hw/hw02",
+      "assigned_group": "Lecture 06: Recursion"
+    },
+    {
+      "item_path": "hw/hw02",
+      "assigned_group": "Lecture 04: Higher-Order Functions"
+    },
+    {
+      "item_path": "hw/hw02",
+      "assigned_group": "Lecture 08: Sequences and Containers"
+    },
+    {
+      "item_path": "hw/hw03",
+      "assigned_group": "Lecture 07: Tree Recursion"
+    },
+    {
+      "item_path": "hw/hw03",
+      "assigned_group": "Lecture 11: Iterators and Generators"
+    },
+    {
+      "item_path": "hw/hw03",
+      "assigned_group": "Lecture 09: Data Abstraction and ADT Trees"
+    },
+    {
+      "item_path": "hw/hw04",
+      "assigned_group": "Lecture 13: Objects and Attributes"
+    },
+    {
+      "item_path": "hw/hw04",
+      "assigned_group": "Lecture 15: Mutable Trees"
+    },
+    {
+      "item_path": "hw/hw05",
+      "assigned_group": "Lecture 16: Linked Lists"
+    },
+    {
+      "item_path": "hw/hw05",
+      "assigned_group": "Lecture 10: Mutability"
+    },
+    {
+      "item_path": "hw/hw05",
+      "assigned_group": "Lecture 17: Efficiency"
+    },
+    {
+      "item_path": "hw/sol-hw01",
+      "assigned_group": "Lecture 02: Functions"
+    },
+    {
+      "item_path": "hw/sol-hw01",
+      "assigned_group": "Lecture 03: Control"
+    },
+    {
+      "item_path": "hw/sol-hw01",
+      "assigned_group": "Lecture 04: Higher-Order Functions"
+    },
+    {
+      "item_path": "hw/sol-hw03",
+      "assigned_group": "Lecture 07: Tree Recursion"
+    },
+    {
+      "item_path": "hw/sol-hw03",
+      "assigned_group": "Lecture 11: Iterators and Generators"
+    },
+    {
+      "item_path": "hw/sol-hw03",
+      "assigned_group": "Lecture 09: Data Abstraction and ADT Trees"
+    }
+  ]
+}

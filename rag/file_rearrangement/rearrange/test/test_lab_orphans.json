@@ -1,0 +1,163 @@
+[
+  {
+    "structure_path": "lab/Lab 0 Getting Started CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 0 Getting Started CS 61A Summer 2025.html",
+    "name": "Lab 0 Getting Started CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment guide focused on setting up the programming environment, practicing Python basics, running and testing code, completing a setup quiz, and submitting assignments for CS 61A."
+  },
+  {
+    "structure_path": "lab/Lab 0 Solutions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 0 Solutions CS 61A Summer 2025.html",
+    "name": "Lab 0 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment walkthrough focused on setting up the programming environment, practicing Python basics, running and testing code with the 'ok' tool, and submitting assignments using Gradescope."
+  },
+  {
+    "structure_path": "lab/Lab 1 Functions, Control CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 1 Functions, Control CS 61A Summer 2025.html",
+    "name": "Lab 1 Functions, Control CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on fundamental Python programming concepts, primarily teaching function definition and control flow, with hands-on coding exercises involving return vs. print, conditional statements, debugging, and basic algorithmic problem-solving."
+  },
+  {
+    "structure_path": "lab/Lab 1 Solutions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 1 Solutions CS 61A Summer 2025.html",
+    "name": "Lab 1 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab solution set focused on foundational Python programming concepts, including function implementation, control flow, debugging, and basic algorithmic problem-solving."
+  },
+  {
+    "structure_path": "lab/Lab 10 Tail Calls CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 10 Tail Calls CS 61A Summer 2025.html",
+    "name": "Lab 10 Tail Calls CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on tail calls in Scheme, primarily teaching tail recursion, tail call optimization, and identifying tail context, with coding exercises to practice implementing tail-recursive procedures."
+  },
+  {
+    "structure_path": "lab/Lab 11 SQL CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 11 SQL CS 61A Summer 2025.html",
+    "name": "Lab 11 SQL CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on teaching SQL fundamentals, including table creation, data selection, operators, joins, aggregation, and practical query construction for real-world scenarios."
+  },
+  {
+    "structure_path": "lab/Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+    "name": "Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on SQL query formulation, mutable tree data structures, and recursive algorithms for sequence manipulation, including merging numbers and generating subsequences."
+  },
+  {
+    "structure_path": "lab/Lab 2 Higher-Order Functions, Lambda Expressions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 2 Higher-Order Functions, Lambda Expressions CS 61A Summer 2025.html",
+    "name": "Lab 2 Higher-Order Functions, Lambda Expressions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on higher-order functions and lambda expressions in Python, covering short-circuiting, currying, and environment diagrams."
+  },
+  {
+    "structure_path": "lab/Lab 2 Solutions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 2 Solutions CS 61A Summer 2025.html",
+    "name": "Lab 2 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab solution document focused on higher-order functions, lambda expressions, currying, short-circuiting, and environment diagrams in Python."
+  },
+  {
+    "structure_path": "lab/Lab 3 Recursion, Tree Recursion CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 3 Recursion, Tree Recursion CS 61A Summer 2025.html",
+    "name": "Lab 3 Recursion, Tree Recursion CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on recursion and tree recursion, with practical coding problems involving recursive problem-solving strategies and classic recursive algorithms."
+  },
+  {
+    "structure_path": "lab/Lab 3 Solutions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 3 Solutions CS 61A Summer 2025.html",
+    "name": "Lab 3 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab solution set focused on recursive programming, including standard recursion, tree recursion, and their application to problems like digit patterns, greatest common divisors, the Virahanka Fibonacci sequence, and Pascal's Triangle."
+  },
+  {
+    "structure_path": "lab/Lab 4 Sequences, Mutability, Trees CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 4 Sequences, Mutability, Trees CS 61A Summer 2025.html",
+    "name": "Lab 4 Sequences, Mutability, Trees CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on Python sequences, list mutation, and dictionaries, emphasizing list operations, comprehensions, mutability, and dictionary usage."
+  },
+  {
+    "structure_path": "lab/Lab 4 Solutions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 4 Solutions CS 61A Summer 2025.html",
+    "name": "Lab 4 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab solution guide focused on Python sequences, including lists, list comprehensions, for loops, ranges, list mutation, identity vs equality, and dictionaries."
+  },
+  {
+    "structure_path": "lab/Lab 5 Iterators, Generators CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 5 Iterators, Generators CS 61A Summer 2025.html",
+    "name": "Lab 5 Iterators, Generators CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on iterators and generators in Python, emphasizing their definitions, behaviors, and implementation through custom classes and generator functions."
+  },
+  {
+    "structure_path": "lab/Lab 5 Solutions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 5 Solutions CS 61A Summer 2025.html",
+    "name": "Lab 5 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab solution set focused on Python iterators and generators, including their implementation, behavior, and applications in sequence processing."
+  },
+  {
+    "structure_path": "lab/Lab 6 Object-Oriented Programming, Inheritance CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 6 Object-Oriented Programming, Inheritance CS 61A Summer 2025.html",
+    "name": "Lab 6 Object-Oriented Programming, Inheritance CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on object-oriented programming and inheritance in Python, with hands-on exercises involving class design, method implementation, and subclass relationships."
+  },
+  {
+    "structure_path": "lab/Lab 6 Solutions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 6 Solutions CS 61A Summer 2025.html",
+    "name": "Lab 6 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab solution set focused on object-oriented programming concepts in Python, including class and instance attributes, methods, inheritance, and practical applications through problems involving bank accounts, email systems, and coin minting."
+  },
+  {
+    "structure_path": "lab/Lab 7 Mutable Trees, Linked Lists CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 7 Mutable Trees, Linked Lists CS 61A Summer 2025.html",
+    "name": "Lab 7 Mutable Trees, Linked Lists CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on mutable tree data structures, emphasizing their implementation as Python classes and recursive algorithms for path-finding and path-generation within trees."
+  },
+  {
+    "structure_path": "lab/Lab 7 Solutions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 7 Solutions CS 61A Summer 2025.html",
+    "name": "Lab 7 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab solution file focused on mutable tree data structures, specifically teaching the implementation and manipulation of trees using classes, and solving problems involving path-finding and path enumeration within trees."
+  },
+  {
+    "structure_path": "lab/Lab 8 Scheme, Scheme Lists CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 8 Scheme, Scheme Lists CS 61A Summer 2025.html",
+    "name": "Lab 8 Scheme, Scheme Lists CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on fundamental Scheme programming concepts, including expressions, special forms, function definitions, and list manipulation."
+  },
+  {
+    "structure_path": "lab/Lab 8 Solutions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 8 Solutions CS 61A Summer 2025.html",
+    "name": "Lab 8 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab solution set focused on core Scheme programming concepts, including expressions, special forms, recursion, list manipulation, and higher-order procedures."
+  },
+  {
+    "structure_path": "lab/Lab 9 Interpreters CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 9 Interpreters CS 61A Summer 2025.html",
+    "name": "Lab 9 Interpreters CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab assignment focused on building and extending a simple interpreter for a subset of Scheme (Calculator language), emphasizing interpreter structure, expression evaluation, data representation with pairs, special forms, and variable bindings."
+  },
+  {
+    "structure_path": "lab/Lab 9 Solutions CS 61A Summer 2025.html",
+    "relative_path": "lab/Lab 9 Solutions CS 61A Summer 2025.html",
+    "name": "Lab 9 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A lab solution document focused on building and extending a simple interpreter for a subset of Scheme (Calculator), emphasizing interpreter structure, the Pair data structure, evaluation logic, and implementing new language features like floor division, logical forms, and variable binding."
+  }
+]

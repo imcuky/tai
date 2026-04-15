@@ -1,0 +1,121 @@
+[
+  {
+    "structure_path": "hw/Homework 1 CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 1 CS 61A Summer 2025.html",
+    "name": "Homework 1 CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework assignment focused on functions, control flow, and higher-order functions in Python, with problems requiring implementation of arithmetic logic, sequence generation, and function-based computation."
+  },
+  {
+    "structure_path": "hw/Homework 1 Solutions CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 1 Solutions CS 61A Summer 2025.html",
+    "name": "Homework 1 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework solution file focused on foundational programming concepts in Python, specifically function implementation, control flow, and higher-order functions."
+  },
+  {
+    "structure_path": "hw/Homework 2 CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 2 CS 61A Summer 2025.html",
+    "name": "Homework 2 CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework assignment focused on recursion, including recursive digit counting, mutual recursion for alternating function application, and recursive counting of ways to make change using US dollar bills."
+  },
+  {
+    "structure_path": "hw/Homework 2 Solutions CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 2 Solutions CS 61A Summer 2025.html",
+    "name": "Homework 2 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework solution set focused on recursive problem-solving, specifically teaching recursive digit counting, mutually recursive summation, and recursive change-making algorithms."
+  },
+  {
+    "structure_path": "hw/Homework 3 CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 3 CS 61A Summer 2025.html",
+    "name": "Homework 3 CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework assignment focused on tree data structures and iterators, with problems dedicated to recursive tree traversal, tree mutation, and iterator element counting."
+  },
+  {
+    "structure_path": "hw/Homework 3 Solutions CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 3 Solutions CS 61A Summer 2025.html",
+    "name": "Homework 3 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework solution set focused on recursive tree processing and iterator manipulation, specifically teaching tree traversal, tree mutation, and counting occurrences in iterators."
+  },
+  {
+    "structure_path": "hw/Homework 4 CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 4 CS 61A Summer 2025.html",
+    "name": "Homework 4 CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework assignment focused on object-oriented programming concepts and mutable tree data structures, with problems centered on class design, method implementation, and tree mutation algorithms."
+  },
+  {
+    "structure_path": "hw/Homework 4 Solutions CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 4 Solutions CS 61A Summer 2025.html",
+    "name": "Homework 4 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework solution set focused on object-oriented programming concepts, specifically implementing and extending Python classes to model real-world systems like vending machines and bank accounts."
+  },
+  {
+    "structure_path": "hw/Homework 5 CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 5 CS 61A Summer 2025.html",
+    "name": "Homework 5 CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework assignment focused on linked lists, mutating recursive data structures, and algorithmic efficiency, with an introduction to Scheme programming."
+  },
+  {
+    "structure_path": "hw/Homework 5 Solutions CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 5 Solutions CS 61A Summer 2025.html",
+    "name": "Homework 5 Solutions CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework solution file focused on linked list manipulation and efficient exponentiation, specifically covering digit storage in linked lists, deep mutation of nested linked lists, and logarithmic-time power computation."
+  },
+  {
+    "structure_path": "hw/Homework 6 CS 61A Summer 2025.html",
+    "relative_path": "hw/Homework 6 CS 61A Summer 2025.html",
+    "name": "Homework 6 CS 61A Summer 2025.html",
+    "type": "file",
+    "description": "A homework assignment focused on SQL, primarily teaching SQL table creation, selection, operators, and multi-table queries through practical exercises involving dog-related data."
+  },
+  {
+    "structure_path": "hw/hw02",
+    "relative_path": "hw/hw02",
+    "name": "hw02",
+    "type": "folder_unit",
+    "description": "Folder containing: hw02.py. Details: hw02.py: A homework assignment focused on recursive problem solving, including digit counting, alternating function application, combinatorial change-making, list interleaving, and recursive merging of sorted lists."
+  },
+  {
+    "structure_path": "hw/hw03",
+    "relative_path": "hw/hw03",
+    "name": "hw03",
+    "type": "folder_unit",
+    "description": "Folder containing: hw03.py. Details: hw03.py: A homework assignment focused on recursive tree processing, generator-based sequence merging, and tree data abstraction in Python."
+  },
+  {
+    "structure_path": "hw/hw04",
+    "relative_path": "hw/hw04",
+    "name": "hw04",
+    "type": "folder_unit",
+    "description": "Folder containing: hw04.py. Details: hw04.py: A programming assignment focused on object-oriented design and tree data structure manipulation, emphasizing class implementation, method design, and recursive tree algorithms."
+  },
+  {
+    "structure_path": "hw/hw05",
+    "relative_path": "hw/hw05",
+    "name": "hw05",
+    "type": "folder_unit",
+    "description": "Folder containing: hw05.py. Details: hw05.py: A homework assignment focused on recursive data structures and algorithms, specifically linked lists, deep mutation, and efficient exponentiation."
+  },
+  {
+    "structure_path": "hw/sol-hw01",
+    "relative_path": "hw/sol-hw01",
+    "name": "sol-hw01",
+    "type": "folder_unit",
+    "description": "Folder containing: hw01.py. Details: hw01.py: A Python homework assignment focused on function definition, higher-order functions, and control flow, with an emphasis on implementing mathematical operations and function composition."
+  },
+  {
+    "structure_path": "hw/sol-hw03",
+    "relative_path": "hw/sol-hw03",
+    "name": "sol-hw03",
+    "type": "folder_unit",
+    "description": "Folder containing: hw03.py. Details: hw03.py: A homework assignment focused on recursive tree processing, generator-based sequence merging, and tree data abstraction in Python."
+  }
+]
