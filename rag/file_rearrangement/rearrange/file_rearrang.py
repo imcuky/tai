@@ -763,7 +763,7 @@ def run_backbone_identification(enriched_data: Dict) -> str:
 # Pipeline Function 2: Orphan Matching (Plan Matching)
 # =============================================================================
 
-def run_plan_matching(enriched_data: Dict, backbone_path: str) -> OrphanMatchResponse:
+def run_plan_matching(enriched_data: Dict, backbone_path: str, multi_match: bool = False) -> OrphanMatchResponse:
     """Match non-backbone items to backbone groups.
 
     Step A: Generate backbone groups from backbone subfolders via LLM.
@@ -853,37 +853,65 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str) -> OrphanMatchRes
         print(f"Processing batch {i // chunk_size + 1} / {(total_orphans + chunk_size - 1) // chunk_size}...")
         
         try:
+            if multi_match:
+                system_prompt = (
+                    f"You are an intelligent course material organizer for any subject (Computer Science, Math, Literature, etc.).\n\n"
+                    f"The folder '{backbone_path}' defines the chronological 'backbone' of this course.\n"
+                    f"You will receive:\n"
+                    f"- A list of 'Existing Groups' (the backbone units) with their descriptions.\n"
+                    f"- A batch of 'Orphan Files' that need to be categorized.\n\n"
+
+                    f"Your Task:\n"
+                    f"For EACH orphan, assign it to its relevant group. If you think this material can have match to multiple groups, match ALL of them.\n\n"
+
+                    f"Topic-Only Mapping Rule (Critical):\n"
+                    f"- Assign based on actual lecture topic coverage only (concepts/skills in the orphan description and group description).\n"
+                    f"- Do NOT assign by assessment stage words such as 'review', 'midterm', 'final', 'exam', or 'discussion' alone.\n"
+                    f"- 'Final Review' content is NOT automatically 'Midterm Review'; map it only to lectures whose topics are explicitly covered.\n\n"
+
+                    f"Matching Considerations:\n"
+                    f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
+                    f"   - Example: A file focusing on both recursion and tree recursion fits into 'Lecture XX: recursion' and 'Lecture XX: tree recursion' if the both topic is include in the group description.\n"
+                    
+                    f"2. **Ambiguous/No Match (Fallback)**: If the file does not clearly fit any specific backbone unit, place it in 'Lecture Miscellaneous' category\n"
+
+                    f"NOTE: Try to infer its topic from its description. If the Orphan description is not informative, it's safer to put it in Miscellaneous than to risk misplacement.\n"
+                    
+                    f"Constraints:\n"
+                    f"- Use existing 'group_name' exactly as provided when matching.\n"
+                    f"- Every single orphan file MUST be assigned to AT LEAST one group.\n"
+                    f"- Do NOT create files that do not exist in orphans.\n"
+                )
+            else:
+                system_prompt = (
+                    f"You are an intelligent course material organizer for any subject (Computer Science, Math, Literature, etc.).\n\n"
+                    f"The folder '{backbone_path}' defines the chronological 'backbone' of this course.\n"
+                    f"You will receive:\n"
+                    f"- A list of 'Existing Groups' (the backbone units) with their descriptions.\n"
+                    f"- A batch of 'Orphan Files' that need to be categorized.\n\n"
+
+                    f"Your Task:\n"
+                    f"For EACH orphan, assign it to the most semantically relevant group. If you think this material can have multiple matches, assign it to the most relevant one.\n\n"
+
+                    f"Matching Considerations:\n"
+                    f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
+                    f"   - Example: A file named 'Derivatives Practice' or on Derivatives fits into 'Lecture XX: Differentiation' or Derivatives topic is include in the group description.\n"
+                    
+                    f"2. **Ambiguous/No Match (Fallback)**: If the file does not clearly fit any specific backbone unit, place it in 'Lecture Miscellaneous' category\n"
+
+                    f"NOTE: Try to infer its topic from its name. If the Orphan description and the name is not informative, it's safer to put it in Miscellaneous than to risk misplacement.\n"
+                    
+                    f"Constraints:\n"
+                    f"- Use existing 'group_name' exactly as provided when matching.\n"
+                    f"- Do NOT create files that do not exist in orphans.\n"
+                )
+
             match_completion = client.beta.chat.completions.parse(
                 model="gpt-5-mini", 
                 messages=[
                     {
                         "role": "system",
-                        "content": (
-                            f"You are an intelligent course material organizer for any subject (Computer Science, Math, Literature, etc.).\n\n"
-                            f"The folder '{backbone_path}' defines the chronological 'backbone' of this course.\n"
-                            f"You will receive:\n"
-                            f"- A list of 'Existing Groups' (the backbone units) with their descriptions.\n"
-                            f"- A batch of 'Orphan Files' that need to be categorized.\n\n"
-
-                            f"Your Task:\n"
-                            f"For EACH orphan, assign it to the most semantically relevant group. If you think this material can have multiple matches, assign it to the most relevant one.\n\n"
-
-                            f"Matching Considerations:\n"
-                            f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
-                            f"   - Example: A file named 'Derivatives Practice' or on Derivatives fits into 'Lecture XX: Differentiation' or Derivatives topic is include in the group description.\n"
-                            
-                            f"2. **Ambiguous/No Match (Fallback)**: If the file does not clearly fit any specific backbone unit, place it in 'Lecture Miscellaneous' category\n"
-
-                            f"NOTE: Try to infer its topic from its name. If the Orphan description and the name is not informative, it's safer to put it in Miscellaneous than to risk misplacement.\n"
-                            
-                            # f"   Create a new group by prefixing with 'New: '.\n"
-                            # f"   - Examples: 'New: Exams', 'New: Homework', 'New: Resources', 'New: Miscellaneous'. NOTE: Can you rearrange previous assigned file to new group if it's more appropriate\n\n"
-                            f"Constraints:\n"
-                            f"- Use existing 'group_name' exactly as provided when matching.\n"
-                            # f"- Every single orphan file must appear in the output list exactly once.\n"
-                            f"- Do NOT create files that do not exist in orphans.\n"
-                            # f"- Return structured JSON."
-                        )
+                        "content": system_prompt
                     },
                     {
                         "role": "user",
@@ -1306,9 +1334,15 @@ def _run_pipeline(args):
                 print("No backbone result found, running backbone identification first...")
                 backbone_path = run_backbone_identification(enriched_data)
 
-            matches = run_plan_matching(enriched_data, backbone_path)
+            matches = run_plan_matching(enriched_data, backbone_path, multi_match=args.multi_match)
 
-            matches_output = os.path.join(output_dir, "orphan_matches.json")
+            if args.multi_match:
+                matches_output_dir = os.path.join(output_dir, "multi")
+                os.makedirs(matches_output_dir, exist_ok=True)
+                matches_output = os.path.join(matches_output_dir, "orphan_matches.json")
+            else:
+                matches_output = os.path.join(output_dir, "orphan_matches.json")
+
             with open(matches_output, 'w', encoding='utf-8') as f:
                 json.dump(matches.model_dump(), f, indent=4)
             print(f"Orphan matches saved to: {matches_output}")
@@ -1343,6 +1377,11 @@ if __name__ == "__main__":
         required=False,
         default=None,
         help="Course identifier for output folder (e.g. 'EECS_106B'). Auto-derived from --db or --input if not specified."
+    )
+    parser.add_argument(
+        "--multi-match",
+        action="store_true",
+        help="If set, uses the multi-match prompt to assign orphans to multiple groups if applicable."
     )
     args = parser.parse_args()
 
