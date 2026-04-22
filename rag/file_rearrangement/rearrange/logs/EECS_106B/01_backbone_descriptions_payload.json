@@ -1,207 +1,487 @@
 [
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc",
     "file": "118_disc.pdf",
     "description": "A discussion session note for Robotic Manipulation and Interaction, focusing on dynamical systems, state-space representation, state, input, and output vectors, phase variables, and equilibrium points in the context of linear and nonlinear systems."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc",
     "file": "125_disc.pdf",
     "description": "This is a discussion lecture note focusing on Lyapunov stability theory for dynamical systems, particularly emphasizing the use of energy-like functions to study stability without solving the system's equations directly. Key topics include definitions of Lyapunov stability, energy-like (positive definite) functions, and the basic Lyapunov theorem."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc",
     "file": "217_disc.pdf",
     "description": "This is a set of lecture notes for a robotics course, focusing on Pfaffian constraints, holonomic and nonholonomic systems, equivalent control systems, and Lie brackets, including their mathematical representations and implications for robot motion and controllability."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc",
     "file": "421_disc.pdf",
     "description": "A discussion session summary for Robotic Manipulation and Interaction, focusing on optimal control, dynamic programming, and reinforcement learning, with worked examples and theoretical frameworks for solving discrete-time optimal control problems."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
-    "file": "Discussion_10_Control_Barrier_Functions.pdf",
-    "description": "A discussion note for a robotics course, introducing the concept of control barrier functions (CBFs), defining safe sets, and explaining how CBFs can be used with quadratic programming to ensure system safety while allowing for task execution."
-  },
-  {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
-    "file": "Discussion_11_OCRL.pdf",
-    "description": "A discussion handout for a robotics course, covering the fundamentals of optimal control, dynamic programming, and reinforcement learning, including practical problems and examples such as LQR and gridworld."
-  },
-  {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc01",
     "file": "Discussion_1_Dynamical_Systems.pdf",
     "description": "A discussion handout for a robotics course, covering foundational concepts in dynamical systems, linear control, state space representation, stability analysis, and state feedback control."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc01",
     "file": "Discussion_1_Dynamical_Systems_Solution.pdf",
     "description": "A discussion session handout for Robotic Manipulation and Interaction, focusing on dynamical systems and linear control. It covers state space modeling, linear differential equations, stability concepts, and state feedback control with worked examples and solutions."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc02",
+    "file": "Discussion_2_Lyapunov_Stability.pdf",
+    "description": "A discussion handout primarily focused on Lyapunov stability, including its formal definition, the use of energy-like functions (locally positive definite and positive definite functions), and the basic theorem of Lyapunov for analyzing stability in dynamical systems."
+  },
+  {
+    "relative_folder_path": "study/disc/disc02",
     "file": "Discussion_2_Lyapunov_Stability_Solns.pdf",
     "description": "A discussion handout for a robotics course, covering Lyapunov stability, energy-like functions, and the basic theorem of Lyapunov, including formal definitions, worked examples, and applications to dynamical systems."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc03",
     "file": "Discussion_3_Feedback_Linearization.pdf",
     "description": "A discussion handout for a robotics course session, focusing on feedback linearization in control systems. It covers the principles of SISO and MIMO feedback linearization, relative degree, Lie derivatives, and provides example problems involving nonlinear systems such as the pendulum."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc03",
     "file": "Discussion_3_Feedback_Linearization_Solns.pdf",
     "description": "A discussion handout for a robotics course, covering the principles and techniques of feedback linearization for both single-input single-output (SISO) and multi-input multi-output (MIMO) nonlinear systems, including the concepts of Lie derivatives and relative degree."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc04",
     "file": "Discussion_4_Model_Predictive_Control.pdf",
     "description": "A discussion handout for a robotics course, covering the fundamentals of Model Predictive Control (MPC), including optimization problems, MPC formulation, and the integration of constraints for tasks like obstacle avoidance."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc04",
     "file": "Discussion_4_Model_Predictive_Control_Solns.pdf",
     "description": "A discussion handout for a robotics course, focusing on model predictive control (MPC), including optimization problem formulation, unconstrained and constrained MPC, and practical considerations such as warm-starting and obstacle avoidance."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc05",
     "file": "Discussion_5_Kinematic_Constraints.pdf",
     "description": "A discussion handout for a robotics course covering kinematic constraints, with a focus on Pfaffian constraints, equivalent control systems, and the use of Lie brackets and Lie algebras to analyze system controllability."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc05",
     "file": "Discussion_5_Kinematic_Constraints_Solns.pdf",
     "description": "A discussion session solution PDF for Robotic Manipulation and Interaction, focusing on kinematic constraints, Pfaffian constraints, equivalent control systems, and the role of Lie brackets and Lie algebras in controllability analysis."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc06",
     "file": "Discussion_6_Probability_Computer_Vision.pdf",
     "description": "A discussion handout for a robotics course focusing on probability and computer vision, covering topics such as linearity of expectation, multivariate random variables, Hidden Markov Models, and foundational computer vision concepts like the pinhole camera model and homography."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc06",
+    "file": "Discussion_6_Probability_Computer_Vision_Boardwork.pdf",
+    "description": "A discussion worksheet focused on probability concepts and their application in computer vision, covering linearity of expectation, multivariate random variables, Hidden Markov Models, and foundational computer vision models such as the pinhole camera and homography."
+  },
+  {
+    "relative_folder_path": "study/disc/disc07",
     "file": "Discussion_7_SLAM.pdf",
     "description": "A discussion handout for a robotics course covering Simultaneous Localization and Mapping (SLAM), focusing on its structure, front-end and back-end processing, feature extraction, data association, and Kalman filter-based estimation methods."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc07",
+    "file": "Discussion_7_SLAM_Boardwork.pdf",
+    "description": "A discussion boardwork file focused on Simultaneous Localization and Mapping (SLAM), emphasizing the division between front end (feature extraction, data association, outlier rejection) and back end (Kalman filtering, Extended Kalman Filtering, and EKF SLAM) processes."
+  },
+  {
+    "relative_folder_path": "study/disc/disc07",
     "file": "Discussion_7_SLAM_Solns.pdf",
     "description": "A discussion session solution set for Robotic Manipulation and Interaction, focusing on Simultaneous Localization and Mapping (SLAM), including its front-end (feature extraction, data association, outlier rejection) and back-end (Kalman and Extended Kalman Filtering, EKF SLAM) components."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc08",
     "file": "Discussion_8_Midsemester_Review.pdf",
     "description": "A midsemester discussion review document for Robotic Manipulation and Interaction, summarizing key course topics including systems modeling, control strategies, constraints, path planning, and the concept of wrenches in robotic dynamics."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc08",
     "file": "Discussion_8_Midsemester_Review_Boardwork.pdf",
     "description": "A discussion handout for a midsemester review in Robotic Manipulation and Interaction, covering key topics such as system modeling, control (including feedback linearization and Lyapunov stability), constraints, path planning, and wrenches in robotics."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc09",
     "file": "Discussion_9_Grasping.pdf",
     "description": "A discussion handout for a robotics course focused on the theory and mathematics of robotic grasping, covering wrenches, adjoints, Jacobians, grasp maps, force closure, and friction cone discretization."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/disc",
+    "relative_folder_path": "study/disc/disc09",
     "file": "Discussion_9_Grasping_Solns.pdf",
     "description": "A discussion handout for a robotics course, focusing on the mathematical foundations and practical considerations of robotic grasping, including wrenches, adjoints, Jacobians, grasp maps, force closure, and friction cone approximations."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
-    "file": "230323-EECS206B_Guest_Lecture.pdf",
-    "description": "This is a guest lecture slide deck for a course on Robotic Manipulation and Interaction, focusing on the theory and application of Control Barrier Functions (CBFs) for nonlinear system safety control, with comparisons to Hamilton-Jacobi reachability and Model Predictive Control (MPC) methods. Key topics include safety filter design, control invariant sets, CBF-based safety guarantees, alternative safety control methods, and robustness considerations for CBFs."
+    "relative_folder_path": "study/disc/disc10",
+    "file": "Discussion_10_Control_Barrier_Functions.pdf",
+    "description": "A discussion note for a robotics course, introducing the concept of control barrier functions (CBFs), defining safe sets, and explaining how CBFs can be used with quadratic programming to ensure system safety while allowing for task execution."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/disc/disc11",
+    "file": "Discussion_11_OCRL.pdf",
+    "description": "A discussion handout for a robotics course, covering the fundamentals of optimal control, dynamic programming, and reinforcement learning, including practical problems and examples such as LQR and gridworld."
+  },
+  {
+    "relative_folder_path": "study/lec/boardwork",
     "file": "3D_Quadrotor_2022.pdf",
     "description": "A lecture slide deck on 3D quadrotor modeling and control, covering quadrotor dynamics, coordinate transformations, and control strategies for robotic manipulation and interaction."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
-    "file": "SLAM_Presentation___106B_2023.pdf",
-    "description": "A comprehensive lecture slide deck for a course on Simultaneous Localization and Mapping (SLAM), focusing on a unifying optimization-based framework. It covers SLAM fundamentals, front-end and back-end architectures, state estimation via Kalman filters, state-of-the-art algorithms, loop closures, and emerging directions such as semantic and dynamic SLAM."
-  },
-  {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/boardwork",
     "file": "boardwork_1_26.pdf",
     "description": "A lecture note for EECS106B Robotics, covering topics such as Lyapunov stability, energy functions, probability density functions, and feedback linearization in the context of robotic manipulation and control systems."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/boardwork",
     "file": "boardwork_1_31.pdf",
     "description": "This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on nonlinear control systems, feedback linearization, Lie derivatives, regularity, and state feedback laws."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/boardwork",
     "file": "boardwork_2_14.pdf",
     "description": "This file is a set of handwritten lecture notes for a Robotic Manipulation and Interaction course, focusing on advanced concepts in control theory such as controllability, Lie brackets, the Chow theorem, and the Frobenius theorem, with mathematical derivations and examples."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/boardwork",
     "file": "boardwork_2_16.pdf",
     "description": "This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on the mathematical concept of integrability, the Frobenius theorem, and related manifold and constraint structures in higher-dimensional spaces."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/boardwork",
     "file": "boardwork_2_2.pdf",
     "description": "This is a lecture boardwork file for a course on Robotic Manipulation and Interaction, focusing on Multi-Input Multi-Output (MIMO) control systems, particularly continuous-time input-to-output (CTITO) systems, their mathematical representation, and properties such as controllability and relative degree."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/boardwork",
     "file": "boardwork_2_9.pdf",
     "description": "This file appears to be a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on non-holonomic motion planning, Pfaffian systems, constraints, and related mathematical formulations."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/boardwork",
     "file": "boardwork_pi.pdf",
     "description": "A boardwork PDF for Robotic Manipulation and Interaction, focusing on the coefficient of friction, soft finger contacts, and related physical parameters in robotic grasping."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/slides",
+    "file": "230323-EECS206B_Guest_Lecture.pdf",
+    "description": "This is a guest lecture slide deck for a course on Robotic Manipulation and Interaction, focusing on the theory and application of Control Barrier Functions (CBFs) for nonlinear system safety control, with comparisons to Hamilton-Jacobi reachability and Model Predictive Control (MPC) methods. Key topics include safety filter design, control invariant sets, CBF-based safety guarantees, alternative safety control methods, and robustness considerations for CBFs."
+  },
+  {
+    "relative_folder_path": "study/lec/slides",
     "file": "eecs106b-handcontrol.pdf",
     "description": "A lecture note excerpt on advanced robotic manipulation, focusing on the dynamics and control of multi-fingered robot hands using Lagrangian mechanics with constraints, including force closure, Pfaffian constraints, Lagrange multipliers, and connections to biological hand control."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/slides",
     "file": "eecs106b-nonholo.pdf",
     "description": "A lecture note document on nonholonomic systems in robotics, covering mathematical foundations, examples, and control theory concepts such as Pfaffian constraints, integrability, holonomy, Lie brackets, Frobenius and Chow's theorems, and applications to robotic vehicles and mechanisms."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/slides",
     "file": "feedback_linearization.pdf",
     "description": "A discussion handout for a robotics course session, focusing on feedback linearization in control systems. It covers the principles of SISO and MIMO feedback linearization, relative degree, Lie derivatives, and provides example problems involving nonlinear systems such as the pendulum."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/slides",
     "file": "grasping_intro.pdf",
     "description": "These are detailed lecture notes for Chapter 5 of 'A Mathematical Introduction to Robotic Manipulation', focusing on the modeling and control of multifingered robotic hands. The notes cover hand function and design, grasp statics, contact and hand kinematics, grasp planning, force optimization, and coordinated control strategies."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/slides",
     "file": "lec2_quadrotor_dynamics.pdf",
     "description": "A lecture note on quadrotor dynamics and state-space system modeling, covering the Newton-Euler equations of motion, their application to rigid bodies and quadrotors, and the derivation of state-space models for quadrotor control."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/slides",
     "file": "lec3_state_space.pdf",
     "description": "A lecture note on state-space and system modeling in robotics, covering the mathematical representation of dynamical systems, state-space formulation, linearization around equilibria, and stability analysis using examples such as the planar quadrotor and damped pendulum."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/slides",
     "file": "lec4_linear_control.pdf",
     "description": "A lecture note on linear control for robotic manipulation, covering feedback control, stability concepts (Lyapunov, asymptotic, exponential), control strategies for first and second order systems, PID and model-based control, and application to quadrotor dynamics and control."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/slides",
     "file": "legged-lec-1.pdf",
     "description": "This is a lecture slide deck for a course on Robotic Manipulation and Interaction, specifically focusing on optimal control and reinforcement learning for legged robots. It covers the dynamics of legged robots, model-based optimal control methods, challenges in optimization, simplification strategies, and an introduction to deep reinforcement learning approaches."
   },
   {
-    "relative_folder_path": "EECS 106B/course_website/106b-sp23site/assets/lec",
+    "relative_folder_path": "study/lec/slides",
     "file": "legged-lec-2.pdf",
     "description": "This is a lecture note from a course on Robotic Manipulation and Interaction, focusing on predictive control and reinforcement learning for legged robots. The document covers the historical development of legged robots, key control strategies such as Model Predictive Control (MPC) and Reinforcement Learning (RL), detailed case studies of prominent legged robots (MIT Cheetah, Boston Dynamics Atlas, ETH ANYmal, OSU Cassie), and special topics including contact modeling and simulation environments."
+  },
+  {
+    "relative_folder_path": "study/lec/slides",
+    "file": "SLAM_Presentation___106B_2023.pdf",
+    "description": "A comprehensive lecture slide deck for a course on Simultaneous Localization and Mapping (SLAM), focusing on a unifying optimization-based framework. It covers SLAM fundamentals, front-end and back-end architectures, state estimation via Kalman filters, state-of-the-art algorithms, loop closures, and emerging directions such as semantic and dynamic SLAM."
+  },
+  {
+    "relative_folder_path": "study/lec/slides",
+    "file": "steering-nonholo.pdf",
+    "description": "A lecture note primarily focused on the optimal control and steering of nonholonomic systems, especially the nonholonomic integrator, using chained form representations and feedback linearization techniques."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "attachment ROS_basic_concepts.dia of ROS Concepts - ROS Wiki.html",
+    "description": "A documentation page describing the attachment and management of files, specifically focusing on the 'ROS_basic_concepts.dia' file within the ROS Wiki system."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "attachment ROS_basic_concepts.png of ROS Concepts - ROS Wiki.html",
+    "description": "A documentation page focused on the attachment and referencing of the 'ROS_basic_concepts.png' file, illustrating how to manage and refer to attached files within the ROS Wiki."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/CommandLineTools",
+    "file": "ROS CommandLineTools Review - ROS Wiki.html",
+    "description": "A review document focused on the design, standardization, and future direction of ROS command-line tools for end users, including discussions on tool syntax, deprecation, tab-completion, and tool consolidation."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "Making sure you're not a bot!.html",
+    "description": "A web page explaining the Anubis Proof-of-Work protection system, focusing on its purpose, mechanism, and rationale for use against automated scraping."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "msg - ROS Wiki.html",
+    "description": "A documentation page focused on the ROS message description language, detailing the structure and specification of .msg files, including fields, constants, type rules, and the build process for message generation."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS - ROS Wiki.html",
+    "description": "A documentation page focused on TCPROS, the transport protocol for ROS 1, detailing its role, header fields, and service-specific behaviors."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS CommandLineTools - ROS Wiki.html",
+    "description": "A documentation page providing an overview of ROS 1 command-line and graphical tools, focusing on their primary functions and usage within the ROS ecosystem."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS Concepts - ROS Wiki.html",
+    "description": "A documentation page focused on the attachment and referencing of the 'ROS_basic_concepts.png' file, illustrating how to manage and refer to attached files within the ROS Wiki."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS Connection Header - ROS Wiki.html",
+    "description": "A technical documentation page focused on the ROS connection header, detailing its structure, encoding format, example encodings, and the specific fields it contains for message transport in ROS 1."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS EnvironmentVariables - ROS Wiki.html",
+    "description": "A reference guide detailing the primary ROS 1 environment variables, their purposes, and how they influence package discovery, node behavior, system data management, and build processes."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS Higher-Level Concepts - ROS Wiki.html",
+    "description": "A ROS Wiki documentation page introducing higher-level concepts in ROS 1, focusing on coordinate frames/transforms, actions/tasks, message ontology, plugins, filters, and robot models."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS Installation - ROS Wiki.html",
+    "description": "A documentation page focused on the end-of-life status of ROS 1, guidance for migration to ROS 2, and directions for ROS 2 installation."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS Introduction - ROS Wiki.html",
+    "description": "An introductory documentation page for ROS, focusing on its definition, primary goals, supported operating systems, release structure, and community contribution model."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS NetworkSetup - ROS Wiki.html",
+    "description": "A technical guide focused on configuring and troubleshooting network connectivity for ROS 1 systems, emphasizing full connectivity, name resolution, firewall considerations, network debugging, and time synchronization issues."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS StartGuide - ROS Wiki.html",
+    "description": "A guide page introducing newcomers to the ROS Wiki, focusing on how to get started with ROS, find answers to questions, locate code and packages, and effectively use the wiki as a resource."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS TCPROS - ROS Wiki.html",
+    "description": "A documentation page focused on TCPROS, the transport protocol for ROS 1, detailing its role, header fields, and service-specific behaviors."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS Technical Overview - ROS Wiki.html",
+    "description": "A technical overview document focused on the internal implementation details of ROS 1, specifically covering the Master, Parameter Server, Node APIs, topic and service connection protocols, and message serialization mechanisms."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS Troubleshooting - ROS Wiki.html",
+    "description": "A troubleshooting guide for ROS 1, focusing on diagnosing and resolving common issues such as master node failures, network configuration problems, launch and compilation errors, and best practices for debugging and seeking help."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS Tutorials - ROS Wiki.html",
+    "description": "A documentation page outlining the structure and main topics of the ROS Tutorials section on the ROS Wiki, primarily focused on guiding users through core ROS concepts, standards, and available learning resources."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS UDPROS - ROS Wiki.html",
+    "description": "A technical documentation page focused on the UDPROS transport layer in ROS, detailing its purpose, connection negotiation, datagram format, and associated test plan."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "ROS YAMLCommandLine - ROS Wiki.html",
+    "description": "A technical guide focused on using YAML syntax for representing and sending ROS messages via the command line, including handling of message structures, special types, and command-line parsing nuances."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS",
+    "file": "rosbuild - ROS Wiki.html",
+    "description": "A documentation page describing the rosbuild package, which provides scripts and macros for managing the CMake-based build system in ROS 1, including build customization, dependency management, and integration with various compilers and build tools."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials BuildingPackages - ROS Wiki.html",
+    "description": "A beginner-level tutorial focused on building ROS packages, primarily teaching the use of catkin_make and rosmake build tools, workspace structure, and the process of compiling packages and their dependencies."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials Creating a Package by Hand - ROS Wiki.html",
+    "description": "A tutorial document focused on manually creating a ROS package using both rosbuild and catkin build systems, emphasizing the structure, manifest/package.xml files, and essential build configuration."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials CreatingMsgAndSrv - ROS Wiki.html",
+    "description": "A beginner-level tutorial focused on creating and building custom ROS message (msg) and service (srv) files, including their integration into a ROS package and the use of command-line tools for inspection and management."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials CreatingPackage - ROS Wiki.html",
+    "description": "A tutorial document focused on creating ROS packages using roscreate and catkin, managing package dependencies, and customizing package metadata files such as package.xml and CMakeLists.txt."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials DefiningCustomMessages - ROS Wiki.html",
+    "description": "A tutorial document focused on defining, generating, and using custom message types in ROS, including language-specific import methods and managing dependencies."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials ExaminingPublisherSubscriber - ROS Wiki.html",
+    "description": "A beginner-level ROS tutorial focused on running and observing a simple publisher and subscriber, including practical steps and a video demonstration of node communication."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials ExaminingServiceClient - ROS Wiki.html",
+    "description": "A tutorial walkthrough focused on running and examining a simple ROS service and client, including practical execution steps and further example resources."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials Getting started with roswtf - ROS Wiki.html",
+    "description": "A beginner tutorial introducing the roswtf tool, focusing on its usage for diagnosing ROS system issues through static and online checks, and interpreting its warnings and errors."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials InstallingandConfiguringROSEnvironment - ROS Wiki.html",
+    "description": "A beginner tutorial focused on installing ROS, configuring the ROS environment, and creating and managing ROS workspaces using catkin and rosws."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials MultipleMachines - ROS Wiki.html",
+    "description": "A tutorial guide focused on running ROS across multiple machines, emphasizing configuration of ROS_MASTER_URI, node deployment, and troubleshooting networked ROS systems."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials NavigatingTheFilesystem - ROS Wiki.html",
+    "description": "A beginner tutorial focused on navigating the ROS filesystem, introducing core filesystem concepts and command-line tools such as rospack, roscd, rosls, and tab completion for efficient navigation and inspection of ROS packages."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials NavigatingTheWiki - ROS Wiki.html",
+    "description": "A beginner-level tutorial focused on navigating the ROS wiki, including understanding the structure of landing, package, and stack pages, and advanced instructions for creating and sorting tutorial pages within a package."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials Packaging your ROS project as a snap - ROS Wiki.html",
+    "description": "A tutorial guide focused on packaging and deploying ROS projects as snaps, covering the snap ecosystem, snapcraft configuration, building, testing, and sharing ROS applications using Snapcraft."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials reading msgs from a bag file - ROS Wiki.html",
+    "description": "A tutorial primarily about reading messages from ROS bag files, focusing on two main extraction methods: direct playback with topic echoing and using the ros_readbagfile script for efficient topic extraction and YAML analysis."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials Recording and playing back data - ROS Wiki.html",
+    "description": "A beginner-level ROS tutorial focused on recording and playing back data using rosbag, including how to record all or selected topics, examine and replay bag files, and understand the limitations of rosbag record/play."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials rosdep - ROS Wiki.html",
+    "description": "A tutorial focused on managing system dependencies in ROS using rosdep, including how dependencies are declared, installed, and resolved via rosdep and its rule database."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials Roslaunch tips for larger projects - ROS Wiki.html",
+    "description": "A tutorial focused on best practices for structuring and reusing roslaunch files in large ROS projects, emphasizing organization, parameter management, machine allocation, and configuration packaging."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials UnderstandingNodes - ROS Wiki.html",
+    "description": "A beginner tutorial introducing ROS nodes, focusing on core ROS graph concepts and the use of command-line tools such as roscore, rosnode, and rosrun."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials UnderstandingServicesParams - ROS Wiki.html",
+    "description": "A beginner tutorial introducing ROS services and parameters, focusing on the use of rosservice and rosparam command-line tools for interacting with services and the parameter server."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials UnderstandingTopics - ROS Wiki.html",
+    "description": "A beginner tutorial focused on understanding ROS topics, including their structure, message types, and practical tools for inspecting, publishing, and visualizing topic data in ROS."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials Using a C++ class in Python - ROS Wiki.html",
+    "description": "A technical tutorial focused on creating Python bindings for C++ classes that use ROS messages, detailing the process of serialization/deserialization, wrapper implementation, and integration using Boost.Python."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials UsingRosEd - ROS Wiki.html",
+    "description": "A beginner-level tutorial focused on using the 'rosed' tool in ROS for editing package files, including tab completion and editor configuration."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials UsingRqtconsoleRoslaunch - ROS Wiki.html",
+    "description": "A beginner-level ROS tutorial focused on using rqt_console and rqt_logger_level for debugging, and roslaunch for starting and managing multiple nodes via launch files."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials UsingRxconsoleRoslaunch - ROS Wiki.html",
+    "description": "A beginner-level ROS tutorial focused on using rxconsole and rxloggerlevel for debugging, and roslaunch for starting and managing multiple nodes via launch files."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials WhereNext - ROS Wiki.html",
+    "description": "A tutorial overview introducing next steps for ROS beginners, focusing on simulation, visualization, coordinate transforms, and advanced ROS capabilities."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials WritingPublisherSubscriber(c++) - ROS Wiki.html",
+    "description": "A step-by-step tutorial for writing simple publisher and subscriber nodes in C++ for ROS, focusing on node creation, message publishing and subscribing, and building nodes using both rosbuild and catkin build systems."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials WritingPublisherSubscriber(python) - ROS Wiki.html",
+    "description": "A step-by-step tutorial for writing simple ROS publisher and subscriber nodes in Python, focusing on node creation, message publishing, message subscription, and the build process."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials WritingServiceClient(c++) - ROS Wiki.html",
+    "description": "A step-by-step tutorial for writing a simple ROS service and client in C++, focusing on implementing, building, and running service and client nodes using ROS tools."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROS/Tutorials",
+    "file": "ROS Tutorials WritingServiceClient(python) - ROS Wiki.html",
+    "description": "A step-by-step tutorial focused on writing a simple ROS service and client in Python, including code creation, explanation, and building the nodes."
+  },
+  {
+    "relative_folder_path": "study/ROS/ROSNodeTutorialPython",
+    "file": "ROSNodeTutorialPython - ROS Wiki.html",
+    "description": "A tutorial document focused on building Python-based ROS publisher and subscriber nodes with custom messages, parameter server integration, and dynamic reconfigure capabilities."
   }
 ]

@@ -51,6 +51,16 @@ class OrphanMatchResponse(BaseModel):
     matches: List[OrphanMatch]
 
 
+class MiscGroupAssignment(BaseModel):
+    item_path: str
+    new_group_name: str
+    new_group_description: str
+
+
+class MiscRefinementResponse(BaseModel):
+    assignments: List[MiscGroupAssignment]
+
+
 class AggregationDecision(BaseModel):
     paths_to_aggregate: List[str]
 
@@ -85,6 +95,19 @@ def save_debug_log(data: any, step_name: str, base_dir: str | None = None) -> st
     
     print(f"[DEBUG] Saved {step_name} log to: {file_path}")
     return file_path
+
+
+def _console_safe(text: str) -> str:
+    """Return a string safe for Windows legacy console encodings."""
+    try:
+        return str(text).encode("cp1252", errors="replace").decode("cp1252")
+    except Exception:
+        return str(text)
+
+
+def _safe_print(message: str) -> None:
+    """Print without raising UnicodeEncodeError in restricted terminals."""
+    print(_console_safe(message))
 
 
 def enrich_structure_with_descriptions(input_json_path: str, db_path: str, output_path: str) -> str:
@@ -355,59 +378,59 @@ def get_folder_candidates(enriched_data: Dict, backbone_path: str) -> List[Dict]
     return candidates
 
 
-def run_aggregation_analysis(enriched_data: Dict, backbone_path: str) -> List[str]:
-    """Ask LLM which folders should be aggregated into single units."""
-    candidates = get_folder_candidates(enriched_data, backbone_path)
-    if not candidates:
-        return []
+# def run_aggregation_analysis(enriched_data: Dict, backbone_path: str) -> List[str]:
+#     """Ask LLM which folders should be aggregated into single units."""
+#     candidates = get_folder_candidates(enriched_data, backbone_path)
+#     if not candidates:
+#         return []
 
-    save_debug_log(candidates, "02_0_aggregation_candidates")
-    print(f"Analyzing {len(candidates)} folders for potential aggregation...")
+#     save_debug_log(candidates, "02_0_aggregation_candidates")
+#     print(f"Analyzing {len(candidates)} folders for potential aggregation...")
 
-    client = OpenAI()
+#     client = OpenAI()
     
-    # Process in batches if too many candidates, but usually folder count is manageable
-    # For robust handling, let's limit context or batch if needed.
-    # Here assuming < 100 folders, fits in context easily.
+#     # Process in batches if too many candidates, but usually folder count is manageable
+#     # For robust handling, let's limit context or batch if needed.
+#     # Here assuming < 100 folders, fits in context easily.
     
-    completion = client.beta.chat.completions.parse(
-        model="gpt-5-nano",
-        messages=[
-            {
-                "role": "system",
-                "content": (
-                    "You are an intelligent course file organizer.\n"
-                    "You will analyze a list of folders from a course directory (excluding the main lecture backbone).\n"
-                    "For each folder, determine if it should be treated as a **single unified item** (Aggregated)"
-                    "or if its contents should be split and treated individually based on the individual files content and structure inside of the folder.\n\n"
-                    "Rules for should 'Aggregate':\n"
-                    "- The folder represents a cohesive SINGLE unit (e.g., 'Project 1', 'Lab 3').\n"
-                    "- It contains multiple files that belong together (e.g., instructions, starter code, solution) and breaking them apart loses context.\n"
-                    "- Subfolders are structural (e.g., 'src', 'tests', 'lib') and NOT independent content units.\n\n"
+#     completion = client.beta.chat.completions.parse(
+#         model="gpt-5-nano",
+#         messages=[
+#             {
+#                 "role": "system",
+#                 "content": (
+#                     "You are an intelligent course file organizer.\n"
+#                     "You will analyze a list of folders from a course directory (excluding the main lecture backbone).\n"
+#                     "For each folder, determine if it should be treated as a **single unified item** (Aggregated)"
+#                     "or if its contents should be split and treated individually based on the individual files content and structure inside of the folder.\n\n"
+#                     "Rules for should 'Aggregate':\n"
+#                     "- The folder represents a cohesive SINGLE unit (e.g., 'Project 1', 'Lab 3').\n"
+#                     "- It contains multiple files that belong together (e.g., instructions, starter code, solution) and breaking them apart loses context.\n"
+#                     "- Subfolders are structural (e.g., 'src', 'tests', 'lib') and NOT independent content units.\n\n"
 
-                    "Rules for 'Split' (Do NOT Aggregate):\n"
-                    "- The folder is named a general container (not specific like 'Project 1'/Discussion XX) for organizational purposes but the files inside are independent (e.g., 'Slides' folder with individual lecture PDFs that can be treated separately).\n"
-                    # "- The folder contains contains independent sub-units topics (e.g., 'File on AI', 'File on Mathematics') that is clearly does not related to each other.\n"         
-                    # "- A 'mixed' folder with both files and subfolders should usually be SPLIT to preserve the subfolder hierarchy."
+#                     "Rules for 'Split' (Do NOT Aggregate):\n"
+#                     "- The folder is named a general container (not specific like 'Project 1'/Discussion XX) for organizational purposes but the files inside are independent (e.g., 'Slides' folder with individual lecture PDFs that can be treated separately).\n"
+#                     # "- The folder contains contains independent sub-units topics (e.g., 'File on AI', 'File on Mathematics') that is clearly does not related to each other.\n"         
+#                     # "- A 'mixed' folder with both files and subfolders should usually be SPLIT to preserve the subfolder hierarchy."
 
-                    "NOTE: Unless it's very clear that the files are not tightly related to the parent folder and the subfolders are just organizational, it's safer to NOT split.\n\n"
-                    "DO NOT ADD FILES THAT DOES NOT EXIST IN THE INPUT."
-                    "\nReturn a JSON object with a list 'paths_to_aggregate' containing the paths of folders to KEEP TOGETHER."
-                )
-            },
-            {
-                "role": "user",
-                "content": json.dumps(candidates, indent=2)
-            }
-        ],
-        response_format=AggregationDecision,
-        seed=42
-    )
+#                     "NOTE: Unless it's very clear that the files are not tightly related to the parent folder and the subfolders are just organizational, it's safer to NOT split.\n\n"
+#                     "DO NOT ADD FILES THAT DOES NOT EXIST IN THE INPUT."
+#                     "\nReturn a JSON object with a list 'paths_to_aggregate' containing the paths of folders to KEEP TOGETHER."
+#                 )
+#             },
+#             {
+#                 "role": "user",
+#                 "content": json.dumps(candidates, indent=2)
+#             }
+#         ],
+#         response_format=AggregationDecision,
+#         seed=42
+#     )
     
-    decision = completion.choices[0].message.parsed
-    print(f"Aggregation decision: Keeping {len(decision.paths_to_aggregate)} folders as units.")
-    save_debug_log(decision.model_dump(), "02_0_aggregation_decision")
-    return decision.paths_to_aggregate
+#     decision = completion.choices[0].message.parsed
+#     print(f"Aggregation decision: Keeping {len(decision.paths_to_aggregate)} folders as units.")
+#     save_debug_log(decision.model_dump(), "02_0_aggregation_decision")
+#     return decision.paths_to_aggregate
 
 
 def collect_orphan_items(enriched_data: Dict, backbone_path: str, aggregated_paths: List[str] = None) -> List[Dict]:
@@ -690,7 +713,82 @@ def generate_rearrangement_plan(
         if orphan_path not in current_related:
             current_related.append(orphan_path)
 
-    # 3. Convert dicts to RearrangedGroup objects
+    # Save pre-refinement plan
+    pre_refinement_objs = []
+    for p in plan_map.values():
+        pre_refinement_objs.append({
+            "group_name": p["group_name"],
+            "main_item": p.get("main_item", ""),
+            "related_items": list(p["related_items"]),
+            "description": p.get("description", "")
+        })
+    save_debug_log(pre_refinement_objs, "06_pre_refinement_plan")
+
+    # 3. Refine the "Lecture Miscellaneous" group to provide further categorization
+    #    Iterating the map directly is fine, we check for "lecture miscellaneous"
+    misc_key = normalize_key("Lecture Miscellaneous")
+    if misc_key in plan_map and len(plan_map[misc_key]["related_items"]) > 0:
+        misc_items = plan_map[misc_key]["related_items"]
+        print(f"Refining {len(misc_items)} items in the Lecture Miscellaneous folder...")
+        
+        # Prepare a simple list array of dict to give the LLM context
+        # (Alternatively you can map back to orphan.description if tracked, but we parse item names here)
+        misc_payload = []
+        for path in misc_items:
+            # We don't have the original description here easily without passing enriched_data,
+            # but folder names and paths give strong hints to the LLM.
+            misc_payload.append({
+                "item_path": path,
+                "filename": path.split('/')[-1]
+            })
+
+        client = OpenAI()
+        try:
+            completion = client.beta.chat.completions.parse(
+                model="gpt-5-mini",
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "You are organizing course files. These files were originally dumped into a 'Lecture Miscellaneous' folder. "
+                            "Your job is to further categorize them into specific logical groups (e.g., 'ROS Tutorials', 'Administrivia', 'Project Files', 'Discussion Sections', etc.).\n"
+                            "Group items by their overarching subject or file type.\n"
+                            "Provide a new group name and a brief description for each item."
+                        )
+                    },
+                    {
+                        "role": "user",
+                        "content": json.dumps(misc_payload, indent=2)
+                    }
+                ],
+                response_format=MiscRefinementResponse,
+                seed=42
+            )
+            refined_result = completion.choices[0].message.parsed
+            
+            # Remove the old Miscellaneous array
+            plan_map[misc_key]["related_items"] = []
+            
+            # Repopulate
+            for assignment in refined_result.assignments:
+                new_key = normalize_key(assignment.new_group_name)
+                
+                if new_key not in plan_map:
+                    plan_map[new_key] = {
+                        "group_name": assignment.new_group_name,
+                        "main_item": "", 
+                        "description": assignment.new_group_description,
+                        "related_items": []
+                    }
+                
+                if assignment.item_path not in plan_map[new_key]["related_items"]:
+                    plan_map[new_key]["related_items"].append(assignment.item_path)
+            
+            print(f"Successfully refined the Miscellaneous folder into specific categories.")
+        except Exception as e:
+            print(f"Failed to refine Miscellaneous folder: {e}")
+
+    # 4. Convert dicts to RearrangedGroup objects
     final_plan_objs = []
     
     for p in plan_map.values():
@@ -706,7 +804,7 @@ def generate_rearrangement_plan(
         })
     
     # Save plan to debug log as a clean list of dicts
-    save_debug_log(final_plan_objs, "06_rearrangement_plan")
+    save_debug_log(final_plan_objs, "07_rearrangement_plan")
     
     print(f"Generated rearrangement plan with {len(final_plan_objs)} groups.")
     return final_plan_objs
@@ -779,34 +877,62 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str, multi_match: bool
     backbone_json = json.dumps(backbone_subtree, indent=2)
     save_debug_log(backbone_subtree, "02_1_backbone_subtree")
 
-    groups_completion = client.beta.chat.completions.parse(
-        model="gpt-5-mini",
-        messages=[
-            {
-                "role": "system",
-                "content": (
-                    "You are organizing university course materials.\n"
-                    "Given the backbone folder structure (the main lecture folder), "
-                    "generate a rearranged for main backbone folder into a structure logical     group for sub-unit.\n"
-                    "For material file that are related, create a group "
-                    "with a descriptive name (e.g., group_name: 'Lecture xx: <Topic>'), "
-                    "as main_item, and a brief description of the topic.\n"
-                    "Only create groups from the Backbone folder subfolder — these represent "
-                    "the chronological units of the course.\n"
-                    "At the end, also include 'Lecture Miscellaneous' group with no main_itemfor files that don't fit into a specific lecture unit.\n"
-                    "CRITICAL RULE: You MUST use exact file paths from the input JSON for 'main_item' and 'related_items'. Do NOT invent or guess file paths (e.g. do not add 'sol-disc12' if it is not in the input)."
-                )
-            },
-            {
-                "role": "user",
-                "content": backbone_json
-            }
-        ],
-        response_format=BackboneGroupsResponse,
-        seed=42
-    )
+    # groups_completion = client.beta.chat.completions.parse(
+    #     model="gpt-5-mini",
+    #     messages=[
+    #         {
+    #             "role": "system",
+    #             "content": (
+    #                 "You are organizing university course materials.\n"
+    #                 "Given the backbone folder structure (the main lecture folder), "
+    #                 "generate a rearranged for main backbone folder into a structure logical     group for sub-unit.\n"
+    #                 "For material file that are related, create a group "
+    #                 "with a descriptive name (e.g., group_name: 'Lecture xx: <Topic>'), "
+    #                 "as main_item, and a brief description of the topic.\n"
+    #                 "Only create groups from the Backbone folder subfolder — these represent "
+    #                 "the chronological units of the course.\n"
+    #                 "At the end, also include 'Lecture Miscellaneous' group with no main_itemfor files that don't fit into a specific lecture unit.\n"
+    #                 "CRITICAL RULE: You MUST use exact file paths from the input JSON for 'main_item' and 'related_items'. Do NOT invent or guess file paths (e.g. do not add 'sol-disc12' if it is not in the input)."
+    #             )
+    #         },
+    #         {
+    #             "role": "user",
+    #             "content": backbone_json
+    #         }
+    #     ],
+    #     response_format=BackboneGroupsResponse,
+    #     seed=42
+    # )
+    # backbone_groups: List[BackboneGroup] = groups_completion.choices[0].message.parsed.groups
+    # Hard code each individual backbone child as its own main item
+    backbone_groups: List[BackboneGroup] = []
+    
+    for child in backbone_subtree.get('children', []) or []:
+        name = child.get('name', 'Unknown')
+        rel_path = child.get('relative_path', name)
+        
+        # Preserve the description. If it's a folder, aggregate child descriptions.
+        raw_desc = child.get('description', '').strip()
+        if not raw_desc and child.get('type') == 'folder':
+            raw_desc = aggregate_folder_descriptions(child)
+            
+        group = BackboneGroup(
+            group_name=name,                 # Hardcoded group name from file/folder name
+            main_item=rel_path,              # Hardcoded main item path
+            related_items=[],                # Empty initially; orphans will match into here
+            description=raw_desc or f"Topic material for {name}" # Keeps the description!
+        )
+        backbone_groups.append(group)
 
-    backbone_groups: List[BackboneGroup] = groups_completion.choices[0].message.parsed.groups
+    # Append a generic miscellaneous group at the end just like the LLM prompt used to
+    backbone_groups.append(BackboneGroup(
+        group_name="Lecture Miscellaneous",
+        main_item="",
+        related_items=[],
+        description="Miscellaneous materials that do not fit perfectly into other units."
+    ))
+
+    
     print(f"Generated {len(backbone_groups)} backbone groups.")
     save_debug_log([g.model_dump() for g in backbone_groups], "02_2_backbone_groups")
 
@@ -827,7 +953,7 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str, multi_match: bool
     # Print some sample orphans to verify collection
     print("Sample orphans:")
     for o in orphans[:5]:
-        print(f" - {o['name']} ({o['type']})")
+        _safe_print(f" - {o['name']} ({o['type']})")
 
     # Convert backbone_groups to dicts so they are JSON serializable
     # and truncate long descriptions if necessary
@@ -949,9 +1075,9 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str, multi_match: bool
                         if normalized in normalized_to_original:
                             match.item_path = normalized_to_original[normalized]
                             filtered_matches.append(match)
-                            print(f"  - Fixed LLM path: '{cleaned_path}' → '{match.item_path}'")
+                            _safe_print(f"  - Fixed LLM path: '{cleaned_path}' -> '{match.item_path}'")
                         else:
-                            print(f"  - Warning: Filtered out hallucinated item: {cleaned_path}")
+                            _safe_print(f"  - Warning: Filtered out hallucinated item: {cleaned_path}")
 
                 all_matches.extend(filtered_matches)
                 print(f"  - Matched {len(filtered_matches)} valid items in this batch.")
@@ -959,7 +1085,7 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str, multi_match: bool
                 print(f"  - Warning: No matches returned for this batch.")
 
         except Exception as e:
-            print(f"  - Error processing batch: {e}")
+            _safe_print(f"  - Error processing batch: {e}")
             # Continue to next batch instead of crashing entirely
 
     matches = OrphanMatchResponse(matches=all_matches)
@@ -1363,13 +1489,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--input",
         required=False,
-        default="bfs_v3_tree.json",
+        default="bfs_v3_tree_study_106b.json",
         help="Input JSON filename located in 'input' folder (e.g. bfs_v3_tree.json)."
     )
     parser.add_argument(
         "--db",
         required=False,
-        default=None,
+        default="EECS 106B_metadata.db",
         help="Metadata database filename in 'input' folder (e.g. 'EECS 106B_metadata.db'). Auto-detected if only one *_metadata.db exists."
     )
     parser.add_argument(
@@ -1380,7 +1506,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--multi-match",
-        action="store_true",
+        required=False,
+        default=False,
+        #action="store_true",
         help="If set, uses the multi-match prompt to assign orphans to multiple groups if applicable."
     )
     args = parser.parse_args()

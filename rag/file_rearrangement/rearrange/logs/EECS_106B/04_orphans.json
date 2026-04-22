@@ -1,156 +1,324 @@
 [
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/118_disc.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/118_disc.pdf",
+    "structure_path": "study/.DS_Store",
+    "relative_path": "study_106b/study/.DS_Store",
+    "name": ".DS_Store",
+    "type": "file",
+    "description": ""
+  },
+  {
+    "structure_path": "study/disc/.DS_Store",
+    "relative_path": "study_106b/study/disc/.DS_Store",
+    "name": ".DS_Store",
+    "type": "file",
+    "description": ""
+  },
+  {
+    "structure_path": "study/disc/118_disc.pdf",
+    "relative_path": "study_106b/study/disc/118_disc.pdf",
     "name": "118_disc.pdf",
     "type": "file",
     "description": "A discussion session note for Robotic Manipulation and Interaction, focusing on dynamical systems, state-space representation, state, input, and output vectors, phase variables, and equilibrium points in the context of linear and nonlinear systems."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/125_disc.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/125_disc.pdf",
+    "structure_path": "study/disc/125_disc.pdf",
+    "relative_path": "study_106b/study/disc/125_disc.pdf",
     "name": "125_disc.pdf",
     "type": "file",
     "description": "This is a discussion lecture note focusing on Lyapunov stability theory for dynamical systems, particularly emphasizing the use of energy-like functions to study stability without solving the system's equations directly. Key topics include definitions of Lyapunov stability, energy-like (positive definite) functions, and the basic Lyapunov theorem."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/217_disc.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/217_disc.pdf",
+    "structure_path": "study/disc/217_disc.pdf",
+    "relative_path": "study_106b/study/disc/217_disc.pdf",
     "name": "217_disc.pdf",
     "type": "file",
     "description": "This is a set of lecture notes for a robotics course, focusing on Pfaffian constraints, holonomic and nonholonomic systems, equivalent control systems, and Lie brackets, including their mathematical representations and implications for robot motion and controllability."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/421_disc.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/421_disc.pdf",
+    "structure_path": "study/disc/421_disc.pdf",
+    "relative_path": "study_106b/study/disc/421_disc.pdf",
     "name": "421_disc.pdf",
     "type": "file",
     "description": "A discussion session summary for Robotic Manipulation and Interaction, focusing on optimal control, dynamic programming, and reinforcement learning, with worked examples and theoretical frameworks for solving discrete-time optimal control problems."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_10_Control_Barrier_Functions.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_10_Control_Barrier_Functions.pdf",
-    "name": "Discussion_10_Control_Barrier_Functions.pdf",
-    "type": "file",
-    "description": "A discussion note for a robotics course, introducing the concept of control barrier functions (CBFs), defining safe sets, and explaining how CBFs can be used with quadratic programming to ensure system safety while allowing for task execution."
+    "structure_path": "study/disc/disc01",
+    "relative_path": "study_106b/study/disc/disc01",
+    "name": "disc01",
+    "type": "folder_unit",
+    "description": "Folder containing: Discussion_1_Dynamical_Systems.pdf, Discussion_1_Dynamical_Systems_Solution.pdf. Details: Discussion_1_Dynamical_Systems.pdf: A discussion handout for a robotics course, covering foundational concepts in dynamical systems, linear control, state space representation, stability analysis, and state feedback control. | Discussion_1_Dynamical_Systems_Solution.pdf: A discussion session handout for Robotic Manipulation and Interaction, focusing on dynamical systems and linear control. It covers state space modeling, linear differential equations, stability concepts, and state feedback control with worked examples and solutions."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_11_OCRL.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_11_OCRL.pdf",
-    "name": "Discussion_11_OCRL.pdf",
-    "type": "file",
-    "description": "A discussion handout for a robotics course, covering the fundamentals of optimal control, dynamic programming, and reinforcement learning, including practical problems and examples such as LQR and gridworld."
+    "structure_path": "study/disc/disc02",
+    "relative_path": "study_106b/study/disc/disc02",
+    "name": "disc02",
+    "type": "folder_unit",
+    "description": "Folder containing: Discussion_2_Lyapunov_Stability.pdf, Discussion_2_Lyapunov_Stability_Solns.pdf. Details: Discussion_2_Lyapunov_Stability.pdf: A discussion handout primarily focused on Lyapunov stability, including its formal definition, the use of energy-like functions (locally positive definite and positive definite functions), and the basic theorem of Lyapunov for analyzing stability in dynamical systems. | Discussion_2_Lyapunov_Stability_Solns.pdf: A discussion handout for a robotics course, covering Lyapunov stability, energy-like functions, and the basic theorem of Lyapunov, including formal definitions, worked examples, and applications to dynamical systems."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems.pdf",
-    "name": "Discussion_1_Dynamical_Systems.pdf",
-    "type": "file",
-    "description": "A discussion handout for a robotics course, covering foundational concepts in dynamical systems, linear control, state space representation, stability analysis, and state feedback control."
+    "structure_path": "study/disc/disc03",
+    "relative_path": "study_106b/study/disc/disc03",
+    "name": "disc03",
+    "type": "folder_unit",
+    "description": "Folder containing: Discussion_3_Feedback_Linearization.pdf, Discussion_3_Feedback_Linearization_Solns.pdf. Details: Discussion_3_Feedback_Linearization.pdf: A discussion handout for a robotics course session, focusing on feedback linearization in control systems. It covers the principles of SISO and MIMO feedback linearization, relative degree, Lie derivatives, and provides example problems involving nonlinear systems such as the pendulum. | Discussion_3_Feedback_Linearization_Solns.pdf: A discussion handout for a robotics course, covering the principles and techniques of feedback linearization for both single-input single-output (SISO) and multi-input multi-output (MIMO) nonlinear systems, including the concepts of Lie derivatives and relative degree."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems_Solution.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_1_Dynamical_Systems_Solution.pdf",
-    "name": "Discussion_1_Dynamical_Systems_Solution.pdf",
-    "type": "file",
-    "description": "A discussion session handout for Robotic Manipulation and Interaction, focusing on dynamical systems and linear control. It covers state space modeling, linear differential equations, stability concepts, and state feedback control with worked examples and solutions."
+    "structure_path": "study/disc/disc04",
+    "relative_path": "study_106b/study/disc/disc04",
+    "name": "disc04",
+    "type": "folder_unit",
+    "description": "Folder containing: Discussion_4_Model_Predictive_Control.pdf, Discussion_4_Model_Predictive_Control_Solns.pdf. Details: Discussion_4_Model_Predictive_Control.pdf: A discussion handout for a robotics course, covering the fundamentals of Model Predictive Control (MPC), including optimization problems, MPC formulation, and the integration of constraints for tasks like obstacle avoidance. | Discussion_4_Model_Predictive_Control_Solns.pdf: A discussion handout for a robotics course, focusing on model predictive control (MPC), including optimization problem formulation, unconstrained and constrained MPC, and practical considerations such as warm-starting and obstacle avoidance."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_2_Lyapunov_Stability_Solns.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_2_Lyapunov_Stability_Solns.pdf",
-    "name": "Discussion_2_Lyapunov_Stability_Solns.pdf",
-    "type": "file",
-    "description": "A discussion handout for a robotics course, covering Lyapunov stability, energy-like functions, and the basic theorem of Lyapunov, including formal definitions, worked examples, and applications to dynamical systems."
+    "structure_path": "study/disc/disc05",
+    "relative_path": "study_106b/study/disc/disc05",
+    "name": "disc05",
+    "type": "folder_unit",
+    "description": "Folder containing: .DS_Store, Discussion_5_Kinematic_Constraints.pdf, Discussion_5_Kinematic_Constraints_Solns.pdf. Details: Discussion_5_Kinematic_Constraints.pdf: A discussion handout for a robotics course covering kinematic constraints, with a focus on Pfaffian constraints, equivalent control systems, and the use of Lie brackets and Lie algebras to analyze system controllability. | Discussion_5_Kinematic_Constraints_Solns.pdf: A discussion session solution PDF for Robotic Manipulation and Interaction, focusing on kinematic constraints, Pfaffian constraints, equivalent control systems, and the role of Lie brackets and Lie algebras in controllability analysis."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization.pdf",
-    "name": "Discussion_3_Feedback_Linearization.pdf",
-    "type": "file",
-    "description": "A discussion handout for a robotics course session, focusing on feedback linearization in control systems. It covers the principles of SISO and MIMO feedback linearization, relative degree, Lie derivatives, and provides example problems involving nonlinear systems such as the pendulum."
+    "structure_path": "study/disc/disc06",
+    "relative_path": "study_106b/study/disc/disc06",
+    "name": "disc06",
+    "type": "folder_unit",
+    "description": "Folder containing: Discussion_6_Probability_Computer_Vision.pdf, Discussion_6_Probability_Computer_Vision_Boardwork.pdf. Details: Discussion_6_Probability_Computer_Vision.pdf: A discussion handout for a robotics course focusing on probability and computer vision, covering topics such as linearity of expectation, multivariate random variables, Hidden Markov Models, and foundational computer vision concepts like the pinhole camera model and homography. | Discussion_6_Probability_Computer_Vision_Boardwork.pdf: A discussion worksheet focused on probability concepts and their application in computer vision, covering linearity of expectation, multivariate random variables, Hidden Markov Models, and foundational computer vision models such as the pinhole camera and homography."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization_Solns.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_3_Feedback_Linearization_Solns.pdf",
-    "name": "Discussion_3_Feedback_Linearization_Solns.pdf",
-    "type": "file",
-    "description": "A discussion handout for a robotics course, covering the principles and techniques of feedback linearization for both single-input single-output (SISO) and multi-input multi-output (MIMO) nonlinear systems, including the concepts of Lie derivatives and relative degree."
+    "structure_path": "study/disc/disc07",
+    "relative_path": "study_106b/study/disc/disc07",
+    "name": "disc07",
+    "type": "folder_unit",
+    "description": "Folder containing: Discussion_7_SLAM.pdf, Discussion_7_SLAM_Boardwork.pdf, Discussion_7_SLAM_Solns.pdf. Details: Discussion_7_SLAM.pdf: A discussion handout for a robotics course covering Simultaneous Localization and Mapping (SLAM), focusing on its structure, front-end and back-end processing, feature extraction, data association, and Kalman filter-based estimation methods. | Discussion_7_SLAM_Boardwork.pdf: A discussion boardwork file focused on Simultaneous Localization and Mapping (SLAM), emphasizing the division between front end (feature extraction, data association, outlier rejection) and back end (Kalman filtering, Extended Kalman Filtering, and EKF SLAM) processes. | Discussion_7_SLAM_Solns.pdf: A discussion session solution set for Robotic Manipulation and Interaction, focusing on Simultaneous Localization and Mapping (SLAM), including its front-end (feature extraction, data association, outlier rejection) and back-end (Kalman and Extended Kalman Filtering, EKF SLAM) components."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control.pdf",
-    "name": "Discussion_4_Model_Predictive_Control.pdf",
-    "type": "file",
-    "description": "A discussion handout for a robotics course, covering the fundamentals of Model Predictive Control (MPC), including optimization problems, MPC formulation, and the integration of constraints for tasks like obstacle avoidance."
+    "structure_path": "study/disc/disc08",
+    "relative_path": "study_106b/study/disc/disc08",
+    "name": "disc08",
+    "type": "folder_unit",
+    "description": "Folder containing: Discussion_8_Midsemester_Review.pdf, Discussion_8_Midsemester_Review_Boardwork.pdf. Details: Discussion_8_Midsemester_Review.pdf: A midsemester discussion review document for Robotic Manipulation and Interaction, summarizing key course topics including systems modeling, control strategies, constraints, path planning, and the concept of wrenches in robotic dynamics. | Discussion_8_Midsemester_Review_Boardwork.pdf: A discussion handout for a midsemester review in Robotic Manipulation and Interaction, covering key topics such as system modeling, control (including feedback linearization and Lyapunov stability), constraints, path planning, and wrenches in robotics."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control_Solns.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_4_Model_Predictive_Control_Solns.pdf",
-    "name": "Discussion_4_Model_Predictive_Control_Solns.pdf",
-    "type": "file",
-    "description": "A discussion handout for a robotics course, focusing on model predictive control (MPC), including optimization problem formulation, unconstrained and constrained MPC, and practical considerations such as warm-starting and obstacle avoidance."
+    "structure_path": "study/disc/disc09",
+    "relative_path": "study_106b/study/disc/disc09",
+    "name": "disc09",
+    "type": "folder_unit",
+    "description": "Folder containing: Discussion_9_Grasping.pdf, Discussion_9_Grasping_Solns.pdf. Details: Discussion_9_Grasping.pdf: A discussion handout for a robotics course focused on the theory and mathematics of robotic grasping, covering wrenches, adjoints, Jacobians, grasp maps, force closure, and friction cone discretization. | Discussion_9_Grasping_Solns.pdf: A discussion handout for a robotics course, focusing on the mathematical foundations and practical considerations of robotic grasping, including wrenches, adjoints, Jacobians, grasp maps, force closure, and friction cone approximations."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints.pdf",
-    "name": "Discussion_5_Kinematic_Constraints.pdf",
-    "type": "file",
-    "description": "A discussion handout for a robotics course covering kinematic constraints, with a focus on Pfaffian constraints, equivalent control systems, and the use of Lie brackets and Lie algebras to analyze system controllability."
+    "structure_path": "study/disc/disc10",
+    "relative_path": "study_106b/study/disc/disc10",
+    "name": "disc10",
+    "type": "folder_unit",
+    "description": "Folder containing: Discussion_10_Control_Barrier_Functions.pdf. Details: Discussion_10_Control_Barrier_Functions.pdf: A discussion note for a robotics course, introducing the concept of control barrier functions (CBFs), defining safe sets, and explaining how CBFs can be used with quadratic programming to ensure system safety while allowing for task execution."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints_Solns.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_5_Kinematic_Constraints_Solns.pdf",
-    "name": "Discussion_5_Kinematic_Constraints_Solns.pdf",
-    "type": "file",
-    "description": "A discussion session solution PDF for Robotic Manipulation and Interaction, focusing on kinematic constraints, Pfaffian constraints, equivalent control systems, and the role of Lie brackets and Lie algebras in controllability analysis."
+    "structure_path": "study/disc/disc11",
+    "relative_path": "study_106b/study/disc/disc11",
+    "name": "disc11",
+    "type": "folder_unit",
+    "description": "Folder containing: Discussion_11_OCRL.pdf. Details: Discussion_11_OCRL.pdf: A discussion handout for a robotics course, covering the fundamentals of optimal control, dynamic programming, and reinforcement learning, including practical problems and examples such as LQR and gridworld."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_6_Probability_Computer_Vision.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_6_Probability_Computer_Vision.pdf",
-    "name": "Discussion_6_Probability_Computer_Vision.pdf",
+    "structure_path": "study/lec/.DS_Store",
+    "relative_path": "study_106b/study/lec/.DS_Store",
+    "name": ".DS_Store",
     "type": "file",
-    "description": "A discussion handout for a robotics course focusing on probability and computer vision, covering topics such as linearity of expectation, multivariate random variables, Hidden Markov Models, and foundational computer vision concepts like the pinhole camera model and homography."
+    "description": ""
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM.pdf",
-    "name": "Discussion_7_SLAM.pdf",
-    "type": "file",
-    "description": "A discussion handout for a robotics course covering Simultaneous Localization and Mapping (SLAM), focusing on its structure, front-end and back-end processing, feature extraction, data association, and Kalman filter-based estimation methods."
+    "structure_path": "study/lec/boardwork",
+    "relative_path": "study_106b/study/lec/boardwork",
+    "name": "boardwork",
+    "type": "folder_unit",
+    "description": "Folder containing: 3D_Quadrotor_2022.pdf, boardwork_1_26.pdf, boardwork_1_31.pdf, boardwork_2_14.pdf, boardwork_2_16.pdf, boardwork_2_2.pdf, boardwork_2_9.pdf, boardwork_pi.pdf. Details: 3D_Quadrotor_2022.pdf: A lecture slide deck on 3D quadrotor modeling and control, covering quadrotor dynamics, coordinate transformations, and control strategies for robotic manipulation and interaction. | boardwork_1_26.pdf: A lecture note for EECS106B Robotics, covering topics such as Lyapunov stability, energy functions, probability density functions, and feedback linearization in the context of robotic manipulation and control systems. | boardwork_1_31.pdf: This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on nonlinear control systems, feedback linearization, Lie derivatives, regularity, and state feedback laws. | boardwork_2_14.pdf: This file is a set of handwritten lecture notes for a Robotic Manipulation and Interaction course, focusing on advanced concepts in control theory such as controllability, Lie brackets, the Chow theorem, and the Frobenius theorem, with mathematical derivations and examples. | boardwork_2_16.pdf: This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on the mathematical concept of integrability, the Frobenius theorem, and related manifold and constraint structures in higher-dimensional spaces. | boardwork_2_2.pdf: This is a lecture boardwork file for a course on Robotic Manipulation and Interaction, focusing on Multi-Input Multi-Output (MIMO) control systems, particularly continuous-time input-to-output (CTITO) systems, their mathematical representation, and properties such as controllability and relative degree. | boardwork_2_9.pdf: This file appears to be a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on non-holonomic motion planning, Pfaffian systems, constraints, and related mathematical formulations. | boardwork_pi.pdf: A boardwork PDF for Robotic Manipulation and Interaction, focusing on the coefficient of friction, soft finger contacts, and related physical parameters in robotic grasping."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM_Solns.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_7_SLAM_Solns.pdf",
-    "name": "Discussion_7_SLAM_Solns.pdf",
+    "structure_path": "study/ROS/.DS_Store",
+    "relative_path": "study_106b/study/ROS/.DS_Store",
+    "name": ".DS_Store",
     "type": "file",
-    "description": "A discussion session solution set for Robotic Manipulation and Interaction, focusing on Simultaneous Localization and Mapping (SLAM), including its front-end (feature extraction, data association, outlier rejection) and back-end (Kalman and Extended Kalman Filtering, EKF SLAM) components."
+    "description": ""
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review.pdf",
-    "name": "Discussion_8_Midsemester_Review.pdf",
+    "structure_path": "study/ROS/ROS/attachment ROS_basic_concepts.dia of ROS Concepts - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/attachment ROS_basic_concepts.dia of ROS Concepts - ROS Wiki.html",
+    "name": "attachment ROS_basic_concepts.dia of ROS Concepts - ROS Wiki.html",
     "type": "file",
-    "description": "A midsemester discussion review document for Robotic Manipulation and Interaction, summarizing key course topics including systems modeling, control strategies, constraints, path planning, and the concept of wrenches in robotic dynamics."
+    "description": "A documentation page describing the attachment and management of files, specifically focusing on the 'ROS_basic_concepts.dia' file within the ROS Wiki system."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review_Boardwork.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_8_Midsemester_Review_Boardwork.pdf",
-    "name": "Discussion_8_Midsemester_Review_Boardwork.pdf",
+    "structure_path": "study/ROS/ROS/attachment ROS_basic_concepts.png of ROS Concepts - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/attachment ROS_basic_concepts.png of ROS Concepts - ROS Wiki.html",
+    "name": "attachment ROS_basic_concepts.png of ROS Concepts - ROS Wiki.html",
     "type": "file",
-    "description": "A discussion handout for a midsemester review in Robotic Manipulation and Interaction, covering key topics such as system modeling, control (including feedback linearization and Lyapunov stability), constraints, path planning, and wrenches in robotics."
+    "description": "A documentation page focused on the attachment and referencing of the 'ROS_basic_concepts.png' file, illustrating how to manage and refer to attached files within the ROS Wiki."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping.pdf",
-    "name": "Discussion_9_Grasping.pdf",
-    "type": "file",
-    "description": "A discussion handout for a robotics course focused on the theory and mathematics of robotic grasping, covering wrenches, adjoints, Jacobians, grasp maps, force closure, and friction cone discretization."
+    "structure_path": "study/ROS/ROS/CommandLineTools",
+    "relative_path": "study_106b/study/ROS/ROS/CommandLineTools",
+    "name": "CommandLineTools",
+    "type": "folder_unit",
+    "description": "Folder containing: ROS CommandLineTools Review - ROS Wiki.html. Details: ROS CommandLineTools Review - ROS Wiki.html: A review document focused on the design, standardization, and future direction of ROS command-line tools for end users, including discussions on tool syntax, deprecation, tab-completion, and tool consolidation."
   },
   {
-    "structure_path": "EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping_Solns.pdf",
-    "relative_path": "study/EECS 106B/course_website/106b-sp23site/assets/disc/Discussion_9_Grasping_Solns.pdf",
-    "name": "Discussion_9_Grasping_Solns.pdf",
+    "structure_path": "study/ROS/ROS/Concepts (229├ù116).html",
+    "relative_path": "study_106b/study/ROS/ROS/Concepts (229├ù116).html",
+    "name": "Concepts (229├ù116).html",
     "type": "file",
-    "description": "A discussion handout for a robotics course, focusing on the mathematical foundations and practical considerations of robotic grasping, including wrenches, adjoints, Jacobians, grasp maps, force closure, and friction cone approximations."
+    "description": ""
+  },
+  {
+    "structure_path": "study/ROS/ROS/Making sure you're not a bot!.html",
+    "relative_path": "study_106b/study/ROS/ROS/Making sure you're not a bot!.html",
+    "name": "Making sure you're not a bot!.html",
+    "type": "file",
+    "description": "A web page explaining the Anubis Proof-of-Work protection system, focusing on its purpose, mechanism, and rationale for use against automated scraping."
+  },
+  {
+    "structure_path": "study/ROS/ROS/Making sure you're not a bot!__dup2.html",
+    "relative_path": "study_106b/study/ROS/ROS/Making sure you're not a bot!__dup2.html",
+    "name": "Making sure you're not a bot!__dup2.html",
+    "type": "file",
+    "description": ""
+  },
+  {
+    "structure_path": "study/ROS/ROS/msg - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/msg - ROS Wiki.html",
+    "name": "msg - ROS Wiki.html",
+    "type": "file",
+    "description": "A documentation page focused on the ROS message description language, detailing the structure and specification of .msg files, including fields, constants, type rules, and the build process for message generation."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS - ROS Wiki.html",
+    "name": "ROS - ROS Wiki.html",
+    "type": "file",
+    "description": "A documentation page focused on TCPROS, the transport protocol for ROS 1, detailing its role, header fields, and service-specific behaviors."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS CommandLineTools - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS CommandLineTools - ROS Wiki.html",
+    "name": "ROS CommandLineTools - ROS Wiki.html",
+    "type": "file",
+    "description": "A documentation page providing an overview of ROS 1 command-line and graphical tools, focusing on their primary functions and usage within the ROS ecosystem."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS Concepts - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS Concepts - ROS Wiki.html",
+    "name": "ROS Concepts - ROS Wiki.html",
+    "type": "file",
+    "description": "A documentation page focused on the attachment and referencing of the 'ROS_basic_concepts.png' file, illustrating how to manage and refer to attached files within the ROS Wiki."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS Connection Header - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS Connection Header - ROS Wiki.html",
+    "name": "ROS Connection Header - ROS Wiki.html",
+    "type": "file",
+    "description": "A technical documentation page focused on the ROS connection header, detailing its structure, encoding format, example encodings, and the specific fields it contains for message transport in ROS 1."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS EnvironmentVariables - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS EnvironmentVariables - ROS Wiki.html",
+    "name": "ROS EnvironmentVariables - ROS Wiki.html",
+    "type": "file",
+    "description": "A reference guide detailing the primary ROS 1 environment variables, their purposes, and how they influence package discovery, node behavior, system data management, and build processes."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS Higher-Level Concepts - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS Higher-Level Concepts - ROS Wiki.html",
+    "name": "ROS Higher-Level Concepts - ROS Wiki.html",
+    "type": "file",
+    "description": "A ROS Wiki documentation page introducing higher-level concepts in ROS 1, focusing on coordinate frames/transforms, actions/tasks, message ontology, plugins, filters, and robot models."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS Installation - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS Installation - ROS Wiki.html",
+    "name": "ROS Installation - ROS Wiki.html",
+    "type": "file",
+    "description": "A documentation page focused on the end-of-life status of ROS 1, guidance for migration to ROS 2, and directions for ROS 2 installation."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS Introduction - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS Introduction - ROS Wiki.html",
+    "name": "ROS Introduction - ROS Wiki.html",
+    "type": "file",
+    "description": "An introductory documentation page for ROS, focusing on its definition, primary goals, supported operating systems, release structure, and community contribution model."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS NetworkSetup - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS NetworkSetup - ROS Wiki.html",
+    "name": "ROS NetworkSetup - ROS Wiki.html",
+    "type": "file",
+    "description": "A technical guide focused on configuring and troubleshooting network connectivity for ROS 1 systems, emphasizing full connectivity, name resolution, firewall considerations, network debugging, and time synchronization issues."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS StartGuide - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS StartGuide - ROS Wiki.html",
+    "name": "ROS StartGuide - ROS Wiki.html",
+    "type": "file",
+    "description": "A guide page introducing newcomers to the ROS Wiki, focusing on how to get started with ROS, find answers to questions, locate code and packages, and effectively use the wiki as a resource."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS TCPROS - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS TCPROS - ROS Wiki.html",
+    "name": "ROS TCPROS - ROS Wiki.html",
+    "type": "file",
+    "description": "A documentation page focused on TCPROS, the transport protocol for ROS 1, detailing its role, header fields, and service-specific behaviors."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS Technical Overview - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS Technical Overview - ROS Wiki.html",
+    "name": "ROS Technical Overview - ROS Wiki.html",
+    "type": "file",
+    "description": "A technical overview document focused on the internal implementation details of ROS 1, specifically covering the Master, Parameter Server, Node APIs, topic and service connection protocols, and message serialization mechanisms."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS Troubleshooting - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS Troubleshooting - ROS Wiki.html",
+    "name": "ROS Troubleshooting - ROS Wiki.html",
+    "type": "file",
+    "description": "A troubleshooting guide for ROS 1, focusing on diagnosing and resolving common issues such as master node failures, network configuration problems, launch and compilation errors, and best practices for debugging and seeking help."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS Tutorials - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS Tutorials - ROS Wiki.html",
+    "name": "ROS Tutorials - ROS Wiki.html",
+    "type": "file",
+    "description": "A documentation page outlining the structure and main topics of the ROS Tutorials section on the ROS Wiki, primarily focused on guiding users through core ROS concepts, standards, and available learning resources."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS UDPROS - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS UDPROS - ROS Wiki.html",
+    "name": "ROS UDPROS - ROS Wiki.html",
+    "type": "file",
+    "description": "A technical documentation page focused on the UDPROS transport layer in ROS, detailing its purpose, connection negotiation, datagram format, and associated test plan."
+  },
+  {
+    "structure_path": "study/ROS/ROS/ROS YAMLCommandLine - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/ROS YAMLCommandLine - ROS Wiki.html",
+    "name": "ROS YAMLCommandLine - ROS Wiki.html",
+    "type": "file",
+    "description": "A technical guide focused on using YAML syntax for representing and sending ROS messages via the command line, including handling of message structures, special types, and command-line parsing nuances."
+  },
+  {
+    "structure_path": "study/ROS/ROS/rosbuild - ROS Wiki.html",
+    "relative_path": "study_106b/study/ROS/ROS/rosbuild - ROS Wiki.html",
+    "name": "rosbuild - ROS Wiki.html",
+    "type": "file",
+    "description": "A documentation page describing the rosbuild package, which provides scripts and macros for managing the CMake-based build system in ROS 1, including build customization, dependency management, and integration with various compilers and build tools."
+  },
+  {
+    "structure_path": "study/ROS/ROS/Tutorials",
+    "relative_path": "study_106b/study/ROS/ROS/Tutorials",
+    "name": "Tutorials",
+    "type": "folder_unit",
+    "description": "Folder containing: ROS Tutorials BuildingPackages - ROS Wiki.html, ROS Tutorials Creating a Package by Hand - ROS Wiki.html, ROS Tutorials CreatingMsgAndSrv - ROS Wiki.html, ROS Tutorials CreatingPackage - ROS Wiki.html, ROS Tutorials DefiningCustomMessages - ROS Wiki.html, ROS Tutorials ExaminingPublisherSubscriber - ROS Wiki.html, ROS Tutorials ExaminingServiceClient - ROS Wiki.html, ROS Tutorials Getting started with roswtf - ROS Wiki.html, ROS Tutorials InstallingandConfiguringROSEnvironment - ROS Wiki.html, ROS Tutorials MultipleMachines - ROS Wiki.html, ROS Tutorials NavigatingTheFilesystem - ROS Wiki.html, ROS Tutorials NavigatingTheWiki - ROS Wiki.html, ROS Tutorials Packaging your ROS project as a snap - ROS Wiki.html, ROS Tutorials reading msgs from a bag file - ROS Wiki.html, ROS Tutorials Recording and playing back data - ROS Wiki.html, ROS Tutorials rosdep - ROS Wiki.html, ROS Tutorials Roslaunch tips for larger projects - ROS Wiki.html, ROS Tutorials UnderstandingNodes - ROS Wiki.html, ROS Tutorials UnderstandingServicesParams - ROS Wiki.html, ROS Tutorials UnderstandingTopics - ROS Wiki.html, ROS Tutorials Using a C++ class in Python - ROS Wiki.html, ROS Tutorials UsingRosEd - ROS Wiki.html, ROS Tutorials UsingRqtconsoleRoslaunch - ROS Wiki.html, ROS Tutorials UsingRxconsoleRoslaunch - ROS Wiki.html, ROS Tutorials WhereNext - ROS Wiki.html, ROS Tutorials WritingPublisherSubscriber(c++) - ROS Wiki.html, ROS Tutorials WritingPublisherSubscriber(python) - ROS Wiki.html, ROS Tutorials WritingServiceClient(c++) - ROS Wiki.html, ROS Tutorials WritingServiceClient(python) - ROS Wiki.html. Details: ROS Tutorials BuildingPackages - ROS Wiki.html: A beginner-level tutorial focused on building ROS packages, primarily teaching the use of catkin_make and rosmake build tools, workspace structure, and the process of compiling packages and their dependencies. | ROS Tutorials Creating a Package by Hand - ROS Wiki.html: A tutorial document focused on manually creating a ROS package using both rosbuild and catkin build systems, emphasizing the structure, manifest/package.xml files, and essential build configuration. | ROS Tutorials CreatingMsgAndSrv - ROS Wiki.html: A beginner-level tutorial focused on creating and building custom ROS message (msg) and service (srv) files, including their integration into a ROS package and the use of command-line tools for inspection and management. | ROS Tutorials CreatingPackage - ROS Wiki.html: A tutorial document focused on creating ROS packages using roscreate and catkin, managing package dependencies, and customizing package metadata files such as package.xml and CMakeLists.txt. | ROS Tutorials DefiningCustomMessages - ROS Wiki.html: A tutorial document focused on defining, generating, and using custom message types in ROS, including language-specific import methods and managing dependencies. | ROS Tutorials ExaminingPublisherSubscriber - ROS Wiki.html: A beginner-level ROS tutorial focused on running and observing a simple publisher and subscriber, including practical steps and a video demonstration of node communication. | ROS Tutorials ExaminingServiceClient - ROS Wiki.html: A tutorial walkthrough focused on running and examining a simple ROS service and client, including practical execution steps and further example resources. | ROS Tutorials Getting started with roswtf - ROS Wiki.html: A beginner tutorial introducing the roswtf tool, focusing on its usage for diagnosing ROS system issues through static and online checks, and interpreting its warnings and errors. | ROS Tutorials InstallingandConfiguringROSEnvironment - ROS Wiki.html: A beginner tutorial focused on installing ROS, configuring the ROS environment, and creating and managing ROS workspaces using catkin and rosws. | ROS Tutorials MultipleMachines - ROS Wiki.html: A tutorial guide focused on running ROS across multiple machines, emphasizing configuration of ROS_MASTER_URI, node deployment, and troubleshooting networked ROS systems. | ROS Tutorials NavigatingTheFilesystem - ROS Wiki.html: A beginner tutorial focused on navigating the ROS filesystem, introducing core filesystem concepts and command-line tools such as rospack, roscd, rosls, and tab completion for efficient navigation and inspection of ROS packages. | ROS Tutorials NavigatingTheWiki - ROS Wiki.html: A beginner-level tutorial focused on navigating the ROS wiki, including understanding the structure of landing, package, and stack pages, and advanced instructions for creating and sorting tutorial pages within a package. | ROS Tutorials Packaging your ROS project as a snap - ROS Wiki.html: A tutorial guide focused on packaging and deploying ROS projects as snaps, covering the snap ecosystem, snapcraft configuration, building, testing, and sharing ROS applications using Snapcraft. | ROS Tutorials reading msgs from a bag file - ROS Wiki.html: A tutorial primarily about reading messages from ROS bag files, focusing on two main extraction methods: direct playback with topic echoing and using the ros_readbagfile script for efficient topic extraction and YAML analysis. | ROS Tutorials Recording and playing back data - ROS Wiki.html: A beginner-level ROS tutorial focused on recording and playing back data using rosbag, including how to record all or selected topics, examine and replay bag files, and understand the limitations of rosbag record/play. | ROS Tutorials rosdep - ROS Wiki.html: A tutorial focused on managing system dependencies in ROS using rosdep, including how dependencies are declared, installed, and resolved via rosdep and its rule database. | ROS Tutorials Roslaunch tips for larger projects - ROS Wiki.html: A tutorial focused on best practices for structuring and reusing roslaunch files in large ROS projects, emphasizing organization, parameter management, machine allocation, and configuration packaging. | ROS Tutorials UnderstandingNodes - ROS Wiki.html: A beginner tutorial introducing ROS nodes, focusing on core ROS graph concepts and the use of command-line tools such as roscore, rosnode, and rosrun. | ROS Tutorials UnderstandingServicesParams - ROS Wiki.html: A beginner tutorial introducing ROS services and parameters, focusing on the use of rosservice and rosparam command-line tools for interacting with services and the parameter server. | ROS Tutorials UnderstandingTopics - ROS Wiki.html: A beginner tutorial focused on understanding ROS topics, including their structure, message types, and practical tools for inspecting, publishing, and visualizing topic data in ROS. | ROS Tutorials Using a C++ class in Python - ROS Wiki.html: A technical tutorial focused on creating Python bindings for C++ classes that use ROS messages, detailing the process of serialization/deserialization, wrapper implementation, and integration using Boost.Python. | ROS Tutorials UsingRosEd - ROS Wiki.html: A beginner-level tutorial focused on using the 'rosed' tool in ROS for editing package files, including tab completion and editor configuration. | ROS Tutorials UsingRqtconsoleRoslaunch - ROS Wiki.html: A beginner-level ROS tutorial focused on using rqt_console and rqt_logger_level for debugging, and roslaunch for starting and managing multiple nodes via launch files. | ROS Tutorials UsingRxconsoleRoslaunch - ROS Wiki.html: A beginner-level ROS tutorial focused on using rxconsole and rxloggerlevel for debugging, and roslaunch for starting and managing multiple nodes via launch files. | ROS Tutorials WhereNext - ROS Wiki.html: A tutorial overview introducing next steps for ROS beginners, focusing on simulation, visualization, coordinate transforms, and advanced ROS capabilities. | ROS Tutorials WritingPublisherSubscriber(c++) - ROS Wiki.html: A step-by-step tutorial for writing simple publisher and subscriber nodes in C++ for ROS, focusing on node creation, message publishing and subscribing, and building nodes using both rosbuild and catkin build systems. | ROS Tutorials WritingPublisherSubscriber(python) - ROS Wiki.html: A step-by-step tutorial for writing simple ROS publisher and subscriber nodes in Python, focusing on node creation, message publishing, message subscription, and the build process. | ROS Tutorials WritingServiceClient(c++) - ROS Wiki.html: A step-by-step tutorial for writing a simple ROS service and client in C++, focusing on implementing, building, and running service and client nodes using ROS tools. | ROS Tutorials WritingServiceClient(python) - ROS Wiki.html: A step-by-step tutorial focused on writing a simple ROS service and client in Python, including code creation, explanation, and building the nodes."
+  },
+  {
+    "structure_path": "study/ROS/ROSNodeTutorialPython",
+    "relative_path": "study_106b/study/ROS/ROSNodeTutorialPython",
+    "name": "ROSNodeTutorialPython",
+    "type": "folder_unit",
+    "description": "Folder containing: ROSNodeTutorialPython - ROS Wiki.html. Details: ROSNodeTutorialPython - ROS Wiki.html: A tutorial document focused on building Python-based ROS publisher and subscriber nodes with custom messages, parameter server integration, and dynamic reconfigure capabilities."
   }
 ]
