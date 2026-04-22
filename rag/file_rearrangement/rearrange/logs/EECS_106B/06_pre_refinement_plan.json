@@ -1,7 +1,7 @@
 [
   {
     "group_name": "230323-EECS206B_Guest_Lecture.pdf",
-    "main_item": "study_106b/study/lec/slides/230323-EECS206B_Guest_Lecture.pdf",
+    "main_item": "study_106b/study/slides/230323-EECS206B_Guest_Lecture.pdf",
     "related_items": [
       "study_106b/study/disc/disc10"
     ],
@@ -9,13 +9,13 @@
   },
   {
     "group_name": "eecs106b-handcontrol.pdf",
-    "main_item": "study_106b/study/lec/slides/eecs106b-handcontrol.pdf",
+    "main_item": "study_106b/study/slides/eecs106b-handcontrol.pdf",
     "related_items": [],
     "description": "A lecture note excerpt on advanced robotic manipulation, focusing on the dynamics and control of multi-fingered robot hands using Lagrangian mechanics with constraints, including force closure, Pfaffian constraints, Lagrange multipliers, and connections to biological hand control."
   },
   {
     "group_name": "eecs106b-nonholo.pdf",
-    "main_item": "study_106b/study/lec/slides/eecs106b-nonholo.pdf",
+    "main_item": "study_106b/study/slides/eecs106b-nonholo.pdf",
     "related_items": [
       "study_106b/study/disc/217_disc.pdf",
       "study_106b/study/disc/disc05"
@@ -24,7 +24,7 @@
   },
   {
     "group_name": "feedback_linearization.pdf",
-    "main_item": "study_106b/study/lec/slides/feedback_linearization.pdf",
+    "main_item": "study_106b/study/slides/feedback_linearization.pdf",
     "related_items": [
       "study_106b/study/disc/disc03"
     ],
@@ -32,7 +32,7 @@
   },
   {
     "group_name": "grasping_intro.pdf",
-    "main_item": "study_106b/study/lec/slides/grasping_intro.pdf",
+    "main_item": "study_106b/study/slides/grasping_intro.pdf",
     "related_items": [
       "study_106b/study/disc/disc09"
     ],
@@ -40,15 +40,13 @@
   },
   {
     "group_name": "lec2_quadrotor_dynamics.pdf",
-    "main_item": "study_106b/study/lec/slides/lec2_quadrotor_dynamics.pdf",
-    "related_items": [
-      "study_106b/study/lec/boardwork"
-    ],
+    "main_item": "study_106b/study/slides/lec2_quadrotor_dynamics.pdf",
+    "related_items": [],
     "description": "A lecture note on quadrotor dynamics and state-space system modeling, covering the Newton-Euler equations of motion, their application to rigid bodies and quadrotors, and the derivation of state-space models for quadrotor control."
   },
   {
     "group_name": "lec3_state_space.pdf",
-    "main_item": "study_106b/study/lec/slides/lec3_state_space.pdf",
+    "main_item": "study_106b/study/slides/lec3_state_space.pdf",
     "related_items": [
       "study_106b/study/disc/118_disc.pdf",
       "study_106b/study/disc/disc01"
@@ -57,7 +55,7 @@
   },
   {
     "group_name": "lec4_linear_control.pdf",
-    "main_item": "study_106b/study/lec/slides/lec4_linear_control.pdf",
+    "main_item": "study_106b/study/slides/lec4_linear_control.pdf",
     "related_items": [
       "study_106b/study/disc/125_disc.pdf",
       "study_106b/study/disc/disc02"
@@ -66,7 +64,7 @@
   },
   {
     "group_name": "legged-lec-1.pdf",
-    "main_item": "study_106b/study/lec/slides/legged-lec-1.pdf",
+    "main_item": "study_106b/study/slides/legged-lec-1.pdf",
     "related_items": [
       "study_106b/study/disc/421_disc.pdf",
       "study_106b/study/disc/disc11"
@@ -75,7 +73,7 @@
   },
   {
     "group_name": "legged-lec-2.pdf",
-    "main_item": "study_106b/study/lec/slides/legged-lec-2.pdf",
+    "main_item": "study_106b/study/slides/legged-lec-2.pdf",
     "related_items": [
       "study_106b/study/disc/disc04"
     ],
@@ -83,7 +81,7 @@
   },
   {
     "group_name": "SLAM_Presentation___106B_2023.pdf",
-    "main_item": "study_106b/study/lec/slides/SLAM_Presentation___106B_2023.pdf",
+    "main_item": "study_106b/study/slides/SLAM_Presentation___106B_2023.pdf",
     "related_items": [
       "study_106b/study/disc/disc06",
       "study_106b/study/disc/disc07"
@@ -92,7 +90,7 @@
   },
   {
     "group_name": "steering-nonholo.pdf",
-    "main_item": "study_106b/study/lec/slides/steering-nonholo.pdf",
+    "main_item": "study_106b/study/slides/steering-nonholo.pdf",
     "related_items": [],
     "description": "A lecture note primarily focused on the optimal control and steering of nonholonomic systems, especially the nonholonomic integrator, using chained form representations and feedback linearization techniques."
   },
@@ -101,9 +99,9 @@
     "main_item": "",
     "related_items": [
       "study_106b/study/.DS_Store",
+      "study_106b/study/boardwork",
       "study_106b/study/disc/.DS_Store",
       "study_106b/study/disc/disc08",
-      "study_106b/study/lec/.DS_Store",
       "study_106b/study/ROS/.DS_Store",
       "study_106b/study/ROS/ROS/attachment ROS_basic_concepts.dia of ROS Concepts - ROS Wiki.html",
       "study_106b/study/ROS/ROS/attachment ROS_basic_concepts.png of ROS Concepts - ROS Wiki.html",

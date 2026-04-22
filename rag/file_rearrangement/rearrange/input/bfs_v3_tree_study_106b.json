@@ -15,6 +15,53 @@
           "relative_path": "study_106b/study/.DS_Store"
         },
         {
+          "name": "boardwork",
+          "type": "folder",
+          "relative_path": "study_106b/study/boardwork",
+          "children": [
+            {
+              "name": "3D_Quadrotor_2022.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/boardwork/3D_Quadrotor_2022.pdf"
+            },
+            {
+              "name": "boardwork_1_26.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/boardwork/boardwork_1_26.pdf"
+            },
+            {
+              "name": "boardwork_1_31.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/boardwork/boardwork_1_31.pdf"
+            },
+            {
+              "name": "boardwork_2_14.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/boardwork/boardwork_2_14.pdf"
+            },
+            {
+              "name": "boardwork_2_16.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/boardwork/boardwork_2_16.pdf"
+            },
+            {
+              "name": "boardwork_2_2.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/boardwork/boardwork_2_2.pdf"
+            },
+            {
+              "name": "boardwork_2_9.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/boardwork/boardwork_2_9.pdf"
+            },
+            {
+              "name": "boardwork_pi.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/boardwork/boardwork_pi.pdf"
+            }
+          ]
+        },
+        {
           "name": "disc",
           "type": "folder",
           "relative_path": "study_106b/study/disc",
@@ -228,132 +275,6 @@
                   "name": "Discussion_11_OCRL.pdf",
                   "type": "file",
                   "relative_path": "study_106b/study/disc/disc11/Discussion_11_OCRL.pdf"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "lec",
-          "type": "folder",
-          "relative_path": "study_106b/study/lec",
-          "children": [
-            {
-              "name": ".DS_Store",
-              "type": "file",
-              "relative_path": "study_106b/study/lec/.DS_Store"
-            },
-            {
-              "name": "boardwork",
-              "type": "folder",
-              "relative_path": "study_106b/study/lec/boardwork",
-              "children": [
-                {
-                  "name": "3D_Quadrotor_2022.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/boardwork/3D_Quadrotor_2022.pdf"
-                },
-                {
-                  "name": "boardwork_1_26.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/boardwork/boardwork_1_26.pdf"
-                },
-                {
-                  "name": "boardwork_1_31.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/boardwork/boardwork_1_31.pdf"
-                },
-                {
-                  "name": "boardwork_2_14.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/boardwork/boardwork_2_14.pdf"
-                },
-                {
-                  "name": "boardwork_2_16.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/boardwork/boardwork_2_16.pdf"
-                },
-                {
-                  "name": "boardwork_2_2.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/boardwork/boardwork_2_2.pdf"
-                },
-                {
-                  "name": "boardwork_2_9.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/boardwork/boardwork_2_9.pdf"
-                },
-                {
-                  "name": "boardwork_pi.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/boardwork/boardwork_pi.pdf"
-                }
-              ]
-            },
-            {
-              "name": "slides",
-              "type": "folder",
-              "relative_path": "study_106b/study/lec/slides",
-              "children": [
-                {
-                  "name": "230323-EECS206B_Guest_Lecture.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/230323-EECS206B_Guest_Lecture.pdf"
-                },
-                {
-                  "name": "eecs106b-handcontrol.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/eecs106b-handcontrol.pdf"
-                },
-                {
-                  "name": "eecs106b-nonholo.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/eecs106b-nonholo.pdf"
-                },
-                {
-                  "name": "feedback_linearization.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/feedback_linearization.pdf"
-                },
-                {
-                  "name": "grasping_intro.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/grasping_intro.pdf"
-                },
-                {
-                  "name": "lec2_quadrotor_dynamics.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/lec2_quadrotor_dynamics.pdf"
-                },
-                {
-                  "name": "lec3_state_space.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/lec3_state_space.pdf"
-                },
-                {
-                  "name": "lec4_linear_control.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/lec4_linear_control.pdf"
-                },
-                {
-                  "name": "legged-lec-1.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/legged-lec-1.pdf"
-                },
-                {
-                  "name": "legged-lec-2.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/legged-lec-2.pdf"
-                },
-                {
-                  "name": "SLAM_Presentation___106B_2023.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/SLAM_Presentation___106B_2023.pdf"
-                },
-                {
-                  "name": "steering-nonholo.pdf",
-                  "type": "file",
-                  "relative_path": "study_106b/study/lec/slides/steering-nonholo.pdf"
                 }
               ]
             }
@@ -666,6 +587,73 @@
                   "relative_path": "study_106b/study/ROS/ROSNodeTutorialPython/ROSNodeTutorialPython - ROS Wiki.html"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "slides",
+          "type": "folder",
+          "relative_path": "study_106b/study/slides",
+          "children": [
+            {
+              "name": "230323-EECS206B_Guest_Lecture.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/230323-EECS206B_Guest_Lecture.pdf"
+            },
+            {
+              "name": "eecs106b-handcontrol.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/eecs106b-handcontrol.pdf"
+            },
+            {
+              "name": "eecs106b-nonholo.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/eecs106b-nonholo.pdf"
+            },
+            {
+              "name": "feedback_linearization.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/feedback_linearization.pdf"
+            },
+            {
+              "name": "grasping_intro.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/grasping_intro.pdf"
+            },
+            {
+              "name": "lec2_quadrotor_dynamics.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/lec2_quadrotor_dynamics.pdf"
+            },
+            {
+              "name": "lec3_state_space.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/lec3_state_space.pdf"
+            },
+            {
+              "name": "lec4_linear_control.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/lec4_linear_control.pdf"
+            },
+            {
+              "name": "legged-lec-1.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/legged-lec-1.pdf"
+            },
+            {
+              "name": "legged-lec-2.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/legged-lec-2.pdf"
+            },
+            {
+              "name": "SLAM_Presentation___106B_2023.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/SLAM_Presentation___106B_2023.pdf"
+            },
+            {
+              "name": "steering-nonholo.pdf",
+              "type": "file",
+              "relative_path": "study_106b/study/slides/steering-nonholo.pdf"
             }
           ]
         }

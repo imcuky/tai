@@ -1,7 +1,7 @@
 [
   {
     "group_name": "230323-EECS206B_Guest_Lecture.pdf",
-    "main_item": "study_106b/study/lec/slides/230323-EECS206B_Guest_Lecture.pdf",
+    "main_item": "study_106b/study/slides/230323-EECS206B_Guest_Lecture.pdf",
     "related_items": [
       "study_106b/study/disc/disc10"
     ],
@@ -9,13 +9,13 @@
   },
   {
     "group_name": "eecs106b-handcontrol.pdf",
-    "main_item": "study_106b/study/lec/slides/eecs106b-handcontrol.pdf",
+    "main_item": "study_106b/study/slides/eecs106b-handcontrol.pdf",
     "related_items": [],
     "description": "A lecture note excerpt on advanced robotic manipulation, focusing on the dynamics and control of multi-fingered robot hands using Lagrangian mechanics with constraints, including force closure, Pfaffian constraints, Lagrange multipliers, and connections to biological hand control."
   },
   {
     "group_name": "eecs106b-nonholo.pdf",
-    "main_item": "study_106b/study/lec/slides/eecs106b-nonholo.pdf",
+    "main_item": "study_106b/study/slides/eecs106b-nonholo.pdf",
     "related_items": [
       "study_106b/study/disc/217_disc.pdf",
       "study_106b/study/disc/disc05"
@@ -24,7 +24,7 @@
   },
   {
     "group_name": "feedback_linearization.pdf",
-    "main_item": "study_106b/study/lec/slides/feedback_linearization.pdf",
+    "main_item": "study_106b/study/slides/feedback_linearization.pdf",
     "related_items": [
       "study_106b/study/disc/disc03"
     ],
@@ -32,7 +32,7 @@
   },
   {
     "group_name": "grasping_intro.pdf",
-    "main_item": "study_106b/study/lec/slides/grasping_intro.pdf",
+    "main_item": "study_106b/study/slides/grasping_intro.pdf",
     "related_items": [
       "study_106b/study/disc/disc09"
     ],
@@ -40,15 +40,13 @@
   },
   {
     "group_name": "lec2_quadrotor_dynamics.pdf",
-    "main_item": "study_106b/study/lec/slides/lec2_quadrotor_dynamics.pdf",
-    "related_items": [
-      "study_106b/study/lec/boardwork"
-    ],
+    "main_item": "study_106b/study/slides/lec2_quadrotor_dynamics.pdf",
+    "related_items": [],
     "description": "A lecture note on quadrotor dynamics and state-space system modeling, covering the Newton-Euler equations of motion, their application to rigid bodies and quadrotors, and the derivation of state-space models for quadrotor control."
   },
   {
     "group_name": "lec3_state_space.pdf",
-    "main_item": "study_106b/study/lec/slides/lec3_state_space.pdf",
+    "main_item": "study_106b/study/slides/lec3_state_space.pdf",
     "related_items": [
       "study_106b/study/disc/118_disc.pdf",
       "study_106b/study/disc/disc01"
@@ -57,7 +55,7 @@
   },
   {
     "group_name": "lec4_linear_control.pdf",
-    "main_item": "study_106b/study/lec/slides/lec4_linear_control.pdf",
+    "main_item": "study_106b/study/slides/lec4_linear_control.pdf",
     "related_items": [
       "study_106b/study/disc/125_disc.pdf",
       "study_106b/study/disc/disc02"
@@ -66,7 +64,7 @@
   },
   {
     "group_name": "legged-lec-1.pdf",
-    "main_item": "study_106b/study/lec/slides/legged-lec-1.pdf",
+    "main_item": "study_106b/study/slides/legged-lec-1.pdf",
     "related_items": [
       "study_106b/study/disc/421_disc.pdf",
       "study_106b/study/disc/disc11"
@@ -75,7 +73,7 @@
   },
   {
     "group_name": "legged-lec-2.pdf",
-    "main_item": "study_106b/study/lec/slides/legged-lec-2.pdf",
+    "main_item": "study_106b/study/slides/legged-lec-2.pdf",
     "related_items": [
       "study_106b/study/disc/disc04"
     ],
@@ -83,7 +81,7 @@
   },
   {
     "group_name": "SLAM_Presentation___106B_2023.pdf",
-    "main_item": "study_106b/study/lec/slides/SLAM_Presentation___106B_2023.pdf",
+    "main_item": "study_106b/study/slides/SLAM_Presentation___106B_2023.pdf",
     "related_items": [
       "study_106b/study/disc/disc06",
       "study_106b/study/disc/disc07"
@@ -92,7 +90,7 @@
   },
   {
     "group_name": "steering-nonholo.pdf",
-    "main_item": "study_106b/study/lec/slides/steering-nonholo.pdf",
+    "main_item": "study_106b/study/slides/steering-nonholo.pdf",
     "related_items": [],
     "description": "A lecture note primarily focused on the optimal control and steering of nonholonomic systems, especially the nonholonomic integrator, using chained form representations and feedback linearization techniques."
   },
@@ -103,15 +101,22 @@
     "description": "Miscellaneous materials that do not fit perfectly into other units."
   },
   {
-    "group_name": "System files (.DS_Store)",
+    "group_name": "System Files",
     "main_item": "",
     "related_items": [
       "study_106b/study/.DS_Store",
       "study_106b/study/disc/.DS_Store",
-      "study_106b/study/lec/.DS_Store",
       "study_106b/study/ROS/.DS_Store"
     ],
-    "description": "macOS Finder metadata file — not course content; safe to ignore or remove."
+    "description": "macOS metadata file (.DS_Store); not course content, safe to ignore or delete."
+  },
+  {
+    "group_name": "Boardwork / Lecture Notes",
+    "main_item": "",
+    "related_items": [
+      "study_106b/study/boardwork"
+    ],
+    "description": "Course boardwork or lecture note files — visual notes, whiteboard captures, or instructor sketches."
   },
   {
     "group_name": "Discussion Sections",
@@ -119,7 +124,7 @@
     "related_items": [
       "study_106b/study/disc/disc08"
     ],
-    "description": "Discussion section materials (session 'disc08'): notes, exercises, or handouts for a discussion meeting."
+    "description": "Discussion section materials (discussion 08); problems, solutions, or notes for a discussion session."
   },
   {
     "group_name": "ROS Attachments / Diagrams",
@@ -127,7 +132,7 @@
     "related_items": [
       "study_106b/study/ROS/ROS/attachment ROS_basic_concepts.dia of ROS Concepts - ROS Wiki.html"
     ],
-    "description": "Saved diagram attachment (Dia format) from the ROS Wiki illustrating basic ROS concepts — visual reference material."
+    "description": "Saved attachment (diagram/source .dia) from ROS wiki illustrating basic ROS concepts."
   },
   {
     "group_name": "ROS Attachments / Images",
@@ -135,41 +140,32 @@
     "related_items": [
       "study_106b/study/ROS/ROS/attachment ROS_basic_concepts.png of ROS Concepts - ROS Wiki.html"
     ],
-    "description": "Saved PNG attachment from the ROS Wiki (basic concepts image) — useful for slides or reference."
+    "description": "Saved image (PNG) attachment from ROS wiki — diagram illustrating ROS concepts."
   },
   {
-    "group_name": "ROS Tutorials (local)",
+    "group_name": "ROS Command-Line Tools",
     "main_item": "",
     "related_items": [
       "study_106b/study/ROS/ROS/CommandLineTools",
-      "study_106b/study/ROS/ROS/Tutorials",
-      "study_106b/study/ROS/ROS/ROSNodeTutorialPython"
+      "study_106b/study/ROS/ROS/ROS CommandLineTools - ROS Wiki.html"
     ],
-    "description": "Local copy or folder of materials about ROS command-line tools — tutorial/practical reference."
+    "description": "Local copy or folder related to ROS command-line tools and utilities; quick-reference for CLI usage."
   },
   {
-    "group_name": "Crawled / Misc HTML",
+    "group_name": "ROS Web Artifacts",
     "main_item": "",
     "related_items": [
-      "study_106b/study/ROS/ROS/Making sure you're not a bot!.html"
-    ],
-    "description": "Saved/crawled HTML page (likely a CAPTCHA or intermediary page from the wiki). Not core content; may be a duplicate or not useful."
-  },
-  {
-    "group_name": "Crawled / Misc HTML (duplicate)",
-    "main_item": "",
-    "related_items": [
+      "study_106b/study/ROS/ROS/Making sure you're not a bot!.html",
       "study_106b/study/ROS/ROS/Making sure you're not a bot!__dup2.html"
     ],
-    "description": "Duplicate of a crawled/intermediary page (CAPTCHA-like). Can be removed if cleaning up duplicates."
+    "description": "Web artifact/captcha or intermediary page saved while downloading ROS wiki content; not core material."
   },
   {
-    "group_name": "ROS Reference (Wiki pages)",
+    "group_name": "ROS Reference Pages",
     "main_item": "",
     "related_items": [
       "study_106b/study/ROS/ROS/msg - ROS Wiki.html",
       "study_106b/study/ROS/ROS/ROS - ROS Wiki.html",
-      "study_106b/study/ROS/ROS/ROS CommandLineTools - ROS Wiki.html",
       "study_106b/study/ROS/ROS/ROS Concepts - ROS Wiki.html",
       "study_106b/study/ROS/ROS/ROS Connection Header - ROS Wiki.html",
       "study_106b/study/ROS/ROS/ROS EnvironmentVariables - ROS Wiki.html",
@@ -177,6 +173,7 @@
       "study_106b/study/ROS/ROS/ROS Installation - ROS Wiki.html",
       "study_106b/study/ROS/ROS/ROS Introduction - ROS Wiki.html",
       "study_106b/study/ROS/ROS/ROS NetworkSetup - ROS Wiki.html",
+      "study_106b/study/ROS/ROS/ROS StartGuide - ROS Wiki.html",
       "study_106b/study/ROS/ROS/ROS TCPROS - ROS Wiki.html",
       "study_106b/study/ROS/ROS/ROS Technical Overview - ROS Wiki.html",
       "study_106b/study/ROS/ROS/ROS Troubleshooting - ROS Wiki.html",
@@ -184,15 +181,16 @@
       "study_106b/study/ROS/ROS/ROS YAMLCommandLine - ROS Wiki.html",
       "study_106b/study/ROS/ROS/rosbuild - ROS Wiki.html"
     ],
-    "description": "Saved ROS Wiki page about message (msg) types — reference documentation for message definitions and usage."
+    "description": "ROS wiki reference page about message (msg) definitions and usage — reference documentation."
   },
   {
-    "group_name": "ROS Tutorials (Wiki pages)",
+    "group_name": "ROS Tutorials",
     "main_item": "",
     "related_items": [
-      "study_106b/study/ROS/ROS/ROS StartGuide - ROS Wiki.html",
-      "study_106b/study/ROS/ROS/ROS Tutorials - ROS Wiki.html"
+      "study_106b/study/ROS/ROS/ROS Tutorials - ROS Wiki.html",
+      "study_106b/study/ROS/ROS/Tutorials",
+      "study_106b/study/ROS/ROSNodeTutorialPython"
     ],
-    "description": "Start guide from the ROS Wiki — step-by-step walkthrough for getting started with ROS (tutorial-style)."
+    "description": "Index page for ROS tutorials on the wiki — links to hands-on walkthroughs and exercises."
   }
 ]

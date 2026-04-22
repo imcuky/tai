@@ -7,6 +7,13 @@
     "description": ""
   },
   {
+    "structure_path": "study/boardwork",
+    "relative_path": "study_106b/study/boardwork",
+    "name": "boardwork",
+    "type": "folder_unit",
+    "description": "Folder containing: 3D_Quadrotor_2022.pdf, boardwork_1_26.pdf, boardwork_1_31.pdf, boardwork_2_14.pdf, boardwork_2_16.pdf, boardwork_2_2.pdf, boardwork_2_9.pdf, boardwork_pi.pdf. Details: 3D_Quadrotor_2022.pdf: A lecture slide deck on 3D quadrotor modeling and control, covering quadrotor dynamics, coordinate transformations, and control strategies for robotic manipulation and interaction. | boardwork_1_26.pdf: A lecture note for EECS106B Robotics, covering topics such as Lyapunov stability, energy functions, probability density functions, and feedback linearization in the context of robotic manipulation and control systems. | boardwork_1_31.pdf: This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on nonlinear control systems, feedback linearization, Lie derivatives, regularity, and state feedback laws. | boardwork_2_14.pdf: This file is a set of handwritten lecture notes for a Robotic Manipulation and Interaction course, focusing on advanced concepts in control theory such as controllability, Lie brackets, the Chow theorem, and the Frobenius theorem, with mathematical derivations and examples. | boardwork_2_16.pdf: This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on the mathematical concept of integrability, the Frobenius theorem, and related manifold and constraint structures in higher-dimensional spaces. | boardwork_2_2.pdf: This is a lecture boardwork file for a course on Robotic Manipulation and Interaction, focusing on Multi-Input Multi-Output (MIMO) control systems, particularly continuous-time input-to-output (CTITO) systems, their mathematical representation, and properties such as controllability and relative degree. | boardwork_2_9.pdf: This file appears to be a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on non-holonomic motion planning, Pfaffian systems, constraints, and related mathematical formulations. | boardwork_pi.pdf: A boardwork PDF for Robotic Manipulation and Interaction, focusing on the coefficient of friction, soft finger contacts, and related physical parameters in robotic grasping."
+  },
+  {
     "structure_path": "study/disc/.DS_Store",
     "relative_path": "study_106b/study/disc/.DS_Store",
     "name": ".DS_Store",
@@ -117,20 +124,6 @@
     "name": "disc11",
     "type": "folder_unit",
     "description": "Folder containing: Discussion_11_OCRL.pdf. Details: Discussion_11_OCRL.pdf: A discussion handout for a robotics course, covering the fundamentals of optimal control, dynamic programming, and reinforcement learning, including practical problems and examples such as LQR and gridworld."
-  },
-  {
-    "structure_path": "study/lec/.DS_Store",
-    "relative_path": "study_106b/study/lec/.DS_Store",
-    "name": ".DS_Store",
-    "type": "file",
-    "description": ""
-  },
-  {
-    "structure_path": "study/lec/boardwork",
-    "relative_path": "study_106b/study/lec/boardwork",
-    "name": "boardwork",
-    "type": "folder_unit",
-    "description": "Folder containing: 3D_Quadrotor_2022.pdf, boardwork_1_26.pdf, boardwork_1_31.pdf, boardwork_2_14.pdf, boardwork_2_16.pdf, boardwork_2_2.pdf, boardwork_2_9.pdf, boardwork_pi.pdf. Details: 3D_Quadrotor_2022.pdf: A lecture slide deck on 3D quadrotor modeling and control, covering quadrotor dynamics, coordinate transformations, and control strategies for robotic manipulation and interaction. | boardwork_1_26.pdf: A lecture note for EECS106B Robotics, covering topics such as Lyapunov stability, energy functions, probability density functions, and feedback linearization in the context of robotic manipulation and control systems. | boardwork_1_31.pdf: This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on nonlinear control systems, feedback linearization, Lie derivatives, regularity, and state feedback laws. | boardwork_2_14.pdf: This file is a set of handwritten lecture notes for a Robotic Manipulation and Interaction course, focusing on advanced concepts in control theory such as controllability, Lie brackets, the Chow theorem, and the Frobenius theorem, with mathematical derivations and examples. | boardwork_2_16.pdf: This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on the mathematical concept of integrability, the Frobenius theorem, and related manifold and constraint structures in higher-dimensional spaces. | boardwork_2_2.pdf: This is a lecture boardwork file for a course on Robotic Manipulation and Interaction, focusing on Multi-Input Multi-Output (MIMO) control systems, particularly continuous-time input-to-output (CTITO) systems, their mathematical representation, and properties such as controllability and relative degree. | boardwork_2_9.pdf: This file appears to be a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on non-holonomic motion planning, Pfaffian systems, constraints, and related mathematical formulations. | boardwork_pi.pdf: A boardwork PDF for Robotic Manipulation and Interaction, focusing on the coefficient of friction, soft finger contacts, and related physical parameters in robotic grasping."
   },
   {
     "structure_path": "study/ROS/.DS_Store",

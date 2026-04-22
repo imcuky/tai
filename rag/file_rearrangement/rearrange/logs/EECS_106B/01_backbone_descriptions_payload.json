@@ -1,5 +1,45 @@
 [
   {
+    "relative_folder_path": "study/boardwork",
+    "file": "3D_Quadrotor_2022.pdf",
+    "description": "A lecture slide deck on 3D quadrotor modeling and control, covering quadrotor dynamics, coordinate transformations, and control strategies for robotic manipulation and interaction."
+  },
+  {
+    "relative_folder_path": "study/boardwork",
+    "file": "boardwork_1_26.pdf",
+    "description": "A lecture note for EECS106B Robotics, covering topics such as Lyapunov stability, energy functions, probability density functions, and feedback linearization in the context of robotic manipulation and control systems."
+  },
+  {
+    "relative_folder_path": "study/boardwork",
+    "file": "boardwork_1_31.pdf",
+    "description": "This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on nonlinear control systems, feedback linearization, Lie derivatives, regularity, and state feedback laws."
+  },
+  {
+    "relative_folder_path": "study/boardwork",
+    "file": "boardwork_2_14.pdf",
+    "description": "This file is a set of handwritten lecture notes for a Robotic Manipulation and Interaction course, focusing on advanced concepts in control theory such as controllability, Lie brackets, the Chow theorem, and the Frobenius theorem, with mathematical derivations and examples."
+  },
+  {
+    "relative_folder_path": "study/boardwork",
+    "file": "boardwork_2_16.pdf",
+    "description": "This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on the mathematical concept of integrability, the Frobenius theorem, and related manifold and constraint structures in higher-dimensional spaces."
+  },
+  {
+    "relative_folder_path": "study/boardwork",
+    "file": "boardwork_2_2.pdf",
+    "description": "This is a lecture boardwork file for a course on Robotic Manipulation and Interaction, focusing on Multi-Input Multi-Output (MIMO) control systems, particularly continuous-time input-to-output (CTITO) systems, their mathematical representation, and properties such as controllability and relative degree."
+  },
+  {
+    "relative_folder_path": "study/boardwork",
+    "file": "boardwork_2_9.pdf",
+    "description": "This file appears to be a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on non-holonomic motion planning, Pfaffian systems, constraints, and related mathematical formulations."
+  },
+  {
+    "relative_folder_path": "study/boardwork",
+    "file": "boardwork_pi.pdf",
+    "description": "A boardwork PDF for Robotic Manipulation and Interaction, focusing on the coefficient of friction, soft finger contacts, and related physical parameters in robotic grasping."
+  },
+  {
     "relative_folder_path": "study/disc",
     "file": "118_disc.pdf",
     "description": "A discussion session note for Robotic Manipulation and Interaction, focusing on dynamical systems, state-space representation, state, input, and output vectors, phase variables, and equilibrium points in the context of linear and nonlinear systems."
@@ -123,106 +163,6 @@
     "relative_folder_path": "study/disc/disc11",
     "file": "Discussion_11_OCRL.pdf",
     "description": "A discussion handout for a robotics course, covering the fundamentals of optimal control, dynamic programming, and reinforcement learning, including practical problems and examples such as LQR and gridworld."
-  },
-  {
-    "relative_folder_path": "study/lec/boardwork",
-    "file": "3D_Quadrotor_2022.pdf",
-    "description": "A lecture slide deck on 3D quadrotor modeling and control, covering quadrotor dynamics, coordinate transformations, and control strategies for robotic manipulation and interaction."
-  },
-  {
-    "relative_folder_path": "study/lec/boardwork",
-    "file": "boardwork_1_26.pdf",
-    "description": "A lecture note for EECS106B Robotics, covering topics such as Lyapunov stability, energy functions, probability density functions, and feedback linearization in the context of robotic manipulation and control systems."
-  },
-  {
-    "relative_folder_path": "study/lec/boardwork",
-    "file": "boardwork_1_31.pdf",
-    "description": "This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on nonlinear control systems, feedback linearization, Lie derivatives, regularity, and state feedback laws."
-  },
-  {
-    "relative_folder_path": "study/lec/boardwork",
-    "file": "boardwork_2_14.pdf",
-    "description": "This file is a set of handwritten lecture notes for a Robotic Manipulation and Interaction course, focusing on advanced concepts in control theory such as controllability, Lie brackets, the Chow theorem, and the Frobenius theorem, with mathematical derivations and examples."
-  },
-  {
-    "relative_folder_path": "study/lec/boardwork",
-    "file": "boardwork_2_16.pdf",
-    "description": "This is a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on the mathematical concept of integrability, the Frobenius theorem, and related manifold and constraint structures in higher-dimensional spaces."
-  },
-  {
-    "relative_folder_path": "study/lec/boardwork",
-    "file": "boardwork_2_2.pdf",
-    "description": "This is a lecture boardwork file for a course on Robotic Manipulation and Interaction, focusing on Multi-Input Multi-Output (MIMO) control systems, particularly continuous-time input-to-output (CTITO) systems, their mathematical representation, and properties such as controllability and relative degree."
-  },
-  {
-    "relative_folder_path": "study/lec/boardwork",
-    "file": "boardwork_2_9.pdf",
-    "description": "This file appears to be a set of lecture notes for a course on Robotic Manipulation and Interaction, focusing on non-holonomic motion planning, Pfaffian systems, constraints, and related mathematical formulations."
-  },
-  {
-    "relative_folder_path": "study/lec/boardwork",
-    "file": "boardwork_pi.pdf",
-    "description": "A boardwork PDF for Robotic Manipulation and Interaction, focusing on the coefficient of friction, soft finger contacts, and related physical parameters in robotic grasping."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "230323-EECS206B_Guest_Lecture.pdf",
-    "description": "This is a guest lecture slide deck for a course on Robotic Manipulation and Interaction, focusing on the theory and application of Control Barrier Functions (CBFs) for nonlinear system safety control, with comparisons to Hamilton-Jacobi reachability and Model Predictive Control (MPC) methods. Key topics include safety filter design, control invariant sets, CBF-based safety guarantees, alternative safety control methods, and robustness considerations for CBFs."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "eecs106b-handcontrol.pdf",
-    "description": "A lecture note excerpt on advanced robotic manipulation, focusing on the dynamics and control of multi-fingered robot hands using Lagrangian mechanics with constraints, including force closure, Pfaffian constraints, Lagrange multipliers, and connections to biological hand control."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "eecs106b-nonholo.pdf",
-    "description": "A lecture note document on nonholonomic systems in robotics, covering mathematical foundations, examples, and control theory concepts such as Pfaffian constraints, integrability, holonomy, Lie brackets, Frobenius and Chow's theorems, and applications to robotic vehicles and mechanisms."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "feedback_linearization.pdf",
-    "description": "A discussion handout for a robotics course session, focusing on feedback linearization in control systems. It covers the principles of SISO and MIMO feedback linearization, relative degree, Lie derivatives, and provides example problems involving nonlinear systems such as the pendulum."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "grasping_intro.pdf",
-    "description": "These are detailed lecture notes for Chapter 5 of 'A Mathematical Introduction to Robotic Manipulation', focusing on the modeling and control of multifingered robotic hands. The notes cover hand function and design, grasp statics, contact and hand kinematics, grasp planning, force optimization, and coordinated control strategies."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "lec2_quadrotor_dynamics.pdf",
-    "description": "A lecture note on quadrotor dynamics and state-space system modeling, covering the Newton-Euler equations of motion, their application to rigid bodies and quadrotors, and the derivation of state-space models for quadrotor control."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "lec3_state_space.pdf",
-    "description": "A lecture note on state-space and system modeling in robotics, covering the mathematical representation of dynamical systems, state-space formulation, linearization around equilibria, and stability analysis using examples such as the planar quadrotor and damped pendulum."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "lec4_linear_control.pdf",
-    "description": "A lecture note on linear control for robotic manipulation, covering feedback control, stability concepts (Lyapunov, asymptotic, exponential), control strategies for first and second order systems, PID and model-based control, and application to quadrotor dynamics and control."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "legged-lec-1.pdf",
-    "description": "This is a lecture slide deck for a course on Robotic Manipulation and Interaction, specifically focusing on optimal control and reinforcement learning for legged robots. It covers the dynamics of legged robots, model-based optimal control methods, challenges in optimization, simplification strategies, and an introduction to deep reinforcement learning approaches."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "legged-lec-2.pdf",
-    "description": "This is a lecture note from a course on Robotic Manipulation and Interaction, focusing on predictive control and reinforcement learning for legged robots. The document covers the historical development of legged robots, key control strategies such as Model Predictive Control (MPC) and Reinforcement Learning (RL), detailed case studies of prominent legged robots (MIT Cheetah, Boston Dynamics Atlas, ETH ANYmal, OSU Cassie), and special topics including contact modeling and simulation environments."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "SLAM_Presentation___106B_2023.pdf",
-    "description": "A comprehensive lecture slide deck for a course on Simultaneous Localization and Mapping (SLAM), focusing on a unifying optimization-based framework. It covers SLAM fundamentals, front-end and back-end architectures, state estimation via Kalman filters, state-of-the-art algorithms, loop closures, and emerging directions such as semantic and dynamic SLAM."
-  },
-  {
-    "relative_folder_path": "study/lec/slides",
-    "file": "steering-nonholo.pdf",
-    "description": "A lecture note primarily focused on the optimal control and steering of nonholonomic systems, especially the nonholonomic integrator, using chained form representations and feedback linearization techniques."
   },
   {
     "relative_folder_path": "study/ROS/ROS",
@@ -483,5 +423,65 @@
     "relative_folder_path": "study/ROS/ROSNodeTutorialPython",
     "file": "ROSNodeTutorialPython - ROS Wiki.html",
     "description": "A tutorial document focused on building Python-based ROS publisher and subscriber nodes with custom messages, parameter server integration, and dynamic reconfigure capabilities."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "230323-EECS206B_Guest_Lecture.pdf",
+    "description": "This is a guest lecture slide deck for a course on Robotic Manipulation and Interaction, focusing on the theory and application of Control Barrier Functions (CBFs) for nonlinear system safety control, with comparisons to Hamilton-Jacobi reachability and Model Predictive Control (MPC) methods. Key topics include safety filter design, control invariant sets, CBF-based safety guarantees, alternative safety control methods, and robustness considerations for CBFs."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "eecs106b-handcontrol.pdf",
+    "description": "A lecture note excerpt on advanced robotic manipulation, focusing on the dynamics and control of multi-fingered robot hands using Lagrangian mechanics with constraints, including force closure, Pfaffian constraints, Lagrange multipliers, and connections to biological hand control."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "eecs106b-nonholo.pdf",
+    "description": "A lecture note document on nonholonomic systems in robotics, covering mathematical foundations, examples, and control theory concepts such as Pfaffian constraints, integrability, holonomy, Lie brackets, Frobenius and Chow's theorems, and applications to robotic vehicles and mechanisms."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "feedback_linearization.pdf",
+    "description": "A discussion handout for a robotics course session, focusing on feedback linearization in control systems. It covers the principles of SISO and MIMO feedback linearization, relative degree, Lie derivatives, and provides example problems involving nonlinear systems such as the pendulum."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "grasping_intro.pdf",
+    "description": "These are detailed lecture notes for Chapter 5 of 'A Mathematical Introduction to Robotic Manipulation', focusing on the modeling and control of multifingered robotic hands. The notes cover hand function and design, grasp statics, contact and hand kinematics, grasp planning, force optimization, and coordinated control strategies."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "lec2_quadrotor_dynamics.pdf",
+    "description": "A lecture note on quadrotor dynamics and state-space system modeling, covering the Newton-Euler equations of motion, their application to rigid bodies and quadrotors, and the derivation of state-space models for quadrotor control."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "lec3_state_space.pdf",
+    "description": "A lecture note on state-space and system modeling in robotics, covering the mathematical representation of dynamical systems, state-space formulation, linearization around equilibria, and stability analysis using examples such as the planar quadrotor and damped pendulum."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "lec4_linear_control.pdf",
+    "description": "A lecture note on linear control for robotic manipulation, covering feedback control, stability concepts (Lyapunov, asymptotic, exponential), control strategies for first and second order systems, PID and model-based control, and application to quadrotor dynamics and control."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "legged-lec-1.pdf",
+    "description": "This is a lecture slide deck for a course on Robotic Manipulation and Interaction, specifically focusing on optimal control and reinforcement learning for legged robots. It covers the dynamics of legged robots, model-based optimal control methods, challenges in optimization, simplification strategies, and an introduction to deep reinforcement learning approaches."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "legged-lec-2.pdf",
+    "description": "This is a lecture note from a course on Robotic Manipulation and Interaction, focusing on predictive control and reinforcement learning for legged robots. The document covers the historical development of legged robots, key control strategies such as Model Predictive Control (MPC) and Reinforcement Learning (RL), detailed case studies of prominent legged robots (MIT Cheetah, Boston Dynamics Atlas, ETH ANYmal, OSU Cassie), and special topics including contact modeling and simulation environments."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "SLAM_Presentation___106B_2023.pdf",
+    "description": "A comprehensive lecture slide deck for a course on Simultaneous Localization and Mapping (SLAM), focusing on a unifying optimization-based framework. It covers SLAM fundamentals, front-end and back-end architectures, state estimation via Kalman filters, state-of-the-art algorithms, loop closures, and emerging directions such as semantic and dynamic SLAM."
+  },
+  {
+    "relative_folder_path": "study/slides",
+    "file": "steering-nonholo.pdf",
+    "description": "A lecture note primarily focused on the optimal control and steering of nonholonomic systems, especially the nonholonomic integrator, using chained form representations and feedback linearization techniques."
   }
 ]

@@ -5,6 +5,10 @@
             "assigned_group": "Lecture Miscellaneous"
         },
         {
+            "item_path": "study_106b/study/boardwork",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
             "item_path": "study_106b/study/disc/.DS_Store",
             "assigned_group": "Lecture Miscellaneous"
         },
@@ -67,14 +71,6 @@
         {
             "item_path": "study_106b/study/disc/disc11",
             "assigned_group": "legged-lec-1.pdf"
-        },
-        {
-            "item_path": "study_106b/study/lec/.DS_Store",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/lec/boardwork",
-            "assigned_group": "lec2_quadrotor_dynamics.pdf"
         },
         {
             "item_path": "study_106b/study/ROS/.DS_Store",
