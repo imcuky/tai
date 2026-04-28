@@ -988,12 +988,12 @@ def run_plan_matching(enriched_data: Dict, backbone_path: str, multi_match: bool
                     f"- A batch of 'Orphan Files' that need to be categorized.\n\n"
 
                     f"Your Task:\n"
-                    f"For EACH orphan, assign it to its relevant group. If you think this material can have match to multiple groups, match ALL of them.\n\n"
+                    f"For EACH orphan, assign it to its relevant group. If you think this material can have match to multiple topic lecture groups, match ALL of them that is relevant.\n\n"
 
                     f"Topic-Only Mapping Rule (Critical):\n"
-                    f"- Assign based on actual lecture topic coverage only (concepts/skills in the orphan description and group description).\n"
-                    f"- Do NOT assign by assessment stage words such as 'review', 'midterm', 'final', 'exam', or 'discussion' alone.\n"
-                    f"- 'Final Review' content is NOT automatically 'Midterm Review'; map it only to lectures whose topics are explicitly covered.\n\n"
+                    f"- Assign based on actual lecture topic coverage only (topic concepts/skills in the description and group description are related).\n"
+                    # f"- Do NOT assign by assessment stage words such as 'review', 'midterm', 'final', 'exam', or 'discussion' alone.\n"
+                    # f"- 'Final Review' content is NOT automatically 'Midterm Review'; map it only to lectures whose topics are explicitly covered.\n\n"
 
                     f"Matching Considerations:\n"
                     f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
@@ -1420,8 +1420,13 @@ def _run_pipeline(args):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     
     course_name = args.course or _derive_course_name(args.db, args.input)
+    
+    if getattr(args, 'multi_match', False):
+        course_name = os.path.join(course_name, "multi")
+
     output_dir = os.path.join(base_dir, "outputs", course_name)
     log_dir = os.path.join(base_dir, "logs", course_name)
+    
     os.makedirs(output_dir, exist_ok=True)
     os.makedirs(log_dir, exist_ok=True)
     _COURSE_LOG_DIR = log_dir
@@ -1462,12 +1467,7 @@ def _run_pipeline(args):
 
             matches = run_plan_matching(enriched_data, backbone_path, multi_match=args.multi_match)
 
-            if args.multi_match:
-                matches_output_dir = os.path.join(output_dir, "multi")
-                os.makedirs(matches_output_dir, exist_ok=True)
-                matches_output = os.path.join(matches_output_dir, "orphan_matches.json")
-            else:
-                matches_output = os.path.join(output_dir, "orphan_matches.json")
+            matches_output = os.path.join(output_dir, "orphan_matches.json")
 
             with open(matches_output, 'w', encoding='utf-8') as f:
                 json.dump(matches.model_dump(), f, indent=4)
@@ -1507,7 +1507,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--multi-match",
         required=False,
-        default=False,
+        default=True,
         #action="store_true",
         help="If set, uses the multi-match prompt to assign orphans to multiple groups if applicable."
     )
@@ -1515,6 +1515,9 @@ if __name__ == "__main__":
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     course_name = args.course or _derive_course_name(args.db, args.input)
+
+    if getattr(args, 'multi_match', False):
+        course_name = os.path.join(course_name, "multi")
 
     if args.step == "tree":
         _COURSE_LOG_DIR = os.path.join(base_dir, "logs", course_name)
