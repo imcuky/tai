@@ -110,7 +110,7 @@ def _safe_print(message: str) -> None:
     print(_console_safe(message))
 
 
-def enrich_structure_with_descriptions(input_json_path: str, db_path: str, output_path: str) -> str:
+def enrich_structure_with_descriptions(input_json_path: str, db_path: str, output_path: str, multi_match: bool = False) -> str:
     """Parse the input tree JSON (e.g. bfs_v3_tree.json), filter for 'study' category, 
     fetch descriptions from database, and generate a standardized list-based JSON tree."""
     print(f"Reading input structure from: {input_json_path}")
@@ -149,7 +149,11 @@ def enrich_structure_with_descriptions(input_json_path: str, db_path: str, outpu
         category = node_data.get("category", "")
         
         # If the category is "study", we identify this as a study root branch and keep everything under it.
+        # If multi_match is on, we also include everything in the "practice" category.
         is_study = (category == "study")
+        if multi_match and category.lower() == "practice":
+            is_study = True
+        
         should_keep_this = is_study or parent_force_keep
         
         # Determine relative path
@@ -1339,7 +1343,7 @@ def _derive_course_name(db_filename: str = None, input_filename: str = None) -> 
     return "default"
 
 
-def run_enrichment(base_dir: str, input_filename: str, db_filename: str = None, course_name: str = None) -> str:
+def run_enrichment(base_dir: str, input_filename: str, db_filename: str = None, course_name: str = None, multi_match: bool = False) -> str:
     """Preprocessing: parse input tree JSON + SQLite DB → enriched JSON."""
     input_file = os.path.join(base_dir, "input", input_filename)
 
@@ -1370,7 +1374,7 @@ def run_enrichment(base_dir: str, input_filename: str, db_filename: str = None, 
     print(f"Database path: {db_file}")
     print(f"Input file path: {input_file}")
     
-    return enrich_structure_with_descriptions(input_file, db_file, enriched_output)
+    return enrich_structure_with_descriptions(input_file, db_file, enriched_output, multi_match=multi_match)
 
 
 def _load_enriched(base_dir: str, course_name: str = None) -> Dict:
@@ -1438,7 +1442,7 @@ def _run_pipeline(args):
     try:
         if args.step in ("enrich", "all"):
             input_file = args.input
-            run_enrichment(base_dir, input_file, args.db, course_name)
+            run_enrichment(base_dir, input_file, args.db, course_name, multi_match=getattr(args, 'multi_match', False))
 
         if args.step in ("backbone", "all"):
             print("=" * 60)
@@ -1489,13 +1493,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--input",
         required=False,
-        default="bfs_v3_tree_study_106b.json",
+        default="bfs_v3_tree_CS_61A.json",
         help="Input JSON filename located in 'input' folder (e.g. bfs_v3_tree.json)."
     )
     parser.add_argument(
         "--db",
         required=False,
-        default="EECS 106B_metadata.db",
+        default="EECS 106B_metadata_NewPT.db",
         help="Metadata database filename in 'input' folder (e.g. 'EECS 106B_metadata.db'). Auto-detected if only one *_metadata.db exists."
     )
     parser.add_argument(
