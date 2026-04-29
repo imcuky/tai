@@ -3,6 +3,7 @@ import json
 import sqlite3
 import re
 import argparse
+import sys
 from typing import List, Dict
 
 from openai import OpenAI
@@ -10,6 +11,20 @@ from pydantic import BaseModel
 from dotenv import load_dotenv
 
 load_dotenv()
+
+
+def _configure_stdout() -> None:
+    """Prefer UTF-8 for console output when supported."""
+    try:
+        if hasattr(sys.stdout, "reconfigure"):
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        if hasattr(sys.stderr, "reconfigure"):
+            sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
+
+_configure_stdout()
 
 # =============================================================================
 # Pydantic Models
@@ -98,11 +113,17 @@ def save_debug_log(data: any, step_name: str, base_dir: str | None = None) -> st
 
 
 def _console_safe(text: str) -> str:
-    """Return a string safe for Windows legacy console encodings."""
+    """Return a string safe for the active console encoding."""
+    message = str(text)
+    encoding = getattr(sys.stdout, "encoding", None) or "utf-8"
     try:
-        return str(text).encode("cp1252", errors="replace").decode("cp1252")
+        message.encode(encoding)
+        return message
     except Exception:
-        return str(text)
+        try:
+            return message.encode(encoding, errors="replace").decode(encoding, errors="replace")
+        except Exception:
+            return message.encode("utf-8", errors="replace").decode("utf-8")
 
 
 def _safe_print(message: str) -> None:
@@ -151,7 +172,7 @@ def enrich_structure_with_descriptions(input_json_path: str, db_path: str, outpu
         # If the category is "study", we identify this as a study root branch and keep everything under it.
         # If multi_match is on, we also include everything in the "practice" category.
         is_study = (category == "study")
-        if multi_match and category.lower() == "practice":
+        if multi_match and (category.lower() == "practice" or node_name.lower() == "practice"):
             is_study = True
         
         should_keep_this = is_study or parent_force_keep
@@ -159,9 +180,13 @@ def enrich_structure_with_descriptions(input_json_path: str, db_path: str, outpu
         # Determine relative path
         rel_path = node_data.get("relative_path")
         # If relative path is missing in source, assume structure implies it (e.g. cleaning it up)
-        # But usually we rely on existing paths. 
+        # But usually we rely on existing paths.
+        default_rel_path = f"{current_path}/{node_name}" if current_path else node_name
         if not rel_path:
-             rel_path = f"{current_path}/{node_name}" if current_path else node_name
+            rel_path = default_rel_path
+        elif current_path and not rel_path.startswith(current_path):
+            # Keep paths anchored under the processed parent (e.g., study/)
+            rel_path = default_rel_path
         
         # Replace root with study in relative path if it starts with root
         if rel_path.startswith("root"):
@@ -251,6 +276,32 @@ def enrich_structure_with_descriptions(input_json_path: str, db_path: str, outpu
         # User requested root name to be 'study'
         enriched_root["name"] = "study"
         enriched_root["relative_path"] = "study"
+
+        if multi_match:
+            def _rebase_paths(node, old_prefix, new_prefix):
+                path = node.get("relative_path")
+                if path and path.startswith(old_prefix):
+                    node["relative_path"] = new_prefix + path[len(old_prefix):]
+                for child in node.get("children", []) or []:
+                    _rebase_paths(child, old_prefix, new_prefix)
+
+            children = enriched_root.get("children", []) or []
+            practice_node = None
+            study_node = None
+            for child in children:
+                if child.get("type") == "folder" and child.get("name", "").lower() == "practice":
+                    practice_node = child
+                if child.get("type") == "folder" and child.get("name", "").lower() == "study":
+                    study_node = child
+
+            if practice_node and study_node:
+                old_prefix = f"{practice_node.get('relative_path', '').rstrip('/')}/"
+                new_prefix = f"{study_node.get('relative_path', '').rstrip('/')}/"
+                for child in practice_node.get("children", []) or []:
+                    _rebase_paths(child, old_prefix, new_prefix)
+                    study_node["children"].append(child)
+                children.remove(practice_node)
+                enriched_root["children"] = children
         
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(enriched_root, f, indent=2, ensure_ascii=False)
@@ -695,27 +746,35 @@ def generate_rearrangement_plan(
         raw_target_group = match.assigned_group.strip()
         orphan_path = match.item_path.strip()
 
-        # Handle "New:" prefix for dynamically created groups
-        target_group_display = raw_target_group
-        if target_group_display.lower().startswith("new:"):
-            # extract the part after 'New:'
-            target_group_display = target_group_display.split(":", 1)[1].strip()
+        target_groups = [g.strip() for g in raw_target_group.split(",") if g.strip()]
+        if not target_groups:
+            target_groups = [raw_target_group] if raw_target_group else []
 
-        key = normalize_key(target_group_display)
+        for target_group in target_groups:
+            # Handle "New:" prefix for dynamically created groups
+            target_group_display = target_group
+            if target_group_display.lower().startswith("new:"):
+                # extract the part after 'New:'
+                target_group_display = target_group_display.split(":", 1)[1].strip()
 
-        # Create new group if it doesn't exist
-        if key not in plan_map:
-            plan_map[key] = {
-                "group_name": target_group_display,
-                "main_item": None,  # New groups might not have a backbone anchor
-                "description": "Dynamically created group",
-                "related_items": []
-            }
+            if not target_group_display:
+                continue
 
-        # Add orphan to the group
-        current_related = plan_map[key]["related_items"]
-        if orphan_path not in current_related:
-            current_related.append(orphan_path)
+            key = normalize_key(target_group_display)
+
+            # Create new group if it doesn't exist
+            if key not in plan_map:
+                plan_map[key] = {
+                    "group_name": target_group_display,
+                    "main_item": None,  # New groups might not have a backbone anchor
+                    "description": "Dynamically created group",
+                    "related_items": []
+                }
+
+            # Add orphan to the group
+            current_related = plan_map[key]["related_items"]
+            if orphan_path not in current_related:
+                current_related.append(orphan_path)
 
     # Save pre-refinement plan
     pre_refinement_objs = []
@@ -755,9 +814,10 @@ def generate_rearrangement_plan(
                         "role": "system",
                         "content": (
                             "You are organizing course files. These files were originally dumped into a 'Lecture Miscellaneous' folder. "
-                            "Your job is to further categorize them into specific logical groups (e.g., 'ROS Tutorials', 'Administrivia', 'Project Files', 'Discussion Sections', etc.).\n"
+                            "Your job is to further categorize them into specific logical groups (e.g., 'Review', 'Tutorials', 'Administrivia', 'Project Files', etc.).\n"
                             "Group items by their overarching subject or file type.\n"
-                            "Provide a new group name and a brief description for each item."
+                            "Provide a new group name and a brief description for each item.\n"
+                            "Don't create more than 5 new groups. If items are very diverse, it's okay to keep some in Miscellaneous, but try to find logical clusters where possible.\n"
                         )
                     },
                     {
@@ -1493,19 +1553,19 @@ if __name__ == "__main__":
     parser.add_argument(
         "--input",
         required=False,
-        default="bfs_v3_tree_CS_61A.json",
+        default="bfs_v3_tree_eecs106b_new.json",
         help="Input JSON filename located in 'input' folder (e.g. bfs_v3_tree.json)."
     )
     parser.add_argument(
         "--db",
         required=False,
-        default="EECS 106B_metadata_NewPT.db",
+        default="EECS 106B_metadata.db",
         help="Metadata database filename in 'input' folder (e.g. 'EECS 106B_metadata.db'). Auto-detected if only one *_metadata.db exists."
     )
     parser.add_argument(
         "--course",
         required=False,
-        default=None,
+        default="EECS_106B",
         help="Course identifier for output folder (e.g. 'EECS_106B'). Auto-derived from --db or --input if not specified."
     )
     parser.add_argument(
