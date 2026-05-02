@@ -4,9 +4,7 @@ import sqlite3
 import re
 import argparse
 import sys
-import contextvars
-from dataclasses import dataclass
-from typing import Any, Dict, Iterable, List, Optional
+from typing import List, Dict
 
 from openai import OpenAI
 from pydantic import BaseModel
@@ -82,15 +80,6 @@ class AggregationDecision(BaseModel):
     paths_to_aggregate: List[str]
 
 
-@dataclass(frozen=True)
-class PipelineContext:
-    base_dir: str
-    course_name: str
-    output_dir: str
-    log_dir: str
-    multi_match: bool
-
-
 # =============================================================================
 # Helper Functions — Preprocessing
 # =============================================================================
@@ -102,41 +91,20 @@ def load_json_file(file_path: str) -> Dict:
         return json.load(f)
 
 
-# Per-task log directory for pipeline runs (preferred over passing base_dir everywhere).
-_PIPELINE_LOG_DIR: contextvars.ContextVar[Optional[str]] = contextvars.ContextVar(
-    "pipeline_log_dir", default=None
-)
+_COURSE_LOG_DIR: str | None = None
 
-
-def set_pipeline_log_dir(log_dir: Optional[str]) -> contextvars.Token[Optional[str]]:
-    """Bind ``log_dir`` for the current task; return token for ``reset_pipeline_log_dir``."""
-    return _PIPELINE_LOG_DIR.set(log_dir)
-
-
-def reset_pipeline_log_dir(token: contextvars.Token[Optional[str]]) -> None:
-    """Restore previous log dir binding."""
-    _PIPELINE_LOG_DIR.reset(token)
-
-
-def save_debug_log(
-    data: Any,
-    step_name: str,
-    base_dir: Optional[str] = None,
-    *,
-    log_dir: Optional[str] = None,
-) -> str:
+def save_debug_log(data: any, step_name: str, base_dir: str | None = None) -> str:
     """Save intermediate data to a JSON log file."""
-    effective_log = log_dir or _PIPELINE_LOG_DIR.get()
-    if effective_log:
-        resolved_log_dir = effective_log
+    if _COURSE_LOG_DIR:
+        log_dir = _COURSE_LOG_DIR
     else:
         if base_dir is None:
             base_dir = os.path.dirname(os.path.abspath(__file__))
-        resolved_log_dir = os.path.join(base_dir, "logs")
-
-    os.makedirs(resolved_log_dir, exist_ok=True)
+        log_dir = os.path.join(base_dir, "logs")
     
-    file_path = os.path.join(resolved_log_dir, f"{step_name}.json")
+    os.makedirs(log_dir, exist_ok=True)
+    
+    file_path = os.path.join(log_dir, f"{step_name}.json")
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     
@@ -163,226 +131,15 @@ def _safe_print(message: str) -> None:
     print(_console_safe(message))
 
 
-def _normalize_path(path: str) -> str:
-    return path.strip().rstrip("/")
-
-
-def _is_under_path(node_path: str, root_path: str) -> bool:
-    node = _normalize_path(node_path)
-    root = _normalize_path(root_path)
-    if not node or not root:
-        return False
-    if node == root:
-        return True
-    return node.startswith(root + "/")
-
-
-def _chunked(items: List[Dict], size: int) -> Iterable[List[Dict]]:
-    for i in range(0, len(items), size):
-        yield items[i:i + size]
-
-
-def _llm_parse(
-    client: OpenAI,
-    model: str,
-    system_prompt: str,
-    user_payload: object,
-    response_model,
-    seed: int = 42,
-):
-    completion = client.beta.chat.completions.parse(
-        model=model,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": json.dumps(user_payload, indent=2)},
-        ],
-        response_format=response_model,
-        seed=seed,
-    )
-    return completion.choices[0].message.parsed
-
-
-class LLMGateway:
-    """Thin wrapper around structured OpenAI completions (single place for parse calls)."""
-
-    def __init__(self, client: Optional[OpenAI] = None) -> None:
-        self._client = client or OpenAI()
-
-    @property
-    def client(self) -> OpenAI:
-        return self._client
-
-    def parse_structured(
-        self,
-        model: str,
-        system_prompt: str,
-        user_payload: object,
-        response_model,
-        seed: int = 42,
-    ):
-        return _llm_parse(
-            self._client,
-            model,
-            system_prompt,
-            user_payload,
-            response_model,
-            seed=seed,
-        )
-
-    def refine_miscellaneous_groups(
-        self, misc_payload: List[Dict[str, str]], seed: int = 42
-    ) -> MiscRefinementResponse:
-        completion = self._client.beta.chat.completions.parse(
-            model="gpt-5-mini",
-            messages=[
-                {
-                    "role": "system",
-                    "content": (
-                        "You are organizing course files. These files were originally dumped into a 'Lecture Miscellaneous' folder. "
-                        "Your job is to further categorize them into specific logical groups (e.g., 'Review', 'Tutorials', 'Administrivia', 'Project Files', etc.).\n"
-                        "Group items by their overarching subject or file type.\n"
-                        "Provide a new group name and a brief description for each item.\n"
-                        "Don't create more than 5 new groups. If items are very diverse, it's okay to keep some in Miscellaneous, but try to find logical clusters where possible.\n"
-                    ),
-                },
-                {"role": "user", "content": json.dumps(misc_payload, indent=2)},
-            ],
-            response_format=MiscRefinementResponse,
-            seed=seed,
-        )
-        return completion.choices[0].message.parsed
-
-
-def _build_context(args, base_dir: str) -> PipelineContext:
-    course_name = args.course or _derive_course_name(args.db, args.input)
-    if bool(getattr(args, "multi_match", False)):
-        course_name = os.path.join(course_name, "multi")
-
-    output_dir = os.path.join(base_dir, "outputs", course_name)
-    log_dir = os.path.join(base_dir, "logs", course_name)
-
-    return PipelineContext(
-        base_dir=base_dir,
-        course_name=course_name,
-        output_dir=output_dir,
-        log_dir=log_dir,
-        multi_match=bool(getattr(args, "multi_match", False)),
-    )
-
-
-@dataclass
-class _EnrichmentStats:
-    processed: int = 0
-    enriched: int = 0
-
-
-def _enrich_should_keep_branch(
-    category: str, node_name: str, parent_force_keep: bool, multi_match: bool
-) -> bool:
-    """Whether this node's subtree is eligible for study/practice retention."""
-    is_study = category == "study"
-    if multi_match and (category.lower() == "practice" or node_name.lower() == "practice"):
-        is_study = True
-    return is_study or parent_force_keep
-
-
-def _enrich_should_skip_file(filename: str) -> bool:
-    lower_name = filename.lower()
-    return lower_name.endswith(".yaml") or lower_name.endswith(".json")
-
-
-def _enrich_resolve_relative_path(
-    node_data: Dict, node_name: str, current_path: str
-) -> str:
-    """Compute anchored relative_path and map legacy ``root`` prefix to ``study``."""
-    rel_path = node_data.get("relative_path")
-    default_rel_path = f"{current_path}/{node_name}" if current_path else node_name
-    if not rel_path:
-        rel_path = default_rel_path
-    elif current_path and not rel_path.startswith(current_path):
-        rel_path = default_rel_path
-    if rel_path.startswith("root"):
-        rel_path = "study" + rel_path[4:]
-    return rel_path
-
-
-def _enrich_rebase_paths_under_prefix(node: Dict, old_prefix: str, new_prefix: str) -> None:
-    path = node.get("relative_path")
-    if path and path.startswith(old_prefix):
-        node["relative_path"] = new_prefix + path[len(old_prefix) :]
-    for child in node.get("children", []) or []:
-        _enrich_rebase_paths_under_prefix(child, old_prefix, new_prefix)
-
-
-def _enrich_merge_practice_into_study(enriched_root: Dict) -> None:
-    """When multi_match: move practice subtree under study and rebase paths."""
-    children = enriched_root.get("children", []) or []
-    practice_node = None
-    study_node = None
-    for child in children:
-        if child.get("type") == "folder" and child.get("name", "").lower() == "practice":
-            practice_node = child
-        if child.get("type") == "folder" and child.get("name", "").lower() == "study":
-            study_node = child
-
-    if practice_node and study_node:
-        old_prefix = f"{practice_node.get('relative_path', '').rstrip('/')}/"
-        new_prefix = f"{study_node.get('relative_path', '').rstrip('/')}/"
-        for child in practice_node.get("children", []) or []:
-            _enrich_rebase_paths_under_prefix(child, old_prefix, new_prefix)
-            study_node["children"].append(child)
-        children.remove(practice_node)
-        enriched_root["children"] = children
-
-
-def _enrich_process_children(
-    node_data: Dict,
-    rel_path: str,
-    should_keep_this: bool,
-    process_node,
-) -> List[Dict]:
-    """Flatten ``children`` (dict or list) and ``files`` dict into processed child nodes."""
-    kept: List[Dict] = []
-    children_dict = node_data.get("children", {})
-    if isinstance(children_dict, dict):
-        for child_name, child_data in children_dict.items():
-            child_processed = process_node(
-                child_data, child_name, rel_path, parent_force_keep=should_keep_this
-            )
-            if child_processed:
-                kept.append(child_processed)
-    elif isinstance(children_dict, list):
-        for child_data in children_dict:
-            cname = child_data.get("name", "unknown")
-            child_processed = process_node(
-                child_data, cname, rel_path, parent_force_keep=should_keep_this
-            )
-            if child_processed:
-                kept.append(child_processed)
-
-    files_dict = node_data.get("files", {})
-    if isinstance(files_dict, dict):
-        for _file_hash, file_data in files_dict.items():
-            fname = file_data.get("name", "unknown")
-            file_processed = process_node(
-                file_data, fname, rel_path, parent_force_keep=should_keep_this
-            )
-            if file_processed:
-                kept.append(file_processed)
-    return kept
-
-
-def enrich_structure_with_descriptions(
-    input_json_path: str, db_path: str, output_path: str, multi_match: bool = False
-) -> str:
-    """Parse the input tree JSON (e.g. bfs_v3_tree.json), filter for 'study' category,
+def enrich_structure_with_descriptions(input_json_path: str, db_path: str, output_path: str, multi_match: bool = False) -> str:
+    """Parse the input tree JSON (e.g. bfs_v3_tree.json), filter for 'study' category, 
     fetch descriptions from database, and generate a standardized list-based JSON tree."""
     print(f"Reading input structure from: {input_json_path}")
 
     if not os.path.exists(input_json_path):
         raise FileNotFoundError(f"Input file not found: {input_json_path}")
 
-    with open(input_json_path, "r", encoding="utf-8") as f:
+    with open(input_json_path, 'r', encoding='utf-8') as f:
         input_data = json.load(f)
 
     if not os.path.exists(db_path):
@@ -390,93 +147,170 @@ def enrich_structure_with_descriptions(
 
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
-    stats = _EnrichmentStats()
 
-    def get_file_description(filename: str):
+    files_statistics = {"processed": 0, "enriched": 0}
+
+    def get_file_description(filename):
         cursor.execute(
-            "SELECT description FROM file WHERE file_name = ? LIMIT 1",
-            (filename,),
-        )
-        result = cursor.fetchone()
-        if result and result[0]:
-            return result[0].strip()
-        escaped = filename.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
-        cursor.execute(
-            "SELECT description FROM file WHERE relative_path LIKE ? ESCAPE '\\' LIMIT 1",
-            (f"%/{escaped}",),
+            "SELECT description FROM file WHERE relative_path LIKE ? OR file_name = ? LIMIT 1",
+            (f'%{filename}%', filename)
         )
         result = cursor.fetchone()
         return result[0].strip() if result and result[0] else None
 
-    def process_node(
-        node_data: Dict,
-        node_name: str,
-        current_path: str = "",
-        parent_force_keep: bool = False,
-    ):
+    def process_node(node_data, node_name, current_path="", parent_force_keep=False):
+        """
+        Recursively process nodes.
+        Logic:
+        - Convert 'children' dict to list.
+        - Merge 'files' dict into children list.
+        - Filter: Keep node if category=='study' OR parent_force_keep is True OR it has kept children.
+        """
         node_type = node_data.get("type", "folder")
         category = node_data.get("category", "")
-        should_keep_this = _enrich_should_keep_branch(
-            category, node_name, parent_force_keep, multi_match
-        )
-        rel_path = _enrich_resolve_relative_path(node_data, node_name, current_path)
+        
+        # If the category is "study", we identify this as a study root branch and keep everything under it.
+        # If multi_match is on, we also include everything in the "practice" category.
+        is_study = (category == "study")
+        if multi_match and (category.lower() == "practice" or node_name.lower() == "practice"):
+            is_study = True
+        
+        should_keep_this = is_study or parent_force_keep
+        
+        # Determine relative path
+        rel_path = node_data.get("relative_path")
+        # If relative path is missing in source, assume structure implies it (e.g. cleaning it up)
+        # But usually we rely on existing paths.
+        default_rel_path = f"{current_path}/{node_name}" if current_path else node_name
+        if not rel_path:
+            rel_path = default_rel_path
+        elif current_path and not rel_path.startswith(current_path):
+            # Keep paths anchored under the processed parent (e.g., study/)
+            rel_path = default_rel_path
+        
+        # Replace root with study in relative path if it starts with root
+        if rel_path.startswith("root"):
+            rel_path = "study" + rel_path[4:]
 
+        # --- Handle FILE ---
         if node_type == "file":
             filename = node_data.get("name", node_name)
-            if _enrich_should_skip_file(filename):
-                return None
-            new_node: Dict = {
+            
+            new_node = {
                 "type": "file",
                 "name": filename,
-                "relative_path": rel_path,
+                "relative_path": rel_path
             }
+            
+            # Enrich
             desc = get_file_description(filename)
             if desc:
                 new_node["description"] = desc
-                stats.enriched += 1
-            stats.processed += 1
-            return new_node if should_keep_this else None
+                files_statistics["enriched"] += 1
+            
+            files_statistics["processed"] += 1
+            
+            # If parent forced keep, we keep. 
+            # If not forced, we only keep if this specific file is study? 
+            # The prompt implies "material folder under category study". 
+            # So if we are in a study folder, we keep.
+            # If we are NOT in a study folder, do we keep this file?
+            # Likely no, unless it's marked study itself.
+            if should_keep_this:
+                return new_node
+            return None
 
+        # --- Handle FOLDER ---
         new_node = {
             "type": "folder",
             "name": node_name,
             "relative_path": rel_path,
-            "children": [],
+            "children": []
         }
+        
+        # Keep by_sequence for backbone identification
         by_sequence = node_data.get("by_sequence")
         if by_sequence is not None:
-            new_node["by_sequence"] = by_sequence
+             new_node["by_sequence"] = by_sequence
 
-        new_node["children"] = _enrich_process_children(
-            node_data, rel_path, should_keep_this, process_node
-        )
+        # 1. Process nested folders (children dict)
+        children_dict = node_data.get("children", {})
+        if isinstance(children_dict, dict):
+            for child_name, child_data in children_dict.items():
+                child_processed = process_node(child_data, child_name, rel_path, parent_force_keep=should_keep_this)
+                if child_processed:
+                    new_node["children"].append(child_processed)
+        elif isinstance(children_dict, list):
+             # Handle case where input might already be list-based (robustness)
+             for child_data in children_dict:
+                 cname = child_data.get("name", "unknown")
+                 child_processed = process_node(child_data, cname, rel_path, parent_force_keep=should_keep_this)
+                 if child_processed:
+                    new_node["children"].append(child_processed)
 
+        # 2. Process files (files dict)
+        files_dict = node_data.get("files", {})
+        if isinstance(files_dict, dict):
+            for file_hash, file_data in files_dict.items():
+                fname = file_data.get("name", "unknown")
+                file_processed = process_node(file_data, fname, rel_path, parent_force_keep=should_keep_this)
+                if file_processed:
+                    new_node["children"].append(file_processed)
+
+        # Decide whether to return this node
         if should_keep_this:
             return new_node
-        if len(new_node["children"]) > 0:
+        elif len(new_node["children"]) > 0:
+            # If we are just a container for study items, keep us
             return new_node
-        return None
+        else:
+            return None
 
+    # Start processing from root
     root_name = input_data.get("name", "root")
     enriched_root = process_node(input_data, root_name, "")
+    
     conn.close()
 
     if enriched_root:
+        # User requested root name to be 'study'
         enriched_root["name"] = "study"
         enriched_root["relative_path"] = "study"
-        if multi_match:
-            _enrich_merge_practice_into_study(enriched_root)
 
-        with open(output_path, "w", encoding="utf-8") as f:
+        if multi_match:
+            def _rebase_paths(node, old_prefix, new_prefix):
+                path = node.get("relative_path")
+                if path and path.startswith(old_prefix):
+                    node["relative_path"] = new_prefix + path[len(old_prefix):]
+                for child in node.get("children", []) or []:
+                    _rebase_paths(child, old_prefix, new_prefix)
+
+            children = enriched_root.get("children", []) or []
+            practice_node = None
+            study_node = None
+            for child in children:
+                if child.get("type") == "folder" and child.get("name", "").lower() == "practice":
+                    practice_node = child
+                if child.get("type") == "folder" and child.get("name", "").lower() == "study":
+                    study_node = child
+
+            if practice_node and study_node:
+                old_prefix = f"{practice_node.get('relative_path', '').rstrip('/')}/"
+                new_prefix = f"{study_node.get('relative_path', '').rstrip('/')}/"
+                for child in practice_node.get("children", []) or []:
+                    _rebase_paths(child, old_prefix, new_prefix)
+                    study_node["children"].append(child)
+                children.remove(practice_node)
+                enriched_root["children"] = children
+        
+        with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(enriched_root, f, indent=2, ensure_ascii=False)
         print(f"Enriched JSON structure saved to: {output_path}")
-        print(
-            f"Processed {stats.processed} files, enriched {stats.enriched} with descriptions"
-        )
+        print(f"Processed {files_statistics['processed']} files, enriched {files_statistics['enriched']} with descriptions")
         return output_path
-
-    print("Warning: No 'study' content found in input tree.")
-    return ""
+    else:
+        print("Warning: No 'study' content found in input tree.")
+        return ""
 
 
 def extract_file_descriptions(enriched_data: Dict) -> List[FileDescription]:
@@ -542,7 +376,8 @@ def aggregate_folder_descriptions(node: Dict, max_files: int = 5) -> str:
 def get_folder_candidates(enriched_data: Dict, backbone_path: str) -> List[Dict]:
     """Identify folders that are candidates for aggregation (orphans only)."""
     candidates = []
-    backbone_path = _normalize_path(backbone_path)
+    backbone_path = backbone_path.rstrip('/')
+    backbone_prefix = f"{backbone_path}/"
     
     def traverse(node: Dict, hierarchy_path: str = ""):
         name = node.get('name')
@@ -557,15 +392,15 @@ def get_folder_candidates(enriched_data: Dict, backbone_path: str) -> List[Dict]
         node_path = f"{hierarchy_path}/{name}" if hierarchy_path else name
         
         # Skip backbone and its children
-        if _is_under_path(node_path, backbone_path):
+        if node_path == backbone_path or node_path.startswith(backbone_prefix):
             return
 
         # Skip parents of the backbone (cannot aggregate a folder that contains the backbone)
-        if _normalize_path(backbone_path).startswith(f"{_normalize_path(node_path)}/"):
-            # Recurse but do NOT add as candidate
-            for child in children:
+        if backbone_path.startswith(f"{node_path}/"):
+             # Recurse but do NOT add as candidate
+             for child in children:
                 traverse(child, node_path)
-            return
+             return
 
         node_type = node.get('type', 'folder')
         
@@ -653,91 +488,23 @@ def get_folder_candidates(enriched_data: Dict, backbone_path: str) -> List[Dict]
 #     return decision.paths_to_aggregate
 
 
-def _orphan_skip_backbone_subtree(node_path: str, backbone_folder: str) -> bool:
-    """True if this node is the backbone folder or strictly under it."""
-    if _normalize_path(node_path) == backbone_folder:
-        return True
-    return _is_under_path(node_path, backbone_folder)
-
-
-def _orphan_leaf_folder_auto_aggregate(node: Dict) -> bool:
-    children = node.get("children", []) or []
-    folder_children = [c for c in children if c.get("type") == "folder"]
-    file_children = [c for c in children if c.get("type") == "file"]
-    is_sequential = node.get("by_sequence", False)
-    return (
-        len(folder_children) == 0
-        and len(file_children) > 0
-        and not is_sequential
-    )
-
-
-def _orphan_build_leaf_folder_unit_description(node: Dict) -> str:
-    children = node.get("children", []) or []
-    file_children = [c for c in children if c.get("type") == "file"]
-    combined_desc = f"Folder containing: {', '.join([c.get('name') for c in file_children])}"
-    rich_descs = [
-        f"{c.get('name')}: {c.get('description', '')}"
-        for c in file_children
-        if c.get("description")
-    ]
-    if rich_descs:
-        combined_desc += ". Details: " + " | ".join(rich_descs)
-    return combined_desc
-
-
-def _orphan_append_leaf_unit(
-    orphans: List[Dict],
-    node: Dict,
-    node_path: str,
-    name: str,
-) -> None:
-    orphans.append(
-        {
-            "structure_path": node_path,
-            "relative_path": node.get("relative_path", node_path),
-            "name": name,
-            "type": "folder_unit",
-            "description": _orphan_build_leaf_folder_unit_description(node),
-        }
-    )
-
-
-def _orphan_append_manual_aggregate(
-    orphans: List[Dict],
-    node: Dict,
-    node_path: str,
-    name: str,
-    backbone_path: str,
-) -> bool:
-    """Return True if appended and recursion should stop."""
-    if _normalize_path(backbone_path).startswith(f"{_normalize_path(node_path)}/"):
-        return False
-    orphans.append(
-        {
-            "structure_path": node_path,
-            "relative_path": node.get("relative_path", node_path),
-            "name": name,
-            "type": "folder (aggregated)",
-            "description": aggregate_folder_descriptions(node),
-        }
-    )
-    return True
-
-
-def collect_orphan_items(
-    enriched_data: Dict, backbone_path: str, aggregated_paths: Optional[List[str]] = None
-) -> List[Dict]:
+def collect_orphan_items(enriched_data: Dict, backbone_path: str, aggregated_paths: List[str] = None) -> List[Dict]:
     """Collect items that are NOT in the backbone folder."""
     orphans: List[Dict] = []
-    aggregated_paths_set = set(aggregated_paths or [])
-    backbone_folder = _normalize_path(backbone_path)
+    aggregated_paths = set(aggregated_paths or [])
+    
+    # Ensure no trailing slash for consistent comparison
+    backbone_folder = backbone_path.rstrip('/')
+    
+    # We'll use this prefix to robustly detect children of the backbone
+    backbone_prefix = f"{backbone_folder}/"
 
-    def traverse(node: Dict, hierarchy_path: str = "") -> None:
-        name = node.get("name")
-        node_type = node.get("type", "folder")
-        children = node.get("children", []) or []
+    def traverse(node: Dict, hierarchy_path: str = ""):
+        name = node.get('name')
+        node_type = node.get('type', 'folder')
+        children = node.get('children', []) or []
 
+        # Root case: just traverse children (root has no name)
         if not name:
             for child in children:
                 traverse(child, hierarchy_path)
@@ -745,46 +512,87 @@ def collect_orphan_items(
 
         node_path = f"{hierarchy_path}/{name}" if hierarchy_path else name
 
-        if _orphan_skip_backbone_subtree(node_path, backbone_folder):
+        # 1. Exact match: The node IS the backbone folder -> Skip it and all its children
+        if node_path == backbone_folder:
+            return
+        
+        # 2. Child match: The node is INSIDE the backbone folder -> Skip it
+        if node_path.startswith(backbone_prefix):
             return
 
-        description = node.get("description", "")
+        description = node.get('description', '')
+        
+        # New Aggregation Heuristic: Folders containing only files are treated as units
+        if node_type == 'folder':
+             # Only aggregate if it has files and NO subfolders
+             # (And ensure we aren't accidentally aggregating the backbone parent if structured weirdly)
+             folder_children = [c for c in children if c.get('type') == 'folder']
+             file_children = [c for c in children if c.get('type') == 'file']
 
-        if node_type == "folder" and _orphan_leaf_folder_auto_aggregate(node):
-            _orphan_append_leaf_unit(orphans, node, node_path, name)
-            return
+             is_sequential = node.get('by_sequence', False)
+             should_aggregate = (len(folder_children) == 0 and len(file_children) > 0 and not is_sequential)
+             
+             if should_aggregate:
+                  # Compute description from files
+                  combined_desc = f"Folder containing: {', '.join([c.get('name') for c in file_children])}"
+                  # Try to get richer descriptions if available
+                  rich_descs = [f"{c.get('name')}: {c.get('description', '')}" for c in file_children if c.get('description')]
+                  if rich_descs:
+                       combined_desc += ". Details: " + " | ".join(rich_descs)
+                  
+                  orphans.append({
+                        'structure_path': node_path,
+                        'relative_path': node.get('relative_path', node_path),
+                        'name': name,
+                        'type': 'folder_unit', # Mark as a unit so matcher knows it's a folder
+                        'description': combined_desc
+                  })
+                  return # Stop recursing into children files
 
-        if node_type == "folder" and node_path in aggregated_paths_set:
-            if _orphan_append_manual_aggregate(orphans, node, node_path, name, backbone_path):
-                return
+        # Aggregation Check (Legacy / Manual Override):
+        # If this folder is marked for aggregation, treat it as a file/unit and stop recursing.
+        if node_type == 'folder' and node_path in aggregated_paths:
+             # Ensure we do NOT aggregate the parent folder of the backbone
+             if not backbone_path.startswith(f"{node_path}/"):
+                 orphans.append({
+                    'structure_path': node_path,
+                    'relative_path': node.get('relative_path', node_path),
+                    'name': name,
+                    'type': 'folder (aggregated)',
+                    'description': aggregate_folder_descriptions(node)
+                })
+                 return # Do not recurse info children
 
-        if node_type == "folder":
+        # Standard Recursion Logic:
+        if node_type == 'folder':
             if not children:
-                return
+                return  # Skip empty folders
+
             for child in children:
                 traverse(child, node_path)
             return
 
-        orphans.append(
-            {
-                "structure_path": node_path,
-                "relative_path": node.get("relative_path", node_path),
-                "name": name,
-                "type": node_type,
-                "description": description,
-            }
-        )
+        # File Logic:
+        # If we reach this point, it's a file that wasn't inside a "leaf folder" unit.
+        # This occurs if the parent folder was "structural" (had subfolders) but also contained loose files.
+        orphans.append({
+            'structure_path': node_path,
+            'relative_path': node.get('relative_path', node_path),
+            'name': name,
+            'type': node_type,
+            'description': description
+        })
 
-    for child in enriched_data.get("children", []) or []:
+    for child in enriched_data.get('children', []) or []:
         traverse(child)
 
     return orphans
 
 
 def build_summary(
-    items: List[Any],
-    limit: Optional[int] = None,
-    truncate_fields: Optional[Dict[str, int]] = None,
+    items: List[any],
+    limit: int = None,
+    truncate_fields: Dict[str, int] = None
 ) -> List[Dict]:
     """
     Dynamically build a summary list from Pydantic models or dictionaries.
@@ -828,7 +636,7 @@ def build_summary(
 
 def extract_backbone_subtree(enriched_data: Dict, backbone_path: str) -> Dict | None:
     """Find and return the backbone folder node from the enriched tree."""
-    backbone_path = _normalize_path(backbone_path)
+    backbone_path = backbone_path.rstrip('/')
 
     def find(node: Dict, hierarchy_path: str = "") -> Dict | None:
         name = node.get('name', '')
@@ -843,11 +651,10 @@ def extract_backbone_subtree(enriched_data: Dict, backbone_path: str) -> Dict | 
                     return result
             return None
 
-        normalized_node_path = _normalize_path(node_path)
-        if normalized_node_path == backbone_path:
+        if node_path == backbone_path:
             return node
 
-        if backbone_path.startswith(normalized_node_path + "/"):
+        if backbone_path.startswith(node_path):
             for child in children:
                 result = find(child, node_path)
                 if result:
@@ -863,17 +670,12 @@ def extract_backbone_subtree(enriched_data: Dict, backbone_path: str) -> Dict | 
 
 
 def merge_matches_into_groups(
-    groups: List[BackboneGroup],
-    matches: OrphanMatchResponse,
-    *,
-    llm_gateway: Optional[LLMGateway] = None,
+    groups: List[BackboneGroup], matches: OrphanMatchResponse
 ) -> List[RearrangedGroup]:
     """Merge orphan matches into backbone groups, producing RearrangedGroups."""
     # This function now calls our new helper to generate the complete plan
     # but returns RearrangedGroup objects to fit typed return signature if needed elsewhere
-    plan_dicts = generate_rearrangement_plan(
-        groups, matches, llm_gateway=llm_gateway
-    )
+    plan_dicts = generate_rearrangement_plan(groups, matches)
     
     # Convert dicts back to RearrangedGroup objects for compatibility
     return [
@@ -886,164 +688,9 @@ def merge_matches_into_groups(
     ]
 
 
-def _make_backbone_groups(backbone_subtree: Dict) -> List[BackboneGroup]:
-    backbone_groups: List[BackboneGroup] = []
-
-    for child in backbone_subtree.get('children', []) or []:
-        name = child.get('name', 'Unknown')
-        rel_path = child.get('relative_path', name)
-
-        # Preserve the description. If it's a folder, aggregate child descriptions.
-        raw_desc = child.get('description', '').strip()
-        if not raw_desc and child.get('type') == 'folder':
-            raw_desc = aggregate_folder_descriptions(child)
-
-        group = BackboneGroup(
-            group_name=name,
-            main_item=rel_path,
-            related_items=[],
-            description=raw_desc or f"Topic material for {name}"
-        )
-        backbone_groups.append(group)
-
-    backbone_groups.append(BackboneGroup(
-        group_name="Lecture Miscellaneous",
-        main_item="",
-        related_items=[],
-        description="Miscellaneous materials that do not fit perfectly into other units."
-    ))
-
-    return backbone_groups
-
-
-def _build_matching_system_prompt(backbone_path: str, multi_match: bool) -> str:
-    if multi_match:
-        return (
-            f"You are an intelligent course material organizer for any subject (Computer Science, Math, Literature, etc.).\n\n"
-            f"The folder '{backbone_path}' defines the chronological 'backbone' of this course.\n"
-            f"You will receive:\n"
-            f"- A list of 'Existing Groups' (the backbone units) with their descriptions.\n"
-            f"- A batch of 'Orphan Files' that need to be categorized.\n\n"
-
-            f"Your Task:\n"
-            f"For EACH orphan, assign it to its relevant group. If you think this material can have match to multiple topic lecture groups, match ALL of them that is relevant.\n\n"
-
-            f"Topic-Only Mapping Rule (Critical):\n"
-            f"- Assign based on actual lecture topic coverage only (topic concepts/skills in the description and group description are related).\n"
-
-            f"Matching Considerations:\n"
-            f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
-            f"   - Example: A file focusing on both recursion and tree recursion fits into 'Lecture XX: recursion' and 'Lecture XX: tree recursion' if the both topic is include in the group description.\n"
-            
-            f"2. **Ambiguous/No Match (Fallback)**: If the file does not clearly fit any specific backbone unit, place it in 'Lecture Miscellaneous' category\n"
-
-            f"NOTE: Try to infer its topic from its description. If the Orphan description is not informative, it's safer to put it in Miscellaneous than to risk misplacement.\n"
-            
-            f"Constraints:\n"
-            f"- Use existing 'group_name' exactly as provided when matching.\n"
-            f"- Every single orphan file MUST be assigned to AT LEAST one group.\n"
-            f"- Do NOT create files that do not exist in orphans.\n"
-        )
-
-    return (
-        f"You are an intelligent course material organizer for any subject (Computer Science, Math, Literature, etc.).\n\n"
-        f"The folder '{backbone_path}' defines the chronological 'backbone' of this course.\n"
-        f"You will receive:\n"
-        f"- A list of 'Existing Groups' (the backbone units) with their descriptions.\n"
-        f"- A batch of 'Orphan Files' that need to be categorized.\n\n"
-
-        f"Your Task:\n"
-        f"For EACH orphan, assign it to the most semantically relevant group. If you think this material can have multiple matches, assign it to the most relevant one.\n\n"
-
-        f"Matching Considerations:\n"
-        f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
-        f"   - Example: A file named 'Derivatives Practice' or on Derivatives fits into 'Lecture XX: Differentiation' or Derivatives topic is include in the group description.\n"
-        
-        f"2. **Ambiguous/No Match (Fallback)**: If the file does not clearly fit any specific backbone unit, place it in 'Lecture Miscellaneous' category\n"
-
-        f"NOTE: Try to infer its topic from its name. If the Orphan description and the name is not informative, it's safer to put it in Miscellaneous than to risk misplacement.\n"
-        
-        f"Constraints:\n"
-        f"- Use existing 'group_name' exactly as provided when matching.\n"
-        f"- Do NOT create files that do not exist in orphans.\n"
-    )
-
-
-def _filter_matches(batch_result: OrphanMatchResponse, batch_orphans: List[Dict]) -> List[OrphanMatch]:
-    if not batch_result or not batch_result.matches:
-        return []
-
-    valid_orphan_paths = set()
-    normalized_to_original = {}
-    for o in batch_orphans:
-        for key in ('relative_path', 'structure_path'):
-            p = o.get(key)
-            if p:
-                valid_orphan_paths.add(p)
-                normalized_to_original[re.sub(r'\s+', ' ', p).strip()] = p
-
-    filtered_matches = []
-
-    for match in batch_result.matches:
-        cleaned_path = match.item_path.strip()
-
-        if cleaned_path in valid_orphan_paths:
-            filtered_matches.append(match)
-        else:
-            normalized = re.sub(r'\s+', ' ', cleaned_path)
-            if normalized in normalized_to_original:
-                match.item_path = normalized_to_original[normalized]
-                filtered_matches.append(match)
-                _safe_print(f"  - Fixed LLM path: '{cleaned_path}' -> '{match.item_path}'")
-            else:
-                _safe_print(f"  - Warning: Filtered out hallucinated item: {cleaned_path}")
-
-    return filtered_matches
-
-
-def _append_unmatched_orphans_to_misc(
-    all_orphans: List[Dict],
-    all_matches: List[OrphanMatch],
-    *,
-    fallback_group: str = "Lecture Miscellaneous",
-) -> int:
-    """Ensure every orphan is represented by assigning unmatched items to fallback group."""
-    if not all_orphans:
-        return 0
-
-    matched_paths = {m.item_path.strip() for m in all_matches if m.item_path}
-    appended = 0
-
-    for orphan in all_orphans:
-        candidate_paths = []
-        rel_path = orphan.get("relative_path")
-        if rel_path:
-            candidate_paths.append(rel_path)
-        structure_path = orphan.get("structure_path")
-        if structure_path and structure_path not in candidate_paths:
-            candidate_paths.append(structure_path)
-
-        if any(path in matched_paths for path in candidate_paths):
-            continue
-
-        fallback_path = rel_path or structure_path
-        if not fallback_path:
-            continue
-
-        all_matches.append(
-            OrphanMatch(item_path=fallback_path, assigned_group=fallback_group)
-        )
-        matched_paths.add(fallback_path)
-        appended += 1
-
-    return appended
-
-
 def generate_rearrangement_plan(
     backbone_groups: List[BackboneGroup],
-    matches: OrphanMatchResponse,
-    *,
-    llm_gateway: Optional[LLMGateway] = None,
+    matches: OrphanMatchResponse
 ) -> List[Dict]:
     """
     Combine backbone groups and orphan matches into a final rearrangement plan.
@@ -1158,10 +805,31 @@ def generate_rearrangement_plan(
                 "filename": path.split('/')[-1]
             })
 
-        gateway = llm_gateway or LLMGateway()
+        client = OpenAI()
         try:
-            refined_result = gateway.refine_miscellaneous_groups(misc_payload, seed=42)
-
+            completion = client.beta.chat.completions.parse(
+                model="gpt-5-mini",
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "You are organizing course files. These files were originally dumped into a 'Lecture Miscellaneous' folder. "
+                            "Your job is to further categorize them into specific logical groups (e.g., 'Review', 'Tutorials', 'Administrivia', 'Project Files', etc.).\n"
+                            "Group items by their overarching subject or file type.\n"
+                            "Provide a new group name and a brief description for each item.\n"
+                            "Don't create more than 5 new groups. If items are very diverse, it's okay to keep some in Miscellaneous, but try to find logical clusters where possible.\n"
+                        )
+                    },
+                    {
+                        "role": "user",
+                        "content": json.dumps(misc_payload, indent=2)
+                    }
+                ],
+                response_format=MiscRefinementResponse,
+                seed=42
+            )
+            refined_result = completion.choices[0].message.parsed
+            
             # Remove the old Miscellaneous array
             plan_map[misc_key]["related_items"] = []
             
@@ -1210,11 +878,7 @@ def generate_rearrangement_plan(
 # Pipeline Function 1: Backbone Identification
 # =============================================================================
 
-def run_backbone_identification(
-    enriched_data: Dict,
-    *,
-    llm_gateway: Optional[LLMGateway] = None,
-) -> str:
+def run_backbone_identification(enriched_data: Dict) -> str:
     """Identify the main backbone folder from the enriched structure.
 
     1. Extract file descriptions from enriched data.
@@ -1226,24 +890,32 @@ def run_backbone_identification(
     descriptions_payload = [fd.model_dump() for fd in file_descriptions]
     save_debug_log(descriptions_payload, "01_backbone_descriptions_payload")
 
-    gateway = llm_gateway or LLMGateway()
-    system_prompt = (
-        "You are an intelligent file system organizer for university course materials.\n"
-        "Given the study folder structure and each file description, "
-        "identify the 'Main Type' folder that best serves as the chronological "
-        "backbone of the course.\n"
-        "The backbone should be the folder containing core lecture materials "
-        "that provides the main chronological structure for the course (etc. Lecture Slides).\n"
-        "Return only the relative folder path of the backbone."
+    client = OpenAI()
+    completion = client.beta.chat.completions.parse(
+        model="gpt-5-mini",
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You are an intelligent file system organizer for university course materials.\n"
+                    "Given the study folder structure and each file description, "
+                    "identify the 'Main Type' folder that best serves as the chronological "
+                    "backbone of the course.\n"
+                    "The backbone should be the folder containing core lecture materials "
+                    "that provides the main chronological structure for the course (etc. Lecture Slides).\n"
+                    "Return only the relative folder path of the backbone."
+                )
+            },
+            {
+                "role": "user",
+                "content": json.dumps(descriptions_payload, indent=2)
+            }
+        ],
+        response_format=BackboneResult,
+        seed=42
     )
 
-    result: BackboneResult = gateway.parse_structured(
-        model="gpt-5-mini",
-        system_prompt=system_prompt,
-        user_payload=descriptions_payload,
-        response_model=BackboneResult,
-        seed=42,
-    )
+    result: BackboneResult = completion.choices[0].message.parsed
     print(f"Identified backbone: {result.backbone_path}")
     save_debug_log(result.backbone_path, "01_backbone_path")
     return result.backbone_path
@@ -1253,19 +925,13 @@ def run_backbone_identification(
 # Pipeline Function 2: Orphan Matching (Plan Matching)
 # =============================================================================
 
-def run_plan_matching(
-    enriched_data: Dict,
-    backbone_path: str,
-    multi_match: bool = False,
-    *,
-    llm_gateway: Optional[LLMGateway] = None,
-) -> tuple[OrphanMatchResponse, List[Dict]]:
+def run_plan_matching(enriched_data: Dict, backbone_path: str, multi_match: bool = False) -> OrphanMatchResponse:
     """Match non-backbone items to backbone groups.
 
     Step A: Generate backbone groups from backbone subfolders via LLM.
     Step B: Collect orphans and match each to a group via LLM.
     """
-    gateway = llm_gateway or LLMGateway()
+    client = OpenAI()
 
     # --- Step A: Generate backbone groups ---
     backbone_subtree = extract_backbone_subtree(enriched_data, backbone_path)
@@ -1303,7 +969,32 @@ def run_plan_matching(
     # )
     # backbone_groups: List[BackboneGroup] = groups_completion.choices[0].message.parsed.groups
     # Hard code each individual backbone child as its own main item
-    backbone_groups = _make_backbone_groups(backbone_subtree)
+    backbone_groups: List[BackboneGroup] = []
+    
+    for child in backbone_subtree.get('children', []) or []:
+        name = child.get('name', 'Unknown')
+        rel_path = child.get('relative_path', name)
+        
+        # Preserve the description. If it's a folder, aggregate child descriptions.
+        raw_desc = child.get('description', '').strip()
+        if not raw_desc and child.get('type') == 'folder':
+            raw_desc = aggregate_folder_descriptions(child)
+            
+        group = BackboneGroup(
+            group_name=name,                 # Hardcoded group name from file/folder name
+            main_item=rel_path,              # Hardcoded main item path
+            related_items=[],                # Empty initially; orphans will match into here
+            description=raw_desc or f"Topic material for {name}" # Keeps the description!
+        )
+        backbone_groups.append(group)
+
+    # Append a generic miscellaneous group at the end just like the LLM prompt used to
+    backbone_groups.append(BackboneGroup(
+        group_name="Lecture Miscellaneous",
+        main_item="",
+        related_items=[],
+        description="Miscellaneous materials that do not fit perfectly into other units."
+    ))
 
     
     print(f"Generated {len(backbone_groups)} backbone groups.")
@@ -1347,26 +1038,111 @@ def run_plan_matching(
     total_orphans = len(orphans)
     print(f"Processing {total_orphans} orphans in batches of {chunk_size}...")
 
-    system_prompt = _build_matching_system_prompt(backbone_path, multi_match)
-
-    for batch_index, batch_orphans in enumerate(_chunked(orphans, chunk_size), start=1):
-        print(f"Processing batch {batch_index} / {(total_orphans + chunk_size - 1) // chunk_size}...")
+    for i in range(0, total_orphans, chunk_size):
+        batch_orphans = orphans[i:i + chunk_size]
+        print(f"Processing batch {i // chunk_size + 1} / {(total_orphans + chunk_size - 1) // chunk_size}...")
         
         try:
-            batch_result = gateway.parse_structured(
-                model="gpt-5-mini",
-                system_prompt=system_prompt,
-                user_payload={
-                    "backbone_folder": backbone_path,
-                    "existing_groups": groups_summary,
-                    "orphans": batch_orphans,
-                },
-                response_model=OrphanMatchResponse,
-                seed=42,
-            )
+            if multi_match:
+                system_prompt = (
+                    f"You are an intelligent course material organizer for any subject (Computer Science, Math, Literature, etc.).\n\n"
+                    f"The folder '{backbone_path}' defines the chronological 'backbone' of this course.\n"
+                    f"You will receive:\n"
+                    f"- A list of 'Existing Groups' (the backbone units) with their descriptions.\n"
+                    f"- A batch of 'Orphan Files' that need to be categorized.\n\n"
 
-            filtered_matches = _filter_matches(batch_result, batch_orphans)
-            if filtered_matches:
+                    f"Your Task:\n"
+                    f"For EACH orphan, assign it to its relevant group. If you think this material can have match to multiple topic lecture groups, match ALL of them that is relevant.\n\n"
+
+                    f"Topic-Only Mapping Rule (Critical):\n"
+                    f"- Assign based on actual lecture topic coverage only (topic concepts/skills in the description and group description are related).\n"
+                    # f"- Do NOT assign by assessment stage words such as 'review', 'midterm', 'final', 'exam', or 'discussion' alone.\n"
+                    # f"- 'Final Review' content is NOT automatically 'Midterm Review'; map it only to lectures whose topics are explicitly covered.\n\n"
+
+                    f"Matching Considerations:\n"
+                    f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
+                    f"   - Example: A file focusing on both recursion and tree recursion fits into 'Lecture XX: recursion' and 'Lecture XX: tree recursion' if the both topic is include in the group description.\n"
+                    
+                    f"2. **Ambiguous/No Match (Fallback)**: If the file does not clearly fit any specific backbone unit, place it in 'Lecture Miscellaneous' category\n"
+
+                    f"NOTE: Try to infer its topic from its description. If the Orphan description is not informative, it's safer to put it in Miscellaneous than to risk misplacement.\n"
+                    
+                    f"Constraints:\n"
+                    f"- Use existing 'group_name' exactly as provided when matching.\n"
+                    f"- Every single orphan file MUST be assigned to AT LEAST one group.\n"
+                    f"- Do NOT create files that do not exist in orphans.\n"
+                )
+            else:
+                system_prompt = (
+                    f"You are an intelligent course material organizer for any subject (Computer Science, Math, Literature, etc.).\n\n"
+                    f"The folder '{backbone_path}' defines the chronological 'backbone' of this course.\n"
+                    f"You will receive:\n"
+                    f"- A list of 'Existing Groups' (the backbone units) with their descriptions.\n"
+                    f"- A batch of 'Orphan Files' that need to be categorized.\n\n"
+
+                    f"Your Task:\n"
+                    f"For EACH orphan, assign it to the most semantically relevant group. If you think this material can have multiple matches, assign it to the most relevant one.\n\n"
+
+                    f"Matching Considerations:\n"
+                    f"1. **Strong Match (Preferred)**: If the file's name or description strongly relates to a specific backbone unit's topic/descriptions.\n"
+                    f"   - Example: A file named 'Derivatives Practice' or on Derivatives fits into 'Lecture XX: Differentiation' or Derivatives topic is include in the group description.\n"
+                    
+                    f"2. **Ambiguous/No Match (Fallback)**: If the file does not clearly fit any specific backbone unit, place it in 'Lecture Miscellaneous' category\n"
+
+                    f"NOTE: Try to infer its topic from its name. If the Orphan description and the name is not informative, it's safer to put it in Miscellaneous than to risk misplacement.\n"
+                    
+                    f"Constraints:\n"
+                    f"- Use existing 'group_name' exactly as provided when matching.\n"
+                    f"- Do NOT create files that do not exist in orphans.\n"
+                )
+
+            match_completion = client.beta.chat.completions.parse(
+                model="gpt-5-mini", 
+                messages=[
+                    {
+                        "role": "system",
+                        "content": system_prompt
+                    },
+                    {
+                        "role": "user",
+                        "content": json.dumps({
+                            "backbone_folder": backbone_path,
+                            "existing_groups": groups_summary,
+                            "orphans": batch_orphans
+                        }, indent=2)
+                    }
+                ],
+                response_format=OrphanMatchResponse,
+                seed=42
+            )
+            
+            batch_result = match_completion.choices[0].message.parsed
+            if batch_result and batch_result.matches:
+                valid_orphan_paths = set()
+                normalized_to_original = {}
+                for o in batch_orphans:
+                    for key in ('relative_path', 'structure_path'):
+                        p = o.get(key)
+                        if p:
+                            valid_orphan_paths.add(p)
+                            normalized_to_original[re.sub(r'\s+', ' ', p).strip()] = p
+                
+                filtered_matches = []
+                
+                for match in batch_result.matches:
+                    cleaned_path = match.item_path.strip()
+                    
+                    if cleaned_path in valid_orphan_paths:
+                        filtered_matches.append(match)
+                    else:
+                        normalized = re.sub(r'\s+', ' ', cleaned_path)
+                        if normalized in normalized_to_original:
+                            match.item_path = normalized_to_original[normalized]
+                            filtered_matches.append(match)
+                            _safe_print(f"  - Fixed LLM path: '{cleaned_path}' -> '{match.item_path}'")
+                        else:
+                            _safe_print(f"  - Warning: Filtered out hallucinated item: {cleaned_path}")
+
                 all_matches.extend(filtered_matches)
                 print(f"  - Matched {len(filtered_matches)} valid items in this batch.")
             else:
@@ -1377,14 +1153,9 @@ def run_plan_matching(
             # Continue to next batch instead of crashing entirely
 
     matches = OrphanMatchResponse(matches=all_matches)
-    unmatched_added = _append_unmatched_orphans_to_misc(orphans, matches.matches)
-    if unmatched_added:
-        print(
-            f"Added {unmatched_added} unmatched orphan items to 'Lecture Miscellaneous'."
-        )
     print(f"Matched total of {len(matches.matches)} orphan items to groups.")
-    plan = generate_rearrangement_plan(backbone_groups, matches, llm_gateway=gateway)
-    return matches, plan
+    merge_matches_into_groups(backbone_groups, matches)
+    return matches
 
 
 # =============================================================================
@@ -1511,78 +1282,6 @@ def build_node_recursive(original_node: Dict, hash_map: Dict[str, str]) -> Dict:
     return new_node
 
 
-def _load_plan_groups(plan_data: object) -> List[Dict]:
-    if isinstance(plan_data, dict) and "groups" in plan_data:
-        return plan_data["groups"]
-    if isinstance(plan_data, list):
-        return plan_data
-    return []
-
-
-def _dedupe_items(items: List[str]) -> List[str]:
-    seen = set()
-    unique_items = []
-    for item in items:
-        if item and item not in seen:
-            unique_items.append(item)
-            seen.add(item)
-    return unique_items
-
-
-def _resolve_original_node(item_path: str, enriched_index: Dict[str, Dict]) -> Dict | None:
-    original_node = enriched_index.get(item_path)
-    if original_node:
-        return original_node
-    basename = os.path.basename(item_path)
-    return enriched_index.get(f"__NAME__{basename}")
-
-
-def _build_group_node(group: Dict, enriched_index: Dict[str, Dict], hash_map: Dict[str, str]) -> Dict:
-    group_name = group.get("group_name", "Unnamed Group")
-    main_item = group.get("main_item")
-    related_items = group.get("related_items", [])
-
-    group_node = {
-        "type": "group",
-        "name": group_name,
-        "children": []
-    }
-
-    items_to_process = []
-    if main_item:
-        items_to_process.append(main_item)
-    if related_items:
-        items_to_process.extend(related_items)
-
-    unique_items = _dedupe_items(items_to_process)
-
-    for item_path in unique_items:
-        original_node = _resolve_original_node(item_path, enriched_index)
-
-        if original_node:
-            new_item_node = build_node_recursive(original_node, hash_map)
-            group_node["children"].append(new_item_node)
-        else:
-            try:
-                print(f"Warning: Item not found in enriched data: {item_path}")
-            except UnicodeEncodeError:
-                print(f"Warning: Item not found in enriched data: {item_path.encode('ascii', 'replace').decode('ascii')}")
-
-            basename = os.path.basename(item_path)
-            fallback_hash = hash_map.get(item_path, "")
-            if not fallback_hash:
-                fallback_hash = hash_map.get(f"__NAME__{basename}", "")
-
-            group_node["children"].append({
-                "type": "unknown",
-                "relative_path": item_path,
-                "name": basename,
-                "file_hash": fallback_hash,
-            })
-
-    return group_node
-
-
 def build_rearranged_structure_tree(plan_path: str, enriched_data_path: str, db_path: str, output_path: str):
     """
     Builds a full hierarchical tree based on the rearrangement plan, expanding folders
@@ -1605,13 +1304,76 @@ def build_rearranged_structure_tree(plan_path: str, enriched_data_path: str, db_
     # 3. Build Tree
     result_tree = []
     
-    plan_groups = _load_plan_groups(plan_data)
-    if not plan_groups:
+    # plan_data is expected to be a list of groups
+    if isinstance(plan_data, dict) and "groups" in plan_data:
+        plan_groups = plan_data["groups"]
+    elif isinstance(plan_data, list):
+        plan_groups = plan_data
+    else:
         print("Error: Invalid plan format")
         return
 
     for group in plan_groups:
-        group_node = _build_group_node(group, enriched_index, hash_map)
+        group_name = group.get("group_name", "Unnamed Group")
+        # main_item might be empty string or None
+        main_item = group.get("main_item")
+        related_items = group.get("related_items", [])
+        
+        group_node = {
+            "type": "group",
+            "name": group_name,
+            "children": []
+        }
+        
+        items_to_process = []
+        if main_item:
+            items_to_process.append(main_item)
+        if related_items:
+            items_to_process.extend(related_items)
+            
+        # Deduplicate while preserving order, just in case
+        seen = set()
+        unique_items = []
+        for x in items_to_process:
+            if x and x not in seen:
+                unique_items.append(x)
+                seen.add(x)
+        
+        for item_path in unique_items:
+            # Find in index
+            original_node = enriched_index.get(item_path)
+            
+            # Fallback for filenames
+            if not original_node:
+                basename = os.path.basename(item_path)
+                original_node = enriched_index.get(f"__NAME__{basename}")
+
+            if original_node:
+                # Build recursive copy with hashes
+                new_item_node = build_node_recursive(original_node, hash_map)
+                group_node["children"].append(new_item_node)
+            else:
+                try:
+                    print(f"Warning: Item not found in enriched data: {item_path}")
+                except UnicodeEncodeError:
+                    print(f"Warning: Item not found in enriched data: {item_path.encode('ascii', 'replace').decode('ascii')}")
+                
+                # Create a placeholder if not found
+                basename = os.path.basename(item_path)
+                
+                # Try finding a fallback hash
+                fallback_hash = hash_map.get(item_path, "")
+                if not fallback_hash:
+                    # Also try finding hash by basename in the map (requires load_file_hashes to support __NAME__ keys)
+                    fallback_hash = hash_map.get(f"__NAME__{basename}", "")
+                
+                group_node["children"].append({
+                    "type": "unknown",
+                    "relative_path": item_path,
+                    "name": basename,
+                    "file_hash": fallback_hash,
+                })
+        
         result_tree.append(group_node)
         
     # 4. Save
@@ -1717,74 +1479,40 @@ def _resolve_db_path(base_dir: str, db_arg: str = None) -> str:
         raise FileNotFoundError("No *_metadata.db file found in input/ folder. Use --db to specify one.")
 
 
-def build_arg_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Course folder rearrangement pipeline")
-    parser.add_argument(
-        "--step",
-        choices=["enrich", "backbone", "match", "all", "tree"],
-        default="enrich",
-        help="Pipeline step: 'enrich', 'backbone', 'match', 'all', or 'tree'.",
-    )
-    parser.add_argument(
-        "--input",
-        required=False,
-        default="bfs_v4_tree_cs61a.json",
-        help="Input JSON filename located in 'input' folder (e.g. bfs_v3_tree.json).",
-    )
-    parser.add_argument(
-        "--db",
-        required=False,
-        default="CS 61A_metadata_NewPT.db",
-        help=(
-            "Metadata database filename in 'input' folder (e.g. 'EECS 106B_metadata.db'). "
-            "Auto-detected if only one *_metadata.db exists."
-        ),
-    )
-    parser.add_argument(
-        "--course",
-        required=False,
-        default="cs61a",
-        help="Course identifier for output folder (e.g. 'EECS_106B'). Auto-derived from --db or --input if not specified.",
-    )
-    parser.add_argument(
-        "--multi-match",
-        action=argparse.BooleanOptionalAction,
-        default=True,
-        help=(
-            "When enabled (default), use the multi-match prompt so orphans may map to multiple groups. "
-            "Use --no-multi-match for single-best-group behavior."
-        ),
-    )
-    return parser
+def _run_pipeline(args):
+    global _COURSE_LOG_DIR
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    course_name = args.course or _derive_course_name(args.db, args.input)
+    
+    if getattr(args, 'multi_match', False):
+        course_name = os.path.join(course_name, "multi")
 
+    output_dir = os.path.join(base_dir, "outputs", course_name)
+    log_dir = os.path.join(base_dir, "logs", course_name)
+    
+    os.makedirs(output_dir, exist_ok=True)
+    os.makedirs(log_dir, exist_ok=True)
+    _COURSE_LOG_DIR = log_dir
+    
+    print(f"Course: {course_name}")
+    print(f"Outputs: {output_dir}")
+    print(f"Logs:    {log_dir}")
 
-def parse_cli_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
-    return build_arg_parser().parse_args(argv)
-
-
-def execute_pipeline_steps(
-    context: PipelineContext, base_dir: str, args: argparse.Namespace
-) -> None:
-    """Run enrich / backbone / match steps according to ``args.step``."""
     try:
         if args.step in ("enrich", "all"):
-            run_enrichment(
-                base_dir,
-                args.input,
-                args.db,
-                context.course_name,
-                multi_match=context.multi_match,
-            )
+            input_file = args.input
+            run_enrichment(base_dir, input_file, args.db, course_name, multi_match=getattr(args, 'multi_match', False))
 
         if args.step in ("backbone", "all"):
             print("=" * 60)
             print("Step 1: Backbone Identification")
             print("=" * 60)
-            enriched_data = _load_enriched(base_dir, context.course_name)
+            enriched_data = _load_enriched(base_dir, course_name)
             backbone_path = run_backbone_identification(enriched_data)
 
-            backbone_output = os.path.join(context.output_dir, "backbone_result.json")
-            with open(backbone_output, "w", encoding="utf-8") as f:
+            backbone_output = os.path.join(output_dir, "backbone_result.json")
+            with open(backbone_output, 'w', encoding='utf-8') as f:
                 json.dump({"backbone_path": backbone_path}, f, indent=4)
             print(f"Backbone result saved to: {backbone_output}")
 
@@ -1792,104 +1520,84 @@ def execute_pipeline_steps(
             print("=" * 60)
             print("Step 2: Orphan Matching")
             print("=" * 60)
-            enriched_data = _load_enriched(base_dir, context.course_name)
+            enriched_data = _load_enriched(base_dir, course_name)
 
-            backbone_file = os.path.join(context.output_dir, "backbone_result.json")
+            backbone_file = os.path.join(output_dir, "backbone_result.json")
             if os.path.exists(backbone_file):
                 backbone_path = load_json_file(backbone_file)["backbone_path"]
             else:
                 print("No backbone result found, running backbone identification first...")
                 backbone_path = run_backbone_identification(enriched_data)
 
-            matches, plan = run_plan_matching(
-                enriched_data,
-                backbone_path,
-                multi_match=context.multi_match,
-            )
+            matches = run_plan_matching(enriched_data, backbone_path, multi_match=args.multi_match)
 
-            matches_output = os.path.join(context.output_dir, "orphan_matches.json")
-            with open(matches_output, "w", encoding="utf-8") as f:
+            matches_output = os.path.join(output_dir, "orphan_matches.json")
+
+            with open(matches_output, 'w', encoding='utf-8') as f:
                 json.dump(matches.model_dump(), f, indent=4)
             print(f"Orphan matches saved to: {matches_output}")
-
-            plan_output = os.path.join(context.output_dir, "rearrangement_plan.json")
-            with open(plan_output, "w", encoding="utf-8") as f:
-                json.dump(plan, f, indent=4, ensure_ascii=False)
-            print(f"Rearrangement plan saved to: {plan_output}")
 
     except Exception as e:
         print(f"Error: {e}")
         import traceback
-
         traceback.print_exc()
 
-
-def run_pipeline_cli(
-    args: argparse.Namespace,
-    base_dir: Optional[str] = None,
-    context: Optional[PipelineContext] = None,
-) -> None:
-    """CLI entry for enrich/backbone/match/all: ensures dirs, binds log context, runs steps."""
-    base_dir = base_dir or os.path.dirname(os.path.abspath(__file__))
-    context = context or _build_context(args, base_dir)
-    os.makedirs(context.output_dir, exist_ok=True)
-    os.makedirs(context.log_dir, exist_ok=True)
-
-    print(f"Course: {context.course_name}")
-    print(f"Outputs: {context.output_dir}")
-    print(f"Logs:    {context.log_dir}")
-
-    token = set_pipeline_log_dir(context.log_dir)
-    try:
-        execute_pipeline_steps(context, base_dir, args)
-    finally:
-        reset_pipeline_log_dir(token)
-
-
-def run_tree_step(
-    context: PipelineContext, base_dir: str, args: argparse.Namespace
-) -> None:
-    """CLI entry for the ``tree`` step (build rearranged structure JSON)."""
-    token = set_pipeline_log_dir(context.log_dir)
-    try:
-        output_dir = context.output_dir
-        os.makedirs(output_dir, exist_ok=True)
-
-        plan_path = os.path.join(
-            context.output_dir, "rearrangement_plan.json"
-        )
-        if not os.path.exists(plan_path):
-            plan_path = os.path.join(
-                base_dir, "logs", context.course_name, "07_rearrangement_plan.json"
-            )
-        enriched_path = os.path.join(
-            base_dir, "outputs", context.course_name, "study_enriched.json"
-        )
-        if not os.path.exists(enriched_path):
-            enriched_path = os.path.join(base_dir, "study_enriched.json")
-
-        db_path = _resolve_db_path(base_dir, args.db)
-        output_tree_path = os.path.join(
-            output_dir, "rearrangement_structure_tree.json"
-        )
-        build_rearranged_structure_tree(
-            plan_path, enriched_path, db_path, output_tree_path
-        )
-    finally:
-        reset_pipeline_log_dir(token)
-
-
-def _run_pipeline(args: argparse.Namespace) -> None:
-    """Backward-compatible name for :func:`run_pipeline_cli`."""
-    run_pipeline_cli(args)
-
-
 if __name__ == "__main__":
-    args = parse_cli_args()
+    parser = argparse.ArgumentParser(description="Course folder rearrangement pipeline")
+    parser.add_argument(
+        "--step",
+        choices=["enrich", "backbone", "match", "all", "tree"],
+        default="all",
+        help="Pipeline step: 'enrich', 'backbone', 'match', 'all', or 'tree'."
+    )
+    parser.add_argument(
+        "--input",
+        required=False,
+        default="bfs_v3_tree_eecs106b_new.json",
+        help="Input JSON filename located in 'input' folder (e.g. bfs_v3_tree.json)."
+    )
+    parser.add_argument(
+        "--db",
+        required=False,
+        default="EECS 106B_metadata.db",
+        help="Metadata database filename in 'input' folder (e.g. 'EECS 106B_metadata.db'). Auto-detected if only one *_metadata.db exists."
+    )
+    parser.add_argument(
+        "--course",
+        required=False,
+        default="EECS_106B",
+        help="Course identifier for output folder (e.g. 'EECS_106B'). Auto-derived from --db or --input if not specified."
+    )
+    parser.add_argument(
+        "--multi-match",
+        required=False,
+        default=True,
+        #action="store_true",
+        help="If set, uses the multi-match prompt to assign orphans to multiple groups if applicable."
+    )
+    args = parser.parse_args()
+
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    context = _build_context(args, base_dir)
+    course_name = args.course or _derive_course_name(args.db, args.input)
+
+    if getattr(args, 'multi_match', False):
+        course_name = os.path.join(course_name, "multi")
 
     if args.step == "tree":
-        run_tree_step(context, base_dir, args)
+        _COURSE_LOG_DIR = os.path.join(base_dir, "logs", course_name)
+        output_dir = os.path.join(base_dir, "outputs", course_name)
+        os.makedirs(output_dir, exist_ok=True)
+
+        plan_path = os.path.join(base_dir, "logs", course_name, "06_rearrangement_plan.json")
+        enriched_path = os.path.join(base_dir, "outputs", course_name, "study_enriched.json")
+        if not os.path.exists(enriched_path):
+             enriched_path = os.path.join(base_dir, "study_enriched.json")
+        
+        db_path = _resolve_db_path(base_dir, args.db)
+        output_tree_path = os.path.join(output_dir, "rearrangement_structure_tree.json")
+        
+        build_rearranged_structure_tree(plan_path, enriched_path, db_path, output_tree_path)
     else:
-        run_pipeline_cli(args, base_dir=base_dir, context=context)
+        _run_pipeline(args)
+
+    #
