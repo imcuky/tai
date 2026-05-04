@@ -51,9 +51,9 @@ if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.abspath(__file__))
     
     # Point to the specific input folder
-    input_folder = os.path.join(base_dir, "input", "study_106b")
+    input_folder = os.path.join(base_dir, "input", "eecs106b")
     
     # Define output JSON path
-    output_json = os.path.join(base_dir, "input", "bfs_v3_tree_study_106b.json")
+    output_json = os.path.join(base_dir, "input", "bfs_v3_tree_eecs106b_new.json")
     
     convert_folder_to_json(input_folder, output_json)

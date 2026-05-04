@@ -746,7 +746,8 @@ def generate_rearrangement_plan(
         raw_target_group = match.assigned_group.strip()
         orphan_path = match.item_path.strip()
 
-        target_groups = [g.strip() for g in raw_target_group.split(",") if g.strip()]
+        normalized_target_group = raw_target_group.replace(";", ",")
+        target_groups = [g.strip() for g in normalized_target_group.split(",") if g.strip()]
         if not target_groups:
             target_groups = [raw_target_group] if raw_target_group else []
 
