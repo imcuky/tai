@@ -1,0 +1,173 @@
+[
+  {
+    "group_name": "230323-EECS206B_Guest_Lecture.pdf",
+    "main_item": "eecs106b/study/lec/slides/230323-EECS206B_Guest_Lecture.pdf",
+    "related_items": [
+      "eecs106b/study/disc/disc10",
+      "eecs106b/study/proj/proj4"
+    ],
+    "description": "This is a guest lecture slide deck for a course on Robotic Manipulation and Interaction, focusing on the theory and application of Control Barrier Functions (CBFs) for nonlinear system safety control, with comparisons to Hamilton-Jacobi reachability and Model Predictive Control (MPC) methods. Key topics include safety filter design, control invariant sets, CBF-based safety guarantees, alternative safety control methods, and robustness considerations for CBFs."
+  },
+  {
+    "group_name": "eecs106b-handcontrol.pdf",
+    "main_item": "eecs106b/study/lec/slides/eecs106b-handcontrol.pdf",
+    "related_items": [
+      "eecs106b/study/hw/hw5"
+    ],
+    "description": "A lecture note excerpt on advanced robotic manipulation, focusing on the dynamics and control of multi-fingered robot hands using Lagrangian mechanics with constraints, including force closure, Pfaffian constraints, Lagrange multipliers, and connections to biological hand control."
+  },
+  {
+    "group_name": "eecs106b-nonholo.pdf",
+    "main_item": "eecs106b/study/lec/slides/eecs106b-nonholo.pdf",
+    "related_items": [
+      "eecs106b/study/disc/217_disc.pdf",
+      "eecs106b/study/disc/disc05",
+      "eecs106b/study/lec/boardwork",
+      "eecs106b/study/hw/hw3",
+      "eecs106b/study/proj/proj2"
+    ],
+    "description": "A lecture note document on nonholonomic systems in robotics, covering mathematical foundations, examples, and control theory concepts such as Pfaffian constraints, integrability, holonomy, Lie brackets, Frobenius and Chow's theorems, and applications to robotic vehicles and mechanisms."
+  },
+  {
+    "group_name": "feedback_linearization.pdf",
+    "main_item": "eecs106b/study/lec/slides/feedback_linearization.pdf",
+    "related_items": [
+      "eecs106b/study/disc/disc03",
+      "eecs106b/study/disc/disc08",
+      "eecs106b/study/lec/boardwork",
+      "eecs106b/study/hw/hw2",
+      "eecs106b/study/proj/proj1",
+      "eecs106b/study/proj/proj4"
+    ],
+    "description": "This is a set of advanced lecture notes on feedback linearization from nonlinear control theory, focusing on single-input single-output (SISO) and multi-input multi-output (MIMO) systems, with applications to quadrotor UAVs. It covers input-output linearization, full state feedback linearization, zero dynamics, relative degree, dynamic extension, and practical examples including planar and 3D quadrotor control."
+  },
+  {
+    "group_name": "grasping_intro.pdf",
+    "main_item": "eecs106b/study/lec/slides/grasping_intro.pdf",
+    "related_items": [
+      "eecs106b/study/disc/disc08",
+      "eecs106b/study/disc/disc09",
+      "eecs106b/study/lec/boardwork",
+      "eecs106b/study/hw/hw5"
+    ],
+    "description": "These are detailed lecture notes for Chapter 5 of 'A Mathematical Introduction to Robotic Manipulation', focusing on the modeling and control of multifingered robotic hands. The notes cover hand function and design, grasp statics, contact and hand kinematics, grasp planning, force optimization, and coordinated control strategies."
+  },
+  {
+    "group_name": "lec2_quadrotor_dynamics.pdf",
+    "main_item": "eecs106b/study/lec/slides/lec2_quadrotor_dynamics.pdf",
+    "related_items": [
+      "eecs106b/study/lec/boardwork"
+    ],
+    "description": "A lecture note on quadrotor dynamics and state-space system modeling, covering the Newton-Euler equations of motion, their application to rigid bodies and quadrotors, and the derivation of state-space models for quadrotor control."
+  },
+  {
+    "group_name": "lec3_state_space.pdf",
+    "main_item": "eecs106b/study/lec/slides/lec3_state_space.pdf",
+    "related_items": [
+      "eecs106b/study/disc/118_disc.pdf",
+      "eecs106b/study/disc/disc01",
+      "eecs106b/study/disc/disc08",
+      "eecs106b/study/lec/boardwork",
+      "eecs106b/study/hw/hw1"
+    ],
+    "description": "A lecture note on state-space and system modeling in robotics, covering the mathematical representation of dynamical systems, state-space formulation, linearization around equilibria, and stability analysis using examples such as the planar quadrotor and damped pendulum."
+  },
+  {
+    "group_name": "lec4_linear_control.pdf",
+    "main_item": "eecs106b/study/lec/slides/lec4_linear_control.pdf",
+    "related_items": [
+      "eecs106b/study/disc/125_disc.pdf",
+      "eecs106b/study/disc/disc01",
+      "eecs106b/study/disc/disc02",
+      "eecs106b/study/disc/disc08",
+      "eecs106b/study/lec/boardwork",
+      "eecs106b/study/hw/hw2",
+      "eecs106b/study/lab",
+      "eecs106b/study/proj/proj1"
+    ],
+    "description": "A lecture note on linear control for robotic manipulation, covering feedback control, stability concepts (Lyapunov, asymptotic, exponential), control strategies for first and second order systems, PID and model-based control, and application to quadrotor dynamics and control."
+  },
+  {
+    "group_name": "legged-lec-1.pdf",
+    "main_item": "eecs106b/study/lec/slides/legged-lec-1.pdf",
+    "related_items": [
+      "eecs106b/study/disc/421_disc.pdf",
+      "eecs106b/study/disc/disc11",
+      "eecs106b/study/hw/hw6"
+    ],
+    "description": "This is a lecture slide deck for a course on Robotic Manipulation and Interaction, specifically focusing on optimal control and reinforcement learning for legged robots. It covers the dynamics of legged robots, model-based optimal control methods, challenges in optimization, simplification strategies, and an introduction to deep reinforcement learning approaches."
+  },
+  {
+    "group_name": "legged-lec-2.pdf",
+    "main_item": "eecs106b/study/lec/slides/legged-lec-2.pdf",
+    "related_items": [
+      "eecs106b/study/disc/421_disc.pdf",
+      "eecs106b/study/disc/disc04",
+      "eecs106b/study/disc/disc11",
+      "eecs106b/study/hw/hw3",
+      "eecs106b/study/hw/hw6"
+    ],
+    "description": "This is a lecture note from a course on Robotic Manipulation and Interaction, focusing on predictive control and reinforcement learning for legged robots. The document covers the historical development of legged robots, key control strategies such as Model Predictive Control (MPC) and Reinforcement Learning (RL), detailed case studies of prominent legged robots (MIT Cheetah, Boston Dynamics Atlas, ETH ANYmal, OSU Cassie), and special topics including contact modeling and simulation environments."
+  },
+  {
+    "group_name": "SLAM_Presentation___106B_2023.pdf",
+    "main_item": "eecs106b/study/lec/slides/SLAM_Presentation___106B_2023.pdf",
+    "related_items": [
+      "eecs106b/study/disc/disc06",
+      "eecs106b/study/disc/disc07",
+      "eecs106b/study/hw/hw4",
+      "eecs106b/study/lab",
+      "eecs106b/study/proj/proj3"
+    ],
+    "description": "A comprehensive lecture slide deck for a course on Simultaneous Localization and Mapping (SLAM), focusing on a unifying optimization-based framework. It covers SLAM fundamentals, front-end and back-end architectures, state estimation via Kalman filters, state-of-the-art algorithms, loop closures, and emerging directions such as semantic and dynamic SLAM."
+  },
+  {
+    "group_name": "steering-nonholo.pdf",
+    "main_item": "eecs106b/study/lec/slides/steering-nonholo.pdf",
+    "related_items": [
+      "eecs106b/study/proj/proj2"
+    ],
+    "description": "A lecture note primarily focused on the optimal control and steering of nonholonomic systems, especially the nonholonomic integrator, using chained form representations and feedback linearization techniques."
+  },
+  {
+    "group_name": "Lecture Miscellaneous",
+    "main_item": "",
+    "related_items": [
+      "eecs106b/study/disc/.DS_Store",
+      "eecs106b/study/lec/.DS_Store",
+      "eecs106b/study/ROS/ROS/attachment ROS_basic_concepts.dia of ROS Concepts - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/attachment ROS_basic_concepts.png of ROS Concepts - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/CommandLineTools",
+      "eecs106b/study/ROS/ROS/Making sure you're not a bot!.html",
+      "eecs106b/study/ROS/ROS/Making sure you're not a bot!__dup2.html",
+      "eecs106b/study/ROS/ROS/msg - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS CommandLineTools - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS Concepts - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS Connection Header - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS EnvironmentVariables - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS Higher-Level Concepts - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS Installation - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS Introduction - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS NetworkSetup - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS StartGuide - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS TCPROS - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS Technical Overview - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS Troubleshooting - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS Tutorials - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS UDPROS - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/ROS YAMLCommandLine - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/rosbuild - ROS Wiki.html",
+      "eecs106b/study/ROS/ROS/Tutorials",
+      "eecs106b/study/ROS/ROSNodeTutorialPython",
+      "eecs106b/study/.DS_Store",
+      "eecs106b/study/final_proj",
+      "eecs106b/study/hw/.DS_Store",
+      "eecs106b/study/proj/.DS_Store",
+      "eecs106b/study/proj/proj0",
+      "eecs106b/study/proj/robot_usage_guide_sp23.pdf",
+      "eecs106b/study/ROS/ROS/Concepts (229├ù116).html"
+    ],
+    "description": "Miscellaneous materials that do not fit perfectly into other units."
+  }
+]

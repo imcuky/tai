@@ -1,0 +1,2840 @@
+{
+  "name": "cs61a",
+  "type": "folder",
+  "relative_path": "cs61a",
+  "children": [
+    {
+      "name": "practice",
+      "type": "folder",
+      "relative_path": "cs61a/practice",
+      "by_sequence": true,
+      "children": [
+        {
+          "name": ".DS_Store",
+          "type": "file",
+          "relative_path": "cs61a/practice/.DS_Store"
+        },
+        {
+          "name": "hw",
+          "type": "folder",
+          "relative_path": "cs61a/practice/hw",
+          "by_sequence": true,
+          "children": [
+            {
+              "name": ".DS_Store",
+              "type": "file",
+              "relative_path": "cs61a/practice/hw/.DS_Store"
+            },
+            {
+              "name": "hw01",
+              "type": "folder",
+              "relative_path": "cs61a/practice/hw/hw01",
+              "children": [
+                {
+                  "name": "Homework 1 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw01/Homework 1 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Homework 1 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw01/Homework 1 Solutions CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "sol-hw01",
+                  "type": "folder",
+                  "relative_path": "cs61a/practice/hw/hw01/sol-hw01",
+                  "children": [
+                    {
+                      "name": "hw01.py",
+                      "type": "file",
+                      "relative_path": "cs61a/practice/hw/hw01/sol-hw01/hw01.py"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hw02",
+              "type": "folder",
+              "relative_path": "cs61a/practice/hw/hw02",
+              "children": [
+                {
+                  "name": "Homework 2 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw02/Homework 2 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Homework 2 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw02/Homework 2 Solutions CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "hw02.py",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw02/hw02.py"
+                }
+              ]
+            },
+            {
+              "name": "hw03",
+              "type": "folder",
+              "relative_path": "cs61a/practice/hw/hw03",
+              "children": [
+                {
+                  "name": "Homework 3 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw03/Homework 3 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Homework 3 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw03/Homework 3 Solutions CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "hw03.py",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw03/hw03.py"
+                },
+                {
+                  "name": "sol-hw03",
+                  "type": "folder",
+                  "relative_path": "cs61a/practice/hw/hw03/sol-hw03",
+                  "children": [
+                    {
+                      "name": "hw03.py",
+                      "type": "file",
+                      "relative_path": "cs61a/practice/hw/hw03/sol-hw03/hw03.py"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hw04",
+              "type": "folder",
+              "relative_path": "cs61a/practice/hw/hw04",
+              "children": [
+                {
+                  "name": "Homework 4 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw04/Homework 4 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Homework 4 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw04/Homework 4 Solutions CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "hw04.py",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw04/hw04.py"
+                }
+              ]
+            },
+            {
+              "name": "hw05",
+              "type": "folder",
+              "relative_path": "cs61a/practice/hw/hw05",
+              "children": [
+                {
+                  "name": "Homework 5 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw05/Homework 5 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Homework 5 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw05/Homework 5 Solutions CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "hw05.py",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw05/hw05.py"
+                }
+              ]
+            },
+            {
+              "name": "hw06",
+              "type": "folder",
+              "relative_path": "cs61a/practice/hw/hw06",
+              "children": [
+                {
+                  "name": "Homework 6 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/hw/hw06/Homework 6 CS 61A Summer 2025.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lab",
+          "type": "folder",
+          "relative_path": "cs61a/practice/lab",
+          "by_sequence": true,
+          "children": [
+            {
+              "name": ".DS_Store",
+              "type": "file",
+              "relative_path": "cs61a/practice/lab/.DS_Store"
+            },
+            {
+              "name": "lab00",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab00",
+              "children": [
+                {
+                  "name": "Lab 0 Getting Started CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab00/Lab 0 Getting Started CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Lab 0 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab00/Lab 0 Solutions CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab01",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab01",
+              "children": [
+                {
+                  "name": "Lab 1 Functions, Control CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab01/Lab 1 Functions, Control CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Lab 1 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab01/Lab 1 Solutions CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab02",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab02",
+              "children": [
+                {
+                  "name": "Lab 2 Higher-Order Functions, Lambda Expressions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab02/Lab 2 Higher-Order Functions, Lambda Expressions CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Lab 2 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab02/Lab 2 Solutions CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab03",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab03",
+              "children": [
+                {
+                  "name": "Lab 3 Recursion, Tree Recursion CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab03/Lab 3 Recursion, Tree Recursion CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Lab 3 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab03/Lab 3 Solutions CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab04",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab04",
+              "children": [
+                {
+                  "name": "Lab 4 Sequences, Mutability, Trees CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab04/Lab 4 Sequences, Mutability, Trees CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Lab 4 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab04/Lab 4 Solutions CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab05",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab05",
+              "children": [
+                {
+                  "name": "Lab 5 Iterators, Generators CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab05/Lab 5 Iterators, Generators CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Lab 5 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab05/Lab 5 Solutions CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab06",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab06",
+              "children": [
+                {
+                  "name": "Lab 6 Object-Oriented Programming, Inheritance CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab06/Lab 6 Object-Oriented Programming, Inheritance CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Lab 6 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab06/Lab 6 Solutions CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab07",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab07",
+              "children": [
+                {
+                  "name": "Lab 7 Mutable Trees, Linked Lists CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab07/Lab 7 Mutable Trees, Linked Lists CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Lab 7 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab07/Lab 7 Solutions CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab08",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab08",
+              "children": [
+                {
+                  "name": "Lab 8 Scheme, Scheme Lists CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab08/Lab 8 Scheme, Scheme Lists CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Lab 8 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab08/Lab 8 Solutions CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab09",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab09",
+              "children": [
+                {
+                  "name": "Lab 9 Interpreters CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab09/Lab 9 Interpreters CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "Lab 9 Solutions CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab09/Lab 9 Solutions CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab10",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab10",
+              "children": [
+                {
+                  "name": "Lab 10 Tail Calls CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab10/Lab 10 Tail Calls CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab11",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab11",
+              "children": [
+                {
+                  "name": "Lab 11 SQL CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab11/Lab 11 SQL CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "lab12",
+              "type": "folder",
+              "relative_path": "cs61a/practice/lab/lab12",
+              "children": [
+                {
+                  "name": "Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/practice/lab/lab12/Lab 12 Final Review (Optional) CS 61A Summer 2025.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "proj",
+          "type": "folder",
+          "relative_path": "cs61a/practice/proj",
+          "children": [
+            {
+              "name": "Ants Vs. SomeBees CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/practice/proj/Ants Vs. SomeBees CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Computer Aided Typing Software CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/practice/proj/Computer Aided Typing Software CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Scheme Interpreter CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/practice/proj/Scheme Interpreter CS 61A Summer 2025.html"
+            },
+            {
+              "name": "The Game of Hog CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/practice/proj/The Game of Hog CS 61A Summer 2025.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "study",
+      "type": "folder",
+      "relative_path": "cs61a/study",
+      "category": "study",
+      "children": [
+        {
+          "name": ".DS_Store",
+          "type": "file",
+          "relative_path": "cs61a/study/.DS_Store"
+        },
+        {
+          "name": "disc",
+          "type": "folder",
+          "relative_path": "cs61a/study/disc",
+          "children": [
+            {
+              "name": ".DS_Store",
+              "type": "file",
+              "relative_path": "cs61a/study/disc/.DS_Store"
+            },
+            {
+              "name": "disc00",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc00",
+              "children": [
+                {
+                  "name": "disc00.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc00/disc00.pdf"
+                },
+                {
+                  "name": "Discussion 0 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc00/Discussion 0 CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "disc01",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc01",
+              "children": [
+                {
+                  "name": "disc01.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc01/disc01.pdf"
+                },
+                {
+                  "name": "Discussion 1 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc01/Discussion 1 CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "disc02",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc02",
+              "children": [
+                {
+                  "name": "disc02.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc02/disc02.pdf"
+                },
+                {
+                  "name": "Discussion 2 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc02/Discussion 2 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "sol-disc02",
+                  "type": "folder",
+                  "relative_path": "cs61a/study/disc/disc02/sol-disc02",
+                  "children": [
+                    {
+                      "name": "disc02.pdf",
+                      "type": "file",
+                      "relative_path": "cs61a/study/disc/disc02/sol-disc02/disc02.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "disc03",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc03",
+              "children": [
+                {
+                  "name": "disc03.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc03/disc03.pdf"
+                },
+                {
+                  "name": "Discussion 3 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc03/Discussion 3 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "sol-disc03",
+                  "type": "folder",
+                  "relative_path": "cs61a/study/disc/disc03/sol-disc03",
+                  "children": [
+                    {
+                      "name": "disc03.pdf",
+                      "type": "file",
+                      "relative_path": "cs61a/study/disc/disc03/sol-disc03/disc03.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "disc04",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc04",
+              "children": [
+                {
+                  "name": "disc04.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc04/disc04.pdf"
+                },
+                {
+                  "name": "Discussion 4 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc04/Discussion 4 CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "disc05",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc05",
+              "children": [
+                {
+                  "name": "disc05.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc05/disc05.pdf"
+                },
+                {
+                  "name": "Discussion 5 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc05/Discussion 5 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "sol-disc05",
+                  "type": "folder",
+                  "relative_path": "cs61a/study/disc/disc05/sol-disc05",
+                  "children": [
+                    {
+                      "name": "disc05.pdf",
+                      "type": "file",
+                      "relative_path": "cs61a/study/disc/disc05/sol-disc05/disc05.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "disc06",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc06",
+              "children": [
+                {
+                  "name": "disc06.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc06/disc06.pdf"
+                },
+                {
+                  "name": "Discussion 6 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc06/Discussion 6 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "sol-disc06",
+                  "type": "folder",
+                  "relative_path": "cs61a/study/disc/disc06/sol-disc06",
+                  "children": [
+                    {
+                      "name": "disc06.pdf",
+                      "type": "file",
+                      "relative_path": "cs61a/study/disc/disc06/sol-disc06/disc06.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "disc07",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc07",
+              "children": [
+                {
+                  "name": "disc07.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc07/disc07.pdf"
+                },
+                {
+                  "name": "Discussion 7 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc07/Discussion 7 CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "disc08",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc08",
+              "children": [
+                {
+                  "name": "disc08.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc08/disc08.pdf"
+                },
+                {
+                  "name": "Discussion 8 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc08/Discussion 8 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "sol-disc08",
+                  "type": "folder",
+                  "relative_path": "cs61a/study/disc/disc08/sol-disc08",
+                  "children": [
+                    {
+                      "name": "disc08.pdf",
+                      "type": "file",
+                      "relative_path": "cs61a/study/disc/disc08/sol-disc08/disc08.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "disc09",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc09",
+              "children": [
+                {
+                  "name": "disc09.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc09/disc09.pdf"
+                },
+                {
+                  "name": "Discussion 9 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc09/Discussion 9 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "sol-disc09",
+                  "type": "folder",
+                  "relative_path": "cs61a/study/disc/disc09/sol-disc09",
+                  "children": [
+                    {
+                      "name": "disc09.pdf",
+                      "type": "file",
+                      "relative_path": "cs61a/study/disc/disc09/sol-disc09/disc09.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "disc10",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc10",
+              "children": [
+                {
+                  "name": "disc10.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc10/disc10.pdf"
+                },
+                {
+                  "name": "Discussion 10 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc10/Discussion 10 CS 61A Summer 2025.html"
+                },
+                {
+                  "name": "sol-disc10",
+                  "type": "folder",
+                  "relative_path": "cs61a/study/disc/disc10/sol-disc10",
+                  "children": [
+                    {
+                      "name": "disc10.pdf",
+                      "type": "file",
+                      "relative_path": "cs61a/study/disc/disc10/sol-disc10/disc10.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "disc11",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc11",
+              "children": [
+                {
+                  "name": "disc11.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc11/disc11.pdf"
+                },
+                {
+                  "name": "Discussion 11 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc11/Discussion 11 CS 61A Summer 2025.html"
+                }
+              ]
+            },
+            {
+              "name": "disc12",
+              "type": "folder",
+              "relative_path": "cs61a/study/disc/disc12",
+              "children": [
+                {
+                  "name": "disc12.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc12/disc12.pdf"
+                },
+                {
+                  "name": "Discussion 12 CS 61A Summer 2025.html",
+                  "type": "file",
+                  "relative_path": "cs61a/study/disc/disc12/Discussion 12 CS 61A Summer 2025.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "slides",
+          "type": "folder",
+          "relative_path": "cs61a/study/slides",
+          "children": [
+            {
+              "name": ".DS_Store",
+              "type": "file",
+              "relative_path": "cs61a/study/slides/.DS_Store"
+            },
+            {
+              "name": "slides01",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides01",
+              "children": [
+                {
+                  "name": "01-Welcome_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides01/01-Welcome_1pp.pdf"
+                },
+                {
+                  "name": "01.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides01/01.py"
+                }
+              ]
+            },
+            {
+              "name": "slides02",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides02",
+              "children": [
+                {
+                  "name": "02-Functions_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides02/02-Functions_1pp.pdf"
+                },
+                {
+                  "name": "02.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides02/02.py"
+                }
+              ]
+            },
+            {
+              "name": "slides03",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides03",
+              "children": [
+                {
+                  "name": "03-Control_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides03/03-Control_1pp.pdf"
+                },
+                {
+                  "name": "03.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides03/03.py"
+                }
+              ]
+            },
+            {
+              "name": "slides04",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides04",
+              "children": [
+                {
+                  "name": ".DS_Store",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides04/.DS_Store"
+                },
+                {
+                  "name": "04-Higher-Order_Functions_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides04/04-Higher-Order_Functions_1pp.pdf"
+                },
+                {
+                  "name": "04.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides04/04.py"
+                }
+              ]
+            },
+            {
+              "name": "slides05",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides05",
+              "children": [
+                {
+                  "name": ".DS_Store",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides05/.DS_Store"
+                },
+                {
+                  "name": "05-Environments_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides05/05-Environments_1pp.pdf"
+                },
+                {
+                  "name": "05.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides05/05.py"
+                }
+              ]
+            },
+            {
+              "name": "slides06",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides06",
+              "children": [
+                {
+                  "name": ".DS_Store",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides06/.DS_Store"
+                },
+                {
+                  "name": "06-Recursion_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides06/06-Recursion_1pp.pdf"
+                },
+                {
+                  "name": "06.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides06/06.py"
+                }
+              ]
+            },
+            {
+              "name": "slides07",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides07",
+              "children": [
+                {
+                  "name": "07-Tree_Recursion_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides07/07-Tree_Recursion_1pp.pdf"
+                },
+                {
+                  "name": "07.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides07/07.py"
+                }
+              ]
+            },
+            {
+              "name": "slides08",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides08",
+              "children": [
+                {
+                  "name": "08-Sequences_and_Containers_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides08/08-Sequences_and_Containers_1pp.pdf"
+                },
+                {
+                  "name": "08.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides08/08.py"
+                }
+              ]
+            },
+            {
+              "name": "slides09",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides09",
+              "children": [
+                {
+                  "name": "09-Data_Abstraction_and_ADT_Trees_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides09/09-Data_Abstraction_and_ADT_Trees_1pp.pdf"
+                },
+                {
+                  "name": "09.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides09/09.py"
+                }
+              ]
+            },
+            {
+              "name": "slides10",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides10",
+              "children": [
+                {
+                  "name": "10-Mutability_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides10/10-Mutability_1pp.pdf"
+                },
+                {
+                  "name": "10.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides10/10.py"
+                }
+              ]
+            },
+            {
+              "name": "slides11",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides11",
+              "children": [
+                {
+                  "name": "11-Iterators_and_Generators_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides11/11-Iterators_and_Generators_1pp.pdf"
+                },
+                {
+                  "name": "11.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides11/11.py"
+                }
+              ]
+            },
+            {
+              "name": "slides12",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides12",
+              "children": [
+                {
+                  "name": "12-Midterm_Review_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides12/12-Midterm_Review_1pp.pdf"
+                },
+                {
+                  "name": "12.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides12/12.py"
+                }
+              ]
+            },
+            {
+              "name": "slides13",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides13",
+              "children": [
+                {
+                  "name": "13-Objects_and_Attributes_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides13/13-Objects_and_Attributes_1pp.pdf"
+                },
+                {
+                  "name": "13.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides13/13.py"
+                }
+              ]
+            },
+            {
+              "name": "slides14",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides14",
+              "children": [
+                {
+                  "name": "14-Inheritance_and_String_Representation_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides14/14-Inheritance_and_String_Representation_1pp.pdf"
+                },
+                {
+                  "name": "14.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides14/14.py"
+                }
+              ]
+            },
+            {
+              "name": "slides15",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides15",
+              "children": [
+                {
+                  "name": "15-Mutable_Trees_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides15/15-Mutable_Trees_1pp.pdf"
+                },
+                {
+                  "name": "15.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides15/15.py"
+                }
+              ]
+            },
+            {
+              "name": "slides16",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides16",
+              "children": [
+                {
+                  "name": "16-Linked_Lists_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides16/16-Linked_Lists_1pp.pdf"
+                },
+                {
+                  "name": "16.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides16/16.py"
+                }
+              ]
+            },
+            {
+              "name": "slides17",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides17",
+              "children": [
+                {
+                  "name": "17-Efficiency_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides17/17-Efficiency_1pp.pdf"
+                },
+                {
+                  "name": "17.ipynb",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides17/17.ipynb"
+                },
+                {
+                  "name": "17.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides17/17.py"
+                }
+              ]
+            },
+            {
+              "name": "slides18",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides18",
+              "children": [
+                {
+                  "name": "18-Scheme_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides18/18-Scheme_1pp.pdf"
+                },
+                {
+                  "name": "18.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides18/18.py"
+                }
+              ]
+            },
+            {
+              "name": "slides19",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides19",
+              "children": [
+                {
+                  "name": "19-Scheme_Lists_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides19/19-Scheme_Lists_1pp.pdf"
+                }
+              ]
+            },
+            {
+              "name": "slides21",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides21",
+              "children": [
+                {
+                  "name": "21-Tail_Calls_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides21/21-Tail_Calls_1pp.pdf"
+                },
+                {
+                  "name": "21.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides21/21.py"
+                }
+              ]
+            },
+            {
+              "name": "slides22",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides22",
+              "children": [
+                {
+                  "name": "22-SQL_and_Tables_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides22/22-SQL_and_Tables_1pp.pdf"
+                },
+                {
+                  "name": "22.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides22/22.py"
+                }
+              ]
+            },
+            {
+              "name": "slides23",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides23",
+              "children": [
+                {
+                  "name": "23-Aggregation_and_Databases_1pp.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides23/23-Aggregation_and_Databases_1pp.pdf"
+                },
+                {
+                  "name": "23.py",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides23/23.py"
+                }
+              ]
+            },
+            {
+              "name": "slides24",
+              "type": "folder",
+              "relative_path": "cs61a/study/slides/slides24",
+              "children": [
+                {
+                  "name": "24-CS_Theory_1pp-updated.pdf",
+                  "type": "file",
+                  "relative_path": "cs61a/study/slides/slides24/24-CS_Theory_1pp-updated.pdf"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "youtube",
+          "type": "folder",
+          "relative_path": "cs61a/study/youtube",
+          "children": [
+            {
+              "name": "Aggregation and Databases (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Aggregation and Databases (Su25)",
+              "children": [
+                {
+                  "name": "1-Aggregation.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Aggregation and Databases (Su25)/1-Aggregation.webm"
+                },
+                {
+                  "name": "2-Grouping.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Aggregation and Databases (Su25)/2-Grouping.mkv"
+                },
+                {
+                  "name": "3-Create Table and Drop Table.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Aggregation and Databases (Su25)/3-Create Table and Drop Table.mkv"
+                },
+                {
+                  "name": "4-Modifying Tables.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Aggregation and Databases (Su25)/4-Modifying Tables.mkv"
+                },
+                {
+                  "name": "5-Python and SQL.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Aggregation and Databases (Su25)/5-Python and SQL.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Control",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Control",
+              "children": [
+                {
+                  "name": "1-Multiple Environments.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Control/1-Multiple Environments.webm"
+                },
+                {
+                  "name": "2-Miscellaneous Python Features.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Control/2-Miscellaneous Python Features.webm"
+                },
+                {
+                  "name": "3-Conditional statements.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Control/3-Conditional statements.mkv"
+                },
+                {
+                  "name": "4-Iteration.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Control/4-Iteration.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Data Abstraction and ADT Trees (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Data Abstraction and ADT Trees (Su25)",
+              "children": [
+                {
+                  "name": "1-Data Abstraction.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Data Abstraction and ADT Trees (Su25)/1-Data Abstraction.webm"
+                },
+                {
+                  "name": "2-Representing Rational Numbers.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Data Abstraction and ADT Trees (Su25)/2-Representing Rational Numbers.mkv"
+                },
+                {
+                  "name": "3-Abstraction Barriers.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Data Abstraction and ADT Trees (Su25)/3-Abstraction Barriers.mkv"
+                },
+                {
+                  "name": "4-Data Representations.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Data Abstraction and ADT Trees (Su25)/4-Data Representations.mkv"
+                },
+                {
+                  "name": "5-Trees.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Data Abstraction and ADT Trees (Su25)/5-Trees.mkv"
+                },
+                {
+                  "name": "6-Tree Processing.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Data Abstraction and ADT Trees (Su25)/6-Tree Processing.mkv"
+                },
+                {
+                  "name": "7-Example∩╝Ü Printing Trees.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Data Abstraction and ADT Trees (Su25)/7-Example∩╝Ü Printing Trees.mkv"
+                },
+                {
+                  "name": "8-Example∩╝Ü Summing Paths.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Data Abstraction and ADT Trees (Su25)/8-Example∩╝Ü Summing Paths.mkv"
+                },
+                {
+                  "name": "9-Example∩╝Ü Counting Paths.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Data Abstraction and ADT Trees (Su25)/9-Example∩╝Ü Counting Paths.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Disc 07",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Disc 07",
+              "children": [
+                {
+                  "name": "1-Prune Small Getting Started.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Disc 07/1-Prune Small Getting Started.webm"
+                },
+                {
+                  "name": "3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Disc 07/3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv"
+                },
+                {
+                  "name": "4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Disc 07/4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm"
+                },
+                {
+                  "name": "5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Disc 07/5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm"
+                },
+                {
+                  "name": "6-Duplicate Link Getting Started.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Disc 07/6-Duplicate Link Getting Started.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Discussion 10 Tail Calls, Scheme Data Abstractions, SQL",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Discussion 10 Tail Calls, Scheme Data Abstractions, SQL",
+              "children": [
+                {
+                  "name": "1-[CS 61A SU24] Discussion 10 Problem #1 Fast-Exp.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 10 Tail Calls, Scheme Data Abstractions, SQL/1-[CS 61A SU24] Discussion 10 Problem #1 Fast-Exp.mkv"
+                },
+                {
+                  "name": "2-Reverse.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 10 Tail Calls, Scheme Data Abstractions, SQL/2-Reverse.webm"
+                },
+                {
+                  "name": "3-Closer City.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 10 Tail Calls, Scheme Data Abstractions, SQL/3-Closer City.webm"
+                }
+              ]
+            },
+            {
+              "name": "Discussion 4 Tree Recursion, Trees, Lists",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Discussion 4 Tree Recursion, Trees, Lists",
+              "children": [
+                {
+                  "name": "1-Disc04 Q4 Even Weighted.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 4 Tree Recursion, Trees, Lists/1-Disc04 Q4 Even Weighted.mkv"
+                },
+                {
+                  "name": "2-Question #3 Max Path Sum.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 4 Tree Recursion, Trees, Lists/2-Question #3 Max Path Sum.webm"
+                },
+                {
+                  "name": "3-61A FA21 HW05 Q3 Preorder.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 4 Tree Recursion, Trees, Lists/3-61A FA21 HW05 Q3 Preorder.mkv"
+                },
+                {
+                  "name": "4-Find Path.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 4 Tree Recursion, Trees, Lists/4-Find Path.webm"
+                }
+              ]
+            },
+            {
+              "name": "Discussion 5 Iterators, Generators, Efficiency",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Discussion 5 Iterators, Generators, Efficiency",
+              "children": [
+                {
+                  "name": "1-[CS 61A FA23] Final Problem Copying Copies.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 5 Iterators, Generators, Efficiency/1-[CS 61A FA23] Final Problem Copying Copies.webm"
+                },
+                {
+                  "name": "2-WWPD Iterators.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 5 Iterators, Generators, Efficiency/2-WWPD Iterators.mkv"
+                },
+                {
+                  "name": "4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 5 Iterators, Generators, Efficiency/4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv"
+                },
+                {
+                  "name": "5-Primes Generator.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 5 Iterators, Generators, Efficiency/5-Primes Generator.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Discussion 9 Interpreters",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Discussion 9 Interpreters",
+              "children": [
+                {
+                  "name": "1-[CS 61A SP24] Discussion 10 Problem #3 Print Evaluated Expressions Walkthrough.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 9 Interpreters/1-[CS 61A SP24] Discussion 10 Problem #3 Print Evaluated Expressions Walkthrough.mkv"
+                },
+                {
+                  "name": "2-[CS 61A SP24] Discussion 10 Problem #2 Evaluation Walkthrough.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 9 Interpreters/2-[CS 61A SP24] Discussion 10 Problem #2 Evaluation Walkthrough.mkv"
+                },
+                {
+                  "name": "3-[CS 61A SP24] Discussion 10 Question #1 Representing Expressions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Discussion 9 Interpreters/3-[CS 61A SP24] Discussion 10 Question #1 Representing Expressions.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Efficiency",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Efficiency",
+              "children": [
+                {
+                  "name": "1-Measuring Efficiency.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Efficiency/1-Measuring Efficiency.webm"
+                },
+                {
+                  "name": "2-Memoization.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Efficiency/2-Memoization.mkv"
+                },
+                {
+                  "name": "3-Exponentiation.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Efficiency/3-Exponentiation.mkv"
+                },
+                {
+                  "name": "4-Orders of Growth.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Efficiency/4-Orders of Growth.mkv"
+                },
+                {
+                  "name": "5-Order of Growth Notation.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Efficiency/5-Order of Growth Notation.mkv"
+                },
+                {
+                  "name": "6-Space.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Efficiency/6-Space.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Environments",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Environments",
+              "children": [
+                {
+                  "name": "1-Environments for Higher-Order Functions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments/1-Environments for Higher-Order Functions.webm"
+                },
+                {
+                  "name": "2-Environments for Nested Definitions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments/2-Environments for Nested Definitions.mkv"
+                },
+                {
+                  "name": "3-Local Names.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments/3-Local Names.mkv"
+                },
+                {
+                  "name": "4-Function Composition.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments/4-Function Composition.mkv"
+                },
+                {
+                  "name": "5-Lambda Expressions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments/5-Lambda Expressions.mkv"
+                },
+                {
+                  "name": "6-Function Currying.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments/6-Function Currying.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Environments (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Environments (Su25)",
+              "children": [
+                {
+                  "name": "1-Environments for Higher-Order Functions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments (Su25)/1-Environments for Higher-Order Functions.webm"
+                },
+                {
+                  "name": "2-Environments for Nested Definitions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments (Su25)/2-Environments for Nested Definitions.mkv"
+                },
+                {
+                  "name": "3-Local Names.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments (Su25)/3-Local Names.mkv"
+                },
+                {
+                  "name": "4-Function Composition.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments (Su25)/4-Function Composition.mkv"
+                },
+                {
+                  "name": "5-Lambda Expressions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments (Su25)/5-Lambda Expressions.mkv"
+                },
+                {
+                  "name": "6-Lambda Function Environments.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments (Su25)/6-Lambda Function Environments.webm"
+                },
+                {
+                  "name": "7-Function Currying.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Environments (Su25)/7-Function Currying.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Final Review (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Final Review (Su25)",
+              "children": [
+                {
+                  "name": "1-Trees.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Final Review (Su25)/1-Trees.mkv"
+                },
+                {
+                  "name": "2-Tree Processing.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Final Review (Su25)/2-Tree Processing.mkv"
+                },
+                {
+                  "name": "3-Recursive Accumulation.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Final Review (Su25)/3-Recursive Accumulation.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Functions",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Functions",
+              "children": [
+                {
+                  "name": "1-Welcome.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Functions/1-Welcome.webm"
+                },
+                {
+                  "name": "2-Call Expressions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Functions/2-Call Expressions.webm"
+                },
+                {
+                  "name": "3-Names, Assignment, and User-Defined Functions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Functions/3-Names, Assignment, and User-Defined Functions.webm"
+                },
+                {
+                  "name": "4-Environment Diagrams.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Functions/4-Environment Diagrams.webm"
+                },
+                {
+                  "name": "5-Defining Functions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Functions/5-Defining Functions.webm"
+                },
+                {
+                  "name": "6-Print and None.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Functions/6-Print and None.webm"
+                }
+              ]
+            },
+            {
+              "name": "Higher-Order Functions",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Higher-Order Functions",
+              "children": [
+                {
+                  "name": "1-Iteration Example.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Higher-Order Functions/1-Iteration Example.webm"
+                },
+                {
+                  "name": "2-Control.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Higher-Order Functions/2-Control.mkv"
+                },
+                {
+                  "name": "3-Control Expressions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Higher-Order Functions/3-Control Expressions.webm"
+                },
+                {
+                  "name": "4-Higher-Order Functions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Higher-Order Functions/4-Higher-Order Functions.webm"
+                },
+                {
+                  "name": "5-Functions as Return Values.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Higher-Order Functions/5-Functions as Return Values.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Inheritance and Representation (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Inheritance and Representation (Su25)",
+              "children": [
+                {
+                  "name": "1-Inheritance.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Inheritance and Representation (Su25)/1-Inheritance.webm"
+                },
+                {
+                  "name": "2-Object-Oriented Design.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Inheritance and Representation (Su25)/2-Object-Oriented Design.mkv"
+                },
+                {
+                  "name": "3-Attribute Lookup Practice.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Inheritance and Representation (Su25)/3-Attribute Lookup Practice.mkv"
+                },
+                {
+                  "name": "4-Multiple Inheritance.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Inheritance and Representation (Su25)/4-Multiple Inheritance.mkv"
+                },
+                {
+                  "name": "5-String Representations.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Inheritance and Representation (Su25)/5-String Representations.mkv"
+                },
+                {
+                  "name": "6-String Interpolation.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Inheritance and Representation (Su25)/6-String Interpolation.mkv"
+                },
+                {
+                  "name": "7-Polymorphic Functions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Inheritance and Representation (Su25)/7-Polymorphic Functions.webm"
+                },
+                {
+                  "name": "8-Special Method Names.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Inheritance and Representation (Su25)/8-Special Method Names.mkv"
+                },
+                {
+                  "name": "9-Examples∩╝Ü Objects.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Inheritance and Representation (Su25)/9-Examples∩╝Ü Objects.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Interpreters (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Interpreters (Su25)",
+              "children": [
+                {
+                  "name": "1-Programming Languages.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/1-Programming Languages.mkv"
+                },
+                {
+                  "name": "10-Lambda Expressions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/10-Lambda Expressions.mkv"
+                },
+                {
+                  "name": "11-Define Expressions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/11-Define Expressions.mkv"
+                },
+                {
+                  "name": "12-Dynamic Scope.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/12-Dynamic Scope.mkv"
+                },
+                {
+                  "name": "2-Parsing.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/2-Parsing.mkv"
+                },
+                {
+                  "name": "3-Scheme-Syntax Calculator.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/3-Scheme-Syntax Calculator.mkv"
+                },
+                {
+                  "name": "4-Evaluation.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/4-Evaluation.mkv"
+                },
+                {
+                  "name": "5-Interactive Interpreters.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/5-Interactive Interpreters.mkv"
+                },
+                {
+                  "name": "6-Interpreting Scheme.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/6-Interpreting Scheme.mkv"
+                },
+                {
+                  "name": "7-Special Forms.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/7-Special Forms.mkv"
+                },
+                {
+                  "name": "8-Logical Forms.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/8-Logical Forms.mkv"
+                },
+                {
+                  "name": "9-Quotation.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Interpreters (Su25)/9-Quotation.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Iterators and Generators (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)",
+              "children": [
+                {
+                  "name": "1-Iterators.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)/1-Iterators.webm"
+                },
+                {
+                  "name": "10-Examples∩╝Ü Iterables & Iterators.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)/10-Examples∩╝Ü Iterables & Iterators.mkv"
+                },
+                {
+                  "name": "2-Dictionary Iteration.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)/2-Dictionary Iteration.mkv"
+                },
+                {
+                  "name": "3-For Statements.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)/3-For Statements.mkv"
+                },
+                {
+                  "name": "4-Built-in Iterator Functions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)/4-Built-in Iterator Functions.webm"
+                },
+                {
+                  "name": "5-Zip.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)/5-Zip.mkv"
+                },
+                {
+                  "name": "6-Using Iterators.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)/6-Using Iterators.mkv"
+                },
+                {
+                  "name": "7-Generators.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)/7-Generators.webm"
+                },
+                {
+                  "name": "8-Generators & Iterators.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)/8-Generators & Iterators.mkv"
+                },
+                {
+                  "name": "9-Example∩╝Ü Partitions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Iterators and Generators (Su25)/9-Example∩╝Ü Partitions.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Linked Lists (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Linked Lists (Su25)",
+              "children": [
+                {
+                  "name": "1-Linked Lists.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Linked Lists (Su25)/1-Linked Lists.webm"
+                },
+                {
+                  "name": "2-Linked List Processing.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Linked Lists (Su25)/2-Linked List Processing.mkv"
+                },
+                {
+                  "name": "3-Linked List Mutation.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Linked Lists (Su25)/3-Linked List Mutation.mkv"
+                },
+                {
+                  "name": "4-Linked List Mutation Example.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Linked Lists (Su25)/4-Linked List Mutation Example.mkv"
+                },
+                {
+                  "name": "5-Examples∩╝Ü Linked Lists.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Linked Lists (Su25)/5-Examples∩╝Ü Linked Lists.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Midterm Review (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Midterm Review (Su25)",
+              "children": [
+                {
+                  "name": "1-Midterm 1 Review.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Midterm Review (Su25)/1-Midterm 1 Review.mkv"
+                },
+                {
+                  "name": "2-Implementing Functions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Midterm Review (Su25)/2-Implementing Functions.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Mutability (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Mutability (Su25)",
+              "children": [
+                {
+                  "name": "1-Objects.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Mutability (Su25)/1-Objects.webm"
+                },
+                {
+                  "name": "2-Example∩╝Ü Strings.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Mutability (Su25)/2-Example∩╝Ü Strings.mkv"
+                },
+                {
+                  "name": "3-Mutation Operations.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Mutability (Su25)/3-Mutation Operations.webm"
+                },
+                {
+                  "name": "4-Tuples.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Mutability (Su25)/4-Tuples.webm"
+                },
+                {
+                  "name": "5-Mutation.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Mutability (Su25)/5-Mutation.mkv"
+                },
+                {
+                  "name": "6-Mutable Functions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Mutability (Su25)/6-Mutable Functions.mkv"
+                },
+                {
+                  "name": "7-Examples∩╝Ü Lists.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Mutability (Su25)/7-Examples∩╝Ü Lists.webm"
+                }
+              ]
+            },
+            {
+              "name": "Mutable Trees (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Mutable Trees (Su25)",
+              "children": [
+                {
+                  "name": "1-Tree Class.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Mutable Trees (Su25)/1-Tree Class.mkv"
+                },
+                {
+                  "name": "2-Tree Mutation.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Mutable Trees (Su25)/2-Tree Mutation.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Objects and Attributes (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Objects and Attributes (Su25)",
+              "children": [
+                {
+                  "name": "1-Object-Oriented Programming.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Objects and Attributes (Su25)/1-Object-Oriented Programming.mkv"
+                },
+                {
+                  "name": "2-Class Statements.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Objects and Attributes (Su25)/2-Class Statements.mkv"
+                },
+                {
+                  "name": "3-Creating Instances.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Objects and Attributes (Su25)/3-Creating Instances.mkv"
+                },
+                {
+                  "name": "4-Methods.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Objects and Attributes (Su25)/4-Methods.mkv"
+                },
+                {
+                  "name": "5-Method Calls.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Objects and Attributes (Su25)/5-Method Calls.mkv"
+                },
+                {
+                  "name": "6-Attribute Lookup.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Objects and Attributes (Su25)/6-Attribute Lookup.mkv"
+                },
+                {
+                  "name": "7-Class Attributes.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Objects and Attributes (Su25)/7-Class Attributes.mkv"
+                },
+                {
+                  "name": "8-Bound Methods.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Objects and Attributes (Su25)/8-Bound Methods.mkv"
+                },
+                {
+                  "name": "9-Attribute Assignment.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Objects and Attributes (Su25)/9-Attribute Assignment.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Recursion",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Recursion",
+              "children": [
+                {
+                  "name": "1-Self-Reference.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Recursion/1-Self-Reference.webm"
+                },
+                {
+                  "name": "2-Recursive Functions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Recursion/2-Recursive Functions.mkv"
+                },
+                {
+                  "name": "3-Recursion in Environment Diagrams.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Recursion/3-Recursion in Environment Diagrams.mkv"
+                },
+                {
+                  "name": "4-Verifying Recursive Functions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Recursion/4-Verifying Recursive Functions.mkv"
+                },
+                {
+                  "name": "5-Mutual Recursion.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Recursion/5-Mutual Recursion.mkv"
+                },
+                {
+                  "name": "6-Recursion and Iteration.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Recursion/6-Recursion and Iteration.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Scheme",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Scheme",
+              "children": [
+                {
+                  "name": "1-Scheme.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme/1-Scheme.webm"
+                },
+                {
+                  "name": "2-Scheme Interpreters.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme/2-Scheme Interpreters.mkv"
+                },
+                {
+                  "name": "3-Special Forms.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme/3-Special Forms.webm"
+                },
+                {
+                  "name": "4-Lambda Expressions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme/4-Lambda Expressions.mkv"
+                },
+                {
+                  "name": "5-More Special Forms.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme/5-More Special Forms.mkv"
+                },
+                {
+                  "name": "6-Example∩╝Ü Sierpinski's Triangle.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme/6-Example∩╝Ü Sierpinski's Triangle.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Scheme Lists",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Scheme Lists",
+              "children": [
+                {
+                  "name": "1-Lists.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme Lists/1-Lists.mkv"
+                },
+                {
+                  "name": "2-Symbolic Programming.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme Lists/2-Symbolic Programming.mkv"
+                },
+                {
+                  "name": "3-List Processing.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme Lists/3-List Processing.webm"
+                },
+                {
+                  "name": "4-Example∩╝Ü Even Subsets.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme Lists/4-Example∩╝Ü Even Subsets.mkv"
+                },
+                {
+                  "name": "5-Discussion Question∩╝Ü Even Subsets Using Filter.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Scheme Lists/5-Discussion Question∩╝Ü Even Subsets Using Filter.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Sequences and Containers (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)",
+              "children": [
+                {
+                  "name": "1-Lists.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/1-Lists.webm"
+                },
+                {
+                  "name": "10-Strings.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/10-Strings.mkv"
+                },
+                {
+                  "name": "11-Dictionaries.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/11-Dictionaries.mkv"
+                },
+                {
+                  "name": "2-Containers.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/2-Containers.mkv"
+                },
+                {
+                  "name": "3-For Statements.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/3-For Statements.mkv"
+                },
+                {
+                  "name": "4-Ranges.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/4-Ranges.mkv"
+                },
+                {
+                  "name": "5-List Comprehensions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/5-List Comprehensions.mkv"
+                },
+                {
+                  "name": "6-Lists, Slices, & Recursion.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/6-Lists, Slices, & Recursion.mkv"
+                },
+                {
+                  "name": "7-Box-and-Pointer Notation.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/7-Box-and-Pointer Notation.webm"
+                },
+                {
+                  "name": "8-Slicing.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/8-Slicing.mkv"
+                },
+                {
+                  "name": "9-Processing Container Values.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Sequences and Containers (Su25)/9-Processing Container Values.mkv"
+                }
+              ]
+            },
+            {
+              "name": "SQL and Tables (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/SQL and Tables (Su25)",
+              "children": [
+                {
+                  "name": "1-Databases.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/SQL and Tables (Su25)/1-Databases.webm"
+                },
+                {
+                  "name": "2-Structured Query Language.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/SQL and Tables (Su25)/2-Structured Query Language.webm"
+                },
+                {
+                  "name": "3-Projecting Tables.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/SQL and Tables (Su25)/3-Projecting Tables.webm"
+                },
+                {
+                  "name": "4-Arithmetic.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/SQL and Tables (Su25)/4-Arithmetic.mkv"
+                },
+                {
+                  "name": "5-Joining Tables.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/SQL and Tables (Su25)/5-Joining Tables.webm"
+                },
+                {
+                  "name": "6-Aliases & Dot Expressions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/SQL and Tables (Su25)/6-Aliases & Dot Expressions.webm"
+                },
+                {
+                  "name": "7-Numerical Expressions.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/SQL and Tables (Su25)/7-Numerical Expressions.mkv"
+                },
+                {
+                  "name": "8-String Expressions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/SQL and Tables (Su25)/8-String Expressions.webm"
+                }
+              ]
+            },
+            {
+              "name": "Tail Calls (Su25)",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Tail Calls (Su25)",
+              "children": [
+                {
+                  "name": "1-Tail Recursion.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Tail Calls (Su25)/1-Tail Recursion.webm"
+                },
+                {
+                  "name": "2-Tail Calls.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Tail Calls (Su25)/2-Tail Calls.mkv"
+                },
+                {
+                  "name": "3-Tail Recursion Examples.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Tail Calls (Su25)/3-Tail Recursion Examples.mkv"
+                },
+                {
+                  "name": "4-Map and Reduce.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Tail Calls (Su25)/4-Map and Reduce.mkv"
+                }
+              ]
+            },
+            {
+              "name": "Tree Recursion",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/Tree Recursion",
+              "children": [
+                {
+                  "name": "1-Order of Recursive Calls.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Tree Recursion/1-Order of Recursive Calls.webm"
+                },
+                {
+                  "name": "2-Example∩╝Ü Inverse Cascade.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Tree Recursion/2-Example∩╝Ü Inverse Cascade.mkv"
+                },
+                {
+                  "name": "3-Tree Recursion.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Tree Recursion/3-Tree Recursion.mkv"
+                },
+                {
+                  "name": "4-Example∩╝Ü Counting Partitions.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/Tree Recursion/4-Example∩╝Ü Counting Partitions.webm"
+                }
+              ]
+            },
+            {
+              "name": "[CS 61A SP24] Mega Discussion 08",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/[CS 61A SP24] Mega Discussion 08",
+              "children": [
+                {
+                  "name": "1-[CS 61A SP24] Discussion 8 Problem #1 Strange Loop.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SP24] Mega Discussion 08/1-[CS 61A SP24] Discussion 8 Problem #1 Strange Loop.mkv"
+                },
+                {
+                  "name": "2-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SP24] Mega Discussion 08/2-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv"
+                },
+                {
+                  "name": "3-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SP24] Mega Discussion 08/3-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm"
+                },
+                {
+                  "name": "4-[CS61A SP24] Discussion 8 Question #4 Overlap Growth.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SP24] Mega Discussion 08/4-[CS61A SP24] Discussion 8 Question #4 Overlap Growth.webm"
+                },
+                {
+                  "name": "5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SP24] Mega Discussion 08/5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm"
+                }
+              ]
+            },
+            {
+              "name": "[CS 61A SU24 Discussion 2]",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/[CS 61A SU24 Discussion 2]",
+              "children": [
+                {
+                  "name": "1-Bottles.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU24 Discussion 2]/1-Bottles.mkv"
+                },
+                {
+                  "name": "2-Environment Diagrams∩╝Ü Assignment and Def Statements (Q7 & Q8).webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU24 Discussion 2]/2-Environment Diagrams∩╝Ü Assignment and Def Statements (Q7 & Q8).webm"
+                },
+                {
+                  "name": "3-Digit Finder.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU24 Discussion 2]/3-Digit Finder.mkv"
+                },
+                {
+                  "name": "4-61A FA21 Disc02∩╝Ü Make Keeper.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU24 Discussion 2]/4-61A FA21 Disc02∩╝Ü Make Keeper.mkv"
+                },
+                {
+                  "name": "5-Match Maker.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU24 Discussion 2]/5-Match Maker.mkv"
+                }
+              ]
+            },
+            {
+              "name": "[CS 61A SU24] Discussion 01",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/[CS 61A SU24] Discussion 01",
+              "children": [
+                {
+                  "name": "1-Race.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU24] Discussion 01/1-Race.mkv"
+                },
+                {
+                  "name": "2-Fizzbuzz.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU24] Discussion 01/2-Fizzbuzz.mkv"
+                },
+                {
+                  "name": "3-Is Prime.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU24] Discussion 01/3-Is Prime.mkv"
+                },
+                {
+                  "name": "4-Unique Digits.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU24] Discussion 01/4-Unique Digits.mkv"
+                },
+                {
+                  "name": "5-Ordered Digits.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU24] Discussion 01/5-Ordered Digits.mkv"
+                }
+              ]
+            },
+            {
+              "name": "[CS 61A SU25] Discussion 3",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/[CS 61A SU25] Discussion 3",
+              "children": [
+                {
+                  "name": "1-Question 1 - Recursive Multiplication.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU25] Discussion 3/1-Question 1 - Recursive Multiplication.mkv"
+                },
+                {
+                  "name": "2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU25] Discussion 3/2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm"
+                },
+                {
+                  "name": "3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU25] Discussion 3/3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv"
+                },
+                {
+                  "name": "4-Question 5 - Recursive Hailstone.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU25] Discussion 3/4-Question 5 - Recursive Hailstone.mkv"
+                }
+              ]
+            },
+            {
+              "name": "[CS 61A SU25] Discussion 6",
+              "type": "folder",
+              "relative_path": "cs61a/study/youtube/[CS 61A SU25] Discussion 6",
+              "children": [
+                {
+                  "name": "1-Keyboard.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU25] Discussion 6/1-Keyboard.webm"
+                },
+                {
+                  "name": "2-Shapes.mkv",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU25] Discussion 6/2-Shapes.mkv"
+                },
+                {
+                  "name": "3-Bear.webm",
+                  "type": "file",
+                  "relative_path": "cs61a/study/youtube/[CS 61A SU25] Discussion 6/3-Bear.webm"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "support",
+      "type": "folder",
+      "relative_path": "cs61a/support",
+      "children": [
+        {
+          "name": ".DS_Store",
+          "type": "file",
+          "relative_path": "cs61a/support/.DS_Store"
+        },
+        {
+          "name": "articles",
+          "type": "folder",
+          "relative_path": "cs61a/support/articles",
+          "children": [
+            {
+              "name": "Advice from Former Students CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Advice from Former Students CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Composition CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Composition CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Contact the CS 61A Staff CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Contact the CS 61A Staff CS 61A Summer 2025.html"
+            },
+            {
+              "name": "CS 61A Scheme Specification CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/CS 61A Scheme Specification CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Debugging CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Debugging CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Department Campus Resources CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Department Campus Resources CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Lab 0 Getting Started (Mac Linux Setup) CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Lab 0 Getting Started (Mac Linux Setup) CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Lab 0 Getting Started (Windows Setup) CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Lab 0 Getting Started (Windows Setup) CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Pair Programming CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Pair Programming CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Scheme Built-In Procedure Reference CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Scheme Built-In Procedure Reference CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Studying Guide CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Studying Guide CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Syllabus & Course Policies CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Syllabus & Course Policies CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Using Ok CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Using Ok CS 61A Summer 2025.html"
+            },
+            {
+              "name": "Visual Studio Code CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/articles/Visual Studio Code CS 61A Summer 2025.html"
+            }
+          ]
+        },
+        {
+          "name": "assignment-calendar",
+          "type": "folder",
+          "relative_path": "cs61a/support/assignment-calendar",
+          "children": [
+            {
+              "name": "Office Hours CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/assignment-calendar/Office Hours CS 61A Summer 2025.html"
+            }
+          ]
+        },
+        {
+          "name": "CS 61A Summer 2025.html",
+          "type": "file",
+          "relative_path": "cs61a/support/CS 61A Summer 2025.html"
+        },
+        {
+          "name": "instructor",
+          "type": "folder",
+          "relative_path": "cs61a/support/instructor",
+          "children": [
+            {
+              "name": "Instructors CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/instructor/Instructors CS 61A Summer 2025.html"
+            }
+          ]
+        },
+        {
+          "name": "office-hours",
+          "type": "folder",
+          "relative_path": "cs61a/support/office-hours",
+          "children": [
+            {
+              "name": "Office Hours CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/office-hours/Office Hours CS 61A Summer 2025.html"
+            }
+          ]
+        },
+        {
+          "name": "resources",
+          "type": "folder",
+          "relative_path": "cs61a/support/resources",
+          "children": [
+            {
+              "name": "CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/resources/CS 61A Summer 2025.html"
+            }
+          ]
+        },
+        {
+          "name": "staff",
+          "type": "folder",
+          "relative_path": "cs61a/support/staff",
+          "children": [
+            {
+              "name": "Course Staff CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/staff/Course Staff CS 61A Summer 2025.html"
+            }
+          ]
+        },
+        {
+          "name": "study-guide",
+          "type": "folder",
+          "relative_path": "cs61a/support/study-guide",
+          "children": [
+            {
+              "name": ".DS_Store",
+              "type": "file",
+              "relative_path": "cs61a/support/study-guide/.DS_Store"
+            },
+            {
+              "name": "61a-su24-final-study-guide.pdf",
+              "type": "file",
+              "relative_path": "cs61a/support/study-guide/61a-su24-final-study-guide.pdf"
+            },
+            {
+              "name": "61a-su25-mt-study-guide.pdf",
+              "type": "file",
+              "relative_path": "cs61a/support/study-guide/61a-su25-mt-study-guide.pdf"
+            },
+            {
+              "name": "Study Guide Orders of Growth CS 61A Summer 2025.html",
+              "type": "file",
+              "relative_path": "cs61a/support/study-guide/Study Guide Orders of Growth CS 61A Summer 2025.html"
+            }
+          ]
+        },
+        {
+          "name": "textbook",
+          "type": "folder",
+          "relative_path": "cs61a/support/textbook",
+          "children": [
+            {
+              "name": ".DS_Store",
+              "type": "file",
+              "relative_path": "cs61a/support/textbook/.DS_Store"
+            },
+            {
+              "name": "about.html",
+              "type": "folder",
+              "relative_path": "cs61a/support/textbook/about.html",
+              "children": [
+                {
+                  "name": "About Composing Programs.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/about.html/About Composing Programs.html"
+                }
+              ]
+            },
+            {
+              "name": "examples",
+              "type": "folder",
+              "relative_path": "cs61a/support/textbook/examples",
+              "children": [
+                {
+                  "name": "mapreduce",
+                  "type": "folder",
+                  "relative_path": "cs61a/support/textbook/examples/mapreduce",
+                  "children": [
+                    {
+                      "name": "mr.py",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/mapreduce/mr.py"
+                    }
+                  ]
+                },
+                {
+                  "name": "parallel",
+                  "type": "folder",
+                  "relative_path": "cs61a/support/textbook/examples/parallel",
+                  "children": [
+                    {
+                      "name": "crawler.py",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/parallel/crawler.py"
+                    },
+                    {
+                      "name": "crawler.py.html",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/parallel/crawler.py.html"
+                    },
+                    {
+                      "name": "particle.py",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/parallel/particle.py"
+                    },
+                    {
+                      "name": "particle.py.html",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/parallel/particle.py.html"
+                    }
+                  ]
+                },
+                {
+                  "name": "scalc",
+                  "type": "folder",
+                  "relative_path": "cs61a/support/textbook/examples/scalc",
+                  "children": [
+                    {
+                      "name": "buffer.py",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/buffer.py"
+                    },
+                    {
+                      "name": "buffer.py.html",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/buffer.py.html"
+                    },
+                    {
+                      "name": "Scalc.html",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/Scalc.html"
+                    },
+                    {
+                      "name": "scalc.py",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/scalc.py"
+                    },
+                    {
+                      "name": "scalc.py.html",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/scalc.py.html"
+                    },
+                    {
+                      "name": "scheme_reader.py",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/scheme_reader.py"
+                    },
+                    {
+                      "name": "scheme_reader.py.html",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/scheme_reader.py.html"
+                    },
+                    {
+                      "name": "scheme_tokens.py",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/scheme_tokens.py"
+                    },
+                    {
+                      "name": "scheme_tokens.py.html",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/scheme_tokens.py.html"
+                    },
+                    {
+                      "name": "ucb.py",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/ucb.py"
+                    },
+                    {
+                      "name": "ucb.py.html",
+                      "type": "file",
+                      "relative_path": "cs61a/support/textbook/examples/scalc/ucb.py.html"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "pages",
+              "type": "folder",
+              "relative_path": "cs61a/support/textbook/pages",
+              "children": [
+                {
+                  "name": "1.1 Getting Started.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/1.1 Getting Started.html"
+                },
+                {
+                  "name": "1.2 Elements of Programming.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/1.2 Elements of Programming.html"
+                },
+                {
+                  "name": "1.3 Defining New Functions.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/1.3 Defining New Functions.html"
+                },
+                {
+                  "name": "1.4 Designing Functions.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/1.4 Designing Functions.html"
+                },
+                {
+                  "name": "1.5 Control.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/1.5 Control.html"
+                },
+                {
+                  "name": "1.6 Higher-Order Functions.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/1.6 Higher-Order Functions.html"
+                },
+                {
+                  "name": "1.7 Recursive Functions.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/1.7 Recursive Functions.html"
+                },
+                {
+                  "name": "2.1 Introduction.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/2.1 Introduction.html"
+                },
+                {
+                  "name": "2.2 Data Abstraction.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/2.2 Data Abstraction.html"
+                },
+                {
+                  "name": "2.3 Sequences.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/2.3 Sequences.html"
+                },
+                {
+                  "name": "2.4 Mutable Data.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/2.4 Mutable Data.html"
+                },
+                {
+                  "name": "2.5 Object-Oriented Programming.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/2.5 Object-Oriented Programming.html"
+                },
+                {
+                  "name": "2.6 Implementing Classes and Objects.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/2.6 Implementing Classes and Objects.html"
+                },
+                {
+                  "name": "2.7 Object Abstraction.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/2.7 Object Abstraction.html"
+                },
+                {
+                  "name": "2.8 Efficiency.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/2.8 Efficiency.html"
+                },
+                {
+                  "name": "2.9 Recursive Objects.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/2.9 Recursive Objects.html"
+                },
+                {
+                  "name": "3.1 Introduction.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/3.1 Introduction.html"
+                },
+                {
+                  "name": "3.2 Functional Programming.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/3.2 Functional Programming.html"
+                },
+                {
+                  "name": "3.3 Exceptions.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/3.3 Exceptions.html"
+                },
+                {
+                  "name": "3.4 Interpreters for Languages with Combination.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/3.4 Interpreters for Languages with Combination.html"
+                },
+                {
+                  "name": "3.5 Interpreters for Languages with Abstraction.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/3.5 Interpreters for Languages with Abstraction.html"
+                },
+                {
+                  "name": "4.1 Introduction.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/4.1 Introduction.html"
+                },
+                {
+                  "name": "4.2 Implicit Sequences.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/4.2 Implicit Sequences.html"
+                },
+                {
+                  "name": "4.3 Declarative Programming.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/4.3 Declarative Programming.html"
+                },
+                {
+                  "name": "4.5 Unification.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/4.5 Unification.html"
+                },
+                {
+                  "name": "4.6 Distributed Computing.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/4.6 Distributed Computing.html"
+                },
+                {
+                  "name": "4.7 Distributed Data Processing.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/4.7 Distributed Data Processing.html"
+                },
+                {
+                  "name": "4.8 Parallel Computing.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/pages/4.8 Parallel Computing.html"
+                }
+              ]
+            },
+            {
+              "name": "projects.html",
+              "type": "folder",
+              "relative_path": "cs61a/support/textbook/projects.html",
+              "children": [
+                {
+                  "name": "Programming Projects.html",
+                  "type": "file",
+                  "relative_path": "cs61a/support/textbook/projects.html/Programming Projects.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3103 @@
+{
+  "metadata": {
+    "total_files": 383,
+    "task_and_sequence": 279,
+    "task_only": 104,
+    "no_task": 0,
+    "known_task_names": [
+      "administrative",
+      "aggregation and databases",
+      "announcements",
+      "boardwork",
+      "control-flow",
+      "discussion",
+      "efficiency",
+      "environments",
+      "functions",
+      "higher-order functions",
+      "homework",
+      "iterators and generators",
+      "lab",
+      "linked lists",
+      "mutability",
+      "mutable trees",
+      "objects and attributes",
+      "project",
+      "quiz",
+      "recursion",
+      "resources",
+      "scheme",
+      "sequences and containers",
+      "slides",
+      "sql and tables",
+      "tail calls",
+      "tree recursion"
+    ]
+  },
+  "all_final_paths": [
+    {
+      "source": "CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "administrative",
+      "sequence_name": null,
+      "category_depth": 0,
+      "final_path": "support/administrative/CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Advice from Former Students CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Advice from Former Students CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/CS 61A Scheme Specification CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/CS 61A Scheme Specification CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Composition CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Composition CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Contact the CS 61A Staff CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "administrative",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/administrative/Contact the CS 61A Staff CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Debugging CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Debugging CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Department Campus Resources CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Department Campus Resources CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Lab 0 Getting Started (Mac Linux Setup) CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "lab",
+      "sequence_name": "Lab_0",
+      "category_depth": 1,
+      "final_path": "support/lab/Lab_0/Lab 0 Getting Started (Mac Linux Setup) CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Lab 0 Getting Started (Windows Setup) CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "lab",
+      "sequence_name": "Lab_0",
+      "category_depth": 1,
+      "final_path": "support/lab/Lab_0/Lab 0 Getting Started (Windows Setup) CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Pair Programming CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Pair Programming CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Scheme Built-In Procedure Reference CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Scheme Built-In Procedure Reference CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Studying Guide CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Studying Guide CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Syllabus & Course Policies CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "administrative",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/administrative/Syllabus & Course Policies CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Using Ok CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Using Ok CS 61A Summer 2025.html"
+    },
+    {
+      "source": "articles/Visual Studio Code CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Visual Studio Code CS 61A Summer 2025.html"
+    },
+    {
+      "source": "assets/pdfs/61a-su24-final-study-guide.pdf",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "support/resources/61a-su24-final-study-guide.pdf"
+    },
+    {
+      "source": "assets/pdfs/61a-su25-mt-study-guide.pdf",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "support/resources/61a-su25-mt-study-guide.pdf"
+    },
+    {
+      "source": "assets/slides/01-Welcome_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "01",
+      "category_depth": 2,
+      "final_path": "study/slides/01/01-Welcome_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/01.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "01",
+      "category_depth": 2,
+      "final_path": "study/slides/01/01.py"
+    },
+    {
+      "source": "assets/slides/02-Functions_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "02",
+      "category_depth": 2,
+      "final_path": "study/slides/02/02-Functions_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/02.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "02",
+      "category_depth": 2,
+      "final_path": "study/slides/02/02.py"
+    },
+    {
+      "source": "assets/slides/03-Control_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "03",
+      "category_depth": 2,
+      "final_path": "study/slides/03/03-Control_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/03.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "03",
+      "category_depth": 2,
+      "final_path": "study/slides/03/03.py"
+    },
+    {
+      "source": "assets/slides/04-Higher-Order_Functions_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "04",
+      "category_depth": 2,
+      "final_path": "study/slides/04/04-Higher-Order_Functions_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/04.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "04",
+      "category_depth": 2,
+      "final_path": "study/slides/04/04.py"
+    },
+    {
+      "source": "assets/slides/05-Environments_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "05",
+      "category_depth": 2,
+      "final_path": "study/slides/05/05-Environments_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/05.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "05",
+      "category_depth": 2,
+      "final_path": "study/slides/05/05.py"
+    },
+    {
+      "source": "assets/slides/06-Recursion_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "06",
+      "category_depth": 2,
+      "final_path": "study/slides/06/06-Recursion_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/06.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "06",
+      "category_depth": 2,
+      "final_path": "study/slides/06/06.py"
+    },
+    {
+      "source": "assets/slides/07-Tree_Recursion_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "07",
+      "category_depth": 2,
+      "final_path": "study/slides/07/07-Tree_Recursion_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/07.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "07",
+      "category_depth": 2,
+      "final_path": "study/slides/07/07.py"
+    },
+    {
+      "source": "assets/slides/08-Sequences_and_Containers_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "08",
+      "category_depth": 2,
+      "final_path": "study/slides/08/08-Sequences_and_Containers_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/08.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "08",
+      "category_depth": 2,
+      "final_path": "study/slides/08/08.py"
+    },
+    {
+      "source": "assets/slides/09-Data_Abstraction_and_ADT_Trees_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "09",
+      "category_depth": 2,
+      "final_path": "study/slides/09/09-Data_Abstraction_and_ADT_Trees_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/09.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "09",
+      "category_depth": 2,
+      "final_path": "study/slides/09/09.py"
+    },
+    {
+      "source": "assets/slides/10-Mutability_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "10",
+      "category_depth": 2,
+      "final_path": "study/slides/10/10-Mutability_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/10.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "10",
+      "category_depth": 2,
+      "final_path": "study/slides/10/10.py"
+    },
+    {
+      "source": "assets/slides/11-Iterators_and_Generators_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "11",
+      "category_depth": 2,
+      "final_path": "study/slides/11/11-Iterators_and_Generators_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/11.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "11",
+      "category_depth": 2,
+      "final_path": "study/slides/11/11.py"
+    },
+    {
+      "source": "assets/slides/12-Midterm_Review_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "12",
+      "category_depth": 2,
+      "final_path": "study/slides/12/12-Midterm_Review_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/12.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "12",
+      "category_depth": 2,
+      "final_path": "study/slides/12/12.py"
+    },
+    {
+      "source": "assets/slides/13-Objects_and_Attributes_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "13",
+      "category_depth": 2,
+      "final_path": "study/slides/13/13-Objects_and_Attributes_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/13.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "13",
+      "category_depth": 2,
+      "final_path": "study/slides/13/13.py"
+    },
+    {
+      "source": "assets/slides/14-Inheritance_and_String_Representation_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "14",
+      "category_depth": 2,
+      "final_path": "study/slides/14/14-Inheritance_and_String_Representation_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/14.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "14",
+      "category_depth": 2,
+      "final_path": "study/slides/14/14.py"
+    },
+    {
+      "source": "assets/slides/15-Mutable_Trees_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "15",
+      "category_depth": 2,
+      "final_path": "study/slides/15/15-Mutable_Trees_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/15.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "15",
+      "category_depth": 2,
+      "final_path": "study/slides/15/15.py"
+    },
+    {
+      "source": "assets/slides/16-Linked_Lists_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "16",
+      "category_depth": 2,
+      "final_path": "study/slides/16/16-Linked_Lists_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/16.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "16",
+      "category_depth": 2,
+      "final_path": "study/slides/16/16.py"
+    },
+    {
+      "source": "assets/slides/17-Efficiency_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "17",
+      "category_depth": 2,
+      "final_path": "study/slides/17/17-Efficiency_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/17.ipynb",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "17",
+      "category_depth": 2,
+      "final_path": "study/slides/17/17.ipynb"
+    },
+    {
+      "source": "assets/slides/17.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "17",
+      "category_depth": 2,
+      "final_path": "study/slides/17/17.py"
+    },
+    {
+      "source": "assets/slides/18-Scheme_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "18",
+      "category_depth": 2,
+      "final_path": "study/slides/18/18-Scheme_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/18.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "18",
+      "category_depth": 2,
+      "final_path": "study/slides/18/18.py"
+    },
+    {
+      "source": "assets/slides/19-Scheme_Lists_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "19",
+      "category_depth": 2,
+      "final_path": "study/slides/19-Scheme_Lists_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/21-Tail_Calls_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "21",
+      "category_depth": 2,
+      "final_path": "study/slides/21/21-Tail_Calls_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/21.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "21",
+      "category_depth": 2,
+      "final_path": "study/slides/21/21.py"
+    },
+    {
+      "source": "assets/slides/22-SQL_and_Tables_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "22",
+      "category_depth": 2,
+      "final_path": "study/slides/22/22-SQL_and_Tables_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/22.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "22",
+      "category_depth": 2,
+      "final_path": "study/slides/22/22.py"
+    },
+    {
+      "source": "assets/slides/23-Aggregation_and_Databases_1pp.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "23",
+      "category_depth": 2,
+      "final_path": "study/slides/23/23-Aggregation_and_Databases_1pp.pdf"
+    },
+    {
+      "source": "assets/slides/23.py",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "23",
+      "category_depth": 2,
+      "final_path": "study/slides/23/23.py"
+    },
+    {
+      "source": "assets/slides/24-CS_Theory_1pp-updated.pdf",
+      "category": "study",
+      "task_name": "slides",
+      "sequence_name": "24",
+      "category_depth": 2,
+      "final_path": "study/slides/24-CS_Theory_1pp-updated.pdf"
+    },
+    {
+      "source": "assignment-calendar/Office Hours CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "administrative",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/administrative/Office Hours CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 0 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_0",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_0/Discussion 0 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 1 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_1",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_1/Discussion 1 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 10 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_10",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_10/Discussion 10 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 11 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_11",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_11/Discussion 11 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 12 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_12",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_12/Discussion 12 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 2 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_2",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_2/Discussion 2 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 3 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_3",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_3/Discussion 3 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 4 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_4",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_4/Discussion 4 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 5 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_5",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_5/Discussion 5 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 6 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_6",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_6/Discussion 6 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 7 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_7",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_7/Discussion 7 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 8 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_8",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_8/Discussion 8 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/Discussion 9 CS 61A Summer 2025.html",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_9",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_9/Discussion 9 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "disc/disc00/disc00.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_0",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_0/disc00.pdf"
+    },
+    {
+      "source": "disc/disc01/disc01.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_1",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_1/disc01.pdf"
+    },
+    {
+      "source": "disc/disc02/disc02.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_2",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_2/disc02.pdf"
+    },
+    {
+      "source": "disc/disc03/disc03.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_3",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_3/disc03.pdf"
+    },
+    {
+      "source": "disc/disc04/disc04.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_4",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_4/disc04.pdf"
+    },
+    {
+      "source": "disc/disc05/disc05.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_5",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_5/disc05.pdf"
+    },
+    {
+      "source": "disc/disc06/disc06.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_6",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_6/disc06.pdf"
+    },
+    {
+      "source": "disc/disc07/disc07.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_7",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_7/disc07.pdf"
+    },
+    {
+      "source": "disc/disc08/disc08.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_8",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_8/disc08.pdf"
+    },
+    {
+      "source": "disc/disc09/disc09.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_9",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_9/disc09.pdf"
+    },
+    {
+      "source": "disc/disc10/disc10.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_10",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_10/disc10.pdf"
+    },
+    {
+      "source": "disc/disc11/disc11.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_11",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_11/disc11.pdf"
+    },
+    {
+      "source": "disc/disc12/disc12.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_12",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_12/disc12.pdf"
+    },
+    {
+      "source": "disc/sol-disc02/disc02.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_2",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_2/sol-disc02/disc02.pdf"
+    },
+    {
+      "source": "disc/sol-disc03/disc03.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_3",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_3/sol-disc03/disc03.pdf"
+    },
+    {
+      "source": "disc/sol-disc05/disc05.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_5",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_5/sol-disc05/disc05.pdf"
+    },
+    {
+      "source": "disc/sol-disc06/disc06.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_6",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_6/sol-disc06/disc06.pdf"
+    },
+    {
+      "source": "disc/sol-disc08/disc08.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_8",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_8/sol-disc08/disc08.pdf"
+    },
+    {
+      "source": "disc/sol-disc09/disc09.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_9",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_9/sol-disc09/disc09.pdf"
+    },
+    {
+      "source": "disc/sol-disc10/disc10.pdf",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_10",
+      "category_depth": 1,
+      "final_path": "study/discussion/Discussion_10/sol-disc10/disc10.pdf"
+    },
+    {
+      "source": "hw/Homework 1 CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_1",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_1/Homework 1 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/Homework 1 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_1",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_1/Homework 1 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/Homework 2 CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_2",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_2/Homework 2 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/Homework 2 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_2",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_2/Homework 2 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/Homework 3 CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_3",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_3/Homework 3 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/Homework 3 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_3",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_3/Homework 3 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/Homework 4 CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_4",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_4/Homework 4 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/Homework 4 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_4",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_4/Homework 4 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/Homework 5 CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_5",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_5/Homework 5 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/Homework 5 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_5",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_5/Homework 5 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/Homework 6 CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_6",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework 6 CS 61A Summer 2025.html"
+    },
+    {
+      "source": "hw/hw02/hw02.py",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_2",
+      "category_depth": 2,
+      "final_path": "practice/homework/Homework_2/hw02.py"
+    },
+    {
+      "source": "hw/hw03/hw03.py",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_3",
+      "category_depth": 2,
+      "final_path": "practice/homework/Homework_3/hw03.py"
+    },
+    {
+      "source": "hw/hw04/hw04.py",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_4",
+      "category_depth": 2,
+      "final_path": "practice/homework/Homework_4/hw04.py"
+    },
+    {
+      "source": "hw/hw05/hw05.py",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_5",
+      "category_depth": 2,
+      "final_path": "practice/homework/Homework_5/hw05.py"
+    },
+    {
+      "source": "hw/sol-hw01/hw01.py",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_1",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_1/sol-hw01/hw01.py"
+    },
+    {
+      "source": "hw/sol-hw03/hw03.py",
+      "category": "practice",
+      "task_name": "homework",
+      "sequence_name": "Homework_3",
+      "category_depth": 1,
+      "final_path": "practice/homework/Homework_3/sol-hw03/hw03.py"
+    },
+    {
+      "source": "instructor/Instructors CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "administrative",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/administrative/Instructors CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 0 Getting Started CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_0",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_0/Lab 0 Getting Started CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 0 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_0",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_0/Lab 0 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 1 Functions, Control CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_1",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_1/Lab 1 Functions, Control CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 1 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_1",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_1/Lab 1 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 10 Tail Calls CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_10",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab 10 Tail Calls CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 11 SQL CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_11",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab 11 SQL CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_12",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab 12 Final Review (Optional) CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 2 Higher-Order Functions, Lambda Expressions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_2",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_2/Lab 2 Higher-Order Functions, Lambda Expressions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 2 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_2",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_2/Lab 2 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 3 Recursion, Tree Recursion CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_3",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_3/Lab 3 Recursion, Tree Recursion CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 3 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_3",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_3/Lab 3 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 4 Sequences, Mutability, Trees CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_4",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_4/Lab 4 Sequences, Mutability, Trees CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 4 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_4",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_4/Lab 4 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 5 Iterators, Generators CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_5",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_5/Lab 5 Iterators, Generators CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 5 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_5",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_5/Lab 5 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 6 Object-Oriented Programming, Inheritance CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_6",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_6/Lab 6 Object-Oriented Programming, Inheritance CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 6 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_6",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_6/Lab 6 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 7 Mutable Trees, Linked Lists CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_7",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_7/Lab 7 Mutable Trees, Linked Lists CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 7 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_7",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_7/Lab 7 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 8 Scheme, Scheme Lists CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_8",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_8/Lab 8 Scheme, Scheme Lists CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 8 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_8",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_8/Lab 8 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 9 Interpreters CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_9",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_9/Lab 9 Interpreters CS 61A Summer 2025.html"
+    },
+    {
+      "source": "lab/Lab 9 Solutions CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "lab",
+      "sequence_name": "Lab_9",
+      "category_depth": 1,
+      "final_path": "practice/lab/Lab_9/Lab 9 Solutions CS 61A Summer 2025.html"
+    },
+    {
+      "source": "office-hours/Office Hours CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "administrative",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/administrative/Office Hours CS 61A Summer 2025.html"
+    },
+    {
+      "source": "proj/Ants Vs. SomeBees CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "project",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "practice/project/Ants Vs. SomeBees CS 61A Summer 2025.html"
+    },
+    {
+      "source": "proj/Computer Aided Typing Software CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "project",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "practice/project/Computer Aided Typing Software CS 61A Summer 2025.html"
+    },
+    {
+      "source": "proj/Scheme Interpreter CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "project",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "practice/project/Scheme Interpreter CS 61A Summer 2025.html"
+    },
+    {
+      "source": "proj/The Game of Hog CS 61A Summer 2025.html",
+      "category": "practice",
+      "task_name": "project",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "practice/project/The Game of Hog CS 61A Summer 2025.html"
+    },
+    {
+      "source": "resources/CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/CS 61A Summer 2025.html"
+    },
+    {
+      "source": "staff/Course Staff CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "administrative",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/administrative/Course Staff CS 61A Summer 2025.html"
+    },
+    {
+      "source": "study-guide/Study Guide Orders of Growth CS 61A Summer 2025.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Study Guide Orders of Growth CS 61A Summer 2025.html"
+    },
+    {
+      "source": "textbook/about.html/About Composing Programs.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/About Composing Programs.html"
+    },
+    {
+      "source": "textbook/examples/mapreduce/mr.py",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/mr.py"
+    },
+    {
+      "source": "textbook/examples/parallel/crawler.py",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/parallel/crawler.py"
+    },
+    {
+      "source": "textbook/examples/parallel/crawler.py.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/parallel/crawler.py.html"
+    },
+    {
+      "source": "textbook/examples/parallel/particle.py",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/parallel/particle.py"
+    },
+    {
+      "source": "textbook/examples/parallel/particle.py.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/parallel/particle.py.html"
+    },
+    {
+      "source": "textbook/examples/scalc/Scalc.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/Scalc.html"
+    },
+    {
+      "source": "textbook/examples/scalc/buffer.py",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/buffer.py"
+    },
+    {
+      "source": "textbook/examples/scalc/buffer.py.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/buffer.py.html"
+    },
+    {
+      "source": "textbook/examples/scalc/scalc.py",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/scalc.py"
+    },
+    {
+      "source": "textbook/examples/scalc/scalc.py.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/scalc.py.html"
+    },
+    {
+      "source": "textbook/examples/scalc/scheme_reader.py",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/scheme_reader.py"
+    },
+    {
+      "source": "textbook/examples/scalc/scheme_reader.py.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/scheme_reader.py.html"
+    },
+    {
+      "source": "textbook/examples/scalc/scheme_tokens.py",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/scheme_tokens.py"
+    },
+    {
+      "source": "textbook/examples/scalc/scheme_tokens.py.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/scheme_tokens.py.html"
+    },
+    {
+      "source": "textbook/examples/scalc/ucb.py",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/ucb.py"
+    },
+    {
+      "source": "textbook/examples/scalc/ucb.py.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/examples/scalc/ucb.py.html"
+    },
+    {
+      "source": "textbook/pages/1.1 Getting Started.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/1.1 Getting Started.html"
+    },
+    {
+      "source": "textbook/pages/1.2 Elements of Programming.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/1.2 Elements of Programming.html"
+    },
+    {
+      "source": "textbook/pages/1.3 Defining New Functions.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/1.3 Defining New Functions.html"
+    },
+    {
+      "source": "textbook/pages/1.4 Designing Functions.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/1.4 Designing Functions.html"
+    },
+    {
+      "source": "textbook/pages/1.5 Control.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/1.5 Control.html"
+    },
+    {
+      "source": "textbook/pages/1.6 Higher-Order Functions.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/1.6 Higher-Order Functions.html"
+    },
+    {
+      "source": "textbook/pages/1.7 Recursive Functions.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/1.7 Recursive Functions.html"
+    },
+    {
+      "source": "textbook/pages/2.1 Introduction.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/2.1 Introduction.html"
+    },
+    {
+      "source": "textbook/pages/2.2 Data Abstraction.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/2.2 Data Abstraction.html"
+    },
+    {
+      "source": "textbook/pages/2.3 Sequences.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/2.3 Sequences.html"
+    },
+    {
+      "source": "textbook/pages/2.4 Mutable Data.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/2.4 Mutable Data.html"
+    },
+    {
+      "source": "textbook/pages/2.5 Object-Oriented Programming.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/2.5 Object-Oriented Programming.html"
+    },
+    {
+      "source": "textbook/pages/2.6 Implementing Classes and Objects.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/2.6 Implementing Classes and Objects.html"
+    },
+    {
+      "source": "textbook/pages/2.7 Object Abstraction.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/2.7 Object Abstraction.html"
+    },
+    {
+      "source": "textbook/pages/2.8 Efficiency.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/2.8 Efficiency.html"
+    },
+    {
+      "source": "textbook/pages/2.9 Recursive Objects.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/2.9 Recursive Objects.html"
+    },
+    {
+      "source": "textbook/pages/3.1 Introduction.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/3.1 Introduction.html"
+    },
+    {
+      "source": "textbook/pages/3.2 Functional Programming.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/3.2 Functional Programming.html"
+    },
+    {
+      "source": "textbook/pages/3.3 Exceptions.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/3.3 Exceptions.html"
+    },
+    {
+      "source": "textbook/pages/3.4 Interpreters for Languages with Combination.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/3.4 Interpreters for Languages with Combination.html"
+    },
+    {
+      "source": "textbook/pages/3.5 Interpreters for Languages with Abstraction.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/3.5 Interpreters for Languages with Abstraction.html"
+    },
+    {
+      "source": "textbook/pages/4.1 Introduction.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/4.1 Introduction.html"
+    },
+    {
+      "source": "textbook/pages/4.2 Implicit Sequences.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/4.2 Implicit Sequences.html"
+    },
+    {
+      "source": "textbook/pages/4.3 Declarative Programming.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/4.3 Declarative Programming.html"
+    },
+    {
+      "source": "textbook/pages/4.5 Unification.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/4.5 Unification.html"
+    },
+    {
+      "source": "textbook/pages/4.6 Distributed Computing.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/4.6 Distributed Computing.html"
+    },
+    {
+      "source": "textbook/pages/4.7 Distributed Data Processing.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/4.7 Distributed Data Processing.html"
+    },
+    {
+      "source": "textbook/pages/4.8 Parallel Computing.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/pages/4.8 Parallel Computing.html"
+    },
+    {
+      "source": "textbook/projects.html/Programming Projects.html",
+      "category": "support",
+      "task_name": "resources",
+      "sequence_name": null,
+      "category_depth": 1,
+      "final_path": "support/resources/Programming Projects.html"
+    },
+    {
+      "source": "youtube/Aggregation and Databases (Su25)/1-Aggregation.webm",
+      "category": "study",
+      "task_name": "aggregation and databases",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/aggregation and databases/1-Aggregation.webm"
+    },
+    {
+      "source": "youtube/Aggregation and Databases (Su25)/2-Grouping.mkv",
+      "category": "study",
+      "task_name": "aggregation and databases",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/aggregation and databases/2-Grouping.mkv"
+    },
+    {
+      "source": "youtube/Aggregation and Databases (Su25)/3-Create Table and Drop Table.mkv",
+      "category": "study",
+      "task_name": "aggregation and databases",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/aggregation and databases/3-Create Table and Drop Table.mkv"
+    },
+    {
+      "source": "youtube/Aggregation and Databases (Su25)/4-Modifying Tables.mkv",
+      "category": "study",
+      "task_name": "aggregation and databases",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/aggregation and databases/4-Modifying Tables.mkv"
+    },
+    {
+      "source": "youtube/Aggregation and Databases (Su25)/5-Python and SQL.mkv",
+      "category": "study",
+      "task_name": "aggregation and databases",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/aggregation and databases/5-Python and SQL.mkv"
+    },
+    {
+      "source": "youtube/Control/1-Multiple Environments.webm",
+      "category": "study",
+      "task_name": "control-flow",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/control-flow/1-Multiple Environments.webm"
+    },
+    {
+      "source": "youtube/Control/2-Miscellaneous Python Features.webm",
+      "category": "study",
+      "task_name": "control-flow",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/control-flow/2-Miscellaneous Python Features.webm"
+    },
+    {
+      "source": "youtube/Control/3-Conditional statements.mkv",
+      "category": "study",
+      "task_name": "control-flow",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/control-flow/3-Conditional statements.mkv"
+    },
+    {
+      "source": "youtube/Control/4-Iteration.mkv",
+      "category": "study",
+      "task_name": "control-flow",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/control-flow/4-Iteration.mkv"
+    },
+    {
+      "source": "youtube/Data Abstraction and ADT Trees (Su25)/1-Data Abstraction.webm",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/1/1-Data Abstraction.webm"
+    },
+    {
+      "source": "youtube/Data Abstraction and ADT Trees (Su25)/2-Representing Rational Numbers.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/2/2-Representing Rational Numbers.mkv"
+    },
+    {
+      "source": "youtube/Data Abstraction and ADT Trees (Su25)/3-Abstraction Barriers.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/3/3-Abstraction Barriers.mkv"
+    },
+    {
+      "source": "youtube/Data Abstraction and ADT Trees (Su25)/4-Data Representations.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/4/4-Data Representations.mkv"
+    },
+    {
+      "source": "youtube/Data Abstraction and ADT Trees (Su25)/5-Trees.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/5-Trees.mkv"
+    },
+    {
+      "source": "youtube/Data Abstraction and ADT Trees (Su25)/6-Tree Processing.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/6-Tree Processing.mkv"
+    },
+    {
+      "source": "youtube/Data Abstraction and ADT Trees (Su25)/7-Example： Printing Trees.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "7",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/7-Example： Printing Trees.mkv"
+    },
+    {
+      "source": "youtube/Data Abstraction and ADT Trees (Su25)/8-Example： Summing Paths.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "8",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/8-Example： Summing Paths.mkv"
+    },
+    {
+      "source": "youtube/Data Abstraction and ADT Trees (Su25)/9-Example： Counting Paths.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "9",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/9-Example： Counting Paths.mkv"
+    },
+    {
+      "source": "youtube/Disc 07/1-Prune Small Getting Started.webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/1-Prune Small Getting Started.webm"
+    },
+    {
+      "source": "youtube/Disc 07/3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_3",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_3/3-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv"
+    },
+    {
+      "source": "youtube/Disc 07/4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_4",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_4/4-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm"
+    },
+    {
+      "source": "youtube/Disc 07/5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_5",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_5/5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm"
+    },
+    {
+      "source": "youtube/Disc 07/6-Duplicate Link Getting Started.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/6-Duplicate Link Getting Started.mkv"
+    },
+    {
+      "source": "youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL/1-[CS 61A SU24] Discussion 10 Problem #1 Fast-Exp.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_1",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_1/1-[CS 61A SU24] Discussion 10 Problem #1 Fast-Exp.mkv"
+    },
+    {
+      "source": "youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL/2-Reverse.webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_10",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_10/2-Reverse.webm"
+    },
+    {
+      "source": "youtube/Discussion 10： Tail Calls, Scheme Data Abstractions, SQL/3-Closer City.webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_10",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_10/3-Closer City.webm"
+    },
+    {
+      "source": "youtube/Discussion 4： Tree Recursion, Trees, Lists/1-Disc04 Q4： Even Weighted.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/1-Disc04 Q4： Even Weighted.mkv"
+    },
+    {
+      "source": "youtube/Discussion 4： Tree Recursion, Trees, Lists/2-Question #3： Max Path Sum.webm",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/2/2-Question #3： Max Path Sum.webm"
+    },
+    {
+      "source": "youtube/Discussion 4： Tree Recursion, Trees, Lists/3-61A FA21 HW05 Q3： Preorder.mkv",
+      "category": "study",
+      "task_name": "homework",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/3-61A FA21 HW05 Q3： Preorder.mkv"
+    },
+    {
+      "source": "youtube/Discussion 4： Tree Recursion, Trees, Lists/4-Find Path.webm",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/4/4-Find Path.webm"
+    },
+    {
+      "source": "youtube/Discussion 5： Iterators, Generators, Efficiency/1-[CS 61A FA23] Final Problem #1： Copying Copies.webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_1",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_1/1-[CS 61A FA23] Final Problem #1： Copying Copies.webm"
+    },
+    {
+      "source": "youtube/Discussion 5： Iterators, Generators, Efficiency/2-WWPD Iterators.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_5",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_5/2-WWPD Iterators.mkv"
+    },
+    {
+      "source": "youtube/Discussion 5： Iterators, Generators, Efficiency/4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_4",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_4/4-[CS 61A SP24] Discussion 6 Question #2 Something Different.mkv"
+    },
+    {
+      "source": "youtube/Discussion 5： Iterators, Generators, Efficiency/5-Primes Generator.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_5",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_5/5-Primes Generator.mkv"
+    },
+    {
+      "source": "youtube/Discussion 9： Interpreters/1-[CS 61A SP24] Discussion 10 Problem #3 Print Evaluated Expressions Walkthrough.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_1",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_1/1-[CS 61A SP24] Discussion 10 Problem #3 Print Evaluated Expressions Walkthrough.mkv"
+    },
+    {
+      "source": "youtube/Discussion 9： Interpreters/2-[CS 61A SP24] Discussion 10 Problem #2 Evaluation Walkthrough.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_2",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_2/2-[CS 61A SP24] Discussion 10 Problem #2 Evaluation Walkthrough.mkv"
+    },
+    {
+      "source": "youtube/Discussion 9： Interpreters/3-[CS 61A SP24] Discussion 10 Question #1 Representing Expressions.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_3",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_3/3-[CS 61A SP24] Discussion 10 Question #1 Representing Expressions.mkv"
+    },
+    {
+      "source": "youtube/Efficiency/1-Measuring Efficiency.webm",
+      "category": "study",
+      "task_name": "efficiency",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/efficiency/1-Measuring Efficiency.webm"
+    },
+    {
+      "source": "youtube/Efficiency/2-Memoization.mkv",
+      "category": "study",
+      "task_name": "efficiency",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/efficiency/2-Memoization.mkv"
+    },
+    {
+      "source": "youtube/Efficiency/3-Exponentiation.mkv",
+      "category": "study",
+      "task_name": "efficiency",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/efficiency/3-Exponentiation.mkv"
+    },
+    {
+      "source": "youtube/Efficiency/4-Orders of Growth.mkv",
+      "category": "study",
+      "task_name": "efficiency",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/efficiency/4-Orders of Growth.mkv"
+    },
+    {
+      "source": "youtube/Efficiency/5-Order of Growth Notation.mkv",
+      "category": "study",
+      "task_name": "efficiency",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/efficiency/5-Order of Growth Notation.mkv"
+    },
+    {
+      "source": "youtube/Efficiency/6-Space.mkv",
+      "category": "study",
+      "task_name": "efficiency",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/efficiency/6-Space.mkv"
+    },
+    {
+      "source": "youtube/Environments (Su25)/1-Environments for Higher-Order Functions.webm",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/environments/1/1-Environments for Higher-Order Functions.webm"
+    },
+    {
+      "source": "youtube/Environments (Su25)/2-Environments for Nested Definitions.mkv",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/environments/2/2-Environments for Nested Definitions.mkv"
+    },
+    {
+      "source": "youtube/Environments (Su25)/3-Local Names.mkv",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/environments/3/3-Local Names.mkv"
+    },
+    {
+      "source": "youtube/Environments (Su25)/4-Function Composition.mkv",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/environments/4/4-Function Composition.mkv"
+    },
+    {
+      "source": "youtube/Environments (Su25)/5-Lambda Expressions.mkv",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/environments/5/5-Lambda Expressions.mkv"
+    },
+    {
+      "source": "youtube/Environments (Su25)/6-Lambda Function Environments.webm",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/environments/6/6-Lambda Function Environments.webm"
+    },
+    {
+      "source": "youtube/Environments (Su25)/7-Function Currying.mkv",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "7",
+      "category_depth": 2,
+      "final_path": "study/environments/7-Function Currying.mkv"
+    },
+    {
+      "source": "youtube/Environments/1-Environments for Higher-Order Functions.webm",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/environments/1/1-Environments for Higher-Order Functions.webm"
+    },
+    {
+      "source": "youtube/Environments/2-Environments for Nested Definitions.mkv",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/environments/2/2-Environments for Nested Definitions.mkv"
+    },
+    {
+      "source": "youtube/Environments/3-Local Names.mkv",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/environments/3/3-Local Names.mkv"
+    },
+    {
+      "source": "youtube/Environments/4-Function Composition.mkv",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/environments/4/4-Function Composition.mkv"
+    },
+    {
+      "source": "youtube/Environments/5-Lambda Expressions.mkv",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/environments/5/5-Lambda Expressions.mkv"
+    },
+    {
+      "source": "youtube/Environments/6-Function Currying.mkv",
+      "category": "study",
+      "task_name": "environments",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/environments/6/6-Function Currying.mkv"
+    },
+    {
+      "source": "youtube/Final Review (Su25)/1-Trees.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/1/1-Trees.mkv"
+    },
+    {
+      "source": "youtube/Final Review (Su25)/2-Tree Processing.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/2/2-Tree Processing.mkv"
+    },
+    {
+      "source": "youtube/Final Review (Su25)/3-Recursive Accumulation.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/3/3-Recursive Accumulation.mkv"
+    },
+    {
+      "source": "youtube/Functions/1-Welcome.webm",
+      "category": "study",
+      "task_name": "functions",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/functions/1/1-Welcome.webm"
+    },
+    {
+      "source": "youtube/Functions/2-Call Expressions.webm",
+      "category": "study",
+      "task_name": "functions",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/functions/2/2-Call Expressions.webm"
+    },
+    {
+      "source": "youtube/Functions/3-Names, Assignment, and User-Defined Functions.webm",
+      "category": "study",
+      "task_name": "functions",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/functions/3-Names, Assignment, and User-Defined Functions.webm"
+    },
+    {
+      "source": "youtube/Functions/4-Environment Diagrams.webm",
+      "category": "study",
+      "task_name": "functions",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/functions/4-Environment Diagrams.webm"
+    },
+    {
+      "source": "youtube/Functions/5-Defining Functions.webm",
+      "category": "study",
+      "task_name": "functions",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/functions/5-Defining Functions.webm"
+    },
+    {
+      "source": "youtube/Functions/6-Print and None.webm",
+      "category": "study",
+      "task_name": "functions",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/functions/6-Print and None.webm"
+    },
+    {
+      "source": "youtube/Higher-Order Functions/1-Iteration Example.webm",
+      "category": "study",
+      "task_name": "higher-order functions",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/higher-order functions/1-Iteration Example.webm"
+    },
+    {
+      "source": "youtube/Higher-Order Functions/2-Control.mkv",
+      "category": "study",
+      "task_name": "higher-order functions",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/higher-order functions/2-Control.mkv"
+    },
+    {
+      "source": "youtube/Higher-Order Functions/3-Control Expressions.webm",
+      "category": "study",
+      "task_name": "higher-order functions",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/higher-order functions/3-Control Expressions.webm"
+    },
+    {
+      "source": "youtube/Higher-Order Functions/4-Higher-Order Functions.webm",
+      "category": "study",
+      "task_name": "higher-order functions",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/higher-order functions/4-Higher-Order Functions.webm"
+    },
+    {
+      "source": "youtube/Higher-Order Functions/5-Functions as Return Values.mkv",
+      "category": "study",
+      "task_name": "higher-order functions",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/higher-order functions/5-Functions as Return Values.mkv"
+    },
+    {
+      "source": "youtube/Inheritance and Representation (Su25)/1-Inheritance.webm",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/1/1-Inheritance.webm"
+    },
+    {
+      "source": "youtube/Inheritance and Representation (Su25)/2-Object-Oriented Design.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/2/2-Object-Oriented Design.mkv"
+    },
+    {
+      "source": "youtube/Inheritance and Representation (Su25)/3-Attribute Lookup Practice.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/3/3-Attribute Lookup Practice.mkv"
+    },
+    {
+      "source": "youtube/Inheritance and Representation (Su25)/4-Multiple Inheritance.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/4/4-Multiple Inheritance.mkv"
+    },
+    {
+      "source": "youtube/Inheritance and Representation (Su25)/5-String Representations.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/5/5-String Representations.mkv"
+    },
+    {
+      "source": "youtube/Inheritance and Representation (Su25)/6-String Interpolation.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/6/6-String Interpolation.mkv"
+    },
+    {
+      "source": "youtube/Inheritance and Representation (Su25)/7-Polymorphic Functions.webm",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "7",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/7/7-Polymorphic Functions.webm"
+    },
+    {
+      "source": "youtube/Inheritance and Representation (Su25)/8-Special Method Names.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "8",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/8/8-Special Method Names.mkv"
+    },
+    {
+      "source": "youtube/Inheritance and Representation (Su25)/9-Examples： Objects.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "9",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/9/9-Examples： Objects.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/1-Programming Languages.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/1-Programming Languages.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/10-Lambda Expressions.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/10-Lambda Expressions.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/11-Define Expressions.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/11-Define Expressions.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/12-Dynamic Scope.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/12-Dynamic Scope.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/2-Parsing.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/2-Parsing.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/3-Scheme-Syntax Calculator.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/scheme/3-Scheme-Syntax Calculator.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/4-Evaluation.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/4-Evaluation.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/5-Interactive Interpreters.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/5-Interactive Interpreters.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/6-Interpreting Scheme.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/6-Interpreting Scheme.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/7-Special Forms.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/7-Special Forms.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/8-Logical Forms.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/8-Logical Forms.mkv"
+    },
+    {
+      "source": "youtube/Interpreters (Su25)/9-Quotation.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/9-Quotation.mkv"
+    },
+    {
+      "source": "youtube/Iterators and Generators (Su25)/1-Iterators.webm",
+      "category": "study",
+      "task_name": "iterators and generators",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/iterators and generators/1-Iterators.webm"
+    },
+    {
+      "source": "youtube/Iterators and Generators (Su25)/10-Examples： Iterables & Iterators.mkv",
+      "category": "study",
+      "task_name": "iterators and generators",
+      "sequence_name": "10",
+      "category_depth": 2,
+      "final_path": "study/iterators and generators/10-Examples： Iterables & Iterators.mkv"
+    },
+    {
+      "source": "youtube/Iterators and Generators (Su25)/2-Dictionary Iteration.mkv",
+      "category": "study",
+      "task_name": "iterators and generators",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/iterators and generators/2-Dictionary Iteration.mkv"
+    },
+    {
+      "source": "youtube/Iterators and Generators (Su25)/3-For Statements.mkv",
+      "category": "study",
+      "task_name": "iterators and generators",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/iterators and generators/3-For Statements.mkv"
+    },
+    {
+      "source": "youtube/Iterators and Generators (Su25)/4-Built-in Iterator Functions.webm",
+      "category": "study",
+      "task_name": "iterators and generators",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/iterators and generators/4-Built-in Iterator Functions.webm"
+    },
+    {
+      "source": "youtube/Iterators and Generators (Su25)/5-Zip.mkv",
+      "category": "study",
+      "task_name": "iterators and generators",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/iterators and generators/5-Zip.mkv"
+    },
+    {
+      "source": "youtube/Iterators and Generators (Su25)/6-Using Iterators.mkv",
+      "category": "study",
+      "task_name": "iterators and generators",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/iterators and generators/6-Using Iterators.mkv"
+    },
+    {
+      "source": "youtube/Iterators and Generators (Su25)/7-Generators.webm",
+      "category": "study",
+      "task_name": "iterators and generators",
+      "sequence_name": "7",
+      "category_depth": 2,
+      "final_path": "study/iterators and generators/7-Generators.webm"
+    },
+    {
+      "source": "youtube/Iterators and Generators (Su25)/8-Generators & Iterators.mkv",
+      "category": "study",
+      "task_name": "iterators and generators",
+      "sequence_name": "8",
+      "category_depth": 2,
+      "final_path": "study/iterators and generators/8-Generators & Iterators.mkv"
+    },
+    {
+      "source": "youtube/Iterators and Generators (Su25)/9-Example： Partitions.mkv",
+      "category": "study",
+      "task_name": "iterators and generators",
+      "sequence_name": "9",
+      "category_depth": 2,
+      "final_path": "study/iterators and generators/9-Example： Partitions.mkv"
+    },
+    {
+      "source": "youtube/Linked Lists (Su25)/1-Linked Lists.webm",
+      "category": "study",
+      "task_name": "linked lists",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/linked lists/1/1-Linked Lists.webm"
+    },
+    {
+      "source": "youtube/Linked Lists (Su25)/2-Linked List Processing.mkv",
+      "category": "study",
+      "task_name": "linked lists",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/linked lists/2-Linked List Processing.mkv"
+    },
+    {
+      "source": "youtube/Linked Lists (Su25)/3-Linked List Mutation.mkv",
+      "category": "study",
+      "task_name": "linked lists",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/linked lists/3-Linked List Mutation.mkv"
+    },
+    {
+      "source": "youtube/Linked Lists (Su25)/4-Linked List Mutation Example.mkv",
+      "category": "study",
+      "task_name": "linked lists",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/linked lists/4-Linked List Mutation Example.mkv"
+    },
+    {
+      "source": "youtube/Linked Lists (Su25)/5-Examples： Linked Lists.mkv",
+      "category": "study",
+      "task_name": "linked lists",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/linked lists/5-Examples： Linked Lists.mkv"
+    },
+    {
+      "source": "youtube/Midterm Review (Su25)/1-Midterm 1 Review.mkv",
+      "category": "study",
+      "task_name": "functions",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/functions/1/1-Midterm 1 Review.mkv"
+    },
+    {
+      "source": "youtube/Midterm Review (Su25)/2-Implementing Functions.mkv",
+      "category": "study",
+      "task_name": "functions",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/functions/2/2-Implementing Functions.mkv"
+    },
+    {
+      "source": "youtube/Mutability (Su25)/1-Objects.webm",
+      "category": "study",
+      "task_name": "mutability",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/mutability/1-Objects.webm"
+    },
+    {
+      "source": "youtube/Mutability (Su25)/2-Example： Strings.mkv",
+      "category": "study",
+      "task_name": "mutability",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/mutability/2-Example： Strings.mkv"
+    },
+    {
+      "source": "youtube/Mutability (Su25)/3-Mutation Operations.webm",
+      "category": "study",
+      "task_name": "mutability",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/mutability/3-Mutation Operations.webm"
+    },
+    {
+      "source": "youtube/Mutability (Su25)/4-Tuples.webm",
+      "category": "study",
+      "task_name": "mutability",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/mutability/4-Tuples.webm"
+    },
+    {
+      "source": "youtube/Mutability (Su25)/5-Mutation.mkv",
+      "category": "study",
+      "task_name": "mutability",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/mutability/5-Mutation.mkv"
+    },
+    {
+      "source": "youtube/Mutability (Su25)/6-Mutable Functions.mkv",
+      "category": "study",
+      "task_name": "mutability",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/mutability/6-Mutable Functions.mkv"
+    },
+    {
+      "source": "youtube/Mutability (Su25)/7-Examples： Lists.webm",
+      "category": "study",
+      "task_name": "mutability",
+      "sequence_name": "7",
+      "category_depth": 2,
+      "final_path": "study/mutability/7-Examples： Lists.webm"
+    },
+    {
+      "source": "youtube/Mutable Trees (Su25)/1-Tree Class.mkv",
+      "category": "study",
+      "task_name": "mutable trees",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/mutable trees/1-Tree Class.mkv"
+    },
+    {
+      "source": "youtube/Mutable Trees (Su25)/2-Tree Mutation.mkv",
+      "category": "study",
+      "task_name": "mutable trees",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/mutable trees/2-Tree Mutation.mkv"
+    },
+    {
+      "source": "youtube/Objects and Attributes (Su25)/1-Object-Oriented Programming.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/1/1-Object-Oriented Programming.mkv"
+    },
+    {
+      "source": "youtube/Objects and Attributes (Su25)/2-Class Statements.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/2/2-Class Statements.mkv"
+    },
+    {
+      "source": "youtube/Objects and Attributes (Su25)/3-Creating Instances.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/3/3-Creating Instances.mkv"
+    },
+    {
+      "source": "youtube/Objects and Attributes (Su25)/4-Methods.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/4/4-Methods.mkv"
+    },
+    {
+      "source": "youtube/Objects and Attributes (Su25)/5-Method Calls.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/5/5-Method Calls.mkv"
+    },
+    {
+      "source": "youtube/Objects and Attributes (Su25)/6-Attribute Lookup.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/6/6-Attribute Lookup.mkv"
+    },
+    {
+      "source": "youtube/Objects and Attributes (Su25)/7-Class Attributes.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "7",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/7/7-Class Attributes.mkv"
+    },
+    {
+      "source": "youtube/Objects and Attributes (Su25)/8-Bound Methods.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "8",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/8/8-Bound Methods.mkv"
+    },
+    {
+      "source": "youtube/Objects and Attributes (Su25)/9-Attribute Assignment.mkv",
+      "category": "study",
+      "task_name": "objects and attributes",
+      "sequence_name": "9",
+      "category_depth": 2,
+      "final_path": "study/objects and attributes/9/9-Attribute Assignment.mkv"
+    },
+    {
+      "source": "youtube/Recursion/1-Self-Reference.webm",
+      "category": "study",
+      "task_name": "recursion",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/recursion/1-Self-Reference.webm"
+    },
+    {
+      "source": "youtube/Recursion/2-Recursive Functions.mkv",
+      "category": "study",
+      "task_name": "recursion",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/recursion/2-Recursive Functions.mkv"
+    },
+    {
+      "source": "youtube/Recursion/3-Recursion in Environment Diagrams.mkv",
+      "category": "study",
+      "task_name": "recursion",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/recursion/3-Recursion in Environment Diagrams.mkv"
+    },
+    {
+      "source": "youtube/Recursion/4-Verifying Recursive Functions.mkv",
+      "category": "study",
+      "task_name": "recursion",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/recursion/4/4-Verifying Recursive Functions.mkv"
+    },
+    {
+      "source": "youtube/Recursion/5-Mutual Recursion.mkv",
+      "category": "study",
+      "task_name": "recursion",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/recursion/5-Mutual Recursion.mkv"
+    },
+    {
+      "source": "youtube/Recursion/6-Recursion and Iteration.mkv",
+      "category": "study",
+      "task_name": "recursion",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/recursion/6-Recursion and Iteration.mkv"
+    },
+    {
+      "source": "youtube/SQL and Tables (Su25)/1-Databases.webm",
+      "category": "study",
+      "task_name": "sql and tables",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/sql and tables/1-Databases.webm"
+    },
+    {
+      "source": "youtube/SQL and Tables (Su25)/2-Structured Query Language.webm",
+      "category": "study",
+      "task_name": "sql and tables",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/sql and tables/2-Structured Query Language.webm"
+    },
+    {
+      "source": "youtube/SQL and Tables (Su25)/3-Projecting Tables.webm",
+      "category": "study",
+      "task_name": "sql and tables",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/sql and tables/3-Projecting Tables.webm"
+    },
+    {
+      "source": "youtube/SQL and Tables (Su25)/4-Arithmetic.mkv",
+      "category": "study",
+      "task_name": "sql and tables",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/sql and tables/4-Arithmetic.mkv"
+    },
+    {
+      "source": "youtube/SQL and Tables (Su25)/5-Joining Tables.webm",
+      "category": "study",
+      "task_name": "sql and tables",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/sql and tables/5-Joining Tables.webm"
+    },
+    {
+      "source": "youtube/SQL and Tables (Su25)/6-Aliases & Dot Expressions.webm",
+      "category": "study",
+      "task_name": "sql and tables",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/sql and tables/6-Aliases & Dot Expressions.webm"
+    },
+    {
+      "source": "youtube/SQL and Tables (Su25)/7-Numerical Expressions.mkv",
+      "category": "study",
+      "task_name": "sql and tables",
+      "sequence_name": "7",
+      "category_depth": 2,
+      "final_path": "study/sql and tables/7-Numerical Expressions.mkv"
+    },
+    {
+      "source": "youtube/SQL and Tables (Su25)/8-String Expressions.webm",
+      "category": "study",
+      "task_name": "sql and tables",
+      "sequence_name": "8",
+      "category_depth": 2,
+      "final_path": "study/sql and tables/8-String Expressions.webm"
+    },
+    {
+      "source": "youtube/Scheme Lists/1-Lists.mkv",
+      "category": "study",
+      "task_name": "linked lists",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/linked lists/1/1-Lists.mkv"
+    },
+    {
+      "source": "youtube/Scheme Lists/2-Symbolic Programming.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/2-Symbolic Programming.mkv"
+    },
+    {
+      "source": "youtube/Scheme Lists/3-List Processing.webm",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/3-List Processing.webm"
+    },
+    {
+      "source": "youtube/Scheme Lists/4-Example： Even Subsets.mkv",
+      "category": "study",
+      "task_name": "recursion",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/recursion/4/4-Example： Even Subsets.mkv"
+    },
+    {
+      "source": "youtube/Scheme Lists/5-Discussion Question： Even Subsets Using Filter.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_5",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_5/5-Discussion Question： Even Subsets Using Filter.mkv"
+    },
+    {
+      "source": "youtube/Scheme/1-Scheme.webm",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/scheme/1-Scheme.webm"
+    },
+    {
+      "source": "youtube/Scheme/2-Scheme Interpreters.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/scheme/2-Scheme Interpreters.mkv"
+    },
+    {
+      "source": "youtube/Scheme/3-Special Forms.webm",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/3-Special Forms.webm"
+    },
+    {
+      "source": "youtube/Scheme/4-Lambda Expressions.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/4-Lambda Expressions.mkv"
+    },
+    {
+      "source": "youtube/Scheme/5-More Special Forms.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/scheme/5-More Special Forms.mkv"
+    },
+    {
+      "source": "youtube/Scheme/6-Example： Sierpinski's Triangle.mkv",
+      "category": "study",
+      "task_name": "scheme",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/scheme/6-Example： Sierpinski's Triangle.mkv"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/1-Lists.webm",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/1-Lists.webm"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/10-Strings.mkv",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "10",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/10-Strings.mkv"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/11-Dictionaries.mkv",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "11",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/11-Dictionaries.mkv"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/2-Containers.mkv",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/2-Containers.mkv"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/3-For Statements.mkv",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/3-For Statements.mkv"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/4-Ranges.mkv",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/4-Ranges.mkv"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/5-List Comprehensions.mkv",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "5",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/5-List Comprehensions.mkv"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/6-Lists, Slices, & Recursion.mkv",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "6",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/6-Lists, Slices, & Recursion.mkv"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/7-Box-and-Pointer Notation.webm",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "7",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/7-Box-and-Pointer Notation.webm"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/8-Slicing.mkv",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "8",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/8-Slicing.mkv"
+    },
+    {
+      "source": "youtube/Sequences and Containers (Su25)/9-Processing Container Values.mkv",
+      "category": "study",
+      "task_name": "sequences and containers",
+      "sequence_name": "9",
+      "category_depth": 2,
+      "final_path": "study/sequences and containers/9-Processing Container Values.mkv"
+    },
+    {
+      "source": "youtube/Tail Calls (Su25)/1-Tail Recursion.webm",
+      "category": "study",
+      "task_name": "tail calls",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/tail calls/1-Tail Recursion.webm"
+    },
+    {
+      "source": "youtube/Tail Calls (Su25)/2-Tail Calls.mkv",
+      "category": "study",
+      "task_name": "tail calls",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/tail calls/2-Tail Calls.mkv"
+    },
+    {
+      "source": "youtube/Tail Calls (Su25)/3-Tail Recursion Examples.mkv",
+      "category": "study",
+      "task_name": "tail calls",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/tail calls/3-Tail Recursion Examples.mkv"
+    },
+    {
+      "source": "youtube/Tail Calls (Su25)/4-Map and Reduce.mkv",
+      "category": "study",
+      "task_name": "tail calls",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/tail calls/4-Map and Reduce.mkv"
+    },
+    {
+      "source": "youtube/Tree Recursion/1-Order of Recursive Calls.webm",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "1",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/1/1-Order of Recursive Calls.webm"
+    },
+    {
+      "source": "youtube/Tree Recursion/2-Example： Inverse Cascade.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "2",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/2/2-Example： Inverse Cascade.mkv"
+    },
+    {
+      "source": "youtube/Tree Recursion/3-Tree Recursion.mkv",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "3",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/3/3-Tree Recursion.mkv"
+    },
+    {
+      "source": "youtube/Tree Recursion/4-Example： Counting Partitions.webm",
+      "category": "study",
+      "task_name": "tree recursion",
+      "sequence_name": "4",
+      "category_depth": 2,
+      "final_path": "study/tree recursion/4/4-Example： Counting Partitions.webm"
+    },
+    {
+      "source": "youtube/cs_61a_sp24_mega_discussion_08/1-[CS 61A SP24] Discussion 8 Problem #1 Strange Loop.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_1",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_1/1-[CS 61A SP24] Discussion 8 Problem #1 Strange Loop.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_sp24_mega_discussion_08/2-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_2",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_2/2-[CS 61A SP24] Discussion 8 Problem #2 Sum Two Ways.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_sp24_mega_discussion_08/3-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_3",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_3/3-[CS 61A SP24] Discussion 8 Question #3 Overlap (Iterative).webm"
+    },
+    {
+      "source": "youtube/cs_61a_sp24_mega_discussion_08/4-[CS61A SP24] Discussion 8 Question #4 Overlap Growth.webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_4",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_4/4-[CS61A SP24] Discussion 8 Question #4 Overlap Growth.webm"
+    },
+    {
+      "source": "youtube/cs_61a_sp24_mega_discussion_08/5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_5",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_5/5-[CS 61A SP24] Discussion 8 Question #3 Overlap (Recursive).webm"
+    },
+    {
+      "source": "youtube/cs_61a_su24_discussion_01/1-Race.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/1-Race.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su24_discussion_01/2-Fizzbuzz.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/2-Fizzbuzz.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su24_discussion_01/3-Is Prime.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/3-Is Prime.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su24_discussion_01/4-Unique Digits.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/4-Unique Digits.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su24_discussion_01/5-Ordered Digits.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/5-Ordered Digits.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su24_discussion_2/1-Bottles.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/1-Bottles.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su24_discussion_2/2-Environment Diagrams： Assignment and Def Statements (Q7 & Q8).webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/2-Environment Diagrams： Assignment and Def Statements (Q7 & Q8).webm"
+    },
+    {
+      "source": "youtube/cs_61a_su24_discussion_2/3-Digit Finder.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/3-Digit Finder.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su24_discussion_2/4-61A FA21 Disc02： Make Keeper.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_4",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_4/4-61A FA21 Disc02： Make Keeper.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su24_discussion_2/5-Match Maker.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/5-Match Maker.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su25_discussion_3/1-Question 1 - Recursive Multiplication.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/1-Question 1 - Recursive Multiplication.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su25_discussion_3/2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_2",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_2/2-[CS 61A SU24] Discussion 3 Problem #2 Swipe.webm"
+    },
+    {
+      "source": "youtube/cs_61a_su25_discussion_3/3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": "Discussion_3",
+      "category_depth": 2,
+      "final_path": "study/discussion/Discussion_3/3-[CS 61A SU24] Discussion 3 Problem #3 Skip Factorial.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su25_discussion_3/4-Question 5 - Recursive Hailstone.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/4-Question 5 - Recursive Hailstone.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su25_discussion_6/1-Keyboard.webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/1-Keyboard.webm"
+    },
+    {
+      "source": "youtube/cs_61a_su25_discussion_6/2-Shapes.mkv",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/2-Shapes.mkv"
+    },
+    {
+      "source": "youtube/cs_61a_su25_discussion_6/3-Bear.webm",
+      "category": "study",
+      "task_name": "discussion",
+      "sequence_name": null,
+      "category_depth": 2,
+      "final_path": "study/discussion/3-Bear.webm"
+    }
+  ]
+}

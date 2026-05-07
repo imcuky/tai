@@ -1,0 +1,146 @@
+[
+  {
+    "group_name": "01",
+    "main_item": "study/slides/01",
+    "related_items": [],
+    "description": "01.py: A Python programming walkthrough focusing on numeric expressions, function usage, string values, file-based text analysis, sets, and set comprehensions for data exploration. | 01-Welcome_1pp.pdf: A course introduction document primarily focused on course logistics, expectations, community guidelines, and an initial overview of expressions and call expressions in programming."
+  },
+  {
+    "group_name": "02",
+    "main_item": "study/slides/02",
+    "related_items": [],
+    "description": "02.py: A Python instructional file focused on assignment, name conflicts, multiple assignment, the behavior of print and None, and the construction and evaluation of small expressions using custom classes and generators. | 02-Functions_1pp.pdf: A lecture handout primarily focused on the mechanics of assignment statements, environment diagrams, and the process of calling user-defined functions, emphasizing how names are bound to values and how environments are structured and manipulated during function execution."
+  },
+  {
+    "group_name": "03",
+    "main_item": "study/slides/03",
+    "related_items": [],
+    "description": "03.py: A lecture note file focused on Python function behavior, return values, environment diagrams, conditionals, while loops, and algorithmic problem solving with prime factorization and digit analysis. | 03-Control_1pp.pdf: A lecture handout focused on control structures in programming, specifically conditional statements and loops, and their application to algorithmic problems such as prime factorization and digit analysis."
+  },
+  {
+    "group_name": "04",
+    "main_item": "study/slides/04",
+    "related_items": [],
+    "description": "04.py: A code-based instructional file focused on higher-order functions, including using functions as arguments and return values, and their application in the Nim game. | 04-Higher-Order_Functions_1pp.pdf: A lecture handout focused on higher-order functions, specifically exploring functions as arguments and as return values, and their role in modularity, abstraction, and function design."
+  },
+  {
+    "group_name": "05",
+    "main_item": "study/slides/05",
+    "related_items": [],
+    "description": "05.py: A Python code file focused on higher-order functions, lambda expressions, and currying, illustrating their use through function definitions and interactive examples. | 05-Environments_1pp.pdf: A lecture handout focused on environments in Python, particularly how environment diagrams represent function calls, higher-order functions, and currying, including the use of lambda expressions and nested function definitions."
+  },
+  {
+    "group_name": "06",
+    "main_item": "study/slides/06",
+    "related_items": [],
+    "description": "06.py: A Python code file focused on currying (including partial and conditional currying), recursion, and converting iterative processes to recursive ones. | 06-Recursion_1pp.pdf: A lecture handout focused on teaching the principles of recursion, including how to conceptualize, implement, and convert iterative processes into recursive functions."
+  },
+  {
+    "group_name": "07",
+    "main_item": "study/slides/07",
+    "related_items": [],
+    "description": "07.py: A Python programming lesson focused on converting iterative algorithms to recursion, with applications to digit counting, pattern recognition, game simulation, combinatorial counting, and recursive pathfinding. | 07-Tree_Recursion_1pp.pdf: A lecture handout focused on tree recursion, emphasizing recursive problem decomposition, exploring multiple recursive branches, and applying these concepts to partitioning and combinatorial counting problems."
+  },
+  {
+    "group_name": "08",
+    "main_item": "study/slides/08",
+    "related_items": [],
+    "description": "08.py: A programming worksheet focused on recursive problem solving and list processing, emphasizing tree recursion, list comprehensions, and recursive algorithms for combinatorial and optimization problems. | 08-Sequences_and_Containers_1pp.pdf: A lecture handout focused on tree recursion and recursive problem-solving with sequences and containers, emphasizing recursive algorithms for counting, list processing, and partitioning problems."
+  },
+  {
+    "group_name": "09",
+    "main_item": "study/slides/09",
+    "related_items": [],
+    "description": "09.py: A code-based instructional file focused on dictionaries, data abstraction, and tree data structures, including their construction, manipulation, and processing. | 09-Data_Abstraction_and_ADT_Trees_1pp.pdf: A lecture handout focused on data abstraction and abstract data types (ADTs) for trees, including their recursive structure, implementation, and processing techniques."
+  },
+  {
+    "group_name": "10",
+    "main_item": "study/slides/10",
+    "related_items": [],
+    "description": "10.py: A Python code file focused on tree recursion, list mutation, list identity, and recursive list construction, primarily teaching how to manipulate and reason about trees and lists in Python. | 10-Mutability_1pp.pdf: A lecture handout primarily focused on mutability in Python, emphasizing the concepts of list mutation, object identity, and equality, as well as their implications for compound data structures."
+  },
+  {
+    "group_name": "11",
+    "main_item": "study/slides/11",
+    "related_items": [],
+    "description": "11.py: A Python code file focused on iterators, generators, and recursive algorithms for combinatorial enumeration, specifically using yield and recursion to solve parking arrangement problems. | 11-Iterators_and_Generators_1pp.pdf: A lecture slide deck focused on iterators and generators, exploring their definitions, usage, and implementation in Python, including practical examples and exercises."
+  },
+  {
+    "group_name": "12",
+    "main_item": "study/slides/12",
+    "related_items": [],
+    "description": "12.py: A Python programming tutorial focused on recursive problem-solving, including combinatorial counting, recursive list processing, and dynamic programming for path minimization. | 12-Midterm_Review_1pp.pdf: A midterm review handout focused on recursive problem solving, list operations and mutations, environment diagrams, and tree recursion, with practice problems and code analysis."
+  },
+  {
+    "group_name": "13",
+    "main_item": "study/slides/13",
+    "related_items": [],
+    "description": "13.py: A Python lecture script focused on object-oriented programming concepts, specifically class and instance attributes, method calls, and class-based data structures. | 13-Objects_and_Attributes_1pp.pdf: A lecture handout primarily about object-oriented programming concepts in Python, focusing on classes, instances, attributes, methods, and attribute lookup mechanisms."
+  },
+  {
+    "group_name": "14",
+    "main_item": "study/slides/14",
+    "related_items": [],
+    "description": "14.py: A Python code file focused on object-oriented programming concepts, including instance tracking, attribute access, inheritance, method overriding, object representation, and class-based behaviors. | 14-Inheritance_and_String_Representation_1pp.pdf: A lecture handout primarily focused on teaching class inheritance and string representation in Python, including attribute lookup, method overriding, and the distinction between str and repr methods."
+  },
+  {
+    "group_name": "15",
+    "main_item": "study/slides/15",
+    "related_items": [],
+    "description": "15.py: A code file focused on object representation in Python and the implementation and mutation of tree data structures, including custom string representations and tree mutation algorithms. | 15-Mutable_Trees_1pp.pdf: A lecture handout focused on mutable tree data structures in Python, emphasizing their implementation, string representations, and practical manipulation through class definitions and example functions."
+  },
+  {
+    "group_name": "16",
+    "main_item": "study/slides/16",
+    "related_items": [],
+    "description": "16.py: A Python code file focused on teaching the implementation and manipulation of linked lists, including custom class design, string representations, and in-place mutation operations. | 16-Linked_Lists_1pp.pdf: A lecture handout primarily about linked lists, focusing on their structure, implementation, and common operations such as insertion, slicing, and traversal, both recursively and iteratively."
+  },
+  {
+    "group_name": "17",
+    "main_item": "study/slides/17",
+    "related_items": [],
+    "description": "17.py: A Python code example focused on function call counting, recursion, and memoization using the Fibonacci sequence as a case study. | 17.ipynb: A lecture notebook focused on analyzing algorithmic efficiency through orders of growth, including practical timing experiments and comparisons of different growth rates such as logarithmic, linear, quadratic, and exponential, as well as the efficiency of linked list operations. | 17-Efficiency_1pp.pdf: A lecture handout focused on analyzing the efficiency of algorithms, primarily teaching concepts such as measuring computational efficiency, orders of growth, and techniques like memoization."
+  },
+  {
+    "group_name": "18",
+    "main_item": "study/slides/18",
+    "related_items": [],
+    "description": "18.py: A code example and analysis focused on the efficiency of a recursive function operating on linked lists, specifically analyzing the time complexity of link_comp_recur. | 18-Scheme_1pp.pdf: A lecture handout primarily focused on introducing the Scheme programming language, covering its evaluation model, expression types, recursion for iteration, lambda expressions, and linked list manipulation techniques."
+  },
+  {
+    "group_name": "21",
+    "main_item": "study/slides/21",
+    "related_items": [],
+    "description": "21.py: A code-based instructional file focusing on implementing a Scheme interpreter, exploring referential transparency, and demonstrating tail recursion techniques. | 21-Tail_Calls_1pp.pdf: A lecture handout focused on tail calls and tail recursion, emphasizing their role in space efficiency and constant-space iterative computation in Scheme and Python."
+  },
+  {
+    "group_name": "22",
+    "main_item": "study/slides/22",
+    "related_items": [],
+    "description": "22.py: A code file primarily focused on tail recursion techniques and SQL join operations, including demonstrations of iterative Fibonacci computation and advanced SQL queries involving joins and string manipulation. | 22-SQL_and_Tables_1pp.pdf: A lecture handout introducing the fundamentals of SQL and relational databases, focusing on table structures, SQL queries, joining tables, and the use of aliases and expressions in SQL."
+  },
+  {
+    "group_name": "23",
+    "main_item": "study/slides/23",
+    "related_items": [],
+    "description": "23.py: A code file focused on advanced SQL query techniques, primarily teaching multi-table self-joins, string concatenation in SELECT statements, and aggregation with GROUP BY and HAVING clauses. | 23-Aggregation_and_Databases_1pp.pdf: A lecture handout focused on SQL aggregation and database operations, emphasizing grouping, aggregation functions, joins, and practical query construction."
+  },
+  {
+    "group_name": "19-Scheme_Lists_1pp.pdf",
+    "main_item": "19-Scheme_Lists_1pp.pdf",
+    "related_items": [],
+    "description": "A lecture handout primarily about Scheme lists, focusing on their construction, manipulation, and key list-processing procedures in Scheme."
+  },
+  {
+    "group_name": "24-CS_Theory_1pp-updated.pdf",
+    "main_item": "24-CS_Theory_1pp-updated.pdf",
+    "related_items": [],
+    "description": "A lecture handout focused on the foundational concepts of theoretical computer science, primarily covering computational complexity (including P vs NP, reductions, and NP-completeness), computability, and undecidability (such as the Halting Problem and Kolmogorov Complexity)."
+  },
+  {
+    "group_name": "Lecture Miscellaneous",
+    "main_item": "",
+    "related_items": [],
+    "description": "Miscellaneous materials that do not fit perfectly into other units."
+  }
+]

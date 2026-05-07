@@ -4,7 +4,7 @@
 /test_folder/*
 /test_folder_output/*
 
-/rag/file_rearrangement/rearrange/input/*
+rag\file_rearrangement\rearrange\input
 
 # Remove documents scraped
 /scraper/Scrape_header/*/

@@ -1,0 +1,420 @@
+{
+    "matches": [
+        {
+            "item_path": "study/discussion/Discussion_0",
+            "assigned_group": "01"
+        },
+        {
+            "item_path": "study/discussion/Discussion_1",
+            "assigned_group": "03,02,16,21"
+        },
+        {
+            "item_path": "study/discussion/Discussion_10",
+            "assigned_group": "21"
+        },
+        {
+            "item_path": "study/discussion/Discussion_11",
+            "assigned_group": "23"
+        },
+        {
+            "item_path": "study/discussion/Discussion_12",
+            "assigned_group": "10,16,19-Scheme_Lists_1pp.pdf,23"
+        },
+        {
+            "item_path": "study/discussion/Discussion_2",
+            "assigned_group": "02,05,16,21"
+        },
+        {
+            "item_path": "study/discussion/Discussion_3",
+            "assigned_group": "07,19-Scheme_Lists_1pp.pdf,16"
+        },
+        {
+            "item_path": "study/discussion/Discussion_4",
+            "assigned_group": "08,09,11,16"
+        },
+        {
+            "item_path": "study/discussion/Discussion_5",
+            "assigned_group": "10,11,04,16"
+        },
+        {
+            "item_path": "study/discussion/Discussion_6",
+            "assigned_group": "13,14"
+        },
+        {
+            "item_path": "study/discussion/Discussion_7",
+            "assigned_group": "15,16,09"
+        },
+        {
+            "item_path": "study/discussion/Discussion_8",
+            "assigned_group": "18,17"
+        },
+        {
+            "item_path": "study/discussion/Discussion_9",
+            "assigned_group": "19-Scheme_Lists_1pp.pdf"
+        },
+        {
+            "item_path": "study/discussion/1-Prune Small Getting Started.webm",
+            "assigned_group": "15"
+        },
+        {
+            "item_path": "study/discussion/6-Duplicate Link Getting Started.mkv",
+            "assigned_group": "16"
+        },
+        {
+            "item_path": "study/discussion/1-Disc04 Q4： Even Weighted.mkv",
+            "assigned_group": "08"
+        },
+        {
+            "item_path": "study/discussion/1-Race.mkv",
+            "assigned_group": "03"
+        },
+        {
+            "item_path": "study/discussion/2-Fizzbuzz.mkv",
+            "assigned_group": "03"
+        },
+        {
+            "item_path": "study/discussion/3-Is Prime.mkv",
+            "assigned_group": "06,03"
+        },
+        {
+            "item_path": "study/discussion/4-Unique Digits.mkv",
+            "assigned_group": "03"
+        },
+        {
+            "item_path": "study/discussion/5-Ordered Digits.mkv",
+            "assigned_group": "03"
+        },
+        {
+            "item_path": "study/discussion/1-Bottles.mkv",
+            "assigned_group": "02"
+        },
+        {
+            "item_path": "study/discussion/2-Environment Diagrams： Assignment and Def Statements (Q7 & Q8).webm",
+            "assigned_group": "02"
+        },
+        {
+            "item_path": "study/discussion/3-Digit Finder.mkv",
+            "assigned_group": "04,03"
+        },
+        {
+            "item_path": "study/discussion/5-Match Maker.mkv",
+            "assigned_group": "04,03"
+        },
+        {
+            "item_path": "study/discussion/1-Question 1 - Recursive Multiplication.mkv",
+            "assigned_group": "06"
+        },
+        {
+            "item_path": "study/discussion/4-Question 5 - Recursive Hailstone.mkv",
+            "assigned_group": "06"
+        },
+        {
+            "item_path": "study/discussion/1-Keyboard.webm",
+            "assigned_group": "13"
+        },
+        {
+            "item_path": "study/discussion/2-Shapes.mkv",
+            "assigned_group": "14,13"
+        },
+        {
+            "item_path": "study/discussion/3-Bear.webm",
+            "assigned_group": "14,13"
+        },
+        {
+            "item_path": "study/aggregation and databases",
+            "assigned_group": "22,23"
+        },
+        {
+            "item_path": "study/control-flow",
+            "assigned_group": "02,03,01"
+        },
+        {
+            "item_path": "study/tree recursion/1",
+            "assigned_group": "07,09"
+        },
+        {
+            "item_path": "study/tree recursion/2",
+            "assigned_group": "09,07"
+        },
+        {
+            "item_path": "study/tree recursion/3",
+            "assigned_group": "07,09"
+        },
+        {
+            "item_path": "study/tree recursion/4",
+            "assigned_group": "09,07"
+        },
+        {
+            "item_path": "study/tree recursion/5-Trees.mkv",
+            "assigned_group": "09"
+        },
+        {
+            "item_path": "study/tree recursion/6-Tree Processing.mkv",
+            "assigned_group": "09,07"
+        },
+        {
+            "item_path": "study/tree recursion/7-Example： Printing Trees.mkv",
+            "assigned_group": "09"
+        },
+        {
+            "item_path": "study/tree recursion/8-Example： Summing Paths.mkv",
+            "assigned_group": "09,07"
+        },
+        {
+            "item_path": "study/tree recursion/9-Example： Counting Paths.mkv",
+            "assigned_group": "09,07"
+        },
+        {
+            "item_path": "study/efficiency",
+            "assigned_group": "17"
+        },
+        {
+            "item_path": "study/environments/1",
+            "assigned_group": "05,02"
+        },
+        {
+            "item_path": "study/environments/2",
+            "assigned_group": "05,02"
+        },
+        {
+            "item_path": "study/environments/3",
+            "assigned_group": "02"
+        },
+        {
+            "item_path": "study/environments/4",
+            "assigned_group": "04,05"
+        },
+        {
+            "item_path": "study/environments/5",
+            "assigned_group": "05"
+        },
+        {
+            "item_path": "study/environments/6",
+            "assigned_group": "05,06"
+        },
+        {
+            "item_path": "study/environments/7-Function Currying.mkv",
+            "assigned_group": "05,06"
+        },
+        {
+            "item_path": "study/functions/1",
+            "assigned_group": "01,02"
+        },
+        {
+            "item_path": "study/functions/2",
+            "assigned_group": "01, 02"
+        },
+        {
+            "item_path": "youtube/Functions/3-Names, Assignment, and User-Defined Functions.webm",
+            "assigned_group": "02"
+        },
+        {
+            "item_path": "youtube/Functions/4-Environment Diagrams.webm",
+            "assigned_group": "02, 05"
+        },
+        {
+            "item_path": "youtube/Functions/5-Defining Functions.webm",
+            "assigned_group": "02, 05"
+        },
+        {
+            "item_path": "youtube/Functions/6-Print and None.webm",
+            "assigned_group": "02"
+        },
+        {
+            "item_path": "study/higher-order functions",
+            "assigned_group": "03, 04, 05"
+        },
+        {
+            "item_path": "study/objects and attributes/1",
+            "assigned_group": "13, 14"
+        },
+        {
+            "item_path": "study/objects and attributes/2",
+            "assigned_group": "13, 14"
+        },
+        {
+            "item_path": "study/objects and attributes/3",
+            "assigned_group": "13, 14"
+        },
+        {
+            "item_path": "study/objects and attributes/4",
+            "assigned_group": "13, 14"
+        },
+        {
+            "item_path": "study/objects and attributes/5",
+            "assigned_group": "13, 14"
+        },
+        {
+            "item_path": "study/objects and attributes/6",
+            "assigned_group": "13, 14, 08"
+        },
+        {
+            "item_path": "study/objects and attributes/7",
+            "assigned_group": "13, 14, 15"
+        },
+        {
+            "item_path": "study/objects and attributes/8",
+            "assigned_group": "13, 14"
+        },
+        {
+            "item_path": "study/objects and attributes/9",
+            "assigned_group": "13, 14"
+        },
+        {
+            "item_path": "study/scheme",
+            "assigned_group": "18, 19-Scheme_Lists_1pp.pdf, 21"
+        },
+        {
+            "item_path": "study/iterators and generators",
+            "assigned_group": "11"
+        },
+        {
+            "item_path": "study/linked lists/1",
+            "assigned_group": "16, 19-Scheme_Lists_1pp.pdf"
+        },
+        {
+            "item_path": "youtube/Linked Lists (Su25)/2-Linked List Processing.mkv",
+            "assigned_group": "16"
+        },
+        {
+            "item_path": "youtube/Linked Lists (Su25)/3-Linked List Mutation.mkv",
+            "assigned_group": "16, 10"
+        },
+        {
+            "item_path": "youtube/Linked Lists (Su25)/4-Linked List Mutation Example.mkv",
+            "assigned_group": "16, 10"
+        },
+        {
+            "item_path": "youtube/Linked Lists (Su25)/5-Examples： Linked Lists.mkv",
+            "assigned_group": "16"
+        },
+        {
+            "item_path": "study/mutability",
+            "assigned_group": "10"
+        },
+        {
+            "item_path": "study/mutable trees",
+            "assigned_group": "15"
+        },
+        {
+            "item_path": "study/recursion/4",
+            "assigned_group": "06, 07"
+        },
+        {
+            "item_path": "youtube/Recursion/1-Self-Reference.webm",
+            "assigned_group": "06, 05"
+        },
+        {
+            "item_path": "youtube/Recursion/2-Recursive Functions.mkv",
+            "assigned_group": "06"
+        },
+        {
+            "item_path": "youtube/Recursion/3-Recursion in Environment Diagrams.mkv",
+            "assigned_group": "06, 05"
+        },
+        {
+            "item_path": "youtube/Recursion/5-Mutual Recursion.mkv",
+            "assigned_group": "06"
+        },
+        {
+            "item_path": "youtube/Recursion/6-Recursion and Iteration.mkv",
+            "assigned_group": "06"
+        },
+        {
+            "item_path": "study/sql and tables",
+            "assigned_group": "22"
+        },
+        {
+            "item_path": "study/sequences and containers",
+            "assigned_group": "08"
+        },
+        {
+            "item_path": "study/tail calls",
+            "assigned_group": "21"
+        },
+        {
+            "item_path": "youtube/Discussion 4： Tree Recursion, Trees, Lists/3-61A FA21 HW05 Q3： Preorder.mkv",
+            "assigned_group": "07, 09"
+        },
+        {
+            "item_path": "study/homework/Homework_1",
+            "assigned_group": "02, 03, 04"
+        },
+        {
+            "item_path": "study/homework/Homework_2",
+            "assigned_group": "06"
+        },
+        {
+            "item_path": "study/homework/Homework_3",
+            "assigned_group": "07, 09, 11"
+        },
+        {
+            "item_path": "study/homework/Homework_4",
+            "assigned_group": "13, 15"
+        },
+        {
+            "item_path": "study/homework/Homework_5",
+            "assigned_group": "16, 10, 17"
+        },
+        {
+            "item_path": "hw/Homework 6 CS 61A Summer 2025.html",
+            "assigned_group": "22"
+        },
+        {
+            "item_path": "study/lab/Lab_0",
+            "assigned_group": "01"
+        },
+        {
+            "item_path": "study/lab/Lab_1",
+            "assigned_group": "02, 03"
+        },
+        {
+            "item_path": "study/lab/Lab_2",
+            "assigned_group": "04, 05"
+        },
+        {
+            "item_path": "study/lab/Lab_3",
+            "assigned_group": "06, 07"
+        },
+        {
+            "item_path": "study/lab/Lab_4",
+            "assigned_group": "08, 10"
+        },
+        {
+            "item_path": "study/lab/Lab_5",
+            "assigned_group": "11"
+        },
+        {
+            "item_path": "study/lab/Lab_6",
+            "assigned_group": "13, 14"
+        },
+        {
+            "item_path": "study/lab/Lab_7",
+            "assigned_group": "15, 16"
+        },
+        {
+            "item_path": "study/lab/Lab_8",
+            "assigned_group": "18, 19-Scheme_Lists_1pp.pdf"
+        },
+        {
+            "item_path": "study/lab/Lab_9",
+            "assigned_group": "21, 18"
+        },
+        {
+            "item_path": "study/lab/Lab 10 Tail Calls CS 61A Summer 2025.html",
+            "assigned_group": "21"
+        },
+        {
+            "item_path": "study/lab/Lab 11 SQL CS 61A Summer 2025.html",
+            "assigned_group": "22, 23"
+        },
+        {
+            "item_path": "study/lab/Lab 12 Final Review (Optional) CS 61A Summer 2025.html",
+            "assigned_group": "22, 15, 12"
+        },
+        {
+            "item_path": "study/project",
+            "assigned_group": "13, 14, 17, 21, 03, 04, 05"
+        }
+    ]
+}

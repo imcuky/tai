@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python map.py)",
+      "Bash(python -c \"exec\\(open\\('script.py'\\).read\\(\\)\\)\")",
+      "Bash(awk '/^\\(def |class |# ===\\)/ {print NR, $0}' file_rearrang.py)"
+    ]
+  }
+}

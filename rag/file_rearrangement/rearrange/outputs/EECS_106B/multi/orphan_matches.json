@@ -1,227 +1,271 @@
 {
     "matches": [
         {
-            "item_path": "study_106b/study/.DS_Store",
+            "item_path": "eecs106b/study/disc/.DS_Store",
             "assigned_group": "Lecture Miscellaneous"
         },
         {
-            "item_path": "study_106b/study/boardwork",
-            "assigned_group": "lec2_quadrotor_dynamics.pdf"
-        },
-        {
-            "item_path": "study_106b/study/boardwork",
-            "assigned_group": "lec4_linear_control.pdf"
-        },
-        {
-            "item_path": "study_106b/study/boardwork",
-            "assigned_group": "feedback_linearization.pdf"
-        },
-        {
-            "item_path": "study_106b/study/boardwork",
-            "assigned_group": "eecs106b-nonholo.pdf"
-        },
-        {
-            "item_path": "study_106b/study/boardwork",
-            "assigned_group": "grasping_intro.pdf"
-        },
-        {
-            "item_path": "study_106b/study/boardwork",
-            "assigned_group": "eecs106b-handcontrol.pdf"
-        },
-        {
-            "item_path": "study_106b/study/disc/.DS_Store",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/disc/118_disc.pdf",
+            "item_path": "eecs106b/study/disc/118_disc.pdf",
             "assigned_group": "lec3_state_space.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/125_disc.pdf",
+            "item_path": "eecs106b/study/disc/125_disc.pdf",
             "assigned_group": "lec4_linear_control.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/217_disc.pdf",
+            "item_path": "eecs106b/study/disc/217_disc.pdf",
             "assigned_group": "eecs106b-nonholo.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/421_disc.pdf",
-            "assigned_group": "legged-lec-1.pdf"
+            "item_path": "eecs106b/study/disc/421_disc.pdf",
+            "assigned_group": "legged-lec-1.pdf ; legged-lec-2.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/421_disc.pdf",
+            "item_path": "eecs106b/study/disc/disc01",
+            "assigned_group": "lec3_state_space.pdf ; lec4_linear_control.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/disc/disc02",
+            "assigned_group": "lec4_linear_control.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/disc/disc03",
+            "assigned_group": "feedback_linearization.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/disc/disc04",
             "assigned_group": "legged-lec-2.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/disc01",
-            "assigned_group": "lec3_state_space.pdf"
-        },
-        {
-            "item_path": "study_106b/study/disc/disc02",
-            "assigned_group": "lec4_linear_control.pdf"
-        },
-        {
-            "item_path": "study_106b/study/disc/disc03",
-            "assigned_group": "feedback_linearization.pdf"
-        },
-        {
-            "item_path": "study_106b/study/disc/disc04",
-            "assigned_group": "legged-lec-2.pdf"
-        },
-        {
-            "item_path": "study_106b/study/disc/disc05",
+            "item_path": "eecs106b/study/disc/disc05",
             "assigned_group": "eecs106b-nonholo.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/disc06",
+            "item_path": "eecs106b/study/disc/disc06",
             "assigned_group": "SLAM_Presentation___106B_2023.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/disc07",
+            "item_path": "eecs106b/study/disc/disc07",
             "assigned_group": "SLAM_Presentation___106B_2023.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/disc08",
-            "assigned_group": "lec3_state_space.pdf"
+            "item_path": "eecs106b/study/disc/disc08",
+            "assigned_group": "lec3_state_space.pdf ; feedback_linearization.pdf ; lec4_linear_control.pdf ; grasping_intro.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/disc08",
-            "assigned_group": "lec4_linear_control.pdf"
-        },
-        {
-            "item_path": "study_106b/study/disc/disc08",
-            "assigned_group": "feedback_linearization.pdf"
-        },
-        {
-            "item_path": "study_106b/study/disc/disc08",
-            "assigned_group": "eecs106b-nonholo.pdf"
-        },
-        {
-            "item_path": "study_106b/study/disc/disc08",
+            "item_path": "eecs106b/study/disc/disc09",
             "assigned_group": "grasping_intro.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/disc09",
-            "assigned_group": "grasping_intro.pdf"
-        },
-        {
-            "item_path": "study_106b/study/disc/disc09",
-            "assigned_group": "eecs106b-handcontrol.pdf"
-        },
-        {
-            "item_path": "study_106b/study/disc/disc10",
+            "item_path": "eecs106b/study/disc/disc10",
             "assigned_group": "230323-EECS206B_Guest_Lecture.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/disc11",
+            "item_path": "eecs106b/study/disc/disc11",
+            "assigned_group": "legged-lec-1.pdf ; legged-lec-2.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/lec/.DS_Store",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/lec/boardwork",
+            "assigned_group": "lec2_quadrotor_dynamics.pdf ; lec3_state_space.pdf ; lec4_linear_control.pdf ; feedback_linearization.pdf ; eecs106b-nonholo.pdf ; grasping_intro.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/attachment ROS_basic_concepts.dia of ROS Concepts - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/attachment ROS_basic_concepts.png of ROS Concepts - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/CommandLineTools",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/Making sure you're not a bot!.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/Making sure you're not a bot!__dup2.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/msg - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS CommandLineTools - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS Concepts - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS Connection Header - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS EnvironmentVariables - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS Higher-Level Concepts - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS Installation - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS Introduction - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS NetworkSetup - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS StartGuide - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS TCPROS - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS Technical Overview - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS Troubleshooting - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS Tutorials - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS UDPROS - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/ROS YAMLCommandLine - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/rosbuild - ROS Wiki.html",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROS/Tutorials",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/ROS/ROSNodeTutorialPython",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/.DS_Store",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/final_proj",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/hw/.DS_Store",
+            "assigned_group": "Lecture Miscellaneous"
+        },
+        {
+            "item_path": "eecs106b/study/hw/hw1",
+            "assigned_group": "lec3_state_space.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/hw/hw2",
+            "assigned_group": "feedback_linearization.pdf ; lec4_linear_control.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/hw/hw3",
+            "assigned_group": "legged-lec-2.pdf ; eecs106b-nonholo.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/hw/hw4",
+            "assigned_group": "SLAM_Presentation___106B_2023.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/hw/hw5",
+            "assigned_group": "grasping_intro.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/hw/hw5",
+            "assigned_group": "eecs106b-handcontrol.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/hw/hw6",
             "assigned_group": "legged-lec-1.pdf"
         },
         {
-            "item_path": "study_106b/study/disc/disc11",
+            "item_path": "eecs106b/study/hw/hw6",
             "assigned_group": "legged-lec-2.pdf"
         },
         {
-            "item_path": "study_106b/study/ROS/.DS_Store",
+            "item_path": "eecs106b/study/lab",
+            "assigned_group": "lec4_linear_control.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/lab",
+            "assigned_group": "SLAM_Presentation___106B_2023.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/proj/.DS_Store",
             "assigned_group": "Lecture Miscellaneous"
         },
         {
-            "item_path": "study_106b/study/ROS/ROS/attachment ROS_basic_concepts.dia of ROS Concepts - ROS Wiki.html",
+            "item_path": "eecs106b/study/proj/proj0",
             "assigned_group": "Lecture Miscellaneous"
         },
         {
-            "item_path": "study_106b/study/ROS/ROS/attachment ROS_basic_concepts.png of ROS Concepts - ROS Wiki.html",
+            "item_path": "eecs106b/study/proj/proj1",
+            "assigned_group": "lec4_linear_control.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/proj/proj1",
+            "assigned_group": "feedback_linearization.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/proj/proj2",
+            "assigned_group": "eecs106b-nonholo.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/proj/proj2",
+            "assigned_group": "steering-nonholo.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/proj/proj3",
+            "assigned_group": "SLAM_Presentation___106B_2023.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/proj/proj4",
+            "assigned_group": "230323-EECS206B_Guest_Lecture.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/proj/proj4",
+            "assigned_group": "feedback_linearization.pdf"
+        },
+        {
+            "item_path": "eecs106b/study/proj/robot_usage_guide_sp23.pdf",
             "assigned_group": "Lecture Miscellaneous"
         },
         {
-            "item_path": "study_106b/study/ROS/ROS/CommandLineTools",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/Making sure you're not a bot!.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/Making sure you're not a bot!__dup2.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/msg - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS CommandLineTools - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS Concepts - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS Connection Header - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS EnvironmentVariables - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS Higher-Level Concepts - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS Installation - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS Introduction - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS NetworkSetup - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS StartGuide - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS TCPROS - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS Technical Overview - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS Troubleshooting - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS Tutorials - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS UDPROS - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/ROS YAMLCommandLine - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/rosbuild - ROS Wiki.html",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROS/Tutorials",
-            "assigned_group": "Lecture Miscellaneous"
-        },
-        {
-            "item_path": "study_106b/study/ROS/ROSNodeTutorialPython",
+            "item_path": "eecs106b/study/ROS/ROS/Concepts (229├ù116).html",
             "assigned_group": "Lecture Miscellaneous"
         }
     ]

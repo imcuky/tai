@@ -1,0 +1,79 @@
+{
+  "type": "folder",
+  "name": "slides",
+  "relative_path": "eecs106b/study/lec/slides",
+  "children": [
+    {
+      "type": "file",
+      "name": "230323-EECS206B_Guest_Lecture.pdf",
+      "relative_path": "eecs106b/study/lec/slides/230323-EECS206B_Guest_Lecture.pdf",
+      "description": "This is a guest lecture slide deck for a course on Robotic Manipulation and Interaction, focusing on the theory and application of Control Barrier Functions (CBFs) for nonlinear system safety control, with comparisons to Hamilton-Jacobi reachability and Model Predictive Control (MPC) methods. Key topics include safety filter design, control invariant sets, CBF-based safety guarantees, alternative safety control methods, and robustness considerations for CBFs."
+    },
+    {
+      "type": "file",
+      "name": "eecs106b-handcontrol.pdf",
+      "relative_path": "eecs106b/study/lec/slides/eecs106b-handcontrol.pdf",
+      "description": "A lecture note excerpt on advanced robotic manipulation, focusing on the dynamics and control of multi-fingered robot hands using Lagrangian mechanics with constraints, including force closure, Pfaffian constraints, Lagrange multipliers, and connections to biological hand control."
+    },
+    {
+      "type": "file",
+      "name": "eecs106b-nonholo.pdf",
+      "relative_path": "eecs106b/study/lec/slides/eecs106b-nonholo.pdf",
+      "description": "A lecture note document on nonholonomic systems in robotics, covering mathematical foundations, examples, and control theory concepts such as Pfaffian constraints, integrability, holonomy, Lie brackets, Frobenius and Chow's theorems, and applications to robotic vehicles and mechanisms."
+    },
+    {
+      "type": "file",
+      "name": "feedback_linearization.pdf",
+      "relative_path": "eecs106b/study/lec/slides/feedback_linearization.pdf",
+      "description": "This is a set of advanced lecture notes on feedback linearization from nonlinear control theory, focusing on single-input single-output (SISO) and multi-input multi-output (MIMO) systems, with applications to quadrotor UAVs. It covers input-output linearization, full state feedback linearization, zero dynamics, relative degree, dynamic extension, and practical examples including planar and 3D quadrotor control."
+    },
+    {
+      "type": "file",
+      "name": "grasping_intro.pdf",
+      "relative_path": "eecs106b/study/lec/slides/grasping_intro.pdf",
+      "description": "These are detailed lecture notes for Chapter 5 of 'A Mathematical Introduction to Robotic Manipulation', focusing on the modeling and control of multifingered robotic hands. The notes cover hand function and design, grasp statics, contact and hand kinematics, grasp planning, force optimization, and coordinated control strategies."
+    },
+    {
+      "type": "file",
+      "name": "lec2_quadrotor_dynamics.pdf",
+      "relative_path": "eecs106b/study/lec/slides/lec2_quadrotor_dynamics.pdf",
+      "description": "A lecture note on quadrotor dynamics and state-space system modeling, covering the Newton-Euler equations of motion, their application to rigid bodies and quadrotors, and the derivation of state-space models for quadrotor control."
+    },
+    {
+      "type": "file",
+      "name": "lec3_state_space.pdf",
+      "relative_path": "eecs106b/study/lec/slides/lec3_state_space.pdf",
+      "description": "A lecture note on state-space and system modeling in robotics, covering the mathematical representation of dynamical systems, state-space formulation, linearization around equilibria, and stability analysis using examples such as the planar quadrotor and damped pendulum."
+    },
+    {
+      "type": "file",
+      "name": "lec4_linear_control.pdf",
+      "relative_path": "eecs106b/study/lec/slides/lec4_linear_control.pdf",
+      "description": "A lecture note on linear control for robotic manipulation, covering feedback control, stability concepts (Lyapunov, asymptotic, exponential), control strategies for first and second order systems, PID and model-based control, and application to quadrotor dynamics and control."
+    },
+    {
+      "type": "file",
+      "name": "legged-lec-1.pdf",
+      "relative_path": "eecs106b/study/lec/slides/legged-lec-1.pdf",
+      "description": "This is a lecture slide deck for a course on Robotic Manipulation and Interaction, specifically focusing on optimal control and reinforcement learning for legged robots. It covers the dynamics of legged robots, model-based optimal control methods, challenges in optimization, simplification strategies, and an introduction to deep reinforcement learning approaches."
+    },
+    {
+      "type": "file",
+      "name": "legged-lec-2.pdf",
+      "relative_path": "eecs106b/study/lec/slides/legged-lec-2.pdf",
+      "description": "This is a lecture note from a course on Robotic Manipulation and Interaction, focusing on predictive control and reinforcement learning for legged robots. The document covers the historical development of legged robots, key control strategies such as Model Predictive Control (MPC) and Reinforcement Learning (RL), detailed case studies of prominent legged robots (MIT Cheetah, Boston Dynamics Atlas, ETH ANYmal, OSU Cassie), and special topics including contact modeling and simulation environments."
+    },
+    {
+      "type": "file",
+      "name": "SLAM_Presentation___106B_2023.pdf",
+      "relative_path": "eecs106b/study/lec/slides/SLAM_Presentation___106B_2023.pdf",
+      "description": "A comprehensive lecture slide deck for a course on Simultaneous Localization and Mapping (SLAM), focusing on a unifying optimization-based framework. It covers SLAM fundamentals, front-end and back-end architectures, state estimation via Kalman filters, state-of-the-art algorithms, loop closures, and emerging directions such as semantic and dynamic SLAM."
+    },
+    {
+      "type": "file",
+      "name": "steering-nonholo.pdf",
+      "relative_path": "eecs106b/study/lec/slides/steering-nonholo.pdf",
+      "description": "A lecture note primarily focused on the optimal control and steering of nonholonomic systems, especially the nonholonomic integrator, using chained form representations and feedback linearization techniques."
+    }
+  ]
+}
